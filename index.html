@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Deutschimo Almanca eğitim platformu arayüz prototipi" />
+  <title>Deutschimo — Almanca Eğitim Platformu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="modern">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-wrap">
+        <div class="brand-mark">D</div>
+        <div>
+          <div class="brand-name">Deutschimo</div>
+          <div class="brand-tagline">Dil öğreniminde yeni çağ!</div>
+        </div>
+      </div>
+
+      <nav class="nav-menu" aria-label="Ana menü">
+        <button class="nav-item active" data-page="dashboard">
+          <span class="nav-icon">⌂</span><span>Genel Bakış</span>
+        </button>
+        <button class="nav-item" data-page="courses">
+          <span class="nav-icon">▤</span><span>Dersler</span>
+        </button>
+        <button class="nav-item" data-page="exams">
+          <span class="nav-icon">◆</span><span>Sınav Merkezi</span>
+          <span class="nav-badge">Yeni</span>
+        </button>
+        <button class="nav-item" data-page="plan">
+          <span class="nav-icon">◫</span><span>Çalışma Planı</span>
+        </button>
+        <button class="nav-item" data-page="vocabulary">
+          <span class="nav-icon">Aa</span><span>Kelime Defteri</span>
+        </button>
+        <button class="nav-item" data-page="profile">
+          <span class="nav-icon">◉</span><span>Profilim</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-icon">✦</div>
+        <h3>Premium’a geç</h3>
+        <p>Tüm seviyelere ve sınav paketlerine sınırsız eriş.</p>
+        <button class="btn btn-light btn-small">Planları Gör</button>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="avatar avatar-small">KG</div>
+        <div class="user-mini">
+          <strong>Kadir Gürlü</strong>
+          <span>B1 Öğrencisi</span>
+        </div>
+        <button class="icon-button" aria-label="Ayarlar">⚙</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Menüyü aç">☰</button>
+        <div class="search-box">
+          <span>⌕</span>
+          <input type="search" placeholder="Ders, konu veya kelime ara..." />
+          <kbd>⌘ K</kbd>
+        </div>
+
+        <div class="top-actions">
+          <div class="theme-switch" aria-label="Tasarım görünümü">
+            <button class="theme-option active" data-theme-choice="modern">Modern</button>
+            <button class="theme-option" data-theme-choice="academic">Akademik</button>
+          </div>
+          <button class="icon-button notification" aria-label="Bildirimler">♢<span></span></button>
+          <div class="avatar">KG</div>
+        </div>
+      </header>
+
+      <section class="page active" id="dashboard">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <span class="eyebrow">PAZARTESİ · 27 TEMMUZ</span>
+            <h1>Guten Tag, Kadir!</h1>
+            <p>Bugünkü hedefin için yalnızca <strong>18 dakika</strong> kaldı. B1 yolculuğuna kaldığın yerden devam et.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-go="courses">Derse Devam Et <span>→</span></button>
+              <button class="btn btn-ghost" data-go="plan">Bugünkü Plan</button>
+            </div>
+          </div>
+          <div class="hero-progress">
+            <div class="progress-ring" style="--progress: 72">
+              <div class="ring-content"><strong>72%</strong><span>Günlük hedef</span></div>
+            </div>
+            <div class="streak-pill">🔥 12 günlük seri</div>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <article class="stat-card">
+            <div class="stat-head"><span class="stat-icon aqua">⏱</span><span class="trend positive">+14%</span></div>
+            <strong>4 sa 36 dk</strong><span>Bu haftaki çalışma</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-head"><span class="stat-icon blue">✓</span><span class="trend positive">+8</span></div>
+            <strong>28 ders</strong><span>Tamamlanan içerik</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-head"><span class="stat-icon purple">Aa</span><span class="trend positive">+42</span></div>
+            <strong>386 kelime</strong><span>Aktif kelime haznesi</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-head"><span class="stat-icon orange">◎</span><span class="trend">B1</span></div>
+            <strong>%64</strong><span>Seviye ilerlemesi</span>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel learning-path">
+            <div class="panel-heading">
+              <div><span class="section-label">ÖĞRENME YOLCULUĞU</span><h2>Kaldığın yerden devam et</h2></div>
+              <button class="text-button" data-go="courses">Tüm dersler →</button>
+            </div>
+            <div class="lesson-card">
+              <div class="lesson-thumb">
+                <div class="level-chip">B1 · Ünite 4</div>
+                <span class="thumb-letter">Ü</span>
+              </div>
+              <div class="lesson-info">
+                <span class="lesson-category">GRAMMATIK</span>
+                <h3>Konjunktiv II: Wünsche und Höflichkeit</h3>
+                <p>Gerçek dışı durumları, dilekleri ve kibar istekleri doğru kurmayı öğren.</p>
+                <div class="lesson-meta"><span>▶ 12 dk video</span><span>▤ 8 alıştırma</span><span>★ 120 XP</span></div>
+                <div class="progress-line"><span style="width: 68%"></span></div>
+                <small>%68 tamamlandı</small>
+              </div>
+              <button class="round-button" aria-label="Dersi aç">→</button>
+            </div>
+          </article>
+
+          <article class="panel weekly-panel">
+            <div class="panel-heading">
+              <div><span class="section-label">HAFTALIK AKTİVİTE</span><h2>Çalışma düzenin</h2></div>
+              <select aria-label="Tarih aralığı"><option>Bu hafta</option><option>Geçen hafta</option></select>
+            </div>
+            <div class="weekly-summary"><strong>4,6 saat</strong><span>Haftalık hedef: 6 saat</span></div>
+            <div class="bar-chart" aria-label="Haftalık çalışma grafiği">
+              <div class="bar-item"><div class="bar" style="--height: 54%"><span>32 dk</span></div><small>Pzt</small></div>
+              <div class="bar-item"><div class="bar" style="--height: 78%"><span>48 dk</span></div><small>Sal</small></div>
+              <div class="bar-item"><div class="bar" style="--height: 43%"><span>26 dk</span></div><small>Çar</small></div>
+              <div class="bar-item"><div class="bar" style="--height: 90%"><span>55 dk</span></div><small>Per</small></div>
+              <div class="bar-item"><div class="bar" style="--height: 66%"><span>41 dk</span></div><small>Cum</small></div>
+              <div class="bar-item"><div class="bar muted" style="--height: 32%"><span>18 dk</span></div><small>Cmt</small></div>
+              <div class="bar-item today"><div class="bar" style="--height: 47%"><span>28 dk</span></div><small>Paz</small></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid lower">
+          <article class="panel task-panel">
+            <div class="panel-heading">
+              <div><span class="section-label">BUGÜNKÜ PROGRAM</span><h2>3 görev seni bekliyor</h2></div>
+              <button class="text-button">Düzenle</button>
+            </div>
+            <div class="task-list">
+              <label class="task done"><input type="checkbox" checked><span class="checkmark"></span><span class="task-icon">Aa</span><span><strong>20 yeni kelime tekrarı</strong><small>Kelime Defteri · 10 dk</small></span><b>+40 XP</b></label>
+              <label class="task"><input type="checkbox"><span class="checkmark"></span><span class="task-icon">▤</span><span><strong>Konjunktiv II alıştırmaları</strong><small>B1 · Ünite 4 · 15 dk</small></span><b>+80 XP</b></label>
+              <label class="task"><input type="checkbox"><span class="checkmark"></span><span class="task-icon">◉</span><span><strong>TestDaF Leseverstehen denemesi</strong><small>Sınav Merkezi · 30 dk</small></span><b>+150 XP</b></label>
+            </div>
+          </article>
+
+          <article class="panel exam-promo">
+            <div class="exam-badge">TESTDAF</div>
+            <h2>Hedefin TDN 4 mü?</h2>
+            <p>Kişiselleştirilmiş çalışma planı, deneme sınavları ve ayrıntılı performans analiziyle hazırlan.</p>
+            <div class="exam-score-row">
+              <div><span>Lesen</span><strong>TDN 4</strong></div>
+              <div><span>Hören</span><strong>TDN 3</strong></div>
+              <div><span>Schreiben</span><strong>TDN 4</strong></div>
+            </div>
+            <button class="btn btn-dark" data-go="exams">Sınav Merkezine Git →</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="courses">
+        <div class="page-title-row">
+          <div><span class="section-label">DERS KATALOĞU</span><h1>Almanca seviyeni adım adım geliştir</h1><p>A1’den B2’ye yapılandırılmış müfredat, video dersler ve interaktif alıştırmalar.</p></div>
+          <button class="btn btn-primary">Seviye Tespit Sınavı</button>
+        </div>
+
+        <div class="level-tabs">
+          <button class="active">Tümü</button><button>A1</button><button>A2</button><button>B1</button><button>B2</button>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-cover cover-a1"><span>A1</span><small>Grundlagen</small></div>
+            <div class="course-body"><div class="course-top"><span class="status-chip completed">Tamamlandı</span><span>24 ders</span></div><h3>A1 · Temel Almanca</h3><p>Günlük ifadeler, temel dil bilgisi ve ilk iletişim becerileri.</p><div class="progress-line"><span style="width:100%"></span></div><div class="course-footer"><small>%100 tamamlandı</small><button>Tekrar Et →</button></div></div>
+          </article>
+          <article class="course-card">
+            <div class="course-cover cover-a2"><span>A2</span><small>Alltag</small></div>
+            <div class="course-body"><div class="course-top"><span class="status-chip completed">Tamamlandı</span><span>30 ders</span></div><h3>A2 · Günlük Almanca</h3><p>Günlük yaşamda kendini daha rahat ve ayrıntılı ifade et.</p><div class="progress-line"><span style="width:100%"></span></div><div class="course-footer"><small>%100 tamamlandı</small><button>Tekrar Et →</button></div></div>
+          </article>
+          <article class="course-card featured">
+            <div class="course-cover cover-b1"><span>B1</span><small>Selbstständig</small></div>
+            <div class="course-body"><div class="course-top"><span class="status-chip active">Devam ediyor</span><span>36 ders</span></div><h3>B1 · Bağımsız Kullanım</h3><p>Akıcı iletişime geçiş yap; akademik ve profesyonel dili geliştir.</p><div class="progress-line"><span style="width:64%"></span></div><div class="course-footer"><small>%64 tamamlandı</small><button>Derse Git →</button></div></div>
+          </article>
+          <article class="course-card locked">
+            <div class="course-cover cover-b2"><span>B2</span><small>Fortgeschritten</small></div>
+            <div class="course-body"><div class="course-top"><span class="status-chip locked-chip">Kilitli</span><span>42 ders</span></div><h3>B2 · İleri Seviye</h3><p>Karmaşık metinleri anla, fikirlerini ayrıntılı ve akıcı biçimde savun.</p><div class="course-footer"><small>B1 seviyesini tamamla</small><button>İncele →</button></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="exams">
+        <div class="page-title-row">
+          <div><span class="section-label">SINAV MERKEZİ</span><h1>Hedef sınavına profesyonel hazırlan</h1><p>Gerçek sınav formatında denemeler, beceri bazlı analiz ve akıllı çalışma önerileri.</p></div>
+          <button class="btn btn-primary">Ücretsiz Deneme Çöz</button>
+        </div>
+
+        <div class="exam-grid">
+          <article class="exam-card testdaf">
+            <div class="exam-logo">TestDaF</div><span class="exam-level">B2–C1</span>
+            <h2>TestDaF Hazırlık Programı</h2><p>Almanya’da üniversite eğitimi için dört beceride hedef puana ulaş.</p>
+            <div class="skill-list"><span>✓ Leseverstehen</span><span>✓ Hörverstehen</span><span>✓ Schriftlicher Ausdruck</span><span>✓ Mündlicher Ausdruck</span></div>
+            <div class="exam-card-footer"><strong>12 deneme · 480 soru</strong><button>Programı İncele →</button></div>
+          </article>
+          <article class="exam-card telc">
+            <div class="exam-logo">telc</div><span class="exam-level">A1–C1</span>
+            <h2>TELC Hazırlık Programı</h2><p>Seviyene uygun TELC sınav formatını öğren ve zaman yönetimini geliştir.</p>
+            <div class="skill-list"><span>✓ Lesen & Sprachbausteine</span><span>✓ Hören</span><span>✓ Schreiben</span><span>✓ Sprechen</span></div>
+            <div class="exam-card-footer"><strong>9 deneme · 360 soru</strong><button>Programı İncele →</button></div>
+          </article>
+          <article class="exam-card goethe">
+            <div class="exam-logo">Goethe</div><span class="exam-level">A1–C2</span>
+            <h2>Goethe-Zertifikat</h2><p>Uluslararası geçerli Goethe sertifikaları için modül bazlı hazırlık.</p>
+            <div class="skill-list"><span>✓ Modül testleri</span><span>✓ Sınav stratejileri</span><span>✓ Konuşma simülasyonu</span><span>✓ Yazma değerlendirmesi</span></div>
+            <div class="exam-card-footer"><strong>Seviye bazlı paketler</strong><button>Programı İncele →</button></div>
+          </article>
+        </div>
+
+        <article class="panel performance-table-panel">
+          <div class="panel-heading"><div><span class="section-label">SON DENEMELER</span><h2>Performans geçmişin</h2></div><button class="text-button">Tüm sonuçlar →</button></div>
+          <div class="table-wrap"><table><thead><tr><th>Sınav</th><th>Tarih</th><th>Bölüm</th><th>Doğru</th><th>Sonuç</th><th></th></tr></thead><tbody>
+            <tr><td><strong>TestDaF Deneme 03</strong></td><td>26 Tem 2026</td><td>Lesen</td><td>25 / 30</td><td><span class="score-chip high">TDN 4</span></td><td>→</td></tr>
+            <tr><td><strong>TELC B1 Modelltest</strong></td><td>23 Tem 2026</td><td>Hören</td><td>16 / 20</td><td><span class="score-chip high">%80</span></td><td>→</td></tr>
+            <tr><td><strong>TestDaF Deneme 02</strong></td><td>19 Tem 2026</td><td>Hören</td><td>18 / 25</td><td><span class="score-chip mid">TDN 3</span></td><td>→</td></tr>
+          </tbody></table></div>
+        </article>
+      </section>
+
+      <section class="page" id="plan">
+        <div class="page-title-row"><div><span class="section-label">ÇALIŞMA PLANI</span><h1>Haftanı bilinçli planla</h1><p>Günlük hedeflerini belirle, görevlerini tamamla ve serini koru.</p></div><button class="btn btn-primary">Yeni Görev Ekle</button></div>
+        <div class="calendar-strip">
+          <div class="calendar-day"><span>Pzt</span><strong>27</strong><small>3 görev</small></div>
+          <div class="calendar-day active"><span>Sal</span><strong>28</strong><small>4 görev</small></div>
+          <div class="calendar-day"><span>Çar</span><strong>29</strong><small>2 görev</small></div>
+          <div class="calendar-day"><span>Per</span><strong>30</strong><small>3 görev</small></div>
+          <div class="calendar-day"><span>Cum</span><strong>31</strong><small>2 görev</small></div>
+          <div class="calendar-day"><span>Cmt</span><strong>01</strong><small>1 görev</small></div>
+          <div class="calendar-day"><span>Paz</span><strong>02</strong><small>Dinlenme</small></div>
+        </div>
+        <div class="dashboard-grid"><article class="panel"><div class="panel-heading"><div><span class="section-label">28 TEMMUZ SALI</span><h2>Günün görevleri</h2></div><span class="status-chip active">45 dakika</span></div><div class="task-list"><label class="task"><input type="checkbox"><span class="checkmark"></span><span class="task-icon">▤</span><span><strong>B1 Ünite 4 video dersi</strong><small>09:30 · 15 dk</small></span><b>+80 XP</b></label><label class="task"><input type="checkbox"><span class="checkmark"></span><span class="task-icon">Aa</span><span><strong>Kelime tekrarı</strong><small>13:00 · 10 dk</small></span><b>+40 XP</b></label><label class="task"><input type="checkbox"><span class="checkmark"></span><span class="task-icon">◆</span><span><strong>TELC Hören mini test</strong><small>19:00 · 20 dk</small></span><b>+100 XP</b></label></div></article><article class="panel focus-panel"><span class="section-label">HAFTALIK ODAK</span><h2>Hörverstehen</h2><p>Bu hafta dinleme becerisine ağırlık veriyorsun. Planlanan 4 çalışmadan 2’sini tamamladın.</p><div class="focus-circle"><strong>2/4</strong><span>tamamlandı</span></div><button class="btn btn-dark">Planı Düzenle</button></article></div>
+      </section>
+
+      <section class="page" id="vocabulary">
+        <div class="page-title-row"><div><span class="section-label">KELİME DEFTERİ</span><h1>Öğrendiğin kelimeleri kalıcılaştır</h1><p>Aralıklı tekrar sistemiyle doğru kelimeyi doğru zamanda çalış.</p></div><button class="btn btn-primary">+ Kelime Ekle</button></div>
+        <div class="vocab-stats"><div><strong>386</strong><span>Toplam kelime</span></div><div><strong>42</strong><span>Bu hafta eklenen</span></div><div><strong>87%</strong><span>Hatırlama oranı</span></div><div><strong>28</strong><span>Bugün tekrar</span></div></div>
+        <div class="dashboard-grid"><article class="panel flashcard-panel"><div class="flashcard"><span class="word-type">DAS SUBSTANTIV</span><h2>die Voraussetzung</h2><p>/ˈfoːɐ̯aʊ̯sˌzɛt͡sʊŋ/</p><div class="word-meaning">ön koşul, gereklilik</div><div class="example-sentence">Gute Deutschkenntnisse sind eine wichtige <strong>Voraussetzung</strong> für das Studium.</div></div><div class="recall-buttons"><button>Zor</button><button>Orta</button><button>Kolay</button></div></article><article class="panel"><div class="panel-heading"><div><span class="section-label">KATEGORİLER</span><h2>Kelime listelerin</h2></div></div><div class="category-list"><div><span class="category-dot"></span><strong>B1 Ünite 4</strong><small>62 kelime</small></div><div><span class="category-dot"></span><strong>TestDaF Akademik</strong><small>128 kelime</small></div><div><span class="category-dot"></span><strong>Günlük Konuşma</strong><small>94 kelime</small></div><div><span class="category-dot"></span><strong>Fiiller & Edatlar</strong><small>102 kelime</small></div></div></article></div>
+      </section>
+
+      <section class="page" id="profile">
+        <div class="profile-header-card"><div class="profile-avatar">KG</div><div><span class="section-label">ÖĞRENCİ PROFİLİ</span><h1>Kadir Gürlü</h1><p>B1 Öğrencisi · 12 günlük seri · Temmuz 2026’dan beri üye</p></div><button class="btn btn-light">Profili Düzenle</button></div>
+        <div class="dashboard-grid"><article class="panel"><div class="panel-heading"><div><span class="section-label">SEVİYE GELİŞİMİ</span><h2>Almanca yolculuğun</h2></div></div><div class="level-road"><div class="road-step done"><span>✓</span><strong>A1</strong><small>Tamamlandı</small></div><div class="road-line done"></div><div class="road-step done"><span>✓</span><strong>A2</strong><small>Tamamlandı</small></div><div class="road-line active"></div><div class="road-step active"><span>64%</span><strong>B1</strong><small>Devam ediyor</small></div><div class="road-line"></div><div class="road-step"><span>🔒</span><strong>B2</strong><small>Kilitli</small></div></div></article><article class="panel"><div class="panel-heading"><div><span class="section-label">BAŞARILAR</span><h2>Son rozetlerin</h2></div></div><div class="badge-grid"><div class="achievement"><span>🔥</span><strong>10 Gün Seri</strong></div><div class="achievement"><span>★</span><strong>1000 XP</strong></div><div class="achievement"><span>◆</span><strong>İlk Deneme</strong></div><div class="achievement"><span>Aa</span><strong>300 Kelime</strong></div></div></article></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast">Görev tamamlandı. Harika gidiyorsun!</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+DEUTSCHIMO V5 - GITHUB VE VERCEL YÜKLEME
+
+1. ZIP dosyasını bilgisayarında çıkart.
+2. ZIP'in içindeki app, components, data, hooks, lib, types, prisma, public ve kök dosyaları seç.
+3. GitHub'daki KadirGurlu/Deutschimo deposunun ana dizinine yükle.
+4. Dosyaların deutschimo-v5-content adlı ek bir klasörün içine girmediğinden emin ol.
+5. Aynı isimli mevcut dosyaların üzerine yaz.
+6. Commit mesajı olarak şunu kullan:
+
+Fix exercises and expand all A1-B2 lesson content
+
+7. Commit'i main dalına gönder.
+8. Vercel otomatik deployment başlatır.
+9. Deployment Source bölümünde en yeni commit kodunu ve Status alanında Ready durumunu kontrol et.
+10. Siteyi gizli sekmede aç veya Ctrl + Shift + R ile sert yenile.
+
+ÖNEMLİ:
+V5 yeni demo depolama anahtarları kullanır. İlk açılışta önceki demo ilerleme verileri görünmeyebilir. Bu, eski alıştırma kayıtlarının yeni soru akışını kilitlemesini önlemek içindir.

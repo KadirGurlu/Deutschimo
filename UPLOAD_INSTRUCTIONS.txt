@@ -1,0 +1,23 @@
+DEUTSCHIMO V3 - GITHUB VE VERCEL GÜNCELLEME
+
+1. ZIP dosyasını bilgisayarında çıkart.
+2. GitHub'daki Deutschimo deposunda eski proje dosyalarını bu klasördeki dosyalarla değiştir.
+3. package.json, app, components, data, hooks, lib, types ve diğer kök dosyaların ana dizinde bulunduğunu kontrol et.
+4. Commit mesajı olarak şunu kullan:
+   Add multi-level slide learning and progress system
+5. Commit changes butonuna bas.
+6. Vercel bağlıysa yeni deployment otomatik başlayacaktır.
+7. Deploy tamamlandıktan sonra şu rotaları kontrol et:
+   /courses/a1
+   /courses/a2
+   /courses/b1
+   /courses/b2
+   /learn/a1/a1-u01
+   /learn/a1/a1-u01/exercises
+   /learn/a1/a1-u01/quiz
+   /dashboard
+   /progress
+   /admin/content
+   /admin/users
+
+Not: Önceki localStorage anahtarlarından bağımsız yeni deutschimo-learning-v3 anahtarı kullanılır.

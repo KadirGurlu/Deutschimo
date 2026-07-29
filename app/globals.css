@@ -63,7 +63,7 @@ main { min-height: calc(100vh - 72px); }
 .mock-grid { padding: 20px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; }
 .mock-card, .card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
 .mock-card.wide { grid-column: 1 / -1; }
-.mini-bars { height: 110px; display: flex; align-items: end; gap: 10px; padding-top: 14px; }
+.mini-bars { height: 110px; display: flex; align-items: flex-end; gap: 10px; padding-top: 14px; }
 .mini-bars span { flex: 1; background: var(--turquoise-dark); border-radius: 5px 5px 0 0; opacity: .9; }
 .metric { font-size: 30px; color: var(--heading); font-weight: 750; }
 .logo-strip { padding: 24px 0; background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -80,7 +80,7 @@ main { min-height: calc(100vh - 72px); }
 .level-card .level-big { font-size: 42px; color: var(--navy); font-weight: 800; }
 .level-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; font-size: 13px; color: var(--muted); }
 .level-meta span { border: 1px solid var(--border); padding: 6px 8px; border-radius: 6px; }
-.section-head { display: flex; justify-content: space-between; gap: 20px; align-items: end; }
+.section-head { display: flex; justify-content: space-between; gap: 20px; align-items: flex-end; }
 .course-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 34px; }
 .course-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: .2s ease; min-width: 0; }
 .course-cover { height: 160px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; }
@@ -177,7 +177,7 @@ main { min-height: calc(100vh - 72px); }
 .app-sidebar a { padding: 11px 13px; border-radius: 8px; display: flex; gap: 10px; align-items: center; color: var(--muted); font-weight: 600; }
 .app-sidebar a.active, .app-sidebar a:hover { background: #EAFBFC; color: var(--heading); }
 .dashboard-main { padding: 38px; min-width: 0; }
-.welcome { display: flex; justify-content: space-between; gap: 20px; align-items: start; }
+.welcome { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
 .welcome h1 { color: var(--heading); font-size: 38px; margin: 0 0 8px; }
 .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin: 28px 0; }
 .stat-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }

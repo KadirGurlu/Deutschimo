@@ -157,7 +157,21 @@ export const skills = [
   { label: "Konuşma", value: 49 }
 ];
 
-export const units = [
+export type LessonItem = {
+  title: string;
+  type: string;
+  done: boolean;
+  active?: boolean;
+  locked?: boolean;
+};
+
+export type CourseUnit = {
+  title: string;
+  progress: number;
+  lessons: LessonItem[];
+};
+
+export const units: CourseUnit[] = [
   {
     title: "Ünite 1 · Tanışma ve Selamlaşma",
     progress: 75,

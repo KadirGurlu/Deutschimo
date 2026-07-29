@@ -1,0 +1,16 @@
+import Link from "next/link";
+import { BarChart3, BookOpen, ClipboardCheck, Gauge, Languages, PenLine, Settings, UserRound } from "lucide-react";
+
+export function AppSidebar({ active }: { active: string }) {
+  const items = [
+    [Gauge, "Dashboard", "/dashboard", "dashboard"],
+    [BookOpen, "Kurslarım", "/courses", "courses"],
+    [Languages, "Kelime", "/vocabulary", "vocabulary"],
+    [PenLine, "Yazma", "/writing", "writing"],
+    [ClipboardCheck, "Sınavlar", "/exams", "exams"],
+    [BarChart3, "İlerleme", "/progress", "progress"],
+    [UserRound, "Profil", "/profile", "profile"],
+    [Settings, "Ayarlar", "/profile", "settings"]
+  ] as const;
+  return <aside className="app-sidebar"><nav>{items.map(([Icon,label,href,key])=><Link key={key} href={href} className={active === key ? "active" : ""}><Icon size={19}/>{label}</Link>)}</nav></aside>;
+}

@@ -1,46 +1,60 @@
-# Deutschimo V4 · Tam İçerikli Yapılandırılmış Öğrenme Sistemi
+# Deutschimo V5
 
-Deutschimo'nun A1, A2, B1 ve B2 programları aynı slayt, alıştırma, quiz, ilerleme ve admin altyapısı üzerinde çalışır. Bu sürümde önceki placeholder ders metinleri ve sorular kaldırılmış, 66 ünitenin tamamı özgün eğitim içeriğiyle doldurulmuştur.
+Deutschimo, A1-B2 düzeylerinde yazılı ders anlatımı, etkileşimli alıştırmalar, ünite testleri ve ayrıntılı ilerleme takibi sunan responsive bir Next.js eğitim platformudur.
 
-## Program kapsamı
+## Güncel içerik kapsamı
 
 | Seviye | Ünite | Ders slaytı | Alıştırma | Quiz sorusu |
 |---|---:|---:|---:|---:|
-| A1 | 12 | 72 | 96 | 60 |
-| A2 | 16 | 96 | 128 | 80 |
-| B1 | 18 | 108 | 144 | 90 |
-| B2 | 20 | 120 | 160 | 100 |
-| **Toplam** | **66** | **396** | **528** | **330** |
+| A1 | 12 | 96 | 120 | 84 |
+| A2 | 16 | 128 | 160 | 112 |
+| B1 | 18 | 144 | 180 | 126 |
+| B2 | 20 | 160 | 200 | 140 |
+| **Toplam** | **66** | **528** | **660** | **462** |
 
-Her ünitede 6 odaklı ders slaytı, 8 adım alıştırma ve 5 soruluk ünite sonu değerlendirmesi bulunur.
+Her ünitede varsayılan olarak:
 
-## Her ünitenin içeriği
+- 8 odaklanmış ders slaytı
+- Dikey ve okunabilir kelime tablosu
+- Ünitedeki fiiller için Präsens çekim tabloları
+- Ayrıntılı gramer açıklaması ve kullanım stratejisi
+- Cümle kalıpları ve bağlam örnekleri
+- 10 etkileşimli alıştırma
+- 7 soruluk ünite sonu değerlendirmesi
+- Slayt, alıştırma ve quiz ağırlıklı ilerleme hesabı
 
-- Türkçe üniteye giriş ve öğrenme hedefleri
-- Seviyeye uygun Almanca dil bilgisi anlatımı
-- Yapı ve kullanım tablosu
-- En az sekiz Almanca–Türkçe kelime/ifade
-- Dört özgün Almanca örnek ve Türkçe anlamı
-- Sık yapılan hata veya kullanım notu
-- Mini kontrol sorusu
-- Çoktan seçmeli, çoklu seçim, doğru/yanlış, boşluk doldurma, eşleştirme ve cümle sıralama
-- A1–A2 düzeyinde çeviri ve diyalog
-- B1–B2 düzeyinde kısa cevap ve yazma görevi
-- Beş soruluk ünite sonu testi
+## Öne çıkan V5 düzeltmeleri
 
-## Öğrenme sistemi
+- Çoktan seçmeli ve çoklu seçim soruları erişilebilir buton yapısına dönüştürüldü.
+- Seçim yapıldıktan sonra `Kontrol Et` butonu aktifleşir.
+- Yanıt geri bildirimi, tekrar deneme ve sonraki alıştırmaya geçiş akışı düzeltildi.
+- Quiz seçenekleri de aynı güvenilir seçim bileşenine geçirildi.
+- Eski tarayıcı verilerinin yeni içeriği bozmasını önlemek için demo depolama anahtarları V5'e yükseltildi.
+- Kelimeler artık yan yana etiketler yerine alt alta, artikel/tür/anlam bilgisiyle gösterilir.
+- Kelime listesinde yer alan fiiller otomatik olarak çekim slaydına aktarılır.
+- Ünite başına slayt sayısı 6'dan 8'e, alıştırma sayısı 8'den 10'a, quiz soru sayısı 5'ten 7'ye çıkarıldı.
 
-- NOT_STARTED, IN_PROGRESS, COMPLETED ve LOCKED ünite durumları
-- Slayt → alıştırma → quiz sıralaması
-- Kaldığın slayt veya alıştırmadan devam etme
-- Ders %40, alıştırma %40, quiz %20 ağırlıklı ilerleme
-- Minimum %70 quiz başarı kuralı
-- Tamamlanan üniteden sonra sıradaki ünitenin otomatik açılması
-- localStorage tabanlı kalıcı demo ilerlemesi
-- Dashboard, aktivite listesi ve ünite zaman çizelgesi
-- Video bileşeni bulunmaz
+## Kurulum
 
-## Temel rotalar
+```bash
+npm install
+npm run dev
+```
+
+Yerel adres:
+
+```text
+http://localhost:3000
+```
+
+Production kontrolü:
+
+```bash
+npm run build
+npm start
+```
+
+## Ana rotalar
 
 ```text
 /courses/a1
@@ -52,24 +66,10 @@ Her ünitede 6 odaklı ders slaytı, 8 adım alıştırma ve 5 soruluk ünite so
 /learn/a1/a1-u01/quiz
 /dashboard
 /progress
-/admin
-/admin/users
 /admin/content
+/admin/users
 ```
 
-## Kurulum
+## Veri notu
 
-```bash
-npm install
-npm run dev
-```
-
-Production kontrolü:
-
-```bash
-npm run build
-```
-
-## Veri katmanı
-
-Öğrenci ilerlemesi ve admin içerik değişiklikleri şimdilik tarayıcı localStorage alanında saklanır. Gerçek çok kullanıcılı sürümde servis katmanı PostgreSQL, Prisma ve Auth.js ile değiştirilebilir.
+Bu sürüm demo kullanıcı ilerlemesini ve admin içerik değişikliklerini tarayıcı `localStorage` alanında saklar. Tüm cihazlardan ortak kullanıcı ve içerik yönetimi için PostgreSQL, Prisma ve Auth.js bağlantısı gerekir.

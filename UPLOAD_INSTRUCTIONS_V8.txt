@@ -1,0 +1,20 @@
+DEUTSCHIMO V8 — GITHUB VE VERCEL YÜKLEME
+
+1. ZIP dosyasını bilgisayarında çıkart.
+2. ZIP'in kendisini veya üst klasörü değil, açılan klasörün içindeki dosyaları seç.
+3. GitHub'da KadirGurlu/Deutschimo deposunun ana dizinine git.
+4. app, components, data, hooks, lib, types, scripts ve package.json dosyalarını ana dizine yükle.
+5. Aynı adlı dosyaların değiştirilmesine izin ver.
+6. Commit mesajı:
+
+   Add comprehensive V8 curriculum and remove homepage search
+
+7. Değişiklikleri doğrudan main dalına commit et.
+8. Vercel > Deutschimo > Deployments bölümünde yeni build'i takip et.
+9. Durum Ready olunca https://deutschimo.vercel.app adresini aç.
+10. Eski görünüm kalırsa Ctrl + Shift + R yap veya gizli sekmede kontrol et.
+
+NOTLAR
+- V8 localStorage anahtarları kullandığı için eski demo ilerlemesi bir kez sıfırlanabilir.
+- GitHub ana diziminde doğrudan package.json ve app klasörü görünmelidir.
+- Dosyaları deutschimo-v8-work adlı ek bir alt klasörün içine yükleme.

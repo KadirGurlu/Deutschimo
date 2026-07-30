@@ -1,0 +1,25 @@
+DEUTSCHIMO V7 — GITHUB / VERCEL YÜKLEME
+
+1. deutschimo-v7-ozgun-sorular.zip dosyasını bilgisayarında çıkart.
+2. ZIP içindeki dosya ve klasörleri GitHub Deutschimo deposunun ANA DİZİNİNE yükle.
+3. app, components, data, hooks, lib, types, scripts ve package.json ana dizinde görünmelidir.
+4. Aynı isimli dosyaların üzerine yazılmasına izin ver.
+5. Commit directly to main branch seçeneğini kullan.
+6. Commit mesajı:
+
+Fix duplicate questions and add question-specific feedback
+
+7. Vercel otomatik olarak yeni deployment başlatır.
+8. Deployment Ready olduğunda deutschimo.vercel.app adresini aç.
+9. Ctrl + Shift + R ile sert yenileme yap.
+
+V7, eski soru ilerlemelerinin yeni soru bankasına karışmaması için yeni localStorage anahtarları kullanır. Demo ilerlemesi bir kez sıfırlanabilir.
+
+KONTROL SENARYOSU
+
+- A1 / Ünite 1 / Slayt 7 içindeki mini kontrol sorusunu çöz.
+- Alıştırmalara geç.
+- İlk alıştırmanın slayttaki sorudan farklı olduğunu kontrol et.
+- İkinci çoklu seçim sorusunu bilerek yanlış çöz.
+- Geri bildirimde seçtiğin soruya özel doğru seçeneklerin açıklandığını kontrol et.
+- Ünite testini bitir ve sonuç ekranındaki soru bazlı açıklamaları incele.

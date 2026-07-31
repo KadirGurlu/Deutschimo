@@ -1,0 +1,26 @@
+DEUTSCHIMO V9 GITHUB + VERCEL YÜKLEME
+
+Önerilen yöntem: deutschimo-v9-guncelleme-paketi.zip dosyasını kullan.
+
+1. ZIP dosyasını bilgisayarında çıkart.
+2. İçindeki app, components, data, lib, scripts ve types klasörlerini GitHub deposunun ANA DİZİNİNE yükle.
+3. package.json ve CHANGELOG_V9.md dosyalarını da ana dizine yükle.
+4. Aynı isimli dosyaların değiştirilmesine izin ver.
+5. Commit mesajı:
+
+   Add sequential checks and natural V9 learning texts
+
+6. Commit directly to main seçeneğiyle kaydet.
+7. Vercel otomatik deployment başlatır.
+8. Deployment Ready olduktan sonra siteyi Ctrl + Shift + R ile yenile.
+
+ÖNEMLİ KONTROL
+GitHub ana diziminde şu klasörlerin tümü görünmelidir:
+app
+components
+data
+lib
+scripts
+types
+
+Vercel hata verirse Build Logs bölümündeki en alttaki kırmızı satırları paylaş.

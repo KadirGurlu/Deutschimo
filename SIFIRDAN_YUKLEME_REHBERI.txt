@@ -1,0 +1,43 @@
+DEUTSCHIMO V11 — SIFIRDAN GITHUB YÜKLEME REHBERİ
+
+ÖNEMLİ:
+Bu projede app/api/auth/[...nextauth]/route.ts adlı özel bir Next.js klasör yolu vardır.
+GitHub'ın tarayıcıdaki Upload files ekranı bu klasörü bazen yükleyemez.
+Bu nedenle bütün projeyi sıfırdan yüklerken GitHub Desktop kullanın.
+
+1) GitHub Desktop'ı açın.
+2) File > Clone repository yoluyla KadirGurlu/Deutschimo deposunu bilgisayarınıza indirin.
+3) İndirdiğiniz depo klasörünün içindeki eski proje dosyalarını silin.
+   .git klasörünü silmeyin. Bu klasör genellikle gizlidir.
+4) Bu ZIP'in içindeki bütün dosya ve klasörleri depo klasörüne kopyalayın.
+5) Aşağıdaki kritik yolların bulunduğunu kontrol edin:
+   - app/api/auth/[...nextauth]/route.ts
+   - app/api/progress/route.ts
+   - app/api/profile/route.ts
+   - auth.ts
+   - auth.config.ts
+   - middleware.ts
+   - prisma/schema.prisma
+   - prisma/seed.mjs
+   - lib/db.ts
+6) GitHub Desktop'a dönün.
+7) Summary alanına: Add complete Deutschimo V11 project
+8) Commit to main butonuna basın.
+9) Push origin butonuna basın.
+10) Vercel yeni deployment'ı otomatik başlatacaktır.
+
+VERCEL'DE BULUNMASI GEREKEN DEĞİŞKENLER:
+- DATABASE_URL
+- AUTH_SECRET
+- AUTH_TRUST_HOST=true
+- ADMIN_FIRST_NAME
+- ADMIN_LAST_NAME
+- ADMIN_EMAIL
+- ADMIN_PASSWORD
+- NEXT_PUBLIC_GOOGLE_AUTH_ENABLED=false
+- REQUIRE_EMAIL_VERIFICATION=false
+
+NOTLAR:
+- .env veya .env.local dosyasını GitHub'a yüklemeyin.
+- AUTH_SECRET, ADMIN_PASSWORD ve DATABASE_URL değerlerini paylaşmayın.
+- GitHub web yükleyicisi yerine GitHub Desktop kullanılması zorunluya yakındır.

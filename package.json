@@ -1,0 +1,45 @@
+{
+  "name": "deutschimo-platform",
+  "version": "11.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && prisma db push --skip-generate && prisma db seed && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "db:seed": "prisma db seed",
+    "validate:content": "node scripts/validate-content.mjs",
+    "validate:v8": "node scripts/validate-v8.mjs",
+    "validate:v9": "node scripts/validate-v9.mjs",
+    "validate:v10": "node scripts/validate-v10.mjs",
+    "validate:v11": "node scripts/validate-v11.mjs"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.mjs"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.8.0",
+    "@prisma/client": "^6.7.0",
+    "bcryptjs": "^3.0.2",
+    "lucide-react": "^0.468.0",
+    "next": "^15.5.0",
+    "next-auth": "5.0.0-beta.29",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.5.0",
+    "prisma": "^6.7.0",
+    "typescript": "^5.7.2"
+  }
+}

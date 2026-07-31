@@ -1,0 +1,20 @@
+V11 KRİTİK DOSYA KONTROLÜ
+
+[OK] app/api/auth/[...nextauth]/route.ts
+[OK] app/api/auth/register/route.ts
+[OK] app/api/auth/request-password-reset/route.ts
+[OK] app/api/auth/reset-password/route.ts
+[OK] app/api/auth/verify-email/route.ts
+[OK] app/api/progress/route.ts
+[OK] app/api/profile/route.ts
+[OK] app/api/admin/users/route.ts
+[OK] app/api/admin/users/[id]/route.ts
+[OK] auth.ts
+[OK] auth.config.ts
+[OK] middleware.ts
+[OK] lib/db.ts
+[OK] lib/auth/password.ts
+[OK] lib/auth/authorization.ts
+[OK] lib/storage/learning-storage.ts
+[OK] prisma/schema.prisma
+[OK] prisma/seed.mjs

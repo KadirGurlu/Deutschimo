@@ -1,0 +1,24 @@
+DEUTSCHIMO V11 YÜKLEME SIRASI
+
+ÖNEMLİ: Önce Vercel'e PostgreSQL bağla ve ortam değişkenlerini ekle. DATABASE_URL olmadan V11 build başarısız olur.
+
+1. Vercel → Deutschimo → Storage/Marketplace üzerinden PostgreSQL bağla.
+2. Vercel Environment Variables alanına ekle:
+   DATABASE_URL
+   AUTH_SECRET
+   AUTH_TRUST_HOST=true
+   ADMIN_EMAIL
+   ADMIN_PASSWORD
+   ADMIN_FIRST_NAME=Kadir
+   ADMIN_LAST_NAME=Gürlü
+3. deutschimo-v11-guncelleme-paketi.zip dosyasını çıkart.
+4. ZIP içindeki dosya ve klasörleri GitHub deposunun ANA DİZİNİNE yükle.
+5. Aynı isimli dosyaların değiştirilmesine izin ver.
+6. Commit mesajı:
+   Add V11 authentication database and server progress sync
+7. Vercel Deployments ekranını aç.
+8. Yeni deployment Ready olana kadar bekle.
+9. /auth adresinden ADMIN_EMAIL ve ADMIN_PASSWORD ile giriş yap.
+10. /admin/users sayfasında gerçek kullanıcı yönetimini kontrol et.
+
+Build hatası çıkarsa Build Logs'un en altındaki kırmızı bölümü paylaş.

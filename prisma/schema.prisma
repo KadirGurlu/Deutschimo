@@ -1,0 +1,282 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  STUDENT
+  INSTRUCTOR
+  EDITOR
+  MODERATOR
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  PENDING_VERIFICATION
+}
+
+enum Level {
+  A1
+  A2
+  B1
+  B2
+}
+
+enum EnrollmentStatus {
+  ACTIVE
+  PAUSED
+  COMPLETED
+}
+
+enum ContentStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum ExerciseType {
+  MULTIPLE_CHOICE
+  MULTIPLE_SELECT
+  TRUE_FALSE
+  FILL_IN_THE_BLANK
+  MATCHING
+  SENTENCE_ORDERING
+  TRANSLATION
+  DIALOGUE_COMPLETION
+  SHORT_ANSWER
+  WRITING_ASSIGNMENT
+}
+
+model User {
+  id                  String                    @id @default(cuid())
+  name                String?
+  firstName           String?
+  lastName            String?
+  email               String?                   @unique
+  emailVerified       DateTime?
+  image               String?
+  passwordHash        String?
+  role                UserRole                  @default(STUDENT)
+  status              UserStatus                @default(ACTIVE)
+  currentLevel        Level                     @default(A1)
+  targetLevel         Level                     @default(B2)
+  dailyGoalMinutes    Int                       @default(30)
+  onboardingCompleted Boolean                   @default(false)
+  lastSeenAt          DateTime?
+  createdAt           DateTime                  @default(now())
+  updatedAt           DateTime                  @updatedAt
+  accounts            Account[]
+  sessions            Session[]
+  enrollments         Enrollment[]
+  learningSnapshot    LearningStateSnapshot?
+  unitProgress        UserUnitProgress[]
+  activityEvents      UserActivityEvent[]
+  studySessions       StudySession[]
+  emailTokens         EmailVerificationToken[]
+  passwordResetTokens PasswordResetToken[]
+
+  @@index([role, status])
+  @@index([createdAt])
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+}
+
+model Session {
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@id([identifier, token])
+}
+
+model EmailVerificationToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String   @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model Course {
+  id             String        @id
+  slug           String        @unique
+  level          Level
+  title          String
+  description    String
+  status         ContentStatus @default(PUBLISHED)
+  estimatedHours Int           @default(0)
+  unitCount      Int           @default(0)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  units          Unit[]
+  enrollments    Enrollment[]
+}
+
+model Unit {
+  id                  String        @id
+  courseId            String
+  course              Course        @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  slug                String
+  order               Int
+  title               String
+  description         String
+  estimatedMinutes    Int           @default(0)
+  status              ContentStatus @default(PUBLISHED)
+  prerequisiteUnitId  String?
+  progressWeights     Json
+  completionRules     Json
+  contentPayload      Json?
+  deletedAt           DateTime?
+  createdAt           DateTime      @default(now())
+  updatedAt           DateTime      @updatedAt
+  exercises           Exercise[]
+
+  @@unique([courseId, slug])
+  @@index([courseId, order])
+}
+
+model Exercise {
+  id              String       @id
+  unitId          String
+  unit            Unit         @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  groupId         String?
+  order           Int
+  type            ExerciseType
+  title           String
+  prompt          String       @db.Text
+  options         Json?
+  correctAnswer   Json
+  acceptedAnswers Json?
+  explanation     String       @db.Text
+  relatedSlideId  String?
+  isRequired      Boolean      @default(true)
+  maxAttempts     Int          @default(2)
+  points          Int          @default(10)
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  @@index([unitId, order])
+}
+
+model Enrollment {
+  id          String           @id @default(cuid())
+  userId      String
+  courseId    String
+  status      EnrollmentStatus @default(ACTIVE)
+  enrolledAt  DateTime         @default(now())
+  completedAt DateTime?
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course      Course           @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, courseId])
+  @@index([courseId, status])
+}
+
+model LearningStateSnapshot {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  state     Json
+  version   Int      @default(11)
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserUnitProgress {
+  id                        String   @id @default(cuid())
+  userId                    String
+  courseId                  String
+  unitId                    String
+  status                    String
+  stage                     String
+  lessonProgress            Int      @default(0)
+  exerciseProgress          Int      @default(0)
+  quizProgress              Int      @default(0)
+  totalProgress             Int      @default(0)
+  bestQuizScore             Int?
+  completedSlideIds         Json
+  completedExerciseIds      Json
+  startedAt                 DateTime?
+  completedAt               DateTime?
+  lastVisitedAt             DateTime?
+  user                      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, unitId])
+  @@index([userId, courseId])
+  @@index([courseId, status])
+}
+
+model UserActivityEvent {
+  id        String   @id
+  userId    String
+  eventType String
+  courseId  String
+  unitId    String?
+  itemId    String?
+  metadata  Json?
+  createdAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([eventType, createdAt])
+}
+
+model StudySession {
+  id            String   @id
+  userId        String
+  courseId      String
+  unitId        String?
+  startedAt     DateTime
+  endedAt       DateTime?
+  activeSeconds Int      @default(0)
+  sessionType   String
+  deviceType    String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startedAt])
+}

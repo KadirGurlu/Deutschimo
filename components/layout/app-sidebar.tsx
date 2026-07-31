@@ -1,10 +1,14 @@
 import Link from "next/link";
-import { BarChart3, BookOpen, ClipboardCheck, Gauge, Languages, PenLine, Settings, UserRound } from "lucide-react";
+import { BarChart3, BookOpen, BrainCircuit, CalendarCheck2, ClipboardCheck, Gauge, GraduationCap, Languages, PenLine, RotateCcw, Settings, UserRound } from "lucide-react";
 
 export function AppSidebar({ active }: { active: string }) {
   const items = [
     [Gauge, "Dashboard", "/dashboard", "dashboard"],
     [BookOpen, "Kurslarım", "/courses", "courses"],
+    [GraduationCap, "Seviye Testi", "/placement-test", "placement"],
+    [BrainCircuit, "Zayıf Konular", "/weak-topics", "weak-topics"],
+    [RotateCcw, "Akıllı Tekrar", "/smart-review", "smart-review"],
+    [CalendarCheck2, "Günlük Plan", "/study-plan", "study-plan"],
     [Languages, "Kelime", "/vocabulary", "vocabulary"],
     [PenLine, "Yazma", "/writing", "writing"],
     [ClipboardCheck, "Sınavlar", "/exams", "exams"],

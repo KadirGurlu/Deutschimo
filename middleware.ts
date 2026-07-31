@@ -13,5 +13,9 @@ export const config = {
     "/exams/:path*",
     "/learn/:path*",
     "/admin/:path*",
+    "/placement-test/:path*",
+    "/weak-topics/:path*",
+    "/smart-review/:path*",
+    "/study-plan/:path*",
   ],
 };

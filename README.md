@@ -1,19 +1,16 @@
-# Deutschimo V11
+# Deutschimo V12
 
-Deutschimo; A1–B2 düzeylerinde yapılandırılmış yazılı dersler, etkileşimli alıştırmalar, ünite testleri ve gerçek kullanıcı ilerleme takibi sunan Next.js eğitim platformudur.
+Deutschimo; A1–B2 düzeylerinde yapılandırılmış yazılı dersler, etkileşimli alıştırmalar, ünite testleri, gerçek kullanıcı ilerleme takibi ve kişiselleştirilmiş öğrenme zekâsı sunan Next.js eğitim platformudur.
 
-## V11'in temel farkı
+## V12'nin temel farkı
 
-V10'a kadar kullanıcı ve ilerleme verileri yalnızca tarayıcıda tutuluyordu. V11 ile:
+V11'in Auth.js, PostgreSQL ve cihazlar arası ilerleme altyapısına ek olarak:
 
-- Gerçek kayıt ve giriş sistemi
-- Auth.js oturum yönetimi
-- PostgreSQL ve Prisma ORM
-- bcrypt ile güvenli parola saklama
-- Gerçek admin kullanıcı yönetimi
-- Farklı cihazlarda ilerleme senkronizasyonu
-- Kullanıcıya özel localStorage çevrimdışı yedeği
-- Profil ve günlük hedef yönetimi
+- 24 soruluk A1–B2 seviye belirleme sınavı
+- Alıştırma ve quiz sonuçlarından zayıf konu tespiti
+- Yanlış cevaplardan otomatik akıllı tekrar kuyruğu
+- Günlük hedefe göre kişiselleştirilmiş çalışma planı
+- Dashboard içinde öğrenme zekâsı özeti
 
 aktif hâle gelir.
 
@@ -41,7 +38,7 @@ aktif hâle gelir.
 
 ## Kurulum
 
-Önce `.env.example` dosyasını `.env` olarak kopyala ve `DATABASE_URL`, `AUTH_SECRET`, `ADMIN_EMAIL` ve `ADMIN_PASSWORD` alanlarını doldur.
+`.env.example` dosyasını `.env` olarak kopyala ve V11 değişkenlerini doldur.
 
 ```bash
 npm install
@@ -50,8 +47,6 @@ npm run db:seed
 npm run dev
 ```
 
-Vercel kurulumu için `docs/V11_SETUP_GUIDE.md` dosyasını kullan.
-
 ## Doğrulama
 
 ```bash
@@ -59,18 +54,17 @@ npm run validate:content
 npm run validate:v9
 npm run validate:v10
 npm run validate:v11
+npm run validate:v12
 npm run build
 ```
 
-## Önemli rotalar
+## V12 rotaları
 
 ```text
-/auth
-/forgot-password
-/dashboard
-/profile
-/progress
-/admin
-/admin/users
-/admin/content
+/placement-test
+/weak-topics
+/smart-review
+/study-plan
 ```
+
+Ayrıntılı değişiklikler için `CHANGELOG_V12.md`, yükleme için `UPLOAD_INSTRUCTIONS_V12.txt` dosyasını kullan.

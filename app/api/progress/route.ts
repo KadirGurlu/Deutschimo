@@ -25,8 +25,8 @@ export async function PUT(request: Request) {
   await prisma.$transaction(async (tx) => {
     await tx.learningStateSnapshot.upsert({
       where: { userId: currentUser.id },
-      create: { userId: currentUser.id, state: snapshotJson, version: 11 },
-      update: { state: snapshotJson, version: 11 },
+      create: { userId: currentUser.id, state: snapshotJson, version: 12 },
+      update: { state: snapshotJson, version: 12 },
     });
 
     for (const enrollment of state.enrollments) {

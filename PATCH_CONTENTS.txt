@@ -1,0 +1,39 @@
+DEUTSCHIMO V12 GÜNCELLEME PAKETİ
+
+Değiştirilen/yeni dosyalar:
+- package.json
+- CHANGELOG_V12.md
+- UPLOAD_INSTRUCTIONS_V12.txt
+- middleware.ts
+- README.md
+- docs/V12_VALIDATION_REPORT.md
+- types/intelligence.ts
+- scripts/validate-v12.mjs
+- app/globals.css
+- data/placement-test.ts
+- prisma/schema.prisma
+- lib/intelligence/server.ts
+- lib/intelligence/daily-plan.ts
+- lib/intelligence/placement.ts
+- lib/intelligence/insight-engine.ts
+- components/intelligence/smart-review.tsx
+- components/intelligence/daily-plan.tsx
+- components/intelligence/intelligence-overview.tsx
+- components/intelligence/placement-test.tsx
+- components/intelligence/weak-topics-panel.tsx
+- components/layout/app-sidebar.tsx
+- app/placement-test/page.tsx
+- app/smart-review/page.tsx
+- app/study-plan/page.tsx
+- app/auth/page.tsx
+- app/dashboard/page.tsx
+- app/weak-topics/page.tsx
+- app/api/progress/route.ts
+- app/api/intelligence/insights/route.ts
+- app/api/intelligence/placement/route.ts
+- app/api/intelligence/review/route.ts
+- app/api/intelligence/daily-plan/route.ts
+- app/api/intelligence/overview/route.ts
+
+V11 tabanından silinebilecek dosyalar:
+- AUTH_HOTFIX_README.txt

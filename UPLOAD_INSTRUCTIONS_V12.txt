@@ -1,0 +1,48 @@
+DEUTSCHIMO V12 GITHUB + VERCEL YÜKLEME
+======================================
+
+V12, V11'in üzerine uygulanabilir. Veritabanı bağlantısı ve V11 ortam değişkenleri aynen korunur; yeni bir ortam değişkeni gerekmez.
+
+ÖNERİLEN YÖNTEM: GITHUB DESKTOP
+-------------------------------
+1. GitHub Desktop'ta Deutschimo deposunu aç.
+2. Repository > Show in Explorer seçeneğine tıkla.
+3. V12 tam proje ZIP'ini çıkart.
+4. ZIP'in içindeki bütün dosyaları klonlanmış Deutschimo klasörüne kopyala.
+5. Windows sorarsa "Hedefteki dosyaları değiştir" seçeneğini kullan.
+6. GitHub Desktop'a dön.
+7. Summary alanına şunu yaz:
+
+   Add Deutschimo V12 learning intelligence
+
+8. Commit to main butonuna bas.
+9. Push origin butonuna bas.
+10. Vercel'de yeni deployment'ın Ready olmasını bekle.
+
+VERİTABANI
+----------
+Build komutu prisma db push çalıştırdığı için aşağıdaki yeni tablolar otomatik oluşturulur:
+- PlacementAssessment
+- LearningInsightSnapshot
+- DailyStudyPlan
+- SmartReviewState
+
+V11'DEKİ ORTAM DEĞİŞKENLERİ KORUNMALI
+--------------------------------------
+DATABASE_URL
+AUTH_SECRET
+AUTH_TRUST_HOST
+ADMIN_EMAIL
+ADMIN_PASSWORD
+ADMIN_FIRST_NAME
+ADMIN_LAST_NAME
+NEXT_PUBLIC_GOOGLE_AUTH_ENABLED
+REQUIRE_EMAIL_VERIFICATION
+
+İLK TEST
+--------
+1. /placement-test sayfasını aç ve sınavı tamamla.
+2. /dashboard sayfasında önerilen seviyenin yansıdığını kontrol et.
+3. Birkaç alıştırmada doğru ve yanlış cevap ver.
+4. /weak-topics ve /smart-review sayfalarını kontrol et.
+5. /study-plan sayfasında görev tamamlamayı test et.

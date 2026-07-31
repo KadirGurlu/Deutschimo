@@ -45,9 +45,13 @@ const providers: NextAuthConfig["providers"] = [
 
 if (process.env.AUTH_GOOGLE_ID && process.env.AUTH_GOOGLE_SECRET) providers.push(Google);
 
+// Keep the adapter type aligned with the NextAuth package used by this app.
+// Runtime behavior is unchanged; this only prevents duplicate @auth/core type identities.
+const adapter = PrismaAdapter(prisma) as NonNullable<NextAuthConfig["adapter"]>;
+
 export const { handlers, auth, signIn, signOut } = NextAuth({
   ...authConfig,
-  adapter: PrismaAdapter(prisma),
+  adapter,
   session: { strategy: "jwt" },
   providers,
   callbacks: {

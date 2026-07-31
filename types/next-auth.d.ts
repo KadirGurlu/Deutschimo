@@ -3,13 +3,13 @@ import type { Level, UserRole, UserStatus } from "@prisma/client";
 
 declare module "next-auth" {
   interface User {
-    role: UserRole;
-    status: UserStatus;
+    role?: UserRole;
+    status?: UserStatus;
     firstName?: string | null;
     lastName?: string | null;
-    currentLevel: Level;
-    targetLevel: Level;
-    dailyGoalMinutes: number;
+    currentLevel?: Level;
+    targetLevel?: Level;
+    dailyGoalMinutes?: number;
   }
 
   interface Session {

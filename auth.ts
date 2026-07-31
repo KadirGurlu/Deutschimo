@@ -6,6 +6,25 @@ import { prisma } from "@/lib/db";
 import { verifyPassword } from "@/lib/auth/password";
 import authConfig from "@/auth.config";
 import type { NextAuthConfig } from "next-auth";
+import { Level, UserRole, UserStatus } from "@prisma/client";
+
+function toUserRole(value: unknown): UserRole {
+  return typeof value === "string" && Object.values(UserRole).includes(value as UserRole)
+    ? (value as UserRole)
+    : UserRole.STUDENT;
+}
+
+function toUserStatus(value: unknown): UserStatus {
+  return typeof value === "string" && Object.values(UserStatus).includes(value as UserStatus)
+    ? (value as UserStatus)
+    : UserStatus.ACTIVE;
+}
+
+function toLevel(value: unknown, fallback: Level): Level {
+  return typeof value === "string" && Object.values(Level).includes(value as Level)
+    ? (value as Level)
+    : fallback;
+}
 
 const providers: NextAuthConfig["providers"] = [
   Credentials({
@@ -87,13 +106,15 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     async session({ session, token }) {
       if (session.user) {
         session.user.id = String(token.id ?? token.sub ?? "");
-        session.user.role = token.role ?? "STUDENT";
-        session.user.status = token.status ?? "ACTIVE";
-        session.user.firstName = token.firstName;
-        session.user.lastName = token.lastName;
-        session.user.currentLevel = token.currentLevel ?? "A1";
-        session.user.targetLevel = token.targetLevel ?? "B2";
-        session.user.dailyGoalMinutes = Number(token.dailyGoalMinutes ?? 30);
+        session.user.role = toUserRole(token.role);
+        session.user.status = toUserStatus(token.status);
+        session.user.firstName = typeof token.firstName === "string" ? token.firstName : null;
+        session.user.lastName = typeof token.lastName === "string" ? token.lastName : null;
+        session.user.currentLevel = toLevel(token.currentLevel, Level.A1);
+        session.user.targetLevel = toLevel(token.targetLevel, Level.B2);
+        session.user.dailyGoalMinutes = Number.isFinite(Number(token.dailyGoalMinutes))
+          ? Number(token.dailyGoalMinutes)
+          : 30;
       }
       return session;
     },

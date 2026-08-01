@@ -52,7 +52,7 @@ export function ListeningLab() {
     else setPhase("SECOND");
   }
   async function saveWord(item:VocabularyItem){
-    const response=await fetch("/api/skills/vocabulary",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...item,sourceSkill:"LISTENING",sourceTaskId:task.id})});
+    const response=await fetch("/api/skills/vocabulary",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...item,sourceSkill:"LISTENING",sourceTaskId:task.id,sourceCourseId:task.level.toLowerCase(),sourceUnitTitle:task.title})});
     if(response.ok)setSavedWords((values)=>[...new Set([...values,item.word])]);
   }
   async function complete(){

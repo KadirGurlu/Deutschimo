@@ -9,9 +9,11 @@ const skillList: SkillType[] = ["LISTENING", "SPEAKING", "READING", "WRITING"];
 async function GETHandler() {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
-  const [attempts, vocabularyCount] = await Promise.all([
+  const [attempts, vocabularyCount, vocabularyDueCount, vocabularyMasteredCount] = await Promise.all([
     prisma.skillLabAttempt.findMany({ where: { userId: user.id }, orderBy: { completedAt: "desc" }, take: 100 }),
     prisma.vocabularyNotebookItem.count({ where: { userId: user.id } }),
+    prisma.vocabularyNotebookItem.count({ where: { userId: user.id, suspended: false, nextReviewAt: { lte: new Date() } } }),
+    prisma.vocabularyNotebookItem.count({ where: { userId: user.id, mastery: { gte: 80 } } }),
   ]);
   const totals = Object.fromEntries(skillList.map((skill) => [skill, attempts.filter((item) => item.skill === skill).length])) as Record<SkillType, number>;
   const averages = Object.fromEntries(skillList.map((skill) => {
@@ -22,6 +24,8 @@ async function GETHandler() {
     totals,
     averages,
     vocabularyCount,
+    vocabularyDueCount,
+    vocabularyMasteredCount,
     recent: attempts.slice(0, 8).map((item) => ({
       id: item.id,
       skill: item.skill as SkillType,

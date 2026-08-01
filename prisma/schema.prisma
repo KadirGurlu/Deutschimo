@@ -92,6 +92,7 @@ model User {
   smartReviewState      SmartReviewState?
   skillLabAttempts      SkillLabAttempt[]
   vocabularyNotebook    VocabularyNotebookItem[]
+  vocabularyReviewAttempts VocabularyReviewAttempt[]
 
   @@index([role, status])
   @@index([createdAt])
@@ -471,21 +472,61 @@ model SkillLabAttempt {
 }
 
 model VocabularyNotebookItem {
-  id                 String   @id @default(cuid())
-  userId             String
-  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  word               String
-  article            String?
-  plural             String?
-  translation        String
-  example            String?  @db.Text
-  exampleTranslation String?  @db.Text
-  sourceSkill        String
-  sourceTaskId       String
-  mastery            Int      @default(0)
-  createdAt          DateTime @default(now())
-  updatedAt          DateTime @updatedAt
+  id                    String   @id @default(cuid())
+  userId                String
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word                  String
+  article               String?
+  plural                String?
+  translation           String
+  pronunciation         String?
+  wordType              String?
+  example               String?  @db.Text
+  exampleTranslation    String?  @db.Text
+  verbConjugation       Json?
+  perfectForm           String?
+  governedPreposition   String?
+  sourceSkill           String
+  sourceTaskId          String
+  sourceCourseId        String?
+  sourceUnitId          String?
+  sourceUnitTitle       String?
+  notes                 String?  @db.Text
+  mastery               Int      @default(0)
+  nextReviewAt          DateTime @default(now())
+  lastReviewedAt        DateTime?
+  reviewCount           Int      @default(0)
+  correctStreak         Int      @default(0)
+  lapseCount            Int      @default(0)
+  intervalDays          Int      @default(0)
+  easeFactor            Float    @default(2.5)
+  lastRating            String?
+  suspended             Boolean  @default(false)
+  reviewAttempts        VocabularyReviewAttempt[]
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
 
   @@unique([userId, word, sourceTaskId])
+  @@index([userId, nextReviewAt])
+  @@index([userId, mastery])
   @@index([userId, createdAt])
+}
+
+model VocabularyReviewAttempt {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemId     String
+  item       VocabularyNotebookItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  mode       String
+  rating     String
+  correct    Boolean
+  answer     String?  @db.Text
+  expected   String?  @db.Text
+  responseMs Int?
+  createdAt  DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([itemId, createdAt])
+  @@index([rating, createdAt])
 }

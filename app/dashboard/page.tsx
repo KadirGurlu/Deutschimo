@@ -5,6 +5,7 @@ import { BookOpenCheck, Flame, Target, TrendingUp } from "lucide-react";
 import { AppSidebar } from "@/components/layout/app-sidebar";
 import { IntelligenceOverviewPanel } from "@/components/intelligence/intelligence-overview";
 import { SkillDashboardPanel } from "@/components/skills/skill-dashboard-panel";
+import { VocabularyDashboardCard } from "@/components/vocabulary/vocabulary-dashboard-card";
 import { ContinueLearningCard } from "@/components/progress/continue-learning-card";
 import { RecentActivityList } from "@/components/progress/recent-activity-list";
 import { StudyChart } from "@/components/dashboard/study-chart";
@@ -35,6 +36,7 @@ export default function DashboardPage() {
     <div className="stats-grid"><Stat icon={<Target/>} label="Günlük hedef" value={`${dailyGoal} dk`} note="Kişisel planına göre dağıtılır"/><Stat icon={<Flame/>} label="Çalışma serisi" value="6 gün" note="Kişisel rekor: 11 gün"/><Stat icon={<BookOpenCheck/>} label="Tamamlanan ünite" value={String(store.completedCount)} note={`${store.inProgressCount} ünite devam ediyor`}/><Stat icon={<TrendingUp/>} label="Ortalama quiz" value={`%${averageQuiz}`} note={`${quizScores.length} değerlendirme`}/></div>
     <IntelligenceOverviewPanel/>
     <SkillDashboardPanel/>
+    <VocabularyDashboardCard/>
     {continueUnit ? <ContinueLearningCard course={course} unit={continueUnit} position={position} progress={store.unitProgressMap[continueUnit.id]}/> : null}
     <div className="dashboard-grid"><div style={{display:"grid",gap:20}}><section className="panel"><div className="section-head"><h2>Haftalık çalışma</h2><span className="level-badge">Son 7 gün</span></div><StudyChart/></section><section className="panel"><h2>{course.level} program ilerlemesi</h2><Progress value={store.coursePercent} label={`${store.completedCount}/${store.units.length} ünite tamamlandı`}/><div className="dashboard-detail-grid"><span><strong>{completedSlides}</strong>Tamamlanan ders slaytı</span><span><strong>{completedExercises}</strong>Tamamlanan alıştırma</span><span><strong>{lastCompleted?.title ?? "—"}</strong>Son tamamlanan ünite</span><span><strong>{nextUnit?.title ?? "—"}</strong>Sıradaki ünite</span></div></section></div><aside className="panel"><h2>Son aktiviteler</h2><RecentActivityList activities={store.state.activities.slice(0,8)}/></aside></div>
   </section></div>;

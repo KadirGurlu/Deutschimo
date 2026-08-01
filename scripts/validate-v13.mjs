@@ -19,7 +19,7 @@ for (const file of required) if (!fs.existsSync(path.join(root,file))) errors.pu
 const schema = fs.readFileSync(path.join(root,"prisma/schema.prisma"),"utf8");
 for (const model of ["SkillLabAttempt","VocabularyNotebookItem"]) if (!schema.includes(`model ${model}`)) errors.push(`Eksik Prisma modeli: ${model}`);
 const pkg = JSON.parse(fs.readFileSync(path.join(root,"package.json"),"utf8"));
-if (pkg.version !== "13.0.0") errors.push(`package.json sürümü 13.0.0 değil: ${pkg.version}`);
+if (Number(pkg.version.split(".")[0]) < 13) errors.push(`package.json ana sürümü 13 veya üstü değil: ${pkg.version}`);
 
 let syntaxCount=0;
 function walk(dir){

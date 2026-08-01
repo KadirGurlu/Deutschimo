@@ -72,3 +72,7 @@ npm run build
 ```
 
 Ayrıntılı değişiklikler için `CHANGELOG_V12.md`, yükleme için `UPLOAD_INSTRUCTIONS_V12.txt` dosyasını kullan.
+
+## V14 — Gelişmiş kelime öğrenme
+
+V14, kişisel kelime defterine aralıklı tekrar, yedi görev türü, ayrıntılı fiil/isim bilgileri, hata geçmişi ve otomatik sonraki tekrar planlaması ekler. Ayrıntılar için `CHANGELOG_V14.md` dosyasına bakın.

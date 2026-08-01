@@ -92,6 +92,8 @@ export type SkillOverview = {
   averages: Record<SkillType, number>;
   recent: SkillAttemptRecord[];
   vocabularyCount: number;
+  vocabularyDueCount: number;
+  vocabularyMasteredCount: number;
 };
 
 export type SpeakingEvaluation = {

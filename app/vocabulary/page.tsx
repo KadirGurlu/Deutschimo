@@ -1,22 +1,6 @@
-"use client";
-
-import { useEffect, useMemo, useState } from "react";
 import { AppSidebar } from "@/components/layout/app-sidebar";
-import { BookMarked, Heart, RotateCcw, Trash2, Volume2 } from "lucide-react";
-import { Progress } from "@/components/ui/progress";
+import { VocabularyCenter } from "@/components/vocabulary/vocabulary-center";
 
-type NotebookItem = { id:string; word:string; article?:string|null; plural?:string|null; translation:string; example?:string|null; exampleTranslation?:string|null; sourceSkill:string; createdAt:string };
-
-export default function VocabularyPage(){
-  const [items,setItems]=useState<NotebookItem[]>([]);const [index,setIndex]=useState(0);const [flipped,setFlipped]=useState(false);const [loading,setLoading]=useState(true);
-  useEffect(()=>{fetch("/api/skills/vocabulary",{cache:"no-store"}).then(async response=>response.ok?(await response.json() as {items:NotebookItem[]}).items:[]).then(setItems).finally(()=>setLoading(false));},[]);
-  const current=items[index]??null;const progress=items.length?Math.round(((index+1)/items.length)*100):0;
-  const skillCounts=useMemo(()=>items.reduce<Record<string,number>>((acc,item)=>({...acc,[item.sourceSkill]:(acc[item.sourceSkill]??0)+1}),{}),[items]);
-  function speak(){if(!current||!("speechSynthesis" in window))return;window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(`${current.article??""} ${current.word}. ${current.example??""}`);utterance.lang="de-DE";utterance.rate=.86;window.speechSynthesis.speak(utterance);}
-  async function remove(id:string){const response=await fetch(`/api/skills/vocabulary?id=${encodeURIComponent(id)}`,{method:"DELETE"});if(response.ok){setItems((values)=>values.filter((item)=>item.id!==id));setIndex(0);setFlipped(false);}}
-  function next(){if(!items.length)return;setIndex((value)=>(value+1)%items.length);setFlipped(false);}
-  return <div className="dashboard-shell"><AppSidebar active="vocabulary"/><section className="dashboard-main"><div className="section-head"><div><span className="eyebrow">KELİME MODÜLÜ</span><h1 className="section-title">Kişisel kelime defterin</h1><p className="section-copy">Dinleme ve okuma laboratuvarlarında bilmediğin kelimeleri burada biriktir, dinle ve tekrar et.</p></div><span className="level-badge"><BookMarked size={15}/>{items.length} kayıtlı kelime</span></div>
-    <div className="panel" style={{margin:"28px 0"}}><div style={{display:"flex",justifyContent:"space-between",gap:20}}><strong>Laboratuvar kelimeleri</strong><span>{items.length?`${index+1} / ${items.length}`:"Henüz kelime yok"}</span></div><Progress value={progress} label={items.length?"Defterde gezinme":"Dinleme veya okuma laboratuvarından kelime ekle"}/></div>
-    {loading?<section className="panel"><p>Kelime defteri yükleniyor...</p></section>:current?<><div className="flashcard-wrap"><button onClick={()=>setFlipped(!flipped)} className="flashcard" style={{width:"100%",border:"1px solid var(--border)"}}>{flipped?<div><span className="eyebrow">ANLAM VE KULLANIM</span><h1>{current.translation}</h1>{current.plural?<p><strong>Çoğul:</strong> {current.plural}</p>:null}{current.example?<p><strong>Örnek:</strong> {current.example}</p>:null}{current.exampleTranslation?<p>{current.exampleTranslation}</p>:null}</div>:<div><span className="eyebrow">KELİME</span><h1>{current.article?`${current.article} `:""}{current.word}</h1><p>Kartı çevirmek için tıkla</p><div style={{display:"flex",justifyContent:"center",gap:16}}><span onClick={(event)=>{event.stopPropagation();speak();}}><Volume2/></span><Heart/></div></div>}</button><div className="flashcard-actions"><button onClick={next}><RotateCcw size={17}/>Sonraki</button><button onClick={speak}>Dinle</button><button onClick={()=>remove(current.id)}><Trash2 size={17}/>Sil</button></div><p style={{color:"var(--muted)"}}>Kaynak: {current.sourceSkill === "LISTENING" ? "Dinleme" : current.sourceSkill === "READING" ? "Okuma" : current.sourceSkill}</p></div><div className="feature-grid" style={{marginTop:38}}><div className="feature-card"><strong>Toplam kelime</strong><div className="metric">{items.length}</div></div><div className="feature-card"><strong>Dinlemeden</strong><div className="metric">{skillCounts.LISTENING??0}</div></div><div className="feature-card"><strong>Okumadan</strong><div className="metric">{skillCounts.READING??0}</div></div><div className="feature-card"><strong>Bu hafta eklenen</strong><div className="metric">{items.filter((item)=>Date.now()-new Date(item.createdAt).getTime()<7*86400000).length}</div></div></div></>:<section className="panel intelligence-empty"><BookMarked size={32}/><div><h2>Kelime defterin henüz boş</h2><p>Dinleme veya okuma laboratuvarında “Kelimeye Ekle” düğmesini kullan.</p></div></section>}
-  </section></div>;
+export default function VocabularyPage() {
+  return <div className="dashboard-shell"><AppSidebar active="vocabulary"/><section className="dashboard-main"><VocabularyCenter/></section></div>;
 }

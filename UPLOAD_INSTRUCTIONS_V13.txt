@@ -1,0 +1,37 @@
+DEUTSCHIMO V13 YÜKLEME TALİMATI
+===============================
+
+ÖNERİLEN PAKET
+- Çalışan V12.1 projesinin üzerine "deutschimo-v13-guncelleme-paketi.zip" içeriğini kopyala.
+- Tam proje paketi yalnızca sıfırdan kurulum veya yerel yedek için gereklidir.
+
+GITHUB DESKTOP
+1. V13 ZIP dosyasını bilgisayarda çıkart.
+2. GitHub Desktop'ta Deutschimo deposunu aç.
+3. Repository > Show in Explorer seç.
+4. ZIP'in içindeki dosya ve klasörleri açılan Deutschimo ana klasörüne kopyala.
+5. Windows sorarsa "Hedefteki dosyaları değiştir" seç.
+6. GitHub Desktop'a dön.
+7. Summary: Add Deutschimo V13 skill laboratories
+8. Commit to main
+9. Push origin
+
+VERCEL
+- Yeni ortam değişkeni gerekmez.
+- V12.1'deki DATABASE_URL, AUTH_SECRET ve güvenlik değişkenlerini değiştirme.
+- Prisma db push yalnızca yeni beceri tablolarını ekler; kullanıcıları silmez.
+- Yeni deployment'ın Ready olmasını bekle.
+
+CANLI KONTROL
+/skills
+/listening
+/speaking
+/reading
+/writing
+/vocabulary
+/dashboard
+
+MİKROFON
+- Konuşma laboratuvarı HTTPS ve mikrofon izni gerektirir. Vercel canlı adresi HTTPS sunar.
+- En iyi destek güncel Chrome veya Edge tarayıcılarındadır.
+- Tarayıcı ses tanımayı desteklemiyorsa öğrenci transkripti elle yazıp değerlendirebilir.

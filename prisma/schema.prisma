@@ -90,6 +90,8 @@ model User {
   intelligenceSnapshot LearningInsightSnapshot?
   dailyStudyPlans       DailyStudyPlan[]
   smartReviewState      SmartReviewState?
+  skillLabAttempts      SkillLabAttempt[]
+  vocabularyNotebook    VocabularyNotebookItem[]
 
   @@index([role, status])
   @@index([createdAt])
@@ -447,4 +449,43 @@ model AccountDeletionLog {
   metadata      Json?
 
   @@index([requestedAt])
+}
+
+
+model SkillLabAttempt {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill           String
+  taskId          String
+  level           Level
+  score           Int
+  durationSeconds Int?
+  answerPayload   Json?
+  transcript      String?  @db.Text
+  feedback        Json?
+  completedAt     DateTime @default(now())
+
+  @@index([userId, skill, completedAt])
+  @@index([taskId, completedAt])
+}
+
+model VocabularyNotebookItem {
+  id                 String   @id @default(cuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word               String
+  article            String?
+  plural             String?
+  translation        String
+  example            String?  @db.Text
+  exampleTranslation String?  @db.Text
+  sourceSkill        String
+  sourceTaskId       String
+  mastery            Int      @default(0)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@unique([userId, word, sourceTaskId])
+  @@index([userId, createdAt])
 }

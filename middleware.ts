@@ -17,5 +17,9 @@ export const config = {
     "/weak-topics/:path*",
     "/smart-review/:path*",
     "/study-plan/:path*",
+    "/skills/:path*",
+    "/listening/:path*",
+    "/speaking/:path*",
+    "/reading/:path*",
   ],
 };

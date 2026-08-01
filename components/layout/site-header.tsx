@@ -46,7 +46,7 @@ export function SiteHeader() {
       {open ? (
         <div className="mega-menu">
           <div><strong>Seviyeye Göre</strong><Link href="/courses/a1">A1 Başlangıç</Link><Link href="/courses/a2">A2 Temel</Link><Link href="/courses/b1">B1 Orta</Link><Link href="/courses/b2">B2 Orta-İleri</Link></div>
-          <div><strong>Beceriye Göre</strong><Link href="/courses">Gramer</Link><Link href="/vocabulary">Kelime</Link><Link href="/writing">Yazma</Link><Link href="/courses">Okuma</Link></div>
+          <div><strong>Beceriye Göre</strong><Link href="/listening">Dinleme</Link><Link href="/speaking">Konuşma</Link><Link href="/reading">Okuma</Link><Link href="/writing">Yazma</Link></div>
           <div><strong>Sınava Göre</strong><Link href="/exams">TestDaF</Link><Link href="/exams">TELC</Link><Link href="/exams">Goethe-Zertifikat</Link><Link href="/exams">Üniversite Hazırlık</Link></div>
           <div><strong>Hedefe Göre</strong><Link href="/courses">Günlük Almanca</Link><Link href="/courses">Akademik Almanca</Link><Link href="/courses">İş Almancası</Link><Link href="/courses">Almanya'da Yaşam</Link></div>
         </div>

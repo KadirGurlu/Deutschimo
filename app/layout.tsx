@@ -7,7 +7,7 @@ import { CookieBanner } from "@/components/security/cookie-banner";
 
 export const metadata: Metadata = {
   title: "Deutschimo | Sistemli Almanca Öğren",
-  description: "A1'den B2'ye akademik ve ölçülebilir Almanca öğrenme platformu."
+  description: "A1'den B2'ye dersler, öğrenme zekâsı ve dört beceri laboratuvarıyla ölçülebilir Almanca öğrenme platformu."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

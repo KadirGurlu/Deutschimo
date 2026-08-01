@@ -92,6 +92,19 @@ export function buildDailyPlan(args: {
     });
   }
 
+  tasks.push({
+    id: `${planDate}-skill-lab`,
+    type: "SKILL",
+    title: currentLevel === "A1" || currentLevel === "A2" ? "Dinleme laboratuvarı" : "Konuşma laboratuvarı",
+    description: currentLevel === "A1" || currentLevel === "A2"
+      ? "Seviyene uygun günlük bir diyaloğu dinle ve ana fikir sorularını çöz."
+      : "Seviyene uygun bir görüş veya sunum görevine mikrofonla cevap ver.",
+    minutes: clampMinutes(goalMinutes * 0.2, 6, 15),
+    href: currentLevel === "A1" || currentLevel === "A2" ? "/listening" : "/speaking",
+    priority: "MEDIUM",
+    completed: false,
+  });
+
   if (currentLevel === "B1" || currentLevel === "B2") {
     tasks.push({
       id: `${planDate}-writing`,

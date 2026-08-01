@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BarChart3, BookOpen, BrainCircuit, CalendarCheck2, ClipboardCheck, Gauge, GraduationCap, Languages, PenLine, RotateCcw, Settings, UserRound } from "lucide-react";
+import { BarChart3, BookOpen, BrainCircuit, CalendarCheck2, ClipboardCheck, FlaskConical, Gauge, GraduationCap, Languages, RotateCcw, Settings, UserRound } from "lucide-react";
 
 export function AppSidebar({ active }: { active: string }) {
   const items = [
@@ -9,8 +9,8 @@ export function AppSidebar({ active }: { active: string }) {
     [BrainCircuit, "Zayıf Konular", "/weak-topics", "weak-topics"],
     [RotateCcw, "Akıllı Tekrar", "/smart-review", "smart-review"],
     [CalendarCheck2, "Günlük Plan", "/study-plan", "study-plan"],
+    [FlaskConical, "Beceri Laboratuvarı", "/skills", "skills"],
     [Languages, "Kelime", "/vocabulary", "vocabulary"],
-    [PenLine, "Yazma", "/writing", "writing"],
     [ClipboardCheck, "Sınavlar", "/exams", "exams"],
     [BarChart3, "İlerleme", "/progress", "progress"],
     [UserRound, "Profil", "/profile", "profile"],

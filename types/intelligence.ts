@@ -78,7 +78,7 @@ export type ReviewAnswerResult = {
   totalCount: number;
 };
 
-export type DailyPlanTaskType = "LESSON" | "REVIEW" | "QUIZ" | "VOCABULARY" | "WRITING" | "PLACEMENT";
+export type DailyPlanTaskType = "LESSON" | "REVIEW" | "QUIZ" | "VOCABULARY" | "WRITING" | "PLACEMENT" | "SKILL";
 
 export type DailyPlanTask = {
   id: string;

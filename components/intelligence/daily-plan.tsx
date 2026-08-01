@@ -12,7 +12,7 @@ function localDate() {
   return new Date(date.getTime() - offset).toISOString().slice(0, 10);
 }
 
-const typeLabel: Record<string,string> = { LESSON:"Ders", REVIEW:"Tekrar", QUIZ:"Quiz", VOCABULARY:"Kelime", WRITING:"Yazma", PLACEMENT:"Seviye testi" };
+const typeLabel: Record<string,string> = { LESSON:"Ders", REVIEW:"Tekrar", QUIZ:"Quiz", VOCABULARY:"Kelime", WRITING:"Yazma", PLACEMENT:"Seviye testi", SKILL:"Beceri" };
 
 export function DailyPlan() {
   const [plan, setPlan] = useState<DailyStudyPlan | null>(null);

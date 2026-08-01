@@ -1,3 +1,7 @@
+
+## V13 — Beceri Laboratuvarları
+
+Deutschimo artık A1–B2 düzeylerinde dinleme, konuşma, okuma ve yazma laboratuvarları içerir. Çalışmalar kullanıcı hesabına kaydedilir; dinleme ve okuma kelimeleri kişisel kelime defterine eklenebilir. Ayrıntılar için `CHANGELOG_V13.md` dosyasına bakın.
 # Deutschimo V12
 
 Deutschimo; A1–B2 düzeylerinde yapılandırılmış yazılı dersler, etkileşimli alıştırmalar, ünite testleri, gerçek kullanıcı ilerleme takibi ve kişiselleştirilmiş öğrenme zekâsı sunan Next.js eğitim platformudur.

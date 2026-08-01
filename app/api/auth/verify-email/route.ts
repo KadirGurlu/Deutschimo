@@ -1,8 +1,9 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { hashToken } from "@/lib/auth/tokens";
 
-export async function POST(request: Request) {
+async function POSTHandler(request: Request) {
   const body = await request.json() as { token?: string };
   if (!body.token) return NextResponse.json({ error: "Doğrulama bağlantısı geçersiz." }, { status: 400 });
   const token = await prisma.emailVerificationToken.findUnique({ where: { tokenHash: hashToken(body.token) } });
@@ -13,3 +14,5 @@ export async function POST(request: Request) {
   ]);
   return NextResponse.json({ ok: true });
 }
+
+export const POST = withApiMonitoring("/api/auth/verify-email", POSTHandler);

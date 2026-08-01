@@ -7,6 +7,8 @@ import { verifyPassword } from "@/lib/auth/password";
 import authConfig from "@/auth.config";
 import type { NextAuthConfig } from "next-auth";
 import { Level, UserRole, UserStatus } from "@prisma/client";
+import { checkLoginLimit, recordLoginAttempt } from "@/lib/security/rate-limit";
+import { getClientIp } from "@/lib/security/request";
 
 function toUserRole(value: unknown): UserRole {
   return typeof value === "string" && Object.values(UserRole).includes(value as UserRole)
@@ -33,18 +35,21 @@ const providers: NextAuthConfig["providers"] = [
       email: { label: "E-posta", type: "email" },
       password: { label: "Şifre", type: "password" },
     },
-    async authorize(credentials) {
+    async authorize(credentials, request) {
       const email = typeof credentials.email === "string" ? credentials.email.trim().toLowerCase() : "";
       const password = typeof credentials.password === "string" ? credentials.password : "";
       if (!email || !password) return null;
+      const ip = getClientIp(request);
+      const limit = await checkLoginLimit(email, ip);
+      if (!limit.allowed) { await recordLoginAttempt({ emailHash: limit.emailHash, ipHash: limit.ipHash, success: false, reason: "RATE_LIMITED" }); return null; }
 
       const user = await prisma.user.findUnique({ where: { email } });
-      if (!user?.passwordHash || user.status === "SUSPENDED") return null;
-      if (process.env.REQUIRE_EMAIL_VERIFICATION === "true" && !user.emailVerified) return null;
+      if (!user?.passwordHash || user.status === "SUSPENDED") { await recordLoginAttempt({ emailHash: limit.emailHash, ipHash: limit.ipHash, success: false, reason: user?.status === "SUSPENDED" ? "SUSPENDED" : "UNKNOWN_ACCOUNT" }); return null; }
+      if (process.env.REQUIRE_EMAIL_VERIFICATION === "true" && !user.emailVerified) { await recordLoginAttempt({ emailHash: limit.emailHash, ipHash: limit.ipHash, success: false, reason: "UNVERIFIED" }); return null; }
       const valid = await verifyPassword(password, user.passwordHash);
-      if (!valid) return null;
+      if (!valid) { await recordLoginAttempt({ emailHash: limit.emailHash, ipHash: limit.ipHash, success: false, reason: "INVALID_PASSWORD" }); return null; }
 
-      await prisma.user.update({ where: { id: user.id }, data: { lastSeenAt: new Date() } });
+      await Promise.all([prisma.user.update({ where: { id: user.id }, data: { lastSeenAt: new Date() } }), recordLoginAttempt({ emailHash: limit.emailHash, ipHash: limit.ipHash, success: true, reason: "SUCCESS" })]);
       return {
         id: user.id,
         name: user.name ?? [user.firstName, user.lastName].filter(Boolean).join(" "),

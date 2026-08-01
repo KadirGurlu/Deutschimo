@@ -1,3 +1,4 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { getApiUser } from "@/lib/auth/authorization";
@@ -10,7 +11,7 @@ function publicItem(item: Awaited<ReturnType<typeof getOrRefreshReviewState>>["q
   return safe;
 }
 
-export async function GET(request: Request) {
+async function GETHandler(request: Request) {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const url = new URL(request.url);
@@ -24,7 +25,7 @@ export async function GET(request: Request) {
   });
 }
 
-export async function POST(request: Request) {
+async function POSTHandler(request: Request) {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const body = await request.json() as { itemId?: string; answer?: unknown; completeConcept?: boolean };
@@ -58,3 +59,6 @@ export async function POST(request: Request) {
     },
   });
 }
+
+export const GET = withApiMonitoring("/api/intelligence/review", GETHandler);
+export const POST = withApiMonitoring("/api/intelligence/review", POSTHandler);

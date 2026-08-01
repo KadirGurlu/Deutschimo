@@ -1,9 +1,10 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { hashToken } from "@/lib/auth/tokens";
 import { hashPassword, validatePassword } from "@/lib/auth/password";
 
-export async function POST(request: Request) {
+async function POSTHandler(request: Request) {
   const body = await request.json() as { token?: string; password?: string };
   const tokenValue = String(body.token ?? "");
   const password = String(body.password ?? "");
@@ -19,3 +20,5 @@ export async function POST(request: Request) {
   ]);
   return NextResponse.json({ ok: true });
 }
+
+export const POST = withApiMonitoring("/api/auth/reset-password", POSTHandler);

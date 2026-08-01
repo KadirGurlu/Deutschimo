@@ -11,7 +11,7 @@ export function Footer() {
         </div>
         <div><h4>Öğren</h4><Link href="/courses">Tüm Kurslar</Link><Link href="/vocabulary">Kelime</Link><Link href="/writing">Yazma</Link><Link href="/exams">Sınav Hazırlık</Link></div>
         <div><h4>Deutschimo</h4><Link href="/">Hakkımızda</Link><Link href="/">Eğitmenler</Link><Link href="/">Kurumsal</Link><Link href="/">Kariyer</Link></div>
-        <div><h4>Destek</h4><Link href="/">Yardım Merkezi</Link><Link href="/">Gizlilik</Link><Link href="/">Kullanım Şartları</Link><Link href="/profile">Hesap Ayarları</Link></div>
+        <div><h4>Destek</h4><Link href="/">Yardım Merkezi</Link><Link href="/privacy">Gizlilik</Link><Link href="/kvkk">KVKK</Link><Link href="/cookies">Çerezler</Link><Link href="/terms">Kullanım Şartları</Link><Link href="/profile">Hesap Ayarları</Link></div>
       </div>
     </footer>
   );

@@ -1,3 +1,4 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { getApiUser } from "@/lib/auth/authorization";
@@ -5,7 +6,7 @@ import type { Level } from "@prisma/client";
 
 const levels = new Set(["A1", "A2", "B1", "B2"]);
 
-export async function GET() {
+async function GETHandler() {
   const currentUser = await getApiUser();
   if (!currentUser) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const user = await prisma.user.findUnique({
@@ -15,7 +16,7 @@ export async function GET() {
   return NextResponse.json({ user });
 }
 
-export async function PATCH(request: Request) {
+async function PATCHHandler(request: Request) {
   const currentUser = await getApiUser();
   if (!currentUser) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const body = await request.json() as Record<string, unknown>;
@@ -32,3 +33,6 @@ export async function PATCH(request: Request) {
   });
   return NextResponse.json({ user });
 }
+
+export const GET = withApiMonitoring("/api/profile", GETHandler);
+export const PATCH = withApiMonitoring("/api/profile", PATCHHandler);

@@ -3,6 +3,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Providers } from "@/app/providers";
+import { CookieBanner } from "@/components/security/cookie-banner";
 
 export const metadata: Metadata = {
   title: "Deutschimo | Sistemli Almanca Öğren",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <SiteHeader />
           <main>{children}</main>
           <MobileNav />
+          <CookieBanner />
         </Providers>
       </body>
     </html>

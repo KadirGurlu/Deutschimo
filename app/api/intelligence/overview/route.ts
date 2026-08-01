@@ -1,8 +1,9 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { getApiUser } from "@/lib/auth/authorization";
 import { getOrCreateDailyPlan, getOrRefreshReviewState, latestPlacement, refreshInsights } from "@/lib/intelligence/server";
 
-export async function GET(request: Request) {
+async function GETHandler(request: Request) {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const url = new URL(request.url);
@@ -22,3 +23,5 @@ export async function GET(request: Request) {
     },
   });
 }
+
+export const GET = withApiMonitoring("/api/intelligence/overview", GETHandler);

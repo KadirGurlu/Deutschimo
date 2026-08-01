@@ -1,14 +1,19 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { hashPassword, validatePassword } from "@/lib/auth/password";
 import { createSecureToken, hashToken } from "@/lib/auth/tokens";
 import { sendTransactionalEmail } from "@/lib/email/resend";
 import type { Level } from "@prisma/client";
+import { consumeRateLimit } from "@/lib/security/rate-limit";
+import { getClientIp } from "@/lib/security/request";
 
 const levels = new Set(["A1", "A2", "B1", "B2"]);
 
-export async function POST(request: Request) {
+async function POSTHandler(request: Request) {
   try {
+    const limited = await consumeRateLimit({ scope: "register", key: getClientIp(request), limit: 5, windowSeconds: 3600 });
+    if (!limited.allowed) return NextResponse.json({ error: "Çok fazla kayıt denemesi. Daha sonra tekrar dene." }, { status: 429, headers: { "Retry-After": String(limited.retryAfterSeconds) } });
     const body = await request.json() as Record<string, unknown>;
     const firstName = String(body.firstName ?? "").trim();
     const lastName = String(body.lastName ?? "").trim();
@@ -42,6 +47,8 @@ export async function POST(request: Request) {
         status: requireVerification ? "PENDING_VERIFICATION" : "ACTIVE",
         emailVerified: requireVerification ? null : new Date(),
         lastSeenAt: new Date(),
+        privacyAcceptedAt: new Date(),
+        isTestUser: Boolean(body.isTestUser) && process.env.NODE_ENV !== "production",
       },
       select: { id: true, email: true, firstName: true },
     });
@@ -66,3 +73,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Hesap oluşturulamadı. Veritabanı bağlantısını ve ortam değişkenlerini kontrol et." }, { status: 500 });
   }
 }
+
+export const POST = withApiMonitoring("/api/auth/register", POSTHandler);

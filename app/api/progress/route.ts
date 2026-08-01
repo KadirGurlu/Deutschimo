@@ -1,3 +1,4 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
@@ -5,14 +6,14 @@ import { getApiUser } from "@/lib/auth/authorization";
 import { normalizeLearningStateForUser } from "@/lib/learning/server-state";
 import type { LearningState } from "@/types/progress";
 
-export async function GET() {
+async function GETHandler() {
   const currentUser = await getApiUser();
   if (!currentUser) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const snapshot = await prisma.learningStateSnapshot.findUnique({ where: { userId: currentUser.id } });
   return NextResponse.json({ state: snapshot?.state ?? null, updatedAt: snapshot?.updatedAt.toISOString() });
 }
 
-export async function PUT(request: Request) {
+async function PUTHandler(request: Request) {
   const currentUser = await getApiUser();
   if (!currentUser) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const body = await request.json() as { state?: LearningState };
@@ -96,3 +97,6 @@ export async function PUT(request: Request) {
 
   return NextResponse.json({ ok: true, updatedAt: new Date().toISOString() });
 }
+
+export const GET = withApiMonitoring("/api/progress", GETHandler);
+export const PUT = withApiMonitoring("/api/progress", PUTHandler);

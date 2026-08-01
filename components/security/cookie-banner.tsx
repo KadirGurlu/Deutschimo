@@ -1,0 +1,4 @@
+"use client";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+export function CookieBanner(){const[visible,setVisible]=useState(false);useEffect(()=>setVisible(!localStorage.getItem("deutschimo-cookie-consent-v1")),[]);function save(value:"essential"|"all"){localStorage.setItem("deutschimo-cookie-consent-v1",JSON.stringify({value,at:new Date().toISOString()}));setVisible(false);}if(!visible)return null;return <div className="cookie-banner" role="dialog" aria-label="Çerez tercihleri"><div><strong>Çerez tercihleri</strong><p>Deutschimo oturum ve öğrenme ilerlemesi için zorunlu çerezler kullanır. İsteğe bağlı analitik çerezler şu anda kapalıdır.</p><Link href="/cookies">Çerez politikasını incele</Link></div><div><button className="button button-secondary" onClick={()=>save("essential")}>Yalnızca Zorunlu</button><button className="button button-primary" onClick={()=>save("all")}>Tümünü Kabul Et</button></div></div>}

@@ -70,6 +70,10 @@ model User {
   targetLevel         Level                     @default(B2)
   dailyGoalMinutes    Int                       @default(30)
   onboardingCompleted Boolean                   @default(false)
+  isTestUser          Boolean                   @default(false)
+  privacyAcceptedAt   DateTime?
+  cookieConsentAt     DateTime?
+  accountDeletionRequestedAt DateTime?
   lastSeenAt          DateTime?
   createdAt           DateTime                  @default(now())
   updatedAt           DateTime                  @updatedAt
@@ -340,4 +344,107 @@ model SmartReviewState {
   generatedAt  DateTime @default(now())
   updatedAt    DateTime @updatedAt
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  actorUserId String?
+  actorEmail  String?
+  action      String
+  entityType  String
+  entityId    String?
+  summary     String
+  before      Json?
+  after       Json?
+  metadata    Json?
+  ipHash      String?
+  createdAt   DateTime @default(now())
+
+  @@index([actorUserId, createdAt])
+  @@index([action, createdAt])
+  @@index([entityType, entityId])
+}
+
+model SystemErrorLog {
+  id          String   @id @default(cuid())
+  source      String
+  route       String?
+  method      String?
+  message     String   @db.Text
+  stack       String?  @db.Text
+  digest      String?
+  fingerprint String?
+  requestId   String?
+  ipHash      String?
+  metadata    Json?
+  createdAt   DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([fingerprint, createdAt])
+}
+
+model ApiFailureLog {
+  id         String   @id @default(cuid())
+  route      String
+  method     String
+  statusCode Int
+  requestId  String?
+  ipHash     String?
+  userAgent  String?
+  message    String?
+  createdAt  DateTime @default(now())
+
+  @@index([route, createdAt])
+  @@index([statusCode, createdAt])
+}
+
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  emailHash String
+  ipHash    String
+  success   Boolean  @default(false)
+  reason    String?
+  createdAt DateTime @default(now())
+
+  @@index([emailHash, createdAt])
+  @@index([ipHash, createdAt])
+}
+
+model RateLimitEvent {
+  id        String   @id @default(cuid())
+  scope     String
+  keyHash   String
+  createdAt DateTime @default(now())
+
+  @@index([scope, keyHash, createdAt])
+}
+
+model DatabaseBackup {
+  id              String   @id @default(cuid())
+  status          String
+  storageProvider String?
+  pathname        String?
+  downloadUrl     String?
+  checksum        String?
+  byteSize        Int?
+  tableCounts     Json?
+  errorMessage    String?  @db.Text
+  startedAt       DateTime @default(now())
+  completedAt     DateTime?
+
+  @@index([startedAt])
+  @@index([status, startedAt])
+}
+
+model AccountDeletionLog {
+  id            String   @id @default(cuid())
+  userIdHash    String
+  emailHash     String?
+  deletionType  String
+  requestedAt   DateTime @default(now())
+  completedAt   DateTime?
+  metadata      Json?
+
+  @@index([requestedAt])
 }

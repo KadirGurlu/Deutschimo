@@ -1,3 +1,4 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { placementQuestions } from "@/data/placement-test";
@@ -6,13 +7,13 @@ import { prisma } from "@/lib/db";
 import { evaluatePlacement } from "@/lib/intelligence/placement";
 import { latestPlacement } from "@/lib/intelligence/server";
 
-export async function GET() {
+async function GETHandler() {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   return NextResponse.json({ questions: placementQuestions.map(({ correctAnswer: _correct, explanation: _explanation, ...question }) => question), latest: await latestPlacement(user.id) });
 }
 
-export async function POST(request: Request) {
+async function POSTHandler(request: Request) {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const body = await request.json() as { answers?: Record<string, string> };
@@ -42,3 +43,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ result: { ...result, id: saved.id, completedAt: saved.completedAt.toISOString() } });
 }
+
+export const GET = withApiMonitoring("/api/intelligence/placement", GETHandler);
+export const POST = withApiMonitoring("/api/intelligence/placement", POSTHandler);

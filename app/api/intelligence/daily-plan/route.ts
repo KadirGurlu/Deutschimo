@@ -1,3 +1,4 @@
+import { withApiMonitoring } from "@/lib/security/api-monitor";
 import { NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { getApiUser } from "@/lib/auth/authorization";
@@ -9,7 +10,7 @@ function validDate(value: string | null) {
   return value && /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : new Date().toISOString().slice(0, 10);
 }
 
-export async function GET(request: Request) {
+async function GETHandler(request: Request) {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const url = new URL(request.url);
@@ -24,7 +25,7 @@ export async function GET(request: Request) {
   return NextResponse.json({ plan });
 }
 
-export async function PATCH(request: Request) {
+async function PATCHHandler(request: Request) {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const body = await request.json() as { planDate?: string; taskId?: string; completed?: boolean };
@@ -40,3 +41,6 @@ export async function PATCH(request: Request) {
   });
   return NextResponse.json({ plan: { id: updated.id, planDate, goalMinutes: updated.goalMinutes, plannedMinutes: updated.plannedMinutes, completedMinutes, tasks, generatedAt: updated.generatedAt.toISOString() } });
 }
+
+export const GET = withApiMonitoring("/api/intelligence/daily-plan", GETHandler);
+export const PATCH = withApiMonitoring("/api/intelligence/daily-plan", PATCHHandler);

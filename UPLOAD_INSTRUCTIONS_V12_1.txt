@@ -1,0 +1,19 @@
+DEUTSCHIMO V12.1 YÜKLEME
+
+1. Güncelleme ZIP dosyasını çıkart.
+2. GitHub Desktop > Repository > Show in Explorer.
+3. ZIP içeriğini Deutschimo klasörüne kopyala, aynı dosyaları değiştir.
+4. Summary: Add Deutschimo V12.1 stabilization and security
+5. Commit to main > Push origin.
+6. Vercel deployment Ready olana kadar bekle.
+
+YENİ ORTAM DEĞİŞKENLERİ
+SECURITY_HASH_KEY=<uzun rastgele değer>
+CRON_SECRET=<uzun rastgele değer>
+BACKUP_ENCRYPTION_KEY=<32 rastgele baytın Base64 değeri>
+BOOTSTRAP_ADMIN_ON_BUILD=false
+
+YEDEK İÇİN
+Vercel > Storage > Blob > Private oluştur ve Deutschimo projesine Production ve Preview ortamlarında bağla. Yeni Vercel Blob bağlantılarında OIDC kullanılır ve BLOB_STORE_ID otomatik eklenir. BLOB_READ_WRITE_TOKEN yalnızca Vercel dışı çalışma için isteğe bağlıdır.
+
+NOT: Mevcut DATABASE_URL değişmez; kullanıcılar ve ilerleme verileri silinmez. Prisma yalnızca yeni tabloları/alanları ekler.

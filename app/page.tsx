@@ -15,10 +15,10 @@ const goals = [
 ] as const;
 
 const levels = [
-  ["A1", "Almancaya Başlangıç", "12 hafta", "12 ünite", "120 alıştırma"],
-  ["A2", "Temel İletişim", "16 hafta", "16 ünite", "160 alıştırma"],
-  ["B1", "Bağımsız Dil Kullanımı", "18 hafta", "18 ünite", "180 alıştırma"],
-  ["B2", "Akademik ve Profesyonel", "20 hafta", "20 ünite", "200 alıştırma"]
+  ["A1", "Almancaya Başlangıç", "12 hafta", "12 ünite", "168 alıştırma"],
+  ["A2", "Temel İletişim", "16 hafta", "16 ünite", "224 alıştırma"],
+  ["B1", "Bağımsız Dil Kullanımı", "18 hafta", "18 ünite", "252 alıştırma"],
+  ["B2", "Akademik ve Profesyonel", "20 hafta", "20 ünite", "280 alıştırma"]
 ] as const;
 
 const skillItems = [

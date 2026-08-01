@@ -1,4 +1,5 @@
 import { getCurriculumContent } from "@/data/curriculum-content";
+import { getV16UnitContent } from "@/data/v16-content-bank";
 import { units } from "@/data/units";
 import type { Unit } from "@/types/course";
 import type { Exercise, ExerciseOption, ExerciseType, UnitQuiz, UnitQuizQuestion } from "@/types/exercise";
@@ -278,9 +279,90 @@ function createExercise(unit: Unit, order: number, type: ExerciseType): Exercise
   }
 }
 
-export const exercises: Exercise[] = units.flatMap((unit) =>
+const baseExercises: Exercise[] = units.flatMap((unit) =>
   exerciseTypes(unit.courseId).map((type, index) => createExercise(unit, index + 1, type)),
 );
+
+function v16MultipleChoiceExercise(
+  unit: Unit,
+  order: number,
+  title: string,
+  prompt: string,
+  choices: string[],
+  correctAnswer: string,
+  explanation: string,
+  relatedSlideId: string,
+): Exercise {
+  return {
+    id: `${unit.id}-v16-e${order}`,
+    unitId: unit.id,
+    groupId: `${unit.id}-practice-v16`,
+    order,
+    type: "MULTIPLE_CHOICE",
+    title,
+    prompt,
+    options: choices.map((item, index) => option(`v16-${order}-${index + 1}`, item)),
+    correctAnswer,
+    explanation,
+    relatedSlideId,
+    isRequired: true,
+    maxAttempts: 2,
+    points: 10,
+  };
+}
+
+function createV16Exercises(unit: Unit): Exercise[] {
+  const v16 = getV16UnitContent(unit.id);
+  const content = getCurriculumContent(unit.id);
+  if (!v16) return [];
+
+  if (unit.courseId === "a1") {
+    const addedVocabulary = content.vocabulary.slice(-2).map(parseVocabulary);
+    const first = addedVocabulary[0] ?? parseVocabulary(content.vocabulary[0]);
+    const second = addedVocabulary[1] ?? parseVocabulary(content.vocabulary[1]);
+    const otherMeanings = content.vocabulary.map(parseVocabulary).map((item) => item.tr);
+    return [
+      v16MultipleChoiceExercise(
+        unit, 11, "Dil ve günlük yaşam", "Ünitenin günlük yaşam notuna göre doğru bilgi hangisidir?",
+        [v16.cultureNote.text, "Her durumda yalnızca tek bir hitap biçimi kullanılabilir.", "Saat ve tarih bilgileri Almancada hiçbir zaman tekrar edilmez."],
+        v16.cultureNote.text, `Doğru bilgi şudur: ${v16.cultureNote.text}`, `${unit.id}-s1`,
+      ),
+      v16MultipleChoiceExercise(
+        unit, 12, "Yeni kelimeyi bağlamda tanı", `“${first.de}” ifadesinin Türkçe karşılığı hangisidir?`,
+        makeChoices(first.tr, otherMeanings.filter((item) => item !== first.tr), unitSeed(unit, 112), "Alternatif anlam"),
+        first.tr, `“${first.de}” bu ünitede “${first.tr}” anlamıyla kullanılır.`, `${unit.id}-s2`,
+      ),
+      v16MultipleChoiceExercise(
+        unit, 13, "İkinci yeni kelime", `“${second.de}” ifadesinin Türkçe karşılığı hangisidir?`,
+        makeChoices(second.tr, otherMeanings.filter((item) => item !== second.tr), unitSeed(unit, 113), "Alternatif anlam"),
+        second.tr, `“${second.de}” bu ünitede “${second.tr}” anlamıyla kullanılır.`, `${unit.id}-s2`,
+      ),
+      {
+        id: `${unit.id}-v16-e14`, unitId: unit.id, groupId: `${unit.id}-practice-v16`, order: 14,
+        type: "SHORT_ANSWER", title: "Gerçek yaşam görevi", prompt: v16.realLifeMission,
+        correctAnswer: "öğretmen değerlendirmesi", acceptedAnswers: [], explanation: "Yanıt; göreve uygunluk, anlaşılabilirlik, ünitenin kelimelerini kullanma ve seviyeye uygun cümle kurma bakımından değerlendirilir.",
+        relatedSlideId: `${unit.id}-s14`, isRequired: true, maxAttempts: 3, points: 10,
+      },
+    ];
+  }
+
+  const selected = [v16.readingQuestions[0], v16.readingQuestions[1], v16.listeningQuestions[0], v16.listeningQuestions[2]];
+  return selected.map((question, index) => v16MultipleChoiceExercise(
+    unit,
+    11 + index,
+    index < 2 ? "Okuduğunu anlama" : "Dinlediğini anlama",
+    question.prompt,
+    question.options ?? [question.correctAnswer],
+    question.correctAnswer,
+    question.explanation,
+    index < 2 ? `${unit.id}-s9` : `${unit.id}-s10`,
+  ));
+}
+
+export const exercises: Exercise[] = units.flatMap((unit) => [
+  ...baseExercises.filter((exercise) => exercise.unitId === unit.id),
+  ...createV16Exercises(unit),
+]);
 
 function grammarQuestion(unit: Unit, content: CurriculumUnitContent): UnitQuizQuestion {
   const personColumn = content.grammarColumns[0];
@@ -412,6 +494,48 @@ function quizGrammarChoice(unit: Unit, content: CurriculumUnitContent): UnitQuiz
   };
 }
 
+function v16QuizQuestion(unit: Unit, order: number, title: string, question: { prompt: string; options?: string[]; correctAnswer: string; explanation: string }, relatedSlideId: string): UnitQuizQuestion {
+  return {
+    id: `${unit.id}-v16-q${order}`,
+    type: "MULTIPLE_CHOICE",
+    prompt: question.prompt,
+    options: (question.options ?? [question.correctAnswer]).map((item, index) => option(`v16-q${order}-${index + 1}`, item)),
+    correctAnswer: question.correctAnswer,
+    topic: title,
+    relatedSlideId,
+    explanation: question.explanation,
+  };
+}
+
+function createV16QuizQuestions(unit: Unit, content: CurriculumUnitContent): UnitQuizQuestion[] {
+  const v16 = getV16UnitContent(unit.id);
+  if (!v16) return [];
+  if (unit.courseId === "a1") {
+    const newVocabulary = content.vocabulary.slice(-2).map(parseVocabulary);
+    const allMeanings = content.vocabulary.map(parseVocabulary).map((item) => item.tr);
+    const cultureQuestion = {
+      prompt: "Ünitenin günlük yaşam notuna göre doğru bilgi hangisidir?",
+      options: [v16.cultureNote.text, "Bütün günlük durumlarda yalnızca resmî dil kullanılır.", "Almancada bağlama göre ifade seçimine gerek yoktur."],
+      correctAnswer: v16.cultureNote.text,
+      explanation: `Doğru bilgi şudur: ${v16.cultureNote.text}`,
+    };
+    return [
+      v16QuizQuestion(unit, 8, "Kültür ve kullanım", cultureQuestion, `${unit.id}-s1`),
+      ...newVocabulary.slice(0, 2).map((entry, index) => v16QuizQuestion(unit, 9 + index, "Wörter", {
+        prompt: `“${entry.de}” ifadesinin doğru Türkçe karşılığı hangisidir?`,
+        options: makeChoices(entry.tr, allMeanings.filter((item) => item !== entry.tr), unitSeed(unit, 190 + index), "Alternatif anlam"),
+        correctAnswer: entry.tr,
+        explanation: `“${entry.de}” ifadesi “${entry.tr}” anlamına gelir.`,
+      }, `${unit.id}-s2`)),
+    ];
+  }
+  return [
+    v16QuizQuestion(unit, 8, "Lesen", v16.readingQuestions[2], `${unit.id}-s9`),
+    v16QuizQuestion(unit, 9, "Hören", v16.listeningQuestions[0], `${unit.id}-s10`),
+    v16QuizQuestion(unit, 10, "Hören", v16.listeningQuestions[2], `${unit.id}-s10`),
+  ];
+}
+
 export const quizzes: UnitQuiz[] = units.map((unit) => {
   const content = getCurriculumContent(unit.id);
   const meaningExample = content.examples[1 % content.examples.length];
@@ -439,6 +563,7 @@ export const quizzes: UnitQuiz[] = units.map((unit) => {
       explanation: `“${meaningExample.de}” cümlesinin anlamı “${meaningExample.tr}”dır. Çeviride yalnızca tek kelimeye değil, cümlenin tamamındaki özne-fiil ve tamamlayıcı ilişkisine bakılmalıdır.`,
     },
     quizVocabularyFill(unit, content),
+    ...createV16QuizQuestions(unit, content),
   ];
 
   return {
@@ -452,5 +577,5 @@ export const quizzes: UnitQuiz[] = units.map((unit) => {
   };
 });
 
-export const exercisesPerUnit = 10;
-export const totalExerciseCounts = { A1: 120, A2: 160, B1: 180, B2: 200 } as const;
+export const exercisesPerUnit = 14;
+export const totalExerciseCounts = { A1: 168, A2: 224, B1: 252, B2: 280 } as const;

@@ -1,5 +1,6 @@
 import type { Unit } from "@/types/course";
 import type { BilingualText, CurriculumExample, DialogueTurn } from "@/types/content";
+import { getV16UnitContent } from "@/data/v16-content-bank";
 
 const germanTitles: Record<string, string> = {
   "a1-u01": "Kennenlernen und Begrüßung",
@@ -178,6 +179,8 @@ function naturalizePair(example: CurriculumExample, index: number, unit: Unit): 
 export function buildNaturalDialogue(content: { examples: CurriculumExample[] }, unit: Unit): DialogueTurn[] {
   const scene = scenes[unit.id];
   if (scene) return scene.dialogue;
+  const v16 = getV16UnitContent(unit.id);
+  if (v16) return v16.dialogue;
   const examples = content.examples.slice(0, 4).map((item, index) => naturalizePair(item, index, unit));
   const topic = germanTopicTitle(unit);
   if (unit.courseId === "a2") {
@@ -201,6 +204,8 @@ export function buildNaturalDialogue(content: { examples: CurriculumExample[] },
 export function buildNaturalReading(content: { examples: CurriculumExample[] }, unit: Unit): BilingualText {
   const scene = scenes[unit.id];
   if (scene) return scene.reading;
+  const v16 = getV16UnitContent(unit.id);
+  if (v16) return v16.reading;
   const examples = content.examples.slice(0, 4).map((item, index) => naturalizePair(item, index + 2, unit));
   const topic = germanTopicTitle(unit);
   const de = unit.courseId === "a2"
@@ -215,6 +220,8 @@ export function buildNaturalReading(content: { examples: CurriculumExample[] }, 
 export function buildNaturalListening(content: { examples: CurriculumExample[] }, unit: Unit): BilingualText {
   const scene = scenes[unit.id];
   if (scene) return scene.listening;
+  const v16 = getV16UnitContent(unit.id);
+  if (v16) return v16.listening;
   const examples = content.examples.slice(0, 3).map((item, index) => naturalizePair(item, index + 5, unit));
   const topic = germanTopicTitle(unit);
   if (unit.courseId === "a2") {

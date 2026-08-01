@@ -1,6 +1,6 @@
 {
   "name": "deutschimo-platform",
-  "version": "14.0.0",
+  "version": "16.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,7 +22,9 @@
     "db:bootstrap-admin": "node prisma/seed.mjs",
     "validate:v12.1": "node scripts/validate-v12-1.mjs",
     "validate:v13": "node scripts/validate-v13.mjs",
-    "validate:v14": "node scripts/validate-v14.mjs"
+    "validate:v14": "node scripts/validate-v14.mjs",
+    "validate:v16": "node scripts/validate-v16.mjs",
+    "validate:v16:types": "tsc -p tsconfig.v16-check.json"
   },
   "prisma": {
     "seed": "node prisma/seed.mjs"

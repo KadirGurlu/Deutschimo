@@ -22,11 +22,11 @@ aktif hâle gelir.
 
 | Seviye | Ünite | Ders slaytı | Ana alıştırma | Konu sonu kontrolü | Quiz sorusu |
 |---|---:|---:|---:|---:|---:|
-| A1 | 12 | 180 | 120 | 108 | 84 |
-| A2 | 16 | 240 | 160 | 144 | 112 |
-| B1 | 18 | 270 | 180 | 162 | 126 |
-| B2 | 20 | 300 | 200 | 180 | 140 |
-| **Toplam** | **66** | **990** | **660** | **594** | **462** |
+| A1 | 12 | 180 | 168 | 108 | 120 |
+| A2 | 16 | 240 | 224 | 144 + 96 okuma/dinleme | 160 |
+| B1 | 18 | 270 | 252 | 162 + 108 okuma/dinleme | 180 |
+| B2 | 20 | 300 | 280 | 180 + 120 okuma/dinleme | 200 |
+| **Toplam** | **66** | **990** | **924** | **918 kontrol sorusu** | **660** |
 
 ## Teknoloji
 
@@ -59,6 +59,8 @@ npm run validate:v9
 npm run validate:v10
 npm run validate:v11
 npm run validate:v12
+npm run validate:v16
+npm run validate:v16:types
 npm run build
 ```
 
@@ -76,3 +78,8 @@ Ayrıntılı değişiklikler için `CHANGELOG_V12.md`, yükleme için `UPLOAD_IN
 ## V14 — Gelişmiş kelime öğrenme
 
 V14, kişisel kelime defterine aralıklı tekrar, yedi görev türü, ayrıntılı fiil/isim bilgileri, hata geçmişi ve otomatik sonraki tekrar planlaması ekler. Ayrıntılar için `CHANGELOG_V14.md` dosyasına bakın.
+
+
+## V16 — İçerik odaklı genişleme
+
+V16, A1–B2 kapsamındaki 66 ünitenin içerik yoğunluğunu artırır. Her üniteye CEFR/GER hedefleri, en az 10 kelime, kültür ve günlük yaşam notu, özgün bağlam, okuma/dinleme çalışmaları, seviyeye uygun yazma-konuşma görevleri ve gerçek yaşam aktarım görevi eklenmiştir. Ünite başına ana alıştırma sayısı 14'e, ünite sonu değerlendirmesi 10 soruya çıkarılmıştır. Ayrıntılar için `CHANGELOG_V16.md`, kaynak yaklaşımı için `docs/V16_CONTENT_SOURCES.md` dosyasına bakın.

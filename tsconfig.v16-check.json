@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [],
+    "lib": [
+      "ES2023",
+      "DOM"
+    ]
+  },
+  "files": [
+    "data/slides.ts",
+    "data/exercises.ts",
+    "data/v16-content-bank.ts",
+    "lib/learning/topic-content.ts",
+    "types/v16-content.ts"
+  ]
+}

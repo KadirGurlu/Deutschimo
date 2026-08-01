@@ -1,4 +1,5 @@
 import { getCurriculumContent } from "@/data/curriculum-content";
+import { getV16UnitContent } from "@/data/v16-content-bank";
 import { units } from "@/data/units";
 import type { Unit } from "@/types/course";
 import type { ContentBlock, LessonSlide } from "@/types/learning";
@@ -222,6 +223,9 @@ function sanitizeGrammarColumns(columns: { header: string; values: string[] }[])
 function createUnitSlides(unit: Unit): LessonSlide[] {
   const unitId = unit.id;
   const content = getCurriculumContent(unitId);
+  const v16Content = getV16UnitContent(unitId);
+  const v16ReadingQuestions = unit.courseId === "a1" ? [] : (v16Content?.readingQuestions ?? []);
+  const v16ListeningQuestions = unit.courseId === "a1" ? [] : (v16Content?.listeningQuestions ?? []);
   const level = unit.courseId.toUpperCase();
   const vocabulary = buildRichVocabulary(content, unit);
   const useCases = buildUseCases(unit);
@@ -263,6 +267,10 @@ function createUnitSlides(unit: Unit): LessonSlide[] {
         block(`${unitId}-intro-use`, "summary", { title: "Günlük hayatta kullanım alanları", items: useCases }),
         block(`${unitId}-intro-goals`, "summary", { title: "Ünite sonunda kazanacağın beceriler", items: content.goals }),
         block(`${unitId}-intro-prerequisites`, "tip_box", { title: "Başlamadan önce", text: prerequisites.join(" • ") }),
+        ...(v16Content ? [block(`${unitId}-culture-note`, "info_box", {
+          title: v16Content.cultureNote.title,
+          text: v16Content.cultureNote.text,
+        })] : []),
       ],
     },
     {
@@ -407,6 +415,10 @@ function createUnitSlides(unit: Unit): LessonSlide[] {
           text: "Metnin ana fikrini Türkçe bir cümleyle yaz. Ardından Almanca iki anahtar kelime ve bir çekimli fiil seç.",
           checklist: ["Metin kimin veya neyin hakkında?", "En önemli bilgi nedir?", "Hangi cümle ünitenin dil bilgisi yapısını gösteriyor?"],
         }),
+        ...(v16ReadingQuestions.length ? [block(`${unitId}-reading-v16-questions`, "practice_set", {
+          title: "Okuduğunu anlama soruları",
+          practiceQuestions: v16ReadingQuestions,
+        })] : []),
       ],
     },
     {
@@ -425,6 +437,10 @@ function createUnitSlides(unit: Unit): LessonSlide[] {
           text: "Metni sesli okuyan bir arkadaşını veya tarayıcı telaffuz özelliğini dinle. Duyduğun üç anahtar kelimeyi ve bir önemli bilgiyi not et.",
           checklist: ["Konu", "Kişi/kurum", "Yer veya zaman", "Ana sonuç"],
         }),
+        ...(v16ListeningQuestions.length ? [block(`${unitId}-listening-v16-questions`, "practice_set", {
+          title: "Dinlediğini anlama soruları",
+          practiceQuestions: v16ListeningQuestions,
+        })] : []),
       ],
     },
     {
@@ -436,7 +452,7 @@ function createUnitSlides(unit: Unit): LessonSlide[] {
         block(`${unitId}-writing-task`, "task_card", {
           title: `${unit.title} hakkında yaz`,
           taskKind: "WRITING",
-          text: `${level === "A1" ? "4-6" : level === "A2" ? "6-8" : level === "B1" ? "90-120 kelimelik" : "140-180 kelimelik"} bir metin yaz. Ünitenin temel kelimelerinden en az üçünü ve “${content.grammarTitle}” yapısını en az bir kez kullan.`,
+          text: v16Content?.writingPrompt ?? `${level === "A1" ? "4-6" : level === "A2" ? "6-8" : level === "B1" ? "90-120 kelimelik" : "140-180 kelimelik"} bir metin yaz. Ünitenin temel kelimelerinden en az üçünü ve “${content.grammarTitle}” yapısını en az bir kez kullan.`,
           checklist: ["Metnin amacı açık mı?", "Cümleler mantıklı sırada mı?", "Fiil ve artikel kullanımları doğru mu?", "Almanca cümlelerin anlamı yazmak istediğin Türkçe düşünceyle uyuşuyor mu?"],
           usefulPhrases: content.examples.slice(0, 3),
         }),
@@ -451,7 +467,7 @@ function createUnitSlides(unit: Unit): LessonSlide[] {
         block(`${unitId}-speaking-task`, "task_card", {
           title: "Konuşma görevi",
           taskKind: "SPEAKING",
-          text: `${unit.title} konusunda 45-90 saniyelik bir konuşma hazırla. Önce üç anahtar kelime yaz, sonra tam cümle kurmadan konuşmayı dene.`,
+          text: v16Content?.speakingPrompt ?? `${unit.title} konusunda 45-90 saniyelik bir konuşma hazırla. Önce üç anahtar kelime yaz, sonra tam cümle kurmadan konuşmayı dene.`,
           checklist: ["En az bir soru cümlesi kullan", "Bir olumlu ve bir olumsuz cümle kur", "Resmî veya samimi hitabı bağlama uygun seç", "Fiil çekimlerini açık söyle"],
           usefulPhrases: content.examples.slice(1, 4),
         }),
@@ -488,6 +504,7 @@ function createUnitSlides(unit: Unit): LessonSlide[] {
             "temel kelimeleri artikel, çoğul ve örnek cümleyle kullanma",
             "olumlu, olumsuz, evet-hayır ve W-sorusu kurma",
             "günlük diyalog, okuma, dinleme, yazma ve konuşma görevleri üretme",
+            ...(v16Content ? [`Gerçek yaşam görevi: ${v16Content.realLifeMission}`] : []),
           ],
         }),
         block(`${unitId}-summary-check`, "info_box", {

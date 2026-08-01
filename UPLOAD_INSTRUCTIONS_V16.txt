@@ -1,0 +1,18 @@
+DEUTSCHIMO V16 — TAM PROJE YÜKLEME
+
+1. Mevcut GitHub Desktop Deutschimo klasörünün bir yedeğini al.
+2. V16 tam proje ZIP dosyasını ayrı bir klasöre çıkar.
+3. Çıkan klasörün İÇİNDEKİ bütün dosya ve klasörleri GitHub Desktop'ın kullandığı Deutschimo yerel klasörüne kopyala.
+4. Windows sorarsa “Dosyaları hedefte değiştir” seçeneğini seç.
+5. .env veya Vercel Environment Variables değerlerini silme/değiştirme.
+6. GitHub Desktop'ta Changes alanında dosyaları kontrol et.
+7. Summary alanına: Add Deutschimo V16 original course content
+8. Commit to main butonuna tıkla.
+9. Push origin butonuna tıkla.
+10. Vercel'in yeni deployment'ı otomatik başlatmasını bekle.
+
+ÖNEMLİ:
+- Veritabanındaki mevcut kullanıcılar bu güncellemeyle silinmez.
+- BOOTSTRAP_ADMIN_ON_BUILD=false olarak kalmalıdır.
+- DATABASE_URL, AUTH_SECRET ve diğer gizli değişkenler ZIP içine eklenmemiştir.
+- İlk kontrolde A1 ve A2'den birer üniteyi aç; diyalog, okuma, dinleme, yeni sorular ve ünite sonu testini dene.

@@ -1,0 +1,22 @@
+DEUTSCHIMO V17.0 YÜKLEME TALİMATI
+
+1. deutschimo-v17-0-guncelleme-paketi.zip dosyasını çıkartın.
+2. GitHub Desktop içinde Deutschimo deposunu seçin.
+3. Repository > Show in Explorer menüsüne tıklayın.
+4. Güncelleme paketindeki bütün dosya ve klasörleri açılan Deutschimo klasörüne kopyalayın.
+5. Windows sorarsa "Hedefteki dosyaları değiştir" seçeneğini kullanın.
+6. GitHub Desktop'a dönün.
+7. .env veya .env.local dosyasının değişiklik listesinde olmadığını kontrol edin.
+8. Summary alanına şunu yazın:
+   Add Deutschimo V17.0 measurement infrastructure
+9. Commit to main butonuna basın.
+10. Push origin butonuna basın.
+11. Vercel yeni deployment'ı otomatik başlatır.
+12. Deployment Ready olduğunda şu sayfaları kontrol edin:
+   /competency
+   /mistakes
+   /dashboard
+
+Yeni environment variable gerekmiyor. V16/V14/V13/V12.1 ayarları kullanılmaya devam eder.
+
+İlk alıştırma veya ünite testi çözülmeden Yetkinlik Haritası boş görünebilir. Bu normaldir; harita gerçek cevaplardan oluşur.

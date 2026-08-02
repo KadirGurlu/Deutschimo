@@ -1,5 +1,6 @@
 import { getCurriculumContent } from "@/data/curriculum-content";
 import { getV16UnitContent } from "@/data/v16-content-bank";
+import { buildAssessmentMetadata } from "@/data/learning-objectives";
 import { units } from "@/data/units";
 import type { Unit } from "@/types/course";
 import type { Exercise, ExerciseOption, ExerciseType, UnitQuiz, UnitQuizQuestion } from "@/types/exercise";
@@ -359,10 +360,20 @@ function createV16Exercises(unit: Unit): Exercise[] {
   ));
 }
 
-export const exercises: Exercise[] = units.flatMap((unit) => [
+const rawExercises: Exercise[] = units.flatMap((unit) => [
   ...baseExercises.filter((exercise) => exercise.unitId === unit.id),
   ...createV16Exercises(unit),
 ]);
+
+export const exercises: Exercise[] = rawExercises.map((exercise) => ({
+  ...exercise,
+  assessment: buildAssessmentMetadata({
+    unitId: exercise.unitId,
+    type: exercise.type,
+    order: exercise.order,
+    topic: exercise.title,
+  }),
+}));
 
 function grammarQuestion(unit: Unit, content: CurriculumUnitContent): UnitQuizQuestion {
   const personColumn = content.grammarColumns[0];
@@ -536,7 +547,7 @@ function createV16QuizQuestions(unit: Unit, content: CurriculumUnitContent): Uni
   ];
 }
 
-export const quizzes: UnitQuiz[] = units.map((unit) => {
+const rawQuizzes: UnitQuiz[] = units.map((unit) => {
   const content = getCurriculumContent(unit.id);
   const meaningExample = content.examples[1 % content.examples.length];
   const meaningChoices = makeChoices(
@@ -576,6 +587,19 @@ export const quizzes: UnitQuiz[] = units.map((unit) => {
     questions,
   };
 });
+
+export const quizzes: UnitQuiz[] = rawQuizzes.map((quiz) => ({
+  ...quiz,
+  questions: quiz.questions.map((question, index) => ({
+    ...question,
+    assessment: buildAssessmentMetadata({
+      unitId: quiz.unitId,
+      type: question.type,
+      order: index + 1,
+      topic: question.topic,
+    }),
+  })),
+}));
 
 export const exercisesPerUnit = 14;
 export const totalExerciseCounts = { A1: 168, A2: 224, B1: 252, B2: 280 } as const;

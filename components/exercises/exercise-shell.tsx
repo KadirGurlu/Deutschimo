@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Bookmark, CheckCircle2, LogOut } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
@@ -9,6 +9,7 @@ import { ExerciseFeedback } from "@/components/exercises/exercise-feedback";
 import { useLearningProgress } from "@/hooks/use-learning-progress";
 import { useContentStore } from "@/hooks/use-content-store";
 import { answersMatch } from "@/lib/learning/answer-normalizer";
+import { recordAssessmentEvidence } from "@/lib/assessment/client";
 import { saveExerciseAttempt, startUnit } from "@/lib/storage/learning-storage";
 import type { Course, Unit } from "@/types/course";
 
@@ -40,6 +41,7 @@ export function ExerciseShell({ course, unit }: { course: Course; unit: Unit }) 
   const [checked, setChecked] = useState(false);
   const [correct, setCorrect] = useState(false);
   const [attempts, setAttempts] = useState(0);
+  const startedAt = useRef(Date.now());
   const exercise = exercises[index];
 
   const exerciseId = exercise?.id;
@@ -51,6 +53,7 @@ export function ExerciseShell({ course, unit }: { course: Course; unit: Unit }) 
     setChecked(false);
     setCorrect(false);
     setAttempts(0);
+    startedAt.current = Date.now();
   }, [course.id, exerciseId, firstSlideId, unit.id]);
 
   const lessonsComplete = unitProgress?.lessonProgress === 100;
@@ -70,10 +73,34 @@ export function ExerciseShell({ course, unit }: { course: Course; unit: Unit }) 
     const teacherEvaluated = exercise.type === "SHORT_ANSWER" || exercise.type === "WRITING_ASSIGNMENT";
     const preparedAnswer = exercise.type === "MATCHING" && typeof answer === "object" && answer !== null ? Object.entries(answer as Record<string, string>).map(([left, right]) => `${left}:${right}`) : exercise.type === "SENTENCE_ORDERING" && Array.isArray(answer) ? answer.join(" ") : answer;
     const isCorrect = teacherEvaluated || answersMatch(preparedAnswer, exercise.correctAnswer, exercise.acceptedAnswers);
+    const attemptNumber = attempts + 1;
     setAttempts((current) => current + 1);
     setCorrect(isCorrect);
     setChecked(true);
-    if (isCorrect || attempts + 1 >= exercise.maxAttempts) saveExerciseAttempt(course.id, unit, slides, exercises, quiz, exercise, preparedAnswer);
+    if (exercise.assessment?.objectiveCodes.length) {
+      void recordAssessmentEvidence({
+        sourceType: "EXERCISE",
+        sourceId: exercise.id,
+        courseId: course.id,
+        unitId: unit.id,
+        level: course.level,
+        objectiveCodes: exercise.assessment.objectiveCodes,
+        topicTags: exercise.assessment.topicTags,
+        skill: exercise.assessment.skill,
+        difficulty: exercise.assessment.difficulty,
+        cognitiveLevel: exercise.assessment.cognitiveLevel,
+        correct: isCorrect,
+        answer: preparedAnswer,
+        correctAnswer: exercise.correctAnswer,
+        explanation: exercise.explanation,
+        relatedSlideId: exercise.relatedSlideId,
+        responseMs: Date.now() - startedAt.current,
+        attemptNumber,
+        pointsPossible: exercise.points,
+        pointsEarned: isCorrect ? exercise.points : 0,
+      });
+    }
+    if (isCorrect || attemptNumber >= exercise.maxAttempts) saveExerciseAttempt(course.id, unit, slides, exercises, quiz, exercise, preparedAnswer);
   };
 
   const next = () => {
@@ -92,6 +119,7 @@ export function ExerciseShell({ course, unit }: { course: Course; unit: Unit }) 
     <article className="exercise-step-card">
       <div className="exercise-step-label"><span>{typeLabels[exercise.type]}</span><small>{exercise.points} puan · En fazla {exercise.maxAttempts} deneme</small></div>
       <h2>{exercise.title}</h2><p className="exercise-prompt">{exercise.prompt}</p>
+      {exercise.assessment ? <div className="assessment-tag-row"><span>{exercise.assessment.skill}</span><span>Zorluk {exercise.assessment.difficulty}/5</span><span>{exercise.assessment.cognitiveLevel}</span></div> : null}
       <ExerciseRenderer key={exercise.id} exercise={exercise} value={answer} onChange={(value) => { setAnswer(value); setChecked(false); setCorrect(false); }} disabled={accepted}/>
       {checked ? <ExerciseFeedback correct={correct || alreadySubmitted} explanation={exercise.explanation} correctAnswer={exercise.correctAnswer} relatedSlideHref={`/learn/${course.id}/${unit.id}`} canRetry={!accepted}/> : null}
       <div className="exercise-step-actions"><Link href={`/learn/${course.id}/${unit.id}`}><ArrowLeft size={17}/> Ders Notlarına Dön</Link><div>{!accepted ? <button className="button button-primary" disabled={!isAnswerValid} onClick={check}>Kontrol Et</button> : index === exercises.length - 1 ? <Link className="button button-primary" href={`/learn/${course.id}/${unit.id}/quiz`}>Ünite Testine Geç <ArrowRight size={18}/></Link> : <button className="button button-primary" onClick={next}>Sonraki Alıştırma <ArrowRight size={18}/></button>}</div></div>

@@ -42,6 +42,34 @@ enum ContentStatus {
   ARCHIVED
 }
 
+
+enum AssessmentSourceType {
+  EXERCISE
+  UNIT_QUIZ
+  SKILL_LAB
+  PLACEMENT
+  SMART_REVIEW
+}
+
+enum AssessmentSkill {
+  GRAMMAR
+  VOCABULARY
+  COMMUNICATION
+  READING
+  LISTENING
+  WRITING
+  SPEAKING
+  PRONUNCIATION
+}
+
+enum CognitiveLevel {
+  REMEMBER
+  UNDERSTAND
+  APPLY
+  ANALYZE
+  CREATE
+}
+
 enum ExerciseType {
   MULTIPLE_CHOICE
   MULTIPLE_SELECT
@@ -93,6 +121,9 @@ model User {
   skillLabAttempts      SkillLabAttempt[]
   vocabularyNotebook    VocabularyNotebookItem[]
   vocabularyReviewAttempts VocabularyReviewAttempt[]
+  assessmentEvidence     AssessmentEvidence[]
+  competencies           CompetencyRecord[]
+  learningErrors         LearningErrorHistory[]
 
   @@index([role, status])
   @@index([createdAt])
@@ -530,3 +561,90 @@ model VocabularyReviewAttempt {
   @@index([itemId, createdAt])
   @@index([rating, createdAt])
 }
+
+model AssessmentEvidence {
+  id               String               @id @default(cuid())
+  userId           String
+  user             User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sourceType       AssessmentSourceType
+  sourceId         String
+  courseId         String
+  unitId           String?
+  level            Level
+  skill            AssessmentSkill
+  difficulty       Int
+  cognitiveLevel   CognitiveLevel
+  objectiveCodes   Json
+  topicTags        Json
+  correct          Boolean
+  answer           Json?
+  correctAnswer    Json?
+  explanation      String?              @db.Text
+  relatedSlideId   String?
+  responseMs       Int?
+  attemptNumber    Int                  @default(1)
+  pointsPossible   Int                  @default(10)
+  pointsEarned     Int                  @default(0)
+  createdAt        DateTime             @default(now())
+
+  @@index([userId, createdAt])
+  @@index([userId, skill, createdAt])
+  @@index([sourceType, sourceId])
+  @@index([unitId, createdAt])
+}
+
+model CompetencyRecord {
+  id               String          @id @default(cuid())
+  userId           String
+  user             User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  objectiveCode    String
+  unitId           String?
+  level            Level
+  skill            AssessmentSkill
+  topic            String
+  mastery          Int             @default(0)
+  confidence       Int             @default(0)
+  points           Int             @default(0)
+  evidenceCount    Int             @default(0)
+  correctCount     Int             @default(0)
+  incorrectCount   Int             @default(0)
+  averageResponseMs Int?
+  lastEvidenceAt   DateTime?
+  nextReviewAt     DateTime?
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+
+  @@unique([userId, objectiveCode])
+  @@index([userId, mastery])
+  @@index([userId, skill])
+  @@index([objectiveCode])
+}
+
+model LearningErrorHistory {
+  id               String               @id @default(cuid())
+  userId           String
+  user             User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sourceType       AssessmentSourceType
+  sourceId         String
+  courseId         String
+  unitId           String?
+  level            Level
+  skill            AssessmentSkill
+  objectiveCode    String
+  topic            String
+  userAnswer       Json?
+  correctAnswer    Json?
+  explanation      String?              @db.Text
+  relatedSlideId   String?
+  occurrenceCount  Int                  @default(1)
+  firstOccurredAt  DateTime             @default(now())
+  lastOccurredAt   DateTime             @default(now())
+  resolvedAt       DateTime?
+  metadata         Json?
+
+  @@unique([userId, sourceType, sourceId, objectiveCode])
+  @@index([userId, resolvedAt, lastOccurredAt])
+  @@index([objectiveCode, lastOccurredAt])
+  @@index([unitId, lastOccurredAt])
+}
+

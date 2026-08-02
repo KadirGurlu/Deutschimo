@@ -1,3 +1,8 @@
+# Deutschimo V17.0
+
+V17.0, V16'nın 66 üniteli içerik yapısını ölçülebilir öğrenme hedeflerine bağlar. Her alıştırma ve quiz sorusu konu, beceri, zorluk ve bilişsel düzey etiketleri taşır; kullanıcı cevapları yetkinlik puanına ve kişisel hata geçmişine dönüştürülür.
+
+Yeni ekranlar: `/competency` ve `/mistakes`. Ayrıntılar için `CHANGELOG_V17.md` dosyasına bakın.
 
 ## V13 — Beceri Laboratuvarları
 

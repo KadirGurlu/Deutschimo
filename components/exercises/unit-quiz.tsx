@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AlertTriangle, ArrowLeft, ArrowRight, Flag } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
@@ -8,6 +8,7 @@ import { QuizResult } from "@/components/exercises/quiz-result";
 import { useLearningProgress } from "@/hooks/use-learning-progress";
 import { useContentStore } from "@/hooks/use-content-store";
 import { normalizeAnswer } from "@/lib/learning/answer-normalizer";
+import { recordAssessmentEvidence } from "@/lib/assessment/client";
 import { saveQuizAttempt } from "@/lib/storage/learning-storage";
 import type { Course, Unit } from "@/types/course";
 
@@ -24,6 +25,7 @@ export function UnitQuiz({ course, unit, nextUnitId }: { course: Course; unit: U
   const [submitted, setSubmitted] = useState(false);
   const [confirming, setConfirming] = useState(false);
   const [result, setResult] = useState<{ score: number; correct: number; wrong: number; blank: number; passed: boolean }>();
+  const quizStartedAt = useRef(Date.now());
 
   useEffect(() => {
     try {
@@ -51,11 +53,38 @@ export function UnitQuiz({ course, unit, nextUnitId }: { course: Course; unit: U
 
   if (managedUnit.status !== "PUBLISHED") return <section className="empty-state"><h1>İçerik yayında değil</h1><p>Admin panelinden yayınlandıktan sonra erişilebilir.</p></section>;
   if (!exerciseComplete) return <section className="locked-content-state"><AlertTriangle size={38}/><h1>Ünite testi henüz kilitli</h1><p>Ünite sonu değerlendirmesine geçmek için zorunlu alıştırmaları tamamla.</p><Link className="button button-primary" href={`/learn/${course.id}/${unit.id}/exercises`}>Alıştırmalara Dön</Link></section>;
-  if (submitted && result) return <div className="quiz-page-wrap"><QuizResult {...result} courseId={course.id} unitId={unit.id} nextUnitId={nextUnitId} questions={quiz.questions} answers={answers} onRetry={() => { setSubmitted(false); setResult(undefined); setConfirming(false); setIndex(0); setAnswers({}); }}/></div>;
+  if (submitted && result) return <div className="quiz-page-wrap"><QuizResult {...result} courseId={course.id} unitId={unit.id} nextUnitId={nextUnitId} questions={quiz.questions} answers={answers} onRetry={() => { setSubmitted(false); setResult(undefined); setConfirming(false); setIndex(0); setAnswers({}); quizStartedAt.current = Date.now(); }}/></div>;
   if (!question) return <section className="empty-state"><h1>Quiz bulunamadı</h1></section>;
 
   const submitQuiz = () => {
+    const averageResponseMs = Math.round((Date.now() - quizStartedAt.current) / Math.max(1, quiz.questions.length));
     saveQuizAttempt(course.id, unit, slides, exercises, quiz, answers, scoreResult.score);
+    const evidence = quiz.questions.flatMap((item) => {
+      if (!item.assessment?.objectiveCodes.length) return [];
+      const isCorrect = normalizeAnswer(answers[item.id]) === normalizeAnswer(item.correctAnswer);
+      return [{
+        sourceType: "UNIT_QUIZ" as const,
+        sourceId: item.id,
+        courseId: course.id,
+        unitId: unit.id,
+        level: course.level,
+        objectiveCodes: item.assessment.objectiveCodes,
+        topicTags: item.assessment.topicTags,
+        skill: item.assessment.skill,
+        difficulty: item.assessment.difficulty,
+        cognitiveLevel: item.assessment.cognitiveLevel,
+        correct: isCorrect,
+        answer: answers[item.id],
+        correctAnswer: item.correctAnswer,
+        explanation: item.explanation,
+        relatedSlideId: item.relatedSlideId,
+        responseMs: averageResponseMs,
+        attemptNumber: 1,
+        pointsPossible: 10,
+        pointsEarned: isCorrect ? 10 : 0,
+      }];
+    });
+    if (evidence.length) void recordAssessmentEvidence(evidence);
     setResult(scoreResult);
     setSubmitted(true);
     setConfirming(false);
@@ -66,6 +95,7 @@ export function UnitQuiz({ course, unit, nextUnitId }: { course: Course; unit: U
     <header className="quiz-page-header"><div><span className="eyebrow">{course.level} · ÜNİTE {unit.order}</span><h1>{quiz.title}</h1><p>Cevaplar test bitene kadar gösterilmez. Yanıtların otomatik kaydedilir.</p></div><Link className="button button-secondary" href={`/courses/${course.slug}`}>Çık ve Daha Sonra Devam Et</Link></header>
     <div className="quiz-question-progress"><span>Soru {index + 1} / {quiz.questions.length}</span><Progress value={Math.round(((index + 1) / quiz.questions.length) * 100)} label={`${unanswered} cevapsız soru`}/></div>
     <article className="quiz-question-card"><span className="level-badge">{question.topic}</span><h2>{question.prompt}</h2>
+      {question.assessment ? <div className="assessment-tag-row"><span>{question.assessment.skill}</span><span>Zorluk {question.assessment.difficulty}/5</span><span>{question.assessment.cognitiveLevel}</span></div> : null}
       {question.type === "MULTIPLE_CHOICE" ? <fieldset className="choice-grid"><legend className="sr-only">Cevap seç</legend><p className="selection-hint">Bir seçenek işaretle.</p>{question.options?.map((option, optionIndex) => { const selected = currentAnswer === option.value; return <button key={option.id} type="button" className={`choice-option-button ${selected ? "selected" : ""}`} aria-pressed={selected} onClick={() => setAnswers((current) => ({ ...current, [question.id]: option.value }))}><span className="choice-option-marker" aria-hidden="true">{String.fromCharCode(65 + optionIndex)}</span><span className="choice-option-text">{option.label}</span></button>; })}</fieldset> : question.type === "TRUE_FALSE" ? <div className="true-false-grid"><button type="button" className={currentAnswer === true ? "selected" : ""} onClick={() => setAnswers((current) => ({ ...current, [question.id]: true }))}>Doğru</button><button type="button" className={currentAnswer === false ? "selected" : ""} onClick={() => setAnswers((current) => ({ ...current, [question.id]: false }))}>Yanlış</button></div> : <label className="exercise-text-field"><span>Cevabın</span><input value={String(currentAnswer ?? "")} onChange={(event: { target: { value: string } }) => setAnswers((current) => ({ ...current, [question.id]: event.target.value }))}/></label>}
       <div className="quiz-navigation"><button className="button button-secondary" disabled={index === 0} onClick={() => setIndex(index - 1)}><ArrowLeft size={17}/> Önceki</button>{index < quiz.questions.length - 1 ? <button className="button button-primary" onClick={() => setIndex(index + 1)}>Sonraki <ArrowRight size={17}/></button> : <button className="button button-primary" onClick={() => setConfirming(true)}><Flag size={17}/> Testi Bitir</button>}</div>
     </article>

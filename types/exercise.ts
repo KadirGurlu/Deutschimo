@@ -1,3 +1,5 @@
+import type { AssessmentMetadata } from "@/types/assessment";
+
 export type ExerciseType =
   | "MULTIPLE_CHOICE"
   | "MULTIPLE_SELECT"
@@ -41,6 +43,7 @@ export type Exercise = {
   tokens?: string[];
   minWords?: number;
   maxWords?: number;
+  assessment?: AssessmentMetadata;
 };
 
 export type UnitQuizQuestion = {
@@ -52,6 +55,7 @@ export type UnitQuizQuestion = {
   topic: string;
   relatedSlideId?: string;
   explanation: string;
+  assessment?: AssessmentMetadata;
 };
 
 export type UnitQuiz = {

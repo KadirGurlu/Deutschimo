@@ -1,0 +1,30 @@
+DEUTSCHIMO V19 YÜKLEME TALİMATLARI
+==================================
+
+ÖNERİLEN: V19 güncelleme paketini çalışan projenin üzerine kopyala.
+
+1. deutschimo-v19-guncelleme-paketi.zip dosyasını çıkart.
+2. GitHub Desktop'ta Deutschimo deposunu aç.
+3. Repository > Show in Explorer seçeneğine tıkla.
+4. ZIP içindeki dosya ve klasörleri açılan Deutschimo klasörüne kopyala.
+5. Windows sorarsa “Hedefteki dosyaları değiştir” seçeneğini kullan.
+6. GitHub Desktop'a dön.
+7. Summary alanına şunu yaz:
+
+   Add Deutschimo V19 simplified homepage
+
+8. Commit to main butonuna bas.
+9. Push origin butonuna bas.
+10. Vercel'de yeni deployment'ın Ready olmasını bekle.
+
+YENİ ENVIRONMENT VARIABLE GEREKMİYOR.
+VERİTABANI ŞEMASI DEĞİŞMİYOR.
+KULLANICILAR VE İLERLEME VERİLERİ SİLİNMEZ.
+
+Değiştirilen temel dosyalar:
+- app/page.tsx
+- app/globals.css
+- app/layout.tsx
+- components/layout/site-header.tsx
+- components/layout/footer.tsx
+- package.json

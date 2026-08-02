@@ -6,8 +6,8 @@ import { Providers } from "@/app/providers";
 import { CookieBanner } from "@/components/security/cookie-banner";
 
 export const metadata: Metadata = {
-  title: "Deutschimo | Sistemli Almanca Öğren",
-  description: "A1'den B2'ye dersler, öğrenme zekâsı, beceri laboratuvarları ve aralıklı kelime tekrarıyla ölçülebilir Almanca öğrenme platformu."
+  title: "Deutschimo | Almanca Öğrenmenin Sade Yolu",
+  description: "A1'den B2'ye yapılandırılmış dersler, özgün alıştırmalar ve ilerleme takibiyle sade Almanca öğrenme platformu."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

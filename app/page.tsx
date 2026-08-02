@@ -1,87 +1,214 @@
 import Link from "next/link";
-import { Award, BarChart3, BookOpen, BriefcaseBusiness, Check, CheckCircle2, GraduationCap, Headphones, Languages, MessageCircle, Mic2, PenLine, School, SearchCheck, ShieldCheck, Sparkles, Target, Timer, TrendingUp, Users, Volume2 } from "lucide-react";
-import { courses } from "@/data/mock";
-import { CourseCard } from "@/components/course/course-card";
+import {
+  ArrowRight,
+  BarChart3,
+  BookOpenCheck,
+  CheckCircle2,
+  Clock3,
+  GraduationCap,
+  Layers3,
+  PlayCircle,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { Footer } from "@/components/layout/footer";
 
-const goals = [
-  [Languages, "Sıfırdan başlamak", "Temel ifadelerden başlayarak A1 öğrenme yoluna katıl."],
-  [School, "Üniversite hazırlık", "Hazırlık atlama ve akademik dil becerilerine odaklan."],
-  [GraduationCap, "Almanya'da eğitim", "Üniversite yaşamı ve akademik iletişim için hazırlan."],
-  [BriefcaseBusiness, "Almanya'da çalışmak", "İş görüşmesi, iş yeri ve profesyonel yazışmaları öğren."],
-  [Target, "TestDaF veya TELC", "Sınav formatına uygun plan, deneme ve analizlerle ilerle."]
+const levelCards = [
+  {
+    level: "A1",
+    title: "Başlangıç",
+    description: "Temel ifadeler, günlük iletişim ve Almancanın yapı taşları.",
+    units: "12 ünite",
+    exercises: "168 alıştırma",
+    href: "/courses/a1",
+  },
+  {
+    level: "A2",
+    title: "Temel iletişim",
+    description: "Günlük yaşamda daha rahat konuşma, okuma ve yazma.",
+    units: "16 ünite",
+    exercises: "224 alıştırma",
+    href: "/courses/a2",
+  },
+  {
+    level: "B1",
+    title: "Bağımsız kullanım",
+    description: "Daha uzun metinler, akıcı iletişim ve işlevsel dil kullanımı.",
+    units: "18 ünite",
+    exercises: "252 alıştırma",
+    href: "/courses/b1",
+  },
+  {
+    level: "B2",
+    title: "İleri seviye",
+    description: "Akademik ve profesyonel ortamlarda güçlü ifade becerisi.",
+    units: "20 ünite",
+    exercises: "280 alıştırma",
+    href: "/courses/b2",
+  },
 ] as const;
 
-const levels = [
-  ["A1", "Almancaya Başlangıç", "12 hafta", "12 ünite", "168 alıştırma"],
-  ["A2", "Temel İletişim", "16 hafta", "16 ünite", "224 alıştırma"],
-  ["B1", "Bağımsız Dil Kullanımı", "18 hafta", "18 ünite", "252 alıştırma"],
-  ["B2", "Akademik ve Profesyonel", "20 hafta", "20 ünite", "280 alıştırma"]
-] as const;
-
-const skillItems = [
-  [BookOpen, "Gramer", "Kuralları bağlam içinde öğren ve uygulama ile pekiştir."],
-  [Sparkles, "Kelime", "Aralıklı tekrar sistemiyle kalıcı kelime dağarcığı oluştur."],
-  [SearchCheck, "Okuma", "Ana fikir, detay ve çıkarım becerilerini geliştir."],
-  [PenLine, "Yazma", "E-postadan akademik metne yapılandırılmış yazma çalışmaları."],
-  [Headphones, "Dinleme", "Doğal konuşma hızına uygun dinleme alıştırmaları."],
-  [Mic2, "Konuşma", "Günlük diyaloglar ve sınav görevleriyle akıcılık kazan."],
-  [Volume2, "Telaffuz", "Ses kaydı ve örnek telaffuzlarla anlaşılır konuş."],
-  [Timer, "Sınav Teknikleri", "Süre, soru türü ve strateji odaklı sınav pratiği."]
+const platformValues = [
+  {
+    icon: BookOpenCheck,
+    title: "Ders ve alıştırma bir arada",
+    copy: "Konuyu öğren, hemen ardından uygulayarak pekiştir.",
+  },
+  {
+    icon: Clock3,
+    title: "Kendi hızında ilerle",
+    copy: "Kaldığın yerden devam et ve günlük hedefini kendin belirle.",
+  },
+  {
+    icon: BarChart3,
+    title: "İlerlemeni gör",
+    copy: "Tamamladığın üniteleri ve gelişimini tek ekrandan takip et.",
+  },
 ] as const;
 
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <div className="container hero-grid">
-          <div>
-            <span className="eyebrow">DİL ÖĞRENİMİNDE YENİ ÇAĞ</span>
-            <h1>Almancanı bir sonraki seviyeye taşı.</h1>
-            <p>A1'den B2'ye yapılandırılmış dersler, sınav hazırlık programları, interaktif alıştırmalar ve ayrıntılı ilerleme takibiyle Almancanı sistemli biçimde geliştir.</p>
-            <div className="hero-actions"><Button href="/auth">Kayıt Ol</Button><Button href="/courses" variant="secondary">Kursları İncele</Button></div>
-            <div className="trust-points"><span><CheckCircle2 size={17} /> Başlangıç seviyesi için uygun</span><span><CheckCircle2 size={17} /> Kendi hızında öğren</span><span><CheckCircle2 size={17} /> İlerlemeni takip et</span></div>
+      <section className="v19-hero">
+        <div className="container v19-hero-grid">
+          <div className="v19-hero-copy">
+            <span className="eyebrow">A1'DEN B2'YE ALMANCA</span>
+            <h1>Almanca öğrenmenin sade ve düzenli yolu.</h1>
+            <p>
+              Yapılandırılmış dersler, özgün alıştırmalar ve ilerleme takibiyle
+              Almancanı adım adım geliştir.
+            </p>
+            <div className="v19-hero-actions">
+              <Button href="/auth">
+                Kayıt Ol <ArrowRight size={18} />
+              </Button>
+              <Button href="/courses" variant="secondary">
+                Seviyeleri İncele
+              </Button>
+            </div>
+            <div className="v19-hero-proof" aria-label="Platform özeti">
+              <span><CheckCircle2 size={17} /> 66 yapılandırılmış ünite</span>
+              <span><CheckCircle2 size={17} /> 900'den fazla alıştırma</span>
+              <span><CheckCircle2 size={17} /> Video olmadan odaklı öğrenme</span>
+            </div>
           </div>
-          <div className="dashboard-mockup" aria-label="Deutschimo kullanıcı paneli ön izlemesi">
-            <div className="mock-top"><div><small>Tekrar hoş geldin,</small><strong style={{ display: "block" }}>Kadir</strong></div><span>6 günlük seri</span></div>
-            <div className="mock-grid">
-              <div className="mock-card wide"><div style={{ display: "flex", justifyContent: "space-between" }}><strong>Haftalık çalışma</strong><span className="level-badge">Hedef %84</span></div><div className="mini-bars">{[38,65,52,86,68,76,42].map((v, i)=><span key={i} style={{ height: `${v}%` }} />)}</div></div>
-              <div className="mock-card"><span className="eyebrow">DEVAM EDİLEN KURS</span><h3>A1 · Temel Almanca</h3><Progress value={42} label="%42 tamamlandı" /></div>
-              <div className="mock-card"><span className="eyebrow">BUGÜNKÜ HEDEF</span><div className="metric">12/30</div><p>dakika tamamlandı</p><Button href="/learn/a1/a1-u01">Derse Devam Et</Button></div>
+
+          <div className="v19-platform-preview" aria-label="Deutschimo öğrenme programı ön izlemesi">
+            <div className="v19-preview-head">
+              <div>
+                <span className="eyebrow">ÖĞRENME YOLUN</span>
+                <h2>Seviyeni seç ve başla</h2>
+              </div>
+              <span className="v19-preview-badge">A1–B2</span>
+            </div>
+
+            <div className="v19-preview-list">
+              {levelCards.map((item, index) => (
+                <Link
+                  className={`v19-preview-row ${index === 0 ? "active" : ""}`}
+                  href={item.href}
+                  key={item.level}
+                >
+                  <span className="v19-preview-level">{item.level}</span>
+                  <span className="v19-preview-text">
+                    <strong>{item.title}</strong>
+                    <small>{item.units} · {item.exercises}</small>
+                  </span>
+                  {index === 0 ? <PlayCircle size={21} /> : <ArrowRight size={19} />}
+                </Link>
+              ))}
+            </div>
+
+            <div className="v19-preview-foot">
+              <GraduationCap size={21} />
+              <span>Ders anlatımı → alıştırma → ünite ilerlemesi</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="logo-strip"><div className="container logo-strip-inner">
-        <div className="trust-item"><ShieldCheck size={24} /><span>CEFR uyumlu seviye yapısı</span></div>
-        <div className="trust-item"><BookOpen size={24} /><span>Dört temel beceri odaklı</span></div>
-        <div className="trust-item"><GraduationCap size={24} /><span>Uzman içerik yaklaşımı</span></div>
-        <div className="trust-item"><BarChart3 size={24} /><span>Ölçülebilir ilerleme</span></div>
-        <div className="trust-item"><Languages size={24} /><span>Mobil ve masaüstü erişim</span></div>
-      </div></section>
+      <section className="v19-value-strip" aria-label="Deutschimo avantajları">
+        <div className="container v19-value-grid">
+          {platformValues.map(({ icon: Icon, title, copy }) => (
+            <article key={title}>
+              <span className="v19-value-icon"><Icon size={23} /></span>
+              <div>
+                <h2>{title}</h2>
+                <p>{copy}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-      <section className="section"><div className="container"><span className="eyebrow">KİŞİSEL ÖĞRENME ROTASI</span><h2 className="section-title">Almancayı neden öğreniyorsun?</h2><p className="section-copy">Hedefini seç; Deutschimo seviyene, ayırabildiğin zamana ve geliştirmek istediğin becerilere göre program önersin.</p><div className="goal-grid">{goals.map(([Icon,title,copy])=><Link href="/onboarding" className="goal-card" key={title}><Icon size={28}/><h3>{title}</h3><p>{copy}</p></Link>)}</div></div></section>
+      <section className="v19-section v19-levels-section" id="seviyeler">
+        <div className="container">
+          <div className="v19-section-heading">
+            <span className="eyebrow">ÖĞRENME PROGRAMI</span>
+            <h2>Seviyeni seç</h2>
+            <p>Almancaya yeni başla veya mevcut seviyenden devam et.</p>
+          </div>
 
-      <section className="section" style={{ background: "white" }}><div className="container"><div className="section-head"><div><span className="eyebrow">A1'DEN B2'YE</span><h2 className="section-title">Birbirine bağlı öğrenme yolu</h2><p className="section-copy">Her seviye öncekinin üzerine inşa edilir. Ders, alıştırma ve ölçme adımlarını tamamlayarak düzenli ilerlersin.</p></div><Button href="/courses" variant="secondary">Tüm Programlar</Button></div><div className="level-grid">{levels.map(([level,title,duration,unitsCount,lessonCount])=><article className="level-card" key={level}><div className="level-big">{level}</div><h3>{title}</h3><p>Seviyeye uygun gramer, kelime, okuma, dinleme, yazma ve konuşma programı.</p><div className="level-meta"><span>{duration}</span><span>{unitsCount}</span><span>{lessonCount}</span></div><Link href="/courses"><strong>Programı İncele →</strong></Link></article>)}</div></div></section>
+          <div className="v19-level-grid">
+            {levelCards.map((item) => (
+              <Link className="v19-level-card" href={item.href} key={item.level}>
+                <div className="v19-level-card-top">
+                  <span>{item.level}</span>
+                  <ArrowRight size={20} />
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <div className="v19-level-meta">
+                  <span>{item.units}</span>
+                  <span>{item.exercises}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <section className="section"><div className="container"><div className="section-head"><div><span className="eyebrow">ÖNE ÇIKANLAR</span><h2 className="section-title">Popüler Almanca kursları</h2><p className="section-copy">Hedefine uygun programı seç ve kaldığın yerden devam et.</p></div><Button href="/courses" variant="secondary">Kataloğa Git</Button></div><div className="course-grid">{courses.slice(0,4).map(course=><CourseCard course={course} key={course.slug}/>)}</div></div></section>
+      <section className="v19-section v19-how-section">
+        <div className="container v19-how-grid">
+          <div className="v19-section-heading left">
+            <span className="eyebrow">BASİT BİR ÖĞRENME AKIŞI</span>
+            <h2>Üç adımda ilerle</h2>
+            <p>Her ünitede ne yapacağını bilerek düzenli biçimde çalış.</p>
+          </div>
 
-      <section className="section" style={{ background: "white" }}><div className="container"><span className="eyebrow">BECERİ ODAKLI ÇALIŞ</span><h2 className="section-title">Almancanın her alanını ayrı ayrı geliştir</h2><div className="skill-grid">{skillItems.map(([Icon,title,copy])=><Link href="/courses" className="skill-card" key={title}><Icon size={28}/><h3>{title}</h3><p>{copy}</p></Link>)}</div></div></section>
+          <div className="v19-steps">
+            <article>
+              <span>1</span>
+              <div><h3>Konuyu öğren</h3><p>Yazılı ve anlaşılır ders anlatımını incele.</p></div>
+            </article>
+            <article>
+              <span>2</span>
+              <div><h3>Alıştırma yap</h3><p>Özgün sorularla öğrendiklerini hemen uygula.</p></div>
+            </article>
+            <article>
+              <span>3</span>
+              <div><h3>İlerlemeni takip et</h3><p>Tamamladığın üniteleri ve gelişimini gör.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <section className="section dark-band"><div className="container"><span className="eyebrow" style={{color:"var(--turquoise)"}}>SINAV HAZIRLIK</span><h2 className="section-title">Almanca sınavlarına planlı şekilde hazırlan.</h2><p className="section-copy">Sınav formatı, zaman yönetimi, deneme sınavları ve beceri bazlı analiz tek programda.</p><div className="exam-grid">{[["TestDaF Hazırlık","B2-C1 · 12 hafta","8 deneme sınavı"],["TELC B1","B1 · 8 hafta","6 deneme sınavı"],["TELC B2","B2 · 10 hafta","8 deneme sınavı"],["Goethe-Zertifikat","A2-B1 · 8 hafta","5 deneme sınavı"]].map(([title,meta,exam])=><article className="exam-card" key={title}><Award size={26}/><h3>{title}</h3><p>{meta}</p><p>{exam} · Başlangıç testi · İlerleme analizi</p><Link href="/exams"><strong>Programı İncele →</strong></Link></article>)}</div></div></section>
+      <section className="v19-cta-section">
+        <div className="container v19-cta-card">
+          <div>
+            <span className="eyebrow">BAŞLAMAYA HAZIR MISIN?</span>
+            <h2>Almanca öğrenmeye bugün başla.</h2>
+            <p>Seviyeni seç, ilk dersini tamamla ve öğrenme yolunu oluştur.</p>
+          </div>
+          <div className="v19-cta-actions">
+            <Button href="/auth">Kayıt Ol</Button>
+            <Link href="/courses" className="v19-text-link">
+              Programları incele <ArrowRight size={18} />
+            </Link>
+          </div>
+          <Layers3 className="v19-cta-decoration" size={150} aria-hidden="true" />
+        </div>
+      </section>
 
-      <section className="section"><div className="container"><span className="eyebrow">NASIL ÇALIŞIR?</span><h2 className="section-title">Dört adımda ölçülebilir ilerleme</h2><div className="steps"><div className="step"><h3>Seviyeni belirle</h3><p>Kısa onboarding veya seviye testiyle başlangıç noktanı bul.</p></div><div className="step"><h3>Programını seç</h3><p>Hedefine ve çalışma sürene uygun öğrenme rotasını başlat.</p></div><div className="step"><h3>Günlük dersleri tamamla</h3><p>Yazılı ders anlatımlarını oku, örnekleri incele ve ünite alıştırmalarını tamamla.</p></div><div className="step"><h3>İlerlemeni ölç</h3><p>Beceri raporlarını incele, eksik konulara geri dön ve sertifika kazan.</p></div></div></div></section>
-
-      <section className="section" style={{background:"white"}}><div className="container"><span className="eyebrow">DEMO KULLANICI DENEYİMLERİ</span><h2 className="section-title">Öğrenme yolculuklarından örnekler</h2><div className="testimonials">{[["Elif A.","Üniversite hazırlık öğrencisi","A1 temel programını tamamladı","Derslerin sırası ve günlük hedef sistemi ne çalışacağımı düşünmeden ilerlememi sağladı."],["Mert K.","Almanya'da çalışma hedefi","İş Almancası programında","Yazma görevlerindeki ölçütler e-posta ve başvuru metinlerimi daha düzenli kurmama yardım etti."],["Selin T.","TestDaF adayı","Yazılı anlatım programı","Deneme sonrası hata analizi sayesinde özellikle grafik yorumlama bölümündeki eksiklerimi gördüm."]].map(([name,goal,program,quote])=><article className="testimonial" key={name}><div className="person"><div className="avatar">{name[0]}</div><div><strong>{name}</strong><small style={{display:"block",color:"var(--muted)"}}>{goal}</small></div></div><p>“{quote}”</p><span className="level-badge">{program}</span></article>)}</div></div></section>
-
-      <section className="section"><div className="container mobile-promo"><div className="phone"><div className="phone-screen"><span className="eyebrow">BUGÜN</span><h3>Merhaba Kadir</h3><div className="card"><strong>A1 · Temel Almanca</strong><Progress value={42} label="Kaldığın yerden devam et"/></div><div className="card" style={{marginTop:12}}><span>Günlük hedef</span><div className="metric">18 dk</div><small>tamamlamak için kaldı</small></div></div></div><div><span className="eyebrow">MOBİL UYGULAMA · YAKINDA</span><h2 className="section-title">Derslerin her zaman yanında.</h2><p className="section-copy">Mobil ders takibi, günlük hatırlatmalar, kelime tekrarları, indirilebilir materyaller ve kaldığın yerden devam etme özelliği.</p><ul className="check-list">{["Mobil ders takibi","Günlük hatırlatmalar","Kelime tekrarları","İndirilebilir kaynaklar","Çevrim dışı çalışmaya hazır altyapı"].map(x=><li key={x}><Check size={18}/>{x}</li>)}</ul><div className="hero-actions"><span className="button button-secondary">App Store · Yakında</span><span className="button button-secondary">Google Play · Yakında</span></div></div></div></section>
-
-      <section className="section" style={{background:"white"}}><div className="container"><span className="eyebrow">ÜYELİK PLANLARI</span><h2 className="section-title">İhtiyacına uygun erişim modeli</h2><div className="pricing-grid"><article className="pricing-card"><h3>Ücretsiz</h3><p>Deutschimo'yu keşfet ve temel günlük rutini oluştur.</p><ul className="check-list"><li><Check size={18}/>Sınırlı ders erişimi</li><li><Check size={18}/>Günlük alıştırmalar</li><li><Check size={18}/>Temel ilerleme takibi</li></ul><Button href="/auth" variant="secondary">Ücretsiz Hesap Oluştur</Button></article><article className="pricing-card featured"><h3>Premium</h3><p>Tüm seviyeler, sınırsız pratik ve ayrıntılı beceri analizi.</p><ul className="check-list"><li><Check size={18}/>Tüm seviyelere erişim</li><li><Check size={18}/>Sınav programları</li><li><Check size={18}/>İndirilebilir kaynaklar</li><li><Check size={18}/>Tamamlama sertifikaları</li></ul><Button href="/onboarding">Premium'u İncele</Button></article><article className="pricing-card"><h3>Kurumsal</h3><p>Ekipler için yönetim, atama ve grup performans raporları.</p><ul className="check-list"><li><Check size={18}/>Ekip yönetimi</li><li><Check size={18}/>Öğrenci atama</li><li><Check size={18}/>Yönetici paneli</li><li><Check size={18}/>Özel öğrenme yolları</li></ul><Button href="/auth" variant="secondary">Kurumsal Bilgi Al</Button></article></div></div></section>
-
-      <section className="section"><div className="container"><span className="eyebrow">SIK SORULAN SORULAR</span><h2 className="section-title">Merak edilenler</h2><div className="faq">{[["Hangi seviyeden başlamalıyım?","Seviyeni bilmiyorsan onboarding sonunda kısa seviye belirleme sınavına başlayabilirsin."],["Dersleri ne kadar sürede tamamlayabilirim?","Program süreleri öneridir. Günlük hedefini değiştirerek kendi hızında ilerleyebilirsin."],["İçerikler mobil cihazlarda çalışıyor mu?","Tüm ekranlar telefon ve tablet için responsive tasarlanmıştır. PWA altyapısına uygundur."],["Sertifika veriliyor mu?","Belirlenen ders, alıştırma ve değerlendirme koşullarını tamamlayan kullanıcılar dijital sertifika alabilir."],["Yazma alıştırmalarım nasıl değerlendiriliyor?","Göreve göre gramer, kelime çeşitliliği, yapı ve anlaşılırlık ölçütleri kullanılır. Otomatik geri bildirim açıkça belirtilir."]].map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></div></section>
       <Footer />
     </>
   );

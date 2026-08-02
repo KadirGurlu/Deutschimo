@@ -120,6 +120,7 @@ model User {
   smartReviewState      SmartReviewState?
   skillLabAttempts      SkillLabAttempt[]
   vocabularyNotebook    VocabularyNotebookItem[]
+  vocabularySets        VocabularySet[]
   vocabularyReviewAttempts VocabularyReviewAttempt[]
   assessmentEvidence     AssessmentEvidence[]
   competencies           CompetencyRecord[]
@@ -502,10 +503,33 @@ model SkillLabAttempt {
   @@index([taskId, completedAt])
 }
 
+
+model VocabularySet {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title         String
+  description   String?  @db.Text
+  level         Level?
+  unitId        String?
+  unitTitle     String?
+  origin        String   @default("USER")
+  sourceSlug    String?
+  lastStudiedAt DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  items         VocabularyNotebookItem[]
+
+  @@index([userId, updatedAt])
+  @@index([userId, level])
+}
+
 model VocabularyNotebookItem {
   id                    String   @id @default(cuid())
   userId                String
   user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  setId                 String?
+  set                   VocabularySet? @relation(fields: [setId], references: [id], onDelete: Cascade)
   word                  String
   article               String?
   plural                String?
@@ -538,6 +562,7 @@ model VocabularyNotebookItem {
   updatedAt             DateTime @updatedAt
 
   @@unique([userId, word, sourceTaskId])
+  @@index([userId, setId])
   @@index([userId, nextReviewAt])
   @@index([userId, mastery])
   @@index([userId, createdAt])

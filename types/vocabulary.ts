@@ -19,6 +19,7 @@ export type VerbConjugation = {
 
 export type VocabularyRecord = {
   id: string;
+  setId?: string | null;
   word: string;
   article?: string | null;
   plural?: string | null;
@@ -92,4 +93,48 @@ export type VocabularyRecentAttempt = {
   correct: boolean;
   responseMs?: number | null;
   createdAt: string;
+};
+
+export type VocabularySetOrigin = "USER" | "CURATED" | "LEGACY";
+
+export type VocabularySetEntryInput = {
+  word: string;
+  article?: string | null;
+  plural?: string | null;
+  translation: string;
+  pronunciation?: string | null;
+  wordType?: string | null;
+  example?: string | null;
+  exampleTranslation?: string | null;
+};
+
+export type VocabularySetSummary = {
+  id: string;
+  title: string;
+  description?: string | null;
+  level?: "A1" | "A2" | "B1" | "B2" | null;
+  unitId?: string | null;
+  unitTitle?: string | null;
+  origin: VocabularySetOrigin;
+  sourceSlug?: string | null;
+  itemCount: number;
+  lastStudiedAt?: string | null;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type CuratedVocabularySetSummary = {
+  slug: string;
+  level: "A1" | "A2" | "B1" | "B2";
+  unitId: string;
+  unitOrder: number;
+  unitTitle: string;
+  title: string;
+  description: string;
+  itemCount: number;
+  importedSetId?: string | null;
+};
+
+export type VocabularySetDetail = VocabularySetSummary & {
+  items: VocabularyRecord[];
 };

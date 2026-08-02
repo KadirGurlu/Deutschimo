@@ -6,7 +6,7 @@ import { prisma } from "@/lib/db";
 async function GETHandler() {
   const current = await getApiUser();
   if (!current) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
-  const user = await prisma.user.findUnique({ where: { id: current.id }, include: { enrollments: true, learningSnapshot: true, unitProgress: true, activityEvents: true, studySessions: true, placementAttempts: true, intelligenceSnapshot: true, dailyStudyPlans: true, smartReviewState: true, skillLabAttempts: true, vocabularyNotebook: true, vocabularyReviewAttempts: true, assessmentEvidence: true, competencies: true, learningErrors: true } });
+  const user = await prisma.user.findUnique({ where: { id: current.id }, include: { enrollments: true, learningSnapshot: true, unitProgress: true, activityEvents: true, studySessions: true, placementAttempts: true, intelligenceSnapshot: true, dailyStudyPlans: true, smartReviewState: true, skillLabAttempts: true, vocabularyNotebook: true, vocabularySets: true, vocabularyReviewAttempts: true, assessmentEvidence: true, competencies: true, learningErrors: true } });
   if (!user) return NextResponse.json({ error: "Hesap bulunamadı." }, { status: 404 });
   const { passwordHash: _passwordHash, ...safeUser } = user;
   return new NextResponse(JSON.stringify({ exportedAt: new Date().toISOString(), user: safeUser }, null, 2), { headers: { "Content-Type": "application/json; charset=utf-8", "Content-Disposition": `attachment; filename="deutschimo-verilerim-${new Date().toISOString().slice(0,10)}.json"` } });

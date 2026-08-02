@@ -12,7 +12,7 @@ export function AppSidebar({ active }: { active: string }) {
     [RotateCcw, "Akıllı Tekrar", "/smart-review", "smart-review"],
     [CalendarCheck2, "Günlük Plan", "/study-plan", "study-plan"],
     [FlaskConical, "Beceri Laboratuvarı", "/skills", "skills"],
-    [Languages, "Kelime", "/vocabulary", "vocabulary"],
+    [Languages, "Kelime Setlerim", "/vocabulary", "vocabulary"],
     [ClipboardCheck, "Sınavlar", "/exams", "exams"],
     [BarChart3, "İlerleme", "/progress", "progress"],
     [UserRound, "Profil", "/profile", "profile"],

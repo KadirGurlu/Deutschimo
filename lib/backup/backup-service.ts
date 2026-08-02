@@ -23,12 +23,12 @@ export async function createLogicalBackup() {
   const record = await prisma.databaseBackup.create({ data: { status: "RUNNING", storageProvider: "VERCEL_BLOB_PRIVATE" } });
   try {
     if (!process.env.BLOB_STORE_ID && !process.env.BLOB_READ_WRITE_TOKEN) throw new Error("Vercel Blob is not configured. Connect a private Blob store to this project.");
-    const [users, accounts, enrollments, snapshots, progress, activities, studySessions, placement, insights, plans, reviews, skillAttempts, vocabularyNotebook, vocabularyReviewAttempts, assessmentEvidence, competencies, learningErrors, courses, units, exercises] = await Promise.all([
+    const [users, accounts, enrollments, snapshots, progress, activities, studySessions, placement, insights, plans, reviews, skillAttempts, vocabularySets, vocabularyNotebook, vocabularyReviewAttempts, assessmentEvidence, competencies, learningErrors, courses, units, exercises] = await Promise.all([
       prisma.user.findMany(), prisma.account.findMany(), prisma.enrollment.findMany(), prisma.learningStateSnapshot.findMany(),
       prisma.userUnitProgress.findMany(), prisma.userActivityEvent.findMany(), prisma.studySession.findMany(), prisma.placementAssessment.findMany(),
-      prisma.learningInsightSnapshot.findMany(), prisma.dailyStudyPlan.findMany(), prisma.smartReviewState.findMany(), prisma.skillLabAttempt.findMany(), prisma.vocabularyNotebookItem.findMany(), prisma.vocabularyReviewAttempt.findMany(), prisma.assessmentEvidence.findMany(), prisma.competencyRecord.findMany(), prisma.learningErrorHistory.findMany(), prisma.course.findMany(), prisma.unit.findMany(), prisma.exercise.findMany(),
+      prisma.learningInsightSnapshot.findMany(), prisma.dailyStudyPlan.findMany(), prisma.smartReviewState.findMany(), prisma.skillLabAttempt.findMany(), prisma.vocabularySet.findMany(), prisma.vocabularyNotebookItem.findMany(), prisma.vocabularyReviewAttempt.findMany(), prisma.assessmentEvidence.findMany(), prisma.competencyRecord.findMany(), prisma.learningErrorHistory.findMany(), prisma.course.findMany(), prisma.unit.findMany(), prisma.exercise.findMany(),
     ]);
-    const payload = { schemaVersion: "17.0", createdAt: new Date().toISOString(), data: { users, accounts, enrollments, snapshots, progress, activities, studySessions, placement, insights, plans, reviews, skillAttempts, vocabularyNotebook, vocabularyReviewAttempts, assessmentEvidence, competencies, learningErrors, courses, units, exercises } };
+    const payload = { schemaVersion: "21.0", createdAt: new Date().toISOString(), data: { users, accounts, enrollments, snapshots, progress, activities, studySessions, placement, insights, plans, reviews, skillAttempts, vocabularySets, vocabularyNotebook, vocabularyReviewAttempts, assessmentEvidence, competencies, learningErrors, courses, units, exercises } };
     const tableCounts = Object.fromEntries(Object.entries(payload.data).map(([key, rows]) => [key, rows.length]));
     const { envelope, checksum } = encryptedPayload(payload);
     const pathname = `database-backups/deutschimo-${new Date().toISOString().replace(/[:.]/g, "-")}.json.enc`;

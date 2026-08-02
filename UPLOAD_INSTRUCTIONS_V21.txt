@@ -1,0 +1,36 @@
+DEUTSCHIMO V21 — KELİME SETLERİ YÜKLEME
+========================================
+
+ÖNERİLEN DOSYA
+- deutschimo-v21-guncelleme-paketi.zip
+
+GITHUB DESKTOP
+1. ZIP dosyasını bilgisayarında çıkart.
+2. GitHub Desktop'ta Deutschimo deposunu aç.
+3. Repository > Show in Explorer seç.
+4. ZIP'in içindeki dosya ve klasörleri Deutschimo ana klasörünün üzerine kopyala.
+5. Windows sorarsa "Hedefteki dosyaları değiştir" seç.
+6. GitHub Desktop'a dön.
+7. Summary alanına şunu yaz:
+
+   Add Deutschimo V21 vocabulary sets
+
+8. Commit to main butonuna bas.
+9. Push origin butonuna bas.
+10. Vercel'de yeni deployment'ın Ready olmasını bekle.
+
+VERİTABANI
+- Build sırasında prisma db push yeni VocabularySet tablosunu ve setId alanını ekler.
+- Mevcut kullanıcılar, eski kelimeler ve tekrar geçmişi silinmez.
+- Eski kelimeler "Önceki kelime defterim" kartında görünür.
+
+YENİ ORTAM DEĞİŞKENİ
+- Yoktur.
+
+CANLI KONTROL
+1. /vocabulary sayfasını aç.
+2. "Kelime seti oluştur" ile en az iki terimli bir set kaydet.
+3. Set kartına gir ve kartı çevir.
+4. A1 hazır setlerinden birini aç.
+5. Kelimenin Türkçe anlamı ile Almanca/Türkçe örnek cümlesinin göründüğünü doğrula.
+6. /vocabulary/review adresinde eski akıllı tekrar sisteminin çalıştığını kontrol et.

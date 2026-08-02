@@ -1,3 +1,11 @@
+# Deutschimo V24
+
+V24; deployment güvenliği, Auth.js oturum sertleştirmesi, API koruması, güvenlik başlıkları, ortam değişkeni doğrulaması, sağlık kontrolü ve sıkıştırılmış şifreli yedekleme üzerine odaklanır. Production build artık veritabanını otomatik değiştirmez. Ayrıntılar için `CHANGELOG_V24.md` ve `UPLOAD_INSTRUCTIONS_V24.txt` dosyalarına bakın.
+
+# Deutschimo V20
+
+V20; ana sayfa ve kimlik doğrulama akışını sadeleştirir. Üst menüde yalnızca hesap işlemleri kalır, bütün seviye seçimleri kayıt sayfasına yönlenir, giriş bağlantısı doğrudan giriş sekmesini açar ve Google hesabıyla kayıt/giriş desteği eklenir. Kurulum ayrıntıları için `UPLOAD_INSTRUCTIONS_V20.txt`, değişiklikler için `CHANGELOG_V20.md` dosyasını kullanın.
+
 # Deutschimo V17.0
 
 V17.0, V16'nın 66 üniteli içerik yapısını ölçülebilir öğrenme hedeflerine bağlar. Her alıştırma ve quiz sorusu konu, beceri, zorluk ve bilişsel düzey etiketleri taşır; kullanıcı cevapları yetkinlik puanına ve kişisel hata geçmişine dönüştürülür.

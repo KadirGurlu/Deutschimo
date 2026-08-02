@@ -180,6 +180,6 @@ async function DELETEHandler(request: Request) {
 }
 
 export const GET = withApiMonitoring("/api/vocabulary/sets", GETHandler);
-export const POST = withApiMonitoring("/api/vocabulary/sets", POSTHandler);
-export const PATCH = withApiMonitoring("/api/vocabulary/sets", PATCHHandler);
+export const POST = withApiMonitoring("/api/vocabulary/sets", POSTHandler, { maxBodyBytes: 2 * 1024 * 1024 });
+export const PATCH = withApiMonitoring("/api/vocabulary/sets", PATCHHandler, { maxBodyBytes: 128 * 1024 });
 export const DELETE = withApiMonitoring("/api/vocabulary/sets", DELETEHandler);

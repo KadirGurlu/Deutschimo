@@ -36,5 +36,9 @@ declare module "next-auth/jwt" {
     currentLevel?: Level;
     targetLevel?: Level;
     dailyGoalMinutes?: number;
+    userRefreshedAt?: number;
+    authenticatedAt?: number;
+    revocationCheckedAt?: number;
+    sessionRevoked?: boolean;
   }
 }

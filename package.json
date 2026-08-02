@@ -1,25 +1,30 @@
 {
   "name": "deutschimo-platform",
-  "version": "23.0.0",
+  "version": "24.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma db push --skip-generate && node scripts/optional-bootstrap-admin.mjs && next build",
+    "prebuild": "node scripts/validate-environment.mjs",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "preflight": "npm run validate:env && npm run validate:v24 && npm run typecheck",
     "postinstall": "prisma generate",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
+    "db:safe-sync": "prisma db push --skip-generate",
     "db:deploy": "prisma migrate deploy",
     "db:studio": "prisma studio",
     "db:seed": "prisma db seed",
+    "db:bootstrap-admin": "node prisma/seed.mjs",
+    "validate:env": "node scripts/validate-environment.mjs",
     "validate:content": "node scripts/validate-content.mjs",
     "validate:v8": "node scripts/validate-v8.mjs",
     "validate:v9": "node scripts/validate-v9.mjs",
     "validate:v10": "node scripts/validate-v10.mjs",
     "validate:v11": "node scripts/validate-v11.mjs",
     "validate:v12": "node scripts/validate-v12.mjs",
-    "db:bootstrap-admin": "node prisma/seed.mjs",
     "validate:v12.1": "node scripts/validate-v12-1.mjs",
     "validate:v13": "node scripts/validate-v13.mjs",
     "validate:v14": "node scripts/validate-v14.mjs",
@@ -30,10 +35,8 @@
     "validate:v20": "node scripts/validate-v20.mjs",
     "validate:v21": "node scripts/validate-v21.mjs",
     "validate:v22": "node scripts/validate-v22.mjs",
-    "validate:v23": "node scripts/validate-v23.mjs"
-  },
-  "prisma": {
-    "seed": "node prisma/seed.mjs"
+    "validate:v23": "node scripts/validate-v23.mjs",
+    "validate:v24": "node scripts/validate-v24.mjs"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.8.0",
@@ -54,9 +57,13 @@
     "eslint": "^9.17.0",
     "eslint-config-next": "^15.5.0",
     "prisma": "^6.7.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "dotenv": "^16.4.7"
   },
   "overrides": {
     "@auth/core": "0.38.0"
+  },
+  "engines": {
+    "node": ">=20.10 <23"
   }
 }

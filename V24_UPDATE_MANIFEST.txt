@@ -1,0 +1,45 @@
+Deutschimo V24 güncelleme kapsamı
+
+Altyapı ve yapılandırma:
+- package.json
+- next.config.ts
+- middleware.ts
+- auth.config.ts
+- auth.ts
+- prisma.config.ts
+- .env.example
+
+Yeni güvenlik/operasyon dosyaları:
+- lib/auth/session-revocation.ts
+- lib/email/html.ts
+- lib/security/secrets.ts
+- app/api/health/route.ts
+- scripts/validate-environment.mjs
+- scripts/validate-v24.mjs
+
+Güncellenen sunucu katmanları:
+- lib/db.ts
+- lib/security/request.ts
+- lib/security/api-monitor.ts
+- lib/backup/backup-service.ts
+- lib/auth/authorization.ts
+- app/api/cron/daily-maintenance/route.ts
+- app/api/admin/security/route.ts
+- app/api/account/password/route.ts
+- app/api/auth/register/route.ts
+- app/api/auth/request-password-reset/route.ts
+- app/api/auth/reset-password/route.ts
+- app/api/auth/verify-email/route.ts
+- app/api/progress/route.ts
+- app/api/vocabulary/sets/route.ts
+
+Arayüz ve tip güncellemeleri:
+- components/admin/security-overview.tsx
+- components/profile/account-security-panel.tsx
+- types/next-auth.d.ts
+
+Belgeler:
+- README.md
+- CHANGELOG_V24.md
+- UPLOAD_INSTRUCTIONS_V24.txt
+- docs/V24_VALIDATION_REPORT.md

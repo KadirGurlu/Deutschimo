@@ -7,7 +7,7 @@ const editorRoles = new Set(["EDITOR", "MODERATOR", "ADMIN", "SUPER_ADMIN"]);
 
 async function currentDatabaseUser() {
   const session = await auth();
-  if (!session?.user.id) return null;
+  if (!session?.user.id || session.user.status === "SUSPENDED") return null;
   const user = await prisma.user.findUnique({
     where: { id: session.user.id },
     select: { id:true,email:true,name:true,firstName:true,lastName:true,role:true,status:true,currentLevel:true,targetLevel:true,dailyGoalMinutes:true,image:true },

@@ -99,4 +99,4 @@ async function PUTHandler(request: Request) {
 }
 
 export const GET = withApiMonitoring("/api/progress", GETHandler);
-export const PUT = withApiMonitoring("/api/progress", PUTHandler);
+export const PUT = withApiMonitoring("/api/progress", PUTHandler, { maxBodyBytes: 2 * 1024 * 1024 });

@@ -1,0 +1,34 @@
+DEUTSCHIMO V24 YÜKLEME TALİMATI
+
+1. deutschimo-v24-guncelleme-paketi.zip dosyasını çıkart.
+2. GitHub Desktop içinde Deutschimo deposunu seç.
+3. Repository > Show in Explorer seçeneğine bas.
+4. Güncelleme paketindeki dosyaları açılan Deutschimo klasörünün üzerine kopyala.
+5. Windows sorarsa "Hedefteki dosyaları değiştir" seçeneğini kullan.
+6. GitHub Desktop Summary alanına şunu yaz:
+   Add Deutschimo V24 infrastructure hardening
+7. Commit to main butonuna bas.
+8. Push origin butonuna bas.
+9. Vercel deployment ekranında yeni build'in Ready olmasını bekle.
+
+V24 İÇİN VERİTABANI İŞLEMİ
+- V24 Prisma şemasını değiştirmez.
+- Kullanıcılar ve mevcut veriler silinmez.
+- Ayrı bir db push veya seed çalıştırmana gerek yoktur.
+- V24 ile production build artık güvenlik amacıyla otomatik db push çalıştırmaz.
+
+ORTAM DEĞİŞKENİ KONTROLÜ
+Yeni bir değişken eklenmiyor. Ancak V24, daha önce kurulan şu kritik değişkenlerin geçerli olmasını zorunlu tutar:
+- DATABASE_URL
+- AUTH_SECRET
+- SECURITY_HASH_KEY
+- CRON_SECRET
+
+Google girişi açıksa AUTH_GOOGLE_ID ve AUTH_GOOGLE_SECRET; Blob yedekleme bağlıysa BACKUP_ENCRYPTION_KEY de doğrulanır.
+
+DOĞRULAMA
+Deployment Ready olduktan sonra:
+- Siteye giriş yap.
+- Öğrenci Paneli ve Akıllı Tekrar sayfalarını aç.
+- /api/health adresini aç. status: ok ve database: reachable görünmelidir.
+- Admin > Güvenlik sayfasında V24 altyapı durumunu kontrol et.

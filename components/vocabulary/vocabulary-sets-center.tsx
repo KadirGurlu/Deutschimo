@@ -32,7 +32,7 @@ export function VocabularySetsCenter() {
   const [showCreate, setShowCreate] = useState(false);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [setLevel, setSetLevel] = useState("");
+  const [formLevel, setFormLevel] = useState("");
   const [entries, setEntries] = useState<DraftEntry[]>([emptyEntry(), emptyEntry(), emptyEntry()]);
   const [saving, setSaving] = useState(false);
   const [busySlug, setBusySlug] = useState("");
@@ -60,7 +60,7 @@ export function VocabularySetsCenter() {
   }
 
   function resetForm() {
-    setTitle(""); setDescription(""); setSetLevel(""); setEntries([emptyEntry(), emptyEntry(), emptyEntry()]); setShowCreate(false);
+    setTitle(""); setDescription(""); setFormLevel(""); setEntries([emptyEntry(), emptyEntry(), emptyEntry()]); setShowCreate(false);
   }
 
   async function createSet(event: React.FormEvent) {
@@ -73,7 +73,7 @@ export function VocabularySetsCenter() {
       const response = await fetch("/api/vocabulary/sets", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "CREATE_SET", title, description, level: setLevel || null, entries: cleanEntries }),
+        body: JSON.stringify({ action: "CREATE_SET", title, description, level: formLevel || null, entries: cleanEntries }),
       });
       const payload = await response.json() as { set?: VocabularySetSummary; error?: string };
       if (!response.ok || !payload.set) throw new Error(payload.error || "Kelime seti oluşturulamadı.");
@@ -136,7 +136,7 @@ export function VocabularySetsCenter() {
       </div>
       <div className="v21-set-meta-form">
         <label>Set adı *<input value={title} onChange={(event) => setTitle(event.target.value)} placeholder="ör. B1 Meslekler ve İş Hayatı"/></label>
-        <label>Seviye<select value={setLevel} onChange={(event) => setSetLevel(event.target.value)}><option value="">Seviye seçme</option>{levels.map((item) => <option value={item} key={item}>{item}</option>)}</select></label>
+        <label>Seviye<select value={formLevel} onChange={(event) => setFormLevel(event.target.value)}><option value="">Seviye seçme</option>{levels.map((item) => <option value={item} key={item}>{item}</option>)}</select></label>
         <label className="wide">Kısa açıklama<textarea value={description} onChange={(event) => setDescription(event.target.value)} placeholder="Bu sette hangi kelimeler var?"/></label>
       </div>
       <div className="v21-entry-head"><strong>Terimler</strong><span>Almanca kelime, Türkçe anlam ve cümle içi kullanım</span></div>

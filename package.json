@@ -1,6 +1,6 @@
 {
   "name": "deutschimo-platform",
-  "version": "25.0.0",
+  "version": "26.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "preflight": "npm run validate:env && npm run validate:v25 && npm run typecheck",
+    "preflight": "npm run validate:env && npm run validate:v26 && npm run typecheck",
     "postinstall": "prisma generate",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
@@ -37,7 +37,8 @@
     "validate:v22": "node scripts/validate-v22.mjs",
     "validate:v23": "node scripts/validate-v23.mjs",
     "validate:v24": "node scripts/validate-v24.mjs",
-    "validate:v25": "node scripts/validate-v25.mjs"
+    "validate:v25": "node scripts/validate-v25.mjs",
+    "validate:v26": "node scripts/validate-v26.mjs"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.8.0",

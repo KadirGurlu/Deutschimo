@@ -1,0 +1,16 @@
+Deutschimo V26 güncelleme dosyaları
+
+app/courses/page.tsx
+app/courses/[slug]/page.tsx
+app/dashboard/page.tsx
+app/globals.css
+components/course/course-program.tsx
+components/layout/app-sidebar.tsx
+components/layout/mobile-nav.tsx
+components/layout/site-header.tsx
+package.json
+scripts/validate-v26.mjs
+CHANGELOG_V26.md
+UPLOAD_INSTRUCTIONS_V26.txt
+V26_UPDATE_MANIFEST.txt
+docs/V26_VALIDATION_REPORT.md

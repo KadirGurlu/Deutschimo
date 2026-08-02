@@ -57,7 +57,7 @@ export default function DashboardPage() {
     : `/courses/${course.slug}`;
 
   return <div className="dashboard-shell"><AppSidebar active="dashboard"/><section className="dashboard-main">
-    <div className="welcome"><div><span className="eyebrow">ÖĞRENCİ PANELİ</span><h1>Tekrar hoş geldin, {firstName}.</h1><p>{course.title} programında kaldığın yerden devam et.</p></div><Link className="button button-primary" href={continueHref}>Derse Devam Et</Link></div>
+    <div className="welcome"><div><span className="eyebrow">ÖĞRENCİ PANELİ</span><h1>Tekrar hoş geldin, {firstName}.</h1><p>{course.title} programında kaldığın yerden devam et.</p></div><div className="v26-welcome-actions"><Link className="button button-secondary" href="/courses">Kursları Görüntüle</Link><Link className="button button-primary" href={continueHref}>Derse Devam Et</Link></div></div>
     <div className="stats-grid">
       <Stat icon={<BookOpenCheck/>} label="Devam edilen kurs" value={course.level} note={course.title}/>
       <Stat icon={<Flame/>} label="Çalışma serisi" value={`${streak.current} gün`} note={streak.best ? `Kişisel rekor: ${streak.best} gün` : "İlk çalışmanla serini başlat"}/>

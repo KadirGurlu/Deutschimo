@@ -6,7 +6,6 @@ import { CourseProgressHeader } from "@/components/course/course-progress-header
 import { UnitLearningPath } from "@/components/course/unit-learning-path";
 import { useLearningProgress } from "@/hooks/use-learning-progress";
 import type { Course } from "@/types/course";
-import { Footer } from "@/components/layout/footer";
 const courseOutcomes: Record<string, string[]> = {
   a1: [
     "Günlük ve tanıdık durumlarda temel iletişim kurmak",
@@ -44,7 +43,7 @@ export function CourseProgram({ course }: { course: Course }) {
 
   return <>
     <section className="page-hero compact-page-hero"><div className="container"><CourseProgressHeader course={course} percent={store.coursePercent} completed={store.completedCount} total={store.units.length}/></div></section>
-    <main className="container program-page">
+    <div className="container program-page">
       <section className="continue-learning-banner">
         <div><span className="eyebrow">KALDIĞIN YERDEN DEVAM ET</span><h2>{continueUnit ? continueUnit.title : "Programa başlamaya hazırsın"}</h2><p>{position ? `${position.stage === "LESSONS" ? "Ders Notları" : position.stage === "EXERCISES" ? "Alıştırmalar" : position.stage === "QUIZ" ? "Ünite sonu testi" : "Tamamlandı"} aşamasındasın.` : "İlk üniteyi açarak öğrenme yoluna başlayabilirsin."}</p></div>
         <Link className="button button-primary" href={continueHref}>Devam Et <ArrowRight size={18}/></Link>
@@ -60,6 +59,6 @@ export function CourseProgram({ course }: { course: Course }) {
           <button className="button button-secondary subtle-reset" onClick={store.reset}><RefreshCcw size={17}/> Demo ilerlemesini sıfırla</button>
         </aside>
       </div>
-    </main><Footer/>
+    </div>
   </>;
 }

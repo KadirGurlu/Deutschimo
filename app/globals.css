@@ -1233,3 +1233,70 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .review-priority.priority-high{background:#fff6ed;color:#b54708}
 .review-priority.priority-medium{background:#eef5f6;color:var(--navy)}
 @media(max-width:900px){.v23-three-card-grid{grid-template-columns:1fr}.review-priority{margin-left:0}}
+
+/* Deutschimo V26 — kurs kataloğu, uçtan uca başlık ve güvenli çıkış */
+.v26-site-header .header-inner{
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:0 24px;
+  gap:0;
+  justify-content:space-between;
+}
+.v26-site-header .brand{margin:0}
+.v26-site-header .header-actions{margin-left:auto;gap:10px}
+.v26-account-link{padding:8px 4px}
+.v26-logout-button,.v26-mobile-logout{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-height:38px;
+  border:0;
+  border-radius:8px;
+  background:transparent;
+  color:var(--heading);
+  padding:7px 9px;
+  font-weight:750;
+}
+.v26-logout-button:hover,.v26-mobile-logout:hover{background:#f2f6f8}
+.v26-logout-button:disabled,.v26-mobile-logout:disabled{opacity:.55;cursor:wait}
+.v26-mobile-logout{width:100%;justify-content:flex-start}
+.v26-welcome-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.v26-courses-page{display:grid;align-content:start;gap:28px}
+.v26-courses-hero{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:28px;
+  padding:28px 30px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:radial-gradient(circle at 92% 18%,rgba(92,225,230,.24),transparent 35%),#fff;
+}
+.v26-courses-hero .section-title{margin-top:8px}
+.v26-catalog-summary{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.v26-catalog-summary span{display:inline-flex;align-items:center;gap:7px;padding:10px 12px;border:1px solid var(--border);border-radius:9px;background:#fff;color:var(--muted);white-space:nowrap}
+.v26-catalog-summary svg{color:var(--turquoise-dark)}
+.v26-catalog-summary strong{color:var(--heading)}
+.v26-course-grid{margin-top:0;grid-template-columns:repeat(2,minmax(0,1fr))}
+.v26-course-program-shell{padding:0;overflow:hidden}
+.v26-course-program-shell .page-hero{padding:34px 28px;background:radial-gradient(circle at 90% 10%,rgba(92,225,230,.18),transparent 34%),#fff}
+.v26-course-program-shell .page-hero .container,.v26-course-program-shell .program-page{width:100%;max-width:none}
+.v26-course-program-shell .program-page{padding:30px 38px 48px}
+@media(max-width:900px){
+  .v26-site-header .header-inner{padding:0 16px}
+  .v26-logout-button span{display:none}
+  .v26-logout-button{padding:8px}
+  .v26-welcome-actions{width:100%;justify-content:flex-start}
+  .v26-courses-hero{align-items:flex-start;flex-direction:column;padding:24px}
+  .v26-catalog-summary{justify-content:flex-start}
+  .v26-course-grid{grid-template-columns:1fr}
+  .v26-course-program-shell .program-page{padding:24px 20px 90px}
+}
+@media(max-width:560px){
+  .v26-site-header .brand span{font-size:20px}
+  .v26-account-link{font-size:0}
+  .v26-account-link svg{width:20px;height:20px}
+  .v26-welcome-actions .button{width:100%}
+}

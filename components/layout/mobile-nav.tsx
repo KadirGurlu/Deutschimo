@@ -13,7 +13,7 @@ export function MobileNav() {
     <nav className="mobile-nav" aria-label="Mobil alt menü">
       <Link href="/dashboard"><Home size={20} /><span>Panel</span></Link>
       <Link href="/skills"><FlaskConical size={20} /><span>Beceriler</span></Link>
-      <Link href="/learn/a1/a1-u01"><BookOpen size={20} /><span>Öğren</span></Link>
+      <Link href="/courses"><BookOpen size={20} /><span>Kurslar</span></Link>
       <Link href="/progress"><BarChart3 size={20} /><span>İlerleme</span></Link>
       <Link href="/profile"><UserRound size={20} /><span>Profil</span></Link>
     </nav>

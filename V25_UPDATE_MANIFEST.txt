@@ -1,0 +1,19 @@
+Deutschimo V25 güncelleme kapsamı
+
+Yönlendirme ve navigasyon:
+- app/page.tsx
+- components/layout/site-header.tsx
+- components/layout/mobile-nav.tsx
+
+Kişisel öğrenci paneli:
+- app/dashboard/page.tsx
+- lib/learning/streak.ts
+
+Sürüm ve doğrulama:
+- package.json
+- scripts/validate-v25.mjs
+- CHANGELOG_V25.md
+- UPLOAD_INSTRUCTIONS_V25.txt
+- V25_UPDATE_MANIFEST.txt
+- docs/V25_VALIDATION_REPORT.md
+- README.md

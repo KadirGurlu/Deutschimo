@@ -1,10 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { BarChart3, BookOpen, FlaskConical, Home, UserRound } from "lucide-react";
+import { useSession } from "next-auth/react";
 
 export function MobileNav() {
+  const { status } = useSession();
+
+  if (status !== "authenticated") return null;
+
   return (
     <nav className="mobile-nav" aria-label="Mobil alt menü">
-      <Link href="/"><Home size={20} /><span>Ana Sayfa</span></Link>
+      <Link href="/dashboard"><Home size={20} /><span>Panel</span></Link>
       <Link href="/skills"><FlaskConical size={20} /><span>Beceriler</span></Link>
       <Link href="/learn/a1/a1-u01"><BookOpen size={20} /><span>Öğren</span></Link>
       <Link href="/progress"><BarChart3 size={20} /><span>İlerleme</span></Link>

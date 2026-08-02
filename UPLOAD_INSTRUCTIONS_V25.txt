@@ -1,0 +1,25 @@
+DEUTSCHIMO V25 YÜKLEME TALİMATI
+
+1. deutschimo-v25-guncelleme-paketi.zip dosyasını çıkart.
+2. GitHub Desktop içinde Deutschimo deposunu seç.
+3. Repository > Show in Explorer seçeneğine bas.
+4. Güncelleme paketindeki dosyaları açılan Deutschimo klasörünün üzerine kopyala.
+5. Windows sorarsa "Hedefteki dosyaları değiştir" seçeneğini kullan.
+6. GitHub Desktop Summary alanına şunu yaz:
+   Add Deutschimo V25 personalized home routing
+7. Commit to main butonuna bas.
+8. Push origin butonuna bas.
+9. Vercel deployment ekranında yeni build'in Ready olmasını bekle.
+
+V25 İÇİN VERİTABANI İŞLEMİ
+- Prisma şeması değişmedi.
+- Kullanıcılar ve mevcut öğrenme verileri silinmez.
+- db push veya seed çalıştırma.
+- Yeni environment variable ekleme.
+
+CANLI KONTROL
+1. Çıkış yapmışken https://deutschimo.vercel.app adresini aç. Tanıtım sayfası görünmelidir.
+2. Hesaba giriş yap.
+3. Deutschimo logosuna bas. Öğrenci Paneli açılmalıdır.
+4. Giriş yapmışken doğrudan https://deutschimo.vercel.app adresini aç. Otomatik olarak /dashboard adresine yönlenmelidir.
+5. Devam edilen kursun, kurs ilerlemesinin ve çalışma serisinin kişisel verilerle değiştiğini doğrula.

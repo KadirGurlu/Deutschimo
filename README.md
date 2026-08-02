@@ -1,6 +1,6 @@
-# Deutschimo V24
+# Deutschimo V25
 
-V24; deployment güvenliği, Auth.js oturum sertleştirmesi, API koruması, güvenlik başlıkları, ortam değişkeni doğrulaması, sağlık kontrolü ve sıkıştırılmış şifreli yedekleme üzerine odaklanır. Production build artık veritabanını otomatik değiştirmez. Ayrıntılar için `CHANGELOG_V24.md` ve `UPLOAD_INSTRUCTIONS_V24.txt` dosyalarına bakın.
+V25, herkese açık tanıtım sayfası ile giriş yapılmış öğrenci deneyimini kesin biçimde ayırır. Oturum açmış kullanıcı `/` adresine veya Deutschimo logosuna tıkladığında kişisel Öğrenci Paneline yönlendirilir. Panel; en son çalışılan kursu, gerçek çalışma serisini, kurs ilerlemesini ve günlük hedefi kullanıcıya özel verilerden gösterir. Ayrıntılar için `CHANGELOG_V25.md` ve `UPLOAD_INSTRUCTIONS_V25.txt` dosyalarına bakın.
 
 # Deutschimo V20
 

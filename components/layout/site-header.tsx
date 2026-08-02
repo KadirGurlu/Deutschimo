@@ -12,6 +12,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const { data: session, status } = useSession();
   const authenticated = status === "authenticated";
+  const brandHref = authenticated ? "/dashboard" : "/";
 
   async function logout() {
     clearCurrentLearningCache();
@@ -22,7 +23,7 @@ export function SiteHeader() {
   return (
     <header className="site-header v19-site-header v20-site-header">
       <div className="header-inner">
-        <Link href="/" className="brand" aria-label="Deutschimo ana sayfa" onClick={() => setOpen(false)}>
+        <Link href={brandHref} className="brand" aria-label={authenticated ? "Öğrenci Paneline git" : "Deutschimo ana sayfa"} onClick={() => setOpen(false)}>
           <Image src="/deutschimo-logo.png" alt="" width={40} height={40} className="brand-logo" priority /><span>Deutschimo</span>
         </Link>
 

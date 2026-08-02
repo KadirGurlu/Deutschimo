@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import { auth } from "@/auth";
 import {
   ArrowRight,
   BarChart3,
@@ -66,7 +68,12 @@ const platformValues = [
   },
 ] as const;
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const session = await auth();
+  if (session?.user) redirect("/dashboard");
+
   return (
     <>
       <section className="v19-hero">

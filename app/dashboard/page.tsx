@@ -6,7 +6,6 @@ import { AppSidebar } from "@/components/layout/app-sidebar";
 import { IntelligenceOverviewPanel } from "@/components/intelligence/intelligence-overview";
 import { SkillDashboardPanel } from "@/components/skills/skill-dashboard-panel";
 import { VocabularyDashboardCard } from "@/components/vocabulary/vocabulary-dashboard-card";
-import { CompetencyDashboardCard } from "@/components/assessment/competency-dashboard-card";
 import { ContinueLearningCard } from "@/components/progress/continue-learning-card";
 import { RecentActivityList } from "@/components/progress/recent-activity-list";
 import { StudyChart } from "@/components/dashboard/study-chart";
@@ -36,7 +35,6 @@ export default function DashboardPage() {
     <div className="welcome"><div><span className="eyebrow">ÖĞRENCİ PANELİ</span><h1>Tekrar hoş geldin, {firstName}.</h1><p>Bugünkü {dailyGoal} dakikalık çalışma hedefini sürdür.</p></div><Link className="button button-primary" href={continueUnit ? `/learn/${course.id}/${continueUnit.id}` : `/courses/${course.slug}`}>Derse Devam Et</Link></div>
     <div className="stats-grid"><Stat icon={<Target/>} label="Günlük hedef" value={`${dailyGoal} dk`} note="Kişisel planına göre dağıtılır"/><Stat icon={<Flame/>} label="Çalışma serisi" value="6 gün" note="Kişisel rekor: 11 gün"/><Stat icon={<BookOpenCheck/>} label="Tamamlanan ünite" value={String(store.completedCount)} note={`${store.inProgressCount} ünite devam ediyor`}/><Stat icon={<TrendingUp/>} label="Ortalama quiz" value={`%${averageQuiz}`} note={`${quizScores.length} değerlendirme`}/></div>
     <IntelligenceOverviewPanel/>
-    <CompetencyDashboardCard/>
     <SkillDashboardPanel/>
     <VocabularyDashboardCard/>
     {continueUnit ? <ContinueLearningCard course={course} unit={continueUnit} position={position} progress={store.unitProgressMap[continueUnit.id]}/> : null}

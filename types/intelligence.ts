@@ -59,7 +59,7 @@ export type ReviewItemType = "MULTIPLE_CHOICE" | "TRUE_FALSE" | "FILL_IN_THE_BLA
 export type ReviewItem = {
   id: string;
   sourceId: string;
-  sourceType: "EXERCISE" | "QUIZ" | "INSIGHT";
+  sourceType: "EXERCISE" | "QUIZ" | "INSIGHT" | "ERROR_HISTORY";
   courseId: string;
   unitId: string;
   unitTitle: string;
@@ -68,6 +68,11 @@ export type ReviewItem = {
   prompt: string;
   options?: Array<{ id: string; label: string; value: string }>;
   href: string;
+  priority?: "CRITICAL" | "HIGH" | "MEDIUM";
+  reason?: string;
+  occurrenceCount?: number;
+  objectiveCode?: string;
+  errorHistoryId?: string;
 };
 
 export type ReviewAnswerResult = {

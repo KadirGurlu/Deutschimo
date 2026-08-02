@@ -13,7 +13,6 @@ export function Footer() {
         <nav aria-label="Alt menü">
           <Link href="/courses">Kurslar</Link>
           <Link href="/#seviyeler">Seviyeler</Link>
-          <Link href="/exams">Sınav Hazırlık</Link>
           <Link href="/auth?mode=register">Kayıt Ol</Link>
         </nav>
 

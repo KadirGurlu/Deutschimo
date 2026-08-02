@@ -1,8 +1,13 @@
 import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
-import { analyzeLearningState, buildReviewQueue } from "@/lib/intelligence/insight-engine";
+import {
+  analyzeLearningState,
+  buildReviewQueue,
+  type PersonalizedErrorSignal,
+  type StoredReviewItem,
+} from "@/lib/intelligence/insight-engine";
 import { buildDailyPlan } from "@/lib/intelligence/daily-plan";
-import type { DailyPlanTask, DailyStudyPlan, IntelligenceInsights, IntelligenceLevel, PlacementResult, ReviewItem } from "@/types/intelligence";
+import type { DailyPlanTask, DailyStudyPlan, IntelligenceInsights, IntelligenceLevel, PlacementResult } from "@/types/intelligence";
 import type { LearningState } from "@/types/progress";
 
 function jsonValue(value: unknown): Prisma.InputJsonValue {
@@ -14,8 +19,8 @@ export async function readLearningState(userId: string): Promise<LearningState |
   return (snapshot?.state as unknown as LearningState | undefined) ?? null;
 }
 
-export async function refreshInsights(userId: string): Promise<IntelligenceInsights> {
-  const state = await readLearningState(userId);
+export async function refreshInsights(userId: string, stateOverride?: LearningState | null): Promise<IntelligenceInsights> {
+  const state = stateOverride === undefined ? await readLearningState(userId) : stateOverride;
   const insights = analyzeLearningState(state);
   await prisma.learningInsightSnapshot.upsert({
     where: { userId },
@@ -24,14 +29,14 @@ export async function refreshInsights(userId: string): Promise<IntelligenceInsig
       weakTopics: insights.weakTopics as unknown as Prisma.InputJsonValue,
       strengths: insights.strengths as unknown as Prisma.InputJsonValue,
       hasEnoughData: insights.hasEnoughData,
-      sourceVersion: 12,
+      sourceVersion: 23,
       generatedAt: new Date(insights.generatedAt),
     },
     update: {
       weakTopics: insights.weakTopics as unknown as Prisma.InputJsonValue,
       strengths: insights.strengths as unknown as Prisma.InputJsonValue,
       hasEnoughData: insights.hasEnoughData,
-      sourceVersion: 12,
+      sourceVersion: 23,
       generatedAt: new Date(insights.generatedAt),
     },
   });
@@ -54,15 +59,56 @@ export async function latestPlacement(userId: string): Promise<PlacementResult |
   };
 }
 
-export type StoredReviewItem = ReviewItem & {
-  correctAnswer?: unknown;
-  acceptedAnswers?: string[];
-  explanation: string;
-};
+async function readOpenErrorSignals(userId: string): Promise<PersonalizedErrorSignal[]> {
+  const errors = await prisma.learningErrorHistory.findMany({
+    where: { userId, resolvedAt: null },
+    orderBy: [{ occurrenceCount: "desc" }, { lastOccurredAt: "desc" }],
+    take: 30,
+    select: {
+      id: true,
+      sourceType: true,
+      sourceId: true,
+      courseId: true,
+      unitId: true,
+      level: true,
+      skill: true,
+      objectiveCode: true,
+      topic: true,
+      correctAnswer: true,
+      explanation: true,
+      relatedSlideId: true,
+      occurrenceCount: true,
+      lastOccurredAt: true,
+    },
+  });
+
+  return errors.map((error) => ({
+    ...error,
+    correctAnswer: error.correctAnswer as unknown,
+    lastOccurredAt: error.lastOccurredAt.toISOString(),
+  }));
+}
 
 export async function getOrRefreshReviewState(userId: string, force = false) {
-  const existing = await prisma.smartReviewState.findUnique({ where: { userId } });
-  const isFresh = existing && Date.now() - existing.generatedAt.getTime() < 12 * 60 * 60 * 1000;
+  const [existing, stateSnapshot, latestOpenError] = await Promise.all([
+    prisma.smartReviewState.findUnique({ where: { userId } }),
+    prisma.learningStateSnapshot.findUnique({ where: { userId }, select: { state: true, updatedAt: true } }),
+    prisma.learningErrorHistory.findFirst({
+      where: { userId, resolvedAt: null },
+      orderBy: { lastOccurredAt: "desc" },
+      select: { lastOccurredAt: true },
+    }),
+  ]);
+
+  const newestLearningSignal = [stateSnapshot?.updatedAt, latestOpenError?.lastOccurredAt]
+    .filter((value): value is Date => Boolean(value))
+    .sort((a, b) => b.getTime() - a.getTime())[0];
+  const isFresh = Boolean(
+    existing
+      && Date.now() - existing.generatedAt.getTime() < 30 * 60 * 1000
+      && (!newestLearningSignal || existing.generatedAt.getTime() >= newestLearningSignal.getTime()),
+  );
+
   if (existing && isFresh && !force) {
     return {
       queue: existing.queue as unknown as StoredReviewItem[],
@@ -71,10 +117,15 @@ export async function getOrRefreshReviewState(userId: string, force = false) {
     };
   }
 
-  const state = await readLearningState(userId);
-  const insights = await refreshInsights(userId);
-  const queue = buildReviewQueue(state, insights);
-  const completedIds = force ? [] : ((existing?.completedIds as string[] | undefined) ?? []).filter((id) => queue.some((item) => item.id === id));
+  const state = (stateSnapshot?.state as unknown as LearningState | undefined) ?? null;
+  const [insights, errorHistory] = await Promise.all([
+    refreshInsights(userId, state),
+    readOpenErrorSignals(userId),
+  ]);
+  const queue = buildReviewQueue(state, insights, errorHistory);
+  const completedIds = force
+    ? []
+    : ((existing?.completedIds as string[] | undefined) ?? []).filter((id) => queue.some((item) => item.id === id));
   const attempts = force ? {} : ((existing?.attempts as Record<string, number> | undefined) ?? {});
   const saved = await prisma.smartReviewState.upsert({
     where: { userId },

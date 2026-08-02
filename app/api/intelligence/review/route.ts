@@ -11,6 +11,14 @@ function publicItem(item: Awaited<ReturnType<typeof getOrRefreshReviewState>>["q
   return safe;
 }
 
+function sourceSummary(queue: Awaited<ReturnType<typeof getOrRefreshReviewState>>["queue"]) {
+  return {
+    errorHistory: queue.filter((item) => item.sourceType === "ERROR_HISTORY").length,
+    weakTopics: queue.filter((item) => item.sourceType === "INSIGHT").length,
+    recentMistakes: queue.filter((item) => item.sourceType === "EXERCISE" || item.sourceType === "QUIZ").length,
+  };
+}
+
 async function GETHandler(request: Request) {
   const user = await getApiUser();
   if (!user) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
@@ -22,6 +30,7 @@ async function GETHandler(request: Request) {
     attempts: state.attempts,
     total: state.queue.length,
     completed: state.completedIds.length,
+    personalization: sourceSummary(state.queue),
   });
 }
 
@@ -41,12 +50,28 @@ async function POSTHandler(request: Request) {
     : answersMatch(body.answer, item.correctAnswer, item.acceptedAnswers ?? []);
   const completedIds = correct ? Array.from(new Set([...state.completedIds, item.id])) : state.completedIds;
 
-  await prisma.smartReviewState.update({
-    where: { userId: user.id },
-    data: {
-      completedIds: completedIds as unknown as Prisma.InputJsonValue,
-      attempts: attempts as unknown as Prisma.InputJsonValue,
-    },
+  await prisma.$transaction(async (tx) => {
+    await tx.smartReviewState.update({
+      where: { userId: user.id },
+      data: {
+        completedIds: completedIds as unknown as Prisma.InputJsonValue,
+        attempts: attempts as unknown as Prisma.InputJsonValue,
+      },
+    });
+
+    if (item.errorHistoryId) {
+      if (correct) {
+        await tx.learningErrorHistory.updateMany({
+          where: { id: item.errorHistoryId, userId: user.id, resolvedAt: null },
+          data: { resolvedAt: new Date() },
+        });
+      } else {
+        await tx.learningErrorHistory.updateMany({
+          where: { id: item.errorHistoryId, userId: user.id },
+          data: { occurrenceCount: { increment: 1 }, lastOccurredAt: new Date(), resolvedAt: null },
+        });
+      }
+    }
   });
 
   return NextResponse.json({

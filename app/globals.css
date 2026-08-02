@@ -1221,3 +1221,15 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 640px) {
   .brand-logo { width: 36px; height: 36px; }
 }
+
+/* V23 — sade öğrenci menüsü ve kişisel akıllı tekrar */
+.v23-three-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.review-personalization{display:flex;flex-wrap:wrap;gap:9px}
+.review-personalization span{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid var(--border);border-radius:999px;background:#fff;color:var(--muted);font-size:12px;font-weight:800}
+.review-personalization svg{color:var(--turquoise-dark)}
+.review-reason{margin:18px 0 -2px;padding:11px 13px;border-left:4px solid var(--turquoise-dark);border-radius:0 8px 8px 0;background:#f2fefe;color:var(--text);font-weight:700}
+.review-priority{margin-left:auto;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:900}
+.review-priority.priority-critical{background:#fef3f2;color:#b42318}
+.review-priority.priority-high{background:#fff6ed;color:#b54708}
+.review-priority.priority-medium{background:#eef5f6;color:var(--navy)}
+@media(max-width:900px){.v23-three-card-grid{grid-template-columns:1fr}.review-priority{margin-left:0}}

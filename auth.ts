@@ -67,7 +67,18 @@ const providers: NextAuthConfig["providers"] = [
   }),
 ];
 
-if (process.env.AUTH_GOOGLE_ID && process.env.AUTH_GOOGLE_SECRET) providers.push(Google);
+const googleClientId = process.env.AUTH_GOOGLE_ID;
+const googleClientSecret = process.env.AUTH_GOOGLE_SECRET;
+
+if (googleClientId && googleClientSecret) {
+  providers.push(Google({
+    clientId: googleClientId,
+    clientSecret: googleClientSecret,
+    // Google supplies a verified-email signal. Enabling this prevents existing
+    // e-mail/password users from being locked out when they later choose Google.
+    allowDangerousEmailAccountLinking: true,
+  }));
+}
 
 // Keep the adapter type aligned with the NextAuth package used by this app.
 // Runtime behavior is unchanged; this only prevents duplicate @auth/core type identities.
@@ -80,12 +91,23 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   providers,
   callbacks: {
     ...authConfig.callbacks,
-    async signIn({ user, account }) {
+    async signIn({ user, account, profile }) {
       if (account?.provider === "credentials") {
         if (!user.id) return false;
         const databaseUser = await prisma.user.findUnique({ where: { id: user.id }, select: { status: true } });
         return databaseUser?.status !== "SUSPENDED";
       }
+
+      if (account?.provider === "google") {
+        const emailVerified = Boolean(
+          profile &&
+          typeof profile === "object" &&
+          "email_verified" in profile &&
+          profile.email_verified === true
+        );
+        if (!emailVerified) return false;
+      }
+
       if (!user.email) return true;
       const existing = await prisma.user.findUnique({ where: { email: user.email.toLowerCase() }, select: { status: true } });
       return existing?.status !== "SUSPENDED";

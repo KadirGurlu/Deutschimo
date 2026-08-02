@@ -1,0 +1,70 @@
+DEUTSCHIMO V20 YÜKLEME VE GOOGLE OAUTH TALİMATLARI
+==================================================
+
+A) DOSYALARI GITHUB'A YÜKLE
+---------------------------
+1. deutschimo-v20-guncelleme-paketi.zip dosyasını çıkart.
+2. GitHub Desktop'ta Deutschimo deposunu aç.
+3. Repository > Show in Explorer seçeneğine tıkla.
+4. ZIP içindeki dosya ve klasörleri açılan Deutschimo klasörüne kopyala.
+5. Windows sorarsa “Hedefteki dosyaları değiştir” seçeneğini kullan.
+6. GitHub Desktop'a dön.
+7. Summary alanına şunu yaz:
+
+   Add Deutschimo V20 homepage auth and Google login
+
+8. Commit to main butonuna bas.
+9. Push origin butonuna bas.
+
+B) GOOGLE CLOUD OAUTH KURULUMU
+------------------------------
+1. Google Cloud Console'da bir proje oluştur veya mevcut projeyi seç.
+2. Google Auth Platform / Branding bölümünde uygulama adını Deutschimo olarak ayarla.
+3. Audience bölümünde uygulamayı uygun kullanıcı tipine göre yapılandır.
+4. Clients bölümünde “Web application” türünde OAuth client oluştur.
+5. Authorized JavaScript origins alanına şunu ekle:
+
+   https://deutschimo.vercel.app
+
+6. Authorized redirect URIs alanına şunu ekle:
+
+   https://deutschimo.vercel.app/api/auth/callback/google
+
+Yerel test için isteğe bağlı değerler:
+   http://localhost:3000
+   http://localhost:3000/api/auth/callback/google
+
+7. Oluşan Client ID ve Client Secret değerlerini kopyala. Bunları GitHub'a veya mesajlara yazma.
+
+C) VERCEL ENVIRONMENT VARIABLES
+-------------------------------
+Deutschimo > Environment Variables bölümüne ayrı ayrı ekle:
+
+Key: AUTH_GOOGLE_ID
+Value: Google Client ID
+Sensitive: Açık
+Environments: Production and Preview
+
+Key: AUTH_GOOGLE_SECRET
+Value: Google Client Secret
+Sensitive: Açık
+Environments: Production and Preview
+
+Key: NEXT_PUBLIC_GOOGLE_AUTH_ENABLED
+Value: true
+Sensitive: Kapalı olabilir
+Environments: Production and Preview
+
+Değişkenler eklendikten sonra yeni GitHub push'u otomatik deployment başlatır. Dosyaları daha önce yüklediysen en güncel production deployment'ı Redeploy et.
+
+D) TEST
+------
+1. Ana sayfada Giriş Yap'a bas; giriş sekmesi açık gelmelidir.
+2. Kayıt Ol'a bas; kayıt sekmesi açık gelmelidir.
+3. A1, A2, B1 ve B2 kartlarına ayrı ayrı bas; kayıt sayfası gelmeli ve seviye otomatik seçilmelidir.
+4. Google ile devam et butonuna bas.
+5. Google izin ekranından sonra /dashboard sayfasına dönmelidir.
+6. Admin > Users ekranında Google hesabının göründüğünü kontrol et.
+
+VERİTABANI ŞEMASI DEĞİŞMİYOR.
+MEVCUT KULLANICILAR VE İLERLEME VERİLERİ SİLİNMEZ.

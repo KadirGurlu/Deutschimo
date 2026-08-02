@@ -13,7 +13,7 @@ export function Footer() {
           <Link href="/courses">Kurslar</Link>
           <Link href="/#seviyeler">Seviyeler</Link>
           <Link href="/exams">Sınav Hazırlık</Link>
-          <Link href="/auth">Kayıt Ol</Link>
+          <Link href="/auth?mode=register">Kayıt Ol</Link>
         </nav>
 
         <nav aria-label="Yasal bağlantılar">

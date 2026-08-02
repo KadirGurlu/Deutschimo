@@ -1,6 +1,6 @@
 {
   "name": "deutschimo-platform",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -26,7 +26,8 @@
     "validate:v16": "node scripts/validate-v16.mjs",
     "validate:v16:types": "tsc -p tsconfig.v16-check.json",
     "validate:v17": "node scripts/validate-v17.mjs",
-    "validate:v19": "node scripts/validate-v19.mjs"
+    "validate:v19": "node scripts/validate-v19.mjs",
+    "validate:v20": "node scripts/validate-v20.mjs"
   },
   "prisma": {
     "seed": "node prisma/seed.mjs"

@@ -5,7 +5,6 @@ import {
   BookOpenCheck,
   CheckCircle2,
   Clock3,
-  GraduationCap,
   Layers3,
   PlayCircle,
 } from "lucide-react";
@@ -19,7 +18,6 @@ const levelCards = [
     description: "Temel ifadeler, günlük iletişim ve Almancanın yapı taşları.",
     units: "12 ünite",
     exercises: "168 alıştırma",
-    href: "/courses/a1",
   },
   {
     level: "A2",
@@ -27,7 +25,6 @@ const levelCards = [
     description: "Günlük yaşamda daha rahat konuşma, okuma ve yazma.",
     units: "16 ünite",
     exercises: "224 alıştırma",
-    href: "/courses/a2",
   },
   {
     level: "B1",
@@ -35,7 +32,6 @@ const levelCards = [
     description: "Daha uzun metinler, akıcı iletişim ve işlevsel dil kullanımı.",
     units: "18 ünite",
     exercises: "252 alıştırma",
-    href: "/courses/b1",
   },
   {
     level: "B2",
@@ -43,9 +39,14 @@ const levelCards = [
     description: "Akademik ve profesyonel ortamlarda güçlü ifade becerisi.",
     units: "20 ünite",
     exercises: "280 alıştırma",
-    href: "/courses/b2",
   },
 ] as const;
+
+function registrationHref(level?: string) {
+  const params = new URLSearchParams({ mode: "register" });
+  if (level) params.set("level", level);
+  return `/auth?${params.toString()}`;
+}
 
 const platformValues = [
   {
@@ -71,23 +72,20 @@ export default function HomePage() {
       <section className="v19-hero">
         <div className="container v19-hero-grid">
           <div className="v19-hero-copy">
-            <span className="eyebrow">A1'DEN B2'YE ALMANCA</span>
+            <span className="eyebrow">A1&apos;DEN B2&apos;YE ALMANCA</span>
             <h1>Almanca öğrenmenin sade ve düzenli yolu.</h1>
             <p>
               Yapılandırılmış dersler, özgün alıştırmalar ve ilerleme takibiyle
               Almancanı adım adım geliştir.
             </p>
             <div className="v19-hero-actions">
-              <Button href="/auth">
+              <Button href={registrationHref()}>
                 Kayıt Ol <ArrowRight size={18} />
-              </Button>
-              <Button href="/courses" variant="secondary">
-                Seviyeleri İncele
               </Button>
             </div>
             <div className="v19-hero-proof" aria-label="Platform özeti">
               <span><CheckCircle2 size={17} /> 66 yapılandırılmış ünite</span>
-              <span><CheckCircle2 size={17} /> 900'den fazla alıştırma</span>
+              <span><CheckCircle2 size={17} /> 900&apos;den fazla alıştırma</span>
               <span><CheckCircle2 size={17} /> Video olmadan odaklı öğrenme</span>
             </div>
           </div>
@@ -105,8 +103,9 @@ export default function HomePage() {
               {levelCards.map((item, index) => (
                 <Link
                   className={`v19-preview-row ${index === 0 ? "active" : ""}`}
-                  href={item.href}
+                  href={registrationHref(item.level)}
                   key={item.level}
+                  aria-label={`${item.level} seviyesini seçerek kayıt ol`}
                 >
                   <span className="v19-preview-level">{item.level}</span>
                   <span className="v19-preview-text">
@@ -116,11 +115,6 @@ export default function HomePage() {
                   {index === 0 ? <PlayCircle size={21} /> : <ArrowRight size={19} />}
                 </Link>
               ))}
-            </div>
-
-            <div className="v19-preview-foot">
-              <GraduationCap size={21} />
-              <span>Ders anlatımı → alıştırma → ünite ilerlemesi</span>
             </div>
           </div>
         </div>
@@ -150,7 +144,12 @@ export default function HomePage() {
 
           <div className="v19-level-grid">
             {levelCards.map((item) => (
-              <Link className="v19-level-card" href={item.href} key={item.level}>
+              <Link
+                className="v19-level-card"
+                href={registrationHref(item.level)}
+                key={item.level}
+                aria-label={`${item.level} seviyesini seçerek kayıt ol`}
+              >
                 <div className="v19-level-card-top">
                   <span>{item.level}</span>
                   <ArrowRight size={20} />
@@ -200,10 +199,7 @@ export default function HomePage() {
             <p>Seviyeni seç, ilk dersini tamamla ve öğrenme yolunu oluştur.</p>
           </div>
           <div className="v19-cta-actions">
-            <Button href="/auth">Kayıt Ol</Button>
-            <Link href="/courses" className="v19-text-link">
-              Programları incele <ArrowRight size={18} />
-            </Link>
+            <Button href={registrationHref()}>Kayıt Ol</Button>
           </div>
           <Layers3 className="v19-cta-decoration" size={150} aria-hidden="true" />
         </div>

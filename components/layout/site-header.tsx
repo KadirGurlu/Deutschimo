@@ -7,12 +7,6 @@ import { useState } from "react";
 import { SyncStatusIndicator } from "@/components/auth/sync-status";
 import { clearCurrentLearningCache, setActiveLearningUser } from "@/lib/storage/learning-storage";
 
-const navigation = [
-  ["Kurslar", "/courses"],
-  ["Seviyeler", "/#seviyeler"],
-  ["Sınav Hazırlık", "/exams"],
-] as const;
-
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const { data: session, status } = useSession();
@@ -25,15 +19,11 @@ export function SiteHeader() {
   }
 
   return (
-    <header className="site-header v19-site-header">
+    <header className="site-header v19-site-header v20-site-header">
       <div className="header-inner">
         <Link href="/" className="brand" aria-label="Deutschimo ana sayfa" onClick={() => setOpen(false)}>
           <span className="brand-mark">D</span><span>Deutschimo</span>
         </Link>
-
-        <nav className="desktop-nav v19-desktop-nav" aria-label="Ana menü">
-          {navigation.map(([label, href]) => <Link href={href} key={label}>{label}</Link>)}
-        </nav>
 
         <div className="header-actions">
           {authenticated ? <>
@@ -43,8 +33,8 @@ export function SiteHeader() {
             </Link>
             <button className="icon-button" aria-label="Çıkış yap" title="Çıkış yap" onClick={logout}><LogOut size={19} /></button>
           </> : <>
-            <Link href="/auth" className="login-link">Giriş Yap</Link>
-            <Link href="/auth" className="button button-primary header-cta">Kayıt Ol</Link>
+            <Link href="/auth?mode=login" className="login-link">Giriş Yap</Link>
+            <Link href="/auth?mode=register" className="button button-primary header-cta">Kayıt Ol</Link>
           </>}
 
           <button
@@ -59,13 +49,12 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <nav className="v19-mobile-menu" aria-label="Mobil menü">
-          {navigation.map(([label, href]) => <Link href={href} key={label} onClick={() => setOpen(false)}>{label}</Link>)}
+        <nav className="v19-mobile-menu v20-mobile-menu" aria-label="Hesap menüsü">
           {authenticated ? (
             <Link href="/dashboard" onClick={() => setOpen(false)}>Hesabım</Link>
           ) : <>
-            <Link href="/auth" onClick={() => setOpen(false)}>Giriş Yap</Link>
-            <Link href="/auth" className="button button-primary" onClick={() => setOpen(false)}>Kayıt Ol</Link>
+            <Link href="/auth?mode=login" onClick={() => setOpen(false)}>Giriş Yap</Link>
+            <Link href="/auth?mode=register" className="button button-primary" onClick={() => setOpen(false)}>Kayıt Ol</Link>
           </>}
         </nav>
       ) : null}

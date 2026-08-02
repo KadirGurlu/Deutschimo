@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { LogOut, Menu, UserRound, X } from "lucide-react";
 import { signOut, useSession } from "next-auth/react";
@@ -22,7 +23,7 @@ export function SiteHeader() {
     <header className="site-header v19-site-header v20-site-header">
       <div className="header-inner">
         <Link href="/" className="brand" aria-label="Deutschimo ana sayfa" onClick={() => setOpen(false)}>
-          <span className="brand-mark">D</span><span>Deutschimo</span>
+          <Image src="/deutschimo-logo.png" alt="" width={40} height={40} className="brand-logo" priority /><span>Deutschimo</span>
         </Link>
 
         <div className="header-actions">

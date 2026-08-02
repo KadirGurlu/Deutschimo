@@ -1,0 +1,15 @@
+DEUTSCHIMO V22 YÜKLEME TALİMATI
+
+1. V22 güncelleme paketini çıkartın.
+2. GitHub Desktop'ta Deutschimo deposunu açın.
+3. Repository > Show in Explorer seçeneğine tıklayın.
+4. Güncelleme paketindeki dosyaları açılan Deutschimo klasörünün üzerine kopyalayın.
+5. Windows sorarsa "Hedefteki dosyaları değiştir" seçeneğini seçin.
+6. GitHub Desktop'a dönün.
+7. Summary alanına şunu yazın:
+   Add Deutschimo V22 official logo
+8. Commit to main butonuna basın.
+9. Push origin butonuna basın.
+10. Vercel deployment durumunun Ready olmasını bekleyin.
+
+Yeni Environment Variable gerekmiyor.

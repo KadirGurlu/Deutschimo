@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -5,7 +6,7 @@ export function Footer() {
     <footer className="footer v19-footer">
       <div className="container v19-footer-grid">
         <div className="v19-footer-brand">
-          <div className="brand" style={{ color: "white" }}><span className="brand-mark">D</span><span>Deutschimo</span></div>
+          <div className="brand" style={{ color: "white" }}><Image src="/deutschimo-logo.png" alt="" width={40} height={40} className="brand-logo brand-logo-footer" /><span>Deutschimo</span></div>
           <p>A1'den B2'ye sade, düzenli ve ölçülebilir Almanca öğrenme platformu.</p>
         </div>
 

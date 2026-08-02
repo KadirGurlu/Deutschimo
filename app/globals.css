@@ -1300,3 +1300,29 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .v26-account-link svg{width:20px;height:20px}
   .v26-welcome-actions .button{width:100%}
 }
+
+/* V27 · Content quality assurance */
+.content-quality-card {
+  margin: 18px 0 24px;
+  padding: 22px;
+  border: 1px solid #cfe8ea;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ffffff 0%, #f2fbfb 100%);
+  box-shadow: 0 12px 30px rgba(15, 43, 64, 0.06);
+}
+.content-quality-card__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.content-quality-card__head h2 { display: flex; align-items: center; gap: 9px; margin: 7px 0 0; font-size: 22px; color: #102b40; }
+.content-quality-card > p { margin: 14px 0; color: #55677c; line-height: 1.65; }
+.content-quality-status { display: inline-flex; align-items: center; border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.content-quality-status--yayina_hazir { background: #dcfce7; color: #166534; }
+.content-quality-status--editor_kontrolunde { background: #fff7d6; color: #8a5a00; }
+.content-quality-status--dil_kontrolu_tamamlandi { background: #dff7fb; color: #087788; }
+.content-quality-status--taslak { background: #eef2f7; color: #526176; }
+.content-quality-checks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; margin: 16px 0; }
+.content-quality-checks > div { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border: 1px solid #e3eaf0; border-radius: 12px; background: #fff; font-size: 13px; font-weight: 700; color: #53647a; }
+.content-quality-checks .is-complete { color: #087f71; border-color: #bce9df; }
+.content-quality-checks .is-warning { color: #a33a2c; border-color: #ffd3cc; }
+.content-quality-checks .is-pending { color: #8a6a1f; border-color: #f2dfaa; }
+.content-quality-card small { color: #718096; }
+@media (max-width: 900px) { .content-quality-checks { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .content-quality-card__head { flex-direction: column; } .content-quality-checks { grid-template-columns: 1fr; } }

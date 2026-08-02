@@ -1,0 +1,992 @@
+[
+  {
+    "unitId": "a1-u01",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u02",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u03",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u04",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u05",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u06",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u07",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u08",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u09",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u10",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u11",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a1-u12",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "A1 içeriği örnek, soru, diyalog, okuma ve kelime kartları düzeyinde gözden geçirildi."
+  },
+  {
+    "unitId": "a2-u01",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u02",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u03",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u04",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u05",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u06",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u07",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u08",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u09",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u10",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u11",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u12",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u13",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u14",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u15",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "a2-u16",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u01",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u02",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u03",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u04",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u05",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u06",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u07",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u08",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u09",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u10",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u11",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u12",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u13",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u14",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u15",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u16",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u17",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b1-u18",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u01",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u02",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u03",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u04",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u05",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u06",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u07",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u08",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u09",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u10",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u11",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u12",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u13",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u14",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u15",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u16",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u17",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u18",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u19",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  },
+  {
+    "unitId": "b2-u20",
+    "status": "EDITOR_KONTROLUNDE",
+    "reviewedAt": "2026-08-02",
+    "manualLanguageReview": false,
+    "checks": {
+      "grammarAndSpelling": null,
+      "levelAppropriateness": null,
+      "translationNaturalness": null,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "Otomatik kalite taraması ve sistematik düzeltmeler tamamlandı; yayımdan önce Almanca editörünün son dil kontrolü önerilir."
+  }
+]

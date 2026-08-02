@@ -133,7 +133,7 @@ const scenes: Record<string, { dialogue: DialogueTurn[]; reading: BilingualText;
   },
   "a1-u08": {
     dialogue: [turn("Apothekerin", "Guten Tag. Was fehlt Ihnen?", "İyi günler. Neyiniz var?"), turn("Leon", "Ich habe Halsschmerzen und Husten.", "Boğazım ağrıyor ve öksürüyorum."), turn("Apothekerin", "Haben Sie auch Fieber?", "Ateşiniz de var mı?"), turn("Leon", "Nein, kein Fieber.", "Hayır, ateşim yok."), turn("Apothekerin", "Nehmen Sie diesen Tee und ruhen Sie sich aus.", "Bu çayı alın ve dinlenin."), turn("Leon", "Danke für den Rat.", "Tavsiye için teşekkür ederim.")],
-    reading: { de: "Emma fühlt sich heute nicht gut. Ihr Kopf tut weh und sie ist müde. Sie bleibt zu Hause, trinkt viel Wasser und schläft zwei Stunden. Am Nachmittag geht es ihr besser.", tr: "Emma bugün kendini iyi hissetmez. Başı ağrır ve yorgundur. Evde kalır, çok su içer ve iki saat uyur. Öğleden sonra daha iyi olur." },
+    reading: { de: "Emma fühlt sich heute nicht gut. Ihr Kopf tut weh und sie ist müde. Sie bleibt zu Hause, trinkt viel Wasser und schläft zwei Stunden. Am Nachmittag geht es ihr besser.", tr: "Emma bugün kendini iyi hissetmiyor. Başı ağrıyor ve kendini yorgun hissediyor. Evde kalıyor, bol su içiyor ve iki saat uyuyor. Öğleden sonra kendini daha iyi hissediyor." },
     listening: { de: "Bitte nehmen Sie die Tabletten zweimal täglich nach dem Essen. Trinken Sie genug Wasser. Wenn das Fieber morgen noch da ist, rufen Sie bitte Ihre Ärztin an.", tr: "Lütfen tabletleri günde iki kez yemekten sonra alın. Yeterince su için. Ateş yarın hâlâ devam ederse lütfen doktorunuzu arayın." },
   },
   "a1-u09": {
@@ -154,7 +154,7 @@ const scenes: Record<string, { dialogue: DialogueTurn[]; reading: BilingualText;
   "a1-u12": {
     dialogue: [turn("Rezeption", "Guten Tag. Haben Sie reserviert?", "İyi günler. Rezervasyonunuz var mı?"), turn("Lukas", "Ja, auf den Namen Wagner.", "Evet, Wagner adına."), turn("Rezeption", "Ein Doppelzimmer für drei Nächte, richtig?", "Üç gecelik çift kişilik oda, doğru mu?"), turn("Lukas", "Ja. Ist das Frühstück inklusive?", "Evet. Kahvaltı dâhil mi?"), turn("Rezeption", "Ja, von sieben bis zehn Uhr.", "Evet, saat yediden ona kadar."), turn("Lukas", "Vielen Dank.", "Çok teşekkür ederim.")],
     reading: { de: "Marie fährt im Juli nach Österreich. Sie reist mit dem Zug von Nürnberg nach Salzburg. Dort bleibt sie fünf Tage in einem kleinen Hotel. Sie möchte die Altstadt besichtigen und in den Bergen wandern.", tr: "Marie temmuz ayında Avusturya'ya gider. Nürnberg'den Salzburg'a trenle seyahat eder. Orada küçük bir otelde beş gün kalır. Eski şehri gezmek ve dağlarda yürüyüş yapmak ister." },
-    listening: { de: "Der ICE nach Berlin fährt heute von Gleis sieben ab. Wegen einer technischen Störung hat der Zug zehn Minuten Verspätung. Bitte beachten Sie die Anzeigen am Bahnsteig.", tr: "Berlin'e giden ICE treni bugün yedinci perondan kalkacaktır. Teknik bir arıza nedeniyle tren on dakika gecikmelidir. Lütfen perondaki ekranları takip edin." },
+    listening: { de: "Der ICE nach Berlin fährt heute von Gleis sieben ab. Wegen einer technischen Störung hat der Zug zehn Minuten Verspätung. Bitte beachten Sie die Anzeigen am Bahnsteig.", tr: "Berlin'e giden ICE treni bugün yedinci perondan kalkıyor. Teknik bir arıza nedeniyle tren on dakika gecikmeli. Lütfen perondaki ekranları takip edin." },
   },
 };
 

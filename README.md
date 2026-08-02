@@ -1,3 +1,7 @@
+# Deutschimo V27
+
+V27, A1-B2 kapsamındaki 66 ünitenin içerik kalite güvence sürümüdür. Temel dersler, zengin okuma/dinleme içerikleri ve 2.250 kelime kartı; özgünlük, tekrar, seviye uygunluğu, dil bilgisi, çeviri ve cevap tutarlılığı bakımından denetlendi. Admin içerik editörüne ünite bazlı kalite durumu eklendi. Ayrıntılar için `CHANGELOG_V27.md`, `docs/V27_CONTENT_QUALITY_REPORT.md` ve `UPLOAD_INSTRUCTIONS_V27.txt` dosyalarına bakın.
+
 # Deutschimo V25
 
 V25, herkese açık tanıtım sayfası ile giriş yapılmış öğrenci deneyimini kesin biçimde ayırır. Oturum açmış kullanıcı `/` adresine veya Deutschimo logosuna tıkladığında kişisel Öğrenci Paneline yönlendirilir. Panel; en son çalışılan kursu, gerçek çalışma serisini, kurs ilerlemesini ve günlük hedefi kullanıcıya özel verilerden gösterir. Ayrıntılar için `CHANGELOG_V25.md` ve `UPLOAD_INSTRUCTIONS_V25.txt` dosyalarına bakın.

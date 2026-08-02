@@ -1,0 +1,19 @@
+Deutschimo V27 güncelleme paketi dosyaları
+==========================================
+
+CHANGELOG_V27.md
+UPLOAD_INSTRUCTIONS_V27.txt
+V27_UPDATE_MANIFEST.txt
+README.md
+package.json
+app/globals.css
+components/admin/content-manager.tsx
+data/content-quality.json
+data/content-quality.ts
+data/curriculum-content.json
+data/v16-content-bank.json
+data/v21-vocabulary-sets.json
+docs/V27_CONTENT_QUALITY_REPORT.md
+lib/learning/topic-content.ts
+scripts/validate-v27.mjs
+types/content-quality.ts

@@ -1,0 +1,27 @@
+DEUTSCHIMO V28.0 UPDATE MANIFEST
+
+NEW
+.github/workflows/ci.yml
+.gitignore
+eslint.config.mjs
+playwright.config.ts
+e2e/public-learning-flow.spec.ts
+e2e/security-and-responsive.spec.ts
+scripts/validate-v28.mjs
+docs/V28_CI_AND_TESTING.md
+CHANGELOG_V28.md
+UPLOAD_INSTRUCTIONS_V28.txt
+V28_UPDATE_MANIFEST.txt
+
+UPDATED
+package.json
+README.md
+
+QUALITY GATES
+- TypeScript
+- ESLint
+- Content validation
+- V27 content quality validation
+- V28 CI structure validation
+- Playwright critical user flows
+- Production Next.js build

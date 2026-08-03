@@ -100,3 +100,7 @@ V14, kişisel kelime defterine aralıklı tekrar, yedi görev türü, ayrıntıl
 ## V16 — İçerik odaklı genişleme
 
 V16, A1–B2 kapsamındaki 66 ünitenin içerik yoğunluğunu artırır. Her üniteye CEFR/GER hedefleri, en az 10 kelime, kültür ve günlük yaşam notu, özgün bağlam, okuma/dinleme çalışmaları, seviyeye uygun yazma-konuşma görevleri ve gerçek yaşam aktarım görevi eklenmiştir. Ünite başına ana alıştırma sayısı 14'e, ünite sonu değerlendirmesi 10 soruya çıkarılmıştır. Ayrıntılar için `CHANGELOG_V16.md`, kaynak yaklaşımı için `docs/V16_CONTENT_SOURCES.md` dosyasına bakın.
+
+## V28.0 kalite kapısı
+
+CI, otomatik testler ve yerel komutlar için `docs/V28_CI_AND_TESTING.md` dosyasına bakın.

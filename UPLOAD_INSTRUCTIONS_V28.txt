@@ -1,0 +1,16 @@
+DEUTSCHIMO V28.0 YÜKLEME
+
+1. Bu ZIP dosyasını bilgisayarında ayrı bir klasöre çıkar.
+2. GitHub Desktop içinde Deutschimo reposu için Repository > Show in Explorer seçeneğine tıkla.
+3. ZIP içindeki bütün dosya ve klasörleri repo klasörüne kopyala; sorulduğunda değiştir seçeneğini kullan.
+4. GitHub Desktop'ta değişikliklerin gelmesini bekle.
+5. Summary alanına: Add Deutschimo V28 CI and automated tests
+6. Commit to main, ardından Push origin.
+7. GitHub deposunda Actions sekmesini aç ve Deutschimo CI çalışmasını takip et.
+8. Üç işin de yeşil olması gerekir:
+   - TypeScript, lint and content
+   - Critical user flows
+   - Production build gate
+9. GitHub Settings > Branches bölümünden main dalı için Production build gate kontrolünü zorunlu yap.
+
+NOT: İlk npm install sonrasında package-lock.json oluşursa onu da repoya ekle. Sonraki CI çalışmaları npm ci kullanacaktır.

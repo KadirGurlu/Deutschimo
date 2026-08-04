@@ -1,27 +1,72 @@
 export type IntelligenceLevel = "A1" | "A2" | "B1" | "B2";
 
-export type PlacementSkill = "GRAMMAR" | "VOCABULARY" | "READING" | "COMMUNICATION";
+export type PlacementTestMode = "QUICK" | "DETAILED";
+
+export type PlacementSkill =
+  | "GRAMMAR"
+  | "VOCABULARY"
+  | "READING"
+  | "LISTENING"
+  | "WRITING"
+  | "SPEAKING";
+
+export type PlacementQuestionKind = "MULTIPLE_CHOICE" | "LISTENING" | "WRITING" | "SPEAKING";
+
+export type PlacementSkillBand = "A1" | "A1+" | "A2" | "A2+" | "B1" | "B1+" | "B2";
+
+export type PlacementOverallBand =
+  | "A1.1"
+  | "A1.2"
+  | "A2.1"
+  | "A2.2"
+  | "B1.1"
+  | "B1.2"
+  | "B2.1"
+  | "B2.2";
 
 export type PlacementQuestion = {
   id: string;
   level: IntelligenceLevel;
   topic: string;
   skill: PlacementSkill;
+  kind: PlacementQuestionKind;
   prompt: string;
-  options: Array<{ id: string; label: string; value: string }>;
-  correctAnswer: string;
+  options?: Array<{ id: string; label: string; value: string }>;
+  correctAnswer?: string;
   explanation: string;
+  audioText?: string;
+  instruction?: string;
+  minWords?: number;
+  maxWords?: number;
+  keywords?: string[];
+};
+
+export type PlacementGapPlanItem = {
+  id: string;
+  skill: PlacementSkill;
+  title: string;
+  description: string;
+  minutesPerDay: number;
+  priority: "HIGH" | "MEDIUM" | "LOW";
+  href: string;
 };
 
 export type PlacementResult = {
   id?: string;
+  mode?: PlacementTestMode;
   recommendedLevel: IntelligenceLevel;
+  overallBand?: PlacementOverallBand;
   totalScore: number;
   correctCount: number;
   questionCount: number;
   levelScores: Record<IntelligenceLevel, number>;
+  skillScores?: Partial<Record<PlacementSkill, number>>;
+  skillLevels?: Partial<Record<PlacementSkill, PlacementSkillBand>>;
   strengths: string[];
   weakTopics: string[];
+  studyPlan?: PlacementGapPlanItem[];
+  confidenceScore?: number;
+  durationSeconds?: number;
   completedAt: string;
 };
 

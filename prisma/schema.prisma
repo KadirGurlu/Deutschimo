@@ -330,18 +330,28 @@ model StudySession {
 model PlacementAssessment {
   id               String   @id @default(cuid())
   userId           String
+  mode             String   @default("QUICK")
   answers          Json
   levelScores      Json
+  skillScores      Json?
+  skillLevels      Json?
   strengths        Json
   weakTopics       Json
+  studyPlan        Json?
+  writtenSamples   Json?
+  speakingSamples  Json?
+  overallBand      String?
   recommendedLevel Level
   totalScore       Int
   correctCount     Int
   questionCount    Int
+  confidenceScore  Int      @default(0)
+  durationSeconds  Int?
   completedAt      DateTime @default(now())
   user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, completedAt])
+  @@index([userId, mode, completedAt])
 }
 
 model LearningInsightSnapshot {

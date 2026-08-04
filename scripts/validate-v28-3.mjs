@@ -33,9 +33,18 @@ const intelligenceUi = read("components/intelligence/smart-review.tsx");
 const controls = read("components/review/adaptive-review-controls.tsx");
 const vocabularyTypes = read("types/vocabulary.ts");
 
-requireText(packageJson, '"version": "28.3.0"', "package.json sürümü 28.3.0 olmalı.");
+const packageData = JSON.parse(packageJson || '{}');
+const versionMatch = /^(\d+)\.(\d+)\.(\d+)/.exec(String(packageData.version ?? ''));
+const versionIsCompatible = Boolean(versionMatch) && (
+  Number(versionMatch?.[1]) > 28
+  || (Number(versionMatch?.[1]) === 28 && Number(versionMatch?.[2]) >= 3)
+);
+if (!versionIsCompatible) failures.push("package.json sürümü 28.3.0 veya daha yeni olmalı.");
 requireText(packageJson, '"validate:v28.3"', "validate:v28.3 komutu eksik.");
-requireText(packageJson, "npm run validate:v28.3 && node scripts/db-deploy.mjs", "Vercel build migration öncesinde V28.3 doğrulaması çalıştırmalı.");
+const vercelBuild = String(packageData.scripts?.["vercel-build"] ?? "");
+const v283Step = vercelBuild.indexOf("npm run validate:v28.3");
+const deployStep = vercelBuild.indexOf("node scripts/db-deploy.mjs");
+if (v283Step < 0 || deployStep <= v283Step) failures.push("Vercel build migration öncesinde V28.3 doğrulaması çalıştırmalı.");
 
 for (const field of [
   "difficulty", "stability", "retrievability", "confidenceScore", "hintUseCount",

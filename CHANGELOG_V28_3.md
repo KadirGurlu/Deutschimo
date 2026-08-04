@@ -50,3 +50,4 @@ Artikel ve çoğul tekrarları kelime türüne göre ek destek biçimleri olarak
 - V28.1 migration güvenliği korunur.
 - Yeni migration, Preview veritabanında `prisma migrate deploy` ile uygulanır.
 - `validate:v28.3` build kapısı; yedi sinyali, yedi modu, migration'ı, şema alanlarını ve arayüz kontrollerini doğrular.
+Deployment trigger: V28.3 Preview

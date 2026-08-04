@@ -1,11 +1,18 @@
 export type VocabularyRating = "FORGOT" | "HARD" | "GOOD" | "EASY";
+export type ReviewConfidence = "UNSURE" | "SURE";
+
 export type VocabularyReviewMode =
   | "DE_TO_TR"
   | "TR_TO_DE"
-  | "AUDIO_TO_WORD"
+  | "LISTEN_WRITE"
   | "FILL_BLANK"
+  | "SENTENCE_ORDER"
+  | "SPEAK"
+  | "NEW_SENTENCE"
   | "ARTICLE"
   | "PLURAL"
+  // V14 geçmiş kayıtları için geriye dönük uyumluluk.
+  | "AUDIO_TO_WORD"
   | "SENTENCE";
 
 export type VerbConjugation = {
@@ -40,11 +47,21 @@ export type VocabularyRecord = {
   mastery: number;
   nextReviewAt: string;
   lastReviewedAt?: string | null;
+  lastSeenAt?: string | null;
   reviewCount: number;
   correctStreak: number;
   lapseCount: number;
   intervalDays: number;
   easeFactor: number;
+  difficulty?: number;
+  stability?: number;
+  retrievability?: number;
+  confidenceScore?: number;
+  hintUseCount?: number;
+  sameErrorStreak?: number;
+  averageResponseMs?: number | null;
+  lastResponseMs?: number | null;
+  lastMode?: VocabularyReviewMode | null;
   lastRating?: VocabularyRating | null;
   suspended: boolean;
   createdAt: string;
@@ -69,11 +86,17 @@ export type VocabularyReviewCard = {
   hint?: string;
   audioText?: string;
   options?: string[];
+  tokens?: string[];
   selfAssessment?: boolean;
+  speechTarget?: string;
+  modelSentence?: string | null;
   sourceUnitTitle?: string | null;
   mastery: number;
   reviewCount: number;
   lapseCount: number;
+  difficulty: number;
+  expectedSeconds: number;
+  sameErrorStreak: number;
 };
 
 export type VocabularyReviewResult = {
@@ -82,6 +105,18 @@ export type VocabularyReviewResult = {
   acceptedAnswers: string[];
   explanation: string;
   modelSentence?: string | null;
+  selfAssessment?: boolean;
+};
+
+export type VocabularyScheduleResult = {
+  nextReviewAt: string;
+  intervalDays: number;
+  mastery: number;
+  confidenceScore: number;
+  signalScore: number;
+  expectedSeconds: number;
+  explanations: string[];
+  label: string;
 };
 
 export type VocabularyRecentAttempt = {
@@ -92,6 +127,10 @@ export type VocabularyRecentAttempt = {
   rating: VocabularyRating;
   correct: boolean;
   responseMs?: number | null;
+  hintUsed?: boolean;
+  confidence?: ReviewConfidence | null;
+  difficulty?: number;
+  signalScore?: number | null;
   createdAt: string;
 };
 

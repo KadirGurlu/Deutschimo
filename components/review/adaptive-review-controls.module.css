@@ -1,0 +1,93 @@
+.shell {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.confidenceBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 16px;
+  border: 1px solid rgba(15, 118, 110, .18);
+  border-radius: 16px;
+  background: rgba(240, 253, 250, .72);
+}
+
+.confidenceBlock > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.confidenceBlock strong {
+  color: #123b3a;
+}
+
+.confidenceBlock span {
+  color: #55706f;
+  font-size: .9rem;
+}
+
+.confidenceButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.confidenceButtons button,
+.hintButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 9px 13px;
+  border: 1px solid rgba(15, 118, 110, .22);
+  border-radius: 12px;
+  background: #fff;
+  color: #174c49;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.confidenceButtons button:hover,
+.hintButton:hover,
+.confidenceButtons .selected {
+  border-color: #0f9488;
+  background: #dff8f4;
+}
+
+.confidenceButtons button:disabled,
+.hintButton:disabled {
+  cursor: not-allowed;
+  opacity: .58;
+}
+
+.hintBlock {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hintText {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 14px;
+  background: #fff9df;
+  color: #654c08;
+}
+
+@media (max-width: 760px) {
+  .confidenceBlock {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .confidenceButtons button {
+    flex: 1;
+  }
+}

@@ -1,0 +1,93 @@
+.signalRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.signalChip {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #eefbf9;
+  color: #17635d;
+  font-size: .84rem;
+  font-weight: 700;
+}
+
+.tokenBank,
+.answerBank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  min-height: 52px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px dashed rgba(15, 118, 110, .32);
+}
+
+.answerBank {
+  margin-bottom: 10px;
+  background: rgba(240, 253, 250, .75);
+}
+
+.tokenBank button,
+.answerBank button {
+  border: 1px solid rgba(15, 118, 110, .2);
+  border-radius: 10px;
+  padding: 8px 11px;
+  background: #fff;
+  color: #173f3d;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.tokenBank button:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+.audioActions,
+.speakActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.reviewActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.ratingGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.ratingGrid button {
+  min-height: 58px;
+}
+
+.modeNote {
+  color: #607574;
+  font-size: .9rem;
+}
+
+.feedbackSchedule {
+  margin-top: 10px;
+  padding: 11px 13px;
+  border-radius: 12px;
+  background: #effbf8;
+  color: #16534e;
+}
+
+@media (max-width: 700px) {
+  .ratingGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,97 @@
+DEUTSCHIMO V28.3 — AKILLI TEKRAR 2.0 KURULUMU
+================================================
+
+ÖN KOŞUL
+- V28.1 Preview deployment'ı Ready olmalı.
+- Production ve Preview veritabanları ayrı olmalı.
+- Bu paket yeni environment variable istemez.
+
+1) YENİ DAL OLUŞTUR
+GitHub Desktop'ta mevcut Ready V28.1 dalı açıkken:
+- Current Branch
+- New Branch
+- Ad: v28-3-staging
+- Create Branch
+
+V28.1 main'e merge edildiyse dalı main üzerinden oluşturabilirsin.
+
+2) PAKETİ KOPYALA
+- ZIP'i bilgisayarında ayıkla.
+- GitHub Desktop → Repository → Show in Explorer.
+- ZIP'in içindeki dosya ve klasörleri Deutschimo ana klasörüne kopyala.
+- Windows sorarsa “Hedefteki dosyaları değiştir” seç.
+- ZIP dosyasının kendisini proje içine koyma.
+
+3) BEKLENEN DEĞİŞİKLİKLER
+- package.json
+- prisma/schema.prisma
+- prisma/migrations/20260804143000_v28_3_adaptive_review/migration.sql
+- lib/review/adaptive-scheduler.ts
+- lib/vocabulary/scheduler.ts
+- app/api/vocabulary/review/route.ts
+- app/api/intelligence/review/route.ts
+- components/review/*
+- components/vocabulary/vocabulary-center.tsx
+- components/vocabulary/vocabulary-center-v28-3.module.css
+- components/intelligence/smart-review.tsx
+- types/vocabulary.ts
+- types/intelligence.ts
+- scripts/validate-v28-3.mjs
+- V28.3 dokümantasyon dosyaları
+
+4) COMMIT VE PUSH
+Summary:
+Add Deutschimo V28.3 Smart Review 2.0
+
+- Commit to v28-3-staging
+- Publish branch / Push origin
+
+5) VERCEL PREVIEW
+Yeni commit otomatik Preview deployment başlatır. Redeploy'a elle basmak gerekmez.
+
+Beklenen log sırası:
+- V28.1 ortam doğrulaması başarılı
+- V28.3 doğrulaması başarılı
+- 3 migrations found (mevcut Preview durumuna göre sayı değişebilir)
+- Applying migration 20260804143000_v28_3_adaptive_review
+- All migrations have been successfully applied
+- Schema drift kontrolü başarılı
+- next build
+- Ready
+
+6) TEST SENARYOLARI
+A. Kelime merkezi
+- Almanca → Türkçe
+- Türkçe → Almanca
+- Dinle → Yaz
+- Boşluğu doldur
+- Cümleyi sırala
+- Sesli söyle
+- Yeni cümlede kullan
+
+B. Sinyaller
+- Eminim + doğru
+- Emin değilim + doğru
+- Eminim + yanlış
+- İpucu ile doğru
+- Yavaş cevap
+- Aynı kelimeyi birkaç kez yanlış yapma
+
+C. Beklenen davranış
+- Güven seçmeden cevap kontrol edilememeli.
+- İpucu açıldığında denemeye hintUsed=true yazılmalı.
+- Yanlış cevap kısa süreli tekrar oluşturmalı.
+- Tekrar eden hata daha yüksek öncelikle gelmeli.
+- Doğru ve hızlı, ipucusuz “Eminim” cevabı daha uzun aralık oluşturmalı.
+- Kişisel tekrar kavram görevinde öğrenci yeni Almanca örnek yazmalı.
+
+7) PRODUCTION'A GEÇİŞ
+Preview testleri tamamlanmadan main'e merge etme.
+V28.3 için tek kullanımlık yeni environment variable gerekmez.
+V28.1'in production migration güvenliği normal şekilde devam eder.
+
+KESİNLİKLE YAPMA
+- Production'da prisma migrate reset
+- Production'da prisma db push
+- Preview test edilmeden main merge
+- Eski migration dosyalarını değiştirme veya silme

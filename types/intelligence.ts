@@ -54,6 +54,15 @@ export type IntelligenceInsights = {
   hasEnoughData: boolean;
 };
 
+export type ReviewConfidence = "UNSURE" | "SURE";
+export type ReviewPracticeMode =
+  | "MULTIPLE_CHOICE"
+  | "TRUE_FALSE"
+  | "FILL_BLANK"
+  | "TRANSLATION"
+  | "NEW_SENTENCE"
+  | "CONCEPT";
+
 export type ReviewItemType = "MULTIPLE_CHOICE" | "TRUE_FALSE" | "FILL_IN_THE_BLANK" | "TRANSLATION" | "CONCEPT";
 
 export type ReviewItem = {
@@ -73,6 +82,22 @@ export type ReviewItem = {
   occurrenceCount?: number;
   objectiveCode?: string;
   errorHistoryId?: string;
+  reviewMode?: ReviewPracticeMode;
+  difficulty?: number;
+  mastery?: number;
+  sameErrorStreak?: number;
+  expectedSeconds?: number;
+  nextReviewAt?: string | null;
+  hint?: string;
+};
+
+export type ReviewScheduleSummary = {
+  nextReviewAt: string;
+  label: string;
+  mastery: number;
+  confidenceScore: number;
+  signalScore: number;
+  explanations: string[];
 };
 
 export type ReviewAnswerResult = {
@@ -81,6 +106,7 @@ export type ReviewAnswerResult = {
   correctAnswer?: string | boolean | string[];
   completedCount: number;
   totalCount: number;
+  schedule?: ReviewScheduleSummary;
 };
 
 export type DailyPlanTaskType = "LESSON" | "REVIEW" | "QUIZ" | "VOCABULARY" | "WRITING" | "PLACEMENT" | "SKILL";

@@ -126,6 +126,7 @@ model User {
   assessmentEvidence     AssessmentEvidence[]
   competencies           CompetencyRecord[]
   learningErrors         LearningErrorHistory[]
+  adaptiveReviewAttempts AdaptiveReviewAttempt[]
 
   @@index([role, status])
   @@index([createdAt])
@@ -556,6 +557,16 @@ model VocabularyNotebookItem {
   lapseCount            Int      @default(0)
   intervalDays          Int      @default(0)
   easeFactor            Float    @default(2.5)
+  difficulty            Int      @default(3)
+  stability             Float    @default(1)
+  retrievability        Float    @default(1)
+  confidenceScore       Int      @default(50)
+  hintUseCount          Int      @default(0)
+  sameErrorStreak       Int      @default(0)
+  averageResponseMs     Int?
+  lastResponseMs        Int?
+  lastSeenAt            DateTime?
+  lastMode              String?
   lastRating            String?
   suspended             Boolean  @default(false)
   reviewAttempts        VocabularyReviewAttempt[]
@@ -567,6 +578,7 @@ model VocabularyNotebookItem {
   @@index([userId, nextReviewAt])
   @@index([userId, mastery])
   @@index([userId, createdAt])
+  @@index([userId, sameErrorStreak, nextReviewAt])
 }
 
 model VocabularyReviewAttempt {
@@ -580,8 +592,13 @@ model VocabularyReviewAttempt {
   correct    Boolean
   answer     String?  @db.Text
   expected   String?  @db.Text
-  responseMs Int?
-  createdAt  DateTime @default(now())
+  responseMs         Int?
+  hintUsed          Boolean  @default(false)
+  confidence        String?
+  difficulty        Int      @default(3)
+  repeatedErrorCount Int     @default(0)
+  signalScore       Float?
+  createdAt         DateTime @default(now())
 
   @@index([userId, createdAt])
   @@index([itemId, createdAt])
@@ -635,6 +652,19 @@ model CompetencyRecord {
   correctCount     Int             @default(0)
   incorrectCount   Int             @default(0)
   averageResponseMs Int?
+  intervalDays      Int             @default(0)
+  easeFactor        Float           @default(2.5)
+  correctStreak     Int             @default(0)
+  lapseCount        Int             @default(0)
+  reviewCount       Int             @default(0)
+  lastReviewedAt    DateTime?
+  lastRating        String?
+  hintUseCount      Int             @default(0)
+  sameErrorStreak   Int             @default(0)
+  difficulty        Int             @default(3)
+  stability         Float           @default(1)
+  retrievability    Float           @default(1)
+  lastResponseMs    Int?
   lastEvidenceAt   DateTime?
   nextReviewAt     DateTime?
   createdAt        DateTime        @default(now())
@@ -643,7 +673,36 @@ model CompetencyRecord {
   @@unique([userId, objectiveCode])
   @@index([userId, mastery])
   @@index([userId, skill])
+  @@index([userId, nextReviewAt])
   @@index([objectiveCode])
+}
+
+model AdaptiveReviewAttempt {
+  id                 String   @id @default(cuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  domain             String
+  targetId           String
+  objectiveCode      String?
+  sourceType         String?
+  sourceId           String?
+  mode               String
+  rating             String?
+  correct            Boolean
+  responseMs         Int?
+  hintUsed           Boolean  @default(false)
+  confidence         String
+  difficulty         Int
+  repeatedErrorCount Int      @default(0)
+  signalScore        Float
+  nextReviewAt       DateTime
+  metadata           Json?
+  createdAt          DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([userId, nextReviewAt])
+  @@index([domain, targetId, createdAt])
+  @@index([objectiveCode, createdAt])
 }
 
 model LearningErrorHistory {

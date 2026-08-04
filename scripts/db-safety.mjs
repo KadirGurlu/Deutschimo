@@ -20,7 +20,6 @@ export function resolveDatabaseEnvironment() {
   const vercel = value("VERCEL_ENV").toLowerCase();
   const inferred = vercel || (value("NODE_ENV") === "test" || value("CI") === "true" ? "test" : "development");
   const environment = explicit || inferred;
-
   if (!DATABASE_ENVIRONMENTS.has(environment)) {
     throw new Error(`DATABASE_ENVIRONMENT production, preview, development veya test olmalıdır. Mevcut: ${environment || "boş"}`);
   }
@@ -69,7 +68,6 @@ export function getDatabaseContext() {
   const postgresUrl = value("DATABASE_POSTGRES_URL");
   if (!databaseUrl) throw new Error("DATABASE_URL tanımlı değil.");
   const direct = databaseIdentity(postgresUrl);
-
   const productionFingerprint = value("PRODUCTION_DATABASE_FINGERPRINT").toLowerCase();
   if (environment !== "production" && productionFingerprint && direct.fingerprint === productionFingerprint) {
     throw new Error(`${environment} ortamı production veritabanı parmak iziyle eşleşiyor. İşlem durduruldu.`);
@@ -106,7 +104,11 @@ export function runCommand(command, args, options = {}) {
   });
   if (result.error) throw result.error;
   if (result.status !== 0) {
-    throw new Error(`${command} ${args.join(" ")} komutu ${result.status} koduyla başarısız oldu.`);
+    const error = new Error(`${command} ${args.join(" ")} komutu ${result.status} koduyla başarısız oldu.`);
+    error.exitCode = result.status;
+    error.command = command;
+    error.args = [...args];
+    throw error;
   }
   return result;
 }

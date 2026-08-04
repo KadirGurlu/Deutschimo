@@ -10,6 +10,8 @@ import {
 } from "./db-safety.mjs";
 
 const NON_PRODUCTION_BASELINE_CONFIRMATION = "DEUTSCHIMO_V28_1_NONPROD";
+const SCHEMA_CHECK_MAX_ATTEMPTS = 4;
+const SCHEMA_CHECK_RETRY_BASE_MS = 1500;
 const REQUIRED_TABLES = [
   "User",
   "Account",
@@ -48,6 +50,10 @@ const REQUIRED_TABLES = [
 const context = getDatabaseContext();
 printDatabaseContext(context, "Migration hedefi");
 const prisma = new PrismaClient();
+
+function wait(milliseconds) {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
 
 async function tableExists(tableName) {
   const rows = await prisma.$queryRawUnsafe(
@@ -88,20 +94,40 @@ async function existingApplicationTables() {
   return existing;
 }
 
-function verifySchemaMatchesDatamodel() {
+async function verifySchemaMatchesDatamodel() {
   console.log("Mevcut veritabanı şeması Prisma datamodel ile karşılaştırılıyor.");
-  runPrisma(
-    [
-      "migrate",
-      "diff",
-      "--from-schema-datasource",
-      "prisma/schema.prisma",
-      "--to-schema-datamodel",
-      "prisma/schema.prisma",
-      "--exit-code",
-    ],
-    { env: { DATABASE_URL: context.directUrl, DATABASE_POSTGRES_URL: context.directUrl } },
-  );
+
+  for (let attempt = 1; attempt <= SCHEMA_CHECK_MAX_ATTEMPTS; attempt += 1) {
+    try {
+      runPrisma(
+        [
+          "migrate",
+          "diff",
+          "--from-schema-datasource",
+          "prisma/schema.prisma",
+          "--to-schema-datamodel",
+          "prisma/schema.prisma",
+          "--exit-code",
+        ],
+        { env: { DATABASE_URL: context.directUrl, DATABASE_POSTGRES_URL: context.directUrl } },
+      );
+      return;
+    } catch (error) {
+      const exitCode = Number(error?.exitCode ?? 1);
+      const hasMoreAttempts = attempt < SCHEMA_CHECK_MAX_ATTEMPTS;
+
+      // Prisma migrate diff --exit-code returns 2 for a real schema difference.
+      // Do not hide or retry actual drift; retry only operational/connection failures.
+      if (exitCode === 2 || !hasMoreAttempts) throw error;
+
+      const delayMs = SCHEMA_CHECK_RETRY_BASE_MS * attempt;
+      console.warn(
+        `Şema karşılaştırması bağlantı/CLI hatasıyla kesildi (deneme ${attempt}/${SCHEMA_CHECK_MAX_ATTEMPTS}). `
+        + `${delayMs} ms sonra yeniden denenecek.`,
+      );
+      await wait(delayMs);
+    }
+  }
 }
 
 async function adoptExistingSchema(existing) {
@@ -109,7 +135,6 @@ async function adoptExistingSchema(existing) {
   if (missing.length) {
     throw new Error(`Baseline uygulanamadı. Mevcut şema eksik veya kısmi: ${missing.join(", ")}`);
   }
-
   if (context.environment === "production") {
     if (process.env.CONFIRM_PRODUCTION_BASELINE !== PRODUCTION_BASELINE_CONFIRMATION) {
       throw new Error(
@@ -121,15 +146,13 @@ async function adoptExistingSchema(existing) {
       `Production dışı veritabanı boş değil ve migration geçmişi yok. Kopyalanmış production verisi riskine karşı işlem durduruldu. Bilinçli olarak mevcut şemayı benimsemek için CONFIRM_NON_PRODUCTION_BASELINE=${NON_PRODUCTION_BASELINE_CONFIRMATION} kullanın.`,
     );
   }
-
-  verifySchemaMatchesDatamodel();
+  await verifySchemaMatchesDatamodel();
   console.log("Mevcut şema değiştirilmeden V28.1 baseline olarak işaretleniyor.");
   runPrisma(["migrate", "resolve", "--applied", BASELINE_MIGRATION]);
 }
 
 async function prepareMigrationHistory() {
   if (await baselineApplied()) return;
-
   const publicTables = await publicApplicationTables();
   const existing = await existingApplicationTables();
   if (publicTables.length) {
@@ -139,7 +162,6 @@ async function prepareMigrationHistory() {
     await adoptExistingSchema(existing);
     return;
   }
-
   const allowedToInitialize = ["preview", "test"].includes(context.environment)
     || truthy("AUTO_INIT_NON_PRODUCTION_DATABASE");
   if (context.environment === "production") {
@@ -150,19 +172,17 @@ async function prepareMigrationHistory() {
       "Boş development veritabanını hazırlamak için npm run db:baseline:init çalıştırın veya AUTO_INIT_NON_PRODUCTION_DATABASE=true tanımlayın.",
     );
   }
-
   console.log("Boş production dışı veritabanına tam V28.1 baseline migration uygulanacak.");
 }
 
 try {
   await prepareMigrationHistory();
   runPrisma(["migrate", "deploy"]);
-  verifySchemaMatchesDatamodel();
+  await verifySchemaMatchesDatamodel();
 
   if (context.environment !== "production") {
     runPrisma(["db", "seed"]);
   }
-
   if (["preview", "test"].includes(context.environment) && truthy("SEED_PREVIEW_TEST_DATA")) {
     runCommand("node", ["scripts/db-test-data.mjs", "reset"]);
   }

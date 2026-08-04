@@ -1,0 +1,37 @@
+DEUTSCHIMO V28.1 UPDATE MANIFEST
+=================================
+Release: 28.1.0
+Scope: Preview database isolation, production separation, Prisma migration baseline, deterministic test data
+
+IMPORTANT DEPLOYMENT GATES
+--------------------------
+- Production never runs prisma db push.
+- Existing production schema requires one-time CONFIRM_PRODUCTION_BASELINE=DEUTSCHIMO_V28_1.
+- Vercel Preview requires a separate empty database and optional PRODUCTION_DATABASE_FINGERPRINT.
+- Test-data commands refuse DATABASE_ENVIRONMENT=production.
+
+FILES AND SHA-256
+-----------------
+
+29c63b13de7c06f767879d7918e5f409ea2cf10e653a55ce0cd28bf0d35916e1  .env.example
+2c19bd0d8fc0c48da8ca4522d8503cb9ae96b8378c237f07326f955b02530554  .github/workflows/ci.yml
+eac1826b4b88a968ac0c01ee03c62fc026a15e8641605df527c0555e88776777  CHANGELOG_V28_1.md
+328d15120c5e9de879f27f24c068bcd3308dbfc210d5f65947372d1a13731752  UPLOAD_INSTRUCTIONS_V28_1.txt
+d3a2614e5e1b084f0ae907c33c5b61f99cb660490b285a570fe21987402a253a  V28_1_VALIDATION_REPORT.md
+73762736fb1b0d0d02d520db28d276f2fc701bf645c88485cafb4c6f2f04ed11  docs/V28_1_DATABASE_ENVIRONMENTS.md
+96d60689ed486b54890ec198312e047f89d6a491e05c03596e0677e1f054b03a  package.json
+c32f1428f6ee9913b90833b40d7f19d5c7739146822ef5e551eda91f31397053  prisma/migrations/20260803143000_v28_1_baseline/migration.sql
+1db17a8d051aa136110736752c5e1f8b7ed92b6ea8e803112fbbe2497047c210  prisma/migrations/migration_lock.toml
+377ca7b71b9e8608094c43fd6a840540d57661bf1b834ced9875e60407d1eb29  prisma/schema.prisma
+e43faea50d9ce23b871e5a5953a655f8913156f38f49a9f74adb024205d6ce65  prisma/seed.mjs
+cec19d159a8d4cc533284421bde12359b766dd6e76db52fb7f7f7c62fd92eb3c  scripts/db-baseline-init.mjs
+04a44caebe38d306a993f854ac3fa0d6cf717b09a9a69a2b8f3e2fd14fcfbbd6  scripts/db-deploy.mjs
+e9a3782f6fea2ff233d6b72ead9f85441cc0daa3feadb0747791146bb692ad68  scripts/db-drift-check.mjs
+e1e61d8a1e435629b7b033c61334a49f180cf0d322c52a12e515748c12dd1529  scripts/db-fingerprint.mjs
+fc107e9d3953d84404e966eea2a178b23ce4c6a3a5dd0f311e4319ea52370b51  scripts/db-migration.mjs
+2517201ad21e106b04c3bf625e770f87ce7e4382663c3cc0112815f4d39d5235  scripts/db-push-guard.mjs
+d6341d413e7b5db56de28eeaed2f64feeb3e5360cdd5ed7bc722cf40296fd363  scripts/db-safety.mjs
+017af925528d7665f86984812e04b3ff60803f9b74182cec9a03199dd6f14920  scripts/db-test-data.mjs
+c05283cce30096df1e5f12b32713a67d96543a7f527969f7e09f249238882044  scripts/validate-environment.mjs
+3e30bacad815752df8b5d63de34b3afff7936fb7b975fd7b3ae9abe779bbcb34  scripts/validate-v28-1.mjs
+af5348eeb95674d29d8410e53837076788b4f60ca23c0ca5a6d9f7339d05413a  vercel.json

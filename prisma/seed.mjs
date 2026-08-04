@@ -9,23 +9,60 @@ const courses = [
   { id: "b2", slug: "b2", level: "B2", title: "B2 · Akademik ve Profesyonel Almanca", description: "Karmaşık metinler ve profesyonel iletişim.", estimatedHours: 180, unitCount: 20 },
 ];
 
-for (const course of courses) {
-  await prisma.course.upsert({ where: { id: course.id }, create: { ...course, status: "PUBLISHED" }, update: course });
-}
+const environment = String(process.env.DATABASE_ENVIRONMENT || process.env.VERCEL_ENV || "development").toLowerCase();
+const bootstrapAdmin = String(process.env.BOOTSTRAP_ADMIN_ON_BUILD || "false").toLowerCase() === "true";
+const allowPreviewAdmin = String(process.env.ALLOW_PREVIEW_ADMIN_BOOTSTRAP || "false").toLowerCase() === "true";
 
-const email = process.env.ADMIN_EMAIL?.toLowerCase();
-const password = process.env.ADMIN_PASSWORD;
-if (email && password) {
-  const firstName = process.env.ADMIN_FIRST_NAME || "Deutschimo";
-  const lastName = process.env.ADMIN_LAST_NAME || "Yönetici";
-  await prisma.user.upsert({
-    where: { email },
-    create: { email, name: `${firstName} ${lastName}`, firstName, lastName, passwordHash: await hash(password, 12), role: "SUPER_ADMIN", status: "ACTIVE", emailVerified: new Date(), currentLevel: "A1", targetLevel: "B2" },
-    update: { role: "SUPER_ADMIN", status: "ACTIVE", passwordHash: await hash(password, 12), firstName, lastName, name: `${firstName} ${lastName}`, emailVerified: new Date() },
-  });
-  console.log(`Admin hazırlandı: ${email}`);
-} else {
-  console.log("ADMIN_EMAIL ve ADMIN_PASSWORD tanımlanmadığı için yönetici hesabı oluşturulmadı.");
-}
+try {
+  for (const course of courses) {
+    await prisma.course.upsert({
+      where: { id: course.id },
+      create: { ...course, status: "PUBLISHED" },
+      update: { ...course, status: "PUBLISHED" },
+    });
+  }
 
-await prisma.$disconnect();
+  if (!bootstrapAdmin) {
+    console.log("BOOTSTRAP_ADMIN_ON_BUILD=false; yönetici hesabına dokunulmadı.");
+  } else {
+    if (["preview", "test"].includes(environment) && !allowPreviewAdmin) {
+      throw new Error("Preview/test ortamında admin bootstrap engellendi. Gerekliyse ALLOW_PREVIEW_ADMIN_BOOTSTRAP=true tanımlayın.");
+    }
+    const email = process.env.ADMIN_EMAIL?.toLowerCase();
+    const password = process.env.ADMIN_PASSWORD;
+    if (!email || !password) throw new Error("Admin bootstrap açıkken ADMIN_EMAIL ve ADMIN_PASSWORD zorunludur.");
+    const firstName = process.env.ADMIN_FIRST_NAME || "Deutschimo";
+    const lastName = process.env.ADMIN_LAST_NAME || "Yönetici";
+    const passwordHash = await hash(password, 12);
+    await prisma.user.upsert({
+      where: { email },
+      create: {
+        email,
+        name: `${firstName} ${lastName}`,
+        firstName,
+        lastName,
+        passwordHash,
+        role: "SUPER_ADMIN",
+        status: "ACTIVE",
+        emailVerified: new Date(),
+        currentLevel: "A1",
+        targetLevel: "B2",
+        onboardingCompleted: true,
+        isTestUser: false,
+      },
+      update: {
+        role: "SUPER_ADMIN",
+        status: "ACTIVE",
+        passwordHash,
+        firstName,
+        lastName,
+        name: `${firstName} ${lastName}`,
+        emailVerified: new Date(),
+        isTestUser: false,
+      },
+    });
+    console.log(`Admin hazırlandı: ${email}`);
+  }
+} finally {
+  await prisma.$disconnect();
+}

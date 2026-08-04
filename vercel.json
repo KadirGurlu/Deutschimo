@@ -1,8 +1,9 @@
 {
+  "buildCommand": "npm run vercel-build",
   "crons": [
     {
       "path": "/api/cron/daily-maintenance",
-      "schedule": "0 3 * * *"
+      "schedule": "15 2 * * *"
     }
   ]
 }

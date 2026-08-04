@@ -28,7 +28,6 @@ const safety = read("scripts/db-safety.mjs");
 const testData = read("scripts/db-test-data.mjs");
 const envExample = read(".env.example");
 const workflow = read(".github/workflows/ci.yml");
-const vercel = read("vercel.json");
 const seed = read("prisma/seed.mjs");
 
 expect(packageJson.version === "28.1.0", "package.json sürümü 28.1.0 olmalı.");
@@ -70,7 +69,13 @@ expect(workflow.includes("image: postgres:16"), "CI PostgreSQL servisi içermeli
 expect(workflow.includes("db:test:clean"), "CI test verisi temizliği içermeli.");
 expect(workflow.includes("db:migrate:status"), "CI migration status kapısı içermeli.");
 expect(workflow.includes("db:drift:check"), "CI schema drift kontrolü içermeli.");
-expect(vercel.includes('"buildCommand": "npm run vercel-build"'), "Vercel migration güvenli build komutunu kullanmalı.");
+const vercelBuildScript = String(packageJson.scripts?.["vercel-build"] ?? "");
+const migrationStep = vercelBuildScript.indexOf("node scripts/db-deploy.mjs");
+const nextBuildStep = vercelBuildScript.indexOf("next build");
+expect(
+  migrationStep >= 0 && nextBuildStep > migrationStep,
+  "Vercel build komutu migration adımını Next.js build işleminden önce çalıştırmalı.",
+);
 expect(seed.includes("BOOTSTRAP_ADMIN_ON_BUILD"), "Seed admin bootstrap bayrağına bağlı olmalı.");
 expect(seed.includes("ALLOW_PREVIEW_ADMIN_BOOTSTRAP"), "Preview admin bootstrap koruması eksik.");
 

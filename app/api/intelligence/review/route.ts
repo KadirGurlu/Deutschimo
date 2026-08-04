@@ -153,6 +153,7 @@ async function POSTHandler(request: Request) {
   if (body.confidence !== "SURE" && body.confidence !== "UNSURE") {
     return NextResponse.json({ error: "Önce ‘Eminim’ veya ‘Emin değilim’ seçimini yap." }, { status: 400 });
   }
+  const confidence: ReviewConfidence = body.confidence;
 
   const state = await getOrRefreshReviewState(user.id);
   const item = state.queue.find((entry) => entry.id === body.itemId);
@@ -173,7 +174,7 @@ async function POSTHandler(request: Request) {
   const expectedSeconds = expectedResponseSeconds(mode, itemDifficulty);
   const rating = ratingFromSignals({
     correct,
-    confidence: body.confidence,
+    confidence,
     hintUsed: Boolean(body.hintUsed),
     responseMs,
     expectedSeconds,
@@ -199,7 +200,7 @@ async function POSTHandler(request: Request) {
     hintUsed: Boolean(body.hintUsed),
     repeatedErrorCount,
     difficulty: itemDifficulty,
-    confidence: body.confidence,
+    confidence,
     rating,
     mode,
   });
@@ -285,7 +286,7 @@ async function POSTHandler(request: Request) {
         correct,
         responseMs,
         hintUsed: Boolean(body.hintUsed),
-        confidence: body.confidence,
+        confidence,
         difficulty: itemDifficulty,
         repeatedErrorCount,
         signalScore: scheduled.signalScore,

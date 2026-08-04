@@ -95,6 +95,7 @@ async function POSTHandler(request: Request) {
   if (!body.confidence || !confidenceValues.has(body.confidence)) {
     return NextResponse.json({ error: "Önce ‘Eminim’ veya ‘Emin değilim’ seçimini yap." }, { status: 400 });
   }
+  const confidence: ReviewConfidence = body.confidence;
 
   const effectiveRating: VocabularyRating = !result.correct && (body.rating === "GOOD" || body.rating === "EASY")
     ? "FORGOT"
@@ -106,7 +107,7 @@ async function POSTHandler(request: Request) {
     hintUsed: Boolean(body.hintUsed),
     repeatedErrorCount: item.sameErrorStreak,
     difficulty: item.difficulty,
-    confidence: body.confidence,
+    confidence,
     rating: effectiveRating,
     mode,
   });
@@ -148,7 +149,7 @@ async function POSTHandler(request: Request) {
         expected: result.expected.slice(0, 2000),
         responseMs,
         hintUsed: Boolean(body.hintUsed),
-        confidence: body.confidence,
+        confidence,
         difficulty: item.difficulty,
         repeatedErrorCount: item.sameErrorStreak,
         signalScore: scheduled.signalScore,
@@ -167,7 +168,7 @@ async function POSTHandler(request: Request) {
         correct: result.correct,
         responseMs,
         hintUsed: Boolean(body.hintUsed),
-        confidence: body.confidence,
+        confidence,
         difficulty: item.difficulty,
         repeatedErrorCount: item.sameErrorStreak,
         signalScore: scheduled.signalScore,

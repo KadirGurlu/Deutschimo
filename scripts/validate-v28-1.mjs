@@ -30,7 +30,24 @@ const envExample = read(".env.example");
 const workflow = read(".github/workflows/ci.yml");
 const seed = read("prisma/seed.mjs");
 
-expect(packageJson.version === "28.1.0", "package.json sürümü 28.1.0 olmalı.");
+function parseVersion(value) {
+  const match = /^(\d+)\.(\d+)\.(\d+)(?:[-+].*)?$/.exec(String(value ?? ""));
+  if (!match) return null;
+  return { major: Number(match[1]), minor: Number(match[2]), patch: Number(match[3]) };
+}
+
+function isAtLeastVersion(version, minimum) {
+  if (!version) return false;
+  if (version.major !== minimum.major) return version.major > minimum.major;
+  if (version.minor !== minimum.minor) return version.minor > minimum.minor;
+  return version.patch >= minimum.patch;
+}
+
+const currentVersion = parseVersion(packageJson.version);
+expect(
+  isAtLeastVersion(currentVersion, { major: 28, minor: 1, patch: 0 }),
+  "package.json sürümü 28.1.0 veya daha yeni olmalı.",
+);
 for (const script of [
   "vercel-build",
   "db:baseline:init",

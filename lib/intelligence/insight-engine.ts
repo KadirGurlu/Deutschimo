@@ -30,7 +30,13 @@ const assessmentSkillLabels: Record<string, string> = {
 
 export type PersonalizedErrorSignal = {
   id: string;
-  sourceType: "EXERCISE" | "UNIT_QUIZ" | "SKILL_LAB" | "PLACEMENT" | "SMART_REVIEW";
+ sourceType:
+  | "EXERCISE"
+  | "UNIT_QUIZ"
+  | "SKILL_LAB"
+  | "PLACEMENT"
+  | "SMART_REVIEW"
+  | "REAL_GERMANY";
   sourceId: string;
   courseId: string;
   unitId: string | null;

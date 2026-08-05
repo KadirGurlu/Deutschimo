@@ -1,0 +1,138 @@
+DEUTSCHIMO V29 — YAZMA KOÇU KURULUM TALİMATI
+=============================================
+
+ÖNEMLİ
+------
+- Bu paket V28.4 dosyalarını kümülatif olarak içerir.
+- V28.4 henüz kurulmadıysa yeni dalı v28-3-staging üzerinden oluşturabilirsin.
+- V28.4 Preview ortamında Ready olduysa yeni dalı v28-4-staging üzerinden oluştur.
+- ZIP dosyasını proje klasörüne koyma; ZIP'in içindeki dosya ve klasörleri kopyala.
+- Önce Preview ortamında test et. main dalına doğrudan yükleme yapma.
+
+1. OPENAI API HAZIRLIĞI
+-----------------------
+Yazma Koçu gerçek AI değerlendirmesi için OpenAI API kullanır.
+ChatGPT Plus aboneliği API kullanımını içermez; API Platform hesabı ve ayrı kullanım bakiyesi gerekir.
+
+OpenAI API Platform'da:
+- Bir API anahtarı oluştur.
+- API billing/spend limitlerini kendi bütçene göre ayarla.
+- Anahtarı GitHub'a veya ekran görüntüsüne koyma.
+
+2. VERCEL ENVIRONMENT VARIABLES
+-------------------------------
+Vercel -> Deutschimo -> Environment Variables -> Add Environment Variable.
+
+Preview için:
+Key: OPENAI_API_KEY
+Value: kendi API anahtarın
+Environment: Preview
+Sensitive: Açık
+
+Preview için ikinci değişken:
+Key: OPENAI_WRITING_MODEL
+Value: gpt-5.4-mini
+Environment: Preview
+Sensitive: Kapalı olabilir
+
+Preview testleri başarılı olduktan sonra aynı iki değişkeni Production kapsamına da ekle.
+API anahtarında NEXT_PUBLIC_ öneki kullanma.
+
+3. YENİ DAL OLUŞTUR
+-------------------
+GitHub Desktop -> Current Branch -> New Branch.
+
+Önerilen dal adı:
+v29-staging
+
+Create branch based on:
+- V28.4 kurulmadıysa: v28-3-staging
+- V28.4 kurulduysa: v28-4-staging
+
+4. PAKETİ KOPYALA
+-----------------
+- ZIP dosyasını indir ve Tümünü Ayıkla ile çıkart.
+- GitHub Desktop -> Repository -> Show in Explorer.
+- Ayıklanan klasörün içindeki tüm dosya ve klasörleri Deutschimo ana klasörüne kopyala.
+- Windows sorarsa Hedefteki dosyaları değiştir seçeneğini seç.
+
+5. ÖNEMLİ DOSYALAR
+------------------
+components/layout/app-sidebar.tsx
+app/writing-coach/page.tsx
+components/writing-coach/writing-coach.tsx
+components/writing-coach/writing-coach.module.css
+app/api/writing-coach/review/route.ts
+data/writing-coach.ts
+types/writing-coach.ts
+prisma/schema.prisma
+prisma/migrations/20260805003000_v29_writing_coach/migration.sql
+scripts/validate-v29.mjs
+package.json
+
+Paket ayrıca V28.4 seviye testi dosyalarını ve gerekli V28.3 hotfix dosyalarını içerir.
+
+6. COMMIT VE PUSH
+-----------------
+Summary:
+Add Deutschimo V29 Writing Coach
+
+Ardından:
+Commit to v29-staging
+Publish branch / Push origin
+
+7. VERCEL PREVIEW BUILD
+-----------------------
+Vercel -> Deutschimo -> Deployments.
+
+Beklenen:
+Branch: v29-staging
+Environment: Preview
+
+Build sırası:
+- V28.1 ortam doğrulaması
+- V28.1 doğrulaması
+- V28.3 doğrulaması
+- V28.4 doğrulaması
+- V29 doğrulaması
+- prisma migrate deploy
+- şema karşılaştırması
+- test kullanıcılarının hazırlanması
+- prisma generate
+- next build
+
+Yeni migration:
+20260805003000_v29_writing_coach
+
+8. PREVIEW TEST LİSTESİ
+-----------------------
+[ ] Ana menüde Kurslar'ın altında Yazma Koçu görünüyor.
+[ ] Yazma Koçu sayfası açılıyor.
+[ ] A1, A2, B1 ve B2 seçenekleri çalışıyor.
+[ ] Her seviyede 6 senaryo görünüyor.
+[ ] Senaryo açıldığında görev, zorunlu maddeler ve yararlı ifadeler görünüyor.
+[ ] Taslak yazılıp sayfa yenilendiğinde yerel taslak korunuyor.
+[ ] Kontrol et düğmesi AI değerlendirmesi getiriyor.
+[ ] AI düzeltilmiş tam cümle veya model metin vermiyor.
+[ ] 1. aşamada hata yeri metinde işaretleniyor.
+[ ] 2. aşamada hata türü Türkçe açıklanıyor.
+[ ] 3. aşamada öğrenci yeniden yazmaya yönlendiriliyor.
+[ ] Altı rubrik boyutu ve puanları görünüyor.
+[ ] Yeniden kontrol et ile revizyon numarası artıyor.
+[ ] Hata geçmişinde kategori sayıları güncelleniyor.
+[ ] Günlük Plan yeni hatalardan sonra yeniden üretilebiliyor.
+[ ] Başka kullanıcının yazma geçmişi görünmüyor.
+
+Test hesabı:
+test.a1@preview.deutschimo.test
+Şifre: Vercel'deki TEST_USER_PASSWORD değeri.
+
+9. ÜRETİME GEÇİŞ
+----------------
+- Preview testleri tamamlanmadan main dalına merge etme.
+- OPENAI_API_KEY ve OPENAI_WRITING_MODEL Production kapsamına eklenmeden Production'a geçme.
+- Eski deployment'a manuel Redeploy yapma; onaylı merge yeni Production deployment oluşturmalıdır.
+
+GÜVENLİK NOTU
+-------------
+API anahtarını hiçbir dosyaya yazma, GitHub'a yükleme ve ekran görüntüsünde gösterme.

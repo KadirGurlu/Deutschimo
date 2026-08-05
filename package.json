@@ -1,12 +1,12 @@
 {
   "name": "deutschimo-platform",
-  "version": "28.4.0",
+  "version": "29.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs",
+    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs",
     "build": "prisma generate && next build",
-    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && node scripts/db-deploy.mjs && prisma generate && next build",
+    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && node scripts/db-deploy.mjs && prisma generate && next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -55,13 +55,14 @@
     "validate:v27": "node scripts/validate-v27.mjs",
     "validate:v28": "node scripts/validate-v28.mjs",
     "validate:v28.1": "node scripts/validate-v28-1.mjs",
-    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4",
+    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:report": "playwright show-report",
     "validate:v28.3": "node scripts/validate-v28-3.mjs",
-    "validate:v28.4": "node scripts/validate-v28-4.mjs"
+    "validate:v28.4": "node scripts/validate-v28-4.mjs",
+    "validate:v29": "node scripts/validate-v29.mjs"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.8.0",

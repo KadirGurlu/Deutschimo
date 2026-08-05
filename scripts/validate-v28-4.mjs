@@ -32,7 +32,12 @@ const styles = read("components/intelligence/placement-test-v28-4.module.css");
 const schema = read("prisma/schema.prisma");
 const migration = read("prisma/migrations/20260804180000_v28_4_real_placement/migration.sql");
 
-if (packageJson.version !== "28.4.0") failures.push("package.json sürümü 28.4.0 olmalı.");
+const versionMatch = /^(\d+)\.(\d+)\.(\d+)/.exec(String(packageJson.version ?? ""));
+const versionIsCompatible = Boolean(versionMatch) && (
+  Number(versionMatch?.[1]) > 28
+  || (Number(versionMatch?.[1]) === 28 && Number(versionMatch?.[2]) >= 4)
+);
+if (!versionIsCompatible) failures.push("package.json sürümü 28.4.0 veya daha yeni olmalı.");
 for (const script of ["validate:v28.1", "validate:v28.3", "validate:v28.4", "vercel-build"]) {
   if (!packageJson.scripts?.[script]) failures.push(`package.json scripts.${script} eksik.`);
 }

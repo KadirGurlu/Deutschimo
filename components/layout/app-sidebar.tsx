@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { BarChart3, BookOpenText, CalendarCheck2, FlaskConical, Gauge, GraduationCap, Languages, RotateCcw, Settings, UserRound } from "lucide-react";
+import { BarChart3, BookOpenText, CalendarCheck2, FlaskConical, Gauge, GraduationCap, Languages, PenLine, RotateCcw, Settings, UserRound } from "lucide-react";
 
 export function AppSidebar({ active }: { active: string }) {
   const items = [
     [Gauge, "Öğrenci Paneli", "/dashboard", "dashboard"],
     [BookOpenText, "Kurslar", "/courses", "courses"],
+    [PenLine, "Yazma Koçu", "/writing-coach", "writing-coach"],
     [GraduationCap, "Seviye Testi", "/placement-test", "placement"],
     [RotateCcw, "Akıllı Tekrar", "/smart-review", "smart-review"],
     [CalendarCheck2, "Günlük Plan", "/study-plan", "study-plan"],

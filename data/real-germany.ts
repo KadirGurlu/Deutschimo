@@ -683,3 +683,7 @@ export function realGermanyCategories(level?: RealGermanyLevel) {
   const source = level ? realGermanyScenariosForLevel(level) : realGermanyScenarios;
   return Array.from(new Set(source.map((scenario) => scenario.category))).sort((a, b) => a.localeCompare(b, "tr"));
 }
+
+export function getRealGermanyScenario(id: string) {
+  return realGermanyScenarios.find((scenario) => scenario.id === id) ?? null;
+}

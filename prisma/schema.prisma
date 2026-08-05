@@ -50,6 +50,7 @@ enum AssessmentSourceType {
   SKILL_LAB
   PLACEMENT
   SMART_REVIEW
+  REAL_GERMANY
 }
 
 enum AssessmentSkill {
@@ -130,6 +131,8 @@ model User {
   writingCoachSessions   WritingCoachSession[]
   writingCoachAttempts   WritingCoachAttempt[]
   writingErrorProfiles   WritingErrorProfile[]
+  realGermanyProgress     RealGermanyScenarioProgress[]
+  realGermanyAttempts     RealGermanyScenarioAttempt[]
 
   @@index([role, status])
   @@index([createdAt])
@@ -824,3 +827,60 @@ model WritingErrorProfile {
   @@index([userId, nextReviewAt])
 }
 
+
+
+model RealGermanyScenarioProgress {
+  id                   String                       @id @default(cuid())
+  userId               String
+  user                 User                         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scenarioId           String
+  level                Level
+  status               String                       @default("NOT_STARTED")
+  currentStep          Int                          @default(0)
+  draftResponses       Json?
+  latestAttemptNumber  Int                          @default(0)
+  latestOverallScore   Int?
+  bestOverallScore     Int                          @default(0)
+  completedCount       Int                          @default(0)
+  startedAt            DateTime?
+  lastAttemptAt        DateTime?
+  completedAt          DateTime?
+  createdAt            DateTime                     @default(now())
+  updatedAt            DateTime                     @updatedAt
+  attempts             RealGermanyScenarioAttempt[]
+
+  @@unique([userId, scenarioId])
+  @@index([userId, status, updatedAt])
+  @@index([userId, level, updatedAt])
+}
+
+model RealGermanyScenarioAttempt {
+  id                   String                      @id @default(cuid())
+  progressId           String
+  progress             RealGermanyScenarioProgress @relation(fields: [progressId], references: [id], onDelete: Cascade)
+  userId               String
+  user                 User                        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scenarioId           String
+  level                Level
+  attemptNumber        Int
+  status               String                      @default("COMPLETED")
+  responses            Json
+  skillScores          Json
+  overallScore         Int
+  readingScore         Int
+  listeningScore       Int
+  formScore            Int
+  writingScore         Int
+  comparison           Json?
+  weakAreas            Json
+  feedback             Json
+  smartReviewQueued    Int                         @default(0)
+  evaluationMode       String                      @default("AI")
+  aiModel              String?
+  createdAt            DateTime                    @default(now())
+
+  @@unique([progressId, attemptNumber])
+  @@index([userId, createdAt])
+  @@index([userId, scenarioId, createdAt])
+  @@index([scenarioId, overallScore])
+}

@@ -551,3 +551,274 @@
     padding: 18px;
   }
 }
+
+.syncLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: #f0fafb;
+  color: #0c6b79;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.statusBadge {
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.statusNOT_STARTED {
+  background: #f2f5f7;
+  color: #62727f;
+}
+
+.statusIN_PROGRESS {
+  background: #fff7df;
+  color: #8b6400;
+}
+
+.statusCOMPLETED {
+  background: #ebf9f1;
+  color: #1f7a4d;
+}
+
+.latestScore {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 16px;
+  color: #4f6473;
+  font-size: 13px;
+}
+
+.answerLabel {
+  display: block;
+  margin-top: 14px;
+  color: #334957;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.spin {
+  animation: realGermanySpin 0.9s linear infinite;
+}
+
+@keyframes realGermanySpin {
+  to { transform: rotate(360deg); }
+}
+
+.resultPanel {
+  padding: 24px;
+  border: 1px solid #cfe6e9;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #ffffff 62%, #effbfc);
+  box-shadow: 0 18px 42px rgba(18, 66, 74, 0.08);
+}
+
+.resultHero,
+.resultFooter,
+.comparisonStrip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.resultHero > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resultHero > div:first-child > span {
+  color: #0b9bac;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.resultHero > div:first-child > strong {
+  font-size: 54px;
+  line-height: 1;
+}
+
+.resultHero p,
+.resultFooter p {
+  margin: 0;
+  color: #637382;
+}
+
+.resultMeta {
+  display: grid;
+  gap: 8px;
+  min-width: 320px;
+}
+
+.resultMeta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #536775;
+  font-size: 13px;
+}
+
+.fallbackNote {
+  color: #8b6400 !important;
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 17px;
+  border: 1px solid #dce8ea;
+  border-radius: 17px;
+  background: #fff;
+}
+
+.scoreCard > span {
+  color: #657683;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.scoreCard > strong {
+  font-size: 29px;
+}
+
+.scoreCard small {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #7a8993;
+}
+
+.scoreStrong { color: #16754c; }
+.scoreMedium { color: #9a6900; }
+.scoreNeedsWork { color: #b24343; }
+.deltaPositive { color: #16754c !important; }
+.deltaNegative { color: #b24343 !important; }
+
+.comparisonStrip {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 15px;
+  background: #f5fafb;
+  color: #506473;
+  font-size: 14px;
+}
+
+.resultColumns {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.resultColumns > div {
+  padding: 18px;
+  border: 1px solid #dce8ea;
+  border-radius: 17px;
+  background: #fff;
+}
+
+.resultColumns h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.weakAreaList {
+  display: grid;
+  gap: 11px;
+  margin-top: 14px;
+}
+
+.weakAreaList article {
+  padding: 13px;
+  border-radius: 14px;
+  background: #f8fafb;
+}
+
+.weakAreaList article > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.weakAreaList article span {
+  color: #0b9bac;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.weakAreaList article p {
+  margin: 8px 0;
+  color: #5d6f7c;
+  line-height: 1.5;
+}
+
+.weakAreaList article small {
+  color: #8a6b1f;
+  font-weight: 700;
+}
+
+.successText {
+  margin: 14px 0 0;
+  color: #16754c;
+}
+
+.resultFooter {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #dce8ea;
+}
+
+.primaryButton:disabled,
+.secondaryButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+@media (max-width: 900px) {
+  .scoreGrid,
+  .resultColumns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resultHero,
+  .resultFooter,
+  .comparisonStrip {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .resultMeta {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .scoreGrid,
+  .resultColumns {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,23 @@
+DEUTSCHIMO V30.2 YÜKLEME
+
+1. ZIP dosyasını indir ve “Tümünü Ayıkla” ile aç.
+2. GitHub Desktop'ta V30.1'in çalıştığı staging dalında olduğundan emin ol.
+3. Repository → Show in Explorer seçeneğiyle Deutschimo ana klasörünü aç.
+4. Ayıklanan paketin içindeki dosya ve klasörleri Deutschimo ana klasörüne kopyala.
+5. Windows sorarsa “Hedefteki dosyaları değiştir” seçeneğini kullan.
+6. ZIP klasörünün kendisini proje içine koyma; içindeki app, components, prisma vb. klasörleri birleştir.
+7. GitHub Desktop'ta değişiklikleri kontrol et.
+8. Commit mesajı:
+   Add Deutschimo V30.2 Real Germany Learning System
+9. Commit ve Push origin yap.
+10. Vercel'de yeni Preview deployment'ı bekle.
+11. Build sırasında yeni migration Preview veritabanına otomatik uygulanır.
+
+Yeni zorunlu environment variable yoktur.
+Mevcut OPENAI_API_KEY ve OPENAI_WRITING_MODEL kullanılabilir.
+İsteğe bağlı ayrı model değişkeni:
+OPENAI_REAL_GERMANY_MODEL=gpt-5.4-mini
+
+Önemli:
+- Eski deployment'a Redeploy basma; yeni commit'in oluşturduğu deployment'ı izle.
+- Migration mevcut öğrenci verilerini silmez.

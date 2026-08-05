@@ -64,12 +64,11 @@ for (const typeName of ["RealGermanyLevel", "RealGermanyStepKind", "RealGermanyS
 }
 for (const text of [
   "Gerçek Almanya Modu",
-  "Kelime ezberlemenin ötesine geç",
-  "e-postayı oku",
-  "sesli mesajı anla",
-  "formu doldur",
-  "Almanca cevap yaz veya konuşma taslağını oluştur",
-  "Görevi tamamla",
+  "Okuma",
+  "Dinleme",
+  "Form",
+  "Yazma",
+  "Görevi değerlendir",
 ]) {
   if (!component.toLocaleLowerCase("tr-TR").includes(text.toLocaleLowerCase("tr-TR"))) failures.push(`Arayüz metni eksik: ${text}.`);
 }

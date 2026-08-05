@@ -31,6 +31,79 @@ function stringRecord(value: unknown) {
   );
 }
 
+
+const skills = new Set(["READING", "LISTENING", "FORM", "WRITING"] as const);
+const severities = new Set(["LOW", "MEDIUM", "HIGH"] as const);
+
+function finiteNumber(value: unknown, fallback = 0) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : fallback;
+}
+
+function nullableInteger(value: unknown) {
+  if (value === null || value === undefined) return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? Math.round(number) : null;
+}
+
+function parseSkillScores(value: unknown): RealGermanyEvaluationResult["skillScores"] {
+  if (!Array.isArray(value)) return [];
+
+  return value.flatMap((item) => {
+    const source = asRecord(item);
+    const skill = typeof source.skill === "string" && skills.has(source.skill as "READING" | "LISTENING" | "FORM" | "WRITING")
+      ? source.skill as "READING" | "LISTENING" | "FORM" | "WRITING"
+      : null;
+    if (!skill) return [];
+
+    return [{
+      skill,
+      score: Math.max(0, Math.min(100, Math.round(finiteNumber(source.score)))),
+      feedback: typeof source.feedback === "string" ? source.feedback.slice(0, 2_000) : "",
+    }];
+  });
+}
+
+function parseWeakAreas(value: unknown): RealGermanyEvaluationResult["weakAreas"] {
+  if (!Array.isArray(value)) return [];
+
+  return value.flatMap((item) => {
+    const source = asRecord(item);
+    const skill = typeof source.skill === "string" && skills.has(source.skill as "READING" | "LISTENING" | "FORM" | "WRITING")
+      ? source.skill as "READING" | "LISTENING" | "FORM" | "WRITING"
+      : null;
+    const severity = typeof source.severity === "string" && severities.has(source.severity as "LOW" | "MEDIUM" | "HIGH")
+      ? source.severity as "LOW" | "MEDIUM" | "HIGH"
+      : null;
+    if (!skill || !severity || typeof source.code !== "string" || typeof source.label !== "string") return [];
+
+    return [{
+      code: source.code.slice(0, 120),
+      label: source.label.slice(0, 240),
+      skill,
+      severity,
+      explanation: typeof source.explanation === "string" ? source.explanation.slice(0, 2_000) : "",
+      ...(typeof source.excerpt === "string" && source.excerpt.trim()
+        ? { excerpt: source.excerpt.slice(0, 1_000) }
+        : {}),
+      nextReviewDays: Math.max(1, Math.min(365, Math.round(finiteNumber(source.nextReviewDays, 1)))),
+    }];
+  });
+}
+
+function parseComparison(value: unknown): RealGermanyEvaluationResult["comparison"] {
+  const source = asRecord(value);
+  return {
+    previousAttemptNumber: nullableInteger(source.previousAttemptNumber),
+    previousOverallScore: nullableInteger(source.previousOverallScore),
+    overallDelta: Math.round(finiteNumber(source.overallDelta)),
+    readingDelta: Math.round(finiteNumber(source.readingDelta)),
+    listeningDelta: Math.round(finiteNumber(source.listeningDelta)),
+    formDelta: Math.round(finiteNumber(source.formDelta)),
+    writingDelta: Math.round(finiteNumber(source.writingDelta)),
+  };
+}
+
 function sanitizeResponses(scenarioId: string, value: unknown) {
   const scenario = getRealGermanyScenario(scenarioId);
   if (!scenario) return null;
@@ -74,11 +147,11 @@ function latestResult(attempt: {
     listeningScore: attempt.listeningScore,
     formScore: attempt.formScore,
     writingScore: attempt.writingScore,
-    skillScores: Array.isArray(attempt.skillScores) ? attempt.skillScores as RealGermanyEvaluationResult["skillScores"] : [],
+    skillScores: parseSkillScores(attempt.skillScores),
     strengths: Array.isArray(feedback.strengths) ? feedback.strengths.filter((item): item is string => typeof item === "string") : [],
-    weakAreas: Array.isArray(attempt.weakAreas) ? attempt.weakAreas as RealGermanyEvaluationResult["weakAreas"] : [],
+    weakAreas: parseWeakAreas(attempt.weakAreas),
     nextStep: typeof feedback.nextStep === "string" ? feedback.nextStep : "Zayıf alanlarını Akıllı Tekrar üzerinden pekiştir.",
-    comparison: asRecord(attempt.comparison) as unknown as RealGermanyEvaluationResult["comparison"],
+    comparison: parseComparison(attempt.comparison),
     smartReviewQueued: attempt.smartReviewQueued,
     evaluationMode: attempt.evaluationMode === "AI" ? "AI" : "HEURISTIC_FALLBACK",
     aiModel: attempt.aiModel,

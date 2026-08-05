@@ -30,7 +30,21 @@ const route = read("app/api/writing-coach/review/route.ts");
 const schema = read("prisma/schema.prisma");
 const migration = read("prisma/migrations/20260805133000_v29_2_writing_coach_revision/migration.sql");
 
-if (packageJson.version !== "29.2.0") failures.push("package.json sürümü 29.2.0 olmalı.");
+function parseVersion(value) {
+  const match = /^(\d+)\.(\d+)\.(\d+)(?:[-+].*)?$/u.exec(String(value ?? ""));
+  if (!match) return null;
+  return { major: Number(match[1]), minor: Number(match[2]), patch: Number(match[3]) };
+}
+
+function isAtLeastVersion(version, minimum) {
+  if (!version) return false;
+  if (version.major !== minimum.major) return version.major > minimum.major;
+  if (version.minor !== minimum.minor) return version.minor > minimum.minor;
+  return version.patch >= minimum.patch;
+}
+
+const currentVersion = parseVersion(packageJson.version);
+if (!isAtLeastVersion(currentVersion, { major: 29, minor: 2, patch: 0 })) failures.push("package.json sürümü 29.2.0 veya daha yeni olmalı.");
 for (const script of ["validate:v29", "validate:v29.2", "vercel-build"]) {
   if (!packageJson.scripts?.[script]) failures.push(`package.json scripts.${script} eksik.`);
 }

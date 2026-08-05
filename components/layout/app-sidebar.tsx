@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BarChart3, BookOpenText, CalendarCheck2, FlaskConical, Gauge, GraduationCap, Languages, PenLine, RotateCcw, Settings, UserRound } from "lucide-react";
+import { BarChart3, BookOpenText, CalendarCheck2, FlaskConical, Gauge, GraduationCap, Languages, PenLine, RotateCcw, Settings, UserRound, MapPinned } from "lucide-react";
 
 export function AppSidebar({ active }: { active: string }) {
   const items = [
@@ -12,6 +12,7 @@ export function AppSidebar({ active }: { active: string }) {
     [FlaskConical, "Beceri Laboratuvarı", "/skills", "skills"],
     [Languages, "Kelime Setlerim", "/vocabulary", "vocabulary"],
     [BarChart3, "İlerleme", "/progress", "progress"],
+    [MapPinned, "Gerçek Almanya Modu", "/real-germany", "real-germany"],
     [UserRound, "Profil", "/profile", "profile"],
     [Settings, "Ayarlar", "/profile", "settings"],
   ] as const;

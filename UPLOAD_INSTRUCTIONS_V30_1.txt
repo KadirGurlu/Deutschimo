@@ -1,0 +1,16 @@
+V30.1 yükleme adımları
+
+1) ZIP dosyasını indir ve ayıkla.
+2) GitHub Desktop'ta doğru branch'i aç (staging branch'iniz).
+3) Repository klasörünü Explorer / Finder içinde aç.
+4) Paket içindeki dosyaları proje kök dizinine kopyalayın.
+5) Var olan dosyalar için değiştir / replace seçeneğini onaylayın.
+6) GitHub Desktop'ta değişen dosyaları kontrol edin.
+7) Commit mesajı önerisi:
+   Add Deutschimo V30.1 Real Germany Mode
+8) Push origin yapın.
+9) Vercel yeni preview deployment'ı otomatik başlatacaktır.
+
+Not:
+- Bu sürümde yeni migration yok.
+- Ayrıca manuel veritabanı işlemi gerekmiyor.

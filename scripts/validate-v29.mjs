@@ -34,8 +34,8 @@ const schema = read("prisma/schema.prisma");
 const migration = read("prisma/migrations/20260805003000_v29_writing_coach/migration.sql");
 
 const versionMatch = /^(\d+)\.(\d+)\.(\d+)/u.exec(String(packageJson.version ?? ""));
-const versionOk = Boolean(versionMatch) && Number(versionMatch?.[1]) === 29 && Number(versionMatch?.[2]) >= 0;
-if (!versionOk) failures.push("package.json sürümü 29.0.0 veya daha yeni bir V29 sürümü olmalı.");
+const versionOk = Boolean(versionMatch) && (Number(versionMatch?.[1]) > 29 || (Number(versionMatch?.[1]) === 29 && Number(versionMatch?.[2]) >= 0));
+if (!versionOk) failures.push("package.json sürümü 29.0.0 veya daha yeni olmalı.");
 for (const script of ["validate:v28.1", "validate:v28.3", "validate:v28.4", "validate:v29", "vercel-build"]) {
   if (!packageJson.scripts?.[script]) failures.push(`package.json scripts.${script} eksik.`);
 }

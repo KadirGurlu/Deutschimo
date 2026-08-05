@@ -1,0 +1,553 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 26px 30px 64px;
+  color: #132638;
+}
+
+.hero,
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding: 38px 42px;
+  border: 1px solid #dce9ec;
+  border-radius: 24px;
+  background: linear-gradient(125deg, #fff 55%, #edfbfc);
+  box-shadow: 0 18px 42px rgba(18, 66, 74, 0.07);
+}
+
+.hero h1,
+.taskHeader h1 {
+  margin: 8px 0 12px;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+}
+
+.hero p,
+.taskHeader p {
+  max-width: 760px;
+  margin: 0;
+  color: #5a6b7b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  color: #059bad;
+}
+
+.heroPanel,
+.taskSummary {
+  display: grid;
+  gap: 12px;
+  min-width: 290px;
+}
+
+.heroPanel > div,
+.taskSummary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 1px solid #cdecef;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.heroPanel strong,
+.taskSummary strong {
+  font-size: 18px;
+}
+
+.heroPanel span,
+.taskSummary span {
+  color: #6f7f8b;
+  font-size: 13px;
+}
+
+.levelSection,
+.progressShell,
+.goalCard,
+.sidePanel,
+.emptyState {
+  padding: 22px;
+  border: 1px solid #dce6e9;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.sectionHeading,
+.progressHeader,
+.panelTitle,
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sectionHeading span,
+.progressHeader span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #0b9cac;
+}
+
+.sectionHeading h2 {
+  margin: 4px 0 0;
+  font-size: 28px;
+}
+
+.sectionHeading svg,
+.progressHeader svg,
+.panelTitle svg,
+.stepIcon {
+  color: #0aa8b7;
+}
+
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.levelCard {
+  display: flex;
+  min-height: 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 22px;
+  border: 1px solid #dce6e9;
+  border-radius: 18px;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.levelCard:hover,
+.levelCardActive {
+  transform: translateY(-2px);
+  border-color: #37bcc7;
+  box-shadow: 0 12px 28px rgba(10, 119, 130, 0.11);
+}
+
+.levelCard > span {
+  font-size: 26px;
+  font-weight: 900;
+  color: #0a6070;
+}
+
+.levelCard strong {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.levelCard small {
+  margin-top: auto;
+  color: #7d8a94;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 24px;
+  align-items: start;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(460px, 100%);
+  padding: 0 14px;
+  border: 1px solid #dce6e9;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.categoryBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categoryChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border: 1px solid #dce6e9;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  color: #435564;
+}
+
+.categoryChipActive,
+.categoryChip:hover {
+  border-color: #0aa8b7;
+  background: #effcfd;
+  color: #0a6070;
+}
+
+.scenarioGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 16px;
+}
+
+.scenarioCard {
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
+  padding: 22px;
+  border: 1px solid #dce6e9;
+  border-radius: 18px;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.scenarioCard:hover {
+  border-color: #34b9c5;
+  box-shadow: 0 14px 30px rgba(9, 95, 105, 0.1);
+  transform: translateY(-2px);
+}
+
+.scenarioTop,
+.scenarioMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.scenarioTop span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  color: #0b9bac;
+  text-transform: uppercase;
+}
+
+.scenarioCard h3 {
+  margin: 23px 0 9px;
+  font-size: 22px;
+}
+
+.scenarioCard p {
+  margin: 0;
+  color: #637382;
+  line-height: 1.55;
+}
+
+.scenarioMeta {
+  margin-top: auto;
+  padding-top: 20px;
+  color: #687885;
+  font-size: 13px;
+}
+
+.scenarioMeta span {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.panelTitle {
+  align-items: flex-start;
+}
+
+.panelTitle div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.panelTitle strong {
+  font-size: 16px;
+}
+
+.panelTitle span {
+  font-size: 12px;
+  color: #788791;
+}
+
+.checkList,
+.phraseList,
+.flowCard ol {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: #536474;
+  line-height: 1.6;
+}
+
+.flowCard {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f6fbfb, #eefafb);
+}
+
+.flowCard strong {
+  display: block;
+}
+
+.tagCloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.tag {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: #f0f9fa;
+  color: #0c6b79;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.backButton,
+.completeButton,
+.secondaryButton,
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.18s;
+}
+
+.backButton {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  background: #f3fafb;
+  color: #0a6070;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  margin-top: 14px;
+  border-radius: 999px;
+  background: #eaf4f5;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #08a7b7, #2fd0c5);
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.stepCard {
+  padding: 22px;
+  border: 1px solid #dce6e9;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stepIndex {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #effbfc;
+  color: #0a6070;
+  font-weight: 800;
+}
+
+.stepHeader span {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #0b9bac;
+  text-transform: uppercase;
+}
+
+.stepHeader h3 {
+  margin: 3px 0 0;
+  font-size: 22px;
+}
+
+.stepInstruction,
+.helperText,
+.messageBox {
+  color: #5f6f7e;
+}
+
+.stepInstruction {
+  margin: 14px 0 14px;
+}
+
+.promptBox {
+  padding: 16px;
+  border-radius: 16px;
+  background: #f7fafb;
+  color: #223645;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.helperText {
+  margin: 12px 0 0;
+  font-size: 14px;
+}
+
+.textarea {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid #dce6e9;
+  border-radius: 16px;
+  resize: vertical;
+  font: inherit;
+  color: #132638;
+}
+
+.textarea:focus {
+  outline: 2px solid rgba(9, 168, 183, 0.2);
+  border-color: #0aa8b7;
+}
+
+.completeButton {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #effbfc;
+  color: #0a6070;
+}
+
+.inlineSuccess,
+.messageBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f1fbf6;
+  color: #1f7a4d;
+  font-size: 14px;
+}
+
+.actionRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.secondaryButton,
+.primaryButton {
+  padding: 14px 18px;
+  font-weight: 700;
+}
+
+.secondaryButton {
+  background: #eef6f7;
+  color: #4f6473;
+}
+
+.primaryButton {
+  background: #132638;
+  color: #fff;
+}
+
+.secondaryButton:hover,
+.primaryButton:hover,
+.completeButton:hover,
+.backButton:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1080px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .taskHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroPanel,
+  .taskSummary {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .levelGrid,
+  .scenarioGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar,
+  .sectionHeading,
+  .progressHeader,
+  .actionRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page {
+    padding: 20px 16px 40px;
+  }
+
+  .hero,
+  .taskHeader,
+  .levelSection,
+  .progressShell,
+  .goalCard,
+  .stepCard,
+  .sidePanel,
+  .emptyState {
+    padding: 18px;
+  }
+}

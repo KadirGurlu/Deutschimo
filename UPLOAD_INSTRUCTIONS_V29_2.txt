@@ -1,0 +1,73 @@
+DEUTSCHIMO V29.2 — YAZMA KOÇU 2.0 KURULUMU
+================================================
+
+ÖN KOŞUL
+- Mevcut v29-staging Preview deployment'ı çalışıyor olmalı.
+- OPENAI_API_KEY ve OPENAI_WRITING_MODEL değişkenleri v29-staging Preview dalına bağlı olmalı.
+- En kolay kurulum, mevcut v29-staging dalı üzerinde devam etmektir. Böylece OpenAI değişkenlerini yeniden tanımlaman gerekmez.
+
+1. ZIP DOSYASINI AYIKLA
+- deutschimo-v29-2-writing-coach-guncelleme-paketi.zip dosyasına sağ tıkla.
+- “Tümünü Ayıkla” seçeneğini kullan.
+- ZIP dosyasının kendisini GitHub proje klasörüne koyma.
+
+2. GITHUB DESKTOP KONTROLÜ
+- Current repository: Deutschimo
+- Current branch: v29-staging
+- Mümkünse yüklemeden önce “0 changed files” görünmeli.
+
+Ayrı bir v29-2-staging dalı oluşturmak istersen bu dalı v29-staging üzerinden oluştur. Ancak Vercel’deki OPENAI_API_KEY ve OPENAI_WRITING_MODEL değişkenlerini yeni dala da bağlaman gerekir.
+
+3. DOSYALARI KOPYALA
+- GitHub Desktop → Repository → Show in Explorer.
+- Ayıklanan paketin içindeki bütün dosya ve klasörleri Deutschimo ana klasörüne kopyala.
+- Windows aynı adlı dosyalar olduğunu söylerse “Hedefteki dosyaları değiştir” seçeneğini seç.
+- Klasörleri silme; birleşmelerine izin ver.
+
+4. DEĞİŞİKLİKLERİ KONTROL ET
+Özellikle şu dosyalar değişmiş veya eklenmiş görünmeli:
+- components/writing-coach/writing-coach.tsx
+- components/writing-coach/writing-coach.module.css
+- app/api/writing-coach/review/route.ts
+- types/writing-coach.ts
+- prisma/schema.prisma
+- prisma/migrations/20260805133000_v29_2_writing_coach_revision/migration.sql
+- scripts/validate-v29.mjs
+- scripts/validate-v29-2.mjs
+- package.json
+
+OPENAI_API_KEY hiçbir dosyada görünmemelidir.
+
+5. COMMIT VE PUSH
+Summary:
+Add Deutschimo V29.2 Writing Coach 2.0
+
+Ardından:
+- Commit to v29-staging
+- Push origin
+
+Eski bir deployment üzerinde Redeploy yapma. Yeni commit Vercel’de kendi Preview deployment'ını oluşturur.
+
+6. VERCEL BUILD KONTROLÜ
+Loglarda beklenen aşamalar:
+- V29 doğrulaması başarılı
+- V29.2 doğrulaması başarılı
+- Migration 20260805133000_v29_2_writing_coach_revision uygulanıyor
+- No difference detected
+- Next.js compiled successfully
+- Ready
+
+7. PREVIEW TEST PLANI
+- Yazma Koçu → bir seviye ve senaryo seç.
+- Deutschimo, Goethe benzeri ve telc benzeri mod kartlarının göründüğünü kontrol et.
+- İlk metni gönder.
+- Hataların cümle bağlamında ve farklı renk gruplarıyla gösterildiğini kontrol et.
+- En az bir hatayı “düzelttim” olarak işaretle.
+- Metni kendin değiştir ve “Revizyonu değerlendir” de.
+- İlk/son puan, metin karşılaştırması ve rubrik farklarının göründüğünü kontrol et.
+- Tekrarlanan hata varsa Akıllı Tekrar bağlantısı kartını kontrol et.
+- “Bu metni benim için yaz” gibi kısa bir istek gönder; sistemin bunu reddettiğini doğrula.
+
+8. PRODUCTION
+- Preview testleri tamamlanmadan main dalına birleştirme.
+- Migration reset, prisma db push veya veritabanı silme işlemi yapma.

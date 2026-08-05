@@ -750,11 +750,15 @@ model WritingCoachSession {
   id             String                @id @default(cuid())
   userId         String
   user           User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
-  scenarioId     String
-  level          Level
-  status         String                @default("ACTIVE")
-  latestRevision Int                   @default(0)
-  bestScore      Int                   @default(0)
+  scenarioId       String
+  level            Level
+  rubricMode       String                @default("DEUTSCHIMO")
+  status           String                @default("ACTIVE")
+  latestRevision   Int                   @default(0)
+  initialScore     Int?
+  latestScore      Int                   @default(0)
+  scoreImprovement Int                   @default(0)
+  bestScore        Int                   @default(0)
   completedAt    DateTime?
   createdAt      DateTime              @default(now())
   updatedAt      DateTime              @updatedAt
@@ -771,16 +775,26 @@ model WritingCoachAttempt {
   userId          String
   user            User                @relation(fields: [userId], references: [id], onDelete: Cascade)
   scenarioId      String
-  level           Level
-  revisionNumber  Int
-  studentText     String              @db.Text
-  wordCount       Int
-  durationSeconds Int?
-  overallScore    Int
-  rubric          Json
+  level              Level
+  rubricMode        String              @default("DEUTSCHIMO")
+  revisionNumber     Int
+  previousAttemptId  String?
+  isRevision         Boolean             @default(false)
+  studentText        String              @db.Text
+  wordCount          Int
+  durationSeconds    Int?
+  overallScore       Int
+  improvement        Int                 @default(0)
+  errorCount         Int                 @default(0)
+  resolvedErrorCount Int                 @default(0)
+  repeatedErrorCount Int                 @default(0)
+  newErrorCount      Int                 @default(0)
+  rubric             Json
   errors          Json
   strengths       Json
   taskCoverage    Json
+  suggestions     Json?
+  comparison      Json?
   feedback        Json
   aiModel         String?
   createdAt       DateTime            @default(now())
@@ -788,6 +802,7 @@ model WritingCoachAttempt {
   @@unique([sessionId, revisionNumber])
   @@index([userId, createdAt])
   @@index([userId, scenarioId, createdAt])
+  @@index([sessionId, rubricMode, revisionNumber])
 }
 
 model WritingErrorProfile {

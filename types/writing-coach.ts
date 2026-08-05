@@ -1,5 +1,7 @@
 export type WritingCoachLevel = "A1" | "A2" | "B1" | "B2";
 
+export type WritingCoachRubricMode = "DEUTSCHIMO" | "GOETHE" | "TELC";
+
 export type WritingErrorCategory =
   | "ARTICLE"
   | "DATIVE"
@@ -73,20 +75,51 @@ export interface WritingTaskCoverage {
   note: string;
 }
 
+export interface WritingLanguageSuggestion {
+  item: string;
+  turkishHint: string;
+}
+
 export interface WritingCoachFeedback {
   overallScore: number;
   rubric: WritingRubricResult;
   errors: WritingCoachError[];
   strengths: string[];
   taskCoverage: WritingTaskCoverage[];
+  vocabularySuggestions: WritingLanguageSuggestion[];
+  connectorSuggestions: WritingLanguageSuggestion[];
   nextStep: string;
   levelFit: string;
+  evaluationModeNote: string;
+}
+
+export interface WritingRevisionComparison {
+  initialScore: number;
+  currentScore: number;
+  overallDelta: number;
+  previousScore: number | null;
+  previousDelta: number | null;
+  resolvedErrorCount: number;
+  repeatedErrorCount: number;
+  newErrorCount: number;
+  rubricDelta: Record<WritingRubricKey, number>;
+}
+
+export interface WritingCoachRevisionSummary {
+  id: string;
+  revisionNumber: number;
+  overallScore: number;
+  improvement: number;
+  errorCount: number;
+  rubricMode: WritingCoachRubricMode;
+  createdAt: string;
 }
 
 export interface WritingCoachReviewRequest {
   scenarioId: string;
   level: WritingCoachLevel;
   text: string;
+  rubricMode: WritingCoachRubricMode;
   sessionId?: string;
   durationSeconds?: number;
 }
@@ -96,6 +129,11 @@ export interface WritingCoachReviewResponse {
   revisionNumber: number;
   feedback: WritingCoachFeedback;
   errorHistory: WritingErrorProfileView[];
+  comparison: WritingRevisionComparison;
+  revisionHistory: WritingCoachRevisionSummary[];
+  initialText: string;
+  currentText: string;
+  smartReviewQueued: number;
 }
 
 export interface WritingErrorProfileView {
@@ -114,5 +152,8 @@ export interface WritingCoachAttemptSummary {
   level: WritingCoachLevel;
   revisionNumber: number;
   overallScore: number;
+  improvement: number;
+  errorCount: number;
+  rubricMode: WritingCoachRubricMode;
   createdAt: string;
 }

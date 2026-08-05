@@ -1,0 +1,62 @@
+DEUTSCHIMO V29.2 — YAZMA KOÇU 2.0 PAKET MANİFESTİ
+====================================================
+
+Paket türü: V29 üzerine kümülatif güncelleme
+Hedef sürüm: 29.2.0
+Önerilen dal: mevcut v29-staging
+
+V29.2 İÇİN YENİ / GÜNCELLENEN DOSYALAR
+---------------------------------------
+CHANGELOG_V29_2.md
+UPLOAD_INSTRUCTIONS_V29_2.txt
+V29_2_UPDATE_MANIFEST.txt
+V29_2_VALIDATION_REPORT.md
+docs/V29_2_WRITING_COACH_2.md
+components/writing-coach/writing-coach.tsx
+components/writing-coach/writing-coach.module.css
+app/api/writing-coach/review/route.ts
+types/writing-coach.ts
+prisma/schema.prisma
+prisma/migrations/20260805133000_v29_2_writing_coach_revision/migration.sql
+scripts/validate-v29.mjs
+scripts/validate-v29-2.mjs
+package.json
+
+KÜMÜLATİF OLARAK TAŞINAN V28.4 / V29 DOSYALARI
+-----------------------------------------------
+CHANGELOG_V28_4.md
+CHANGELOG_V29.md
+UPLOAD_INSTRUCTIONS_V28_4.txt
+UPLOAD_INSTRUCTIONS_V29.txt
+V28_4_UPDATE_MANIFEST.txt
+V28_4_VALIDATION_REPORT.md
+V29_UPDATE_MANIFEST.txt
+V29_VALIDATION_REPORT.md
+app/api/intelligence/placement/route.ts
+app/api/intelligence/review/route.ts
+app/api/vocabulary/review/route.ts
+app/writing-coach/page.tsx
+components/intelligence/placement-test-v28-4.module.css
+components/intelligence/placement-test.tsx
+components/layout/app-sidebar.tsx
+data/placement-test.ts
+data/writing-coach.ts
+docs/V28_4_REAL_PLACEMENT_TEST.md
+docs/V29_WRITING_COACH.md
+lib/intelligence/placement.ts
+prisma/migrations/20260804180000_v28_4_real_placement/migration.sql
+prisma/migrations/20260805003000_v29_writing_coach/migration.sql
+scripts/db-deploy.mjs
+scripts/db-safety.mjs
+scripts/validate-v28-1.mjs
+scripts/validate-v28-3.mjs
+scripts/validate-v28-4.mjs
+types/intelligence.ts
+
+YENİ ENVIRONMENT VARIABLE
+-------------------------
+Yok.
+
+Mevcut değişkenler kullanılmaya devam eder:
+OPENAI_API_KEY
+OPENAI_WRITING_MODEL

@@ -1,0 +1,28 @@
+name: Deutschimo V31.2 One-Step Application Rollback
+on:
+  workflow_dispatch:
+    inputs:
+      tag: { description: Known-good tag such as v31.1.0, required: true }
+      confirm: { description: Type ROLLBACK_PRODUCTION, required: true }
+permissions: { contents: write }
+jobs:
+  rollback:
+    if: inputs.confirm == 'ROLLBACK_PRODUCTION'
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.tag }}", fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm install --global npm@10.9.2 && npm ci
+      - name: Create auditable rollback branch
+        run: npm run release:rollback -- --tag=${{ inputs.tag }} --execute --confirm=ROLLBACK --push --branch=rollback/${{ inputs.tag }}-${{ github.run_id }}
+      - name: Redeploy known-good application artifact
+        run: |
+          npx vercel@58.1.0 pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel@58.1.0 build --prod --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel@58.1.0 deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

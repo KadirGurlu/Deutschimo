@@ -6,10 +6,14 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { AlertCircle, CheckCircle2, LoaderCircle } from "lucide-react";
 import type { CourseLevel } from "@/types/course";
+import { reportClientError } from "@/lib/monitoring/client-reporter";
 
 const courseLevels: CourseLevel[] = ["A1", "A2", "B1", "B2"];
 
 type AuthMode = "login" | "register";
+class CodedAuthError extends Error {
+  constructor(public readonly code: string, message: string) { super(message); this.name = "CodedAuthError"; }
+}
 
 function isCourseLevel(value: string | null): value is CourseLevel {
   return value !== null && courseLevels.includes(value as CourseLevel);
@@ -52,6 +56,7 @@ function AuthContent() {
   const [mode, setMode] = useState<AuthMode>(requestedMode);
   const [message, setMessage] = useState("");
   const [error, setError] = useState(() => getAuthErrorMessage(searchParams.get("error")));
+  const [errorCode, setErrorCode] = useState(() => searchParams.get("error") ? "AUTH-OAUTH-0001" : "");
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [form, setForm] = useState({
@@ -69,6 +74,7 @@ function AuthContent() {
   function selectMode(nextMode: AuthMode) {
     setMode(nextMode);
     setError("");
+    setErrorCode("");
     setMessage("");
     const params = new URLSearchParams(searchParams.toString());
     params.set("mode", nextMode);
@@ -79,12 +85,17 @@ function AuthContent() {
   async function continueWithGoogle() {
     setGoogleLoading(true);
     setError("");
+    setErrorCode("");
     setMessage("");
     try {
       await signIn("google", { callbackUrl });
     } catch {
+      const code = "AUTH-OAUTH-0002";
+      const message = "Google ile giriş başlatılamadı. Bağlantını ve OAuth ayarlarını kontrol et.";
       setGoogleLoading(false);
-      setError("Google ile giriş başlatılamadı. Bağlantını ve OAuth ayarlarını kontrol et.");
+      setError(message);
+      setErrorCode(code);
+      void reportClientError({ domain: "AUTH", operation: "OAUTH", code, message });
     }
   }
 
@@ -92,6 +103,7 @@ function AuthContent() {
     event.preventDefault();
     setLoading(true);
     setError("");
+    setErrorCode("");
     setMessage("");
     try {
       if (mode === "register") {
@@ -107,8 +119,8 @@ function AuthContent() {
             targetLevel: form.targetLevel,
           }),
         });
-        const payload = await response.json() as { error?: string; requiresVerification?: boolean };
-        if (!response.ok) throw new Error(payload.error || "Hesap oluşturulamadı.");
+        const payload = await response.json() as { error?: string; errorCode?: string; requiresVerification?: boolean };
+        if (!response.ok) throw new CodedAuthError(payload.errorCode || "AUTH-REGISTER-0001", payload.error || "Hesap oluşturulamadı.");
         if (payload.requiresVerification) {
           setMessage("Hesabın oluşturuldu. E-posta adresine gönderilen bağlantıyla hesabını doğrula.");
           return;
@@ -121,11 +133,15 @@ function AuthContent() {
         redirect: false,
         callbackUrl,
       });
-      if (result?.error) throw new Error("E-posta veya şifre hatalı. Hesabın askıya alınmış ya da doğrulanmamış da olabilir.");
+      if (result?.error) throw new CodedAuthError("AUTH-LOGIN-0042", "E-posta veya şifre hatalı. Hesabın askıya alınmış ya da doğrulanmamış da olabilir.");
       router.push(result?.url || callbackUrl);
       router.refresh();
     } catch (caught) {
-      setError(caught instanceof Error ? caught.message : "İşlem tamamlanamadı.");
+      const code = caught instanceof CodedAuthError ? caught.code : mode === "login" ? "AUTH-LOGIN-0001" : "AUTH-REGISTER-0001";
+      const message = caught instanceof Error ? caught.message : "İşlem tamamlanamadı.";
+      setError(message);
+      setErrorCode(code);
+      void reportClientError({ domain: "AUTH", operation: mode, code, message });
     } finally {
       setLoading(false);
     }
@@ -221,7 +237,7 @@ function AuthContent() {
             </button>
           </form>
 
-          {error ? <div className="auth-message auth-error"><AlertCircle size={18} />{error}</div> : null}
+          {error ? <div className="auth-message auth-error"><AlertCircle size={18} /><span>{error}{errorCode ? <small style={{ display: "block", marginTop: 4 }}>Hata kodu: {errorCode}</small> : null}</span></div> : null}
           {message ? <div className="auth-message auth-success"><CheckCircle2 size={18} />{message}</div> : null}
         </div>
       </section>

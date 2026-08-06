@@ -1,0 +1,135 @@
+name: Deutschimo V31.2 Guarded Production Release
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Commit/branch to release
+        required: true
+        default: v31-2-staging
+      release_tag:
+        description: Immutable release tag
+        required: true
+        default: v31.2.0
+      confirm:
+        description: Type RELEASE_PRODUCTION
+        required: true
+permissions:
+  contents: write
+jobs:
+  quality-gate:
+    name: full-release-readiness
+    if: inputs.confirm == 'RELEASE_PRODUCTION'
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschimo_release_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d deutschimo_release_test"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_release_test
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_release_test
+      DATABASE_ENVIRONMENT: test
+      DATA_CLASSIFICATION: synthetic
+      PRODUCTION_DATABASE_FINGERPRINT: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      PREVIEW_DATABASE_FINGERPRINT: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+      STRICT_DATA_BOUNDARIES: "true"
+      AUTH_SECRET: v31-2-release-ci-auth-secret
+      SECURITY_HASH_KEY: v31-2-release-ci-hash-key
+      CRON_SECRET: v31-2-release-ci-cron-secret
+      AUTH_URL: http://127.0.0.1:3102
+      AUTH_TRUST_HOST: "true"
+      NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+      REQUIRE_EMAIL_VERIFICATION: "false"
+      TEST_USER_PASSWORD: DeutschimoTest2026!
+      AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+      PLAYWRIGHT_SKIP_BUILD: "true"
+      PORT: "3102"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run release:readiness:static
+      - run: npm audit --omit=dev --audit-level=high
+      - run: npx prisma generate && npx prisma migrate deploy && npx prisma db seed
+      - run: npm run db:environment:verify:strict && npm run db:data-boundaries -- --strict
+      - run: npm run lint && npm run typecheck && npm run build
+      - run: npm run test:e2e:v31.2
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-release-quality-${{ github.run_id }}
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 14
+
+  production-release:
+    name: backup-migrate-tag-deploy
+    needs: quality-gate
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_POSTGRES_URL }}
+      DATABASE_POSTGRES_URL: ${{ secrets.PRODUCTION_DATABASE_POSTGRES_URL }}
+      DATABASE_ENVIRONMENT: production
+      VERCEL_ENV: production
+      DATA_CLASSIFICATION: production
+      PRODUCTION_DATABASE_FINGERPRINT: ${{ secrets.PRODUCTION_DATABASE_FINGERPRINT }}
+      PREVIEW_DATABASE_FINGERPRINT: ${{ secrets.PREVIEW_DATABASE_FINGERPRINT }}
+      BACKUP_ENCRYPTION_KEY: ${{ secrets.BACKUP_ENCRYPTION_KEY }}
+      REQUIRE_PRE_MIGRATION_BACKUP: "true"
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - run: npx prisma generate
+      - name: Configure release identity
+        run: |
+          git config user.name "Deutschimo Release Bot"
+          git config user.email "release-bot@users.noreply.github.com"
+      - name: Immutable pre-release tag
+        run: npm run release:snapshot -- --tag=${{ inputs.release_tag }} --push
+      - name: Pre-migration encrypted backup
+        run: npm run db:backup -- --reason=pre-migration
+      - run: npm run db:backup:policy
+      - run: npx prisma migrate deploy
+      - run: npm run db:environment:verify:strict
+      - run: npm run db:data-boundaries -- --strict
+      - name: Build and deploy via Vercel CLI
+        run: |
+          npx vercel@58.1.0 pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel@58.1.0 build --prod --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel@58.1.0 deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pre-migration-backup-${{ inputs.release_tag }}
+          path: .backups/*.enc*
+          if-no-files-found: error
+          retention-days: 30

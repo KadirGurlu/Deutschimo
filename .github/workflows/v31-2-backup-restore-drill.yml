@@ -1,0 +1,43 @@
+name: Deutschimo V31.2 Backup Restore Drill
+on:
+  schedule:
+    - cron: "30 3 * * 0"
+  workflow_dispatch:
+permissions: { contents: read }
+jobs:
+  restore-drill:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres, POSTGRES_DB: deutschimo_drill_source }
+        ports: [5432:5432]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d deutschimo_drill_source"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_drill_source
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_drill_source
+      DATABASE_ENVIRONMENT: test
+      DATA_CLASSIFICATION: synthetic
+      BACKUP_ENCRYPTION_KEY: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+      RESTORE_DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_drill_target
+      RESTORE_DATABASE_ENVIRONMENT: test
+      RESTORE_CONFIRM: RESTORE_NON_PRODUCTION
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c 'CREATE DATABASE deutschimo_drill_target;'
+      - run: npx prisma generate && npx prisma migrate deploy && npx prisma db seed
+      - run: npm run db:backup -- --reason=drill
+      - name: Restore into isolated database
+        run: npm run db:restore -- --file=$(ls -1 .backups/*.dump.enc | head -1)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v31-2-restore-drill-${{ github.run_id }}
+          path: .backups/*.manifest.json
+          retention-days: 30

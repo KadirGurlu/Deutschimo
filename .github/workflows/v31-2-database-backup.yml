@@ -1,0 +1,38 @@
+name: Deutschimo V31.2 Daily Database Backup
+on:
+  schedule:
+    - cron: "15 2 * * *"
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: Backup reason
+        type: choice
+        options: [daily, manual, pre-migration]
+        default: manual
+permissions: { contents: read }
+jobs:
+  encrypted-backup:
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_POSTGRES_URL }}
+      DATABASE_POSTGRES_URL: ${{ secrets.PRODUCTION_DATABASE_POSTGRES_URL }}
+      DATABASE_ENVIRONMENT: production
+      DATA_CLASSIFICATION: production
+      BACKUP_ENCRYPTION_KEY: ${{ secrets.BACKUP_ENCRYPTION_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - run: npx prisma generate
+      - name: Create encrypted backup
+        run: npm run db:backup -- --reason=${{ github.event_name == 'schedule' && 'daily' || inputs.reason }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deutschimo-production-backup-${{ github.run_id }}
+          path: .backups/*.enc*
+          if-no-files-found: error
+          retention-days: 30

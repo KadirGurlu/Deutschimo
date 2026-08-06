@@ -10,6 +10,21 @@ const contentSecurityPolicy = [
   ...(isProduction ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 
+const contentSecurityPolicyReportOnly = [
+  "default-src 'self'",
+  "base-uri 'self'",
+  "object-src 'none'",
+  "frame-ancestors 'none'",
+  "form-action 'self' https://accounts.google.com",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https:",
+  "font-src 'self' data:",
+  "media-src 'self' blob: https:",
+  "worker-src 'self' blob:",
+  "connect-src 'self' https://api.openai.com https://*.prisma.io https://*.vercel.app wss:",
+].join("; ");
+
 const securityHeaders = [
   { key: "X-DNS-Prefetch-Control", value: "off" },
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -17,6 +32,8 @@ const securityHeaders = [
   { key: "X-Download-Options", value: "noopen" },
   { key: "X-Permitted-Cross-Domain-Policies", value: "none" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Origin-Agent-Cluster", value: "?1" },
+  { key: "Cross-Origin-Resource-Policy", value: "same-site" },
   {
     key: "Permissions-Policy",
     value: [
@@ -35,6 +52,7 @@ const securityHeaders = [
   },
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
   { key: "Content-Security-Policy", value: contentSecurityPolicy },
+  { key: "Content-Security-Policy-Report-Only", value: contentSecurityPolicyReportOnly },
   ...(isProduction
     ? [{ key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }]
     : []),
@@ -51,6 +69,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 86_400,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   async headers() {
@@ -64,6 +83,7 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "Cache-Control", value: "no-store, max-age=0" },
           { key: "Pragma", value: "no-cache" },
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" },
         ],
       },
       {

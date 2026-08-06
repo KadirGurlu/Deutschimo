@@ -8,7 +8,7 @@ const csrfExemptPrefixes = ["/api/auth/", "/api/cron/"];
 
 function requestId(request: Request) {
   const supplied = request.headers.get("x-request-id")?.trim() ?? "";
-  return /^[A-Za-z0-9._:-]{8,128}$/.test(supplied) ? supplied : crypto.randomUUID();
+  return /^[A-Za-z0-9._:-]{8,128}$/u.test(supplied) ? supplied : crypto.randomUUID();
 }
 
 function expectedHost(request: Request) {
@@ -23,10 +23,9 @@ function violatesSameOrigin(request: Request) {
   const url = new URL(request.url);
   if (!url.pathname.startsWith("/api/") || !unsafeMethods.has(request.method.toUpperCase())) return false;
   if (csrfExemptPrefixes.some((prefix) => url.pathname.startsWith(prefix))) return false;
-
   if (request.headers.get("sec-fetch-site") === "cross-site") return true;
   const origin = request.headers.get("origin");
-  if (!origin) return false; // Allows trusted server-to-server calls that do not send Origin.
+  if (!origin) return false;
 
   try {
     return new URL(origin).host.toLowerCase() !== expectedHost(request);
@@ -37,7 +36,6 @@ function violatesSameOrigin(request: Request) {
 
 export const middleware = auth((request) => {
   const id = requestId(request);
-
   if (violatesSameOrigin(request)) {
     return NextResponse.json(
       { error: "İstek kaynağı doğrulanamadı.", requestId: id },
@@ -54,9 +52,12 @@ export const middleware = auth((request) => {
 
   const forwardedHeaders = new Headers(request.headers);
   forwardedHeaders.set("x-request-id", id);
-
   const response = NextResponse.next({ request: { headers: forwardedHeaders } });
   response.headers.set("x-request-id", id);
+
+  if (request.nextUrl.pathname.startsWith("/api/v1/")) {
+    response.headers.set("x-deutschimo-api-version", "v1");
+  }
 
   if (isProtectedPath(request.nextUrl.pathname)) {
     response.headers.set("x-robots-tag", "noindex, nofollow, noarchive");

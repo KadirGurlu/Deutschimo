@@ -710,4 +710,4 @@ async function POSTHandler(request: Request) {
   return NextResponse.json({ result });
 }
 
-export const POST = withApiMonitoring("/api/real-germany/evaluate", POSTHandler);
+export const POST = withApiMonitoring("/api/real-germany/evaluate", POSTHandler, { maxBodyBytes: 64 * 1024 });

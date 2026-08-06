@@ -862,4 +862,4 @@ async function POSTHandler(request: Request) {
 }
 
 export const GET = withApiMonitoring("/api/writing-coach/review", GETHandler);
-export const POST = withApiMonitoring("/api/writing-coach/review", POSTHandler);
+export const POST = withApiMonitoring("/api/writing-coach/review", POSTHandler, { maxBodyBytes: 64 * 1024 });

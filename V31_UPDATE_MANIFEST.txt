@@ -1,0 +1,39 @@
+Deutschimo V31 — Platform Core 2.0
+
+Yeni / değişen ana dosyalar:
+- .env.example
+- package.json
+- next.config.ts
+- middleware.ts
+- prisma/schema.prisma
+- prisma/migrations/20260805150000_v31_platform_core/migration.sql
+- lib/platform/auth.ts
+- lib/security/api-monitor.ts
+- lib/platform/contracts.ts
+- lib/platform/device.ts
+- lib/platform/idempotency.ts
+- lib/platform/maintenance.ts
+- lib/platform/rate-limit.ts
+- lib/platform/response.ts
+- lib/platform/version.ts
+- app/api/v1/health/route.ts
+- app/api/v1/bootstrap/route.ts
+- app/api/v1/devices/route.ts
+- app/api/cron/daily-maintenance/route.ts
+- scripts/maintenance-cleanup.mjs
+- scripts/validate-v31.mjs
+- app/api/writing-coach/review/route.ts
+- app/api/real-germany/evaluate/route.ts
+- app/api/real-germany/progress/route.ts
+- docs/V31_PLATFORM_CORE.md
+- docs/V31_DEPLOYMENT_SECURITY_CHECKLIST.md
+- CHANGELOG_V31.md
+- V31_VALIDATION_REPORT.md
+- UPLOAD_INSTRUCTIONS_V31.txt
+- V31_UPDATE_MANIFEST.txt
+
+Migration:
+- Ekleme-only
+- ClientDevice
+- ApiIdempotencyRecord
+- ClientPlatform enum

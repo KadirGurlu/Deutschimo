@@ -249,4 +249,4 @@ async function PATCHHandler(request: Request) {
 }
 
 export const GET = withApiMonitoring("/api/real-germany/progress", GETHandler);
-export const PATCH = withApiMonitoring("/api/real-germany/progress", PATCHHandler);
+export const PATCH = withApiMonitoring("/api/real-germany/progress", PATCHHandler, { maxBodyBytes: 64 * 1024 });

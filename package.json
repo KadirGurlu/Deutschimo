@@ -1,12 +1,12 @@
 {
   "name": "deutschimo-platform",
-  "version": "30.2.0",
+  "version": "31.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs",
+    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs && npm run validate:v31",
     "build": "prisma generate && next build",
-    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && node scripts/db-deploy.mjs && prisma generate && next build",
+    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && node scripts/db-deploy.mjs && prisma generate && next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -55,7 +55,7 @@
     "validate:v27": "node scripts/validate-v27.mjs",
     "validate:v28": "node scripts/validate-v28.mjs",
     "validate:v28.1": "node scripts/validate-v28-1.mjs",
-    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2",
+    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:ui": "playwright test --ui",
@@ -65,7 +65,9 @@
     "validate:v29": "node scripts/validate-v29.mjs",
     "validate:v29.2": "node scripts/validate-v29-2.mjs",
     "validate:v30.1": "node scripts/validate-v30-1.mjs",
-    "validate:v30.2": "node scripts/validate-v30-2.mjs"
+    "validate:v30.2": "node scripts/validate-v30-2.mjs",
+    "validate:v31": "node scripts/validate-v31.mjs",
+    "maintenance:cleanup": "node scripts/maintenance-cleanup.mjs"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.8.0",

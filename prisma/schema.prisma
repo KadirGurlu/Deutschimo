@@ -85,6 +85,12 @@ enum ExerciseType {
   WRITING_ASSIGNMENT
 }
 
+enum ClientPlatform {
+  WEB
+  IOS
+  ANDROID
+}
+
 model User {
   id                  String                    @id @default(cuid())
   name                String?
@@ -133,6 +139,8 @@ model User {
   writingErrorProfiles   WritingErrorProfile[]
   realGermanyProgress     RealGermanyScenarioProgress[]
   realGermanyAttempts     RealGermanyScenarioAttempt[]
+  clientDevices            ClientDevice[]
+  apiIdempotencyRecords    ApiIdempotencyRecord[]
 
   @@index([role, status])
   @@index([createdAt])
@@ -883,4 +891,44 @@ model RealGermanyScenarioAttempt {
   @@index([userId, createdAt])
   @@index([userId, scenarioId, createdAt])
   @@index([scenarioId, overallScore])
+}
+
+
+model ClientDevice {
+  id            String         @id @default(cuid())
+  userId        String
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deviceIdHash  String
+  platform      ClientPlatform
+  appVersion    String
+  deviceName    String?
+  locale        String?
+  timezone      String?
+  metadata      Json?
+  firstSeenAt   DateTime       @default(now())
+  lastSeenAt    DateTime       @default(now())
+  revokedAt     DateTime?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@unique([userId, deviceIdHash])
+  @@index([userId, revokedAt, lastSeenAt])
+  @@index([platform, appVersion])
+}
+
+model ApiIdempotencyRecord {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  route         String
+  keyHash       String
+  requestHash   String
+  statusCode    Int
+  response      Json
+  expiresAt     DateTime
+  createdAt     DateTime @default(now())
+
+  @@unique([userId, route, keyHash])
+  @@index([expiresAt])
+  @@index([userId, createdAt])
 }

@@ -1,0 +1,18 @@
+V31 Yazma Koçu dosyalarını geri yükleme hotfix'i
+
+Bu paket aşağıdaki iki eksik dosyayı geri yükler:
+- app/writing-coach/page.tsx
+- app/api/writing-coach/review/route.ts
+
+Kurulum:
+1. GitHub Desktop'ta Current branch değerinin v29-staging olduğunu kontrol edin.
+2. Repository > Show in Explorer ile Deutschimo ana klasörünü açın.
+3. Bu paketteki app klasörünü proje ana klasörüne kopyalayın.
+4. Klasörleri birleştirin. Mevcut app klasörünü tamamen silmeyin.
+5. GitHub Desktop'ta yalnızca yukarıdaki iki dosyanın Added/New olduğunu kontrol edin.
+6. Commit mesajı:
+   Restore V31 Writing Coach page and review route
+7. Commit to v29-staging ve ardından Push origin yapın.
+8. Eski deployment'a Redeploy basmayın. Yeni commit'in Preview deployment'ını bekleyin.
+
+Veritabanı, migration veya environment variable değişikliği gerekmez.

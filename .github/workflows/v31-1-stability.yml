@@ -1,0 +1,101 @@
+name: Deutschimo V31.1 Stability Gate
+
+on:
+  push:
+    branches: [main, v29-staging, v31-1-staging]
+  pull_request:
+    branches: [main, v29-staging, v31-1-staging]
+  workflow_dispatch:
+
+concurrency:
+  group: v31-1-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: "22"
+  DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_test
+  DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_test
+  DATABASE_ENVIRONMENT: test
+  AUTH_SECRET: v31-1-ci-auth-secret-please-change-2026
+  SECURITY_HASH_KEY: v31-1-ci-security-hash-key-please-change-2026
+  CRON_SECRET: v31-1-ci-cron-secret-please-change-2026
+  AUTH_URL: http://127.0.0.1:3000
+  AUTH_TRUST_HOST: "true"
+  NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+  REQUIRE_EMAIL_VERIFICATION: "false"
+  AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+  TEST_USER_PASSWORD: DeutschimoTest2026!
+  PLAYWRIGHT_SKIP_BUILD: "true"
+
+jobs:
+  stability-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschimo_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d deutschimo_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate V31.1 contract
+        run: npm run validate:v31.1
+
+      - name: Lint and typecheck
+        run: |
+          npm run lint
+          npm run typecheck
+
+      - name: Verify test database isolation
+        run: npm run db:environment:verify -- --expect=test
+
+      - name: Deploy migration history
+        run: npx prisma migrate deploy
+
+      - name: Reset deterministic test data
+        run: npm run db:test:reset
+
+      - name: Production build
+        run: npm run build
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run V31.1 Playwright suite
+        run: npm run test:e2e:v31.1
+
+      - name: Clean deterministic test data
+        if: always()
+        run: npm run db:test:clean || true
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v31-1-playwright-report
+          path: |
+            playwright-report
+            test-results
+          if-no-files-found: ignore
+          retention-days: 14

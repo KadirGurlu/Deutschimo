@@ -1,0 +1,25 @@
+Deutschimo V31 — V28.3 review routes recovery hotfix
+
+Sorun:
+Son devices API hotfix commit'inden sonra aşağıdaki iki route dosyası Git branch'inden silinmiş görünüyor:
+- app/api/vocabulary/review/route.ts
+- app/api/intelligence/review/route.ts
+
+Bu nedenle validate:v28.3 daha Next.js typecheck aşamasına gelmeden duruyor.
+
+Yükleme:
+1. GitHub Desktop'ta Current branch = v29-staging olduğunu kontrol edin.
+2. Bu ZIP'i ayrı bir klasöre ayıklayın.
+3. Repository > Show in Explorer ile Deutschimo proje klasörünü açın.
+4. ZIP içindeki app klasörünü proje köküne KOPYALAYIN ve klasörleri BİRLEŞTİRİN.
+5. Mevcut app klasörünü silmeyin ve boş bir app klasörüyle tamamen değiştirmeyin.
+6. GitHub Desktop'ta şu iki dosyanın Added / New olarak göründüğünü kontrol edin:
+   app/api/vocabulary/review/route.ts
+   app/api/intelligence/review/route.ts
+7. Başka dosya silinmiş görünüyorsa commit etmeyin.
+8. Commit mesajı:
+   Restore V31 vocabulary and intelligence review routes
+9. Commit to v29-staging > Push origin.
+10. Eski deployment'a Redeploy basmayın; yeni commit yeni Preview deployment başlatır.
+
+Veritabanı, migration veya environment variable değişikliği gerekmez.

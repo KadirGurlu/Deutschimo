@@ -15,7 +15,7 @@ function redactText(value: unknown, maxLength: number) {
 }
 
 function redactMetadata(value: unknown, depth = 0): Prisma.InputJsonValue | undefined {
-  if (value === undefined || value === null) return value as null | undefined;
+  if (value === undefined || value === null) return undefined;
   if (depth > 4) return "[truncated]";
   if (typeof value === "string") return redactText(value, 2000);
   if (typeof value === "number" || typeof value === "boolean") return value;

@@ -1,0 +1,23 @@
+V31 — Eksik Placement Route Geri Yükleme Hotfix
+
+Bu paket yalnızca şu dosyayı geri yükler:
+app/api/intelligence/placement/route.ts
+
+Yükleme adımları:
+1. ZIP dosyasını ayrı bir klasöre ayıkla.
+2. GitHub Desktop'ta Current branch değerinin v29-staging olduğunu kontrol et.
+3. Repository > Show in Explorer seçeneğiyle Deutschimo ana klasörünü aç.
+4. Hotfix içindeki app klasörünü Deutschimo ana klasörüne kopyala.
+5. Klasörleri birleştir. Mevcut app klasörünü silme veya tamamını yeniden oluşturma.
+6. GitHub Desktop'ta yalnızca aşağıdaki dosyanın Added/New göründüğünü doğrula:
+   app/api/intelligence/placement/route.ts
+7. Commit mesajı:
+   Restore V31 placement assessment route
+8. Commit to v29-staging ve ardından Push origin yap.
+9. Eski başarısız deployment'a Redeploy basma. Yeni commit yeni Preview deployment oluşturacaktır.
+
+Notlar:
+- Veritabanını sıfırlama.
+- Migration silme veya yeniden oluşturma.
+- Yeni environment variable ekleme.
+- Bu hata V28.4 doğrulamasının gerekli route dosyasını bulamamasından kaynaklanır.

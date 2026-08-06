@@ -1,7 +1,3 @@
-# V30.2 JSON Result Parsing Hotfix
+# V31 Placement Route Restore Hotfix
 
-Bu hotfix, Prisma JSON alanlarının API yanıtına aktarılırken yapılan doğrudan TypeScript cast işlemlerini doğrulamalı ayrıştırıcılara dönüştürür.
-
-Değişen tek uygulama dosyası:
-
-`app/api/real-germany/progress/route.ts`
+Restores `app/api/intelligence/placement/route.ts`, which is required by the V28.4 compatibility validation included in V31.

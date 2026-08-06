@@ -1,0 +1,25 @@
+﻿Deutschimo V31 Final Recovery Report
+Generated: 2026-08-06 13:04:09 +03:00
+Branch: v29-staging
+Payload files: 35
+
+Validation:
+SKIP Local validators - Node.js not found
+STAGED app/api/real-germany/progress/route.ts
+STAGED app/api/real-germany/evaluate/route.ts
+STAGED app/api/v1/health/route.ts
+STAGED app/api/v1/bootstrap/route.ts
+STAGED app/api/v1/devices/route.ts
+STAGED app/api/cron/daily-maintenance/route.ts
+TRACKED app/api/writing-coach/review/route.ts
+TRACKED lib/platform/contracts.ts
+TRACKED lib/security/api-monitor.ts
+TRACKED prisma/schema.prisma
+
+Staged/changed files:
+A  app/api/cron/daily-maintenance/route.ts
+A  app/api/real-germany/evaluate/route.ts
+A  app/api/real-germany/progress/route.ts
+A  app/api/v1/bootstrap/route.ts
+A  app/api/v1/devices/route.ts
+A  app/api/v1/health/route.ts

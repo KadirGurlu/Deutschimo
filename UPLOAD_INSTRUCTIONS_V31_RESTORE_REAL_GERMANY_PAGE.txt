@@ -1,0 +1,21 @@
+V31 — Gerçek Almanya sayfasını geri yükleme hotfix'i
+
+Bu paket yalnızca aşağıdaki eksik dosyayı geri getirir:
+
+app/real-germany/page.tsx
+
+Yükleme adımları:
+
+1. GitHub Desktop'ta Current branch alanının v29-staging olduğunu kontrol edin.
+2. Bu ZIP dosyasını ayrı bir klasöre ayıklayın.
+3. GitHub Desktop'ta Repository > Show in Explorer seçeneğini açın.
+4. Paketteki app klasörünü Deutschimo repository ana klasörüne kopyalayın.
+5. Klasörleri birleştirin. Mevcut app klasörünü silmeyin.
+6. GitHub Desktop'ta yalnızca app/real-germany/page.tsx dosyasının Added/New olduğunu kontrol edin.
+7. Önerilen commit mesajı:
+   Restore V31 Real Germany page
+8. Commit to v29-staging seçeneğine basın.
+9. Push origin yapın.
+10. Eski başarısız deployment'a Redeploy basmayın. Yeni commit'in oluşturduğu Preview deployment'ı bekleyin.
+
+Bu düzeltme için veritabanı, migration veya environment variable değişikliği gerekmez.

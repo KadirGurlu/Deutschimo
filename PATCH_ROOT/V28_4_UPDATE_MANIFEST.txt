@@ -1,0 +1,39 @@
+Deutschimo V28.4 — Update Manifest
+==================================
+
+Version: 28.4.0
+Branch target: v28-4-staging based on v28-3-staging
+Migration: 20260804180000_v28_4_real_placement
+
+Product files
+-------------
+app/api/intelligence/placement/route.ts
+components/intelligence/placement-test.tsx
+components/intelligence/placement-test-v28-4.module.css
+data/placement-test.ts
+lib/intelligence/placement.ts
+types/intelligence.ts
+
+Database and build
+------------------
+prisma/schema.prisma
+prisma/migrations/20260804180000_v28_4_real_placement/migration.sql
+package.json
+scripts/validate-v28-4.mjs
+scripts/validate-v28-3.mjs
+scripts/validate-v28-1.mjs
+scripts/db-deploy.mjs
+scripts/db-safety.mjs
+
+Carried V28.3 fixes
+-------------------
+app/api/intelligence/review/route.ts
+app/api/vocabulary/review/route.ts
+
+Documentation
+-------------
+CHANGELOG_V28_4.md
+UPLOAD_INSTRUCTIONS_V28_4.txt
+V28_4_VALIDATION_REPORT.md
+V28_4_UPDATE_MANIFEST.txt
+docs/V28_4_REAL_PLACEMENT_TEST.md

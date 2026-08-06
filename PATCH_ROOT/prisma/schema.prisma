@@ -1,0 +1,934 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_POSTGRES_URL")
+}
+
+enum UserRole {
+  STUDENT
+  INSTRUCTOR
+  EDITOR
+  MODERATOR
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  PENDING_VERIFICATION
+}
+
+enum Level {
+  A1
+  A2
+  B1
+  B2
+}
+
+enum EnrollmentStatus {
+  ACTIVE
+  PAUSED
+  COMPLETED
+}
+
+enum ContentStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+
+enum AssessmentSourceType {
+  EXERCISE
+  UNIT_QUIZ
+  SKILL_LAB
+  PLACEMENT
+  SMART_REVIEW
+  REAL_GERMANY
+}
+
+enum AssessmentSkill {
+  GRAMMAR
+  VOCABULARY
+  COMMUNICATION
+  READING
+  LISTENING
+  WRITING
+  SPEAKING
+  PRONUNCIATION
+}
+
+enum CognitiveLevel {
+  REMEMBER
+  UNDERSTAND
+  APPLY
+  ANALYZE
+  CREATE
+}
+
+enum ExerciseType {
+  MULTIPLE_CHOICE
+  MULTIPLE_SELECT
+  TRUE_FALSE
+  FILL_IN_THE_BLANK
+  MATCHING
+  SENTENCE_ORDERING
+  TRANSLATION
+  DIALOGUE_COMPLETION
+  SHORT_ANSWER
+  WRITING_ASSIGNMENT
+}
+
+enum ClientPlatform {
+  WEB
+  IOS
+  ANDROID
+}
+
+model User {
+  id                  String                    @id @default(cuid())
+  name                String?
+  firstName           String?
+  lastName            String?
+  email               String?                   @unique
+  emailVerified       DateTime?
+  image               String?
+  passwordHash        String?
+  role                UserRole                  @default(STUDENT)
+  status              UserStatus                @default(ACTIVE)
+  currentLevel        Level                     @default(A1)
+  targetLevel         Level                     @default(B2)
+  dailyGoalMinutes    Int                       @default(30)
+  onboardingCompleted Boolean                   @default(false)
+  isTestUser          Boolean                   @default(false)
+  privacyAcceptedAt   DateTime?
+  cookieConsentAt     DateTime?
+  accountDeletionRequestedAt DateTime?
+  lastSeenAt          DateTime?
+  createdAt           DateTime                  @default(now())
+  updatedAt           DateTime                  @updatedAt
+  accounts            Account[]
+  sessions            Session[]
+  enrollments         Enrollment[]
+  learningSnapshot    LearningStateSnapshot?
+  unitProgress        UserUnitProgress[]
+  activityEvents      UserActivityEvent[]
+  studySessions       StudySession[]
+  emailTokens         EmailVerificationToken[]
+  passwordResetTokens PasswordResetToken[]
+  placementAttempts    PlacementAssessment[]
+  intelligenceSnapshot LearningInsightSnapshot?
+  dailyStudyPlans       DailyStudyPlan[]
+  smartReviewState      SmartReviewState?
+  skillLabAttempts      SkillLabAttempt[]
+  vocabularyNotebook    VocabularyNotebookItem[]
+  vocabularySets        VocabularySet[]
+  vocabularyReviewAttempts VocabularyReviewAttempt[]
+  assessmentEvidence     AssessmentEvidence[]
+  competencies           CompetencyRecord[]
+  learningErrors         LearningErrorHistory[]
+  adaptiveReviewAttempts AdaptiveReviewAttempt[]
+  writingCoachSessions   WritingCoachSession[]
+  writingCoachAttempts   WritingCoachAttempt[]
+  writingErrorProfiles   WritingErrorProfile[]
+  realGermanyProgress     RealGermanyScenarioProgress[]
+  realGermanyAttempts     RealGermanyScenarioAttempt[]
+  clientDevices            ClientDevice[]
+  apiIdempotencyRecords    ApiIdempotencyRecord[]
+
+  @@index([role, status])
+  @@index([createdAt])
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+}
+
+model Session {
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@id([identifier, token])
+}
+
+model EmailVerificationToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String   @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model Course {
+  id             String        @id
+  slug           String        @unique
+  level          Level
+  title          String
+  description    String
+  status         ContentStatus @default(PUBLISHED)
+  estimatedHours Int           @default(0)
+  unitCount      Int           @default(0)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  units          Unit[]
+  enrollments    Enrollment[]
+}
+
+model Unit {
+  id                  String        @id
+  courseId            String
+  course              Course        @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  slug                String
+  order               Int
+  title               String
+  description         String
+  estimatedMinutes    Int           @default(0)
+  status              ContentStatus @default(PUBLISHED)
+  prerequisiteUnitId  String?
+  progressWeights     Json
+  completionRules     Json
+  contentPayload      Json?
+  deletedAt           DateTime?
+  createdAt           DateTime      @default(now())
+  updatedAt           DateTime      @updatedAt
+  exercises           Exercise[]
+
+  @@unique([courseId, slug])
+  @@index([courseId, order])
+}
+
+model Exercise {
+  id              String       @id
+  unitId          String
+  unit            Unit         @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  groupId         String?
+  order           Int
+  type            ExerciseType
+  title           String
+  prompt          String       @db.Text
+  options         Json?
+  correctAnswer   Json
+  acceptedAnswers Json?
+  explanation     String       @db.Text
+  relatedSlideId  String?
+  isRequired      Boolean      @default(true)
+  maxAttempts     Int          @default(2)
+  points          Int          @default(10)
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  @@index([unitId, order])
+}
+
+model Enrollment {
+  id          String           @id @default(cuid())
+  userId      String
+  courseId    String
+  status      EnrollmentStatus @default(ACTIVE)
+  enrolledAt  DateTime         @default(now())
+  completedAt DateTime?
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course      Course           @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, courseId])
+  @@index([courseId, status])
+}
+
+model LearningStateSnapshot {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  state     Json
+  version   Int      @default(12)
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserUnitProgress {
+  id                        String   @id @default(cuid())
+  userId                    String
+  courseId                  String
+  unitId                    String
+  status                    String
+  stage                     String
+  lessonProgress            Int      @default(0)
+  exerciseProgress          Int      @default(0)
+  quizProgress              Int      @default(0)
+  totalProgress             Int      @default(0)
+  bestQuizScore             Int?
+  completedSlideIds         Json
+  completedExerciseIds      Json
+  startedAt                 DateTime?
+  completedAt               DateTime?
+  lastVisitedAt             DateTime?
+  user                      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, unitId])
+  @@index([userId, courseId])
+  @@index([courseId, status])
+}
+
+model UserActivityEvent {
+  id        String   @id
+  userId    String
+  eventType String
+  courseId  String
+  unitId    String?
+  itemId    String?
+  metadata  Json?
+  createdAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([eventType, createdAt])
+}
+
+model StudySession {
+  id            String   @id
+  userId        String
+  courseId      String
+  unitId        String?
+  startedAt     DateTime
+  endedAt       DateTime?
+  activeSeconds Int      @default(0)
+  sessionType   String
+  deviceType    String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startedAt])
+}
+
+
+model PlacementAssessment {
+  id               String   @id @default(cuid())
+  userId           String
+  mode             String   @default("QUICK")
+  answers          Json
+  levelScores      Json
+  skillScores      Json?
+  skillLevels      Json?
+  strengths        Json
+  weakTopics       Json
+  studyPlan        Json?
+  writtenSamples   Json?
+  speakingSamples  Json?
+  overallBand      String?
+  recommendedLevel Level
+  totalScore       Int
+  correctCount     Int
+  questionCount    Int
+  confidenceScore  Int      @default(0)
+  durationSeconds  Int?
+  completedAt      DateTime @default(now())
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, completedAt])
+  @@index([userId, mode, completedAt])
+}
+
+model LearningInsightSnapshot {
+  id            String   @id @default(cuid())
+  userId        String   @unique
+  weakTopics    Json
+  strengths     Json
+  hasEnoughData Boolean  @default(false)
+  sourceVersion Int      @default(12)
+  generatedAt   DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model DailyStudyPlan {
+  id               String   @id @default(cuid())
+  userId           String
+  planDate         String
+  goalMinutes      Int
+  plannedMinutes   Int
+  completedMinutes Int      @default(0)
+  tasks            Json
+  generatedAt      DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, planDate])
+  @@index([userId, planDate])
+}
+
+model SmartReviewState {
+  id           String   @id @default(cuid())
+  userId       String   @unique
+  queue        Json
+  completedIds Json
+  attempts     Json
+  generatedAt  DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  actorUserId String?
+  actorEmail  String?
+  action      String
+  entityType  String
+  entityId    String?
+  summary     String
+  before      Json?
+  after       Json?
+  metadata    Json?
+  ipHash      String?
+  createdAt   DateTime @default(now())
+
+  @@index([actorUserId, createdAt])
+  @@index([action, createdAt])
+  @@index([entityType, entityId])
+}
+
+model SystemErrorLog {
+  id          String   @id @default(cuid())
+  source      String
+  route       String?
+  method      String?
+  message     String   @db.Text
+  stack       String?  @db.Text
+  digest      String?
+  fingerprint String?
+  requestId   String?
+  ipHash      String?
+  metadata    Json?
+  createdAt   DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([fingerprint, createdAt])
+}
+
+model ApiFailureLog {
+  id         String   @id @default(cuid())
+  route      String
+  method     String
+  statusCode Int
+  requestId  String?
+  ipHash     String?
+  userAgent  String?
+  message    String?
+  createdAt  DateTime @default(now())
+
+  @@index([route, createdAt])
+  @@index([statusCode, createdAt])
+}
+
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  emailHash String
+  ipHash    String
+  success   Boolean  @default(false)
+  reason    String?
+  createdAt DateTime @default(now())
+
+  @@index([emailHash, createdAt])
+  @@index([ipHash, createdAt])
+}
+
+model RateLimitEvent {
+  id        String   @id @default(cuid())
+  scope     String
+  keyHash   String
+  createdAt DateTime @default(now())
+
+  @@index([scope, keyHash, createdAt])
+}
+
+model DatabaseBackup {
+  id              String   @id @default(cuid())
+  status          String
+  storageProvider String?
+  pathname        String?
+  downloadUrl     String?
+  checksum        String?
+  byteSize        Int?
+  tableCounts     Json?
+  errorMessage    String?  @db.Text
+  startedAt       DateTime @default(now())
+  completedAt     DateTime?
+
+  @@index([startedAt])
+  @@index([status, startedAt])
+}
+
+model AccountDeletionLog {
+  id            String   @id @default(cuid())
+  userIdHash    String
+  emailHash     String?
+  deletionType  String
+  requestedAt   DateTime @default(now())
+  completedAt   DateTime?
+  metadata      Json?
+
+  @@index([requestedAt])
+}
+
+
+model SkillLabAttempt {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill           String
+  taskId          String
+  level           Level
+  score           Int
+  durationSeconds Int?
+  answerPayload   Json?
+  transcript      String?  @db.Text
+  feedback        Json?
+  completedAt     DateTime @default(now())
+
+  @@index([userId, skill, completedAt])
+  @@index([taskId, completedAt])
+}
+
+
+model VocabularySet {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title         String
+  description   String?  @db.Text
+  level         Level?
+  unitId        String?
+  unitTitle     String?
+  origin        String   @default("USER")
+  sourceSlug    String?
+  lastStudiedAt DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  items         VocabularyNotebookItem[]
+
+  @@index([userId, updatedAt])
+  @@index([userId, level])
+}
+
+model VocabularyNotebookItem {
+  id                    String   @id @default(cuid())
+  userId                String
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  setId                 String?
+  set                   VocabularySet? @relation(fields: [setId], references: [id], onDelete: Cascade)
+  word                  String
+  article               String?
+  plural                String?
+  translation           String
+  pronunciation         String?
+  wordType              String?
+  example               String?  @db.Text
+  exampleTranslation    String?  @db.Text
+  verbConjugation       Json?
+  perfectForm           String?
+  governedPreposition   String?
+  sourceSkill           String
+  sourceTaskId          String
+  sourceCourseId        String?
+  sourceUnitId          String?
+  sourceUnitTitle       String?
+  notes                 String?  @db.Text
+  mastery               Int      @default(0)
+  nextReviewAt          DateTime @default(now())
+  lastReviewedAt        DateTime?
+  reviewCount           Int      @default(0)
+  correctStreak         Int      @default(0)
+  lapseCount            Int      @default(0)
+  intervalDays          Int      @default(0)
+  easeFactor            Float    @default(2.5)
+  difficulty            Int      @default(3)
+  stability             Float    @default(1)
+  retrievability        Float    @default(1)
+  confidenceScore       Int      @default(50)
+  hintUseCount          Int      @default(0)
+  sameErrorStreak       Int      @default(0)
+  averageResponseMs     Int?
+  lastResponseMs        Int?
+  lastSeenAt            DateTime?
+  lastMode              String?
+  lastRating            String?
+  suspended             Boolean  @default(false)
+  reviewAttempts        VocabularyReviewAttempt[]
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@unique([userId, word, sourceTaskId])
+  @@index([userId, setId])
+  @@index([userId, nextReviewAt])
+  @@index([userId, mastery])
+  @@index([userId, createdAt])
+  @@index([userId, sameErrorStreak, nextReviewAt])
+}
+
+model VocabularyReviewAttempt {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemId     String
+  item       VocabularyNotebookItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  mode       String
+  rating     String
+  correct    Boolean
+  answer     String?  @db.Text
+  expected   String?  @db.Text
+  responseMs         Int?
+  hintUsed          Boolean  @default(false)
+  confidence        String?
+  difficulty        Int      @default(3)
+  repeatedErrorCount Int     @default(0)
+  signalScore       Float?
+  createdAt         DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([itemId, createdAt])
+  @@index([rating, createdAt])
+}
+
+model AssessmentEvidence {
+  id               String               @id @default(cuid())
+  userId           String
+  user             User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sourceType       AssessmentSourceType
+  sourceId         String
+  courseId         String
+  unitId           String?
+  level            Level
+  skill            AssessmentSkill
+  difficulty       Int
+  cognitiveLevel   CognitiveLevel
+  objectiveCodes   Json
+  topicTags        Json
+  correct          Boolean
+  answer           Json?
+  correctAnswer    Json?
+  explanation      String?              @db.Text
+  relatedSlideId   String?
+  responseMs       Int?
+  attemptNumber    Int                  @default(1)
+  pointsPossible   Int                  @default(10)
+  pointsEarned     Int                  @default(0)
+  createdAt        DateTime             @default(now())
+
+  @@index([userId, createdAt])
+  @@index([userId, skill, createdAt])
+  @@index([sourceType, sourceId])
+  @@index([unitId, createdAt])
+}
+
+model CompetencyRecord {
+  id               String          @id @default(cuid())
+  userId           String
+  user             User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  objectiveCode    String
+  unitId           String?
+  level            Level
+  skill            AssessmentSkill
+  topic            String
+  mastery          Int             @default(0)
+  confidence       Int             @default(0)
+  points           Int             @default(0)
+  evidenceCount    Int             @default(0)
+  correctCount     Int             @default(0)
+  incorrectCount   Int             @default(0)
+  averageResponseMs Int?
+  intervalDays      Int             @default(0)
+  easeFactor        Float           @default(2.5)
+  correctStreak     Int             @default(0)
+  lapseCount        Int             @default(0)
+  reviewCount       Int             @default(0)
+  lastReviewedAt    DateTime?
+  lastRating        String?
+  hintUseCount      Int             @default(0)
+  sameErrorStreak   Int             @default(0)
+  difficulty        Int             @default(3)
+  stability         Float           @default(1)
+  retrievability    Float           @default(1)
+  lastResponseMs    Int?
+  lastEvidenceAt   DateTime?
+  nextReviewAt     DateTime?
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+
+  @@unique([userId, objectiveCode])
+  @@index([userId, mastery])
+  @@index([userId, skill])
+  @@index([userId, nextReviewAt])
+  @@index([objectiveCode])
+}
+
+model AdaptiveReviewAttempt {
+  id                 String   @id @default(cuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  domain             String
+  targetId           String
+  objectiveCode      String?
+  sourceType         String?
+  sourceId           String?
+  mode               String
+  rating             String?
+  correct            Boolean
+  responseMs         Int?
+  hintUsed           Boolean  @default(false)
+  confidence         String
+  difficulty         Int
+  repeatedErrorCount Int      @default(0)
+  signalScore        Float
+  nextReviewAt       DateTime
+  metadata           Json?
+  createdAt          DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([userId, nextReviewAt])
+  @@index([domain, targetId, createdAt])
+  @@index([objectiveCode, createdAt])
+}
+
+model LearningErrorHistory {
+  id               String               @id @default(cuid())
+  userId           String
+  user             User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sourceType       AssessmentSourceType
+  sourceId         String
+  courseId         String
+  unitId           String?
+  level            Level
+  skill            AssessmentSkill
+  objectiveCode    String
+  topic            String
+  userAnswer       Json?
+  correctAnswer    Json?
+  explanation      String?              @db.Text
+  relatedSlideId   String?
+  occurrenceCount  Int                  @default(1)
+  firstOccurredAt  DateTime             @default(now())
+  lastOccurredAt   DateTime             @default(now())
+  resolvedAt       DateTime?
+  metadata         Json?
+
+  @@unique([userId, sourceType, sourceId, objectiveCode])
+  @@index([userId, resolvedAt, lastOccurredAt])
+  @@index([objectiveCode, lastOccurredAt])
+  @@index([unitId, lastOccurredAt])
+}
+
+model WritingCoachSession {
+  id             String                @id @default(cuid())
+  userId         String
+  user           User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scenarioId       String
+  level            Level
+  rubricMode       String                @default("DEUTSCHIMO")
+  status           String                @default("ACTIVE")
+  latestRevision   Int                   @default(0)
+  initialScore     Int?
+  latestScore      Int                   @default(0)
+  scoreImprovement Int                   @default(0)
+  bestScore        Int                   @default(0)
+  completedAt    DateTime?
+  createdAt      DateTime              @default(now())
+  updatedAt      DateTime              @updatedAt
+  attempts       WritingCoachAttempt[]
+
+  @@index([userId, updatedAt])
+  @@index([userId, scenarioId, status])
+}
+
+model WritingCoachAttempt {
+  id              String              @id @default(cuid())
+  sessionId       String
+  session         WritingCoachSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  userId          String
+  user            User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scenarioId      String
+  level              Level
+  rubricMode        String              @default("DEUTSCHIMO")
+  revisionNumber     Int
+  previousAttemptId  String?
+  isRevision         Boolean             @default(false)
+  studentText        String              @db.Text
+  wordCount          Int
+  durationSeconds    Int?
+  overallScore       Int
+  improvement        Int                 @default(0)
+  errorCount         Int                 @default(0)
+  resolvedErrorCount Int                 @default(0)
+  repeatedErrorCount Int                 @default(0)
+  newErrorCount      Int                 @default(0)
+  rubric             Json
+  errors          Json
+  strengths       Json
+  taskCoverage    Json
+  suggestions     Json?
+  comparison      Json?
+  feedback        Json
+  aiModel         String?
+  createdAt       DateTime            @default(now())
+
+  @@unique([sessionId, revisionNumber])
+  @@index([userId, createdAt])
+  @@index([userId, scenarioId, createdAt])
+  @@index([sessionId, rubricMode, revisionNumber])
+}
+
+model WritingErrorProfile {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  category       String
+  label          String
+  count          Int      @default(1)
+  lastExcerpt    String?  @db.Text
+  lastScenarioId String?
+  lastSeenAt     DateTime @default(now())
+  nextReviewAt   DateTime?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([userId, category])
+  @@index([userId, count])
+  @@index([userId, nextReviewAt])
+}
+
+
+
+model RealGermanyScenarioProgress {
+  id                   String                       @id @default(cuid())
+  userId               String
+  user                 User                         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scenarioId           String
+  level                Level
+  status               String                       @default("NOT_STARTED")
+  currentStep          Int                          @default(0)
+  draftResponses       Json?
+  latestAttemptNumber  Int                          @default(0)
+  latestOverallScore   Int?
+  bestOverallScore     Int                          @default(0)
+  completedCount       Int                          @default(0)
+  startedAt            DateTime?
+  lastAttemptAt        DateTime?
+  completedAt          DateTime?
+  createdAt            DateTime                     @default(now())
+  updatedAt            DateTime                     @updatedAt
+  attempts             RealGermanyScenarioAttempt[]
+
+  @@unique([userId, scenarioId])
+  @@index([userId, status, updatedAt])
+  @@index([userId, level, updatedAt])
+}
+
+model RealGermanyScenarioAttempt {
+  id                   String                      @id @default(cuid())
+  progressId           String
+  progress             RealGermanyScenarioProgress @relation(fields: [progressId], references: [id], onDelete: Cascade)
+  userId               String
+  user                 User                        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scenarioId           String
+  level                Level
+  attemptNumber        Int
+  status               String                      @default("COMPLETED")
+  responses            Json
+  skillScores          Json
+  overallScore         Int
+  readingScore         Int
+  listeningScore       Int
+  formScore            Int
+  writingScore         Int
+  comparison           Json?
+  weakAreas            Json
+  feedback             Json
+  smartReviewQueued    Int                         @default(0)
+  evaluationMode       String                      @default("AI")
+  aiModel              String?
+  createdAt            DateTime                    @default(now())
+
+  @@unique([progressId, attemptNumber])
+  @@index([userId, createdAt])
+  @@index([userId, scenarioId, createdAt])
+  @@index([scenarioId, overallScore])
+}
+
+
+model ClientDevice {
+  id            String         @id @default(cuid())
+  userId        String
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deviceIdHash  String
+  platform      ClientPlatform
+  appVersion    String
+  deviceName    String?
+  locale        String?
+  timezone      String?
+  metadata      Json?
+  firstSeenAt   DateTime       @default(now())
+  lastSeenAt    DateTime       @default(now())
+  revokedAt     DateTime?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@unique([userId, deviceIdHash])
+  @@index([userId, revokedAt, lastSeenAt])
+  @@index([platform, appVersion])
+}
+
+model ApiIdempotencyRecord {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  route         String
+  keyHash       String
+  requestHash   String
+  statusCode    Int
+  response      Json
+  expiresAt     DateTime
+  createdAt     DateTime @default(now())
+
+  @@unique([userId, route, keyHash])
+  @@index([expiresAt])
+  @@index([userId, createdAt])
+}

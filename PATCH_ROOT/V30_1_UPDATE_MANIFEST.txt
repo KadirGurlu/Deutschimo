@@ -1,0 +1,19 @@
+V30.1 — Gerçek Almanya Modu
+
+Değişen / yeni dosyalar:
+- package.json
+- components/layout/app-sidebar.tsx
+- app/api/writing-coach/review/route.ts
+- app/real-germany/page.tsx
+- components/real-germany/real-germany-mode.tsx
+- components/real-germany/real-germany-mode.module.css
+- data/real-germany.ts
+- types/real-germany.ts
+- scripts/validate-v29.mjs
+- scripts/validate-v29-2.mjs
+- scripts/validate-v30-1.mjs
+- docs/V30_1_REAL_GERMANY_MODE.md
+- CHANGELOG_V30_1.md
+- V30_1_VALIDATION_REPORT.md
+- V30_1_UPDATE_MANIFEST.txt
+- UPLOAD_INSTRUCTIONS_V30_1.txt

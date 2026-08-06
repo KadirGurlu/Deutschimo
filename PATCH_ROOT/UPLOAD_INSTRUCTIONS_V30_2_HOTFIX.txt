@@ -1,0 +1,27 @@
+Deutschimo V30.2 — Prisma JSON okuma tipi hotfix
+
+Sorun:
+Vercel build, app/api/real-germany/progress/route.ts dosyasında Prisma JsonArray değerlerini doğrudan RealGermanySkillScore[] ve RealGermanyWeakArea[] tiplerine çevirmeye çalıştığı için TypeScript kontrolünde duruyordu.
+
+Düzeltme:
+- skillScores için doğrulamalı JSON ayrıştırıcısı eklendi.
+- weakAreas için doğrulamalı JSON ayrıştırıcısı eklendi.
+- comparison alanı güvenli biçimde ayrıştırılıyor.
+- Geçersiz JSON kayıtları API yanıtına doğrudan taşınmıyor.
+
+Yükleme:
+1. ZIP'i ayıkla.
+2. GitHub Desktop'ta Current branch'in v29-staging olduğunu doğrula.
+3. Repository > Show in Explorer seçeneğini aç.
+4. Hotfix paketindeki app klasörünü Deutschimo ana klasörüne kopyala.
+5. Hedefteki dosyayı değiştir seçeneğini onayla.
+6. GitHub Desktop'ta yalnızca şu dosyanın değiştiğini kontrol et:
+   app/api/real-germany/progress/route.ts
+7. Commit mesajı:
+   Fix V30.2 Real Germany JSON result parsing
+8. Commit to v29-staging ve ardından Push origin yap.
+9. Eski başarısız deployment'a Redeploy basma. Yeni commit yeni Preview deployment oluşturur.
+
+Veritabanı:
+- Migration yeniden çalıştırılmamalı veya silinmemeli.
+- Yeni environment variable gerekmez.

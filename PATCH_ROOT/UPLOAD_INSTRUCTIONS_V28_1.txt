@@ -1,0 +1,67 @@
+DEUTSCHIMO V28.1 — PRISMA POSTGRES STAGING VE MIGRATION YÜKLEME
+================================================================
+
+YÜKLEMEDEN ÖNCE TAMAMLANANLAR
+-----------------------------
+1. `deutschimo` veritabanı yalnızca Production ortamına bağlandı.
+2. `deutschimo-preview` veritabanı yalnızca Preview ortamına bağlandı.
+3. Vercel her iki ortam için `DATABASE_URL`, `DATABASE_POSTGRES_URL` ve
+   `DATABASE_PRISMA_DATABASE_URL` değişkenlerini otomatik oluşturdu.
+4. `DATABASE_ENVIRONMENT=production` Production kapsamına,
+   `DATABASE_ENVIRONMENT=preview` Preview kapsamına eklendi.
+
+VERCEL > SETTINGS > ENVIRONMENT VARIABLES
+------------------------------------------
+PREVIEW kapsamına ekleyin:
+- AUTO_INIT_NON_PRODUCTION_DATABASE=true
+- SEED_PREVIEW_TEST_DATA=true
+- TEST_USER_PASSWORD=<en az 12 karakterlik güçlü test şifresi>
+
+PRODUCTION kapsamına ekleyin:
+- AUTO_INIT_NON_PRODUCTION_DATABASE=false
+- SEED_PREVIEW_TEST_DATA=false
+
+İlk Production geçişinde, yalnızca Preview testi başarıyla tamamlandıktan sonra:
+- CONFIRM_PRODUCTION_BASELINE=DEUTSCHIMO_V28_1
+Bu değer Production deployment `Ready` olduktan hemen sonra silinmelidir.
+
+GITHUB DESKTOP — ÖNERİLEN GÜVENLİ AKIŞ
+--------------------------------------
+1. ZIP dosyasını çıkartın.
+2. GitHub Desktop'ta Deutschimo deposunu açın.
+3. `Current Branch` > `New Branch` ile `v28-1-staging` dalını oluşturun.
+4. Repository > Show in Explorer seçin.
+5. Paketin İÇİNDEKİ dosya ve klasörleri Deutschimo ana klasörüne kopyalayın.
+6. Windows sorarsa `Hedefteki dosyaları değiştir` seçin.
+7. GitHub Desktop'a dönün.
+8. Summary: `Add Deutschimo V28.1 Prisma Postgres staging isolation`
+9. `Commit to v28-1-staging` ve ardından `Publish branch` / `Push origin` seçin.
+10. Bu aşamada `main` dalına doğrudan yüklemeyin.
+
+PREVIEW DEPLOYMENT
+------------------
+1. Vercel'de `v28-1-staging` dalının Preview deployment'ını izleyin.
+2. Build logunda `DATABASE_ENVIRONMENT=preview` doğrulamasını kontrol edin.
+3. Boş Preview veritabanında baseline migration otomatik uygulanır.
+4. Deployment `Ready` olduktan sonra test hesaplarıyla giriş yapın:
+   - test.a1@preview.deutschimo.test
+   - test.a2@preview.deutschimo.test
+   - test.b1@preview.deutschimo.test
+   - test.editor@preview.deutschimo.test
+5. Şifre, Preview kapsamındaki `TEST_USER_PASSWORD` değeridir.
+6. Production kullanıcılarının Preview'da görünmediğini doğrulayın.
+
+PRODUCTION GEÇİŞİ
+-----------------
+1. Preview tamamen başarılıysa Pull Request ile `v28-1-staging` dalını `main` dalına birleştirin.
+2. Birleştirmeden hemen önce Production kapsamına
+   `CONFIRM_PRODUCTION_BASELINE=DEUTSCHIMO_V28_1` ekleyin.
+3. Production deployment `Ready` olduktan sonra bu değişkeni silin.
+
+ÖNEMLİ
+-------
+- `DIRECT_URL` eklemeyin; bu paket Vercel Prisma Postgres'in otomatik ürettiği
+  `DATABASE_POSTGRES_URL` değişkenini migration bağlantısı olarak kullanır.
+- `prisma db push`, `prisma migrate reset` veya `prisma migrate dev` komutlarını
+  Production veritabanında çalıştırmayın.
+- Veritabanı bağlantı değerlerini GitHub'a yüklemeyin.

@@ -1,0 +1,27 @@
+Deutschimo V31 — Devices route handler type hotfix
+
+Sorun:
+Vercel Next.js typecheck, app/api/v1/devices/route.ts içindeki GET/POST/DELETE handler'larının bazı kontrol akışlarında undefined dönebileceğini düşündüğü için build'i durduruyordu.
+
+Düzeltme:
+- Kimlik doğrulama sonucu açık bir ok: true / ok: false ayrımına dönüştürüldü.
+- GETHandler, POSTHandler ve DELETEHandler dönüş tipi Promise<Response> olarak sabitlendi.
+- Tüm yetkisiz ve rate-limit yollarının mutlaka Response döndürmesi garanti edildi.
+
+Yükleme:
+1. ZIP'i indir ve ayıkla.
+2. GitHub Desktop'ta Current branch'in v29-staging olduğunu doğrula.
+3. Repository > Show in Explorer seçeneğine bas.
+4. Hotfix paketindeki app klasörünü Deutschimo ana klasörüne kopyala.
+5. Windows sorarsa Hedefteki dosyayı değiştir seçeneğini onayla.
+6. GitHub Desktop'ta yalnızca şu dosyanın değiştiğini kontrol et:
+   app/api/v1/devices/route.ts
+7. Commit mesajı:
+   Fix V31 devices API handler return type
+8. Commit to v29-staging ve ardından Push origin yap.
+9. Eski başarısız deployment'a Redeploy basma. Yeni commit yeni Preview deployment oluşturur.
+
+Veritabanı:
+- V31 migration zaten başarıyla uygulanmış.
+- Migration silme, resetleme veya yeniden oluşturma gerekmez.
+- Yeni environment variable gerekmez.

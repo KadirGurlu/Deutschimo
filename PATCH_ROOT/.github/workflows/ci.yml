@@ -1,0 +1,199 @@
+name: Deutschimo CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deutschimo-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CI: "true"
+  DATABASE_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_ci
+  DATABASE_POSTGRES_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_ci
+  DATABASE_ENVIRONMENT: test
+  AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+  SEED_PREVIEW_TEST_DATA: "false"
+  AUTH_SECRET: ci-auth-secret-32-characters-minimum-2026
+  SECURITY_HASH_KEY: ci-security-hash-key-32-characters-2026
+  CRON_SECRET: ci-cron-secret-32-characters-minimum-2026
+  AUTH_URL: http://127.0.0.1:3000
+  AUTH_TRUST_HOST: "true"
+  NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+  REQUIRE_EMAIL_VERIFICATION: "false"
+  BOOTSTRAP_ADMIN_ON_BUILD: "false"
+  TEST_USER_PASSWORD: DeutschimoTest2026!
+
+jobs:
+  quality:
+    name: TypeScript, lint and content
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Use Node.js 22
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22.x
+      - name: Install dependencies
+        shell: bash
+        run: |
+          if [[ -f package-lock.json ]]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+      - name: Run quality checks
+        run: npm run quality:check
+
+  database-safety:
+    name: Migration and test-data safety
+    needs: quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: ci_password
+          POSTGRES_DB: deutschimo_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U ci_user -d deutschimo_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Use Node.js 22
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22.x
+      - name: Install dependencies
+        shell: bash
+        run: |
+          if [[ -f package-lock.json ]]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+      - name: Initialize migration baseline
+        run: npm run db:baseline:init
+      - name: Deploy migrations twice
+        run: |
+          npm run db:deploy
+          npm run db:deploy
+          npm run db:migrate:status
+          npm run db:drift:check
+      - name: Seed deterministic preview data
+        run: |
+          npm run db:test:reset
+          npm run db:test:assert
+      - name: Clean deterministic preview data
+        run: |
+          npm run db:test:clean
+          npm run db:test:assert-clean
+
+  e2e:
+    name: Critical user flows
+    needs: [quality, database-safety]
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: ci_password
+          POSTGRES_DB: deutschimo_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U ci_user -d deutschimo_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Use Node.js 22
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22.x
+      - name: Install dependencies
+        shell: bash
+        run: |
+          if [[ -f package-lock.json ]]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+      - name: Prepare isolated test database
+        run: |
+          npm run db:baseline:init
+          npm run db:test:reset
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run Playwright tests
+        run: npm run test:e2e
+      - name: Clean test data
+        if: ${{ always() }}
+        run: npm run db:test:clean || true
+      - name: Upload Playwright report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          if-no-files-found: ignore
+          retention-days: 14
+
+  production-build-gate:
+    name: Production build gate
+    needs: [quality, database-safety, e2e]
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: ci_password
+          POSTGRES_DB: deutschimo_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U ci_user -d deutschimo_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Use Node.js 22
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22.x
+      - name: Install dependencies
+        shell: bash
+        run: |
+          if [[ -f package-lock.json ]]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+      - name: Prepare build database
+        run: npm run db:baseline:init
+      - name: Build production application
+        run: npm run build

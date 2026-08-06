@@ -1,0 +1,19 @@
+V30.2 — Gerçek Almanya Modu Öğrenme Sistemi
+
+Yeni / değişen dosyalar:
+- package.json
+- prisma/schema.prisma
+- prisma/migrations/20260805160000_v30_2_real_germany_learning/migration.sql
+- app/api/real-germany/progress/route.ts
+- app/api/real-germany/evaluate/route.ts
+- components/real-germany/real-germany-mode.tsx
+- components/real-germany/real-germany-mode.module.css
+- data/real-germany.ts
+- types/real-germany.ts
+- scripts/validate-v30-1.mjs
+- scripts/validate-v30-2.mjs
+- docs/V30_2_REAL_GERMANY_LEARNING_SYSTEM.md
+- CHANGELOG_V30_2.md
+- V30_2_VALIDATION_REPORT.md
+- V30_2_UPDATE_MANIFEST.txt
+- UPLOAD_INSTRUCTIONS_V30_2.txt

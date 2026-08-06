@@ -1,0 +1,26 @@
+DEUTSCHIMO V31 COMPLETE RECOVERY — VALIDATION RESULTS
+=====================================================
+
+Birleştirilmiş paket üzerinde aşağıdaki kontroller çalıştırıldı:
+
+PASS  validate:v28.1
+PASS  validate:v28.3
+PASS  validate:v28.4
+PASS  validate:v29
+PASS  validate:v29.2
+PASS  validate:v30.1
+PASS  validate:v30.2
+PASS  validate:v31
+PASS  Bütün .ts ve .tsx dosyalarında TypeScript sözdizimi kontrolü
+PASS  Bütün .mjs dosyalarında Node.js sözdizimi kontrolü
+
+Ek düzeltme:
+PASS  app/api/real-germany/progress/route.ts için maxBodyBytes sınırı eklendi.
+PASS  app/api/v1/devices/route.ts kesin Promise<Response> dönüş yapısı kullanıyor.
+PASS  Writing Coach Prisma InputJsonValue hotfix'i korundu.
+PASS  Real Germany parseSkillScores JSON okuma hotfix'i korundu.
+
+Not:
+Tam Next.js build, bağlı repository'nin diğer değişmemiş dosyaları, node_modules ve Vercel
+ortam değişkenleriyle birlikte Vercel Preview ortamında son kez çalışır. Bu paket,
+önceki parça paketlerin tamamını tek bir birleştirilmiş recovery paketi halinde sunar.

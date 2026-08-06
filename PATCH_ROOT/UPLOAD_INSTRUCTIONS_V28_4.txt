@@ -1,0 +1,106 @@
+DEUTSCHIMO V28.4 — KURULUM TALİMATI
+====================================
+
+ÖNEMLİ
+------
+- V28.4 dalını v28-3-staging üzerinden oluştur.
+- ZIP dosyasının kendisini GitHub klasörüne koyma.
+- ZIP'in içindeki dosya ve klasörleri proje ana klasörüne kopyala.
+- main dalına doğrudan yükleme yapma.
+- Önce Vercel Preview deployment sonucunu kontrol et.
+
+1. YENİ DAL OLUŞTUR
+-------------------
+GitHub Desktop:
+Current Branch -> New Branch
+
+Dal adı:
+v28-4-staging
+
+Create branch based on:
+v28-3-staging
+
+2. PAKETİ KOPYALA
+-----------------
+- ZIP dosyasını indir ve Tümünü Ayıkla seçeneğiyle çıkart.
+- GitHub Desktop -> Repository -> Show in Explorer.
+- Ayıklanan paketin içindeki tüm dosya ve klasörleri Deutschimo ana klasörüne kopyala.
+- Windows sorarsa Hedefteki dosyaları değiştir seçeneğini kullan.
+
+3. BEKLENEN DOSYALAR
+--------------------
+app/api/intelligence/placement/route.ts
+app/api/intelligence/review/route.ts
+app/api/vocabulary/review/route.ts
+components/intelligence/placement-test.tsx
+components/intelligence/placement-test-v28-4.module.css
+data/placement-test.ts
+lib/intelligence/placement.ts
+prisma/schema.prisma
+prisma/migrations/20260804180000_v28_4_real_placement/migration.sql
+scripts/db-deploy.mjs
+scripts/db-safety.mjs
+scripts/validate-v28-1.mjs
+scripts/validate-v28-3.mjs
+scripts/validate-v28-4.mjs
+types/intelligence.ts
+package.json
+
+4. COMMIT VE PUSH
+-----------------
+Summary:
+Add Deutschimo V28.4 Real Placement Test
+
+Ardından:
+Commit to v28-4-staging
+Push origin / Publish branch
+
+5. VERCEL PREVIEW
+-----------------
+Vercel -> Deutschimo -> Deployments.
+Kaynak dal v28-4-staging ve ortam Preview olmalı.
+
+Build sırasında beklenen sıra:
+- V28.1 ortam doğrulaması
+- V28.1 doğrulaması
+- V28.3 doğrulaması
+- V28.4 doğrulaması
+- prisma migrate deploy
+- şema karşılaştırması
+- test kullanıcısı seed
+- prisma generate
+- next build
+
+Yeni migration:
+20260804180000_v28_4_real_placement
+
+6. PREVIEW TESTİ
+----------------
+Test hesabı:
+test.a1@preview.deutschimo.test
+
+TEST_USER_PASSWORD için Vercel'de belirlediğin şifreyi kullan.
+
+Kontrol listesi:
+[ ] Seviye Testi sayfası açılıyor.
+[ ] Hızlı ve Ayrıntılı test kartları görünüyor.
+[ ] Hızlı test 16 görev gösteriyor.
+[ ] Dinleme düğmesi Almanca sesi oynatıyor.
+[ ] Ayrıntılı testte yazma alanı açılıyor.
+[ ] Mikrofon destekleniyorsa konuşma transkripti oluşuyor.
+[ ] Mikrofon desteklenmiyorsa elle yanıt yazılabiliyor.
+[ ] Sonuçta genel seviye A1.1–B2.2 biçiminde görünüyor.
+[ ] Beceri sonuçları ayrı ayrı görünüyor.
+[ ] Eksik tamamlama planı oluşturuluyor.
+[ ] Önerilen kurs bağlantısı açılıyor.
+[ ] Sayfa yenilendiğinde son sonuç kartı görünüyor.
+
+7. ÜRETİME GEÇİŞ
+----------------
+Preview testleri başarılı olmadan main dalına merge etme.
+Bu pakette yeni environment variable gerekmiyor.
+Production için manuel Redeploy yapma; onaylı merge sonrasında yeni deployment oluşmalıdır.
+
+NOT
+---
+Yazma ve konuşma sonuçları otomatik ön değerlendirmedir. Resmî sınav puanı değildir.

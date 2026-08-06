@@ -1,0 +1,34 @@
+Deutschimo V28.3 — Akıllı Tekrar 2.0
+
+YENİ DOSYALAR
+- lib/review/adaptive-scheduler.ts
+- components/review/adaptive-review-controls.tsx
+- components/review/adaptive-review-controls.module.css
+- components/vocabulary/vocabulary-center-v28-3.module.css
+- prisma/migrations/20260804143000_v28_3_adaptive_review/migration.sql
+- scripts/validate-v28-3.mjs
+- docs/V28_3_SMART_REVIEW_2.md
+- CHANGELOG_V28_3.md
+- UPLOAD_INSTRUCTIONS_V28_3.txt
+- V28_3_VALIDATION_REPORT.md
+- V28_3_UPDATE_MANIFEST.txt
+
+DEĞİŞTİRİLEN DOSYALAR
+- package.json
+- prisma/schema.prisma
+- lib/vocabulary/scheduler.ts
+- app/api/vocabulary/review/route.ts
+- app/api/intelligence/review/route.ts
+- components/vocabulary/vocabulary-center.tsx
+- components/intelligence/smart-review.tsx
+- types/vocabulary.ts
+- types/intelligence.ts
+
+YENİ ENVIRONMENT VARIABLE
+- Yok
+
+MIGRATION KARAKTERİ
+- Yalnızca ekleyici
+- Veri silmez
+- Tablo düşürmez
+- Kolon düşürmez

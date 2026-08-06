@@ -1,0 +1,45 @@
+DEUTSCHIMO V31 — PLATFORM CORE 2.0 YÜKLEME
+
+ÖNEMLİ:
+- Önce mevcut çalışan staging branch üzerinde olduğunuzu kontrol edin.
+- Production veritabanına doğrudan yüklemeyin.
+- ZIP klasörünün kendisini değil, içindeki dosya/klasörleri proje köküne kopyalayın.
+
+1) GitHub Desktop'ı açın.
+2) Current branch alanında mevcut çalışan staging branch'i seçin.
+3) Changes bölümünde 0 changed files olduğunu kontrol edin.
+4) V31 ZIP paketini ayıklayın.
+5) Repository > Show in Explorer seçeneğine basın.
+6) Paketin içindeki tüm dosya ve klasörleri Deutschimo proje köküne kopyalayın.
+7) Aynı isimli dosyalar için Hedefteki dosyaları değiştir seçeneğini kullanın.
+8) GitHub Desktop'ta özellikle şu dosyaları kontrol edin:
+   - prisma/schema.prisma
+   - prisma/migrations/20260805150000_v31_platform_core/migration.sql
+   - app/api/v1/...
+   - lib/platform/...
+   - middleware.ts
+   - next.config.ts
+   - package.json
+9) Commit mesajı:
+   Add Deutschimo V31 Platform Core 2.0
+10) Commit to staging branch
+11) Push origin
+12) Vercel'de yeni Preview deployment'ın tamamlanmasını bekleyin.
+
+YENİ ZORUNLU ENVIRONMENT VARIABLE YOKTUR.
+Mevcut SECURITY_HASH_KEY ve CRON_SECRET değişkenleri kullanılmaya devam eder.
+
+İSTEĞE BAĞLI DEĞİŞKENLER:
+- HEALTH_CHECK_SECRET
+- MIN_WEB_APP_VERSION=31.0.0
+- MIN_IOS_APP_VERSION=0.0.0
+- MIN_ANDROID_APP_VERSION=0.0.0
+
+BUILD READY OLDUKTAN SONRA KONTROL:
+- /api/v1/health açılmalı.
+- Oturum açıkken /api/v1/bootstrap JSON döndürmeli.
+- Prisma migration başarılı olmalı.
+- Eski Yazma Koçu, Akıllı Tekrar ve Gerçek Almanya Modu çalışmaya devam etmeli.
+
+ESKİ BAŞARISIZ DEPLOYMENT'A REDEPLOY BASMAYIN.
+Yeni commit kendi Preview deployment'ını oluşturmalıdır.

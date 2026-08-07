@@ -19,14 +19,30 @@ function redactMetadata(value: unknown, depth = 0): Prisma.InputJsonValue | unde
   if (depth > 4) return "[truncated]";
   if (typeof value === "string") return redactText(value, 2000);
   if (typeof value === "number" || typeof value === "boolean") return value;
-  if (Array.isArray(value)) return value.slice(0, 30).map((item) => redactMetadata(item, depth + 1) ?? null);
-  if (typeof value === "object") {
-    const safe: Record<string, Prisma.InputJsonValue> = {};
-    for (const [key, item] of Object.entries(value as Record<string, unknown>).slice(0, 50)) {
-      safe[key.slice(0, 80)] = sensitiveKey.test(key) ? "[redacted]" : (redactMetadata(item, depth + 1) ?? null);
+
+  if (Array.isArray(value)) {
+    const safe: Prisma.InputJsonValue[] = [];
+    for (const item of value.slice(0, 30)) {
+      const redacted = redactMetadata(item, depth + 1);
+      if (redacted !== undefined) safe.push(redacted);
     }
     return safe;
   }
+
+  if (typeof value === "object") {
+    const safe: Record<string, Prisma.InputJsonValue> = {};
+    for (const [key, item] of Object.entries(value as Record<string, unknown>).slice(0, 50)) {
+      const redacted = sensitiveKey.test(key)
+        ? "[redacted]"
+        : redactMetadata(item, depth + 1);
+
+      if (redacted !== undefined) {
+        safe[key.slice(0, 80)] = redacted;
+      }
+    }
+    return safe;
+  }
+
   return redactText(value, 500);
 }
 

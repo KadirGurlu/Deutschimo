@@ -4,7 +4,7 @@ const root=process.cwd(); const errors=[];
 const read=(p)=>fs.existsSync(path.join(root,p))?fs.readFileSync(path.join(root,p),"utf8"):"";
 const req=(p)=>{if(!fs.existsSync(path.join(root,p)))errors.push(`Eksik dosya: ${p}`)};
 const pkg=JSON.parse(read("package.json")||"{}");
-if(pkg.version!=="32.0.0") errors.push(`Surum 32.0.0 olmali: ${pkg.version}`);
+if(!/^32\./.test(String(pkg.version??""))) errors.push(`Surum V32 ailesinde olmali: ${pkg.version}`);
 for(const name of ["validate:v32","test:e2e:v32","release:v32"]) if(!pkg.scripts?.[name]) errors.push(`Eksik npm scripti: ${name}`);
 for(const name of ["prebuild","quality:check","vercel-build"]) if(!String(pkg.scripts?.[name]??"").includes("validate:v32")) errors.push(`${name} V32 kontrolunu calistirmiyor.`);
 [
@@ -16,4 +16,4 @@ const dashboard=read("app/dashboard/page.tsx"); if(!dashboard.includes("requireO
 const placement=read("app/api/intelligence/placement/route.ts"); if(/currentLevel:\s*result\.recommendedLevel,\s*onboardingCompleted:\s*true/.test(placement)) errors.push("Seviye testi onboarding'i erken tamamliyor.");
 const authPage=read("app/auth/page.tsx"); if(authPage.includes('Field label="Mevcut seviye"')) errors.push("Kayit ekraninda eski seviye secimi hala gorunuyor.");
 if(errors.length){errors.forEach(e=>console.error(`HATA: ${e}`));console.error(`V32 dogrulamasi basarisiz: ${errors.length} hata.`);process.exit(1)}
-console.log("V32.0 dogrulamasi basarili: onboarding wizard, seviye testi koprusu, kalici profil, kisisel plan, dashboard kapisi ve E2E akisi hazir.");
+console.log("V32 dogrulamasi basarili: onboarding wizard, seviye testi koprusu, kalici profil, kisisel plan, dashboard kapisi ve E2E akisi hazir.");

@@ -1,11 +1,8 @@
 import { courses } from "@/data/courses";
 import { units } from "@/data/units";
-import type { DailyPlanTask, DailyStudyPlan, IntelligenceInsights, IntelligenceLevel } from "@/types/intelligence";
+import type { DailyPlanTask, DailyPlanTaskType, DailyStudyPlan, IntelligenceInsights, IntelligenceLevel } from "@/types/intelligence";
 import type { LearningState } from "@/types/progress";
-
-function clampMinutes(value: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, Math.round(value)));
-}
+import type { OnboardingFocusSkill } from "@/types/onboarding";
 
 function currentCourseId(level: IntelligenceLevel) {
   return level.toLowerCase();
@@ -19,6 +16,71 @@ function findContinueUnit(state: LearningState | null | undefined, courseId: str
   return incomplete ?? courseUnits[0];
 }
 
+type CandidateTask = Omit<DailyPlanTask, "minutes"> & { type: DailyPlanTaskType };
+
+function allocateMinutes(goalMinutes: number, count: number) {
+  const patterns: Record<number, number[]> = {
+    1: [1],
+    2: [0.6, 0.4],
+    3: [0.5, 0.25, 0.25],
+    4: [0.45, 0.2, 0.2, 0.15],
+  };
+  const weights = patterns[count] ?? patterns[4];
+  const minutes = weights.map((weight) => Math.max(1, Math.floor(goalMinutes * weight)));
+  let assigned = minutes.reduce((sum, value) => sum + value, 0);
+  let cursor = 0;
+  while (assigned < goalMinutes) {
+    minutes[cursor % minutes.length] += 1;
+    assigned += 1;
+    cursor += 1;
+  }
+  while (assigned > goalMinutes) {
+    const index = minutes.findIndex((value) => value > 1);
+    if (index < 0) break;
+    minutes[index] -= 1;
+    assigned -= 1;
+  }
+  return minutes;
+}
+
+function focusCandidate(args: {
+  planDate: string;
+  focusSkills: OnboardingFocusSkill[];
+  courseId: string;
+  continueUnitId?: string;
+}): CandidateTask {
+  const { planDate, focusSkills, courseId, continueUnitId } = args;
+  const primary = focusSkills[0];
+  if (primary === "VOCABULARY") {
+    return {
+      id: `${planDate}-v32-1-focus-vocabulary`, type: "VOCABULARY", title: "Kelime önceliğini tamamla",
+      description: "Kişisel planındaki kelime hedefi için artikel, anlam ve örnek cümle tekrarı yap.",
+      href: "/vocabulary", priority: "MEDIUM", completed: false,
+    };
+  }
+  if (primary === "GRAMMAR") {
+    return {
+      id: `${planDate}-v32-1-focus-grammar`, type: "SKILL", title: "Kısa gramer pratiği",
+      description: "Bugünkü dersin gramer yapısını kısa bir uygulamayla pekiştir.",
+      href: continueUnitId ? `/learn/${courseId}/${continueUnitId}/exercises` : "/skills", priority: "MEDIUM", completed: false,
+      unitId: continueUnitId, courseId,
+    };
+  }
+  if (primary === "WRITING") {
+    return {
+      id: `${planDate}-v32-1-focus-writing`, type: "WRITING", title: "Kısa yazma çalışması",
+      description: "Kişisel planındaki yazma önceliği için kısa ve seviyene uygun bir metin üret.",
+      href: "/writing-coach", priority: "MEDIUM", completed: false,
+    };
+  }
+  const skillLabel = primary === "READING" ? "Okuma" : primary === "LISTENING" ? "Dinleme" : primary === "SPEAKING" ? "Konuşma" : "Beceri";
+  return {
+    id: `${planDate}-v32-1-focus-skill`, type: "SKILL", title: `${skillLabel} mini çalışması`,
+    description: `Kişisel planındaki ${skillLabel.toLocaleLowerCase("tr-TR")} önceliğine uygun kısa bir görev tamamla.`,
+    href: "/skills", priority: "MEDIUM", completed: false,
+  };
+}
+
 export function buildDailyPlan(args: {
   planDate: string;
   goalMinutes: number;
@@ -27,127 +89,71 @@ export function buildDailyPlan(args: {
   insights: IntelligenceInsights;
   reviewRemaining: number;
   hasPlacement: boolean;
+  selfReportedLevelReady?: boolean;
+  focusSkills?: OnboardingFocusSkill[];
 }): DailyStudyPlan {
   const { planDate, currentLevel, state, insights, reviewRemaining, hasPlacement } = args;
-  const goalMinutes = clampMinutes(args.goalMinutes || 30, 10, 120);
+  const goalMinutes = Math.max(10, Math.min(120, Math.round(args.goalMinutes || 30)));
   const courseId = currentCourseId(currentLevel);
   const course = courses.find((item) => item.id === courseId) ?? courses[0];
   const continueUnit = findContinueUnit(state, course.id);
-  const tasks: DailyPlanTask[] = [];
+  const candidates: CandidateTask[] = [];
+  const placementRequired = !hasPlacement && !args.selfReportedLevelReady;
 
-  if (!hasPlacement) {
-    tasks.push({
-      id: `${planDate}-placement`,
-      type: "PLACEMENT",
-      title: "Seviye belirleme sınavını tamamla",
-      description: "24 soruluk sınavla başlangıç seviyeni ve öncelikli çalışma alanlarını belirle.",
-      minutes: clampMinutes(goalMinutes * 0.35, 8, 18),
-      href: "/placement-test",
-      priority: "HIGH",
-      completed: false,
+  if (placementRequired) {
+    candidates.push({
+      id: `${planDate}-v32-1-placement`, type: "PLACEMENT", title: "Seviye belirleme sınavını tamamla",
+      description: "Başlangıç seviyeni doğrula ve sonraki günlük planlarını daha isabetli hale getir.",
+      href: "/placement-test", priority: "HIGH", completed: false,
     });
   }
 
   if (continueUnit) {
-    tasks.push({
-      id: `${planDate}-lesson-${continueUnit.id}`,
-      type: "LESSON",
-      title: `${continueUnit.title} dersine devam et`,
-      description: `${course.level} programındaki sıradaki ders slaytlarını tamamla.`,
-      minutes: clampMinutes(goalMinutes * (hasPlacement ? 0.45 : 0.35), 10, 35),
-      href: `/learn/${course.id}/${continueUnit.id}`,
-      priority: "HIGH",
-      completed: state?.unitProgress?.[continueUnit.id]?.status === "COMPLETED",
-      unitId: continueUnit.id,
-      courseId: course.id,
+    candidates.push({
+      id: `${planDate}-v32-1-lesson-${continueUnit.id}`, type: "LESSON", title: `${course.level} · ${continueUnit.title}`,
+      description: "Kaldığın yerden devam et ve bugünkü ana ders bölümünü tamamla.",
+      href: `/learn/${course.id}/${continueUnit.id}`, priority: "HIGH",
+      completed: state?.unitProgress?.[continueUnit.id]?.status === "COMPLETED", unitId: continueUnit.id, courseId: course.id,
     });
   }
 
   if (reviewRemaining > 0 || insights.weakTopics.length > 0) {
     const topWeak = insights.weakTopics[0];
-    tasks.push({
-      id: `${planDate}-review`,
-      type: "REVIEW",
-      title: "Akıllı tekrar oturumu",
+    candidates.push({
+      id: `${planDate}-v32-1-review`, type: "REVIEW", title: "Akıllı Tekrar",
       description: topWeak
-        ? `${topWeak.unitTitle} ünitesindeki ${topWeak.skill.toLocaleLowerCase("tr-TR")} alanını güçlendir.`
-        : "Daha önce yanlış yaptığın soruları kısa bir tekrar oturumunda yeniden çöz.",
-      minutes: clampMinutes(goalMinutes * 0.25, 6, 18),
-      href: "/smart-review",
-      priority: "HIGH",
-      completed: reviewRemaining === 0,
-      unitId: topWeak?.unitId,
-      courseId: topWeak?.courseId,
-    });
-  } else {
-    tasks.push({
-      id: `${planDate}-vocabulary`,
-      type: "VOCABULARY",
-      title: "Kelime tekrarını tamamla",
-      description: "Bugünkü ünitenin temel kelimelerini artikel ve örnek cümleleriyle tekrar et.",
-      minutes: clampMinutes(goalMinutes * 0.2, 5, 12),
-      href: "/vocabulary",
-      priority: "MEDIUM",
-      completed: false,
+        ? `${topWeak.unitTitle} ünitesindeki ${topWeak.skill.toLocaleLowerCase("tr-TR")} alanını kısa bir tekrar ile güçlendir.`
+        : `${reviewRemaining} tekrar maddesinden öncelikli olanları tamamla.`,
+      href: "/smart-review", priority: "HIGH", completed: reviewRemaining === 0,
+      unitId: topWeak?.unitId, courseId: topWeak?.courseId,
     });
   }
 
-  tasks.push({
-    id: `${planDate}-skill-lab`,
-    type: "SKILL",
-    title: currentLevel === "A1" || currentLevel === "A2" ? "Dinleme laboratuvarı" : "Konuşma laboratuvarı",
-    description: currentLevel === "A1" || currentLevel === "A2"
-      ? "Seviyene uygun günlük bir diyaloğu dinle ve ana fikir sorularını çöz."
-      : "Seviyene uygun bir görüş veya sunum görevine mikrofonla cevap ver.",
-    minutes: clampMinutes(goalMinutes * 0.2, 6, 15),
-    href: currentLevel === "A1" || currentLevel === "A2" ? "/listening" : "/speaking",
-    priority: "MEDIUM",
-    completed: false,
+  candidates.push(focusCandidate({
+    planDate,
+    focusSkills: args.focusSkills?.length ? args.focusSkills : [currentLevel === "A1" || currentLevel === "A2" ? "VOCABULARY" : "SPEAKING"],
+    courseId: course.id,
+    continueUnitId: continueUnit?.id,
+  }));
+
+  candidates.push({
+    id: `${planDate}-v32-1-quick-check`, type: "QUIZ", title: "Günlük Alıştırma",
+    description: "Bugünkü kazanımı 5 kısa soruyla kontrol et.",
+    href: continueUnit ? `/learn/${course.id}/${continueUnit.id}/quiz` : `/courses/${course.slug}`,
+    priority: "MEDIUM", completed: Boolean(continueUnit && (state?.unitProgress?.[continueUnit.id]?.quizProgress ?? 0) >= 100),
+    unitId: continueUnit?.id, courseId: course.id,
   });
 
-  if (currentLevel === "B1" || currentLevel === "B2") {
-    tasks.push({
-      id: `${planDate}-writing`,
-      type: "WRITING",
-      title: "Kısa yazma çalışması",
-      description: "Öğrendiğin yapı ve bağlaçları kullanarak kısa bir metin üret.",
-      minutes: clampMinutes(goalMinutes * 0.2, 7, 18),
-      href: "/writing",
-      priority: "MEDIUM",
-      completed: false,
-    });
-  } else {
-    tasks.push({
-      id: `${planDate}-quiz`,
-      type: "QUIZ",
-      title: "Hızlı kazanım kontrolü",
-      description: "Bugün çalıştığın ünitede kısa bir değerlendirme yap.",
-      minutes: clampMinutes(goalMinutes * 0.15, 5, 10),
-      href: continueUnit ? `/learn/${course.id}/${continueUnit.id}/quiz` : `/courses/${course.slug}`,
-      priority: "MEDIUM",
-      completed: Boolean(continueUnit && (state?.unitProgress?.[continueUnit.id]?.quizProgress ?? 0) >= 100),
-      unitId: continueUnit?.id,
-      courseId: course.id,
-    });
-  }
-
-  let plannedMinutes = tasks.reduce((sum, task) => sum + task.minutes, 0);
-  if (plannedMinutes > goalMinutes) {
-    let excess = plannedMinutes - goalMinutes;
-    for (let index = tasks.length - 1; index >= 0 && excess > 0; index -= 1) {
-      const reducible = Math.max(0, tasks[index].minutes - 5);
-      const reduction = Math.min(reducible, excess);
-      tasks[index].minutes -= reduction;
-      excess -= reduction;
-    }
-    plannedMinutes = tasks.reduce((sum, task) => sum + task.minutes, 0);
-  }
-
+  let maxTasks = goalMinutes <= 15 ? 1 : goalMinutes <= 25 ? 2 : goalMinutes < 45 ? 3 : 4;
+  maxTasks = Math.min(maxTasks, candidates.length);
+  const selected = candidates.slice(0, maxTasks);
+  const allocations = allocateMinutes(goalMinutes, selected.length);
+  const tasks: DailyPlanTask[] = selected.map((task, index) => ({ ...task, minutes: allocations[index] }));
   const completedMinutes = tasks.filter((task) => task.completed).reduce((sum, task) => sum + task.minutes, 0);
   return {
     planDate,
     goalMinutes,
-    plannedMinutes,
+    plannedMinutes: goalMinutes,
     completedMinutes,
     tasks,
     generatedAt: new Date().toISOString(),

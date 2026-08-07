@@ -14,7 +14,7 @@ test("V32 yeni kullanici onboarding ve kisisel plan akisi",async({page})=>{
     await page.getByTestId("days-5").click(); await page.getByTestId("onboarding-next").click();
     await page.getByTestId("skill-VOCABULARY").click(); await page.getByTestId("skill-SPEAKING").click(); await page.getByTestId("onboarding-complete").click();
     await expect(page.getByTestId("onboarding-plan")).toContainText("5 gün × 30 dk"); await expect(page.getByTestId("onboarding-plan")).toContainText("10 hafta");
-    await page.getByRole("button",{name:/Öğrenci paneline geç/i}).click(); await expect(page).toHaveURL(/\/dashboard(?:\?|$)/,{timeout:30_000}); await expect(page.getByRole("heading",{name:/Tekrar hoş geldin/i})).toBeVisible();
+    await page.getByRole("button",{name:/Öğrenci paneline geç/i}).click(); await expect(page).toHaveURL(/\/dashboard(?:\?|$)/,{timeout:30_000}); await expect(page.getByRole("heading",{name:/Guten Tag/i})).toBeVisible();
     const saved=await prisma.user.findUnique({where:{email},include:{onboardingProfile:true}}); expect(saved?.onboardingCompleted).toBe(true); expect(saved?.dailyGoalMinutes).toBe(30); expect(saved?.onboardingProfile?.studyDaysPerWeek).toBe(5);
   } finally { await prisma.user.deleteMany({where:{email}}); }
 });

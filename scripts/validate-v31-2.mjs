@@ -5,7 +5,7 @@ const errors = [];
 const requireFile = (p) => { if (!fs.existsSync(path.join(root, p))) errors.push(`Eksik dosya: ${p}`); };
 const read = (p) => fs.existsSync(path.join(root,p)) ? fs.readFileSync(path.join(root,p),"utf8") : "";
 const pkg = JSON.parse(read("package.json") || "{}");
-if (pkg.version !== "31.2.0") errors.push(`Surum 31.2.0 olmali: ${pkg.version}`);
+if (!["31.2.0","32.0.0"].includes(pkg.version)) errors.push(`Surum 31.2.0 veya 32.0.0 olmali: ${pkg.version}`);
 if (pkg.engines?.node !== "22.x") errors.push("Node engine 22.x degil.");
 if (pkg.packageManager !== "npm@10.9.2") errors.push("npm@10.9.2 sabitlenmemis.");
 const scripts = ["verify:toolchain","verify:lockfile","validate:v31.2","security:release","db:data-boundaries","db:backup","db:restore","db:backup:policy","release:snapshot","release:rollback","test:e2e:v31.2","release:readiness:static","release:v31.2"];

@@ -209,21 +209,6 @@ function AuthContent() {
             </Field>
 
             {mode === "register" ? (
-              <div className="form-two">
-                <Field label="Mevcut seviye">
-                  <select value={form.level} onChange={(event) => setForm({ ...form, level: event.target.value as CourseLevel })}>
-                    {courseLevels.map((item) => <option key={item}>{item}</option>)}
-                  </select>
-                </Field>
-                <Field label="Hedef seviye">
-                  <select value={form.targetLevel} onChange={(event) => setForm({ ...form, targetLevel: event.target.value as CourseLevel })}>
-                    {courseLevels.map((item) => <option key={item}>{item}</option>)}
-                  </select>
-                </Field>
-              </div>
-            ) : null}
-
-            {mode === "register" ? (
               <label className="filter-option">
                 <input required type="checkbox" />
                 <span><Link href="/terms">Kullanım şartlarını</Link> ve <Link href="/privacy">gizlilik politikasını</Link> kabul ediyorum.</span>

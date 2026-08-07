@@ -142,8 +142,28 @@ model User {
   clientDevices            ClientDevice[]
   apiIdempotencyRecords    ApiIdempotencyRecord[]
 
+  onboardingProfile         LearnerOnboardingProfile?
   @@index([role, status])
   @@index([createdAt])
+}
+
+model LearnerOnboardingProfile {
+  id                       String   @id @default(cuid())
+  userId                   String   @unique
+  levelChoice              String?
+  learningGoal             String?
+  dailyMinutes             Int?
+  studyDaysPerWeek         Int?
+  focusSkills              Json?
+  resolvedLevel            Level?
+  estimatedCompletionWeeks Int?
+  planSummary              Json?
+  completedAt              DateTime?
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+  user                     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([completedAt])
 }
 
 model Account {

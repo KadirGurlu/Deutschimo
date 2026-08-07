@@ -21,6 +21,7 @@ const trustedUserSelect = {
   currentLevel: true,
   targetLevel: true,
   dailyGoalMinutes: true,
+  onboardingCompleted: true,
 } as const;
 
 function toUserRole(value: unknown): UserRole {
@@ -80,6 +81,7 @@ const providers: NextAuthConfig["providers"] = [
           currentLevel: true,
           targetLevel: true,
           dailyGoalMinutes: true,
+          onboardingCompleted: true,
         },
       });
 
@@ -118,6 +120,7 @@ const providers: NextAuthConfig["providers"] = [
         currentLevel: user.currentLevel,
         targetLevel: user.targetLevel,
         dailyGoalMinutes: user.dailyGoalMinutes,
+        onboardingCompleted: user.onboardingCompleted,
       };
     },
   }),
@@ -179,6 +182,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         token.currentLevel = toLevel(user.currentLevel, Level.A1);
         token.targetLevel = toLevel(user.targetLevel, Level.B2);
         token.dailyGoalMinutes = Number(user.dailyGoalMinutes ?? 30);
+        token.onboardingCompleted = Boolean(user.onboardingCompleted);
         token.userRefreshedAt = Date.now();
         token.authenticatedAt = Date.now();
         token.revocationCheckedAt = Date.now();
@@ -226,6 +230,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         session.user.dailyGoalMinutes = Number.isFinite(Number(token.dailyGoalMinutes))
           ? Number(token.dailyGoalMinutes)
           : 30;
+        session.user.onboardingCompleted = Boolean(token.onboardingCompleted);
       }
       return session;
     },

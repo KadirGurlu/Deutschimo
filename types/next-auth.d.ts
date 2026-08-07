@@ -10,6 +10,7 @@ declare module "next-auth" {
     currentLevel?: Level;
     targetLevel?: Level;
     dailyGoalMinutes?: number;
+    onboardingCompleted?: boolean;
   }
 
   interface Session {
@@ -22,6 +23,7 @@ declare module "next-auth" {
       currentLevel: Level;
       targetLevel: Level;
       dailyGoalMinutes: number;
+      onboardingCompleted: boolean;
     };
   }
 }
@@ -36,6 +38,7 @@ declare module "next-auth/jwt" {
     currentLevel?: Level;
     targetLevel?: Level;
     dailyGoalMinutes?: number;
+    onboardingCompleted?: boolean;
     userRefreshedAt?: number;
     authenticatedAt?: number;
     revocationCheckedAt?: number;

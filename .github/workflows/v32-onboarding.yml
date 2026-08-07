@@ -1,0 +1,71 @@
+name: Deutschimo V32 Smart Onboarding
+on:
+  push:
+    branches: [v32-staging, main]
+  pull_request:
+    branches: [main, v32-staging]
+  workflow_dispatch:
+concurrency:
+  group: v32-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  onboarding-gate:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres, POSTGRES_DB: deutschimo_v32_test }
+        ports: [5432:5432]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d deutschimo_v32_test"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v32_test
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v32_test
+      DATABASE_ENVIRONMENT: test
+      DATA_CLASSIFICATION: synthetic
+      PRODUCTION_DATABASE_FINGERPRINT: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      PREVIEW_DATABASE_FINGERPRINT: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+      STRICT_DATA_BOUNDARIES: "true"
+      AUTH_SECRET: v32-ci-auth-secret-change-only-in-ci
+      SECURITY_HASH_KEY: v32-ci-security-hash-key
+      CRON_SECRET: v32-ci-cron-secret
+      AUTH_URL: http://127.0.0.1:3200
+      AUTH_TRUST_HOST: "true"
+      NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+      REQUIRE_EMAIL_VERIFICATION: "false"
+      TEST_USER_PASSWORD: DeutschimoTest2026!
+      AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+      PLAYWRIGHT_SKIP_BUILD: "true"
+      PORT: "3200"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run validate:env
+      - run: npm run validate:v31.2
+      - run: npm run validate:v32
+      - run: npm run security:release
+      - run: npx prisma generate
+      - run: npx prisma migrate deploy
+      - run: npx prisma db seed
+      - run: npm run db:data-boundaries -- --strict
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm run test:e2e:v31.2
+      - run: npm run test:e2e:v32
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v32-playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 14

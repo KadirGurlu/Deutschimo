@@ -10,7 +10,7 @@ async function currentDatabaseUser() {
   if (!session?.user.id || session.user.status === "SUSPENDED") return null;
   const user = await prisma.user.findUnique({
     where: { id: session.user.id },
-    select: { id:true,email:true,name:true,firstName:true,lastName:true,role:true,status:true,currentLevel:true,targetLevel:true,dailyGoalMinutes:true,image:true },
+    select: { id:true,email:true,name:true,firstName:true,lastName:true,role:true,status:true,currentLevel:true,targetLevel:true,dailyGoalMinutes:true,onboardingCompleted:true,image:true },
   });
   if (!user || user.status === "SUSPENDED") return null;
   return { ...session.user, ...user };
@@ -20,6 +20,12 @@ export async function requireUser() {
   const user = await currentDatabaseUser();
   if (!user) redirect("/auth");
   return { user };
+}
+
+export async function requireOnboardedUser() {
+  const session = await requireUser();
+  if (!session.user.onboardingCompleted) redirect("/onboarding");
+  return session;
 }
 
 export async function requireAdmin() {

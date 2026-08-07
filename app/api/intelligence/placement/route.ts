@@ -146,7 +146,7 @@ async function POSTHandler(request: Request) {
 
     await tx.user.update({
       where: { id: user.id },
-      data: { currentLevel: result.recommendedLevel, onboardingCompleted: true },
+      data: { currentLevel: result.recommendedLevel },
     });
     await tx.dailyStudyPlan.deleteMany({ where: { userId: user.id } });
     return assessment;

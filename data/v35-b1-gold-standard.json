@@ -1,0 +1,2903 @@
+[
+  {
+    "id": "b1-u01",
+    "intro": "Bu ünitede insanları yalnızca dış görünüşleriyle değil, karakterleri, davranışları ve ilişkiler içindeki rolleriyle tanımlayacak; Relativsatz yapılarıyla kişiler hakkında daha bağlantılı ve ayrıntılı bilgi vereceksin.",
+    "goals": [
+      "Bir kişinin karakterini ve davranışını ayrıntılı anlatmak",
+      "Relativpronomenleri Nominativ, Akkusativ ve Dativ’de kullanmak",
+      "Arkadaşlık ve sosyal ilişkiler hakkında gerekçeli görüş belirtmek",
+      "Bir sosyal durumu örnek vererek açıklamak"
+    ],
+    "grammarTitle": "Relativsätze: Nominativ, Akkusativ ve Dativ",
+    "grammarExplanation": "B1 düzeyinde Relativsatz, iki kısa cümleyi daha bağlantılı bir anlatıma dönüştürür. Relativpronomen açıklanan ismin cinsiyetini ve sayısını taşır; hâlini ise Relativsatz içindeki görevi belirler. “Der Kollege, der mir hilft ...” cümlesinde der özne olduğu için Nominativ’dir. “Der Kollege, den ich oft sehe ...” yapısında den Akkusativ nesnedir. “Die Freundin, der ich schreibe ...” yapısında der Dativ görevindedir. Çekimli fiil Relativsatz’ın sonunda bulunur.",
+    "grammarColumns": [
+      {
+        "header": "İsim",
+        "values": [
+          "der Freund",
+          "der Freund",
+          "die Kollegin",
+          "das Paar",
+          "die Leute",
+          "die Nachbarin"
+        ]
+      },
+      {
+        "header": "Relativ",
+        "values": [
+          "der",
+          "den",
+          "der",
+          "das",
+          "die",
+          "der"
+        ]
+      },
+      {
+        "header": "Görev",
+        "values": [
+          "Nom.",
+          "Akk.",
+          "Dat.",
+          "Nom.",
+          "Nom./Akk.",
+          "Dat."
+        ]
+      },
+      {
+        "header": "Örnek parça",
+        "values": [
+          "der zuverlässig ist",
+          "den ich lange kenne",
+          "der ich vertraue",
+          "das nebenan wohnt",
+          "die oft helfen",
+          "der ich geschrieben habe"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Eigenschaft — özellik",
+      "die Freundschaft — arkadaşlık",
+      "das Vertrauen — güven",
+      "die Beziehung — ilişki",
+      "die Bekanntschaft — tanışıklık",
+      "der Kontakt — iletişim / bağlantı",
+      "die Unterstützung — destek",
+      "der Eindruck — izlenim",
+      "zuverlässig — güvenilir",
+      "aufmerksam — dikkatli / ilgili",
+      "ehrlich — dürüst",
+      "geduldig — sabırlı",
+      "selbstständig — bağımsız",
+      "sich verstehen mit — iyi anlaşmak",
+      "sich verlassen auf — güvenmek",
+      "jemandem vertrauen — birine güvenmek",
+      "Rücksicht nehmen — anlayış göstermek",
+      "Kontakt halten — iletişimi sürdürmek"
+    ],
+    "examples": [
+      {
+        "de": "Der Kollege, der mir gestern geholfen hat, ist sehr zuverlässig.",
+        "tr": "Dün bana yardım eden iş arkadaşım çok güvenilir."
+      },
+      {
+        "de": "Die Freundin, der ich oft schreibe, lebt inzwischen in Zürich.",
+        "tr": "Sık sık yazdığım arkadaşım artık Zürih’te yaşıyor."
+      },
+      {
+        "de": "Menschen, die gut zuhören können, sind mir besonders wichtig.",
+        "tr": "İyi dinleyebilen insanlar benim için özellikle önemlidir."
+      },
+      {
+        "de": "Der Nachbar, den wir gestern kennengelernt haben, wirkt sehr freundlich.",
+        "tr": "Dün tanıştığımız komşu çok dostça görünüyor."
+      },
+      {
+        "de": "Ich schätze Personen, auf die man sich auch in schwierigen Situationen verlassen kann.",
+        "tr": "Zor durumlarda da güvenilebilen insanlara değer veririm."
+      },
+      {
+        "de": "Eine gute Freundschaft ist für mich eine Beziehung, in der beide offen sprechen können.",
+        "tr": "Benim için iyi arkadaşlık, iki tarafın da açıkça konuşabildiği bir ilişkidir."
+      }
+    ],
+    "warning": "Relativpronomenin hâlini yalnızca önceki isme bakarak seçme; yan cümlede özne mi, Akkusativ nesne mi yoksa Dativ nesne mi olduğuna bak.",
+    "tip": "Tanıdığın üç kişiyi seç ve her biri için farklı bir Relativsatz kullanarak tek paragrafta anlat.",
+    "miniCheck": {
+      "question": "“Sık sık yardım ettiğim kadın” için doğru yapı hangisidir?",
+      "options": [
+        "die Frau, der ich oft helfe",
+        "die Frau, die ich oft helfe",
+        "die Frau, den ich oft helfe"
+      ],
+      "correctAnswer": "die Frau, der ich oft helfe"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Der Mann, ___ ich gestern gesehen habe, arbeitet hier.",
+      "answer": "den",
+      "acceptedAnswers": [
+        "den"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Kollegin,",
+        "der",
+        "ich vertraue,",
+        "arbeitet",
+        "im Einkauf."
+      ],
+      "answer": "Die Kollegin, der ich vertraue, arbeitet im Einkauf."
+    },
+    "translation": {
+      "prompt": "“Bana her zaman dürüst olan arkadaşımı takdir ediyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich schätze meinen Freund, der immer ehrlich zu mir ist.",
+      "acceptedAnswers": [
+        "Ich schätze meinen Freund, der immer ehrlich zu mir ist",
+        "Ich schätze meinen Freund, der immer ehrlich zu mir ist."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wie ist deine neue Mitbewohnerin? — B: ___",
+      "options": [
+        "Sie ist jemand, auf den man sich verlassen kann.",
+        "Sie ist jemand, den zuverlässig ist.",
+        "Sie ist jemand, der ich vertraue sie."
+      ],
+      "answer": "Sie ist jemand, auf den man sich verlassen kann."
+    },
+    "trueFalse": {
+      "prompt": "Relativsatz’ta çekimli fiil genellikle sonda bulunur.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Olumlu karakter özelliği bildiren iki kelimeyi seç.",
+      "options": [
+        "zuverlässig",
+        "geduldig",
+        "die Verspätung",
+        "der Verbrauch"
+      ],
+      "answers": [
+        "zuverlässig",
+        "geduldig"
+      ]
+    },
+    "summary": [
+      "Relativsatz Nom./Akk./Dat.",
+      "kişilik ve ilişki söz varlığı",
+      "gerekçeli sosyal görüş",
+      "bağlantılı kişi tanımlama"
+    ]
+  },
+  {
+    "id": "b1-u02",
+    "intro": "Bu ünitede konut ilanı, WG yaşamı ve ortak alan sorunlarını daha ayrıntılı konuşacak; artikelden sonra sıfat çekimini Nominativ, Akkusativ ve Dativ bağlamlarında güvenli biçimde kullanacaksın.",
+    "goals": [
+      "Bir konut veya odayı ayrıntılı tanımlamak",
+      "Sıfat çekimini Nominativ, Akkusativ ve Dativ’de kullanmak",
+      "WG kuralları ve ortak yaşam sorunlarını tartışmak",
+      "Konut ilanındaki önemli ayrıntıları seçmek"
+    ],
+    "grammarTitle": "Adjektivdeklination: belirli/belirsiz artikel ile üç temel hâl",
+    "grammarExplanation": "B1 düzeyinde sıfat çekimi gerçek isim grupları içinde kullanılmalıdır. Belirli artikel çoğu dilbilgisel bilgiyi taşıdığı için sıfat sıkça -e veya -en alır: in der ruhigen Straße, den großen Balkon. Belirsiz artikel bazı durumlarda cinsiyet bilgisini sıfata bırakır: ein helles Zimmer, eine ruhige Wohnung. Dativ’de artikel ve sıfatın -en biçimi çok yaygındır: mit einem netten Nachbarn, in einer kleinen Küche. En güvenli yöntem artikel + sıfat + isim grubunu birlikte öğrenmektir.",
+    "grammarColumns": [
+      {
+        "header": "Durum",
+        "values": [
+          "Nom. m.",
+          "Nom. n.",
+          "Akk. m.",
+          "Akk. f.",
+          "Dat. m.",
+          "Dat. f."
+        ]
+      },
+      {
+        "header": "Belirsiz",
+        "values": [
+          "ein ruhiger Hof",
+          "ein helles Zimmer",
+          "einen großen Balkon",
+          "eine ruhige Wohnung",
+          "einem netten Nachbarn",
+          "einer kleinen Küche"
+        ]
+      },
+      {
+        "header": "Belirli",
+        "values": [
+          "der ruhige Hof",
+          "das helle Zimmer",
+          "den großen Balkon",
+          "die ruhige Wohnung",
+          "dem netten Nachbarn",
+          "der kleinen Küche"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Wohngemeinschaft — paylaşımlı ev / WG",
+      "die Nebenkosten — yan giderler",
+      "die Kaution — depozito",
+      "der Mietvertrag — kira sözleşmesi",
+      "die Hausverwaltung — bina yönetimi",
+      "der Gemeinschaftsraum — ortak alan",
+      "die Rücksicht — anlayış / saygı",
+      "die Ruhezeit — sessizlik saati",
+      "geräumig — geniş",
+      "hellhörig — ses geçiren",
+      "möbliert — eşyalı",
+      "zentral gelegen — merkezi konumlu",
+      "sich einigen — anlaşmak",
+      "sich beschweren — şikâyet etmek",
+      "Miete zahlen — kira ödemek",
+      "Kosten teilen — masrafları paylaşmak",
+      "Regeln vereinbaren — kurallar kararlaştırmak",
+      "Rücksicht nehmen auf — dikkate almak"
+    ],
+    "examples": [
+      {
+        "de": "Wir suchen ein helles Zimmer in einer ruhigen Gegend.",
+        "tr": "Sakin bir bölgede aydınlık bir oda arıyoruz."
+      },
+      {
+        "de": "Die Wohnung hat einen großen Balkon und eine moderne Küche.",
+        "tr": "Evin büyük bir balkonu ve modern bir mutfağı var."
+      },
+      {
+        "de": "Mit einem zuverlässigen Mitbewohner lassen sich viele Probleme leichter lösen.",
+        "tr": "Güvenilir bir ev arkadaşıyla birçok sorun daha kolay çözülebilir."
+      },
+      {
+        "de": "In der kleinen Gemeinschaftsküche gibt es feste Regeln.",
+        "tr": "Küçük ortak mutfakta belirli kurallar var."
+      },
+      {
+        "de": "Wir teilen die monatlichen Nebenkosten nach einem einfachen Plan.",
+        "tr": "Aylık yan giderleri basit bir plana göre paylaşıyoruz."
+      },
+      {
+        "de": "Wegen der lauten Musik hat sich eine ältere Nachbarin beschwert.",
+        "tr": "Yüksek müzik yüzünden yaşlı bir komşu şikâyet etti."
+      }
+    ],
+    "warning": "Sıfat çekimini isimden bağımsız ezberleme; “mit einem freundlich Nachbar” değil, “mit einem freundlichen Nachbarn” de.",
+    "tip": "Gerçek veya hayalî bir WG ilanı yaz: konum, oda, kira, iki sıfatlı özellik ve ortak yaşam beklentisi ekle.",
+    "miniCheck": {
+      "question": "Dativ için doğru ifade hangisidir?",
+      "options": [
+        "mit einem netten Nachbarn",
+        "mit einen netten Nachbarn",
+        "mit einem nette Nachbar"
+      ],
+      "correctAnswer": "mit einem netten Nachbarn"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Wir wohnen in einer ___ Straße. (ruhig)",
+      "answer": "ruhigen",
+      "acceptedAnswers": [
+        "ruhigen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Wohnung",
+        "hat",
+        "einen großen",
+        "Balkon",
+        "nach Süden."
+      ],
+      "answer": "Die Wohnung hat einen großen Balkon nach Süden."
+    },
+    "translation": {
+      "prompt": "“Eşyalı küçük bir oda arıyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich suche ein kleines möbliertes Zimmer.",
+      "acceptedAnswers": [
+        "Ich suche ein kleines möbliertes Zimmer",
+        "Ich suche ein kleines möbliertes Zimmer."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was ist dir in einer WG wichtig? — B: ___",
+      "options": [
+        "Ich möchte mit zuverlässigen und rücksichtsvollen Menschen wohnen.",
+        "Ich möchte mit zuverlässig Menschen wohnen.",
+        "Ich möchte zuverlässigen Menschen ein WG."
+      ],
+      "answer": "Ich möchte mit zuverlässigen und rücksichtsvollen Menschen wohnen."
+    },
+    "trueFalse": {
+      "prompt": "Dativ’de artikelden sonra sıfat çoğu zaman -en alır.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Konut masrafı veya sözleşmeyle ilgili iki kelimeyi seç.",
+      "options": [
+        "die Nebenkosten",
+        "die Kaution",
+        "die Schlagzeile",
+        "die Bewerbung"
+      ],
+      "answers": [
+        "die Nebenkosten",
+        "die Kaution"
+      ]
+    },
+    "summary": [
+      "Adjektivdeklination",
+      "WG ve konut ilanı",
+      "ortak yaşam kuralları",
+      "kira ve masraf söz varlığı"
+    ]
+  },
+  {
+    "id": "b1-u03",
+    "intro": "Bu ünitede iş ilanlarını ve kendi mesleki hedeflerini değerlendirecek, başvuru dilini geliştirecek ve zu + Infinitiv ile amaç, plan, beklenti ve kararları daha bağlantılı ifade edeceksin.",
+    "goals": [
+      "Bir iş ilanındaki şartları ve görevleri açıklamak",
+      "zu + Infinitiv ile plan ve beklenti belirtmek",
+      "um ... zu ile amaç bildirmek",
+      "Kısa başvuru ve mülakat iletişimi yürütmek"
+    ],
+    "grammarTitle": "Infinitiv mit zu ve um ... zu",
+    "grammarExplanation": "zu + Infinitiv, aynı özneyle ilgili plan, karar, beklenti veya değerlendirmeyi daha akıcı bağlar: Ich hoffe, bald eine Stelle zu finden. Ayrılabilen fiillerde zu iki parçanın arasına girer: anzufangen, mitzuarbeiten. um ... zu ise ana cümledeki eylemin amacını açıklar ve özne genellikle aynıdır: Ich besuche einen Kurs, um meine Fachsprache zu verbessern. Özneler farklıysa çoğu zaman damit yan cümlesi gerekir.",
+    "grammarColumns": [
+      {
+        "header": "İşlev",
+        "values": [
+          "plan",
+          "umut",
+          "karar",
+          "amaç",
+          "ayrılabilen fiil",
+          "olumsuzluk"
+        ]
+      },
+      {
+        "header": "Yapı",
+        "values": [
+          "vorhaben, ... zu",
+          "hoffen, ... zu",
+          "sich entscheiden, ... zu",
+          "um ... zu",
+          "mitzuarbeiten",
+          "nicht ... zu"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "Ich habe vor, mich zu bewerben.",
+          "Ich hoffe, eingeladen zu werden.",
+          "Sie entscheidet sich, zu wechseln.",
+          "..., um Erfahrung zu sammeln.",
+          "..., im Team mitzuarbeiten.",
+          "..., nicht zu spät zu kommen."
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Stellenausschreibung — iş ilanı",
+      "die Voraussetzung — ön koşul",
+      "die Berufserfahrung — iş deneyimi",
+      "die Qualifikation — nitelik",
+      "die Bewerbung — başvuru",
+      "das Anschreiben — ön yazı",
+      "der Lebenslauf — özgeçmiş",
+      "das Vorstellungsgespräch — iş görüşmesi",
+      "zuständig sein für — sorumlu olmak",
+      "Erfahrung sammeln — deneyim kazanmak",
+      "sich bewerben um — başvurmak",
+      "sich vorbereiten auf — hazırlanmak",
+      "überzeugen — ikna etmek",
+      "einstellen — işe almak",
+      "befristet — süreli",
+      "unbefristet — süresiz",
+      "teamfähig — ekip çalışmasına uygun",
+      "verantwortlich — sorumlu"
+    ],
+    "examples": [
+      {
+        "de": "Ich habe vor, mich auf die Stelle im Kundenservice zu bewerben.",
+        "tr": "Müşteri hizmetlerindeki pozisyona başvurmayı planlıyorum."
+      },
+      {
+        "de": "Sie hofft, zu einem Vorstellungsgespräch eingeladen zu werden.",
+        "tr": "Bir iş görüşmesine davet edilmeyi umuyor."
+      },
+      {
+        "de": "Um mehr Berufserfahrung zu sammeln, macht Jonas ein Praktikum.",
+        "tr": "Daha fazla iş deneyimi kazanmak için Jonas staj yapıyor."
+      },
+      {
+        "de": "Im neuen Team möchte ich lernen, selbstständiger zu arbeiten.",
+        "tr": "Yeni ekipte daha bağımsız çalışmayı öğrenmek istiyorum."
+      },
+      {
+        "de": "Die Firma erwartet, dass Bewerber zuverlässig und teamfähig sind.",
+        "tr": "Şirket adayların güvenilir ve ekip çalışmasına uygun olmasını bekliyor."
+      },
+      {
+        "de": "Er hat sich entschieden, im nächsten Jahr den Arbeitgeber zu wechseln.",
+        "tr": "Gelecek yıl işverenini değiştirmeye karar verdi."
+      }
+    ],
+    "warning": "um ... zu yapısında özne aynı olmalıdır; ana ve yan bölümün öznesi farklıysa damit kullanmak genellikle daha doğaldır.",
+    "tip": "Bir iş ilanı seç: neden başvurmak istediğini, hangi deneyimi sunduğunu ve ne öğrenmek istediğini üç zu-yapısıyla anlat.",
+    "miniCheck": {
+      "question": "Amaç bildiren doğru cümle hangisidir?",
+      "options": [
+        "Ich mache den Kurs, um meine Chancen zu verbessern.",
+        "Ich mache den Kurs, um ich meine Chancen verbessere.",
+        "Ich mache den Kurs, meine Chancen um verbessern."
+      ],
+      "correctAnswer": "Ich mache den Kurs, um meine Chancen zu verbessern."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Ich hoffe, bald eine passende Stelle ___ finden.",
+      "answer": "zu",
+      "acceptedAnswers": [
+        "zu"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Sie",
+        "hat vor,",
+        "sich morgen",
+        "zu bewerben."
+      ],
+      "answer": "Sie hat vor, sich morgen zu bewerben."
+    },
+    "translation": {
+      "prompt": "“Deneyim kazanmak için staj yapıyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich mache ein Praktikum, um Erfahrung zu sammeln.",
+      "acceptedAnswers": [
+        "Ich mache ein Praktikum, um Erfahrung zu sammeln",
+        "Ich mache ein Praktikum, um Erfahrung zu sammeln."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Warum möchtest du den Kurs besuchen? — B: ___",
+      "options": [
+        "Um meine beruflichen Chancen zu verbessern.",
+        "Damit ich zu verbessern meine Chancen.",
+        "Zu meine Chancen verbessern."
+      ],
+      "answer": "Um meine beruflichen Chancen zu verbessern."
+    },
+    "trueFalse": {
+      "prompt": "“anzufangen” ayrılabilen anfangen fiilinin zu + Infinitiv biçimidir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Başvuru süreciyle ilgili iki kelimeyi seç.",
+      "options": [
+        "das Anschreiben",
+        "das Vorstellungsgespräch",
+        "der Fahrplan",
+        "die Hausordnung"
+      ],
+      "answers": [
+        "das Anschreiben",
+        "das Vorstellungsgespräch"
+      ]
+    },
+    "summary": [
+      "zu + Infinitiv",
+      "um ... zu",
+      "iş başvurusu",
+      "mesleki hedef ve amaç"
+    ]
+  },
+  {
+    "id": "b1-u04",
+    "intro": "Bu ünitede dil öğrenme ve çalışma alışkanlıklarını değerlendirecek, bir yöntemin nasıl sonuç verdiğini indem ve dadurch, dass yapılarıyla açıklayacak ve kendi öğrenme stratejini gerekçelendireceksin.",
+    "goals": [
+      "Öğrenme stratejilerini karşılaştırmak",
+      "indem ile yöntem açıklamak",
+      "dadurch, dass ile araç-sonuç ilişkisi kurmak",
+      "Kendi öğrenme planını gerekçeleriyle anlatmak"
+    ],
+    "grammarTitle": "Yöntem ve araç bildirme: indem / dadurch, dass",
+    "grammarExplanation": "indem, bir sonuca hangi yöntemle ulaşıldığını açıklar: Ich verbessere mein Hörverstehen, indem ich jeden Tag kurze Podcasts höre. Çekimli fiil yan cümlenin sonunda bulunur. dadurch, dass benzer bir ilişki kurar ancak ana cümlede sonucu daha açık vurgulayabilir: Dadurch, dass ich neue Wörter in Sätzen lerne, merke ich sie mir besser. Bu yapılar B1’de neden-sonuçtan daha özel bir “nasıl?” ilişkisi kurar.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "indem",
+          "dadurch, dass",
+          "indem",
+          "dadurch, dass",
+          "indem",
+          "dadurch, dass"
+        ]
+      },
+      {
+        "header": "Soru",
+        "values": [
+          "nasıl?",
+          "hangi araçla?",
+          "nasıl?",
+          "nasıl?",
+          "hangi yöntemle?",
+          "hangi yolla?"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "..., indem ich laut lese.",
+          "Dadurch, dass ich wiederhole, ...",
+          "..., indem wir planen.",
+          "Dadurch, dass sie übt, ...",
+          "..., indem man Beispiele sammelt.",
+          "Dadurch, dass er Pausen macht, ..."
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Lernstrategie — öğrenme stratejisi",
+      "die Konzentration — konsantrasyon",
+      "die Wiederholung — tekrar",
+      "der Lernfortschritt — öğrenme ilerlemesi",
+      "die Gewohnheit — alışkanlık",
+      "die Zusammenfassung — özet",
+      "die Rückmeldung — geri bildirim",
+      "der Lerntyp — öğrenme tipi",
+      "sich merken — akılda tutmak",
+      "wiederholen — tekrar etmek",
+      "zusammenfassen — özetlemek",
+      "anwenden — uygulamak",
+      "überprüfen — kontrol etmek",
+      "sich konzentrieren auf — odaklanmak",
+      "regelmäßig — düzenli",
+      "abwechslungsreich — çeşitli",
+      "effizient — verimli",
+      "realistisch — gerçekçi"
+    ],
+    "examples": [
+      {
+        "de": "Ich erweitere meinen Wortschatz, indem ich neue Wörter in kurzen Texten benutze.",
+        "tr": "Yeni kelimeleri kısa metinlerde kullanarak kelime dağarcığımı genişletiyorum."
+      },
+      {
+        "de": "Dadurch, dass ich feste Lernzeiten plane, arbeite ich regelmäßiger.",
+        "tr": "Sabit çalışma saatleri planlayarak daha düzenli çalışıyorum."
+      },
+      {
+        "de": "Beim Lesen markiere ich nur Wörter, die für das Verständnis wirklich wichtig sind.",
+        "tr": "Okurken yalnızca anlamak için gerçekten önemli kelimeleri işaretliyorum."
+      },
+      {
+        "de": "Kurze Wiederholungen sind für mich effizienter als eine lange Lernsitzung am Wochenende.",
+        "tr": "Kısa tekrarlar benim için hafta sonundaki uzun bir çalışma oturumundan daha verimli."
+      },
+      {
+        "de": "Ich merke mir Grammatik besser, wenn ich eigene Beispiele formuliere.",
+        "tr": "Kendi örneklerimi kurduğumda grameri daha iyi aklımda tutuyorum."
+      },
+      {
+        "de": "Nach jeder Woche überprüfe ich, welche Ziele ich tatsächlich erreicht habe.",
+        "tr": "Her haftanın sonunda hangi hedeflere gerçekten ulaştığımı kontrol ediyorum."
+      }
+    ],
+    "warning": "indem bir neden değil, yöntem bildirir. “Neden?” için weil; “Nasıl?” için indem daha uygundur.",
+    "tip": "Bir haftalık çalışma planı hazırla ve üç hedef için “Bunu nasıl yapacağım?” sorusunu indem ile cevapla.",
+    "miniCheck": {
+      "question": "“Dinleme becerimi her gün haber dinleyerek geliştiriyorum.” için doğru yapı hangisidir?",
+      "options": [
+        "Ich verbessere mein Hörverstehen, indem ich täglich Nachrichten höre.",
+        "Ich verbessere mein Hörverstehen, weil täglich Nachrichten.",
+        "Indem ich verbessere, höre Nachrichten."
+      ],
+      "correctAnswer": "Ich verbessere mein Hörverstehen, indem ich täglich Nachrichten höre."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Dadurch, ___ ich regelmäßig wiederhole, vergesse ich weniger.",
+      "answer": "dass",
+      "acceptedAnswers": [
+        "dass"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Ich",
+        "lerne Wörter,",
+        "indem",
+        "ich sie",
+        "in Sätzen benutze."
+      ],
+      "answer": "Ich lerne Wörter, indem ich sie in Sätzen benutze."
+    },
+    "translation": {
+      "prompt": "“Kısa özetler yazarak metni daha iyi anlıyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich verstehe den Text besser, indem ich kurze Zusammenfassungen schreibe.",
+      "acceptedAnswers": [
+        "Ich verstehe den Text besser, indem ich kurze Zusammenfassungen schreibe",
+        "Ich verstehe den Text besser, indem ich kurze Zusammenfassungen schreibe."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wie merkst du dir neue Wörter? — B: ___",
+      "options": [
+        "Indem ich sie in eigenen Sätzen verwende.",
+        "Weil eigene Sätze verwenden.",
+        "Dadurch ich Sätze."
+      ],
+      "answer": "Indem ich sie in eigenen Sätzen verwende."
+    },
+    "trueFalse": {
+      "prompt": "indem yan cümlesinde çekimli fiil sonda bulunur.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Öğrenme sürecine ait iki kelimeyi seç.",
+      "options": [
+        "die Wiederholung",
+        "der Lernfortschritt",
+        "die Reklamation",
+        "der Mietvertrag"
+      ],
+      "answers": [
+        "die Wiederholung",
+        "der Lernfortschritt"
+      ]
+    },
+    "summary": [
+      "indem",
+      "dadurch, dass",
+      "öğrenme stratejileri",
+      "yöntemi gerekçelendirme"
+    ]
+  },
+  {
+    "id": "b1-u05",
+    "intro": "Bu ünitede haber, yorum ve sosyal medya içeriklerinde görüş ile olguyu ayıracak; obwohl, trotzdem ve während ile farklı bakış açılarını karşılaştırıp kendi görüşünü daha dengeli biçimde ifade edeceksin.",
+    "goals": [
+      "Bir haberde temel bilgi ile görüşü ayırt etmek",
+      "obwohl ve trotzdem ile karşıtlık kurmak",
+      "während ile iki farklı görüşü karşılaştırmak",
+      "Bir medya konusu hakkında gerekçeli görüş belirtmek"
+    ],
+    "grammarTitle": "Karşıtlık ve bakış açısı: obwohl, trotzdem, während",
+    "grammarExplanation": "obwohl bir yan cümle bağlacıdır ve beklenenin tersine gerçekleşen durumu açıklar; fiil sonda bulunur. trotzdem ise ana cümle bağlayıcısıdır ve çekimli fiil ikinci konum ilkesini korur. während zaman anlamının yanında iki durumu veya görüşü karşılaştırabilir: Während einige Nutzer die Änderung begrüßen, finden andere sie problematisch. Bu üç yapı B1’de tartışma ve yorum metinlerini daha dengeli kurmayı sağlar.",
+    "grammarColumns": [
+      {
+        "header": "Bağlayıcı",
+        "values": [
+          "obwohl",
+          "trotzdem",
+          "während",
+          "obwohl",
+          "trotzdem",
+          "während"
+        ]
+      },
+      {
+        "header": "Cümle türü",
+        "values": [
+          "yan cümle",
+          "ana cümle",
+          "yan cümle",
+          "yan cümle",
+          "ana cümle",
+          "yan cümle"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "beklenmeyen karşıtlık",
+          "sonuca rağmen",
+          "iki görüş",
+          "karşıtlık",
+          "karşıtlık",
+          "eşzaman/karşılaştırma"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Meldung — haber notu",
+      "die Schlagzeile — manşet",
+      "die Quelle — kaynak",
+      "der Standpunkt — bakış açısı",
+      "die Behauptung — iddia",
+      "die Tatsache — olgu",
+      "der Kommentar — yorum",
+      "die Berichterstattung — haber aktarımı",
+      "veröffentlichen — yayımlamak",
+      "berichten über — hakkında haber yapmak",
+      "behaupten — iddia etmek",
+      "überprüfen — doğrulamak",
+      "einordnen — bağlama oturtmak",
+      "glaubwürdig — güvenilir",
+      "sachlich — nesnel",
+      "einseitig — tek taraflı",
+      "aktuell — güncel",
+      "umstritten — tartışmalı"
+    ],
+    "examples": [
+      {
+        "de": "Obwohl der Beitrag viele Reaktionen bekommt, nennt er keine klare Quelle.",
+        "tr": "Gönderi çok tepki almasına rağmen açık bir kaynak belirtmiyor."
+      },
+      {
+        "de": "Die Nachricht ist schon älter. Trotzdem wird sie noch häufig geteilt.",
+        "tr": "Haber artık eski. Buna rağmen hâlâ sıkça paylaşılıyor."
+      },
+      {
+        "de": "Während einige Leser den Artikel sachlich finden, kritisieren andere die einseitige Darstellung.",
+        "tr": "Bazı okurlar makaleyi nesnel bulurken diğerleri tek taraflı anlatımı eleştiriyor."
+      },
+      {
+        "de": "Vor dem Teilen überprüfe ich, ob dieselbe Information auch von anderen Quellen bestätigt wird.",
+        "tr": "Paylaşmadan önce aynı bilginin başka kaynaklarca da doğrulanıp doğrulanmadığını kontrol ediyorum."
+      },
+      {
+        "de": "Eine Schlagzeile kann Aufmerksamkeit erzeugen, ohne den ganzen Inhalt korrekt zusammenzufassen.",
+        "tr": "Bir manşet tüm içeriği doğru özetlemeden dikkat çekebilir."
+      },
+      {
+        "de": "Ich finde die Diskussion sinnvoll, obwohl manche Kommentare unnötig aggressiv sind.",
+        "tr": "Bazı yorumlar gereksiz yere agresif olsa da tartışmayı yararlı buluyorum."
+      }
+    ],
+    "warning": "obwohl yan cümle kurar; trotzdem ana cümle yapısını korur. “Trotzdem es regnet ...” yerine “Obwohl es regnet ...” ya da “Es regnet. Trotzdem ...” kullan.",
+    "tip": "Bir haber başlığı seç ve üç cümle yaz: olgu, farklı görüş ve kendi değerlendirmen.",
+    "miniCheck": {
+      "question": "Doğru karşıtlık yapısı hangisidir?",
+      "options": [
+        "Obwohl der Artikel kurz ist, ist er informativ.",
+        "Obwohl der Artikel ist kurz, er informativ ist.",
+        "Trotzdem der Artikel kurz ist, ist er informativ."
+      ],
+      "correctAnswer": "Obwohl der Artikel kurz ist, ist er informativ."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Quelle ist unbekannt. ___ wird die Meldung oft geteilt.",
+      "answer": "Trotzdem",
+      "acceptedAnswers": [
+        "Trotzdem"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Während",
+        "einige zustimmen,",
+        "sehen",
+        "andere",
+        "das kritisch."
+      ],
+      "answer": "Während einige zustimmen, sehen andere das kritisch."
+    },
+    "translation": {
+      "prompt": "“Haber eski olmasına rağmen hâlâ tartışılıyor.” cümlesini Almancaya çevir.",
+      "answer": "Obwohl die Nachricht alt ist, wird sie noch diskutiert.",
+      "acceptedAnswers": [
+        "Obwohl die Nachricht alt ist, wird sie noch diskutiert",
+        "Obwohl die Nachricht alt ist, wird sie noch diskutiert."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Glaubst du diese Meldung sofort? — B: ___",
+      "options": [
+        "Nein, ich prüfe zuerst die Quelle, obwohl die Meldung glaubwürdig klingt.",
+        "Nein, trotzdem ich prüfe Quelle.",
+        "Obwohl glaube ich alles."
+      ],
+      "answer": "Nein, ich prüfe zuerst die Quelle, obwohl die Meldung glaubwürdig klingt."
+    },
+    "trueFalse": {
+      "prompt": "während iki farklı görüşü karşılaştırmak için de kullanılabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Haber değerlendirmesiyle ilgili iki kelimeyi seç.",
+      "options": [
+        "die Quelle",
+        "die Behauptung",
+        "die Kaution",
+        "die Schicht"
+      ],
+      "answers": [
+        "die Quelle",
+        "die Behauptung"
+      ]
+    },
+    "summary": [
+      "obwohl/trotzdem",
+      "während ile karşılaştırma",
+      "kaynak ve görüş ayrımı",
+      "medya okuryazarlığı"
+    ]
+  },
+  {
+    "id": "b1-u06",
+    "intro": "Bu ünitede reklam ve tüketici kararlarını eleştirel değerlendirecek; sowohl ... als auch, entweder ... oder, weder ... noch ve nicht nur ... sondern auch gibi çift bağlaçlarla seçenekleri ve özellikleri bağlantılı anlatacaksın.",
+    "goals": [
+      "Bir ürünün avantaj ve dezavantajlarını değerlendirmek",
+      "Çift bağlaçlarla iki bilgiyi ilişkilendirmek",
+      "Reklam iddiası ile gerçek ihtiyacı ayırt etmek",
+      "Satın alma kararını gerekçelendirmek"
+    ],
+    "grammarTitle": "Zweiteilige Konnektoren: sowohl ... als auch ve diğerleri",
+    "grammarExplanation": "Çift bağlaçlar B1 metninde listeyi ve karşılaştırmayı daha düzenli hale getirir. sowohl ... als auch iki olumlu unsuru birlikte verir; weder ... noch iki olumsuz unsuru dışlar; entweder ... oder seçenek sunar; nicht nur ... sondern auch ikinci bilgiyi özellikle vurgular. Cümlede bağlanan öğelerin dilbilgisel olarak benzer olması anlatımı daha temiz ve anlaşılır yapar: Das Gerät ist sowohl günstig als auch langlebig.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "sowohl ... als auch",
+          "weder ... noch",
+          "entweder ... oder",
+          "nicht nur ... sondern auch",
+          "sowohl ... als auch",
+          "weder ... noch"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "iki olumlu özellik",
+          "iki olumsuz seçenek",
+          "alternatif",
+          "ek vurgu",
+          "iki eylem",
+          "iki isim"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "günstig und robust",
+          "weder billig noch praktisch",
+          "online oder im Laden",
+          "nicht nur schnell, sondern auch leise",
+          "sowohl sparen als auch vergleichen",
+          "weder Werbung noch Rabatt"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Werbung — reklam",
+      "das Angebot — teklif",
+      "der Rabatt — indirim",
+      "die Bewertung — değerlendirme",
+      "das Preis-Leistungs-Verhältnis — fiyat-performans oranı",
+      "die Kaufentscheidung — satın alma kararı",
+      "die Qualität — kalite",
+      "die Garantie — garanti",
+      "vergleichen — karşılaştırmak",
+      "werben für — reklamını yapmak",
+      "zurückgeben — iade etmek",
+      "bewerten — değerlendirmek",
+      "beeinflussen — etkilemek",
+      "überzeugen — ikna etmek",
+      "preiswert — fiyatına göre iyi",
+      "langlebig — uzun ömürlü",
+      "unnötig — gereksiz",
+      "verlockend — cazip"
+    ],
+    "examples": [
+      {
+        "de": "Das Modell ist sowohl günstiger als auch leichter als sein Vorgänger.",
+        "tr": "Model önceki sürümünden hem daha ucuz hem daha hafif."
+      },
+      {
+        "de": "Die Werbung nennt weder die Lieferzeit noch die zusätzlichen Kosten.",
+        "tr": "Reklam ne teslimat süresini ne de ek masrafları belirtiyor."
+      },
+      {
+        "de": "Ich kaufe das Gerät entweder online oder bei einem Händler in meiner Stadt.",
+        "tr": "Cihazı ya çevrim içi ya da şehrimdeki bir satıcıdan alacağım."
+      },
+      {
+        "de": "Für mich zählt nicht nur der Preis, sondern auch die Reparierbarkeit.",
+        "tr": "Benim için yalnızca fiyat değil, tamir edilebilirlik de önemli."
+      },
+      {
+        "de": "Vor einer größeren Anschaffung vergleiche ich sowohl Bewertungen als auch Garantiebedingungen.",
+        "tr": "Büyük bir alışverişten önce hem değerlendirmeleri hem garanti koşullarını karşılaştırıyorum."
+      },
+      {
+        "de": "Ein hoher Rabatt bedeutet nicht automatisch, dass ein Produkt wirklich günstig ist.",
+        "tr": "Yüksek indirim bir ürünün gerçekten uygun fiyatlı olduğu anlamına otomatik olarak gelmez."
+      }
+    ],
+    "warning": "Çift bağlaçlarda iki tarafı mümkün olduğunca aynı türde yapı ile bağla: isim + isim, sıfat + sıfat veya fiil + fiil.",
+    "tip": "İki benzer ürünü seç ve fiyat, kalite, garanti ile ihtiyaç açısından dört çift bağlaçla karşılaştır.",
+    "miniCheck": {
+      "question": "İki olumsuz unsuru dışlayan yapı hangisidir?",
+      "options": [
+        "weder ... noch",
+        "sowohl ... als auch",
+        "nicht nur ... sondern auch"
+      ],
+      "correctAnswer": "weder ... noch"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Das Produkt ist nicht nur günstig, ___ auch langlebig.",
+      "answer": "sondern",
+      "acceptedAnswers": [
+        "sondern"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Ich vergleiche",
+        "sowohl den Preis",
+        "als auch",
+        "die Garantie."
+      ],
+      "answer": "Ich vergleiche sowohl den Preis als auch die Garantie."
+    },
+    "translation": {
+      "prompt": "“Ne reklama ne de indirime hemen güveniyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich vertraue weder der Werbung noch einem Rabatt sofort.",
+      "acceptedAnswers": [
+        "Ich vertraue weder der Werbung noch einem Rabatt sofort",
+        "Ich vertraue weder der Werbung noch einem Rabatt sofort."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Warum hast du dieses Modell gewählt? — B: ___",
+      "options": [
+        "Es ist nicht nur günstiger, sondern auch leichter zu reparieren.",
+        "Es ist nicht nur günstiger, aber auch reparieren.",
+        "Weder ich gewählt Rabatt."
+      ],
+      "answer": "Es ist nicht nur günstiger, sondern auch leichter zu reparieren."
+    },
+    "trueFalse": {
+      "prompt": "entweder ... oder iki alternatif arasında seçim sunabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Tüketici kararıyla ilgili iki kelimeyi seç.",
+      "options": [
+        "die Garantie",
+        "das Preis-Leistungs-Verhältnis",
+        "die Freundschaft",
+        "die Schlagzeile"
+      ],
+      "answers": [
+        "die Garantie",
+        "das Preis-Leistungs-Verhältnis"
+      ]
+    },
+    "summary": [
+      "çift bağlaçlar",
+      "reklamı değerlendirme",
+      "avantaj/dezavantaj",
+      "bilinçli tüketim"
+    ]
+  },
+  {
+    "id": "b1-u07",
+    "intro": "Bu ünitede seyahat sırasında gelişen olayları bağlantılı anlatacak; bevor, nachdem, während ve seitdem ile olayların zaman ilişkisini netleştirecek ve beklenmeyen bir yolculuk sorununu çözüm odaklı ifade edeceksin.",
+    "goals": [
+      "Bir seyahat deneyimini zaman sırasıyla anlatmak",
+      "bevor ve nachdem ile iki olayı ilişkilendirmek",
+      "während ve seitdem ile süre/eşzamanlılık belirtmek",
+      "Ulaşım sorununu açıklayıp çözüm istemek"
+    ],
+    "grammarTitle": "Temporalsätze: bevor, nachdem, während, seitdem",
+    "grammarExplanation": "B1’de zaman bağlaçları olayların yalnızca “sonra” değil, mantıksal sırasını da gösterir. bevor daha sonraki bir ana eylemden önce gerçekleşen durumu belirtir. nachdem tamamlanmış bir olaydan sonra gelen eylemi bağlar; geçmiş anlatımda önceki olay için Plusquamperfekt kullanımı mümkündür. während eşzamanlılığı, seitdem ise geçmişte başlayıp hâlâ etkisi süren durumu anlatır. Bu yan cümlelerde çekimli fiil sona gider.",
+    "grammarColumns": [
+      {
+        "header": "Bağlaç",
+        "values": [
+          "bevor",
+          "nachdem",
+          "während",
+          "seitdem",
+          "bevor",
+          "nachdem"
+        ]
+      },
+      {
+        "header": "İlişki",
+        "values": [
+          "önce",
+          "sonra",
+          "eşzamanlı",
+          "başlangıçtan beri",
+          "önce",
+          "sonra"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "Bevor wir losfahren ...",
+          "Nachdem wir angekommen waren ...",
+          "Während wir warten ...",
+          "Seitdem ich hier wohne ...",
+          "Bevor der Zug fährt ...",
+          "Nachdem sie gebucht hatte ..."
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Weiterfahrt — yolculuğa devam",
+      "der Anschluss — bağlantı seferi",
+      "die Umleitung — güzergâh değişikliği",
+      "die Panne — arıza",
+      "die Unterkunft — konaklama",
+      "die Erstattung — geri ödeme",
+      "die Verspätung — gecikme",
+      "die Reiseroute — seyahat rotası",
+      "verpassen — kaçırmak",
+      "umbuchen — yeniden rezervasyon yapmak",
+      "stornieren — iptal etmek",
+      "sich verspäten — gecikmek",
+      "sich erkundigen nach — bilgi almak",
+      "weiterfahren — devam etmek",
+      "rechtzeitig — zamanında",
+      "unerwartet — beklenmedik",
+      "gesperrt — kapalı",
+      "verfügbar — mevcut"
+    ],
+    "examples": [
+      {
+        "de": "Bevor wir zum Bahnhof fuhren, überprüften wir noch einmal die Verbindung.",
+        "tr": "İstasyona gitmeden önce bağlantıyı bir kez daha kontrol ettik."
+      },
+      {
+        "de": "Nachdem unser Zug angekommen war, mussten wir nur wenige Minuten warten.",
+        "tr": "Trenimiz geldikten sonra yalnızca birkaç dakika beklemek zorunda kaldık."
+      },
+      {
+        "de": "Während wir auf den Ersatzbus warteten, informierten wir das Hotel.",
+        "tr": "Yedek otobüsü beklerken otele bilgi verdik."
+      },
+      {
+        "de": "Seitdem ich häufiger mit der Bahn reise, plane ich mehr Zeit für Umstiege ein.",
+        "tr": "Daha sık trenle seyahat etmeye başladığımdan beri aktarmalar için daha fazla zaman planlıyorum."
+      },
+      {
+        "de": "Wegen einer Streckensperrung mussten viele Reisende ihre Verbindung ändern.",
+        "tr": "Hat kapanması nedeniyle birçok yolcu bağlantısını değiştirmek zorunda kaldı."
+      },
+      {
+        "de": "Am Schalter fragte ich, ob eine kostenlose Umbuchung möglich wäre.",
+        "tr": "Gişede ücretsiz yeniden rezervasyonun mümkün olup olmadığını sordum."
+      }
+    ],
+    "warning": "nachdem ile geçmişte iki tamamlanmış olay anlatırken önce gerçekleşen olay için Plusquamperfekt zaman sırasını özellikle netleştirebilir.",
+    "tip": "Bir yolculuk sorununu beş adımda anlat: öncesi, sorun, beklerken yaptığın şey, çözüm ve sonrasında ne değişti.",
+    "miniCheck": {
+      "question": "“Otele vardıktan sonra resepsiyonu aradık.” için uygun yapı hangisidir?",
+      "options": [
+        "Nachdem wir im Hotel angekommen waren, riefen wir die Rezeption an.",
+        "Bevor wir im Hotel angekommen waren, riefen wir danach an.",
+        "Seitdem wir ankommen, riefen wir an."
+      ],
+      "correctAnswer": "Nachdem wir im Hotel angekommen waren, riefen wir die Rezeption an."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: ___ wir losfahren, prüfen wir die Tickets.",
+      "answer": "Bevor",
+      "acceptedAnswers": [
+        "Bevor"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Während",
+        "wir warteten,",
+        "riefen",
+        "wir",
+        "das Hotel an."
+      ],
+      "answer": "Während wir warteten, riefen wir das Hotel an."
+    },
+    "translation": {
+      "prompt": "“Buraya taşındığımdan beri daha çok tren kullanıyorum.” cümlesini Almancaya çevir.",
+      "answer": "Seitdem ich hierhergezogen bin, fahre ich häufiger mit dem Zug.",
+      "acceptedAnswers": [
+        "Seitdem ich hierhergezogen bin, fahre ich häufiger mit dem Zug",
+        "Seitdem ich hierhergezogen bin, fahre ich häufiger mit dem Zug."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was habt ihr gemacht, nachdem der Zug ausgefallen war? — B: ___",
+      "options": [
+        "Wir haben uns nach einer anderen Verbindung erkundigt.",
+        "Wir erkundigen bevor Verbindung.",
+        "Seitdem fiel der Zug."
+      ],
+      "answer": "Wir haben uns nach einer anderen Verbindung erkundigt."
+    },
+    "trueFalse": {
+      "prompt": "während eşzamanlı iki olayı bağlayabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Seyahat sorunuyla ilgili iki kelimeyi seç.",
+      "options": [
+        "die Panne",
+        "die Umleitung",
+        "die Bewerbung",
+        "die Konzentration"
+      ],
+      "answers": [
+        "die Panne",
+        "die Umleitung"
+      ]
+    },
+    "summary": [
+      "bevor/nachdem",
+      "während/seitdem",
+      "seyahat sorunu anlatma",
+      "zaman sıralı hikâye"
+    ]
+  },
+  {
+    "id": "b1-u08",
+    "intro": "Bu ünitede stres, çalışma yükü ve yaşam dengesi hakkında daha ayrıntılı konuşacak; gerçek dışı veya varsayımsal durumları Konjunktiv II ile ifade edip birine nazik ve gerekçeli öneriler sunacaksın.",
+    "goals": [
+      "Stres kaynaklarını ve etkilerini açıklamak",
+      "wäre, hätte, würde ve könnte ile varsayımsal durum kurmak",
+      "wenn ile gerçek dışı koşul ifade etmek",
+      "Sağlıklı alışkanlık için öneri ve gerekçe vermek"
+    ],
+    "grammarTitle": "Konjunktiv II: wäre, hätte, würde, könnte + unreal wenn",
+    "grammarExplanation": "Konjunktiv II B1’de nazik isteklerin yanı sıra gerçek olmayan veya henüz gerçekleşmemiş koşulları anlatmak için kullanılır. “Wenn ich mehr Zeit hätte, würde ich öfter kochen.” yapısında wenn cümlesi koşulu, würde + Infinitiv sonucu verir. sein ve haben çoğunlukla wäre/hätte biçimleriyle kullanılır; können → könnte olasılık veya öneri verir. Bu yapılar tavsiye, hayal, varsayım ve alternatif çözüm anlatımını daha esnek hale getirir.",
+    "grammarColumns": [
+      {
+        "header": "Fiil",
+        "values": [
+          "sein",
+          "haben",
+          "werden",
+          "können",
+          "müssen",
+          "dürfen"
+        ]
+      },
+      {
+        "header": "Konj. II",
+        "values": [
+          "wäre",
+          "hätte",
+          "würde",
+          "könnte",
+          "müsste",
+          "dürfte"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "Wenn ich ruhiger wäre ...",
+          "Wenn ich Zeit hätte ...",
+          "würde ich pausieren",
+          "könnte ich helfen",
+          "müsste ich ändern",
+          "dürfte leichter sein"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Belastung — yük / baskı",
+      "die Erholung — dinlenme",
+      "der Ausgleich — dengeleyici etkinlik",
+      "die Schlafqualität — uyku kalitesi",
+      "die Überforderung — aşırı yüklenme",
+      "die Pause — mola",
+      "die Grenze — sınır",
+      "die Gewohnheit — alışkanlık",
+      "abschalten — kafayı boşaltmak",
+      "sich erholen — dinlenmek",
+      "sich überfordern — kendini fazla zorlamak",
+      "Prioritäten setzen — öncelik belirlemek",
+      "zur Ruhe kommen — sakinleşmek",
+      "ausreichend — yeterli",
+      "angespannt — gergin",
+      "erschöpft — bitkin",
+      "ausgeglichen — dengeli",
+      "realistisch — gerçekçi"
+    ],
+    "examples": [
+      {
+        "de": "Wenn ich abends weniger arbeiten würde, könnte ich besser abschalten.",
+        "tr": "Akşamları daha az çalışsam daha iyi kafamı boşaltabilirdim."
+      },
+      {
+        "de": "An deiner Stelle würde ich feste Pausen in den Tag einplanen.",
+        "tr": "Senin yerinde olsam güne sabit molalar planlardım."
+      },
+      {
+        "de": "Wenn ich mehr Zeit hätte, würde ich unter der Woche häufiger selbst kochen.",
+        "tr": "Daha çok vaktim olsa hafta içinde daha sık kendim yemek yapardım."
+      },
+      {
+        "de": "Es wäre besser, nicht jede Nachricht sofort zu beantworten.",
+        "tr": "Her mesaja hemen cevap vermemek daha iyi olurdu."
+      },
+      {
+        "de": "Du könntest versuchen, nach der Arbeit eine halbe Stunde spazieren zu gehen.",
+        "tr": "İşten sonra yarım saat yürümeyi deneyebilirsin."
+      },
+      {
+        "de": "Ohne ausreichende Erholung wird die Konzentration oft schlechter.",
+        "tr": "Yeterli dinlenme olmadan konsantrasyon çoğu zaman kötüleşir."
+      }
+    ],
+    "warning": "Varsayımsal wenn cümlesinde sein, haben ve modal fiillerde wäre, hätte, könnte gibi özgün biçimler çoğunlukla würde yapısından daha doğaldır.",
+    "tip": "Stresli bir haftayı düşün ve üç “Wenn ich ..., würde/könnte ich ...” cümlesiyle gerçekçi alternatifler üret.",
+    "miniCheck": {
+      "question": "Doğru varsayımsal cümle hangisidir?",
+      "options": [
+        "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
+        "Wenn ich mehr Zeit habe würde, ich Sport machen.",
+        "Wenn hätte ich Zeit, mache würde Sport."
+      ],
+      "correctAnswer": "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: An deiner Stelle ___ ich heute früher Feierabend machen.",
+      "answer": "würde",
+      "acceptedAnswers": [
+        "würde"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Wenn",
+        "ich weniger Stress hätte,",
+        "könnte",
+        "ich besser schlafen."
+      ],
+      "answer": "Wenn ich weniger Stress hätte, könnte ich besser schlafen."
+    },
+    "translation": {
+      "prompt": "“Daha az yorgun olsam yürüyüşe çıkardım.” cümlesini Almancaya çevir.",
+      "answer": "Wenn ich weniger müde wäre, würde ich spazieren gehen.",
+      "acceptedAnswers": [
+        "Wenn ich weniger müde wäre, würde ich spazieren gehen",
+        "Wenn ich weniger müde wäre, würde ich spazieren gehen."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Ich kann nach der Arbeit nicht abschalten. — B: ___",
+      "options": [
+        "Du könntest dein Handy für eine Stunde ausschalten.",
+        "Du könntest ausschaltest Handy.",
+        "Wenn du Handy, du Ruhe."
+      ],
+      "answer": "Du könntest dein Handy für eine Stunde ausschalten."
+    },
+    "trueFalse": {
+      "prompt": "hätte, haben fiilinin Konjunktiv II biçimidir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Stres ve dinlenmeyle ilgili iki kelimeyi seç.",
+      "options": [
+        "die Belastung",
+        "die Erholung",
+        "die Schlagzeile",
+        "die Kaution"
+      ],
+      "answers": [
+        "die Belastung",
+        "die Erholung"
+      ]
+    },
+    "summary": [
+      "Konjunktiv II",
+      "unreal wenn",
+      "stres ve denge",
+      "öneri ve alternatif çözüm"
+    ]
+  },
+  {
+    "id": "b1-u09",
+    "intro": "Bu ünitede çevre, enerji ve günlük sürdürülebilirlik konularında süreçleri anlatacak; Passiv Präsens ve Passiv Präteritum ile eylemi yapan kişiden çok işlemin veya sonucun kendisini öne çıkaracaksın.",
+    "goals": [
+      "Çevresel bir süreç veya uygulamayı açıklamak",
+      "Passiv Präsens kurmak",
+      "Passiv Präteritum ile geçmiş süreç anlatmak",
+      "Sürdürülebilir alışkanlıklar hakkında görüş gerekçelendirmek"
+    ],
+    "grammarTitle": "Passiv: Präsens ve Präteritum",
+    "grammarExplanation": "Passiv, eylemi kimin yaptığı önemsiz, bilinmiyor veya zaten belliyse süreci öne çıkarır. Präsens’te werden + Partizip II kullanılır: Der Müll wird getrennt. Präteritum’da wurde/wurden + Partizip II kurulur: Die Anlage wurde 2024 gebaut. Yapan kişi gerekiyorsa von + Dativ ile eklenebilir. Passiv özellikle haber, talimat, çevre, üretim ve kurum süreçlerinde B1 düzeyinde çok işlevseldir.",
+    "grammarColumns": [
+      {
+        "header": "Zaman",
+        "values": [
+          "Präsens",
+          "Präsens",
+          "Präteritum",
+          "Präteritum",
+          "Präsens",
+          "Präteritum"
+        ]
+      },
+      {
+        "header": "Yapı",
+        "values": [
+          "wird recycelt",
+          "werden gesammelt",
+          "wurde gebaut",
+          "wurden ersetzt",
+          "wird genutzt",
+          "wurde eingeführt"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "Papier wird recycelt.",
+          "Flaschen werden gesammelt.",
+          "Die Anlage wurde gebaut.",
+          "Lampen wurden ersetzt.",
+          "Solarenergie wird genutzt.",
+          "Die Regel wurde eingeführt."
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Nachhaltigkeit — sürdürülebilirlik",
+      "der Verbrauch — tüketim",
+      "die Energiequelle — enerji kaynağı",
+      "der Abfall — atık",
+      "die Verpackung — ambalaj",
+      "die Wiederverwendung — yeniden kullanım",
+      "die Emission — emisyon",
+      "die Maßnahme — önlem",
+      "recyceln — geri dönüştürmek",
+      "einsparen — tasarruf etmek",
+      "vermeiden — kaçınmak",
+      "wiederverwenden — yeniden kullanmak",
+      "entsorgen — bertaraf etmek",
+      "erneuerbar — yenilenebilir",
+      "umweltfreundlich — çevre dostu",
+      "regional — yerel",
+      "sparsam — tasarruflu",
+      "verantwortungsvoll — sorumlu"
+    ],
+    "examples": [
+      {
+        "de": "In unserem Haus wird Papier getrennt gesammelt.",
+        "tr": "Bizim binada kâğıt ayrı toplanıyor."
+      },
+      {
+        "de": "Im letzten Jahr wurden alle alten Lampen durch LED-Leuchten ersetzt.",
+        "tr": "Geçen yıl tüm eski lambalar LED lambalarla değiştirildi."
+      },
+      {
+        "de": "Für die Heizung wird inzwischen teilweise Solarenergie genutzt.",
+        "tr": "Isıtma için artık kısmen güneş enerjisi kullanılıyor."
+      },
+      {
+        "de": "Die neue Regel wurde nach einer längeren Testphase eingeführt.",
+        "tr": "Yeni kural daha uzun bir test döneminden sonra yürürlüğe kondu."
+      },
+      {
+        "de": "Mehrwegflaschen können mehrfach verwendet werden und vermeiden zusätzlichen Abfall.",
+        "tr": "Çok kullanımlık şişeler birkaç kez kullanılabilir ve ek atığı önler."
+      },
+      {
+        "de": "Ich achte darauf, dass Lebensmittel möglichst vollständig verbraucht werden.",
+        "tr": "Gıdaların mümkün olduğunca tamamen tüketilmesine dikkat ediyorum."
+      }
+    ],
+    "warning": "Passiv’de Partizip II sabit kalır; çekilen unsur werden’dir. Perfekt Passiv’de kullanılan “worden” ile “geworden”ı karıştırma.",
+    "tip": "Bir geri dönüşüm veya enerji sürecini beş Passiv cümlesiyle açıkla: ne toplanıyor, ayrılıyor, dönüştürülüyor ve yeniden kullanılıyor?",
+    "miniCheck": {
+      "question": "Passiv Präsens hangisidir?",
+      "options": [
+        "Das Papier wird recycelt.",
+        "Das Papier hat recycelt.",
+        "Das Papier wurde morgen recycelt."
+      ],
+      "correctAnswer": "Das Papier wird recycelt."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die alten Geräte ___ im letzten Jahr ersetzt.",
+      "answer": "wurden",
+      "acceptedAnswers": [
+        "wurden"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "In der Schule",
+        "wird",
+        "der Müll",
+        "getrennt."
+      ],
+      "answer": "In der Schule wird der Müll getrennt."
+    },
+    "translation": {
+      "prompt": "“Yeni sistem geçen yıl tanıtıldı.” cümlesini Almancaya çevir.",
+      "answer": "Das neue System wurde letztes Jahr eingeführt.",
+      "acceptedAnswers": [
+        "Das neue System wurde letztes Jahr eingeführt",
+        "Das neue System wurde letztes Jahr eingeführt."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was passiert mit den alten Flaschen? — B: ___",
+      "options": [
+        "Sie werden gesammelt und wiederverwendet.",
+        "Sie gesammelt werden gestern.",
+        "Man ist Flaschen gesammelt."
+      ],
+      "answer": "Sie werden gesammelt und wiederverwendet."
+    },
+    "trueFalse": {
+      "prompt": "Passiv Präteritum’da wurde/wurden + Partizip II kullanılır.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Sürdürülebilirlikle ilgili iki kelimeyi seç.",
+      "options": [
+        "die Wiederverwendung",
+        "der Verbrauch",
+        "das Anschreiben",
+        "die Freundschaft"
+      ],
+      "answers": [
+        "die Wiederverwendung",
+        "der Verbrauch"
+      ]
+    },
+    "summary": [
+      "Passiv Präsens",
+      "Passiv Präteritum",
+      "çevre ve enerji süreçleri",
+      "sürdürülebilirlik görüşü"
+    ]
+  },
+  {
+    "id": "b1-u10",
+    "intro": "Bu ünitede gönüllülük, mahalle girişimleri ve toplumsal katılım hakkında konuşacak; edatlı Relativsatz yapılarıyla bir proje, kurum veya kişi hakkında daha ayrıntılı ve kesin bilgi vereceksin.",
+    "goals": [
+      "Bir gönüllülük projesini tanıtmak",
+      "Edatlı Relativsatz kurmak",
+      "Toplumsal katılımın yararını gerekçelendirmek",
+      "Bir projeye katılım ve görev dağılımını konuşmak"
+    ],
+    "grammarTitle": "Relativsätze mit Präpositionen",
+    "grammarExplanation": "Relativsatz bir edat gerektiren fiil veya isimle kullanıldığında edat, Relativpronomenin önüne gelir: Das Projekt, an dem ich teilnehme, unterstützt Jugendliche. Die Organisation, für die sie arbeitet, sucht Freiwillige. Relativpronomenin hâli edat tarafından belirlenir. Kişiler ve nesneler için aynı temel sistem geçerlidir. Bu yapı B1’de proje, kurum, çalışma alanı ve sosyal ilişkileri daha kesin tanımlamayı sağlar.",
+    "grammarColumns": [
+      {
+        "header": "Edat",
+        "values": [
+          "an + Dat.",
+          "für + Akk.",
+          "mit + Dat.",
+          "über + Akk.",
+          "bei + Dat.",
+          "auf + Akk."
+        ]
+      },
+      {
+        "header": "Relativ",
+        "values": [
+          "an dem",
+          "für die",
+          "mit denen",
+          "über das",
+          "bei der",
+          "auf die"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "Projekt, an dem ...",
+          "Organisation, für die ...",
+          "Menschen, mit denen ...",
+          "Thema, über das ...",
+          "Initiative, bei der ...",
+          "Aufgabe, auf die ..."
+        ]
+      }
+    ],
+    "vocabulary": [
+      "das Ehrenamt — gönüllülük görevi",
+      "der Verein — dernek",
+      "die Initiative — girişim",
+      "die Beteiligung — katılım",
+      "die Gemeinschaft — topluluk",
+      "die Spende — bağış",
+      "die Unterstützung — destek",
+      "die Verantwortung — sorumluluk",
+      "sich engagieren für — için gönüllü çalışmak",
+      "teilnehmen an — katılmak",
+      "sich beteiligen an — katkıda bulunmak",
+      "organisieren — düzenlemek",
+      "betreuen — ilgilenmek",
+      "unterstützen — desteklemek",
+      "freiwillig — gönüllü",
+      "gemeinnützig — kamu yararına",
+      "lokal — yerel",
+      "sozial — toplumsal"
+    ],
+    "examples": [
+      {
+        "de": "Das Projekt, an dem ich teilnehme, organisiert kostenlose Hausaufgabenhilfe.",
+        "tr": "Katıldığım proje ücretsiz ödev desteği düzenliyor."
+      },
+      {
+        "de": "Der Verein, für den meine Nachbarin arbeitet, sucht neue Freiwillige.",
+        "tr": "Komşumun çalıştığı dernek yeni gönüllüler arıyor."
+      },
+      {
+        "de": "Die Menschen, mit denen ich dort zusammenarbeite, haben sehr unterschiedliche Erfahrungen.",
+        "tr": "Orada birlikte çalıştığım insanların deneyimleri çok farklı."
+      },
+      {
+        "de": "Das Thema, über das wir gestern gesprochen haben, betrifft viele Familien im Viertel.",
+        "tr": "Dün konuştuğumuz konu mahalledeki birçok aileyi ilgilendiriyor."
+      },
+      {
+        "de": "Bei der Initiative, bei der ich helfe, werden jeden Samstag Lebensmittel verteilt.",
+        "tr": "Yardım ettiğim girişimde her cumartesi yiyecek dağıtılıyor."
+      },
+      {
+        "de": "Viele Menschen engagieren sich, weil sie in ihrer Umgebung konkret etwas verändern möchten.",
+        "tr": "Birçok insan çevresinde somut bir şeyi değiştirmek istediği için gönüllü oluyor."
+      }
+    ],
+    "warning": "Edatlı Relativsatz’ta edatı unutma: “das Projekt, dem ich teilnehme” değil, “das Projekt, an dem ich teilnehme”.",
+    "tip": "Bir dernek veya hayalî sosyal proje seç ve an dem, für die, mit denen gibi en az üç edatlı Relativsatz ile tanıt.",
+    "miniCheck": {
+      "question": "“Katıldığım proje” için doğru yapı hangisidir?",
+      "options": [
+        "das Projekt, an dem ich teilnehme",
+        "das Projekt, dem ich teilnehme",
+        "das Projekt, an das ich teilnehme"
+      ],
+      "correctAnswer": "das Projekt, an dem ich teilnehme"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Der Verein, ___ den sie arbeitet, hilft Jugendlichen.",
+      "answer": "für",
+      "acceptedAnswers": [
+        "für"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Leute,",
+        "mit denen",
+        "ich arbeite,",
+        "sind",
+        "sehr engagiert."
+      ],
+      "answer": "Die Leute, mit denen ich arbeite, sind sehr engagiert."
+    },
+    "translation": {
+      "prompt": "“Hakkında konuştuğumuz konu önemli.” cümlesini Almancaya çevir.",
+      "answer": "Das Thema, über das wir gesprochen haben, ist wichtig.",
+      "acceptedAnswers": [
+        "Das Thema, über das wir gesprochen haben, ist wichtig",
+        "Das Thema, über das wir gesprochen haben, ist wichtig."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was ist das für eine Initiative? — B: ___",
+      "options": [
+        "Eine Initiative, bei der Nachbarn gemeinsam ältere Menschen unterstützen.",
+        "Eine Initiative, die bei Nachbarn unterstützen.",
+        "Eine Initiative, bei die ich."
+      ],
+      "answer": "Eine Initiative, bei der Nachbarn gemeinsam ältere Menschen unterstützen."
+    },
+    "trueFalse": {
+      "prompt": "Relativpronomenin hâlini edat belirleyebilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Toplumsal katılımla ilgili iki kelimeyi seç.",
+      "options": [
+        "das Ehrenamt",
+        "die Initiative",
+        "die Verspätung",
+        "die Werbeanzeige"
+      ],
+      "answers": [
+        "das Ehrenamt",
+        "die Initiative"
+      ]
+    },
+    "summary": [
+      "edatlı Relativsatz",
+      "gönüllülük",
+      "proje tanıtma",
+      "toplumsal katılım"
+    ]
+  },
+  {
+    "id": "b1-u11",
+    "intro": "Bu ünitede film, dizi, kitap ve etkinlikleri yalnızca beğenip beğenmediğini söylemek yerine ölçütlerle değerlendirecek; je ... desto/umso yapısıyla iki değişken arasındaki ilişkiyi anlatacaksın.",
+    "goals": [
+      "Bir kültür ürününü gerekçeli değerlendirmek",
+      "je ... desto/umso ile orantılı ilişki kurmak",
+      "Kısa eleştiri veya inceleme metni yazmak",
+      "Bir öneriyi hedef kitleye göre açıklamak"
+    ],
+    "grammarTitle": "Je ... desto / umso ve değerlendirme dili",
+    "grammarExplanation": "je ... desto/umso iki değişkenin birlikte nasıl değiştiğini anlatır: Je länger der Film dauert, desto wichtiger wird eine klare Handlung. je bölümünde çekimli fiil sona gider; desto/umso bölümünde çekimli fiil karşılaştırmalı ögeden sonra gelir. Yapı özellikle deneyim, fiyat, süre, kalite ve alışkanlık arasındaki ilişkileri ifade etmekte kullanışlıdır. B1 eleştiri metinlerinde ayrıca “meiner Meinung nach”, “besonders gelungen” ve “weniger überzeugend” gibi değerlendirme kalıpları önemlidir.",
+    "grammarColumns": [
+      {
+        "header": "Je-bölümü",
+        "values": [
+          "Je länger ...",
+          "Je öfter ...",
+          "Je genauer ...",
+          "Je mehr ...",
+          "Je ruhiger ...",
+          "Je besser ..."
+        ]
+      },
+      {
+        "header": "Desto/umso",
+        "values": [
+          "desto schwieriger ...",
+          "umso interessanter ...",
+          "desto klarer ...",
+          "umso kritischer ...",
+          "desto stärker ...",
+          "umso leichter ..."
+        ]
+      },
+      {
+        "header": "İlişki",
+        "values": [
+          "süre-zorluk",
+          "tekrar-ilgi",
+          "ayrıntı-açıklık",
+          "miktar-eleştiri",
+          "tempo-etki",
+          "kalite-kolaylık"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Handlung — olay örgüsü",
+      "die Besetzung — oyuncu kadrosu",
+      "die Regie — yönetmenlik",
+      "die Darstellung — canlandırma / anlatım",
+      "die Rezension — inceleme",
+      "die Empfehlung — öneri",
+      "die Zielgruppe — hedef kitle",
+      "die Atmosphäre — atmosfer",
+      "überzeugen — ikna etmek",
+      "darstellen — sunmak / canlandırmak",
+      "empfehlen — önermek",
+      "kritisieren — eleştirmek",
+      "bewerten — değerlendirmek",
+      "spannend — heyecanlı",
+      "vorhersehbar — tahmin edilebilir",
+      "gelungen — başarılı",
+      "anspruchsvoll — zorlayıcı / nitelikli",
+      "unterhaltsam — eğlenceli"
+    ],
+    "examples": [
+      {
+        "de": "Je länger die Serie läuft, desto wichtiger werden glaubwürdige Figuren.",
+        "tr": "Dizi ne kadar uzun sürerse inandırıcı karakterler o kadar önemli olur."
+      },
+      {
+        "de": "Je genauer man auf die Dialoge achtet, umso mehr kleine Details entdeckt man.",
+        "tr": "Diyaloglara ne kadar dikkat edilirse o kadar çok küçük ayrıntı fark edilir."
+      },
+      {
+        "de": "Meiner Meinung nach ist die Handlung spannend, aber stellenweise zu vorhersehbar.",
+        "tr": "Bence olay örgüsü heyecanlı ama yer yer fazla tahmin edilebilir."
+      },
+      {
+        "de": "Besonders gelungen finde ich die ruhige Atmosphäre und die überzeugende Besetzung.",
+        "tr": "Özellikle sakin atmosferi ve ikna edici oyuncu kadrosunu başarılı buluyorum."
+      },
+      {
+        "de": "Für Zuschauer, die schnelle Action erwarten, ist der Film wahrscheinlich weniger geeignet.",
+        "tr": "Hızlı aksiyon bekleyen izleyiciler için film muhtemelen daha az uygun."
+      },
+      {
+        "de": "Ich würde das Buch empfehlen, weil es ein schwieriges Thema verständlich darstellt.",
+        "tr": "Kitabı önerirdim, çünkü zor bir konuyu anlaşılır biçimde ele alıyor."
+      }
+    ],
+    "warning": "je ... desto yapısında iki taraf da çoğunlukla karşılaştırma biçimi içerir: je länger ..., desto interessanter ...",
+    "tip": "Son izlediğin film veya diziyi konu, karakter, tempo ve hedef kitle ölçütleriyle değerlendir; en az bir je ... desto cümlesi ekle.",
+    "miniCheck": {
+      "question": "Doğru je ... desto cümlesi hangisidir?",
+      "options": [
+        "Je länger der Film dauert, desto müder werde ich.",
+        "Je länger dauert der Film, desto ich werde müder.",
+        "Je der Film länger, werde desto müde."
+      ],
+      "correctAnswer": "Je länger der Film dauert, desto müder werde ich."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Je öfter ich die Szene sehe, ___ interessanter finde ich sie.",
+      "answer": "desto",
+      "acceptedAnswers": [
+        "desto"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Je genauer",
+        "man liest,",
+        "umso mehr",
+        "Details",
+        "entdeckt man."
+      ],
+      "answer": "Je genauer man liest, umso mehr Details entdeckt man."
+    },
+    "translation": {
+      "prompt": "“Kitap ne kadar ilerlerse karakterler o kadar ilginç oluyor.” cümlesini Almancaya çevir.",
+      "answer": "Je weiter das Buch voranschreitet, desto interessanter werden die Figuren.",
+      "acceptedAnswers": [
+        "Je weiter das Buch voranschreitet, desto interessanter werden die Figuren",
+        "Je weiter das Buch voranschreitet, desto interessanter werden die Figuren."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Würdest du den Film empfehlen? — B: ___",
+      "options": [
+        "Ja, besonders für Leute, die ruhige Geschichten mögen.",
+        "Ja, je Film empfehlen desto.",
+        "Ich empfehle, weil Leute ruhig."
+      ],
+      "answer": "Ja, besonders für Leute, die ruhige Geschichten mögen."
+    },
+    "trueFalse": {
+      "prompt": "desto yerine umso da kullanılabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Film/eleştiri alanına ait iki kelimeyi seç.",
+      "options": [
+        "die Handlung",
+        "die Rezension",
+        "die Kaution",
+        "die Bewerbung"
+      ],
+      "answers": [
+        "die Handlung",
+        "die Rezension"
+      ]
+    },
+    "summary": [
+      "je ... desto/umso",
+      "eleştiri dili",
+      "kültür ürünü değerlendirme",
+      "hedef kitleye öneri"
+    ]
+  },
+  {
+    "id": "b1-u12",
+    "intro": "Bu ünitede kurum, okul, iş yeri veya ortak yaşam alanındaki kuralları ve sorumlulukları tartışacak; modal fiillerle Passiv kullanarak neyin yapılması gerektiğini, yapılabileceğini veya yapılamayacağını süreç odaklı anlatacaksın.",
+    "goals": [
+      "Kural ve sorumlulukları açıklamak",
+      "Modalverb + Passiv kurmak",
+      "man yapısı ile Passiv arasında seçim yapmak",
+      "Bir kuralın gerekçesini ve etkisini tartışmak"
+    ],
+    "grammarTitle": "Passiv mit Modalverben",
+    "grammarExplanation": "Modal fiille Passiv, bir eylemin zorunlu, mümkün veya yasak olduğunu yapan kişiyi öne çıkarmadan ifade eder: Die Tür muss geschlossen werden. Persönliche Daten dürfen nicht weitergegeben werden. Yapı modal fiilin çekimli biçimi + Partizip II + werden mastarıyla kurulur. Günlük dilde man yapısı bazen daha doğrudan olabilir: Man muss die Tür schließen. B1’de her iki seçeneği tanımak resmî talimatları anlamayı kolaylaştırır.",
+    "grammarColumns": [
+      {
+        "header": "Modal",
+        "values": [
+          "müssen",
+          "dürfen",
+          "können",
+          "sollen",
+          "müssen",
+          "dürfen"
+        ]
+      },
+      {
+        "header": "Passiv",
+        "values": [
+          "muss geprüft werden",
+          "darf nicht benutzt werden",
+          "kann beantragt werden",
+          "soll gemeldet werden",
+          "müssen eingehalten werden",
+          "dürfen gespeichert werden"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "zorunluluk",
+          "yasak",
+          "imkân",
+          "tavsiye/kural",
+          "çoğul zorunluluk",
+          "izin"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Vorschrift — yönetmelik / kural",
+      "die Pflicht — yükümlülük",
+      "das Recht — hak",
+      "die Erlaubnis — izin",
+      "der Datenschutz — veri koruma",
+      "die Sicherheit — güvenlik",
+      "die Verantwortung — sorumluluk",
+      "die Ausnahme — istisna",
+      "einhalten — uymak",
+      "beantragen — başvurmak",
+      "genehmigen — onaylamak",
+      "melden — bildirmek",
+      "verboten sein — yasak olmak",
+      "verpflichtet sein — yükümlü olmak",
+      "zulässig — izin verilen",
+      "vertraulich — gizli",
+      "verbindlich — bağlayıcı",
+      "rechtzeitig — zamanında"
+    ],
+    "examples": [
+      {
+        "de": "Persönliche Daten dürfen ohne Zustimmung nicht weitergegeben werden.",
+        "tr": "Kişisel veriler izin olmadan başkasına aktarılamaz."
+      },
+      {
+        "de": "Der Antrag muss spätestens am Freitag eingereicht werden.",
+        "tr": "Başvuru en geç cuma teslim edilmelidir."
+      },
+      {
+        "de": "In diesem Bereich können zusätzliche Informationen angefordert werden.",
+        "tr": "Bu alanda ek bilgiler talep edilebilir."
+      },
+      {
+        "de": "Unfälle sollen sofort der zuständigen Person gemeldet werden.",
+        "tr": "Kazalar hemen sorumlu kişiye bildirilmelidir."
+      },
+      {
+        "de": "Bestimmte Sicherheitsregeln müssen von allen Mitarbeitenden eingehalten werden.",
+        "tr": "Belirli güvenlik kurallarına tüm çalışanlar uymalıdır."
+      },
+      {
+        "de": "Eine Ausnahme darf nur in begründeten Fällen genehmigt werden.",
+        "tr": "Bir istisna yalnızca gerekçeli durumlarda onaylanabilir."
+      }
+    ],
+    "warning": "Modal Passiv’de son iki unsur çoğunlukla Partizip II + werden’dir: muss geprüft werden.",
+    "tip": "Okul, iş yeri veya apartmandan dört kural seç; ikisini man ile, ikisini Modalpassiv ile ifade et ve üslup farkını karşılaştır.",
+    "miniCheck": {
+      "question": "Doğru Modalpassiv hangisidir?",
+      "options": [
+        "Die Unterlagen müssen geprüft werden.",
+        "Die Unterlagen müssen werden geprüft.",
+        "Die Unterlagen haben müssen geprüft."
+      ],
+      "correctAnswer": "Die Unterlagen müssen geprüft werden."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Regel darf nicht ___ werden. (ändern)",
+      "answer": "geändert",
+      "acceptedAnswers": [
+        "geändert"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Der Antrag",
+        "muss",
+        "online",
+        "eingereicht werden."
+      ],
+      "answer": "Der Antrag muss online eingereicht werden."
+    },
+    "translation": {
+      "prompt": "“Bu bilgiler paylaşılmamalıdır.” cümlesini Almancaya çevir.",
+      "answer": "Diese Informationen dürfen nicht weitergegeben werden.",
+      "acceptedAnswers": [
+        "Diese Informationen dürfen nicht weitergegeben werden",
+        "Diese Informationen dürfen nicht weitergegeben werden."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was muss ich mit dem Formular machen? — B: ___",
+      "options": [
+        "Es muss bis Freitag eingereicht werden.",
+        "Es muss einreichen bis Freitag.",
+        "Es wird müssen Freitag."
+      ],
+      "answer": "Es muss bis Freitag eingereicht werden."
+    },
+    "trueFalse": {
+      "prompt": "Modalpassiv’de werden mastarı cümlenin sonunda bulunabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Kural ve hak alanına ait iki kelimeyi seç.",
+      "options": [
+        "die Pflicht",
+        "der Datenschutz",
+        "die Handlung",
+        "die Reise"
+      ],
+      "answers": [
+        "die Pflicht",
+        "der Datenschutz"
+      ]
+    },
+    "summary": [
+      "Modalpassiv",
+      "kurallar ve haklar",
+      "resmî talimat",
+      "man ile karşılaştırma"
+    ]
+  },
+  {
+    "id": "b1-u13",
+    "intro": "Bu ünitede dijitalleşme ve teknolojik değişim üzerine tahminler yapacak; Futur I ile gelecek, varsayım ve plan anlatacak ve bir teknolojinin olası etkilerini gerekçeli ve dengeli biçimde değerlendireceksin.",
+    "goals": [
+      "Teknolojik değişim hakkında tahmin yapmak",
+      "Futur I kurmak",
+      "Geleceğe ilişkin olasılık ifadelerini kullanmak",
+      "Bir teknolojinin yarar ve risklerini tartışmak"
+    ],
+    "grammarTitle": "Futur I: werden + Infinitiv ve tahmin dili",
+    "grammarExplanation": "Futur I, werden fiilinin çekimli biçimi ve cümle sonundaki Infinitiv ile kurulur: Viele Prozesse werden digitaler werden. Günlük Almancada gelecek için Präsens de çok yaygındır; Futur I özellikle tahmin, vurgu veya belirsiz gelecek anlatımında kullanışlıdır. wahrscheinlich, vermutlich, vielleicht ve voraussichtlich gibi zarflar kesinlik derecesini gösterir. Futur I şimdiki zamana ilişkin tahminde de kullanılabilir: Er wird gerade im Meeting sein.",
+    "grammarColumns": [
+      {
+        "header": "Kişi",
+        "values": [
+          "ich",
+          "du",
+          "er/sie",
+          "wir",
+          "ihr",
+          "sie/Sie"
+        ]
+      },
+      {
+        "header": "werden",
+        "values": [
+          "werde",
+          "wirst",
+          "wird",
+          "werden",
+          "werdet",
+          "werden"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "werde lernen",
+          "wirst nutzen",
+          "wird verändern",
+          "werden testen",
+          "werdet sehen",
+          "werden arbeiten"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Digitalisierung — dijitalleşme",
+      "die Automatisierung — otomasyon",
+      "die künstliche Intelligenz — yapay zekâ",
+      "der Datenschutz — veri koruma",
+      "die Innovation — yenilik",
+      "die Entwicklung — gelişme",
+      "die Anwendung — uygulama",
+      "die Auswirkung — etki",
+      "sich verändern — değişmek",
+      "automatisieren — otomatikleştirmek",
+      "ersetzen — yerini almak",
+      "unterstützen — desteklemek",
+      "entwickeln — geliştirmek",
+      "voraussichtlich — öngörüldüğü üzere",
+      "vermutlich — muhtemelen",
+      "wahrscheinlich — büyük olasılıkla",
+      "zukünftig — gelecekte",
+      "digital — dijital"
+    ],
+    "examples": [
+      {
+        "de": "In den nächsten Jahren werden viele Routineaufgaben stärker automatisiert werden.",
+        "tr": "Önümüzdeki yıllarda birçok rutin görev daha fazla otomatikleştirilecek."
+      },
+      {
+        "de": "Wahrscheinlich werden digitale Assistenten in mehr Berufen eingesetzt.",
+        "tr": "Büyük olasılıkla dijital asistanlar daha fazla meslekte kullanılacak."
+      },
+      {
+        "de": "Ich glaube nicht, dass Technologie jede menschliche Entscheidung ersetzen wird.",
+        "tr": "Teknolojinin her insan kararının yerini alacağını düşünmüyorum."
+      },
+      {
+        "de": "Datenschutz wird auch in Zukunft ein wichtiges Thema bleiben.",
+        "tr": "Veri koruma gelecekte de önemli bir konu olmaya devam edecek."
+      },
+      {
+        "de": "Vermutlich werden neue Werkzeuge Arbeit verändern, aber gleichzeitig neue Aufgaben schaffen.",
+        "tr": "Muhtemelen yeni araçlar işi değiştirecek ama aynı zamanda yeni görevler yaratacak."
+      },
+      {
+        "de": "Für mich ist entscheidend, dass technische Systeme verständlich und kontrollierbar bleiben.",
+        "tr": "Benim için teknik sistemlerin anlaşılır ve kontrol edilebilir kalması belirleyicidir."
+      }
+    ],
+    "warning": "Geleceği anlatmak için her zaman Futur I gerekmez. “Morgen arbeite ich zu Hause” günlük dilde doğaldır; Futur I tahmin ve vurguda özellikle yararlıdır.",
+    "tip": "2030’da eğitim veya iş hayatıyla ilgili beş tahmin yaz ve her tahmine wahrscheinlich, vermutlich gibi bir kesinlik ifadesi ekle.",
+    "miniCheck": {
+      "question": "Futur I hangisidir?",
+      "options": [
+        "Wir werden morgen weiterarbeiten.",
+        "Wir arbeiten werden morgen.",
+        "Wir wurden morgen arbeiten."
+      ],
+      "correctAnswer": "Wir werden morgen weiterarbeiten."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Das Thema ___ wahrscheinlich wichtiger werden.",
+      "answer": "wird",
+      "acceptedAnswers": [
+        "wird"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Viele Prozesse",
+        "werden",
+        "sich",
+        "verändern."
+      ],
+      "answer": "Viele Prozesse werden sich verändern."
+    },
+    "translation": {
+      "prompt": "“Muhtemelen daha fazla insan uzaktan çalışacak.” cümlesini Almancaya çevir.",
+      "answer": "Wahrscheinlich werden mehr Menschen im Homeoffice arbeiten.",
+      "acceptedAnswers": [
+        "Wahrscheinlich werden mehr Menschen im Homeoffice arbeiten",
+        "Wahrscheinlich werden mehr Menschen im Homeoffice arbeiten."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Glaubst du, dass diese Technik bleibt? — B: ___",
+      "options": [
+        "Ja, sie wird vermutlich noch wichtiger werden.",
+        "Ja, sie vermutlich wichtiger wurde.",
+        "Sie wird wichtig gestern."
+      ],
+      "answer": "Ja, sie wird vermutlich noch wichtiger werden."
+    },
+    "trueFalse": {
+      "prompt": "Futur I, werden + Infinitiv ile kurulabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Teknolojik değişimle ilgili iki kelimeyi seç.",
+      "options": [
+        "die Digitalisierung",
+        "die Innovation",
+        "die Hausordnung",
+        "die Freundschaft"
+      ],
+      "answers": [
+        "die Digitalisierung",
+        "die Innovation"
+      ]
+    },
+    "summary": [
+      "Futur I",
+      "olasılık zarfları",
+      "dijitalleşme",
+      "gelecek etkilerini tartışma"
+    ]
+  },
+  {
+    "id": "b1-u14",
+    "intro": "Bu ünitede gelir, gider ve büyük satın alma kararlarını konuşacak; Genitiv ile aitlik ve isim grupları kuracak, wegen ve trotz gibi Genitiv edatlarıyla kararların nedenlerini ve koşullarını daha resmî biçimde ifade edeceksin.",
+    "goals": [
+      "Basit bütçe ve harcama planı anlatmak",
+      "Genitiv ile aitlik ilişkisi kurmak",
+      "wegen/trotz ile Genitiv isim grubu kullanmak",
+      "Tüketici kararını mali gerekçelerle açıklamak"
+    ],
+    "grammarTitle": "Genitiv ve wegen / trotz ile isim grupları",
+    "grammarExplanation": "Genitiv B1’de özellikle yazılı ve daha resmî dilde aitlik ve ilişki bildirir: die Kosten des Vertrags, die Laufzeit der Garantie. Maskulin ve nötr isimler çoğunlukla -s/-es alır; artikeller des/eines, feminin ve çoğul der/einer biçimindedir. wegen ve trotz gibi bazı edatlar standart yazı dilinde Genitiv ile sık kullanılır: wegen der hohen Kosten, trotz des Rabatts. Günlük konuşmada farklı varyantlar duyulsa da B1 yazılı üretimde standart biçimleri tanımak yararlıdır.",
+    "grammarColumns": [
+      {
+        "header": "Cinsiyet",
+        "values": [
+          "maskulin",
+          "nötr",
+          "feminin",
+          "çoğul",
+          "maskulin",
+          "feminin"
+        ]
+      },
+      {
+        "header": "Artikel",
+        "values": [
+          "des",
+          "des",
+          "der",
+          "der",
+          "eines",
+          "einer"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "des Vertrags",
+          "des Angebots",
+          "der Rechnung",
+          "der Kosten",
+          "eines Kredits",
+          "einer Entscheidung"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "das Budget — bütçe",
+      "die Ausgabe — gider",
+      "die Einnahme — gelir",
+      "die Rate — taksit",
+      "der Vertrag — sözleşme",
+      "die Laufzeit — süre",
+      "der Kredit — kredi",
+      "die Versicherung — sigorta",
+      "sparen — tasarruf etmek",
+      "ausgeben — harcamak",
+      "sich leisten können — karşılayabilmek",
+      "kündigen — feshetmek",
+      "berechnen — hesaplamak",
+      "monatlich — aylık",
+      "zusätzlich — ek",
+      "finanziell — mali",
+      "langfristig — uzun vadeli",
+      "überschaubar — yönetilebilir / makul"
+    ],
+    "examples": [
+      {
+        "de": "Die monatlichen Kosten des Vertrags sind höher als erwartet.",
+        "tr": "Sözleşmenin aylık masrafları beklenenden daha yüksek."
+      },
+      {
+        "de": "Wegen der zusätzlichen Gebühren habe ich mich gegen das Angebot entschieden.",
+        "tr": "Ek ücretler nedeniyle teklifi reddetmeye karar verdim."
+      },
+      {
+        "de": "Trotz des hohen Rabatts brauche ich das Gerät im Moment nicht.",
+        "tr": "Yüksek indirime rağmen şu anda cihaza ihtiyacım yok."
+      },
+      {
+        "de": "Die Laufzeit der Garantie beträgt zwei Jahre.",
+        "tr": "Garantinin süresi iki yıldır."
+      },
+      {
+        "de": "Vor einer größeren Ausgabe prüfe ich die Bedingungen des Vertrags genau.",
+        "tr": "Büyük bir harcamadan önce sözleşme koşullarını dikkatle incelerim."
+      },
+      {
+        "de": "Ein realistisches Budget hilft dabei, unerwartete Kosten besser einzuplanen.",
+        "tr": "Gerçekçi bir bütçe beklenmeyen masrafları daha iyi planlamaya yardımcı olur."
+      }
+    ],
+    "warning": "Maskulin ve nötr Genitiv isimlerde çoğu zaman -s/-es ekini unutma: des Vertrags, des Jahres.",
+    "tip": "Bir aylık örnek bütçe oluştur; üç Genitiv tamlaması ve wegen/trotz ile iki gerekçeli karar yaz.",
+    "miniCheck": {
+      "question": "Doğru Genitiv ifade hangisidir?",
+      "options": [
+        "die Kosten des Vertrags",
+        "die Kosten dem Vertrag",
+        "die Kosten den Vertrags"
+      ],
+      "correctAnswer": "die Kosten des Vertrags"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Wegen ___ hohen Kosten kündige ich den Vertrag. (die Kosten, Pl.)",
+      "answer": "der",
+      "acceptedAnswers": [
+        "der"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Trotz",
+        "des Rabatts",
+        "kaufe",
+        "ich das Gerät",
+        "nicht."
+      ],
+      "answer": "Trotz des Rabatts kaufe ich das Gerät nicht."
+    },
+    "translation": {
+      "prompt": "“Sözleşmenin süresi iki yıldır.” cümlesini Almancaya çevir.",
+      "answer": "Die Laufzeit des Vertrags beträgt zwei Jahre.",
+      "acceptedAnswers": [
+        "Die Laufzeit des Vertrags beträgt zwei Jahre",
+        "Die Laufzeit des Vertrags beträgt zwei Jahre."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Warum nimmst du das Angebot nicht? — B: ___",
+      "options": [
+        "Wegen der zusätzlichen Kosten ist es für mich zu teuer.",
+        "Wegen die Kosten es teuer.",
+        "Trotz ich Rabatt, Kosten."
+      ],
+      "answer": "Wegen der zusätzlichen Kosten ist es für mich zu teuer."
+    },
+    "trueFalse": {
+      "prompt": "“trotz des Rabatts” standart yazı dilinde Genitiv yapısıdır.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Bütçe alanına ait iki kelimeyi seç.",
+      "options": [
+        "die Ausgabe",
+        "die Einnahme",
+        "die Handlung",
+        "die Initiative"
+      ],
+      "answers": [
+        "die Ausgabe",
+        "die Einnahme"
+      ]
+    },
+    "summary": [
+      "Genitiv",
+      "wegen/trotz",
+      "bütçe",
+      "mali karar gerekçelendirme"
+    ]
+  },
+  {
+    "id": "b1-u15",
+    "intro": "Bu ünitede güncel bir olay veya kişisel deneyimi haber biçiminde aktaracak; Plusquamperfekt ile önce gerçekleşen olayı, Präteritum veya Perfekt ile sonraki gelişmeyi ayırarak zaman sırasını daha kesin göstereceksin.",
+    "goals": [
+      "Bir olayın ana gelişmelerini sıralamak",
+      "Plusquamperfekt kurmak",
+      "nachdem ile geçmişte önce/sonra ilişkisi kurmak",
+      "Kaynak bilgisi ve kişisel yorumu ayırmak"
+    ],
+    "grammarTitle": "Plusquamperfekt ve geçmişte olay sırası",
+    "grammarExplanation": "Plusquamperfekt, geçmişte başka bir olaydan daha önce tamamlanmış eylemi gösterir. haben/sein fiilinin Präteritum biçimi + Partizip II kullanılır: hatte gesehen, war angekommen. “Nachdem die Feuerwehr angekommen war, wurde die Straße wieder geöffnet.” gibi yapılarda önceki olay Plusquamperfekt, sonraki olay Präteritum veya Perfekt olabilir. B1’de bu zaman özellikle haber, anı ve süreç anlatımında olay sırasını netleştirir.",
+    "grammarColumns": [
+      {
+        "header": "Yardımcı",
+        "values": [
+          "hatte",
+          "hatte",
+          "war",
+          "war",
+          "hatten",
+          "waren"
+        ]
+      },
+      {
+        "header": "Partizip",
+        "values": [
+          "gemeldet",
+          "gesehen",
+          "angekommen",
+          "gefahren",
+          "entschieden",
+          "gestartet"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "hatte gemeldet",
+          "hatte gesehen",
+          "war angekommen",
+          "war gefahren",
+          "hatten entschieden",
+          "waren gestartet"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "das Ereignis — olay",
+      "der Bericht — rapor / haber",
+      "der Vorfall — olay / hadise",
+      "der Augenzeuge — görgü tanığı",
+      "die Ursache — neden",
+      "die Folge — sonuç",
+      "die Entwicklung — gelişme",
+      "die Stellungnahme — açıklama / görüş",
+      "beobachten — gözlemlemek",
+      "melden — bildirmek",
+      "bestätigen — doğrulamak",
+      "sich ereignen — meydana gelmek",
+      "reagieren auf — tepki vermek",
+      "nachdem — ...dikten sonra",
+      "zuvor — daha önce",
+      "anschließend — ardından",
+      "unerwartet — beklenmedik",
+      "vorläufig — geçici / şimdilik"
+    ],
+    "examples": [
+      {
+        "de": "Nachdem die Polizei die Straße gesperrt hatte, wurden die Busse umgeleitet.",
+        "tr": "Polis yolu kapattıktan sonra otobüsler başka güzergâha yönlendirildi."
+      },
+      {
+        "de": "Ein Zeuge berichtete, dass er kurz zuvor einen lauten Knall gehört hatte.",
+        "tr": "Bir tanık kısa süre önce yüksek bir patlama sesi duyduğunu bildirdi."
+      },
+      {
+        "de": "Die Veranstaltung begann später, weil ein technisches Problem aufgetreten war.",
+        "tr": "Teknik sorun çıktığı için etkinlik daha geç başladı."
+      },
+      {
+        "de": "Nachdem die Ursache geklärt worden war, konnte der Betrieb wieder aufgenommen werden.",
+        "tr": "Neden açıklığa kavuşturulduktan sonra faaliyet yeniden başlatılabildi."
+      },
+      {
+        "de": "Der erste Bericht enthielt nur vorläufige Informationen.",
+        "tr": "İlk haber yalnızca geçici bilgiler içeriyordu."
+      },
+      {
+        "de": "Später bestätigte die Organisation weitere Einzelheiten in einer offiziellen Stellungnahme.",
+        "tr": "Daha sonra kurum resmî bir açıklamayla başka ayrıntıları doğruladı."
+      }
+    ],
+    "warning": "Plusquamperfekt her geçmiş cümlede gerekli değildir; yalnızca “geçmişten de önce” ilişkisini açıkça göstermek gerektiğinde kullan.",
+    "tip": "Bir olay seç ve dört aşamalı haber notu yaz: önceden ne olmuştu, ana olay neydi, ardından ne oldu, hangi bilgi sonradan doğrulandı?",
+    "miniCheck": {
+      "question": "Plusquamperfekt hangisidir?",
+      "options": [
+        "Er hatte die Nachricht gelesen.",
+        "Er hat die Nachricht lesen.",
+        "Er wurde die Nachricht gelesen."
+      ],
+      "correctAnswer": "Er hatte die Nachricht gelesen."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Nachdem der Zug abgefahren ___, kam die Durchsage.",
+      "answer": "war",
+      "acceptedAnswers": [
+        "war"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Sie",
+        "hatte",
+        "die Information",
+        "zuvor",
+        "bestätigt."
+      ],
+      "answer": "Sie hatte die Information zuvor bestätigt."
+    },
+    "translation": {
+      "prompt": "“Toplantı başlamadan önce e-postayı okumuştum.” cümlesini Almancaya çevir.",
+      "answer": "Ich hatte die E-Mail gelesen, bevor die Besprechung begann.",
+      "acceptedAnswers": [
+        "Ich hatte die E-Mail gelesen, bevor die Besprechung begann",
+        "Ich hatte die E-Mail gelesen, bevor die Besprechung begann."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Warum begann die Veranstaltung später? — B: ___",
+      "options": [
+        "Weil vorher ein technisches Problem aufgetreten war.",
+        "Weil vorher ein Problem auftritt hatte.",
+        "Nachdem Problem, begann später."
+      ],
+      "answer": "Weil vorher ein technisches Problem aufgetreten war."
+    },
+    "trueFalse": {
+      "prompt": "Plusquamperfekt geçmişte daha önce tamamlanan bir eylemi gösterebilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Haber aktarımıyla ilgili iki kelimeyi seç.",
+      "options": [
+        "der Bericht",
+        "die Stellungnahme",
+        "die Kaution",
+        "die WG"
+      ],
+      "answers": [
+        "der Bericht",
+        "die Stellungnahme"
+      ]
+    },
+    "summary": [
+      "Plusquamperfekt",
+      "olay sıralama",
+      "haber aktarımı",
+      "kaynak ve yorum ayrımı"
+    ]
+  },
+  {
+    "id": "b1-u16",
+    "intro": "Bu ünitede eğitim, iş, seyahat veya kişisel gelişim hedeflerini daha ayrıntılı anlatacak; damit, um ... zu, ohne ... zu ve statt ... zu yapılarıyla amaç ve alternatif eylemleri bağlantılı ifade edeceksin.",
+    "goals": [
+      "Uzun vadeli hedefleri açıklamak",
+      "damit ve um ... zu arasındaki farkı kullanmak",
+      "ohne ... zu ile yapılmayan eşzamanlı eylemi belirtmek",
+      "statt ... zu ile alternatif davranışı ifade etmek"
+    ],
+    "grammarTitle": "Amaç ve alternatif: damit / um ... zu / ohne ... zu / statt ... zu",
+    "grammarExplanation": "um ... zu aynı öznenin amacını anlatır: Ich lerne täglich, um die Prüfung zu bestehen. damit özellikle iki bölümün öznesi farklı olduğunda kullanışlıdır: Ich schreibe alles auf, damit mein Kollege die Informationen findet. ohne ... zu bir eylemin yapılmadığını, statt ... zu ise beklenen veya alternatif eylem yerine başka bir şey yapıldığını gösterir. Bu yapılar B1’de plan ve davranışları daha bağlantılı ifade etmeyi sağlar.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "um ... zu",
+          "damit",
+          "ohne ... zu",
+          "statt ... zu",
+          "um ... zu",
+          "damit"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "aynı özne/amaç",
+          "farklı özne/amaç",
+          "yapmadan",
+          "yerine",
+          "amaç",
+          "amaç"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "um Erfahrung zu sammeln",
+          "damit alle informiert sind",
+          "ohne zu warten",
+          "statt zu fahren",
+          "um Zeit zu sparen",
+          "damit du planen kannst"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "das Ziel — hedef",
+      "die Entscheidung — karar",
+      "die Planung — planlama",
+      "die Möglichkeit — imkân",
+      "die Voraussetzung — ön koşul",
+      "die Priorität — öncelik",
+      "der Fortschritt — ilerleme",
+      "die Alternative — alternatif",
+      "erreichen — ulaşmak",
+      "umsetzen — hayata geçirmek",
+      "sich vornehmen — niyet etmek",
+      "durchhalten — sürdürmek",
+      "aufgeben — vazgeçmek",
+      "sich entscheiden für — karar vermek",
+      "langfristig — uzun vadeli",
+      "schrittweise — adım adım",
+      "konkret — somut",
+      "erreichbar — ulaşılabilir"
+    ],
+    "examples": [
+      {
+        "de": "Ich plane feste Lernzeiten, um mein Ziel schrittweise zu erreichen.",
+        "tr": "Hedefime adım adım ulaşmak için sabit çalışma saatleri planlıyorum."
+      },
+      {
+        "de": "Ich schreibe meinen Plan auf, damit ich meine Fortschritte besser überprüfen kann.",
+        "tr": "İlerlememi daha iyi kontrol edebilmek için planımı yazıyorum."
+      },
+      {
+        "de": "Er hat die Entscheidung getroffen, ohne lange zu warten.",
+        "tr": "Uzun süre beklemeden karar verdi."
+      },
+      {
+        "de": "Statt jeden Tag alles neu zu planen, arbeite ich mit festen Prioritäten.",
+        "tr": "Her gün her şeyi yeniden planlamak yerine sabit önceliklerle çalışıyorum."
+      },
+      {
+        "de": "Wir teilen die Aufgaben, damit jede Person genau weiß, wofür sie verantwortlich ist.",
+        "tr": "Herkes neden sorumlu olduğunu tam bilsin diye görevleri paylaşıyoruz."
+      },
+      {
+        "de": "Ein realistisches Ziel ist leichter durchzuhalten als ein zu großer Plan.",
+        "tr": "Gerçekçi bir hedefi sürdürmek aşırı büyük bir plandan daha kolaydır."
+      }
+    ],
+    "warning": "um ... zu için ana ve infinitiv bölümünün öznesi aynı olmalıdır. Özneler farklıysa damit daha güvenlidir.",
+    "tip": "Altı aylık bir hedef seç; amaç, araç, alternatif ve kaçınmak istediğin davranışı dört farklı yapıyla yaz.",
+    "miniCheck": {
+      "question": "Özneler farklıysa hangi yapı uygundur?",
+      "options": [
+        "damit",
+        "um ... zu",
+        "ohne ... zu"
+      ],
+      "correctAnswer": "damit"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Ich schreibe es auf, ___ ich nichts vergesse.",
+      "answer": "damit",
+      "acceptedAnswers": [
+        "damit"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Statt",
+        "lange zu warten,",
+        "hat",
+        "er",
+        "angerufen."
+      ],
+      "answer": "Statt lange zu warten, hat er angerufen."
+    },
+    "translation": {
+      "prompt": "“Sınavı geçmek için her gün çalışıyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich lerne jeden Tag, um die Prüfung zu bestehen.",
+      "acceptedAnswers": [
+        "Ich lerne jeden Tag, um die Prüfung zu bestehen",
+        "Ich lerne jeden Tag, um die Prüfung zu bestehen."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Warum schreibst du alle Termine in den Kalender? — B: ___",
+      "options": [
+        "Damit ich nichts Wichtiges vergesse.",
+        "Um ich nichts vergesse.",
+        "Ohne ich vergessen."
+      ],
+      "answer": "Damit ich nichts Wichtiges vergesse."
+    },
+    "trueFalse": {
+      "prompt": "statt ... zu bir eylem yerine başka bir eylemin yapıldığını gösterebilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Planlama alanına ait iki kelimeyi seç.",
+      "options": [
+        "die Priorität",
+        "die Alternative",
+        "die Emission",
+        "die Rezension"
+      ],
+      "answers": [
+        "die Priorität",
+        "die Alternative"
+      ]
+    },
+    "summary": [
+      "damit/um ... zu",
+      "ohne/statt ... zu",
+      "hedef planlama",
+      "amaç ve alternatif"
+    ]
+  },
+  {
+    "id": "b1-u17",
+    "intro": "Bu ünitede kurum, şirket veya hizmet sağlayıcıyla resmî yazışma yapacak; sık kullanılan edatlı fiilleri ve wo(r)-/da(r)- yapılarının B1 düzeyindeki kullanımını taleplerde, şikâyetlerde ve açıklamalarda uygulayacaksın.",
+    "goals": [
+      "Resmî talep veya şikâyet metni oluşturmak",
+      "Fiilleri doğru edatla kullanmak",
+      "wo(r)- / da(r)- yapılarıyla şeylere gönderme yapmak",
+      "Uygun hitap, gerekçe ve çözüm talebi kullanmak"
+    ],
+    "grammarTitle": "Verben mit Präpositionen ve wo(r)- / da(r)- yapıları",
+    "grammarExplanation": "B1’de edatlı fiiller metnin doğal ve doğru görünmesinde önemlidir: sich beschweren über, bitten um, sich beziehen auf, teilnehmen an, warten auf, sich informieren über. Şeylere ilişkin sorularda worüber, worauf, woran gibi wo(r)- biçimleri; önce sözü geçen şeye gönderme yaparken darüber, darauf, daran gibi da(r)- biçimleri kullanılır. İnsanlar için ise “über wen, auf wen, mit wem” gibi edat + kişi soru zamiri tercih edilir.",
+    "grammarColumns": [
+      {
+        "header": "Fiil",
+        "values": [
+          "sich beschweren",
+          "bitten",
+          "sich beziehen",
+          "warten",
+          "teilnehmen",
+          "sich informieren"
+        ]
+      },
+      {
+        "header": "Edat",
+        "values": [
+          "über + Akk.",
+          "um + Akk.",
+          "auf + Akk.",
+          "auf + Akk.",
+          "an + Dat.",
+          "über + Akk."
+        ]
+      },
+      {
+        "header": "Soru/Referans",
+        "values": [
+          "worüber/darüber",
+          "worum/darum",
+          "worauf/darauf",
+          "worauf/darauf",
+          "woran/daran",
+          "worüber/darüber"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Anfrage — bilgi talebi",
+      "die Beschwerde — şikâyet",
+      "die Bestätigung — onay",
+      "die Frist — son tarih",
+      "die Rückerstattung — geri ödeme",
+      "die Bearbeitung — işlem süreci",
+      "die Referenznummer — referans numarası",
+      "die Zuständigkeit — yetki / sorumluluk alanı",
+      "sich beziehen auf — atıfta bulunmak",
+      "bitten um — rica etmek",
+      "sich beschweren über — şikâyet etmek",
+      "warten auf — beklemek",
+      "sich informieren über — bilgi edinmek",
+      "beantragen — başvurmak",
+      "bestätigen — onaylamak",
+      "zuständig — sorumlu / yetkili",
+      "schriftlich — yazılı",
+      "fristgerecht — süresinde"
+    ],
+    "examples": [
+      {
+        "de": "Ich beziehe mich auf Ihre Nachricht vom 3. August.",
+        "tr": "3 Ağustos tarihli mesajınıza atıfta bulunuyorum."
+      },
+      {
+        "de": "Hiermit möchte ich mich über die verspätete Lieferung beschweren.",
+        "tr": "Bu yolla geciken teslimat hakkında şikâyette bulunmak istiyorum."
+      },
+      {
+        "de": "Worauf muss ich bei der Antragstellung besonders achten?",
+        "tr": "Başvuru yaparken özellikle neye dikkat etmeliyim?"
+      },
+      {
+        "de": "Darauf habe ich in meiner letzten E-Mail bereits hingewiesen.",
+        "tr": "Buna son e-postamda zaten dikkat çekmiştim."
+      },
+      {
+        "de": "Ich bitte Sie um eine schriftliche Bestätigung bis Freitag.",
+        "tr": "Cuma gününe kadar yazılı onay rica ediyorum."
+      },
+      {
+        "de": "Sollte eine Rückerstattung nicht möglich sein, bitte ich um einen alternativen Lösungsvorschlag.",
+        "tr": "Geri ödeme mümkün değilse alternatif çözüm önerisi rica ediyorum."
+      }
+    ],
+    "warning": "wo(r)-/da(r)- biçimleri çoğunlukla şey ve durumlar içindir. Kişiler için mit wem, über wen, auf wen gibi biçimler kullan.",
+    "tip": "Bir teslimat, kurs veya abonelik sorunu seç; resmî şikâyet girişini, gerekçeyi ve istediğin çözümü 140–180 kelimeyle yaz.",
+    "miniCheck": {
+      "question": "“Neyi bekliyorsunuz?” (şey) hangisidir?",
+      "options": [
+        "Worauf warten Sie?",
+        "Auf wen warten Sie?",
+        "Was warten Sie auf?"
+      ],
+      "correctAnswer": "Worauf warten Sie?"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Ich beziehe mich ___ Ihre E-Mail vom Montag.",
+      "answer": "auf",
+      "acceptedAnswers": [
+        "auf"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Ich",
+        "bitte Sie",
+        "um",
+        "eine schriftliche Bestätigung."
+      ],
+      "answer": "Ich bitte Sie um eine schriftliche Bestätigung."
+    },
+    "translation": {
+      "prompt": "“Geciken teslimat hakkında şikâyet etmek istiyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich möchte mich über die verspätete Lieferung beschweren.",
+      "acceptedAnswers": [
+        "Ich möchte mich über die verspätete Lieferung beschweren",
+        "Ich möchte mich über die verspätete Lieferung beschweren."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Worauf beziehen Sie sich in Ihrer Anfrage? — B: ___",
+      "options": [
+        "Auf die Rechnung vom letzten Monat.",
+        "Über die Rechnung warten.",
+        "Darüber Person Rechnung."
+      ],
+      "answer": "Auf die Rechnung vom letzten Monat."
+    },
+    "trueFalse": {
+      "prompt": "“darauf” daha önce sözü geçen bir şeye gönderme yapabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Resmî yazışmayla ilgili iki kelimeyi seç.",
+      "options": [
+        "die Anfrage",
+        "die Referenznummer",
+        "die Handlung",
+        "die Wiese"
+      ],
+      "answers": [
+        "die Anfrage",
+        "die Referenznummer"
+      ]
+    },
+    "summary": [
+      "edatlı fiiller",
+      "wo(r)-/da(r)-",
+      "resmî şikâyet",
+      "talep ve çözüm dili"
+    ]
+  },
+  {
+    "id": "b1-u18",
+    "intro": "Bu son ünitede B1 boyunca geliştirdiğin bağlantılı anlatım, görüş gerekçelendirme, resmî iletişim, haber ve okuma ile konuşma becerilerini tek bir bağımsız iletişim paketinde birleştireceksin.",
+    "goals": [
+      "Tanıdık bir konu hakkında bağlantılı B1 metni üretmek",
+      "Görüşü gerekçe ve örneklerle savunmak",
+      "Bir partnerle plan yapıp uzlaşmak",
+      "Kısa sunum yapıp sorulara cevap vermek"
+    ],
+    "grammarTitle": "B1 sentezi: bağlantı, gerekçe, karşıtlık ve metin organizasyonu",
+    "grammarExplanation": "B1 sonunda amaç tek tek gramer kurallarını göstermek değil, anlaşılır ve bağlantılı iletişim kurmaktır. Bir metin veya konuşmada weil/obwohl, deshalb/trotzdem, Relativsatz, Passiv, Konjunktiv II, zaman bağlaçları ve amaç yapılarından yalnızca iletişim için gerekli olanları seçmek gerekir. Metin organizasyonu için zunächst, außerdem, einerseits, andererseits, deshalb, trotzdem, zum Beispiel ve insgesamt gibi işaretleyiciler düşünce akışını görünür kılar. B1 üretiminde gerekçe ve kısa örnek sunmak özellikle önemlidir.",
+    "grammarColumns": [
+      {
+        "header": "İşlev",
+        "values": [
+          "giriş",
+          "ek bilgi",
+          "neden",
+          "karşıtlık",
+          "örnek",
+          "sonuç"
+        ]
+      },
+      {
+        "header": "İfade",
+        "values": [
+          "zunächst",
+          "außerdem",
+          "weil/deshalb",
+          "obwohl/trotzdem",
+          "zum Beispiel",
+          "insgesamt"
+        ]
+      },
+      {
+        "header": "Amaç",
+        "values": [
+          "konuyu açmak",
+          "düşünce eklemek",
+          "gerekçelendirmek",
+          "dengelemek",
+          "somutlaştırmak",
+          "özetlemek"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der Standpunkt — bakış açısı",
+      "die Begründung — gerekçe",
+      "das Beispiel — örnek",
+      "der Zusammenhang — bağlantı",
+      "die Lösung — çözüm",
+      "der Vorschlag — öneri",
+      "der Kompromiss — uzlaşma",
+      "die Zusammenfassung — özet",
+      "begründen — gerekçelendirmek",
+      "zustimmen — katılmak",
+      "widersprechen — karşı çıkmak",
+      "vorschlagen — önermek",
+      "zusammenfassen — özetlemek",
+      "erläutern — açıklamak",
+      "nachvollziehbar — anlaşılır / takip edilebilir",
+      "sachlich — nesnel",
+      "überzeugend — ikna edici",
+      "strukturiert — yapılandırılmış"
+    ],
+    "examples": [
+      {
+        "de": "Zunächst möchte ich kurz erklären, warum das Thema für mich wichtig ist.",
+        "tr": "Önce konunun benim için neden önemli olduğunu kısaca açıklamak istiyorum."
+      },
+      {
+        "de": "Einerseits spart die Lösung Zeit, andererseits entstehen zusätzliche Kosten.",
+        "tr": "Bir yandan çözüm zaman kazandırıyor, diğer yandan ek maliyet doğuyor."
+      },
+      {
+        "de": "Ich bin dafür, weil die Vorteile im Alltag deutlich zu erkennen sind.",
+        "tr": "Günlük hayatta avantajlar açıkça görüldüğü için destekliyorum."
+      },
+      {
+        "de": "Trotzdem sollte man auch die möglichen Nachteile berücksichtigen.",
+        "tr": "Buna rağmen olası dezavantajlar da dikkate alınmalı."
+      },
+      {
+        "de": "Ein konkretes Beispiel dafür ist unsere Erfahrung im letzten Semester.",
+        "tr": "Buna somut bir örnek geçen dönemki deneyimimizdir."
+      },
+      {
+        "de": "Insgesamt würde ich deshalb einen schrittweisen Test vorschlagen.",
+        "tr": "Bu nedenle genel olarak adım adım bir test önermeyi tercih ederim."
+      }
+    ],
+    "warning": "B1 üretiminde mümkün olan en karmaşık cümleyi kurmaya çalışma; net paragraf yapısı, doğru bağlaç ve anlaşılır gerekçe daha değerlidir.",
+    "tip": "Bir gündelik konu seç; 160–190 kelimelik forum yazısı, 90 saniyelik sunum ve partnerle iki dakikalık planlama olmak üzere üç farklı üretim yap.",
+    "miniCheck": {
+      "question": "B1 düzeyinde iyi yapılandırılmış görüş hangisidir?",
+      "options": [
+        "Einerseits ist die Lösung praktisch, andererseits kostet sie mehr. Insgesamt bin ich trotzdem dafür.",
+        "Praktisch. Kosten. Ich dafür.",
+        "Obwohl praktisch deshalb andererseits."
+      ],
+      "correctAnswer": "Einerseits ist die Lösung praktisch, andererseits kostet sie mehr. Insgesamt bin ich trotzdem dafür."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: ___ möchte ich die wichtigsten Punkte zusammenfassen.",
+      "answer": "Insgesamt",
+      "acceptedAnswers": [
+        "Insgesamt"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Einerseits",
+        "spart die Lösung Zeit,",
+        "andererseits",
+        "kostet sie mehr."
+      ],
+      "answer": "Einerseits spart die Lösung Zeit, andererseits kostet sie mehr."
+    },
+    "translation": {
+      "prompt": "“Genel olarak bu çözümü öneriyorum çünkü avantajları daha fazla.” cümlesini Almancaya çevir.",
+      "answer": "Insgesamt empfehle ich diese Lösung, weil die Vorteile überwiegen.",
+      "acceptedAnswers": [
+        "Insgesamt empfehle ich diese Lösung, weil die Vorteile überwiegen",
+        "Insgesamt empfehle ich diese Lösung, weil die Vorteile überwiegen."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Sollen wir die Veranstaltung online oder vor Ort machen? — B: ___",
+      "options": [
+        "Ich würde eine gemischte Lösung vorschlagen, damit mehr Leute teilnehmen können.",
+        "Ich gemischt vorschlagen, Leute können.",
+        "Online weil vor Ort trotzdem."
+      ],
+      "answer": "Ich würde eine gemischte Lösung vorschlagen, damit mehr Leute teilnehmen können."
+    },
+    "trueFalse": {
+      "prompt": "B1’de görüşü kısa gerekçe ve örnekle desteklemek beklenen bir beceridir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Tartışma ve planlama için iki kelimeyi seç.",
+      "options": [
+        "der Kompromiss",
+        "die Begründung",
+        "die Kaution",
+        "die Emission"
+      ],
+      "answers": [
+        "der Kompromiss",
+        "die Begründung"
+      ]
+    },
+    "summary": [
+      "B1 metin organizasyonu",
+      "görüş ve gerekçe",
+      "sunum",
+      "birlikte planlama"
+    ]
+  }
+]

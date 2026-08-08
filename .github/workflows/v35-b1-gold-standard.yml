@@ -1,0 +1,28 @@
+name: Deutschimo V35 B1 Gold Standard
+
+on:
+  push:
+    branches: [v35-staging]
+  pull_request:
+    branches: [main, v35-staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  b1-content-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: npm run validate:v33
+      - run: npm run validate:v34
+      - run: npm run validate:v35
+      - run: npm run typecheck
+      - run: npm run build

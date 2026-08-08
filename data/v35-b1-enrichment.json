@@ -1,0 +1,2991 @@
+[
+  {
+    "id": "b1-u01",
+    "cefrCanDo": [
+      "Tanıdık kişiler ve sosyal ilişkiler hakkında bağlantılı konuşabilirim.",
+      "Bir kişinin özelliklerini örneklerle açıklayabilirim.",
+      "Bir sosyal sorun hakkında gerekçe sunabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "B1 düzeyinde insanlar hakkında konuşurken kalıp etiketler yerine somut davranış ve kişisel deneyim üzerinden örnek vermek daha doğal ve daha adildir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Lena",
+        "de": "Wie verstehst du dich mit deinem neuen Team?",
+        "tr": "Yeni ekibinle nasıl anlaşıyorsun?"
+      },
+      {
+        "speaker": "Paul",
+        "de": "Ziemlich gut. Besonders mit dem Kollegen, der neben mir sitzt.",
+        "tr": "Oldukça iyi. Özellikle yanımda oturan iş arkadaşıyla."
+      },
+      {
+        "speaker": "Lena",
+        "de": "Was ist er für ein Typ?",
+        "tr": "Nasıl biri?"
+      },
+      {
+        "speaker": "Paul",
+        "de": "Sehr ruhig und zuverlässig. Wenn ich eine Frage habe, nimmt er sich Zeit.",
+        "tr": "Çok sakin ve güvenilir. Bir sorum olduğunda vakit ayırıyor."
+      },
+      {
+        "speaker": "Lena",
+        "de": "Und gibt es auch etwas, das schwierig ist?",
+        "tr": "Zor olan bir şey de var mı?"
+      },
+      {
+        "speaker": "Paul",
+        "de": "Wir arbeiten sehr unterschiedlich. Ich plane gern früh, während er vieles spontan entscheidet.",
+        "tr": "Çok farklı çalışıyoruz. Ben erken planlamayı severim, o ise birçok şeyi anlık kararlaştırır."
+      },
+      {
+        "speaker": "Lena",
+        "de": "Könnt ihr darüber offen sprechen?",
+        "tr": "Bunun hakkında açıkça konuşabiliyor musunuz?"
+      },
+      {
+        "speaker": "Paul",
+        "de": "Ja, und genau das ist für mich ein Zeichen für gute Zusammenarbeit.",
+        "tr": "Evet, benim için iyi iş birliğinin işareti tam da bu."
+      }
+    ],
+    "reading": {
+      "de": "In einem Nachbarschaftsprojekt treffen sich Menschen, die erst seit kurzer Zeit im Viertel wohnen, mit Personen, die dort schon lange leben. Einmal im Monat organisieren sie einen offenen Abend. Dabei geht es nicht nur darum, neue Kontakte zu knüpfen. Die Teilnehmer helfen sich auch bei kleinen Alltagsfragen, zum Beispiel bei der Suche nach einem Handwerker oder beim Verstehen eines Briefes. Besonders geschätzt werden Personen, die gut zuhören, geduldig erklären und unterschiedliche Meinungen akzeptieren. So entstehen Kontakte, die im Alltag tatsächlich nützlich bleiben.",
+      "tr": "Bir mahalle projesinde mahalleye yeni taşınan kişiler uzun süredir orada yaşayanlarla buluşuyor. Ayda bir açık akşam düzenliyorlar. Amaç yalnızca yeni bağlantılar kurmak değil. Katılımcılar usta arama veya bir mektubu anlama gibi küçük günlük konularda da birbirlerine yardım ediyor. Özellikle iyi dinleyen, sabırla açıklayan ve farklı görüşleri kabul eden kişiler takdir ediliyor. Böylece günlük hayatta gerçekten yararlı kalan ilişkiler oluşuyor."
+    },
+    "listening": {
+      "de": "Eine Frau erzählt in einem Podcast: „Früher dachte ich, dass gute Freundschaften vor allem gemeinsame Interessen brauchen. Heute sehe ich das anders. Mir sind Menschen wichtig, mit denen ich ehrlich sprechen kann und die auch dann ruhig bleiben, wenn wir unterschiedlicher Meinung sind. Seit meine beste Freundin in eine andere Stadt gezogen ist, telefonieren wir seltener, aber unsere Gespräche sind oft intensiver geworden. Wir erzählen nicht nur, was passiert ist, sondern auch, wie es uns damit geht.“",
+      "tr": "Bir kadın podcast’te şöyle anlatıyor: “Eskiden iyi arkadaşlıkların her şeyden önce ortak ilgi alanlarına ihtiyaç duyduğunu düşünürdüm. Bugün farklı görüyorum. Dürüstçe konuşabildiğim ve farklı düşündüğümüzde bile sakin kalan insanlar benim için önemli. En iyi arkadaşım başka şehre taşındığından beri daha az telefonlaşıyoruz ama konuşmalarımız çoğu zaman daha yoğun oldu. Yalnız ne olduğunu değil, bunun bizi nasıl hissettirdiğini de anlatıyoruz.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u01-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Projenin katılımcıları kimler?",
+        "options": [
+          "Mahalleye yeni gelenler ve uzun süredir yaşayanlar.",
+          "Sadece öğrenciler.",
+          "Sadece bina yöneticileri."
+        ],
+        "correctAnswer": "Mahalleye yeni gelenler ve uzun süredir yaşayanlar.",
+        "explanation": "Metin iki grubu da açıkça tanımlar."
+      },
+      {
+        "id": "b1-u01-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Buluşmalar ne sıklıkla yapılıyor?",
+        "options": [
+          "Ayda bir.",
+          "Her gün.",
+          "Yılda bir."
+        ],
+        "correctAnswer": "Ayda bir.",
+        "explanation": "Einmal im Monat ifadesi geçer."
+      },
+      {
+        "id": "b1-u01-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Katılımcılar hangi konuda yardımlaşıyor?",
+        "options": [
+          "Günlük küçük sorunlarda.",
+          "Yalnızca spor yarışlarında.",
+          "Sadece kira ödemesinde."
+        ],
+        "correctAnswer": "Günlük küçük sorunlarda.",
+        "explanation": "Metin Handwerker arama ve mektup anlama örnekleri verir."
+      },
+      {
+        "id": "b1-u01-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi özellik özellikle değerli görülüyor?",
+        "options": [
+          "İyi dinlemek ve farklı görüşleri kabul etmek.",
+          "Çok yüksek sesle konuşmak.",
+          "Her konuda aynı düşünmek."
+        ],
+        "correctAnswer": "İyi dinlemek ve farklı görüşleri kabul etmek.",
+        "explanation": "Son bölüm bu davranışları vurgular."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u01-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı eskiden ne düşünüyordu?",
+        "options": [
+          "Ortak ilgi alanlarının çok önemli olduğunu.",
+          "Arkadaşlığın gereksiz olduğunu.",
+          "Yalnız yaşamanın daha iyi olduğunu."
+        ],
+        "correctAnswer": "Ortak ilgi alanlarının çok önemli olduğunu.",
+        "explanation": "İlk cümlelerde eski düşüncesini açıklar."
+      },
+      {
+        "id": "b1-u01-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bugün hangi insanları önemsiyor?",
+        "options": [
+          "Dürüst konuşabildiği ve farklı görüşte sakin kalanları.",
+          "Sadece aynı hobileri olanları.",
+          "Yalnızca aynı şehirde yaşayanları."
+        ],
+        "correctAnswer": "Dürüst konuşabildiği ve farklı görüşte sakin kalanları.",
+        "explanation": "Podcast’te bu iki özellik belirtilir."
+      },
+      {
+        "id": "b1-u01-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "En iyi arkadaşı nereye taşındı?",
+        "options": [
+          "Başka bir şehre.",
+          "Başka bir ülkeye kesin olarak.",
+          "Yan daireye."
+        ],
+        "correctAnswer": "Başka bir şehre.",
+        "explanation": "in eine andere Stadt gezogen denir."
+      },
+      {
+        "id": "b1-u01-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İletişimleri nasıl değişti?",
+        "options": [
+          "Daha seyrek ama daha yoğun konuşuyorlar.",
+          "Her gün daha kısa konuşuyorlar.",
+          "Artık hiç konuşmuyorlar."
+        ],
+        "correctAnswer": "Daha seyrek ama daha yoğun konuşuyorlar.",
+        "explanation": "Son bölümde bu karşılaştırma yapılır."
+      }
+    ],
+    "writingPrompt": "150–180 kelimeyle “İyi bir arkadaşlıkta benim için ne önemlidir?” konulu forum yazısı yaz. En az iki Relativsatz, bir karşıtlık ve somut örnek kullan.",
+    "speakingPrompt": "90 saniyelik kısa sunum yap: iyi bir ekip arkadaşı veya arkadaş hangi özelliklere sahip olmalı? En az üç özelliği örnekle açıkla.",
+    "realLifeMission": "Yeni bir ekipte tanıştığın kişiyi başka bir arkadaşına üç Relativsatz ve bir kişisel değerlendirmeyle anlat.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u02",
+    "cefrCanDo": [
+      "Konut ilanının önemli ayrıntılarını anlayabilirim.",
+      "WG içinde bir sorun ve çözümü bağlantılı anlatabilirim.",
+      "Konutla ilgili resmî veya yarı resmî mesaj yazabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "WG ve apartman yaşamında ortak alan, temizlik, sessizlik ve masraf paylaşımı gibi konuları erken ve açık biçimde konuşmak çatışmaları azaltabilir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mara",
+        "de": "Hast du das Zimmer in der Lindenstraße besichtigt?",
+        "tr": "Lindenstraße’deki odayı gördün mü?"
+      },
+      {
+        "speaker": "Noah",
+        "de": "Ja. Es ist ein helles, ziemlich großes Zimmer mit einem kleinen Balkon.",
+        "tr": "Evet. Küçük balkonlu aydınlık, oldukça büyük bir oda."
+      },
+      {
+        "speaker": "Mara",
+        "de": "Wie sind die Mitbewohner?",
+        "tr": "Ev arkadaşları nasıl?"
+      },
+      {
+        "speaker": "Noah",
+        "de": "Freundlich, aber sie haben einen sehr genauen Putzplan.",
+        "tr": "Dostça ama çok ayrıntılı bir temizlik planları var."
+      },
+      {
+        "speaker": "Mara",
+        "de": "Stört dich das?",
+        "tr": "Bu seni rahatsız ediyor mu?"
+      },
+      {
+        "speaker": "Noah",
+        "de": "Eigentlich nicht. Mir ist eine saubere gemeinsame Küche wichtig.",
+        "tr": "Aslında hayır. Temiz ortak mutfak benim için önemli."
+      },
+      {
+        "speaker": "Mara",
+        "de": "Und die Miete?",
+        "tr": "Peki kira?"
+      },
+      {
+        "speaker": "Noah",
+        "de": "Mit den Nebenkosten ist sie etwas höher als geplant, aber die Lage ist wirklich gut.",
+        "tr": "Yan giderlerle planladığımdan biraz yüksek ama konum gerçekten iyi."
+      }
+    ],
+    "reading": {
+      "de": "Eine Dreier-WG sucht ab Oktober eine neue Person für ein möbliertes Zimmer. Die Wohnung liegt in einer ruhigen Seitenstraße, aber die Universität ist mit dem Fahrrad in zehn Minuten erreichbar. Neben der Miete fallen monatliche Nebenkosten an. Wichtig ist der WG, dass gemeinsame Räume nach der Nutzung ordentlich hinterlassen werden. Einmal pro Woche wird zusammen gekocht, die Teilnahme ist aber freiwillig. Haustiere sind nach Absprache mit der Vermieterin möglich. Wer Interesse hat, soll kurz etwas über den eigenen Alltag und die Erwartungen an das Zusammenleben schreiben.",
+      "tr": "Üç kişilik bir WG ekimden itibaren eşyalı oda için yeni kişi arıyor. Ev sakin bir yan sokakta ancak üniversiteye bisikletle on dakikada ulaşılabiliyor. Kiraya ek aylık yan giderler var. WG için ortak alanların kullanımdan sonra düzenli bırakılması önemli. Haftada bir birlikte yemek yapılıyor ama katılım gönüllü. Evcil hayvanlar ev sahibesiyle anlaşmaya göre mümkün. İlgilenen kişinin günlük hayatı ve ortak yaşam beklentileri hakkında kısaca yazması isteniyor."
+    },
+    "listening": {
+      "de": "Eine Mieterin spricht auf die Mailbox der Hausverwaltung: „Guten Tag, hier ist Sophie Brandt aus der Wohnung 3B. Seit drei Tagen funktioniert die Heizung im kleinen Schlafzimmer nicht richtig. Der große Heizkörper im Wohnzimmer ist in Ordnung. Könnten Sie bitte jemanden schicken? Am Mittwoch bin ich ab 15 Uhr zu Hause, am Donnerstag den ganzen Vormittag. Sie erreichen mich auch per E-Mail. Falls beide Termine nicht passen, schicken Sie mir bitte zwei andere Vorschläge.“",
+      "tr": "Bir kiracı bina yönetiminin telesekreterine konuşuyor: “İyi günler, 3B dairesinden Sophie Brandt. Üç gündür küçük yatak odasındaki kalorifer düzgün çalışmıyor. Salondaki büyük radyatör düzgün. Birini gönderebilir misiniz? Çarşamba 15’ten sonra, perşembe tüm öğleden önce evdeyim. Bana e-postayla da ulaşabilirsiniz. İki zaman da uygun değilse lütfen iki başka öneri gönderin.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u02-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Oda ne zamandan itibaren boş?",
+        "options": [
+          "Ekimden itibaren.",
+          "Yarın.",
+          "Ocaktan itibaren."
+        ],
+        "correctAnswer": "Ekimden itibaren.",
+        "explanation": "ab Oktober bilgisi verilir."
+      },
+      {
+        "id": "b1-u02-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Üniversiteye ulaşım nasıl?",
+        "options": [
+          "Bisikletle on dakika.",
+          "Yürüyerek bir saat.",
+          "Sadece arabayla."
+        ],
+        "correctAnswer": "Bisikletle on dakika.",
+        "explanation": "Metinde mit dem Fahrrad in zehn Minuten denir."
+      },
+      {
+        "id": "b1-u02-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ortak alanlarla ilgili beklenti nedir?",
+        "options": [
+          "Kullanımdan sonra düzenli bırakılmaları.",
+          "Her zaman kilitli olmaları.",
+          "Sadece hafta sonu kullanılmaları."
+        ],
+        "correctAnswer": "Kullanımdan sonra düzenli bırakılmaları.",
+        "explanation": "Bu kural açıkça belirtilir."
+      },
+      {
+        "id": "b1-u02-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlgilenen kişiden ne isteniyor?",
+        "options": [
+          "Günlük hayatı ve beklentisi hakkında kısa bilgi.",
+          "Peşin bir yıllık kira.",
+          "Evcil hayvan getirmesi."
+        ],
+        "correctAnswer": "Günlük hayatı ve beklentisi hakkında kısa bilgi.",
+        "explanation": "Son cümlede bu istek açıkça yazılıdır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u02-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi odada ısıtma sorunu var?",
+        "options": [
+          "Küçük yatak odasında.",
+          "Salonda.",
+          "Mutfakta."
+        ],
+        "correctAnswer": "Küçük yatak odasında.",
+        "explanation": "kleinen Schlafzimmer ifadesi geçer."
+      },
+      {
+        "id": "b1-u02-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sorun kaç gündür var?",
+        "options": [
+          "Üç gündür.",
+          "Bir haftadır.",
+          "Bugün başladı."
+        ],
+        "correctAnswer": "Üç gündür.",
+        "explanation": "Seit drei Tagen denir."
+      },
+      {
+        "id": "b1-u02-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Salondaki radyatör nasıl?",
+        "options": [
+          "Çalışıyor.",
+          "Bozuk.",
+          "Sökülmüş."
+        ],
+        "correctAnswer": "Çalışıyor.",
+        "explanation": "ist in Ordnung denir."
+      },
+      {
+        "id": "b1-u02-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Uygun zamanlar olmazsa ne istiyor?",
+        "options": [
+          "İki alternatif öneri.",
+          "Randevunun iptali.",
+          "Yeni daire."
+        ],
+        "correctAnswer": "İki alternatif öneri.",
+        "explanation": "Son cümlede zwei andere Vorschläge denir."
+      }
+    ],
+    "writingPrompt": "130–170 kelimeyle bir WG ilanına cevap yaz veya evdeki bir sorun için bina yönetimine mesaj gönder. Konut özellikleri, durum ve istediğin çözüm açık olsun.",
+    "speakingPrompt": "Bir WG görüşmesinde 90 saniye konuş: oda beklentin, ortak yaşam alışkanlığın ve senin için önemli iki kural.",
+    "realLifeMission": "Bir WG adayıyla kısa görüşme hazırla; üç sıfatlı isim grubu ve bir ortak yaşam kuralı kullan.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u03",
+    "cefrCanDo": [
+      "Bir iş ilanındaki şart ve görevleri anlayabilirim.",
+      "Kısa profesyonel başvuru metni yazabilirim.",
+      "İş görüşmesinde deneyim ve hedeflerimi gerekçelendirebilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Başvuru metninde çok genel “çalışkanım” ifadeleri yerine somut deneyim, görev ve öğrenme hedefi vermek iletişimi daha güçlü hale getirir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Personalreferentin",
+        "de": "Warum interessieren Sie sich für diese Stelle?",
+        "tr": "Bu pozisyonla neden ilgileniyorsunuz?"
+      },
+      {
+        "speaker": "Bewerber",
+        "de": "Ich möchte stärker mit Kunden arbeiten und gleichzeitig meine technischen Kenntnisse nutzen.",
+        "tr": "Müşterilerle daha çok çalışmak ve aynı zamanda teknik bilgilerimi kullanmak istiyorum."
+      },
+      {
+        "speaker": "Personalreferentin",
+        "de": "Welche Erfahrung bringen Sie mit?",
+        "tr": "Hangi deneyimi getiriyorsunuz?"
+      },
+      {
+        "speaker": "Bewerber",
+        "de": "In meinem Praktikum war ich dafür zuständig, Anfragen zu bearbeiten und Termine zu koordinieren.",
+        "tr": "Stajımda talepleri işlemek ve randevuları koordine etmekten sorumluydum."
+      },
+      {
+        "speaker": "Personalreferentin",
+        "de": "Was möchten Sie bei uns lernen?",
+        "tr": "Bizde ne öğrenmek istiyorsunuz?"
+      },
+      {
+        "speaker": "Bewerber",
+        "de": "Ich hoffe, mehr Verantwortung zu übernehmen und Projekte selbstständiger zu planen.",
+        "tr": "Daha fazla sorumluluk almayı ve projeleri daha bağımsız planlamayı umuyorum."
+      },
+      {
+        "speaker": "Personalreferentin",
+        "de": "Wann könnten Sie anfangen?",
+        "tr": "Ne zaman başlayabilirsiniz?"
+      },
+      {
+        "speaker": "Bewerber",
+        "de": "Ab dem ersten Oktober wäre ich verfügbar.",
+        "tr": "1 Ekimden itibaren müsait olurum."
+      }
+    ],
+    "reading": {
+      "de": "Ein mittelständisches Unternehmen sucht eine Assistenz für sein Projektteam. Zu den Aufgaben gehören die Vorbereitung von Besprechungen, die Kommunikation mit Kunden und die Pflege von Projektdaten. Erwartet werden gute Deutschkenntnisse, sicherer Umgang mit gängigen Office-Programmen und die Bereitschaft, neue Aufgaben zu übernehmen. Erste Berufserfahrung ist wünschenswert, aber keine Voraussetzung. Die Stelle ist zunächst auf zwei Jahre befristet. Nach einer Einarbeitungsphase können Mitarbeitende außerdem an internen Weiterbildungen teilnehmen und schrittweise zusätzliche Aufgaben übernehmen.",
+      "tr": "Orta ölçekli bir şirket proje ekibine asistan arıyor. Görevler arasında toplantı hazırlığı, müşterilerle iletişim ve proje verilerinin bakımı var. İyi Almanca, yaygın ofis programlarını güvenli kullanma ve yeni görev almaya istek bekleniyor. İlk iş deneyimi tercih nedeni ama şart değil. Pozisyon ilk aşamada iki yıllık süreli. İşe alışma döneminden sonra çalışanlar iç eğitimlere katılıp adım adım ek görev alabiliyor."
+    },
+    "listening": {
+      "de": "Ein Bewerber bereitet sich auf ein Gespräch vor: „Ich habe mir die Website der Firma angesehen, um die aktuellen Projekte kennenzulernen. Außerdem habe ich drei Beispiele vorbereitet, in denen ich schwierige Situationen im Team gelöst habe. Mir ist wichtig, nicht nur über meine Stärken zu sprechen, sondern auch konkrete Erfahrungen zu nennen. Am Ende möchte ich nach den Weiterbildungsmöglichkeiten fragen. Ich werde auch eine kurze Frage zur Zusammenarbeit zwischen den Abteilungen vorbereiten.“",
+      "tr": "Bir aday görüşmeye hazırlanıyor: “Güncel projeleri tanımak için şirketin sitesine baktım. Ayrıca ekipte zor durumları çözdüğüm üç örnek hazırladım. Benim için yalnızca güçlü yanlarımdan söz etmek değil, somut deneyimler de vermek önemli. Sonunda eğitim olanaklarını soracağım. Bölümler arası iş birliği hakkında kısa bir soru da hazırlayacağım.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u03-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İşin görevlerinden biri nedir?",
+        "options": [
+          "Toplantıları hazırlamak.",
+          "Makine üretmek.",
+          "Sadece seyahat etmek."
+        ],
+        "correctAnswer": "Toplantıları hazırlamak.",
+        "explanation": "Vorbereitung von Besprechungen görev olarak verilir."
+      },
+      {
+        "id": "b1-u03-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi beceri bekleniyor?",
+        "options": [
+          "Office programlarını güvenli kullanmak.",
+          "Üç yabancı dil zorunluluğu.",
+          "Ehliyet zorunluluğu."
+        ],
+        "correctAnswer": "Office programlarını güvenli kullanmak.",
+        "explanation": "İlanda açıkça belirtilir."
+      },
+      {
+        "id": "b1-u03-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İş deneyimi zorunlu mu?",
+        "options": [
+          "Hayır, tercih nedeni.",
+          "Evet, en az on yıl.",
+          "Hiç önemli değil ve yasak."
+        ],
+        "correctAnswer": "Hayır, tercih nedeni.",
+        "explanation": "wünschenswert, aber keine Voraussetzung denir."
+      },
+      {
+        "id": "b1-u03-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İşe alışma sonrası hangi imkân var?",
+        "options": [
+          "İç eğitimlere katılmak.",
+          "Otomatik terfi.",
+          "Sınırsız izin."
+        ],
+        "correctAnswer": "İç eğitimlere katılmak.",
+        "explanation": "Son bölüm Weiterbildungen imkânını verir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u03-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Aday neden şirket sitesine baktı?",
+        "options": [
+          "Güncel projeleri tanımak için.",
+          "İşten vazgeçmek için.",
+          "Adresini değiştirmek için."
+        ],
+        "correctAnswer": "Güncel projeleri tanımak için.",
+        "explanation": "um die aktuellen Projekte kennenzulernen denir."
+      },
+      {
+        "id": "b1-u03-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kaç ekip örneği hazırladı?",
+        "options": [
+          "Üç.",
+          "Bir.",
+          "Beş."
+        ],
+        "correctAnswer": "Üç.",
+        "explanation": "drei Beispiele denir."
+      },
+      {
+        "id": "b1-u03-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Güçlü yönlerden başka ne vermek istiyor?",
+        "options": [
+          "Somut deneyimler.",
+          "Sadece maaş talebi.",
+          "Kişisel fotoğraflar."
+        ],
+        "correctAnswer": "Somut deneyimler.",
+        "explanation": "konkrete Erfahrungen ifadesi geçer."
+      },
+      {
+        "id": "b1-u03-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ek olarak ne hakkında soru hazırlayacak?",
+        "options": [
+          "Bölümler arası iş birliği.",
+          "Şirket logosunun rengi.",
+          "Kantin menüsü."
+        ],
+        "correctAnswer": "Bölümler arası iş birliği.",
+        "explanation": "Son cümlede Zusammenarbeit zwischen den Abteilungen denir."
+      }
+    ],
+    "writingPrompt": "140–190 kelimelik kısa başvuru e-postası yaz: pozisyona ilgi, iki somut deneyim, öğrenme hedefi ve uygun başlangıç tarihi olsun.",
+    "speakingPrompt": "İş görüşmesi simülasyonu: 2 dakika boyunca kendini, ilgili deneyimini ve neden başvurduğunu anlat; ardından iki soru hazırla.",
+    "realLifeMission": "Bir gerçek iş/staj ilanındaki üç şartı Almanca özetle ve her biri için kendi durumunu bir cümleyle değerlendir.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u04",
+    "cefrCanDo": [
+      "Kendi öğrenme yöntemimi değerlendirebilirim.",
+      "Bir yöntemin nasıl işe yaradığını açıklayabilirim.",
+      "Öğrenme sorununa çözüm önerileri sunabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Öğrenmede tek bir “doğru yöntem” yoktur; düzenli geri bildirim ve ölçülebilir küçük hedefler, yöntemin gerçekten işe yarayıp yaramadığını görmeye yardımcı olur."
+    },
+    "dialogue": [
+      {
+        "speaker": "Nina",
+        "de": "Du hast in letzter Zeit große Fortschritte beim Sprechen gemacht. Was hast du verändert?",
+        "tr": "Son zamanlarda konuşmada büyük ilerleme kaydettin. Neyi değiştirdin?"
+      },
+      {
+        "speaker": "Felix",
+        "de": "Ich übe kürzer, aber häufiger.",
+        "tr": "Daha kısa ama daha sık çalışıyorum."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Was genau machst du?",
+        "tr": "Tam olarak ne yapıyorsun?"
+      },
+      {
+        "speaker": "Felix",
+        "de": "Ich nehme mich beim Sprechen auf und höre die Aufnahme später noch einmal.",
+        "tr": "Konuşurken kendimi kaydedip daha sonra kaydı tekrar dinliyorum."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Hilft das wirklich?",
+        "tr": "Gerçekten faydalı mı?"
+      },
+      {
+        "speaker": "Felix",
+        "de": "Ja. Dadurch, dass ich mich selbst höre, bemerke ich wiederkehrende Fehler schneller.",
+        "tr": "Evet. Kendimi dinleyerek tekrar eden hataları daha hızlı fark ediyorum."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Und wie lernst du neue Wörter?",
+        "tr": "Yeni kelimeleri nasıl öğreniyorsun?"
+      },
+      {
+        "speaker": "Felix",
+        "de": "Indem ich sie sofort in einem eigenen Beispiel benutze.",
+        "tr": "Onları hemen kendi örneğimde kullanarak."
+      }
+    ],
+    "reading": {
+      "de": "Eine Lerngruppe testet vier Wochen lang verschiedene Methoden. In der ersten Woche lernen die Teilnehmer nur mit Wortlisten. In der zweiten Woche schreiben sie zu jedem neuen Wort einen eigenen Satz. Danach üben sie mit kurzen Gesprächen und zum Schluss wiederholen sie die wichtigsten Wörter mit Abstand. Die Gruppe berichtet, dass Wörter aus eigenen Beispielen deutlich besser im Gedächtnis bleiben. Gleichzeitig zeigt sich, dass regelmäßige kurze Wiederholungen für viele leichter durchzuhalten sind. Die Gruppe entscheidet deshalb, beide Methoden künftig miteinander zu verbinden.",
+      "tr": "Bir çalışma grubu dört hafta boyunca farklı yöntemleri deniyor. İlk hafta yalnız kelime listeleriyle çalışıyorlar. İkinci hafta her yeni kelimeye kendi cümlelerini yazıyorlar. Sonra kısa konuşmalarla çalışıp sonunda önemli kelimeleri aralıklı tekrar ediyorlar. Grup kendi örneklerindeki kelimelerin hafızada daha iyi kaldığını bildiriyor. Aynı zamanda düzenli kısa tekrarların çoğu kişi için daha sürdürülebilir olduğu görülüyor. Bu yüzden iki yöntemi birleştirmeye karar veriyorlar."
+    },
+    "listening": {
+      "de": "Ein Sprachtrainer erklärt: „Wenn Sie bei einem längeren Text jedes unbekannte Wort nachschlagen, verlieren Sie schnell den Zusammenhang. Versuchen Sie zuerst, die Hauptidee zu verstehen. Markieren Sie danach nur Wörter, die mehrfach vorkommen oder für das Thema besonders wichtig sind. Dadurch lesen Sie flüssiger und können Ihre Aufmerksamkeit besser auf den Inhalt richten. Erst nach dem ersten Lesen lohnt es sich, einzelne wichtige Wörter genauer zu prüfen.“",
+      "tr": "Bir dil eğitmeni şöyle açıklıyor: “Uzun bir metinde bilmediğiniz her kelimeye bakarsanız bağlantıyı çabuk kaybedersiniz. Önce ana fikri anlamaya çalışın. Sonra yalnızca birkaç kez geçen veya konu için özellikle önemli kelimeleri işaretleyin. Böylece daha akıcı okur ve dikkatinizi içeriğe daha iyi yöneltebilirsiniz. Ancak ilk okumadan sonra bazı önemli kelimelere ayrıntılı bakmak faydalıdır.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u04-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk hafta hangi yöntem deneniyor?",
+        "options": [
+          "Sadece kelime listeleri.",
+          "Yalnız film izleme.",
+          "Sadece konuşma."
+        ],
+        "correctAnswer": "Sadece kelime listeleri.",
+        "explanation": "Metin ilk haftayı açıkça tanımlar."
+      },
+      {
+        "id": "b1-u04-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci hafta ne yapılıyor?",
+        "options": [
+          "Her kelimeyle özgün cümle yazılıyor.",
+          "Kelime çalışılmıyor.",
+          "Sadece sınav yapılıyor."
+        ],
+        "correctAnswer": "Her kelimeyle özgün cümle yazılıyor.",
+        "explanation": "zweiten Woche kısmında belirtilir."
+      },
+      {
+        "id": "b1-u04-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi kelimeler daha iyi hatırlanıyor?",
+        "options": [
+          "Kendi örneklerinde kullanılanlar.",
+          "Sadece uzun olanlar.",
+          "Yalnız isimler."
+        ],
+        "correctAnswer": "Kendi örneklerinde kullanılanlar.",
+        "explanation": "Grubun sonucu bunu söyler."
+      },
+      {
+        "id": "b1-u04-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Grup sonunda neye karar veriyor?",
+        "options": [
+          "İki başarılı yöntemi birleştirmeye.",
+          "Çalışmayı bırakmaya.",
+          "Sadece sözlük kullanmaya."
+        ],
+        "correctAnswer": "İki başarılı yöntemi birleştirmeye.",
+        "explanation": "Son cümlede yöntemlerin birleştirileceği belirtilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u04-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Her bilinmeyen kelimeye bakmanın riski nedir?",
+        "options": [
+          "Metnin bağlantısını kaybetmek.",
+          "Daha hızlı okumak.",
+          "Daha çok dinlemek."
+        ],
+        "correctAnswer": "Metnin bağlantısını kaybetmek.",
+        "explanation": "Zusammenhang verlieren denir."
+      },
+      {
+        "id": "b1-u04-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk hedef ne olmalı?",
+        "options": [
+          "Ana fikri anlamak.",
+          "Tüm kelimeleri çevirmek.",
+          "Metni ezberlemek."
+        ],
+        "correctAnswer": "Ana fikri anlamak.",
+        "explanation": "Hauptidee verstehen önerilir."
+      },
+      {
+        "id": "b1-u04-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi kelimeler işaretlenmeli?",
+        "options": [
+          "Tekrarlanan veya önemli olanlar.",
+          "Hepsi.",
+          "Sadece ilk kelime."
+        ],
+        "correctAnswer": "Tekrarlanan veya önemli olanlar.",
+        "explanation": "Trainer iki ölçüt verir."
+      },
+      {
+        "id": "b1-u04-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ayrıntılı kelime kontrolü ne zaman öneriliyor?",
+        "options": [
+          "İlk okumadan sonra.",
+          "Metne başlamadan önce.",
+          "Hiçbir zaman."
+        ],
+        "correctAnswer": "İlk okumadan sonra.",
+        "explanation": "Son cümlede nach dem ersten Lesen denir."
+      }
+    ],
+    "writingPrompt": "140–180 kelimeyle kendi Almanca çalışma yöntemini değerlendir: işe yarayan iki yöntem, işe yaramayan bir yöntem ve nedenleri.",
+    "speakingPrompt": "90 saniyelik “Ben nasıl öğreniyorum?” sunumu yap. En az iki indem/dadurch-dass yapısı ve bir somut örnek kullan.",
+    "realLifeMission": "Bir haftalık çalışma deneyini tasarla ve başarıyı nasıl ölçeceğini Almanca üç maddeyle açıkla.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u05",
+    "cefrCanDo": [
+      "Haber ve yorum metinlerinin ana fikrini anlayabilirim.",
+      "Bir görüşü başka bir görüşle karşılaştırabilirim.",
+      "Kendi medya kullanımımı gerekçelendirebilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "B1 medya okuryazarlığında hedef her içeriğe şüpheyle yaklaşmak değil; kaynak, tarih, bağlam ve farklı haber kanallarını karşılaştırarak daha bilinçli okumaktır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mia",
+        "de": "Hast du den Artikel über die neue Verkehrsregel gelesen?",
+        "tr": "Yeni trafik kuralıyla ilgili makaleyi okudun mu?"
+      },
+      {
+        "speaker": "Ben",
+        "de": "Ja, aber ich habe danach noch eine zweite Quelle gesucht.",
+        "tr": "Evet ama sonra ikinci bir kaynak daha aradım."
+      },
+      {
+        "speaker": "Mia",
+        "de": "Warum?",
+        "tr": "Neden?"
+      },
+      {
+        "speaker": "Ben",
+        "de": "Die Überschrift klang sehr dramatisch, obwohl die eigentliche Änderung ziemlich klein ist.",
+        "tr": "Başlık çok dramatik geliyordu, oysa gerçek değişiklik oldukça küçük."
+      },
+      {
+        "speaker": "Mia",
+        "de": "In den Kommentaren sind die Leute trotzdem sehr aufgeregt.",
+        "tr": "Yorumlarda insanlar yine de çok heyecanlı."
+      },
+      {
+        "speaker": "Ben",
+        "de": "Stimmt. Während einige von einem großen Problem sprechen, halten andere die Regel für sinnvoll.",
+        "tr": "Doğru. Bazıları büyük sorundan söz ederken diğerleri kuralı mantıklı buluyor."
+      },
+      {
+        "speaker": "Mia",
+        "de": "Was denkst du?",
+        "tr": "Sen ne düşünüyorsun?"
+      },
+      {
+        "speaker": "Ben",
+        "de": "Ich möchte erst sehen, wie die Regel in der Praxis funktioniert.",
+        "tr": "Önce kuralın pratikte nasıl işlediğini görmek istiyorum."
+      }
+    ],
+    "reading": {
+      "de": "Eine lokale Zeitung berichtet über eine geplante autofreie Zone in der Innenstadt. Die Stadt erklärt, dass Busse häufiger fahren und zusätzliche Fahrradständer gebaut werden sollen. Einige Geschäftsleute befürchten, dass weniger Kunden spontan ins Zentrum kommen. Andere erwarten dagegen eine ruhigere Umgebung und mehr Fußgänger. Der Artikel nennt sowohl die geplanten Maßnahmen als auch die Kritik, weist aber darauf hin, dass das Projekt zunächst nur sechs Monate getestet wird. Danach sollen Verkehr, Besucherzahlen und Rückmeldungen gemeinsam ausgewertet werden.",
+      "tr": "Yerel gazete şehir merkezinde planlanan araçsız bölgeyi haber yapıyor. Belediye otobüslerin daha sık çalışacağını ve ek bisiklet parklarının yapılacağını açıklıyor. Bazı işletmeler daha az müşterinin merkeze geleceğinden endişeli. Diğerleri ise daha sakin çevre ve daha fazla yaya bekliyor. Makale hem planlanan önlemleri hem eleştirileri veriyor, ancak projenin önce yalnızca altı ay test edileceğini belirtiyor. Sonra trafik, ziyaretçi sayısı ve geri bildirimler birlikte değerlendirilecek."
+    },
+    "listening": {
+      "de": "In einer Radiosendung diskutieren zwei Gäste über Nachrichten-Apps. Eine Journalistin sagt, dass personalisierte Meldungen praktisch sind, weil Nutzer schneller Themen finden, die sie interessieren. Ein Medienforscher warnt jedoch davor, nur solche Inhalte zu lesen. Dadurch könnten andere Perspektiven fehlen. Beide sind sich einig, dass Nutzer gelegentlich bewusst verschiedene Quellen öffnen sollten. Außerdem empfehlen sie, bei überraschenden Meldungen auf Datum und ursprüngliche Quelle zu achten.",
+      "tr": "Bir radyo programında iki konuk haber uygulamalarını tartışıyor. Bir gazeteci kişiselleştirilmiş haberlerin pratik olduğunu, çünkü kullanıcıların ilgilendikleri konuları daha hızlı bulduğunu söylüyor. Bir medya araştırmacısı ise yalnız böyle içerikleri okumaya karşı uyarıyor. Bu şekilde başka bakış açıları eksik kalabilir. İkisi de kullanıcıların ara sıra bilinçli biçimde farklı kaynaklar açması gerektiğinde hemfikir. Ayrıca şaşırtıcı haberlerde tarih ve ilk kaynağa dikkat etmeyi öneriyorlar."
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u05-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Planlanan proje nedir?",
+        "options": [
+          "Şehir merkezinde araçsız bölge.",
+          "Yeni havaalanı.",
+          "Ücretsiz konut."
+        ],
+        "correctAnswer": "Şehir merkezinde araçsız bölge.",
+        "explanation": "İlk cümlede proje açıklanır."
+      },
+      {
+        "id": "b1-u05-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Belediye hangi iki önlemi söylüyor?",
+        "options": [
+          "Daha sık otobüs ve bisiklet parkı.",
+          "Yeni otoyol ve ücretsiz taksi.",
+          "Sadece park ücretini artırma."
+        ],
+        "correctAnswer": "Daha sık otobüs ve bisiklet parkı.",
+        "explanation": "İki somut önlem listelenir."
+      },
+      {
+        "id": "b1-u05-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bazı işletmeler neden endişeli?",
+        "options": [
+          "Daha az spontane müşteri gelebilir.",
+          "Daha fazla yaya olabilir.",
+          "Otobüsler sıklaşacak."
+        ],
+        "correctAnswer": "Daha az spontane müşteri gelebilir.",
+        "explanation": "Geschäftsleute bu noktayı befürchten."
+      },
+      {
+        "id": "b1-u05-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Testten sonra neler değerlendirilecek?",
+        "options": [
+          "Trafik, ziyaretçi sayısı ve geri bildirim.",
+          "Sadece hava.",
+          "Yalnız bina fiyatı."
+        ],
+        "correctAnswer": "Trafik, ziyaretçi sayısı ve geri bildirim.",
+        "explanation": "Son cümlede üç ölçüt listelenir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u05-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Gazeteci kişiselleştirilmiş haberleri neden pratik buluyor?",
+        "options": [
+          "İlgi alanlarını daha hızlı bulduruyor.",
+          "Tüm haberleri kaldırıyor.",
+          "İnternet gerektirmiyor."
+        ],
+        "correctAnswer": "İlgi alanlarını daha hızlı bulduruyor.",
+        "explanation": "weil cümlesi gerekçeyi verir."
+      },
+      {
+        "id": "b1-u05-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Araştırmacının uyarısı nedir?",
+        "options": [
+          "Yalnız kişiselleştirilmiş içerik okumamak.",
+          "Haber uygulamasını hiç kullanmamak.",
+          "Sadece tek gazeteyi okumak."
+        ],
+        "correctAnswer": "Yalnız kişiselleştirilmiş içerik okumamak.",
+        "explanation": "nur solche Inhalte uyarısı vardır."
+      },
+      {
+        "id": "b1-u05-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bunun riski ne?",
+        "options": [
+          "Başka bakış açıları eksik kalabilir.",
+          "Telefon bozulur.",
+          "Haber sayısı artar."
+        ],
+        "correctAnswer": "Başka bakış açıları eksik kalabilir.",
+        "explanation": "andere Perspektiven fehlen denir."
+      },
+      {
+        "id": "b1-u05-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Şaşırtıcı haberlerde neye bakılması öneriliyor?",
+        "options": [
+          "Tarih ve ilk kaynağa.",
+          "Yalnız yorum sayısına.",
+          "Sadece resme."
+        ],
+        "correctAnswer": "Tarih ve ilk kaynağa.",
+        "explanation": "Son cümlede Datum und ursprüngliche Quelle denir."
+      }
+    ],
+    "writingPrompt": "150–190 kelimelik forum yazısı: “Haberleri sosyal medyadan takip etmek yeterli mi?” Görüş, iki gerekçe, karşı görüş ve sonuç ekle.",
+    "speakingPrompt": "2 dakikalık kısa sunum: Haber kaynağı seçerken hangi üç ölçüte dikkat ediyorsun? Bir örnek ver.",
+    "realLifeMission": "Aynı güncel konuyla ilgili iki farklı başlığı karşılaştırıp hangi bilgileri doğrulamak istediğini Almanca yaz.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u06",
+    "cefrCanDo": [
+      "Bir ürün seçimini ölçütlerle gerekçelendirebilirim.",
+      "Reklamdaki iddiaları eleştirel değerlendirebilirim.",
+      "Basit reklam veya ürün incelemesi yazabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Bilinçli tüketimde sadece indirim oranına değil, toplam fiyat, garanti, iade koşulu, kullanım ihtiyacı ve ürün ömrüne birlikte bakmak önemlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Clara",
+        "de": "Hast du dich schon für einen neuen Kopfhörer entschieden?",
+        "tr": "Yeni kulaklığa karar verdin mi?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Noch nicht. Es gibt zwei Modelle, die beide interessant sind.",
+        "tr": "Henüz değil. İki model var, ikisi de ilginç."
+      },
+      {
+        "speaker": "Clara",
+        "de": "Was ist der Unterschied?",
+        "tr": "Fark ne?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Das erste ist sowohl leichter als auch günstiger. Das zweite hat aber die längere Garantie.",
+        "tr": "Birincisi hem daha hafif hem ucuz. İkincisinin ise garantisi daha uzun."
+      },
+      {
+        "speaker": "Clara",
+        "de": "Brauchst du wirklich alle Funktionen?",
+        "tr": "Gerçekten tüm özelliklere ihtiyacın var mı?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Genau das frage ich mich. Ich möchte nicht nur auf die Werbung achten, sondern auf meinen tatsächlichen Bedarf.",
+        "tr": "Tam da bunu düşünüyorum. Yalnız reklama değil gerçek ihtiyacıma bakmak istiyorum."
+      },
+      {
+        "speaker": "Clara",
+        "de": "Dann würde ich die Bewertungen vergleichen.",
+        "tr": "O zaman değerlendirmeleri karşılaştırırdım."
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ja, und auch prüfen, wie einfach man das Gerät reparieren kann.",
+        "tr": "Evet, ayrıca cihazın ne kadar kolay tamir edilebildiğini de kontrol edeceğim."
+      }
+    ],
+    "reading": {
+      "de": "Ein Verbraucherportal hat drei Kaffeemaschinen getestet. Modell A ist am günstigsten und verbraucht wenig Strom, hat aber nur eine kurze Garantie. Modell B kostet mehr, lässt sich dafür leichter reinigen und reparieren. Modell C bietet nicht nur viele Programme, sondern auch eine App-Steuerung. Im Test zeigte sich jedoch, dass viele Nutzer diese Zusatzfunktionen kaum verwenden. Das Portal empfiehlt deshalb, zuerst den eigenen Bedarf zu klären und erst danach Preise zu vergleichen. Zusätzlich sollte man prüfen, ob Ersatzteile verfügbar sind.",
+      "tr": "Bir tüketici portalı üç kahve makinesini test etti. A modeli en ucuz ve az elektrik tüketiyor ama garantisi kısa. B daha pahalı ancak temizliği ve tamiri daha kolay. C yalnız çok program değil, uygulama kontrolü de sunuyor. Testte birçok kullanıcının bu ek işlevleri neredeyse kullanmadığı görüldü. Portal önce ihtiyacı belirleyip sonra fiyat karşılaştırmayı öneriyor. Ayrıca yedek parçaların bulunup bulunmadığı da kontrol edilmeli."
+    },
+    "listening": {
+      "de": "Eine Kundin berichtet: „Ich habe einen Rucksack im Sonderangebot gekauft. Der Preis war verlockend, aber nach zwei Wochen ist ein Reißverschluss kaputtgegangen. Im Laden wollte man mir zunächst nur einen Gutschein geben. Ich habe auf die Garantie hingewiesen und schließlich einen Ersatz bekommen. Seitdem lese ich vor dem Kauf genauer, welche Rückgabe- und Garantiebedingungen gelten. Bei teureren Produkten schaue ich außerdem nach, ob Reparaturen angeboten werden.“",
+      "tr": "Bir müşteri anlatıyor: “İndirimde sırt çantası aldım. Fiyat cazipti ama iki hafta sonra fermuar bozuldu. Mağaza önce sadece hediye çeki vermek istedi. Garantiye dikkat çektim ve sonunda değişim aldım. O zamandan beri almadan önce iade ve garanti koşullarını daha dikkatli okuyorum. Pahalı ürünlerde ayrıca tamir hizmeti sunulup sunulmadığına bakıyorum.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u06-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "A modelinin avantajı nedir?",
+        "options": [
+          "Ucuz ve az enerji tüketiyor.",
+          "En uzun garanti.",
+          "En fazla uygulama."
+        ],
+        "correctAnswer": "Ucuz ve az enerji tüketiyor.",
+        "explanation": "İki avantaj ilk bölümde verilir."
+      },
+      {
+        "id": "b1-u06-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B modelinin özelliği nedir?",
+        "options": [
+          "Temizliği ve tamiri daha kolay.",
+          "En ucuz model.",
+          "Uygulama zorunlu."
+        ],
+        "correctAnswer": "Temizliği ve tamiri daha kolay.",
+        "explanation": "dafür leichter reinigen und reparieren denir."
+      },
+      {
+        "id": "b1-u06-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "C modelinin ek özelliği nedir?",
+        "options": [
+          "Uygulama kontrolü.",
+          "Ücretsiz garanti.",
+          "Hiç program yok."
+        ],
+        "correctAnswer": "Uygulama kontrolü.",
+        "explanation": "App-Steuerung bilgisi vardır."
+      },
+      {
+        "id": "b1-u06-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Portal ek olarak neyi kontrol etmeyi öneriyor?",
+        "options": [
+          "Yedek parça bulunabilirliğini.",
+          "Sadece rengi.",
+          "Satıcının logosunu."
+        ],
+        "correctAnswer": "Yedek parça bulunabilirliğini.",
+        "explanation": "Son cümle Ersatzteile konusunu ekler."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u06-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Müşteri ne satın aldı?",
+        "options": [
+          "Sırt çantası.",
+          "Kahve makinesi.",
+          "Telefon."
+        ],
+        "correctAnswer": "Sırt çantası.",
+        "explanation": "Dinleme metninde Rucksack kelimesi açıkça geçer."
+      },
+      {
+        "id": "b1-u06-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sorun ne zaman çıktı?",
+        "options": [
+          "İki hafta sonra.",
+          "Bir yıl sonra.",
+          "Aynı gün."
+        ],
+        "correctAnswer": "İki hafta sonra.",
+        "explanation": "nach zwei Wochen ifadesi vardır."
+      },
+      {
+        "id": "b1-u06-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Mağaza önce ne teklif etti?",
+        "options": [
+          "Hediye çeki.",
+          "Nakit iade.",
+          "Yeni ürün."
+        ],
+        "correctAnswer": "Hediye çeki.",
+        "explanation": "zunächst nur einen Gutschein denir."
+      },
+      {
+        "id": "b1-u06-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Pahalı ürünlerde artık neyi de araştırıyor?",
+        "options": [
+          "Tamir hizmetini.",
+          "Sadece reklamı.",
+          "Paket rengini."
+        ],
+        "correctAnswer": "Tamir hizmetini.",
+        "explanation": "Son cümlede Reparaturen angeboten werden denir."
+      }
+    ],
+    "writingPrompt": "140–180 kelimeyle bir ürün incelemesi yaz: kullanım amacı, iki avantaj, iki dezavantaj ve kime önerip önermediğin.",
+    "speakingPrompt": "İki ürün arasında karar verme rolü: 2 dakika içinde fiyat, kalite, garanti ve ihtiyaç açısından karşılaştırıp seçim yap.",
+    "realLifeMission": "Gerçek bir ürün alımında kullanacağın dört karar ölçütünü Almanca çift bağlaçlarla yaz.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u07",
+    "cefrCanDo": [
+      "Bir seyahat sorununu olay sırasıyla anlatabilirim.",
+      "Ulaşım hizmetinden çözüm veya bilgi isteyebilirim.",
+      "Geçmişteki olayları zaman bağlaçlarıyla ilişkilendirebilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Yolculuk sorununda sefer numarası, saat, bilet türü ve yaşanan sorunu sıralı anlatmak müşteri hizmetiyle çözümü kolaylaştırır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Reisende",
+        "de": "Guten Abend. Unser Anschluss nach Salzburg ist weg.",
+        "tr": "İyi akşamlar. Salzburg bağlantımız kaçtı."
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Welchen Zug hatten Sie vorher?",
+        "tr": "Öncesinde hangi trendeydiniz?"
+      },
+      {
+        "speaker": "Reisende",
+        "de": "Den Regionalzug aus Passau. Nachdem wir angekommen waren, war der Anschluss schon abgefahren.",
+        "tr": "Passau’dan bölgesel tren. Biz vardıktan sonra bağlantı treni çoktan kalkmıştı."
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Der nächste Zug fährt in einer Stunde.",
+        "tr": "Sonraki tren bir saat içinde kalkıyor."
+      },
+      {
+        "speaker": "Reisende",
+        "de": "Müssen wir neue Tickets kaufen?",
+        "tr": "Yeni bilet almamız gerekiyor mu?"
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Nein. Ihre Fahrkarten bleiben gültig.",
+        "tr": "Hayır. Biletleriniz geçerli kalıyor."
+      },
+      {
+        "speaker": "Reisende",
+        "de": "Können wir irgendwo warten?",
+        "tr": "Bir yerde bekleyebilir miyiz?"
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Ja, der Warteraum neben Gleis 2 ist noch geöffnet.",
+        "tr": "Evet, 2. peron yanındaki bekleme salonu hâlâ açık."
+      }
+    ],
+    "reading": {
+      "de": "Eine Gruppe wollte am Samstag zu einem Konzert nach Innsbruck fahren. Bevor sie losfuhr, prüfte sie die Verbindung in der App. Unterwegs musste der Zug jedoch wegen einer technischen Störung länger stehen. Während die Reisenden warteten, wurde zunächst keine genaue Weiterfahrtzeit genannt. Nachdem die Gruppe den Anschluss verpasst hatte, wandte sie sich an das Servicezentrum. Dort wurden die Tickets kostenlos auf eine spätere Verbindung umgebucht. Weil die neue Ankunftszeit sehr spät war, informierte die Gruppe außerdem ihre Unterkunft.",
+      "tr": "Bir grup cumartesi Innsbruck’taki konsere gitmek istiyordu. Yola çıkmadan önce uygulamada bağlantıyı kontrol etti. Ancak yolda teknik arıza nedeniyle tren uzun süre bekledi. Yolcular beklerken önce kesin devam saati verilmedi. Grup bağlantıyı kaçırdıktan sonra servis merkezine başvurdu. Biletler ücretsiz olarak sonraki sefere değiştirildi. Yeni varış çok geç olacağı için konaklama yerine de bilgi verdiler."
+    },
+    "listening": {
+      "de": "Eine Durchsage: „Wegen einer kurzfristigen Streckensperrung endet der Zug aus München heute bereits in Rosenheim. Reisende nach Kufstein benutzen bitte den Ersatzbus vor dem Haupteingang. Der Bus wartet auf die Ankunft des Zuges. Bereits gebuchte Sitzplatzreservierungen können am Servicepunkt kostenlos erstattet werden. Fahrgäste mit weiteren Anschlüssen sollen sich dort auch über die aktuelle Weiterfahrt informieren.“",
+      "tr": "Bir anons: “Kısa süreli hat kapanması nedeniyle Münih treni bugün Rosenheim’da sona eriyor. Kufstein yolcuları ana giriş önündeki yedek otobüsü kullansın. Otobüs trenin varışını bekleyecek. Önceden alınmış koltuk rezervasyonları servis noktasında ücretsiz geri ödenebilir. Devam bağlantısı olan yolcular güncel yolculuk hakkında da oradan bilgi alsın.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u07-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Grup yola çıkmadan önce ne yaptı?",
+        "options": [
+          "Bağlantıyı kontrol etti.",
+          "Bileti iptal etti.",
+          "Otele döndü."
+        ],
+        "correctAnswer": "Bağlantıyı kontrol etti.",
+        "explanation": "Bevor yan cümlesi bunu anlatır."
+      },
+      {
+        "id": "b1-u07-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Tren neden bekledi?",
+        "options": [
+          "Teknik arıza.",
+          "Hava güzel olduğu için.",
+          "Konser iptal olduğu için."
+        ],
+        "correctAnswer": "Teknik arıza.",
+        "explanation": "technische Störung nedeni verilir."
+      },
+      {
+        "id": "b1-u07-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi sorun yaşandı?",
+        "options": [
+          "Bağlantı kaçtı.",
+          "Bilet kayboldu.",
+          "Otobüs çok erken geldi."
+        ],
+        "correctAnswer": "Bağlantı kaçtı.",
+        "explanation": "Anschluss verpasst denir."
+      },
+      {
+        "id": "b1-u07-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Grup ek olarak kimi bilgilendirdi?",
+        "options": [
+          "Konaklama yerini.",
+          "Polisi.",
+          "Bir gazeteyi."
+        ],
+        "correctAnswer": "Konaklama yerini.",
+        "explanation": "Son cümlede Unterkunft bilgilendiriliyor."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u07-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Münih treni bugün nerede sona eriyor?",
+        "options": [
+          "Rosenheim’da.",
+          "Kufstein’da.",
+          "Salzburg’da."
+        ],
+        "correctAnswer": "Rosenheim’da.",
+        "explanation": "endet ... in Rosenheim denir."
+      },
+      {
+        "id": "b1-u07-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kufstein yolcuları ne kullanmalı?",
+        "options": [
+          "Yedek otobüs.",
+          "Taksi.",
+          "Bisiklet."
+        ],
+        "correctAnswer": "Yedek otobüs.",
+        "explanation": "Ersatzbus talimatı verilir."
+      },
+      {
+        "id": "b1-u07-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Otobüs neyi bekleyecek?",
+        "options": [
+          "Trenin varışını.",
+          "Bir saat tam olarak.",
+          "Hiç kimseyi."
+        ],
+        "correctAnswer": "Trenin varışını.",
+        "explanation": "wartet auf die Ankunft des Zuges denir."
+      },
+      {
+        "id": "b1-u07-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Devam bağlantısı olan yolcular ne yapmalı?",
+        "options": [
+          "Servis noktasından bilgi almalı.",
+          "Yeni tren satın almalı.",
+          "İstasyondan çıkmalı."
+        ],
+        "correctAnswer": "Servis noktasından bilgi almalı.",
+        "explanation": "Son cümle güncel Weiterfahrt bilgisini işaret eder."
+      }
+    ],
+    "writingPrompt": "150–190 kelimeyle bir seyahat şirketine yaşadığın gecikme veya iptal sorununu sırayla anlat ve makul bir çözüm talep et.",
+    "speakingPrompt": "2 dakika: beklenmeyen bir yolculuk sorununu önce-sonra ilişkisiyle anlat; ne yaptığını ve sonucu belirt.",
+    "realLifeMission": "Bir tren/otobüs müşteri hizmeti görüşmesi için sefer, sorun, zaman sırası ve çözüm talebini dört maddede hazırla.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u08",
+    "cefrCanDo": [
+      "Stres ve dinlenme alışkanlıklarım hakkında bağlantılı konuşabilirim.",
+      "Varsayımsal öneriler verebilirim.",
+      "Bir sağlık alışkanlığının neden ve sonucunu açıklayabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "B1 sağlık dili günlük alışkanlık ve genel öneri içindir; ciddi veya sürekli sağlık sorunlarında profesyonel sağlık desteği gerekir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Anna",
+        "de": "Du wirkst in letzter Zeit sehr müde.",
+        "tr": "Son zamanlarda çok yorgun görünüyorsun."
+      },
+      {
+        "speaker": "Markus",
+        "de": "Ich schlafe schlecht, weil ich abends noch lange arbeite.",
+        "tr": "Akşamları uzun çalıştığım için kötü uyuyorum."
+      },
+      {
+        "speaker": "Anna",
+        "de": "Wenn ich an deiner Stelle wäre, würde ich eine feste Uhrzeit für Feierabend setzen.",
+        "tr": "Senin yerinde olsam iş bitişi için sabit saat koyardım."
+      },
+      {
+        "speaker": "Markus",
+        "de": "Das klingt sinnvoll, aber ich habe oft noch offene Aufgaben.",
+        "tr": "Mantıklı ama çoğu zaman açık işlerim oluyor."
+      },
+      {
+        "speaker": "Anna",
+        "de": "Du könntest sie für den nächsten Morgen notieren, statt alles sofort zu erledigen.",
+        "tr": "Her şeyi hemen yapmak yerine onları ertesi sabah için not edebilirsin."
+      },
+      {
+        "speaker": "Markus",
+        "de": "Vielleicht würde ich dann leichter abschalten.",
+        "tr": "Belki o zaman daha kolay kafamı boşaltırdım."
+      },
+      {
+        "speaker": "Anna",
+        "de": "Und wenn es länger so bleibt, solltest du dir Unterstützung holen.",
+        "tr": "Uzun sürerse destek almalısın."
+      },
+      {
+        "speaker": "Markus",
+        "de": "Ja, das werde ich machen.",
+        "tr": "Evet, yapacağım."
+      }
+    ],
+    "reading": {
+      "de": "Ein Unternehmen hat eine interne Umfrage zur Arbeitsbelastung durchgeführt. Viele Beschäftigte gaben an, dass sie auch nach Feierabend regelmäßig Nachrichten lesen. Deshalb wurde zunächst ein dreimonatiger Test gestartet: Zwischen 19 Uhr und 7 Uhr werden keine internen E-Mail-Benachrichtigungen verschickt. Die Nachrichten selbst bleiben erreichbar. Nach zwei Monaten berichten viele Mitarbeitende, dass sie abends leichter abschalten können. Einige wünschen sich allerdings flexiblere Zeiten für internationale Teams. Die endgültige Regel soll erst nach dem Test beschlossen werden.",
+      "tr": "Bir şirket iş yüküyle ilgili iç anket yaptı. Birçok çalışan işten sonra da düzenli mesaj okuduğunu söyledi. Bu nedenle üç aylık test başlatıldı: 19 ile 7 arasında iç e-posta bildirimi gönderilmiyor. Mesajların kendisine erişim var. İki ay sonra birçok çalışan akşam daha kolay dinlendiğini bildiriyor. Bazıları uluslararası ekipler için daha esnek saat istiyor. Kalıcı kural test sonrasında belirlenecek."
+    },
+    "listening": {
+      "de": "Eine Beraterin erklärt: „Bei Stress hilft es oft, zuerst zwischen dringend und wichtig zu unterscheiden. Wenn jede Aufgabe dringend wirkt, plant man schnell zu viel. Ich empfehle, höchstens drei Hauptaufgaben für einen Tag festzulegen. Kleine Pausen sollten nicht erst gemacht werden, wenn man völlig erschöpft ist. Sie gehören von Anfang an in einen realistischen Tagesplan. Wer über längere Zeit gar nicht zur Ruhe kommt, sollte sich zusätzlich Unterstützung suchen.“",
+      "tr": "Bir danışman şöyle açıklıyor: “Streste önce acil ile önemliyi ayırmak çoğu zaman yardımcı olur. Her görev acil görünürse hızlıca fazla plan yapılır. Bir gün için en fazla üç ana görev belirlemeyi öneriyorum. Küçük molalar tamamen tükenildiğinde değil, baştan gerçekçi günlük plana dahil olmalı. Uzun süre hiç rahatlayamayan kişi ayrıca destek aramalı.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u08-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ankette ne ortaya çıktı?",
+        "options": [
+          "Birçok kişi mesai sonrası da mesaj okuyor.",
+          "Kimse e-posta kullanmıyor.",
+          "Tüm çalışanlar erken çıkıyor."
+        ],
+        "correctAnswer": "Birçok kişi mesai sonrası da mesaj okuyor.",
+        "explanation": "İlk bölümde bu sonuç verilir."
+      },
+      {
+        "id": "b1-u08-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Testte hangi saatlerde bildirim gönderilmiyor?",
+        "options": [
+          "19–7 arası.",
+          "12–13 arası.",
+          "Tüm gün."
+        ],
+        "correctAnswer": "19–7 arası.",
+        "explanation": "Saat aralığı açıkça verilir."
+      },
+      {
+        "id": "b1-u08-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Mesajlara erişim tamamen kapanıyor mu?",
+        "options": [
+          "Hayır.",
+          "Evet.",
+          "Sadece yöneticilere açık."
+        ],
+        "correctAnswer": "Hayır.",
+        "explanation": "Nachrichten selbst bleiben erreichbar denir."
+      },
+      {
+        "id": "b1-u08-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kalıcı karar ne zaman verilecek?",
+        "options": [
+          "Testten sonra.",
+          "İlk gün.",
+          "Hiç verilmeyecek."
+        ],
+        "correctAnswer": "Testten sonra.",
+        "explanation": "Son cümlede kararın test sonrası alınacağı belirtilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u08-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk öneri nedir?",
+        "options": [
+          "Acil ve önemliyi ayırmak.",
+          "Her şeyi aynı anda yapmak.",
+          "Hiç plan yapmamak."
+        ],
+        "correctAnswer": "Acil ve önemliyi ayırmak.",
+        "explanation": "Danışman ilk adım olarak bunu söyler."
+      },
+      {
+        "id": "b1-u08-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Her görev acil görünürse ne olur?",
+        "options": [
+          "Fazla plan yapılır.",
+          "Daha çok dinlenilir.",
+          "Görev sayısı azalır."
+        ],
+        "correctAnswer": "Fazla plan yapılır.",
+        "explanation": "plant man schnell zu viel denir."
+      },
+      {
+        "id": "b1-u08-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Gün için kaç ana görev öneriliyor?",
+        "options": [
+          "En fazla üç.",
+          "On.",
+          "Bir zorunlu."
+        ],
+        "correctAnswer": "En fazla üç.",
+        "explanation": "höchstens drei Hauptaufgaben denir."
+      },
+      {
+        "id": "b1-u08-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Uzun süre dinlenemeyen kişiye ne öneriliyor?",
+        "options": [
+          "Ek destek aramak.",
+          "Daha çok çalışmak.",
+          "Tüm molaları kaldırmak."
+        ],
+        "correctAnswer": "Ek destek aramak.",
+        "explanation": "Son cümlede Unterstützung suchen denir."
+      }
+    ],
+    "writingPrompt": "140–180 kelimeyle yoğun bir hafta için gerçekçi denge planı yaz; iki Konjunktiv-II önerisi ve bir somut öncelik sistemi kullan.",
+    "speakingPrompt": "90 saniye: stresle başa çıkmak için işe yarayan ve yaramayan yöntemlerini karşılaştır.",
+    "realLifeMission": "Bir arkadaşının yoğun haftasına üç nazik, varsayımsal öneri ver ve her öneriyi kısaca gerekçelendir.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u09",
+    "cefrCanDo": [
+      "Çevresel süreçleri Passiv ile anlayıp anlatabilirim.",
+      "Bir sürdürülebilirlik önleminin etkisini değerlendirebilirim.",
+      "Basit çevre projesi önerisi geliştirebilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Sürdürülebilirlik tartışmalarında tek bir davranışı “mükemmel çözüm” olarak sunmak yerine uygulanabilirlik, maliyet ve gerçek etkiyi birlikte değerlendirmek daha dengelidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Eva",
+        "de": "Habt ihr im Büro schon das neue Müllsystem?",
+        "tr": "Ofiste yeni atık sisteminiz var mı?"
+      },
+      {
+        "speaker": "Timo",
+        "de": "Ja. Seit letzter Woche werden Papier, Bioabfall und Restmüll getrennt gesammelt.",
+        "tr": "Evet. Geçen haftadan beri kâğıt, organik ve diğer atık ayrı toplanıyor."
+      },
+      {
+        "speaker": "Eva",
+        "de": "Funktioniert das gut?",
+        "tr": "İyi çalışıyor mu?"
+      },
+      {
+        "speaker": "Timo",
+        "de": "Meistens. Am Anfang wurden die Behälter aber schlecht beschriftet.",
+        "tr": "Çoğunlukla. Başta kutular kötü etiketlenmişti."
+      },
+      {
+        "speaker": "Eva",
+        "de": "Wurde das geändert?",
+        "tr": "Değiştirildi mi?"
+      },
+      {
+        "speaker": "Timo",
+        "de": "Ja, jetzt werden größere Symbole verwendet.",
+        "tr": "Evet, artık daha büyük semboller kullanılıyor."
+      },
+      {
+        "speaker": "Eva",
+        "de": "Gibt es noch andere Maßnahmen?",
+        "tr": "Başka önlem var mı?"
+      },
+      {
+        "speaker": "Timo",
+        "de": "Dienstreisen sollen, wenn möglich, häufiger mit der Bahn gemacht werden.",
+        "tr": "İş seyahatleri mümkünse daha sık trenle yapılmalı."
+      }
+    ],
+    "reading": {
+      "de": "Eine Stadtbibliothek hat ihren Energieverbrauch untersucht. Dabei wurde festgestellt, dass besonders die alte Beleuchtung viel Strom verbrauchte. Im vergangenen Winter wurden deshalb alle Lampen ausgetauscht. Zusätzlich wird die Heizung außerhalb der Öffnungszeiten automatisch reduziert. Nach sechs Monaten lag der Stromverbrauch deutlich niedriger. Die Bibliothek möchte nun prüfen, ob auch auf dem Dach Solarenergie genutzt werden kann. Für die Entscheidung sollen Kosten, technische Möglichkeiten und die erwartete Einsparung verglichen werden.",
+      "tr": "Bir şehir kütüphanesi enerji tüketimini inceledi. Özellikle eski aydınlatmanın çok elektrik tükettiği tespit edildi. Bu yüzden geçen kış tüm lambalar değiştirildi. Ayrıca açılış saatleri dışında ısıtma otomatik azaltılıyor. Altı ay sonra elektrik tüketimi belirgin düşüktü. Kütüphane şimdi çatıda güneş enerjisi kullanılıp kullanılamayacağını incelemek istiyor. Karar için maliyet, teknik imkân ve beklenen tasarruf karşılaştırılacak."
+    },
+    "listening": {
+      "de": "In einem kurzen Vortrag heißt es: „Viele Verpackungen werden nur wenige Minuten benutzt, bevor sie weggeworfen werden. In unserem Projekt werden deshalb wiederverwendbare Behälter an Restaurants ausgegeben. Nach der Nutzung können sie an verschiedenen Sammelstellen zurückgegeben werden. Dort werden sie gereinigt und erneut verteilt. Entscheidend ist, dass genügend Rückgabestellen leicht erreichbar sind. Außerdem muss regelmäßig geprüft werden, wie viele Behälter tatsächlich zurückkommen.“",
+      "tr": "Kısa sunumda şöyle deniyor: “Birçok ambalaj atılmadan önce yalnız birkaç dakika kullanılıyor. Bu yüzden projemizde restoranlara yeniden kullanılabilir kaplar veriliyor. Kullanımdan sonra farklı toplama noktalarına bırakılabiliyor. Orada temizlenip yeniden dağıtılıyorlar. Yeterli iade noktasının kolay ulaşılır olması belirleyici. Ayrıca kaç kabın gerçekten geri geldiği düzenli kontrol edilmeli.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u09-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kütüphane neyi inceledi?",
+        "options": [
+          "Enerji tüketimini.",
+          "Kitap fiyatlarını.",
+          "Çalışan maaşlarını."
+        ],
+        "correctAnswer": "Enerji tüketimini.",
+        "explanation": "İlk cümle bunu belirtir."
+      },
+      {
+        "id": "b1-u09-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi unsur çok elektrik tüketiyordu?",
+        "options": [
+          "Eski aydınlatma.",
+          "Bilgisayarlar kesin olarak.",
+          "Asansör."
+        ],
+        "correctAnswer": "Eski aydınlatma.",
+        "explanation": "alte Beleuchtung vurgulanır."
+      },
+      {
+        "id": "b1-u09-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Geçen kış ne yapıldı?",
+        "options": [
+          "Tüm lambalar değiştirildi.",
+          "Kütüphane kapatıldı.",
+          "Çatı satıldı."
+        ],
+        "correctAnswer": "Tüm lambalar değiştirildi.",
+        "explanation": "Passiv cümlesi bunu anlatır."
+      },
+      {
+        "id": "b1-u09-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yeni karar için hangi tür bilgiler karşılaştırılacak?",
+        "options": [
+          "Maliyet, teknik imkân ve tasarruf.",
+          "Sadece kitap sayısı.",
+          "Yalnız hava durumu."
+        ],
+        "correctAnswer": "Maliyet, teknik imkân ve tasarruf.",
+        "explanation": "Son cümlede üç ölçüt verilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u09-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ambalajların sorunu nedir?",
+        "options": [
+          "Çok kısa kullanılıp atılmaları.",
+          "Çok ağır olmaları.",
+          "Hiç üretilmemeleri."
+        ],
+        "correctAnswer": "Çok kısa kullanılıp atılmaları.",
+        "explanation": "nur wenige Minuten benutzt denir."
+      },
+      {
+        "id": "b1-u09-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Restoranlara ne veriliyor?",
+        "options": [
+          "Yeniden kullanılabilir kaplar.",
+          "Tek kullanımlık çatal.",
+          "Bilet."
+        ],
+        "correctAnswer": "Yeniden kullanılabilir kaplar.",
+        "explanation": "wiederverwendbare Behälter denir."
+      },
+      {
+        "id": "b1-u09-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kaplar toplama noktasında ne oluyor?",
+        "options": [
+          "Temizlenip yeniden dağıtılıyor.",
+          "Yakılıyor.",
+          "Satılıyor."
+        ],
+        "correctAnswer": "Temizlenip yeniden dağıtılıyor.",
+        "explanation": "İki Passiv eylem verilir."
+      },
+      {
+        "id": "b1-u09-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi veri düzenli kontrol edilmeli?",
+        "options": [
+          "Kaç kabın geri döndüğü.",
+          "Restoranların menüsü.",
+          "Müşterilerin yaşı."
+        ],
+        "correctAnswer": "Kaç kabın geri döndüğü.",
+        "explanation": "Son cümle Rückkehr oranını işaret eder."
+      }
+    ],
+    "writingPrompt": "150–190 kelimelik sürdürülebilirlik önerisi yaz: mevcut sorun, önerilen önlem, beklenen fayda ve olası zorluk.",
+    "speakingPrompt": "2 dakika: okul/iş yerinde uygulanabilecek bir çevre önlemini Passiv kullanarak süreç şeklinde anlat.",
+    "realLifeMission": "Günlük hayatındaki tek kullanımlık bir ürünü seç ve yeniden kullanım sürecini dört Passiv cümlesiyle tasarla.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u10",
+    "cefrCanDo": [
+      "Bir sosyal projeyi okuyup ana bilgi ve ayrıntıları çıkarabilirim.",
+      "Gönüllülük deneyimimi bağlantılı anlatabilirim.",
+      "Bir toplumsal öneriyi avantaj ve zorluklarıyla sunabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Gönüllülük projelerinde iyi niyet kadar görev sınırı, sorumluluk, eğitim ve düzenli koordinasyon da projenin sürdürülebilirliği için önemlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Koordinatorin",
+        "de": "Für welches Projekt interessieren Sie sich?",
+        "tr": "Hangi projeyle ilgileniyorsunuz?"
+      },
+      {
+        "speaker": "David",
+        "de": "Für die Lernbegleitung, bei der Jugendliche einmal pro Woche Unterstützung bekommen.",
+        "tr": "Gençlerin haftada bir destek aldığı öğrenme projesiyle."
+      },
+      {
+        "speaker": "Koordinatorin",
+        "de": "Haben Sie schon Erfahrung damit?",
+        "tr": "Bu konuda deneyiminiz var mı?"
+      },
+      {
+        "speaker": "David",
+        "de": "Ich habe zwei Jahre in einer Hausaufgabengruppe geholfen.",
+        "tr": "İki yıl ödev grubunda yardım ettim."
+      },
+      {
+        "speaker": "Koordinatorin",
+        "de": "Wichtig ist, dass Sie regelmäßig kommen können.",
+        "tr": "Düzenli gelebilmeniz önemli."
+      },
+      {
+        "speaker": "David",
+        "de": "Donnerstags wäre ich fast immer verfügbar.",
+        "tr": "Perşembe günleri neredeyse hep müsait olurum."
+      },
+      {
+        "speaker": "Koordinatorin",
+        "de": "Dann laden wir Sie zuerst zu einer kurzen Einführung ein.",
+        "tr": "O zaman sizi önce kısa tanıtıma davet ederiz."
+      },
+      {
+        "speaker": "David",
+        "de": "Sehr gern. Wann findet sie statt?",
+        "tr": "Memnuniyetle. Ne zaman?"
+      }
+    ],
+    "reading": {
+      "de": "Ein gemeinnütziger Verein vermittelt Freiwillige an ältere Menschen, die bei digitalen Alltagsfragen Unterstützung brauchen. Die Treffen finden normalerweise alle zwei Wochen statt. Vor dem ersten Einsatz nehmen die Freiwilligen an einer kurzen Schulung teil, in der Datenschutz und klare Grenzen besprochen werden. Der Verein betont, dass die Freiwilligen keine technischen Reparaturen übernehmen. Ihre Aufgabe besteht darin, Anwendungen zu erklären und gemeinsam einfache Lösungen zu finden. Bei komplizierten Problemen wird an professionelle Stellen verwiesen.",
+      "tr": "Kamu yararına bir dernek dijital günlük konularda desteğe ihtiyaç duyan yaşlılarla gönüllüleri eşleştiriyor. Buluşmalar genellikle iki haftada bir yapılıyor. İlk görevden önce gönüllüler veri koruma ve net sınırların konuşulduğu kısa eğitime katılıyor. Dernek gönüllülerin teknik tamir yapmadığını vurguluyor. Görevleri uygulamaları açıklamak ve birlikte basit çözümler bulmak. Karmaşık sorunlarda profesyonel yerlere yönlendirme yapılıyor."
+    },
+    "listening": {
+      "de": "Ein Student berichtet: „Ich helfe seit einem Jahr bei einem Sprachcafé, an dem Menschen mit sehr unterschiedlichen Muttersprachen teilnehmen. Am Anfang dachte ich, ich müsste ständig erklären. Später habe ich gemerkt, dass gute Fragen oft wichtiger sind. Die Teilnehmer sprechen mehr, wenn wir Themen wählen, zu denen jeder etwas aus eigener Erfahrung erzählen kann. Deshalb bereiten wir heute weniger lange Erklärungen und mehr Gesprächsimpulse vor.“",
+      "tr": "Bir öğrenci şöyle anlatıyor: “Bir yıldır çok farklı ana dillere sahip insanların katıldığı dil kafesinde yardım ediyorum. Başta sürekli açıklamam gerektiğini düşünüyordum. Sonra iyi soruların çoğu zaman daha önemli olduğunu fark ettim. Herkesin kendi deneyiminden anlatabileceği konular seçtiğimizde katılımcılar daha çok konuşuyor. Bu yüzden bugün daha az uzun açıklama, daha çok konuşma başlatıcı hazırlıyoruz.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u10-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dernek kimi eşleştiriyor?",
+        "options": [
+          "Gönüllüler ve dijital desteğe ihtiyaç duyan yaşlıları.",
+          "Sadece şirket çalışanlarını.",
+          "Turistlerle otelleri."
+        ],
+        "correctAnswer": "Gönüllüler ve dijital desteğe ihtiyaç duyan yaşlıları.",
+        "explanation": "İlk cümle iki grubu tanımlar."
+      },
+      {
+        "id": "b1-u10-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Buluşmalar ne sıklıkla?",
+        "options": [
+          "Genellikle iki haftada bir.",
+          "Her gün.",
+          "Yılda bir."
+        ],
+        "correctAnswer": "Genellikle iki haftada bir.",
+        "explanation": "alle zwei Wochen denir."
+      },
+      {
+        "id": "b1-u10-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk görevden önce ne yapılır?",
+        "options": [
+          "Kısa eğitim.",
+          "Sınav zorunlu.",
+          "Uzun seyahat."
+        ],
+        "correctAnswer": "Kısa eğitim.",
+        "explanation": "Schulung bilgisi vardır."
+      },
+      {
+        "id": "b1-u10-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Karmaşık teknik sorunda ne yapılır?",
+        "options": [
+          "Profesyonel yere yönlendirme.",
+          "Gönüllü zorunlu tamir yapar.",
+          "Sorun gizlenir."
+        ],
+        "correctAnswer": "Profesyonel yere yönlendirme.",
+        "explanation": "Son cümlede professionelle Stellen denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u10-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Öğrenci ne kadar süredir yardım ediyor?",
+        "options": [
+          "Bir yıldır.",
+          "Bir haftadır.",
+          "Beş yıldır."
+        ],
+        "correctAnswer": "Bir yıldır.",
+        "explanation": "seit einem Jahr denir."
+      },
+      {
+        "id": "b1-u10-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dil kafesine kimler katılıyor?",
+        "options": [
+          "Farklı ana dillere sahip insanlar.",
+          "Sadece Almanca öğretmenleri.",
+          "Sadece çocuklar."
+        ],
+        "correctAnswer": "Farklı ana dillere sahip insanlar.",
+        "explanation": "unterschiedlichen Muttersprachen ifadesi vardır."
+      },
+      {
+        "id": "b1-u10-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Başta ne düşünüyordu?",
+        "options": [
+          "Sürekli açıklaması gerektiğini.",
+          "Hiç konuşmaması gerektiğini.",
+          "Sadece yazı yazacağını."
+        ],
+        "correctAnswer": "Sürekli açıklaması gerektiğini.",
+        "explanation": "ich müsste ständig erklären denir."
+      },
+      {
+        "id": "b1-u10-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Şimdi neye daha çok hazırlanıyorlar?",
+        "options": [
+          "Konuşma başlatıcılarına.",
+          "Uzun ders anlatımına.",
+          "Yazılı sınava."
+        ],
+        "correctAnswer": "Konuşma başlatıcılarına.",
+        "explanation": "Son cümlede Gesprächsimpulse denir."
+      }
+    ],
+    "writingPrompt": "150–190 kelimeyle bir gönüllülük projesi öner: hedef grup, görevler, sınırlar, zaman ve beklenen fayda.",
+    "speakingPrompt": "2 dakikalık proje sunumu: hangi probleme cevap veriyor, kim katılacak, görevler nasıl dağıtılacak?",
+    "realLifeMission": "Katılmak isteyebileceğin bir sosyal projeyi üç edatlı Relativsatz ile tanıt.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u11",
+    "cefrCanDo": [
+      "Bir film/kitap incelemesindeki görüş ve gerekçeyi anlayabilirim.",
+      "Kendi değerlendirmemi ölçütlerle sunabilirim.",
+      "Bir kültür ürününü hedef kitleye göre önerebilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Eleştiri metninde “iyi/kötü” demek yerine hangi ölçüte göre değerlendirme yapıldığını göstermek okur için daha anlamlıdır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Julia",
+        "de": "Wie fandest du den Film gestern?",
+        "tr": "Dünkü filmi nasıl buldun?"
+      },
+      {
+        "speaker": "Leon",
+        "de": "Die Idee war interessant, aber der Anfang war mir zu langsam.",
+        "tr": "Fikir ilginçti ama başlangıç bana fazla yavaştı."
+      },
+      {
+        "speaker": "Julia",
+        "de": "Ich mochte gerade das ruhige Tempo.",
+        "tr": "Ben tam da sakin tempoyu sevdim."
+      },
+      {
+        "speaker": "Leon",
+        "de": "Je länger der Film dauerte, desto besser fand ich die Figuren.",
+        "tr": "Film uzadıkça karakterleri daha iyi buldum."
+      },
+      {
+        "speaker": "Julia",
+        "de": "Die Hauptdarstellerin war wirklich überzeugend.",
+        "tr": "Başrol oyuncusu gerçekten ikna ediciydi."
+      },
+      {
+        "speaker": "Leon",
+        "de": "Ja. Nur das Ende war ziemlich vorhersehbar.",
+        "tr": "Evet. Yalnız sonu oldukça tahmin edilebilirdi."
+      },
+      {
+        "speaker": "Julia",
+        "de": "Wem würdest du den Film empfehlen?",
+        "tr": "Filmi kime önerirdin?"
+      },
+      {
+        "speaker": "Leon",
+        "de": "Leuten, die eher ruhige Geschichten als Action mögen.",
+        "tr": "Aksiyondan çok sakin hikâyeleri sevenlere."
+      }
+    ],
+    "reading": {
+      "de": "Eine Kulturseite bespricht einen neuen Roman über drei Geschwister, die nach vielen Jahren in ihre Heimatstadt zurückkehren. Die Rezensentin lobt besonders die glaubwürdigen Dialoge und die unterschiedlichen Perspektiven. Kritisch sieht sie, dass einige Nebenfiguren kaum entwickelt werden. Je weiter die Geschichte voranschreitet, desto deutlicher werden alte Konflikte. Das Buch sei deshalb vor allem für Leser interessant, die sich für Familiengeschichten und ruhige, genaue Beobachtungen interessieren. Wer schnelle Handlung erwartet, könnte dagegen ungeduldig werden.",
+      "tr": "Bir kültür sitesi yıllar sonra memleketlerine dönen üç kardeş hakkındaki yeni romanı inceliyor. Eleştirmen özellikle inandırıcı diyalogları ve farklı bakış açılarını övüyor. Bazı yan karakterlerin az geliştirilmesini eleştiriyor. Hikâye ilerledikçe eski çatışmalar belirginleşiyor. Bu nedenle kitap özellikle aile hikâyeleri ve sakin, ayrıntılı gözlemlerle ilgilenenler için ilginç. Hızlı olay bekleyenler ise sabırsız olabilir."
+    },
+    "listening": {
+      "de": "In einer Radiosendung wird eine kleine Theaterproduktion vorgestellt. Der Kritiker sagt: „Die Bühne ist sehr einfach gestaltet, aber gerade dadurch konzentriert man sich stärker auf die Sprache. Die Schauspieler wechseln schnell zwischen mehreren Rollen. Das funktioniert überraschend gut. Nicht jede Szene ist gleich verständlich, insgesamt bleibt der Abend aber lebendig und humorvoll. Besonders gelungen ist, dass das Publikum an zwei Stellen direkt in das Spiel einbezogen wird.“",
+      "tr": "Bir radyo programında küçük tiyatro yapımı tanıtılıyor. Eleştirmen şöyle diyor: “Sahne çok sade tasarlanmış ama tam da bu sayede dile daha çok odaklanılıyor. Oyuncular birkaç rol arasında hızla geçiş yapıyor. Bu şaşırtıcı derecede iyi çalışıyor. Her sahne aynı ölçüde anlaşılır değil ama genel olarak akşam canlı ve mizahi kalıyor. Özellikle seyircinin iki yerde doğrudan oyuna dahil edilmesi başarılı.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u11-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Roman ne hakkında?",
+        "options": [
+          "Memlekete dönen üç kardeş.",
+          "Bir spor takımı.",
+          "Teknoloji şirketi."
+        ],
+        "correctAnswer": "Memlekete dönen üç kardeş.",
+        "explanation": "İlk cümlede konu verilir."
+      },
+      {
+        "id": "b1-u11-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Eleştirmen neyi övüyor?",
+        "options": [
+          "Diyaloglar ve bakış açıları.",
+          "Sadece kapak.",
+          "Fiyat."
+        ],
+        "correctAnswer": "Diyaloglar ve bakış açıları.",
+        "explanation": "İki olumlu ölçüt belirtilir."
+      },
+      {
+        "id": "b1-u11-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Neyi eleştiriyor?",
+        "options": [
+          "Bazı yan karakterlerin zayıf gelişimini.",
+          "Ana karakter yokluğunu.",
+          "Kitabın çok kısa olmasını."
+        ],
+        "correctAnswer": "Bazı yan karakterlerin zayıf gelişimini.",
+        "explanation": "Nebenfiguren kısmında bu eleştiri yapılır."
+      },
+      {
+        "id": "b1-u11-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hızlı olay bekleyenler nasıl hissedebilir?",
+        "options": [
+          "Sabırsız.",
+          "Kesinlikle çok memnun.",
+          "Hiç etkilenmez."
+        ],
+        "correctAnswer": "Sabırsız.",
+        "explanation": "Son cümlede ungeduldig werden denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u11-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sahne tasarımı nasıl?",
+        "options": [
+          "Çok sade.",
+          "Çok pahalı ve karmaşık.",
+          "Hiç yok."
+        ],
+        "correctAnswer": "Çok sade.",
+        "explanation": "sehr einfach gestaltet denir."
+      },
+      {
+        "id": "b1-u11-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sade tasarımın etkisi ne?",
+        "options": [
+          "Dile daha çok odaklanmak.",
+          "Oyuncuları duymamak.",
+          "Süreyi uzatmak."
+        ],
+        "correctAnswer": "Dile daha çok odaklanmak.",
+        "explanation": "dadurch ... auf die Sprache denir."
+      },
+      {
+        "id": "b1-u11-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Oyuncular ne yapıyor?",
+        "options": [
+          "Birden fazla rol arasında geçiyor.",
+          "Sadece bir rol oynuyor.",
+          "Seyirci oluyor."
+        ],
+        "correctAnswer": "Birden fazla rol arasında geçiyor.",
+        "explanation": "wechseln ... zwischen mehreren Rollen denir."
+      },
+      {
+        "id": "b1-u11-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Özellikle başarılı bulunan ne?",
+        "options": [
+          "Seyircinin oyuna katılması.",
+          "Bilet fiyatı.",
+          "Sahnenin büyüklüğü."
+        ],
+        "correctAnswer": "Seyircinin oyuna katılması.",
+        "explanation": "Son cümlede Publikum einbezogen denir."
+      }
+    ],
+    "writingPrompt": "150–190 kelimelik film/kitap incelemesi yaz: kısa içerik, en az iki ölçüt, bir eleştiri, hedef kitle ve sonuç.",
+    "speakingPrompt": "2 dakika: sevdiğin bir kültür ürününü tanıt ve neden önerdiğini örnekle açıkla.",
+    "realLifeMission": "Bir arkadaşına iki film/kitap seçeneğini je ... desto/umso yapısı da kullanarak karşılaştır.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u12",
+    "cefrCanDo": [
+      "Resmî bir kural veya talimatı anlayabilirim.",
+      "Modalpassiv ile zorunluluk ve izin anlatabilirim.",
+      "Bir kuralın gerekçesini tartışabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Kuralların dili kurumdan kuruma değişebilir; neyin zorunlu, öneri veya yasak olduğunu modal fiiller ve bağlam üzerinden ayırt etmek önemlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Ich bin neu hier. Was muss ich beim Datenschutz beachten?",
+        "tr": "Burada yeniyim. Veri korumada neye dikkat etmeliyim?"
+      },
+      {
+        "speaker": "Kollege",
+        "de": "Kundendaten dürfen nur für die jeweilige Aufgabe verwendet werden.",
+        "tr": "Müşteri verileri yalnız ilgili görev için kullanılabilir."
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Darf ich Dateien auf meinem privaten Laptop speichern?",
+        "tr": "Dosyaları kişisel dizüstümde kaydedebilir miyim?"
+      },
+      {
+        "speaker": "Kollege",
+        "de": "Nein, sie dürfen nur auf den vorgesehenen Systemen gespeichert werden.",
+        "tr": "Hayır, yalnız belirlenen sistemlerde kaydedilebilir."
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Und wenn ich einen Fehler bemerke?",
+        "tr": "Bir hata fark edersem?"
+      },
+      {
+        "speaker": "Kollege",
+        "de": "Dann muss er sofort gemeldet werden.",
+        "tr": "O zaman hemen bildirilmelidir."
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Gibt es dazu eine kurze Anleitung?",
+        "tr": "Bununla ilgili kısa kılavuz var mı?"
+      },
+      {
+        "speaker": "Kollege",
+        "de": "Ja, die muss bei Arbeitsbeginn gelesen werden.",
+        "tr": "Evet, işe başlarken okunması gerekiyor."
+      }
+    ],
+    "reading": {
+      "de": "In einem Coworking-Space gelten neue Sicherheitsregeln. Besucher müssen am Empfang angemeldet werden. Türen zu Arbeitsbereichen dürfen nicht offen stehen gelassen werden. Vertrauliche Unterlagen müssen nach der Nutzung weggeräumt werden. Fahrräder können im Innenhof abgestellt werden, dürfen aber keine Fluchtwege blockieren. Verstöße sollen zunächst dem Serviceteam gemeldet werden, bevor weitere Maßnahmen getroffen werden. Wer unsicher ist, kann die vollständige Haus- und Sicherheitsordnung über einen QR-Code am Eingang öffnen.",
+      "tr": "Bir ortak çalışma alanında yeni güvenlik kuralları var. Ziyaretçiler resepsiyonda kaydedilmeli. Çalışma alanı kapıları açık bırakılamaz. Gizli belgeler kullanımdan sonra kaldırılmalı. Bisikletler avluya konabilir ancak kaçış yollarını kapatmamalı. İhlaller başka önlemden önce servis ekibine bildirilmelidir. Emin olmayanlar girişteki QR koddan tüm güvenlik ve bina kurallarını açabilir."
+    },
+    "listening": {
+      "de": "Bei einer Schulung erklärt eine Mitarbeiterin: „Rechnungen können digital eingereicht werden. Originalbelege müssen jedoch bis zum Abschluss der Prüfung aufbewahrt werden. Änderungen dürfen nur von zuständigen Personen vorgenommen werden. Wenn Unterlagen fehlen, soll die betreffende Person zuerst informiert werden. Dateien mit vertraulichen Angaben dürfen außerdem nicht über private E-Mail-Adressen verschickt werden.“",
+      "tr": "Bir eğitimde çalışan şöyle açıklıyor: “Faturalar dijital teslim edilebilir. Ancak asıl belgeler kontrol tamamlanana kadar saklanmalıdır. Değişiklikler yalnız yetkili kişilerce yapılabilir. Belgeler eksikse önce ilgili kişiye bilgi verilmelidir. Gizli bilgiler içeren dosyalar ayrıca kişisel e-posta adreslerinden gönderilemez.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u12-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ziyaretçiler ne yapılmalı?",
+        "options": [
+          "Resepsiyonda kaydedilmeli.",
+          "Gizlice içeri girmeli.",
+          "Hiç kayıt gerekmiyor."
+        ],
+        "correctAnswer": "Resepsiyonda kaydedilmeli.",
+        "explanation": "angemeldet werden kuralı vardır."
+      },
+      {
+        "id": "b1-u12-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi kapılar açık bırakılamaz?",
+        "options": [
+          "Çalışma alanı kapıları.",
+          "Bahçe kapısı kesin olarak.",
+          "Asansör."
+        ],
+        "correctAnswer": "Çalışma alanı kapıları.",
+        "explanation": "Türen zu Arbeitsbereichen denir."
+      },
+      {
+        "id": "b1-u12-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bisikletler nereye konabilir?",
+        "options": [
+          "İç avluya.",
+          "Kaçış yolu üzerine.",
+          "Ofis masasına."
+        ],
+        "correctAnswer": "İç avluya.",
+        "explanation": "im Innenhof abgestellt werden denir."
+      },
+      {
+        "id": "b1-u12-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kuralların tamamına nasıl ulaşılabilir?",
+        "options": [
+          "Girişteki QR kodla.",
+          "Yalnız telefonla.",
+          "Hiçbir şekilde."
+        ],
+        "correctAnswer": "Girişteki QR kodla.",
+        "explanation": "Son cümlede QR-Code bilgisi verilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u12-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Faturalar nasıl teslim edilebilir?",
+        "options": [
+          "Dijital.",
+          "Sadece elden.",
+          "Teslim edilemez."
+        ],
+        "correctAnswer": "Dijital.",
+        "explanation": "digital eingereicht werden denir."
+      },
+      {
+        "id": "b1-u12-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Asıl belgeler ne zamana kadar saklanmalı?",
+        "options": [
+          "Kontrol bitene kadar.",
+          "Bir saat.",
+          "Hiç saklanmamalı."
+        ],
+        "correctAnswer": "Kontrol bitene kadar.",
+        "explanation": "bis zum Abschluss der Prüfung denir."
+      },
+      {
+        "id": "b1-u12-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kim değişiklik yapabilir?",
+        "options": [
+          "Yetkili kişiler.",
+          "Herkes.",
+          "Yalnız müşteriler."
+        ],
+        "correctAnswer": "Yetkili kişiler.",
+        "explanation": "nur von zuständigen Personen denir."
+      },
+      {
+        "id": "b1-u12-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Gizli dosyalar nereden gönderilmemeli?",
+        "options": [
+          "Kişisel e-posta adreslerinden.",
+          "Kurum sisteminden.",
+          "Güvenli kanaldan."
+        ],
+        "correctAnswer": "Kişisel e-posta adreslerinden.",
+        "explanation": "Son cümlede private E-Mail-Adressen yasaklanır."
+      }
+    ],
+    "writingPrompt": "140–180 kelimelik kurum kuralı bilgilendirmesi yaz: dört kural, iki gerekçe ve bir istisna.",
+    "speakingPrompt": "90 saniye: okul/iş yerindeki üç kuralı açıklayıp hangisinin neden önemli olduğunu söyle.",
+    "realLifeMission": "Kendi proje alanın için üç Modalpassiv kuralı yaz ve her birinin amacını kısaca açıkla.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u13",
+    "cefrCanDo": [
+      "Teknolojik değişim hakkında tahmin yapabilirim.",
+      "Bir tahminin kesinlik derecesini ifade edebilirim.",
+      "Teknolojinin yarar ve risklerini dengeli tartışabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Teknoloji geleceği hakkında konuşurken kesin kehanet yerine belirsizlik derecesini wahrscheinlich, vermutlich ve möglicherweise gibi ifadelerle göstermek daha gerçekçidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Sven",
+        "de": "Glaubst du, dass wir in zehn Jahren noch so viele Passwörter benutzen werden?",
+        "tr": "On yıl sonra hâlâ bu kadar çok şifre kullanacağımızı düşünüyor musun?"
+      },
+      {
+        "speaker": "Laura",
+        "de": "Vermutlich weniger. Andere Anmeldemethoden werden wichtiger werden.",
+        "tr": "Muhtemelen daha az. Başka giriş yöntemleri daha önemli olacak."
+      },
+      {
+        "speaker": "Sven",
+        "de": "Wird dadurch alles sicherer?",
+        "tr": "Böylece her şey daha güvenli olacak mı?"
+      },
+      {
+        "speaker": "Laura",
+        "de": "Nicht automatisch. Neue Systeme bringen wahrscheinlich auch neue Risiken.",
+        "tr": "Otomatik olarak değil. Yeni sistemler büyük olasılıkla yeni riskler de getirecek."
+      },
+      {
+        "speaker": "Sven",
+        "de": "Was wird sich bei der Arbeit verändern?",
+        "tr": "İşte ne değişecek?"
+      },
+      {
+        "speaker": "Laura",
+        "de": "Routineaufgaben werden stärker automatisiert, aber Menschen werden weiterhin Entscheidungen prüfen müssen.",
+        "tr": "Rutin görevler daha çok otomatikleşecek ama insanlar kararları kontrol etmeye devam etmek zorunda olacak."
+      },
+      {
+        "speaker": "Sven",
+        "de": "Also eher Unterstützung als vollständiger Ersatz?",
+        "tr": "Yani tam yerini alma yerine destek?"
+      },
+      {
+        "speaker": "Laura",
+        "de": "Das halte ich zumindest für wahrscheinlicher.",
+        "tr": "En azından bunu daha olası görüyorum."
+      }
+    ],
+    "reading": {
+      "de": "Eine Hochschule testet digitale Assistenten für organisatorische Fragen. Studierende können damit Informationen zu Räumen, Fristen und allgemeinen Abläufen finden. Die Hochschule betont jedoch, dass individuelle Prüfungsentscheidungen weiterhin von Mitarbeitenden getroffen werden. Nach der Testphase soll ausgewertet werden, welche Fragen zuverlässig beantwortet wurden. Voraussichtlich wird das System nur in Bereichen eingesetzt, in denen die Informationen regelmäßig aktualisiert und kontrolliert werden können. Für besonders wichtige Entscheidungen bleibt deshalb weiterhin eine persönliche Ansprechperson vorgesehen.",
+      "tr": "Bir yüksekokul idari sorular için dijital asistanları test ediyor. Öğrenciler oda, son tarih ve genel süreç bilgilerini bulabiliyor. Ancak bireysel sınav kararları çalışanlarca verilmeye devam edecek. Test sonrası hangi soruların güvenilir cevaplandığı değerlendirilecek. Sistem muhtemelen yalnız düzenli güncellenip kontrol edilebilen alanlarda kullanılacak. Özellikle önemli kararlar için kişisel bir yetkili olmaya devam edecek."
+    },
+    "listening": {
+      "de": "Ein Experte sagt: „In vielen Berufen werden digitale Werkzeuge Routineaufgaben übernehmen. Das bedeutet aber nicht, dass Fachwissen unwichtiger wird. Im Gegenteil: Wer Ergebnisse beurteilen soll, muss verstehen, wie sie entstehen und wo Fehler möglich sind. Wahrscheinlich werden deshalb Fähigkeiten wie Prüfen, Erklären und Entscheiden wichtiger werden. Gleichzeitig werden Beschäftigte neue Werkzeuge regelmäßig kennenlernen und ihre Arbeitsweise anpassen müssen.“",
+      "tr": "Bir uzman şöyle diyor: “Birçok meslekte dijital araçlar rutin işleri üstlenecek. Ama bu uzmanlığın önemsiz olacağı anlamına gelmiyor. Tersine: Sonuçları değerlendirecek kişi onların nasıl oluştuğunu ve nerede hata olabileceğini anlamalı. Bu nedenle kontrol, açıklama ve karar verme becerileri muhtemelen daha önemli olacak. Çalışanlar aynı zamanda yeni araçları düzenli öğrenip çalışma biçimlerini uyarlamak zorunda kalacak.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u13-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Asistan hangi sorulara yardımcı oluyor?",
+        "options": [
+          "Oda, son tarih ve genel süreç.",
+          "Bireysel sınav notu kararı.",
+          "Sağlık teşhisi."
+        ],
+        "correctAnswer": "Oda, son tarih ve genel süreç.",
+        "explanation": "Üç alan açıkça verilir."
+      },
+      {
+        "id": "b1-u13-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bireysel sınav kararını kim verecek?",
+        "options": [
+          "Çalışanlar.",
+          "Asistan tek başına.",
+          "Öğrenciler rastgele."
+        ],
+        "correctAnswer": "Çalışanlar.",
+        "explanation": "weiterhin von Mitarbeitenden getroffen denir."
+      },
+      {
+        "id": "b1-u13-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Test sonrası ne değerlendirilecek?",
+        "options": [
+          "Hangi soruların güvenilir cevaplandığı.",
+          "Sadece ekran rengi.",
+          "Bina sayısı."
+        ],
+        "correctAnswer": "Hangi soruların güvenilir cevaplandığı.",
+        "explanation": "ausgewertet werden cümlesi bunu anlatır."
+      },
+      {
+        "id": "b1-u13-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Önemli kararlar için ne korunacak?",
+        "options": [
+          "Kişisel bir yetkili.",
+          "Sadece otomatik cevap.",
+          "Hiç iletişim yok."
+        ],
+        "correctAnswer": "Kişisel bir yetkili.",
+        "explanation": "Son cümlede persönliche Ansprechperson denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u13-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Araçlar neyi üstlenecek?",
+        "options": [
+          "Rutin görevleri.",
+          "Tüm kararları.",
+          "Uzmanlığı."
+        ],
+        "correctAnswer": "Rutin görevleri.",
+        "explanation": "Routineaufgaben übernehmen denir."
+      },
+      {
+        "id": "b1-u13-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Uzmanlık önemsizleşecek mi?",
+        "options": [
+          "Hayır.",
+          "Evet, tamamen.",
+          "Söylenmiyor."
+        ],
+        "correctAnswer": "Hayır.",
+        "explanation": "Das bedeutet aber nicht ... denir."
+      },
+      {
+        "id": "b1-u13-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi beceriler daha önemli olabilir?",
+        "options": [
+          "Kontrol, açıklama, karar.",
+          "Ezber ve kopyalama.",
+          "Sadece yazdırma."
+        ],
+        "correctAnswer": "Kontrol, açıklama, karar.",
+        "explanation": "Üç beceri açıkça sayılır."
+      },
+      {
+        "id": "b1-u13-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Çalışanların ayrıca ne yapması gerekecek?",
+        "options": [
+          "Yeni araçları öğrenip uyum sağlamak.",
+          "Teknolojiyi tamamen bırakmak.",
+          "Aynı yöntemi hiç değiştirmemek."
+        ],
+        "correctAnswer": "Yeni araçları öğrenip uyum sağlamak.",
+        "explanation": "Son cümlede Arbeitsweise anpassen denir."
+      }
+    ],
+    "writingPrompt": "150–200 kelimelik görüş yazısı: “Dijital araçlar iş hayatını nasıl değiştirecek?” En az iki tahmin, bir fırsat, bir risk ve sonuç ekle.",
+    "speakingPrompt": "2 dakikalık sunum: 2030’da eğitim veya işte hangi üç değişikliği bekliyorsun? Kesinlik derecesi belirt.",
+    "realLifeMission": "Kendi alanında gelecek beş yıl için üç Futur-I tahmini ve her birine kısa gerekçe yaz.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u14",
+    "cefrCanDo": [
+      "Basit bütçe ve sözleşme bilgilerini anlayabilirim.",
+      "Mali bir kararın nedenini açıklayabilirim.",
+      "Bir teklifin toplam maliyetini sözlü olarak değerlendirebilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Fiyat karşılaştırmasında yalnız aylık taksite değil toplam süre, ek ücret, iptal koşulu ve garanti gibi unsurlara birlikte bakmak daha sağlıklı karar verir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Miriam",
+        "de": "Der neue Tarif sieht auf den ersten Blick günstig aus.",
+        "tr": "Yeni tarife ilk bakışta uygun görünüyor."
+      },
+      {
+        "speaker": "Lukas",
+        "de": "Wie lange läuft der Vertrag?",
+        "tr": "Sözleşme ne kadar sürüyor?"
+      },
+      {
+        "speaker": "Miriam",
+        "de": "Zwei Jahre. Die Kosten des ersten Jahres sind niedriger, danach steigt der Preis.",
+        "tr": "İki yıl. İlk yılın maliyeti daha düşük, sonra fiyat artıyor."
+      },
+      {
+        "speaker": "Lukas",
+        "de": "Gibt es zusätzliche Gebühren?",
+        "tr": "Ek ücret var mı?"
+      },
+      {
+        "speaker": "Miriam",
+        "de": "Ja, eine einmalige Anschlussgebühr.",
+        "tr": "Evet, tek seferlik bağlantı ücreti."
+      },
+      {
+        "speaker": "Lukas",
+        "de": "Dann würde ich den Gesamtpreis vergleichen.",
+        "tr": "O zaman toplam fiyatı karşılaştırırdım."
+      },
+      {
+        "speaker": "Miriam",
+        "de": "Genau. Trotz des Rabatts ist das Angebot vielleicht gar nicht billiger.",
+        "tr": "Aynen. İndirime rağmen teklif belki hiç daha ucuz değil."
+      },
+      {
+        "speaker": "Lukas",
+        "de": "Und die Kündigungsfrist solltest du auch prüfen.",
+        "tr": "Fesih süresini de kontrol etmelisin."
+      }
+    ],
+    "reading": {
+      "de": "Ein Mobilfunkanbieter bewirbt einen Vertrag mit einem besonders niedrigen Monatspreis. Im Kleingedruckten steht jedoch, dass der Preis nach zwölf Monaten steigt. Außerdem wird eine einmalige Aktivierungsgebühr berechnet. Die Mindestlaufzeit des Vertrags beträgt 24 Monate. Wer nicht rechtzeitig kündigt, zahlt danach monatlich weiter. Ein Verbraucherberater empfiehlt deshalb, vor der Entscheidung die Gesamtkosten über die komplette Laufzeit zu berechnen. Auch die Kündigungsfrist sollte in einem Kalender notiert werden.",
+      "tr": "Bir mobil iletişim şirketi özellikle düşük aylık fiyatlı sözleşmeyi reklam ediyor. Ancak küçük yazıda fiyatın on iki ay sonra arttığı yazıyor. Ayrıca tek seferlik aktivasyon ücreti hesaplanıyor. Minimum sözleşme süresi 24 ay. Zamanında feshetmeyen aylık ödemeye devam ediyor. Tüketici danışmanı bu yüzden karar öncesi tüm süre boyunca toplam maliyeti hesaplamayı öneriyor. Fesih tarihi de takvime yazılmalı."
+    },
+    "listening": {
+      "de": "Eine Finanzberaterin erklärt in einem Workshop: „Bevor Sie eine größere Anschaffung planen, teilen Sie Ihre Ausgaben am besten in drei Gruppen: feste Kosten, notwendige variable Kosten und freiwillige Ausgaben. So sehen Sie schneller, welcher Betrag tatsächlich frei verfügbar ist. Ein Notfallpuffer sollte nicht für geplante Freizeitkäufe verwendet werden. Wenn eine Anschaffung warten kann, lohnt sich oft ein eigener Sparplan mit einem festen monatlichen Betrag.“",
+      "tr": "Bir mali danışman atölyede şöyle açıklıyor: “Büyük alışveriş planlamadan önce giderleri üç gruba ayırın: sabit maliyet, gerekli değişken maliyet ve gönüllü harcama. Böylece gerçekten ne kadar paranın serbest olduğunu daha hızlı görürsünüz. Acil durum payı planlı boş zaman alışverişlerinde kullanılmamalı. Bir alışveriş bekleyebiliyorsa sabit aylık tutarlı özel tasarruf planı çoğu zaman faydalıdır.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u14-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Fiyat ne zaman artıyor?",
+        "options": [
+          "12 ay sonra.",
+          "İlk gün.",
+          "24 yıl sonra."
+        ],
+        "correctAnswer": "12 ay sonra.",
+        "explanation": "nach zwölf Monaten denir."
+      },
+      {
+        "id": "b1-u14-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek ücret var?",
+        "options": [
+          "Aktivasyon ücreti.",
+          "Kira.",
+          "Ulaşım bileti."
+        ],
+        "correctAnswer": "Aktivasyon ücreti.",
+        "explanation": "Aktivierungsgebühr belirtilir."
+      },
+      {
+        "id": "b1-u14-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Minimum süre ne?",
+        "options": [
+          "24 ay.",
+          "12 gün.",
+          "6 ay."
+        ],
+        "correctAnswer": "24 ay.",
+        "explanation": "Mindestlaufzeit 24 Monate denir."
+      },
+      {
+        "id": "b1-u14-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Fesih tarihi için ne öneriliyor?",
+        "options": [
+          "Takvime not etmek.",
+          "Unutmak.",
+          "Sözleşmeyi okumamak."
+        ],
+        "correctAnswer": "Takvime not etmek.",
+        "explanation": "Son cümlede Kündigungsfrist için takvim önerilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u14-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Giderler kaç gruba ayrılıyor?",
+        "options": [
+          "Üç.",
+          "İki.",
+          "Beş."
+        ],
+        "correctAnswer": "Üç.",
+        "explanation": "in drei Gruppen denir."
+      },
+      {
+        "id": "b1-u14-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk grup nedir?",
+        "options": [
+          "Sabit maliyetler.",
+          "Sadece eğlence.",
+          "Gelir."
+        ],
+        "correctAnswer": "Sabit maliyetler.",
+        "explanation": "feste Kosten ilk sırada."
+      },
+      {
+        "id": "b1-u14-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Acil durum payı ne için kullanılmamalı?",
+        "options": [
+          "Planlı eğlence alışverişleri.",
+          "Gerçek acil durum.",
+          "Beklenmedik zorunlu masraf."
+        ],
+        "correctAnswer": "Planlı eğlence alışverişleri.",
+        "explanation": "nicht für geplante Freizeitkäufe denir."
+      },
+      {
+        "id": "b1-u14-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bekleyebilen alışveriş için ne öneriliyor?",
+        "options": [
+          "Sabit aylık tasarruf planı.",
+          "Hemen kredi.",
+          "Bütçeyi kaldırmak."
+        ],
+        "correctAnswer": "Sabit aylık tasarruf planı.",
+        "explanation": "Son cümlede Sparplan önerilir."
+      }
+    ],
+    "writingPrompt": "140–180 kelimeyle iki abonelik veya alışveriş seçeneğini toplam maliyet, süre ve ek koşullar açısından karşılaştır; kararını gerekçelendir.",
+    "speakingPrompt": "2 dakika: aylık bütçede üç önceliğini açıkla ve beklenmeyen masraf için ne yapacağını söyle.",
+    "realLifeMission": "Bir gerçek aboneliğin toplam maliyetini incelemek için Almanca dört kontrol sorusu hazırla.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u15",
+    "cefrCanDo": [
+      "Bir güncel olayın zaman sırasını anlayabilirim.",
+      "Önceki olayı Plusquamperfekt ile aktarabilirim.",
+      "Bir haber notunda doğrulanmış bilgi ile ilk iddiayı ayırabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Güncel olaylarda ilk bilgiler eksik veya değişebilir; zunächst, später, inzwischen ve offiziell bestätigt gibi ifadeler bilginin zaman içindeki durumunu göstermeye yardımcı olur."
+    },
+    "dialogue": [
+      {
+        "speaker": "Redakteurin",
+        "de": "Was wissen wir inzwischen über den Vorfall?",
+        "tr": "Olay hakkında artık ne biliyoruz?"
+      },
+      {
+        "speaker": "Reporter",
+        "de": "Die Straße ist wieder offen. Zuvor hatte die Feuerwehr den Bereich mehrere Stunden gesperrt.",
+        "tr": "Yol yeniden açık. Daha önce itfaiye alanı birkaç saat kapatmıştı."
+      },
+      {
+        "speaker": "Redakteurin",
+        "de": "Ist die Ursache schon bekannt?",
+        "tr": "Neden biliniyor mu?"
+      },
+      {
+        "speaker": "Reporter",
+        "de": "Noch nicht offiziell. Ein erster Bericht hatte technische Probleme erwähnt.",
+        "tr": "Henüz resmî değil. İlk rapor teknik sorunlardan söz etmişti."
+      },
+      {
+        "speaker": "Redakteurin",
+        "de": "Dann sollten wir das als unbestätigt kennzeichnen.",
+        "tr": "O zaman doğrulanmamış olarak işaretlemeliyiz."
+      },
+      {
+        "speaker": "Reporter",
+        "de": "Ja. Die Behörde will später eine Stellungnahme veröffentlichen.",
+        "tr": "Evet. Kurum daha sonra açıklama yayımlayacak."
+      },
+      {
+        "speaker": "Redakteurin",
+        "de": "Gibt es Verletzte?",
+        "tr": "Yaralı var mı?"
+      },
+      {
+        "speaker": "Reporter",
+        "de": "Nach aktuellem Stand nicht.",
+        "tr": "Şu anki bilgiye göre hayır."
+      }
+    ],
+    "reading": {
+      "de": "Am Morgen fiel in mehreren Stadtteilen für kurze Zeit der Strom aus. Ein Energieversorger teilte zunächst mit, dass eine technische Störung untersucht werde. Viele Ampeln waren ausgefallen, weshalb an mehreren Kreuzungen die Polizei den Verkehr regelte. Nachdem die Versorgung wiederhergestellt worden war, veröffentlichte das Unternehmen eine weitere Mitteilung. Darin hieß es, ein defektes Bauteil habe die Störung verursacht. Größere Schäden seien nach aktuellem Stand nicht entstanden. Die genaue Dauer des Ausfalls unterschied sich je nach Stadtteil.",
+      "tr": "Sabah birkaç semtte kısa süre elektrik kesildi. Enerji şirketi önce teknik arızanın incelendiğini bildirdi. Birçok trafik ışığı çalışmadığı için polis birkaç kavşakta trafiği yönetti. Enerji geri geldikten sonra şirket başka bir açıklama yayımladı. Arızaya bozuk bir parçanın neden olduğu söylendi. Şu anki bilgiye göre büyük hasar oluşmadı. Kesintinin tam süresi semte göre değişti."
+    },
+    "listening": {
+      "de": "Ein Reporter fasst zusammen: „Als das Unwetter begann, waren viele Besucher noch im Park. Die Veranstalter hatten vorher bereits vor starkem Wind gewarnt. Nachdem die erste Sicherheitsmeldung ausgegeben worden war, verließen die meisten Menschen das Gelände. Später wurde bestätigt, dass niemand verletzt worden war. Einige Bäume waren jedoch umgestürzt. Der Park blieb deshalb bis zum nächsten Morgen geschlossen, damit die Wege kontrolliert werden konnten.“",
+      "tr": "Bir muhabir özetliyor: “Fırtına başladığında birçok ziyaretçi hâlâ parktaydı. Organizatörler önceden güçlü rüzgâra karşı uyarmıştı. İlk güvenlik duyurusu yapıldıktan sonra çoğu kişi alanı terk etti. Daha sonra kimsenin yaralanmadığı doğrulandı. Ancak bazı ağaçlar devrilmişti. Yollar kontrol edilebilsin diye park ertesi sabaha kadar kapalı kaldı.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u15-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sabah ne oldu?",
+        "options": [
+          "Kısa süre elektrik kesildi.",
+          "Metro açıldı.",
+          "Festival başladı."
+        ],
+        "correctAnswer": "Kısa süre elektrik kesildi.",
+        "explanation": "İlk cümlede Strom aus denir."
+      },
+      {
+        "id": "b1-u15-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk açıklamada ne söylendi?",
+        "options": [
+          "Teknik arızanın incelendiği.",
+          "Neden kesin belli.",
+          "Büyük hasar olduğu."
+        ],
+        "correctAnswer": "Teknik arızanın incelendiği.",
+        "explanation": "zunächst mit ... untersucht werde denir."
+      },
+      {
+        "id": "b1-u15-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sonraki açıklamaya göre neden ne?",
+        "options": [
+          "Bozuk bir parça.",
+          "Hava durumu kesin olarak.",
+          "İnsan hatası kesin."
+        ],
+        "correctAnswer": "Bozuk bir parça.",
+        "explanation": "defektes Bauteil nedeni verilir."
+      },
+      {
+        "id": "b1-u15-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kesinti süresi nasıldı?",
+        "options": [
+          "Semte göre değişti.",
+          "Her yerde aynıydı.",
+          "Sadece bir saniyeydi."
+        ],
+        "correctAnswer": "Semte göre değişti.",
+        "explanation": "Son cümlede je nach Stadtteil denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u15-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Organizatörler önceden ne yapmıştı?",
+        "options": [
+          "Güçlü rüzgâr uyarısı.",
+          "Etkinliği bitirmişti.",
+          "Bilet satmıştı."
+        ],
+        "correctAnswer": "Güçlü rüzgâr uyarısı.",
+        "explanation": "hatten ... gewarnt Plusquamperfekt kullanılır."
+      },
+      {
+        "id": "b1-u15-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk güvenlik mesajından sonra ne oldu?",
+        "options": [
+          "Çoğu kişi alanı terk etti.",
+          "Herkes içeri girdi.",
+          "Fırtına bitti."
+        ],
+        "correctAnswer": "Çoğu kişi alanı terk etti.",
+        "explanation": "verließen die meisten Menschen denir."
+      },
+      {
+        "id": "b1-u15-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Daha sonra ne doğrulandı?",
+        "options": [
+          "Kimsenin yaralanmadığı.",
+          "Tüm ağaçların sağlam olduğu.",
+          "Hiç rüzgâr olmadığı."
+        ],
+        "correctAnswer": "Kimsenin yaralanmadığı.",
+        "explanation": "Später wurde bestätigt ... denir."
+      },
+      {
+        "id": "b1-u15-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Park neden kapalı kaldı?",
+        "options": [
+          "Yollar kontrol edilebilsin diye.",
+          "Bilet satmak için.",
+          "Konser yapmak için."
+        ],
+        "correctAnswer": "Yollar kontrol edilebilsin diye.",
+        "explanation": "Son cümlede damit amacı verilir."
+      }
+    ],
+    "writingPrompt": "150–190 kelimelik kısa haber özeti yaz: ilk bilgi, daha önce olan olay, sonraki gelişme, doğrulanmış durum ve henüz belirsiz nokta.",
+    "speakingPrompt": "90 saniyelik haber özeti: olayları kronolojik aktar ve hangi bilginin daha sonra doğrulandığını belirt.",
+    "realLifeMission": "Bir güncel olay başlığını seç; zuvor, nachdem, später ve inzwischen ile dört cümlelik tarafsız kronoloji kur.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u16",
+    "cefrCanDo": [
+      "Bir hedef için amaç ve yöntem açıklayabilirim.",
+      "İki kişi arasındaki amaç ilişkisini damit ile kurabilirim.",
+      "Alternatif davranışı ohne/statt ... zu ile ifade edebilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Uzun vadeli hedeflerin sürdürülebilir olması için yalnız sonuç değil, günlük uygulanabilir davranış ve alternatif plan da belirlemek işe yarar."
+    },
+    "dialogue": [
+      {
+        "speaker": "Marie",
+        "de": "Du willst nächstes Jahr die B1-Prüfung machen, oder?",
+        "tr": "Gelecek yıl B1 sınavına girmek istiyorsun, değil mi?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ja. Ich habe mir einen Plan gemacht, um regelmäßiger zu lernen.",
+        "tr": "Evet. Daha düzenli çalışmak için plan yaptım."
+      },
+      {
+        "speaker": "Marie",
+        "de": "Wie sieht er aus?",
+        "tr": "Nasıl?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ich lerne viermal pro Woche kurz, statt nur am Wochenende mehrere Stunden zu machen.",
+        "tr": "Sadece hafta sonu birkaç saat yapmak yerine haftada dört kez kısa çalışıyorum."
+      },
+      {
+        "speaker": "Marie",
+        "de": "Und wie übst du Sprechen?",
+        "tr": "Konuşmayı nasıl çalışıyorsun?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ich treffe mich mit einem Partner, damit wir uns gegenseitig korrigieren können.",
+        "tr": "Bir partnerle buluşuyorum ki birbirimizi düzeltebilelim."
+      },
+      {
+        "speaker": "Marie",
+        "de": "Klingt realistisch.",
+        "tr": "Gerçekçi geliyor."
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Das hoffe ich. Ich möchte durchhalten, ohne mich zu überfordern.",
+        "tr": "Umarım. Kendimi aşırı zorlamadan sürdürmek istiyorum."
+      }
+    ],
+    "reading": {
+      "de": "Eine Studentin möchte in sechs Monaten ein Praktikum im Ausland beginnen. Um sich darauf vorzubereiten, hat sie ihr großes Ziel in kleinere Schritte geteilt. Zuerst aktualisiert sie ihren Lebenslauf, danach sucht sie passende Firmen. Sie bittet eine Freundin, ihre Bewerbung zu lesen, damit Fehler früh auffallen. Statt jeden Abend lange zu recherchieren, arbeitet sie dreimal pro Woche jeweils 45 Minuten. So will sie Fortschritte machen, ohne neben dem Studium zu viel Stress aufzubauen. Für Wochen mit Prüfungen hat sie einen kürzeren Ersatzplan vorbereitet.",
+      "tr": "Bir öğrenci altı ay içinde yurt dışında staja başlamak istiyor. Hazırlanmak için büyük hedefi küçük adımlara böldü. Önce CV’yi güncelliyor, sonra uygun şirketleri arıyor. Hataların erken fark edilmesi için arkadaşından başvurusunu okumasını istiyor. Her akşam uzun araştırmak yerine haftada üç kez 45 dakika çalışıyor. Böylece ders yanında fazla stres yaratmadan ilerlemek istiyor. Sınav haftaları için daha kısa yedek planı var."
+    },
+    "listening": {
+      "de": "Ein Coach sagt: „Formulieren Sie Ziele so konkret, dass Sie am Ende einer Woche erkennen können, ob Sie wirklich vorangekommen sind. Planen Sie auch eine kleine Alternative, falls ein Termin ausfällt. Statt dann die ganze Woche aufzugeben, können Sie die Aufgabe zum Beispiel auf einen anderen Tag verschieben. Das hilft, realistisch zu bleiben, ohne das Ziel aus den Augen zu verlieren. Notieren Sie am Wochenende kurz, was funktioniert hat und was angepasst werden muss.“",
+      "tr": "Bir koç şöyle diyor: “Hedefleri hafta sonunda gerçekten ilerleyip ilerlemediğinizi görebilecek kadar somut kurun. Bir randevu iptal olursa küçük bir alternatif de planlayın. O zaman tüm haftadan vazgeçmek yerine görevi başka güne kaydırabilirsiniz. Bu, hedefi gözden kaçırmadan gerçekçi kalmaya yardımcı olur. Hafta sonunda neyin işe yaradığını ve neyin değişmesi gerektiğini kısaca not edin.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u16-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Öğrencinin büyük hedefi ne?",
+        "options": [
+          "Yurt dışında staj.",
+          "Ev satın almak.",
+          "Sınavı bırakmak."
+        ],
+        "correctAnswer": "Yurt dışında staj.",
+        "explanation": "İlk cümlede hedef verilir."
+      },
+      {
+        "id": "b1-u16-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk hazırlık adımı ne?",
+        "options": [
+          "CV’yi güncellemek.",
+          "Hemen uçak almak.",
+          "Staja başlamak."
+        ],
+        "correctAnswer": "CV’yi güncellemek.",
+        "explanation": "Zuerst aktualisiert ... Lebenslauf denir."
+      },
+      {
+        "id": "b1-u16-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Arkadaşından neden yardım istiyor?",
+        "options": [
+          "Hatalar erken fark edilsin diye.",
+          "Şirketi seçsin diye.",
+          "Onun yerine çalışsın diye."
+        ],
+        "correctAnswer": "Hatalar erken fark edilsin diye.",
+        "explanation": "damit Fehler früh auffallen denir."
+      },
+      {
+        "id": "b1-u16-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sınav haftaları için ne hazırlamış?",
+        "options": [
+          "Daha kısa yedek plan.",
+          "Yeni iş.",
+          "Hiç plan yok."
+        ],
+        "correctAnswer": "Daha kısa yedek plan.",
+        "explanation": "Son cümlede Ersatzplan vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u16-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hedefler nasıl olmalı?",
+        "options": [
+          "İlerleme ölçülebilecek kadar somut.",
+          "Çok genel.",
+          "Sadece uzun vadeli."
+        ],
+        "correctAnswer": "İlerleme ölçülebilecek kadar somut.",
+        "explanation": "erkennen können gerekçesi vardır."
+      },
+      {
+        "id": "b1-u16-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Termin iptal olursa ne planlanmalı?",
+        "options": [
+          "Küçük alternatif.",
+          "Hedefi bırakmak.",
+          "Yeni telefon."
+        ],
+        "correctAnswer": "Küçük alternatif.",
+        "explanation": "eine kleine Alternative denir."
+      },
+      {
+        "id": "b1-u16-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Tüm haftayı bırakmak yerine ne yapılabilir?",
+        "options": [
+          "Görevi başka güne kaydırmak.",
+          "Hiçbir şey.",
+          "Yeni hedef silmek."
+        ],
+        "correctAnswer": "Görevi başka güne kaydırmak.",
+        "explanation": "auf einen anderen Tag verschieben denir."
+      },
+      {
+        "id": "b1-u16-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hafta sonunda ne not edilmeli?",
+        "options": [
+          "İşe yarayan ve uyarlanması gerekenler.",
+          "Sadece harcamalar.",
+          "Başka insanların planı."
+        ],
+        "correctAnswer": "İşe yarayan ve uyarlanması gerekenler.",
+        "explanation": "Son cümlede değerlendirme önerilir."
+      }
+    ],
+    "writingPrompt": "150–190 kelimeyle altı aylık bir hedef planı yaz: amaç, üç adım, başka bir kişinin rolü, alternatif plan ve kaçınmak istediğin davranış.",
+    "speakingPrompt": "2 dakika: kişisel veya akademik hedefini, nedenini ve nasıl uygulayacağını anlat.",
+    "realLifeMission": "Bir hedefi um...zu, damit, ohne...zu ve statt...zu yapılarının dördünü de kullanarak dört cümlede planla.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u17",
+    "cefrCanDo": [
+      "Resmî şikâyet veya bilgi talebini anlayabilirim.",
+      "Uygun üslupla çözüm talep edebilirim.",
+      "Edatlı fiil ve referans ifadelerini resmî yazıda kullanabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Resmî yazışmada konu, tarih veya referans, somut sorun ve beklenen çözümü açıkça ayırmak cevap alma ihtimalini artırır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Kundin",
+        "de": "Guten Tag, ich beziehe mich auf meine Bestellung mit der Nummer 4821.",
+        "tr": "İyi günler, 4821 numaralı siparişime atıfta bulunuyorum."
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Worum geht es genau?",
+        "tr": "Tam olarak konu nedir?"
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Die Lieferung sollte am Montag kommen, ist aber noch nicht angekommen.",
+        "tr": "Teslimat pazartesi gelmeliydi ama hâlâ gelmedi."
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Ich prüfe den Status. Einen Moment bitte.",
+        "tr": "Durumu kontrol ediyorum. Bir dakika."
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Danke. Ich habe mich gestern bereits per E-Mail darüber beschwert.",
+        "tr": "Teşekkürler. Dün bunun hakkında e-postayla şikâyet etmiştim."
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Ich sehe die Nachricht. Das Paket wurde falsch weitergeleitet.",
+        "tr": "Mesajı görüyorum. Paket yanlış yönlendirilmiş."
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Könnten Sie mir bitte schriftlich bestätigen, wann es geliefert wird?",
+        "tr": "Ne zaman teslim edileceğini yazılı onaylayabilir misiniz?"
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Ja, ich sende Ihnen gleich eine Bestätigung.",
+        "tr": "Evet, hemen onay gönderiyorum."
+      }
+    ],
+    "reading": {
+      "de": "Eine Kundin schreibt an einen Onlinekurs-Anbieter. Sie hatte einen Kurs gebucht, der laut Beschreibung zwölf Live-Termine enthalten sollte. Nach der Zahlung stellte sie fest, dass vier Termine nur als Aufzeichnung angeboten werden. In ihrer Nachricht bezieht sie sich auf die ursprüngliche Kursbeschreibung und bittet um Klärung. Falls keine zwölf Live-Termine angeboten werden können, möchte sie wissen, ob eine teilweise Rückerstattung möglich ist. Außerdem bittet sie um eine schriftliche Antwort innerhalb einer Woche.",
+      "tr": "Bir müşteri çevrim içi kurs sağlayıcısına yazıyor. Açıklamaya göre 12 canlı ders içeren kurs satın almış. Ödeme sonrası dört dersin yalnız kayıt olarak sunulduğunu fark ediyor. Mesajında ilk kurs açıklamasına atıfta bulunup açıklama istiyor. 12 canlı ders verilemiyorsa kısmi geri ödemenin mümkün olup olmadığını soruyor. Ayrıca bir hafta içinde yazılı cevap rica ediyor."
+    },
+    "listening": {
+      "de": "Eine Servicemitarbeiterin erklärt am Telefon: „Ihre Anfrage ist bei uns eingegangen und hat die Referenznummer K-731. Die Bearbeitung dauert normalerweise drei bis fünf Werktage. Sollte noch ein Dokument fehlen, erhalten Sie automatisch eine Nachricht. Bitte antworten Sie dann direkt auf diese E-Mail, damit der Vorgang derselben Anfrage zugeordnet werden kann. Wenn Sie nach fünf Werktagen nichts hören, können Sie sich mit der Referenznummer erneut melden.“",
+      "tr": "Bir servis çalışanı telefonda açıklıyor: “Talebiniz bize ulaştı ve referans numarası K-731. İşlem genelde üç ila beş iş günü sürer. Bir belge eksikse otomatik mesaj alırsınız. O zaman doğrudan bu e-postaya yanıt verin ki işlem aynı talebe bağlanabilsin. Beş iş günü sonra haber olmazsa referans numarasıyla tekrar iletişime geçebilirsiniz.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u17-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kurs açıklamasında ne vardı?",
+        "options": [
+          "12 canlı ders.",
+          "4 kayıt.",
+          "Hiç ders yok."
+        ],
+        "correctAnswer": "12 canlı ders.",
+        "explanation": "zwölf Live-Termine bilgisi vardır."
+      },
+      {
+        "id": "b1-u17-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ödeme sonrası ne fark edildi?",
+        "options": [
+          "Dört dersin kayıt olduğu.",
+          "Kurs ücretsiz olduğu.",
+          "Tüm dersler iptal."
+        ],
+        "correctAnswer": "Dört dersin kayıt olduğu.",
+        "explanation": "vier Termine nur als Aufzeichnung denir."
+      },
+      {
+        "id": "b1-u17-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Müşteri neye atıfta bulunuyor?",
+        "options": [
+          "İlk kurs açıklamasına.",
+          "Başka şirkete.",
+          "Telefon rehberine."
+        ],
+        "correctAnswer": "İlk kurs açıklamasına.",
+        "explanation": "bezieht sich auf die ursprüngliche Kursbeschreibung denir."
+      },
+      {
+        "id": "b1-u17-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ne kadar sürede yazılı cevap istiyor?",
+        "options": [
+          "Bir hafta içinde.",
+          "Bir ay.",
+          "Aynı dakika."
+        ],
+        "correctAnswer": "Bir hafta içinde.",
+        "explanation": "Son cümlede innerhalb einer Woche denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u17-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Referans numarası ne?",
+        "options": [
+          "K-731.",
+          "K-137.",
+          "7310."
+        ],
+        "correctAnswer": "K-731.",
+        "explanation": "Dinleme metninde referans numarası açıkça söylenir."
+      },
+      {
+        "id": "b1-u17-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İşlem ne kadar sürüyor?",
+        "options": [
+          "3–5 iş günü.",
+          "Bir ay kesin.",
+          "Bir saat."
+        ],
+        "correctAnswer": "3–5 iş günü.",
+        "explanation": "drei bis fünf Werktage denir."
+      },
+      {
+        "id": "b1-u17-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Belge eksikse ne olur?",
+        "options": [
+          "Otomatik mesaj gelir.",
+          "Başvuru hemen silinir.",
+          "Telefon kapanır."
+        ],
+        "correctAnswer": "Otomatik mesaj gelir.",
+        "explanation": "automatisch eine Nachricht denir."
+      },
+      {
+        "id": "b1-u17-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Beş iş günü haber yoksa ne yapılabilir?",
+        "options": [
+          "Referans numarasıyla tekrar iletişim.",
+          "Yeni hesap açmak.",
+          "Talebi unutmak."
+        ],
+        "correctAnswer": "Referans numarasıyla tekrar iletişim.",
+        "explanation": "Son cümle bu adımı söyler."
+      }
+    ],
+    "writingPrompt": "150–200 kelimelik resmî şikâyet yaz: referans, beklenti, gerçek durum, daha önce yaptığın işlem ve istediğin çözüm.",
+    "speakingPrompt": "Müşteri hizmeti rolü: 2 dakika içinde referans numarası, sorun, önceki iletişim ve çözüm talebini açıkça aktar.",
+    "realLifeMission": "Bir resmî talep için konu satırı + giriş + gerekçe + çözüm talebi + kapanış olmak üzere beş bölümlü şablon oluştur.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b1-u18",
+    "cefrCanDo": [
+      "B1 düzeyinde blog, e-posta, haber ve talimatlarda ana fikir ve önemli ayrıntıları anlayabilirim.",
+      "Bağlantılı 150–200 kelimelik görüş metni yazabilirim.",
+      "Bir partnerle plan yapıp öneri ve gerekçe sunabilirim.",
+      "Tanıdık bir konuda kısa sunum yapıp soruları yanıtlayabilirim."
+    ],
+    "cultureNote": {
+      "title": "B1 iletişim ve kullanım notu",
+      "text": "Bağımsız B1 kullanıcısı her cümleyi kusursuz kurmak zorunda değildir; önemli olan tanıdık konularda ana mesajı sürdürebilmek, bağlantı kurmak ve gerekçe verebilmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Maja",
+        "de": "Wir müssen für unseren Kurs einen Ausflug organisieren.",
+        "tr": "Kurs için gezi düzenlememiz gerekiyor."
+      },
+      {
+        "speaker": "Felix",
+        "de": "Sollen wir etwas in der Stadt machen oder rausfahren?",
+        "tr": "Şehirde bir şey mi yapalım, dışarı mı çıkalım?"
+      },
+      {
+        "speaker": "Maja",
+        "de": "Einerseits wäre ein Museum einfach zu organisieren, andererseits möchten viele lieber draußen sein.",
+        "tr": "Bir yandan müze düzenlemek kolay olur, diğer yandan çoğu kişi dışarıda olmak istiyor."
+      },
+      {
+        "speaker": "Felix",
+        "de": "Dann könnten wir eine kurze Wanderung mit einem Besuch in einem kleinen Museum verbinden.",
+        "tr": "O zaman kısa yürüyüşü küçük müze ziyaretiyle birleştirebiliriz."
+      },
+      {
+        "speaker": "Maja",
+        "de": "Gute Idee. Wie kommen wir hin?",
+        "tr": "İyi fikir. Nasıl gideriz?"
+      },
+      {
+        "speaker": "Felix",
+        "de": "Mit der Bahn. Wenn wir als Gruppe buchen, wird es wahrscheinlich günstiger.",
+        "tr": "Trenle. Grup olarak ayırtırsak muhtemelen daha ucuz olur."
+      },
+      {
+        "speaker": "Maja",
+        "de": "Wer informiert die anderen?",
+        "tr": "Diğerlerine kim bilgi verir?"
+      },
+      {
+        "speaker": "Felix",
+        "de": "Ich schreibe eine Nachricht, damit alle bis Mittwoch antworten können.",
+        "tr": "Herkes çarşambaya kadar cevap verebilsin diye mesaj yazarım."
+      }
+    ],
+    "reading": {
+      "de": "Eine Volkshochschule plant ein neues Kursformat, bei dem Präsenztermine und Onlinephasen kombiniert werden. In einer Umfrage nennen viele Teilnehmende die flexible Zeiteinteilung als Vorteil. Andere betonen, dass sie beim Lernen zu Hause schneller abgelenkt sind. Die Kursleitung möchte deshalb zunächst zwei Gruppen testen. Beide erhalten dieselben Inhalte, aber unterschiedliche Anteile an Onlinearbeit. Nach acht Wochen sollen Lernerfolg, Zufriedenheit und Teilnahmequote verglichen werden, bevor über eine dauerhafte Einführung entschieden wird. Zusätzlich sollen die Teilnehmenden in kurzen Interviews erklären, welche Form für sie im Alltag besser funktioniert.",
+      "tr": "Bir halk eğitim merkezi yüz yüze ve çevrim içi aşamaları birleştiren yeni kurs formatı planlıyor. Ankette birçok katılımcı esnek zamanı avantaj görüyor. Diğerleri evde daha hızlı dikkat dağıldığını vurguluyor. Kurs yönetimi önce iki grup test etmek istiyor. İki grup aynı içeriği alacak ancak çevrim içi çalışma oranları farklı. Sekiz hafta sonra kalıcı uygulama kararından önce öğrenme başarısı, memnuniyet ve katılım oranı karşılaştırılacak. Ayrıca katılımcılar kısa görüşmelerde hangi biçimin günlük hayatlarında daha iyi işlediğini anlatacak."
+    },
+    "listening": {
+      "de": "In einer kurzen Präsentation sagt ein Teilnehmer: „Ich möchte über das Thema Arbeiten von zu Hause sprechen. Für mich hat Homeoffice den Vorteil, dass ich keine Zeit für den Arbeitsweg brauche. Gleichzeitig ist es schwieriger, nach Feierabend wirklich abzuschalten. Deshalb finde ich eine gemischte Lösung sinnvoll. Zwei oder drei Tage zu Hause wären für mich ideal. Wichtig wäre allerdings, dass Teams feste gemeinsame Zeiten haben. Sonst kann die Zusammenarbeit komplizierter werden, obwohl jeder für sich flexibel ist.“",
+      "tr": "Kısa sunumda katılımcı şöyle diyor: “Evden çalışma konusu hakkında konuşmak istiyorum. Benim için home office’in avantajı işe gidip gelme zamanı gerekmemesi. Aynı zamanda işten sonra gerçekten kopmak daha zor. Bu nedenle karma çözümü mantıklı buluyorum. Haftada iki veya üç gün ev ideal olur. Ancak ekiplerin sabit ortak zamanları olması önemli. Aksi halde herkes esnek olsa da iş birliği zorlaşabilir.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "b1-u18-v35-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yeni kurs formatı neyi birleştiriyor?",
+        "options": [
+          "Yüz yüze ve çevrim içi aşamaları.",
+          "Sadece iki farklı sınavı.",
+          "Yalnız geziyi."
+        ],
+        "correctAnswer": "Yüz yüze ve çevrim içi aşamaları.",
+        "explanation": "İlk cümlede format açıklanır."
+      },
+      {
+        "id": "b1-u18-v35-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bir avantaj ne?",
+        "options": [
+          "Esnek zaman.",
+          "Daha uzun yol.",
+          "Daha fazla dikkat dağınıklığı."
+        ],
+        "correctAnswer": "Esnek zaman.",
+        "explanation": "Teilnehmende bunu Vorteil olarak söyler."
+      },
+      {
+        "id": "b1-u18-v35-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Karardan önce ne karşılaştırılacak?",
+        "options": [
+          "Başarı, memnuniyet ve katılım.",
+          "Yalnız fiyat.",
+          "Sadece öğretmen sayısı."
+        ],
+        "correctAnswer": "Başarı, memnuniyet ve katılım.",
+        "explanation": "Üç ölçüt açıkça listelenir."
+      },
+      {
+        "id": "b1-u18-v35-r4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ek olarak hangi veri toplanacak?",
+        "options": [
+          "Kısa görüşmelerde günlük uyum.",
+          "Sadece yaş.",
+          "Sadece not."
+        ],
+        "correctAnswer": "Kısa görüşmelerde günlük uyum.",
+        "explanation": "Son cümlede kurze Interviews vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b1-u18-v35-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sunumun konusu ne?",
+        "options": [
+          "Evden çalışma.",
+          "Seyahat.",
+          "Konut kiralama."
+        ],
+        "correctAnswer": "Evden çalışma.",
+        "explanation": "İlk cümlede Thema verilir."
+      },
+      {
+        "id": "b1-u18-v35-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Home office’in avantajı ne?",
+        "options": [
+          "Yol süresi olmaması.",
+          "Daha uzun toplantı.",
+          "Daha fazla trafik."
+        ],
+        "correctAnswer": "Yol süresi olmaması.",
+        "explanation": "keine Zeit für den Arbeitsweg denir."
+      },
+      {
+        "id": "b1-u18-v35-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Önerdiği çözüm ne?",
+        "options": [
+          "Karma model.",
+          "Tamamen ofis.",
+          "Tamamen ev."
+        ],
+        "correctAnswer": "Karma model.",
+        "explanation": "gemischte Lösung sinnvoll denir."
+      },
+      {
+        "id": "b1-u18-v35-l4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ortak zaman olmazsa ne zorlaşabilir?",
+        "options": [
+          "İş birliği.",
+          "Yolculuk.",
+          "Kira."
+        ],
+        "correctAnswer": "İş birliği.",
+        "explanation": "Son cümlede Zusammenarbeit komplizierter denir."
+      }
+    ],
+    "writingPrompt": "160–200 kelimelik B1 forum görüşü yaz: gündelik bir konu, açık görüş, iki gerekçe, bir karşı görüş, örnek ve sonuç.",
+    "speakingPrompt": "2–3 dakikalık B1 sunum: gündelik bir konu seç; deneyim, avantaj/dezavantaj, görüş ve sonuç. Ardından iki olası soruya cevap hazırla.",
+    "realLifeMission": "Bir partnerle gerçek bir etkinlik planı yap: yer, zaman, ulaşım, bütçe, görev paylaşımı ve alternatif plan üzerinde uzlaş.",
+    "sourceMethod": "Deutschimo V35 için özgün olarak yazıldı. Kullanıcının sağladığı Hueber Deutsch üben Lesen & Schreiben B1 kaynağı konu alanı, metin türü ve B1 günlük kullanım kapsamını; Goethe-Zertifikat B1 ile CEFR B1 ise beceri sınırı ve iletişim görevlerini doğrulamak için kullanıldı. Kaynak metin, cümle, görev, diyalog veya cevap kopyalanmadı."
+  }
+]

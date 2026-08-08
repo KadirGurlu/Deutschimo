@@ -1,0 +1,272 @@
+[
+  {
+    "unitId": "b1-u01",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: İlişkiler, Kişilik ve Sosyal İletişim. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u02",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Konut, WG ve Ortak Yaşam. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u03",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: İş, Başvuru ve Mesleki Hedefler. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u04",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Öğrenme, Diller ve Çalışma Stratejileri. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u05",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Medya, Haberler ve Farklı Görüşler. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u06",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Tüketim, Reklam ve Bilinçli Seçimler. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u07",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Seyahat, Ulaşım ve Beklenmeyen Durumlar. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u08",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Sağlık, Stres ve Yaşam Dengesi. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u09",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Çevre, İklim ve Sürdürülebilir Yaşam. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u10",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Toplum, Gönüllülük ve Katılım. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u11",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Kültür, Film ve Eleştiri. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u12",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Kurallar, Haklar ve Sorumluluklar. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u13",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Teknoloji, Dijitalleşme ve Gelecek. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u14",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Para, Bütçe ve Tüketici Kararları. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u15",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Güncel Olaylar, Haber Aktarma ve Zaman Sırası. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u16",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Planlar, Hedefler ve Amaç Bildirme. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u17",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: Resmî İletişim, Talep ve Şikâyet. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b1-u18",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V35 B1 Gold Standard: B1 Genel Uygulama ve Bağımsız İletişim. Dil doğruluğu, B1 seviye sınırı, bağlantılı üretim, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam transferi yeniden denetlendi."
+  }
+]

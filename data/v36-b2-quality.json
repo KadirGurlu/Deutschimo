@@ -1,0 +1,302 @@
+[
+  {
+    "unitId": "b2-u01",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Kimlik, Değerler ve Farklı Bakış Açıları. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u02",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Eğitim, Öğrenme ve Yaşam Boyu Gelişim. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u03",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: İş Dünyası, Sorumluluk ve Kurumsal İletişim. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u04",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Medya, Haber Dili ve Kaynak Güvenilirliği. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u05",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Bilim, Araştırma ve Kanıta Dayalı Düşünme. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u06",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Çevre, İklim ve Sürdürülebilir Dönüşüm. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u07",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Ekonomi, Tüketim ve Karar Verme. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u08",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Toplum, Demografi ve Birlikte Yaşam. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u09",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Ulaşım, Kentleşme ve Kamusal Alan. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u10",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u11",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Kültür, Sanat ve Eleştirel Değerlendirme. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u12",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Hukuk, Kurumlar ve Kamusal Sorumluluk. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u13",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Teknoloji, Yapay Zekâ ve Dijital Etik. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u14",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Akademik İletişim, Sunum ve Kaynak Aktarımı. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u15",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Kültürlerarası İletişim ve Uygun Üslup. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u16",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Argümantasyon, Tartışma ve Uzlaşma. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u17",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Veri, Grafik ve Eğilimleri Yorumlama. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u18",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u19",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  },
+  {
+    "unitId": "b2-u20",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V36 B2 Gold Standard: B2 Genel Uygulama ve Bağımsız İletişim. Soyut/karmaşık içerik, kaynak aktarımı, argümantasyon, register, okuma-dinleme, yazma-konuşma, aracılık ve gerçek yaşam transferi yeniden denetlendi."
+  }
+]

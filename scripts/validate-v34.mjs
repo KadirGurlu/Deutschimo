@@ -99,9 +99,9 @@ const slides = read("data/slides.ts");
 for (const token of [
   "v16ReadingQuestions = v16Content?.readingQuestions ?? []",
   "v16ListeningQuestions = v16Content?.listeningQuestions ?? []",
-  '(unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1") && v16Content ? v16Content.dialogue',
-  '(unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1") && v16Content ? v16Content.reading',
-  '(unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1") && v16Content ? v16Content.listening',
+  '(unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1" || unit.courseId === "b2") && v16Content ? v16Content.dialogue',
+  '(unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1" || unit.courseId === "b2") && v16Content ? v16Content.reading',
+  '(unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1" || unit.courseId === "b2") && v16Content ? v16Content.listening',
 ]) if (!slides.includes(token)) errors.push(`A2 zengin icerik entegrasyonu eksik: ${token}`);
 
 const curriculumLoader = read("data/curriculum-content.ts");

@@ -1,0 +1,3342 @@
+[
+  {
+    "id": "b2-u01",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Kimlik, Değerler ve Farklı Bakış Açıları“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2 düzeyinde kimlik ve değerler gibi soyut konularda kişisel deneyimi bütün bir gruba genellememek, kaynağı ve yorumu birbirinden ayırmak önemlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mira",
+        "de": "Im Seminar wurde heute über Zugehörigkeit gesprochen. Was war für dich der wichtigste Punkt?",
+        "tr": "Bugün seminerde aidiyet konuşuldu. Senin için en önemli nokta neydi?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Die Soziologin sagte, Zugehörigkeit sei nicht nur eine Frage der Herkunft.",
+        "tr": "Sosyolog, aidiyetin yalnız köken meselesi olmadığını söyledi."
+      },
+      {
+        "speaker": "Mira",
+        "de": "Welche anderen Faktoren nannte sie?",
+        "tr": "Başka hangi etkenleri söyledi?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Gemeinsame Erfahrungen und Werte könnten ebenso prägend sein.",
+        "tr": "Ortak deneyim ve değerlerin de şekillendirici olabileceğini söyledi."
+      },
+      {
+        "speaker": "Mira",
+        "de": "Lässt sich das auf alle Menschen übertragen?",
+        "tr": "Bu tüm insanlara aktarılabilir mi?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Nein. Sie betonte, die Bedeutung könne je nach Lebensphase stark variieren.",
+        "tr": "Hayır. Anlamın yaşam evresine göre çok değişebileceğini vurguladı."
+      },
+      {
+        "speaker": "Mira",
+        "de": "Dann müssen wir im Bericht Quelle und eigene Deutung deutlich trennen.",
+        "tr": "O zaman raporda kaynak ile kendi yorumumuzu net ayırmalıyız."
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Genau, sonst wirkt eine Interpretation schnell wie eine gesicherte Tatsache.",
+        "tr": "Aynen, yoksa yorum kolayca kesin olgu gibi görünür."
+      }
+    ],
+    "reading": {
+      "de": "Eine Jugendstudie untersucht, wie junge Erwachsene Zugehörigkeit beschreiben. Viele nennen nicht nur Herkunft oder Sprache, sondern auch Freundeskreise, berufliche Erfahrungen und gemeinsame Werte. Die Forschenden betonen, die Antworten seien sehr unterschiedlich und dürften nicht als feste Kategorien verstanden werden. Auffällig sei, dass dieselbe Person je nach Situation mehrere Zugehörigkeiten hervorheben könne. Die Studie warnt deshalb vor einfachen Aussagen über ganze Generationen. Solche Formulierungen seien zwar übersichtlich, könnten aber individuelle Unterschiede verdecken. Eine repräsentative Aussage über die gesamte Bevölkerung erhebt die Untersuchung ausdrücklich nicht.",
+      "tr": "Bir gençlik araştırması genç yetişkinlerin aidiyeti nasıl tanımladığını inceliyor. Birçok kişi yalnız köken veya dili değil, arkadaş çevresi, mesleki deneyimler ve ortak değerleri de belirtiyor. Araştırmacılar cevapların çok farklı olduğunu ve sabit kategoriler olarak görülmemesi gerektiğini vurguluyor. Aynı kişinin duruma göre birden fazla aidiyeti öne çıkarabilmesi dikkat çekiyor. Çalışma bu nedenle bütün kuşaklar hakkında basit genellemelere karşı uyarıyor ve tüm nüfusu temsil ettiğini iddia etmiyor."
+    },
+    "listening": {
+      "de": "Eine Journalistin erklärt in einem Podcast, sie formuliere Interviewaussagen heute vorsichtiger als früher. Wenn eine Person etwas behaupte, mache sie deutlich, wer für diese Aussage stehe. Besonders bei sensiblen Themen sei das wichtig. Sonst könnten Leser den Eindruck gewinnen, eine persönliche Erfahrung sei bereits eine allgemein belegte Tatsache.",
+      "tr": "Bir gazeteci podcastte röportaj ifadelerini artık eskisinden daha ihtiyatlı aktardığını anlatıyor. Bir kişi bir şey iddia ettiğinde ifadenin kime ait olduğunu açıkça gösteriyor. Hassas konularda bunun özellikle önemli olduğunu, aksi halde kişisel deneyimin genel kanıt sanılabileceğini söylüyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u01-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Araştırma aidiyet için neyi içeriyor?",
+        "options": [
+          "Kökenin yanı sıra deneyim ve ortak değerleri.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Kökenin yanı sıra deneyim ve ortak değerleri.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u01-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Araştırmacılar neye karşı uyarıyor?",
+        "options": [
+          "Sabit kategorilere ve basit genellemelere.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Sabit kategorilere ve basit genellemelere.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u01-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Aynı kişi ne yapabilir?",
+        "options": [
+          "Duruma göre farklı aidiyetleri öne çıkarabilir.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Duruma göre farklı aidiyetleri öne çıkarabilir.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u01-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Çalışma ne iddia etmiyor?",
+        "options": [
+          "Tüm nüfusu temsil ettiğini.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tüm nüfusu temsil ettiğini.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u01-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Gazeteci bugün nasıl aktarıyor?",
+        "options": [
+          "Daha ihtiyatlı.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Daha ihtiyatlı.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u01-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Neyi görünür kılıyor?",
+        "options": [
+          "İfadenin kime ait olduğunu.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "İfadenin kime ait olduğunu.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u01-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi konularda bu önemli?",
+        "options": [
+          "Hassas konularda.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Hassas konularda.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u01-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Risk nedir?",
+        "options": [
+          "Kişisel deneyimin genel kanıt sanılması.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Kişisel deneyimin genel kanıt sanılması.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Kimlik, Değerler ve Farklı Bakış Açıları”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Kimlik, Değerler ve Farklı Bakış Açıları”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Kimlik, Değerler ve Farklı Bakış Açıları” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u02",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Eğitim, Öğrenme ve Yaşam Boyu Gelişim“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "Eğitim politikalarını değerlendirirken süreç, sonuç ve uygulanabilirlik birbirinden ayrılmalıdır; yalnız bir yöntemin “modern” olması onun etkili olduğunu göstermez."
+    },
+    "dialogue": [
+      {
+        "speaker": "Lea",
+        "de": "Unsere Hochschule will mehr Prüfungen digital durchführen.",
+        "tr": "Üniversitemiz daha fazla sınavı dijital yapmak istiyor."
+      },
+      {
+        "speaker": "Omar",
+        "de": "Ist das System schon vollständig getestet?",
+        "tr": "Sistem tamamen test edildi mi?"
+      },
+      {
+        "speaker": "Lea",
+        "de": "Ein Teil wurde getestet, aber einige Funktionen werden noch entwickelt.",
+        "tr": "Bir kısmı test edildi ama bazı işlevler hâlâ geliştiriliyor."
+      },
+      {
+        "speaker": "Omar",
+        "de": "Dann ist die technische Seite noch nicht abgeschlossen.",
+        "tr": "O zaman teknik taraf henüz tamamlanmış değil."
+      },
+      {
+        "speaker": "Lea",
+        "de": "Genau. Außerdem muss geprüft werden, ob alle Studierenden dieselben Zugangsmöglichkeiten haben.",
+        "tr": "Aynen. Ayrıca tüm öğrencilerin aynı erişim imkânına sahip olup olmadığı kontrol edilmeli."
+      },
+      {
+        "speaker": "Omar",
+        "de": "Die Bedienung sollte sich ohne lange Schulung erklären lassen.",
+        "tr": "Kullanım uzun eğitim olmadan anlaşılabilmeli."
+      },
+      {
+        "speaker": "Lea",
+        "de": "Und die Regeln müssen klar dokumentiert sein.",
+        "tr": "Kurallar da açıkça belgelenmiş olmalı."
+      },
+      {
+        "speaker": "Omar",
+        "de": "Dann könnte man nach einer Pilotphase entscheiden, was dauerhaft übernommen wird.",
+        "tr": "Pilot dönemden sonra neyin kalıcı olacağına karar verilebilir."
+      }
+    ],
+    "reading": {
+      "de": "Eine Weiterbildungseinrichtung hat ein hybrides Kursmodell ein Jahr lang erprobt. Ein Teil der Inhalte wurde online vermittelt, während Beratungen und komplexe Gruppenaufgaben vor Ort stattfanden. Nach der Pilotphase waren die technischen Abläufe weitgehend standardisiert. Die Auswertung zeigte jedoch, dass nicht alle Lernenden von derselben Mischung profitierten. Besonders selbstständige Teilnehmer nutzten die Onlinephasen intensiv, während andere mehr feste Termine benötigten. Die Einrichtung entschied deshalb, kein einheitliches Modell vorzuschreiben. Stattdessen sollen verschiedene Kursvarianten angeboten und regelmäßig überprüft werden.",
+      "tr": "Bir eğitim kurumu hibrit kurs modelini bir yıl denedi. İçeriğin bir bölümü çevrim içi, danışmanlık ve karmaşık grup görevleri yüz yüze yapıldı. Pilot sonrasında teknik süreçler büyük ölçüde standartlaşmıştı. Ancak herkes aynı karışımdan eşit yararlanmadı. Bu nedenle kurum tek model dayatmak yerine farklı seçenekler sunmaya karar verdi."
+    },
+    "listening": {
+      "de": "Ein Dozent erklärt, bei digitalen Lernangeboten müsse zwischen einem funktionierenden System und einem pädagogisch sinnvollen Einsatz unterschieden werden. Eine Plattform könne technisch stabil sein und trotzdem ungeeignete Aufgaben enthalten. Umgekehrt könne eine gute Aufgabe durch komplizierte Bedienung unnötig erschwert werden. Beide Ebenen seien daher getrennt zu prüfen.",
+      "tr": "Bir öğretim görevlisi dijital öğrenmede çalışan sistem ile pedagojik olarak anlamlı kullanımın ayrılması gerektiğini söylüyor. Platform teknik olarak sağlam olup uygun olmayan görevler içerebilir; iyi görev de karmaşık kullanım yüzünden zorlaşabilir. İki düzey ayrı değerlendirilmeli."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u02-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Model ne kadar denendi?",
+        "options": [
+          "Bir yıl.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Bir yıl.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u02-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Neler yüz yüze yapıldı?",
+        "options": [
+          "Danışmanlık ve karmaşık grup görevleri.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Danışmanlık ve karmaşık grup görevleri.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u02-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kimler çevrim içi bölümlerden daha çok yararlandı?",
+        "options": [
+          "Daha bağımsız öğrenenler.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Daha bağımsız öğrenenler.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u02-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kurumun kararı ne?",
+        "options": [
+          "Farklı kurs seçenekleri sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Farklı kurs seçenekleri sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u02-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi iki düzey ayrılmalı?",
+        "options": [
+          "Teknik işleyiş ve pedagojik kullanım.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Teknik işleyiş ve pedagojik kullanım.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u02-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Teknik olarak sağlam platformun sorunu ne olabilir?",
+        "options": [
+          "Uygun olmayan görevler içerebilir.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Uygun olmayan görevler içerebilir.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u02-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İyi görev nasıl zorlaşabilir?",
+        "options": [
+          "Karmaşık kullanımla.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Karmaşık kullanımla.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u02-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ne öneriliyor?",
+        "options": [
+          "İki düzeyi ayrı incelemek.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "İki düzeyi ayrı incelemek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Eğitim, Öğrenme ve Yaşam Boyu Gelişim”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Eğitim, Öğrenme ve Yaşam Boyu Gelişim”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Eğitim, Öğrenme ve Yaşam Boyu Gelişim” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u03",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „İş Dünyası, Sorumluluk ve Kurumsal İletişim“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "Profesyonel iletişimde Nomen-Verb-Verbindungen resmî ve yoğun bir dil sağlar; ancak gereksiz kullanıldığında metni ağırlaştırabilir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Seda",
+        "de": "Wir müssen morgen eine Entscheidung über den neuen Ablauf treffen.",
+        "tr": "Yarın yeni süreç hakkında karar vermeliyiz."
+      },
+      {
+        "speaker": "Martin",
+        "de": "Vorher sollten wir die Rückmeldungen der Teams berücksichtigen.",
+        "tr": "Önce ekiplerin geri bildirimlerini dikkate almalıyız."
+      },
+      {
+        "speaker": "Seda",
+        "de": "Die Personalabteilung hat bereits Kontakt mit den Teamleitungen aufgenommen.",
+        "tr": "İK ekip liderleriyle zaten iletişime geçti."
+      },
+      {
+        "speaker": "Martin",
+        "de": "Gut. Dann können wir auch die technischen Risiken zur Sprache bringen.",
+        "tr": "İyi. O zaman teknik riskleri de gündeme getirebiliriz."
+      },
+      {
+        "speaker": "Seda",
+        "de": "Ich möchte außerdem einen Vorschlag zur Entlastung machen.",
+        "tr": "Ayrıca yükü azaltmak için öneri sunmak istiyorum."
+      },
+      {
+        "speaker": "Martin",
+        "de": "Kannst du die wichtigsten Punkte schriftlich festhalten?",
+        "tr": "En önemli noktaları yazılı kaydedebilir misin?"
+      },
+      {
+        "speaker": "Seda",
+        "de": "Ja, und nach dem Termin setze ich die Beschlüsse in ein Protokoll um.",
+        "tr": "Evet, toplantı sonrası kararları tutanağa aktarırım."
+      },
+      {
+        "speaker": "Martin",
+        "de": "Dann haben wir eine klare Grundlage für die Umsetzung.",
+        "tr": "O zaman uygulama için net temelimiz olur."
+      }
+    ],
+    "reading": {
+      "de": "In einem Unternehmen wurde eine neue Regel für interne Anfragen eingeführt. Zunächst stieß sie auf Kritik, weil mehrere Teams einen zusätzlichen Verwaltungsaufwand befürchteten. Die Projektgruppe nahm diese Bedenken ernst und führte Gespräche mit den betroffenen Abteilungen. Dabei kamen konkrete Verbesserungsmöglichkeiten zur Sprache. Nach vier Wochen wurde eine überarbeitete Version zur Abstimmung gestellt. Die Geschäftsleitung traf schließlich die Entscheidung, die Regel für drei Monate zu testen. Gleichzeitig wurde vereinbart, regelmäßig Rückmeldung einzuholen und bei Bedarf Anpassungen vorzunehmen.",
+      "tr": "Bir şirkette iç talepler için yeni kural getirildi. Başta ek idari yük korkusuyla eleştirildi. Proje grubu ilgili departmanlarla görüşüp iyileştirme seçeneklerini ele aldı. Dört hafta sonra revize sürüm oylamaya sunuldu ve yönetim üç aylık test kararı aldı."
+    },
+    "listening": {
+      "de": "Eine Teamleiterin berichtet, dass Konflikte häufig entstehen, wenn Entscheidungen nur angekündigt, aber nicht begründet werden. Sie empfiehlt, frühzeitig Kontakt mit betroffenen Personen aufzunehmen, Einwände zur Kenntnis zu nehmen und anschließend transparent zu erklären, welche Punkte tatsächlich berücksichtigt wurden. Außerdem empfiehlt sie, nach einer Entscheidung schriftlich festzuhalten, welche Einwände berücksichtigt wurden und wer für die nächsten Schritte verantwortlich ist. Dadurch werde verhindert, dass dieselbe Diskussion später ohne neue Informationen erneut geführt werde.",
+      "tr": "Bir ekip lideri, kararlar yalnız duyurulup gerekçelendirilmediğinde çatışmaların sık ortaya çıktığını söylüyor. Etkilenen kişilerle erken iletişim, itirazları dikkate alma ve hangi noktaların gerçekten ele alındığını şeffaf açıklama öneriyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u03-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yeni kural neden eleştirildi?",
+        "options": [
+          "Ek idari yük korkusu nedeniyle.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Ek idari yük korkusu nedeniyle.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u03-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Proje grubu ne yaptı?",
+        "options": [
+          "İlgili departmanlarla görüşmeler yaptı.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "İlgili departmanlarla görüşmeler yaptı.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u03-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yeni sürüm ne zaman hazırlandı?",
+        "options": [
+          "Dört hafta sonra.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Dört hafta sonra.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u03-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Karar neydi?",
+        "options": [
+          "Üç aylık test.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Üç aylık test.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u03-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Çatışma ne zaman doğuyor?",
+        "options": [
+          "Kararlar gerekçesiz duyurulduğunda.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Kararlar gerekçesiz duyurulduğunda.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u03-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk öneri ne?",
+        "options": [
+          "Erken iletişime geçmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Erken iletişime geçmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u03-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İtirazlarla ne yapılmalı?",
+        "options": [
+          "Dikkate alınmalı.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Dikkate alınmalı.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u03-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sonra ne açıklanmalı?",
+        "options": [
+          "Hangi noktaların dikkate alındığı.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Hangi noktaların dikkate alındığı.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “İş Dünyası, Sorumluluk ve Kurumsal İletişim”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “İş Dünyası, Sorumluluk ve Kurumsal İletişim”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“İş Dünyası, Sorumluluk ve Kurumsal İletişim” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u04",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Medya, Haber Dili ve Kaynak Güvenilirliği“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2 medya okuryazarlığında başlık, kaynak, yöntem ve yorum birbirinden ayrılır; haber dilindeki nominal yapıların bilgiyi yoğunlaştırdığı ama sorumluyu gizleyebildiği de fark edilir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Nina",
+        "de": "Die Schlagzeile klingt so, als wäre die Entscheidung schon endgültig.",
+        "tr": "Başlık karar kesinmiş gibi geliyor."
+      },
+      {
+        "speaker": "David",
+        "de": "Im Artikel steht aber nur, dass eine Prüfung des Vorschlags angekündigt wurde.",
+        "tr": "Makalede yalnız önerinin inceleneceğinin duyurulduğu yazıyor."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Dann macht die Nominalisierung den Vorgang etwas unpersönlich.",
+        "tr": "O zaman isimleştirme süreci biraz kişisizleştiriyor."
+      },
+      {
+        "speaker": "David",
+        "de": "Ja. Wenn man verbalisiert, wird klarer, wer was tut.",
+        "tr": "Evet. Fiilleştirince kimin ne yaptığı daha açık."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Gibt es eine Primärquelle?",
+        "tr": "Birincil kaynak var mı?"
+      },
+      {
+        "speaker": "David",
+        "de": "Die Behörde hat eine kurze Mitteilung veröffentlicht.",
+        "tr": "Kurum kısa açıklama yayımladı."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Dann sollten wir Überschrift und Originalmitteilung vergleichen.",
+        "tr": "O zaman başlıkla orijinal açıklamayı karşılaştırmalıyız."
+      },
+      {
+        "speaker": "David",
+        "de": "Genau, bevor wir den Artikel weitergeben.",
+        "tr": "Aynen, makaleyi paylaşmadan önce."
+      }
+    ],
+    "reading": {
+      "de": "Ein Onlineportal meldete am Morgen eine „Einführung neuer Gebühren“. In der verlinkten Mitteilung der Stadt war jedoch lediglich von einer Prüfung verschiedener Finanzierungsmodelle die Rede. Eine Entscheidung sollte erst nach einer öffentlichen Anhörung getroffen werden. Mehrere andere Medien übernahmen zunächst die zugespitzte Überschrift. Am Nachmittag korrigierten zwei Redaktionen ihre Texte und formulierten, die Stadt prüfe zusätzliche Gebühren. Der Fall zeigt, dass nominale Formulierungen wie „Einführung“ einen abgeschlossenen Vorgang suggerieren können, obwohl tatsächlich erst ein Verfahren begonnen hat.",
+      "tr": "Bir portal sabah “yeni ücretlerin uygulanması” başlığı attı. Oysa belediye açıklamasında yalnız farklı finansman modellerinin incelendiği ve kararın kamu dinlemesinden sonra verileceği yazıyordu. Bazı medya başlığı kopyaladı, sonra iki yayın düzeltti."
+    },
+    "listening": {
+      "de": "Ein Medienwissenschaftler erklärt, Quellenkritik beginne nicht erst bei der Frage, ob eine Information wahr oder falsch sei. Man müsse auch prüfen, ob eine Überschrift den Grad der Sicherheit korrekt wiedergebe, ob ein Kommentar als Meinung erkennbar sei und ob eine Studie tatsächlich die im Artikel behauptete Aussage stütze.",
+      "tr": "Bir medya araştırmacısı kaynak eleştirisinin yalnız doğru-yanlış kontrolü olmadığını; başlığın kesinlik derecesini doğru verip vermediği, yorumun görüş olarak işaretlenip işaretlenmediği ve araştırmanın iddiayı gerçekten destekleyip desteklemediğinin de kontrol edilmesi gerektiğini söylüyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u04-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Portal ne iddia etti?",
+        "options": [
+          "Yeni ücretlerin uygulandığını.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Yeni ücretlerin uygulandığını.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u04-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Belediye gerçekte ne yapıyordu?",
+        "options": [
+          "Finansman modellerini inceliyordu.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Finansman modellerini inceliyordu.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u04-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Karar ne zaman verilecekti?",
+        "options": [
+          "Kamu dinlemesinden sonra.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Kamu dinlemesinden sonra.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u04-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sorunlu nominal kelime neydi?",
+        "options": [
+          "Einführung.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Einführung.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u04-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kaynak eleştirisi yalnız ne değildir?",
+        "options": [
+          "Doğru-yanlış kontrolü değildir.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Doğru-yanlış kontrolü değildir.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u04-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Başlıkta ne kontrol edilir?",
+        "options": [
+          "Kesinlik derecesi.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u04-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yorum nasıl görünmeli?",
+        "options": [
+          "Görüş olduğu anlaşılmalı.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Görüş olduğu anlaşılmalı.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u04-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Araştırmayla ilgili ne kontrol edilir?",
+        "options": [
+          "İddiayı gerçekten destekleyip desteklemediği.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "İddiayı gerçekten destekleyip desteklemediği.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Medya, Haber Dili ve Kaynak Güvenilirliği”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Medya, Haber Dili ve Kaynak Güvenilirliği”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Medya, Haber Dili ve Kaynak Güvenilirliği” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u05",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Bilim, Araştırma ve Kanıta Dayalı Düşünme“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "Bilimsel iletişimde korelasyon, nedensellik, etki büyüklüğü ve araştırma sınırlılığı birbirinden ayrılır; “kanıtlandı” gibi mutlak ifadeler dikkatle kullanılır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Nora",
+        "de": "Die Studie wird online als Beweis für einen direkten Effekt geteilt. Stimmt das?",
+        "tr": "Çalışma internette doğrudan etkinin kanıtı diye paylaşılıyor. Doğru mu?"
+      },
+      {
+        "speaker": "Kemal",
+        "de": "Nicht ganz. Die veröffentlichten Daten zeigen zunächst nur einen Zusammenhang.",
+        "tr": "Tam değil. Yayımlanan veriler önce yalnız bir ilişki gösteriyor."
+      },
+      {
+        "speaker": "Nora",
+        "de": "Was fehlt für eine stärkere Aussage?",
+        "tr": "Daha güçlü iddia için ne eksik?"
+      },
+      {
+        "speaker": "Kemal",
+        "de": "Eine bessere Kontrolle anderer Einflussfaktoren und eine größere Stichprobe.",
+        "tr": "Diğer etkenlerin daha iyi kontrolü ve daha büyük örneklem."
+      },
+      {
+        "speaker": "Nora",
+        "de": "Sind die gemessenen Unterschiede deutlich?",
+        "tr": "Ölçülen farklar belirgin mi?"
+      },
+      {
+        "speaker": "Kemal",
+        "de": "Ja, aber die Forschenden nennen selbst mehrere Einschränkungen.",
+        "tr": "Evet ama araştırmacılar birkaç sınırlılık belirtiyor."
+      },
+      {
+        "speaker": "Nora",
+        "de": "Dann sollte man das Ergebnis eher als Hinweis formulieren.",
+        "tr": "O zaman sonucu daha çok işaret olarak formüle etmek gerekir."
+      },
+      {
+        "speaker": "Kemal",
+        "de": "Genau. Vorsichtige Sprache ist hier wissenschaftlich genauer.",
+        "tr": "Aynen. İhtiyatlı dil burada bilimsel olarak daha doğru."
+      }
+    ],
+    "reading": {
+      "de": "Ein Forschungsteam untersuchte, ob flexible Arbeitszeiten mit der Schlafqualität zusammenhängen. Über sechs Monate wurden Daten von 420 Beschäftigten erhoben. Im Durchschnitt zeigten Personen mit größerem zeitlichem Spielraum bessere Werte. Die Forschenden weisen jedoch darauf hin, dass die Teilnehmenden nicht zufällig verschiedenen Arbeitsmodellen zugeteilt wurden. Die Gruppen könnten sich daher bereits vor der Untersuchung unterschieden haben. Die Ergebnisse sprechen für einen Zusammenhang, erlauben aber keine sichere Aussage darüber, ob flexible Arbeitszeiten die alleinige Ursache der besseren Werte sind.",
+      "tr": "Bir araştırma ekibi esnek çalışma saatleri ile uyku kalitesi ilişkisini inceledi. Altı ay boyunca 420 çalışandan veri toplandı. Daha fazla esnekliği olanlarda ortalama değerler daha iyiydi ancak gruplar rastgele atanmadı. Sonuç ilişkiyi destekliyor ama tek nedenin esnek saatler olduğunu kanıtlamıyor."
+    },
+    "listening": {
+      "de": "Eine Forscherin betont, ein statistisch auffälliger Unterschied könne praktisch sehr klein sein. Außerdem müsse geprüft werden, wie Daten erhoben wurden und ob ein Ergebnis in anderen Untersuchungen wiederholt beobachtet werde. Ein einzelnes überraschendes Resultat sei interessant, aber noch keine belastbare Schlussfolgerung. Sie fügt hinzu, dass Ergebnisse möglichst mit anderen Untersuchungen verglichen werden sollten. Wenn verschiedene Studien trotz unterschiedlicher Methoden zu ähnlichen Befunden kommen, steigt das Vertrauen in die Aussage, ohne dass dadurch jede Unsicherheit verschwindet.",
+      "tr": "Bir araştırmacı istatistiksel olarak dikkat çekici farkın pratikte küçük olabileceğini, veri toplama yönteminin ve sonucun başka araştırmalarda tekrarlanmasının kontrol edilmesi gerektiğini söylüyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u05-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Araştırma neyi inceliyor?",
+        "options": [
+          "Esnek saatler ve uyku kalitesi ilişkisini.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Esnek saatler ve uyku kalitesi ilişkisini.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u05-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kaç çalışan var?",
+        "options": [
+          "420.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "420.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u05-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sınırlılık ne?",
+        "options": [
+          "Rastgele grup ataması yok.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Rastgele grup ataması yok.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u05-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sonuç neyi kanıtlamıyor?",
+        "options": [
+          "Esnekliğin tek neden olduğunu.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Esnekliğin tek neden olduğunu.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u05-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İstatistiksel fark ne olabilir?",
+        "options": [
+          "Pratikte küçük olabilir.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Pratikte küçük olabilir.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u05-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ne kontrol edilmeli?",
+        "options": [
+          "Verinin nasıl toplandığı.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Verinin nasıl toplandığı.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u05-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Başka ne önemli?",
+        "options": [
+          "Sonucun tekrarlanması.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Sonucun tekrarlanması.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u05-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Tek sonuç yeterli mi?",
+        "options": [
+          "Hayır.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Hayır.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Bilim, Araştırma ve Kanıta Dayalı Düşünme”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Bilim, Araştırma ve Kanıta Dayalı Düşünme”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Bilim, Araştırma ve Kanıta Dayalı Düşünme” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u06",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Çevre, İklim ve Sürdürülebilir Dönüşüm“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Çevre, İklim ve Sürdürülebilir Dönüşüm” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Eine Kommune hat ein dreijähriges Programm gestartet, um den Energieverbrauch öffentlicher Gebäude zu senken. Im ersten Jahr wurden Verbrauchsdaten detailliert erfasst, im zweiten Jahr Dämmung und Heiztechnik modernisiert. Ein vorläufiger Bericht nennt eine Einsparung von 18 Prozent. Allerdings dürfte auch der mildere Winter einen Teil des Unterschieds erklären. Fachleute betonen deshalb, Temperaturdaten und Nutzungsintensität müssten gemeinsam ausgewertet werden, bevor die Wirkung des Programms eindeutig beurteilt werden könne. Zusätzlich sollen Vergleichsdaten aus Gebäuden berücksichtigt werden, die im selben Zeitraum nicht saniert wurden. Dadurch ließe sich besser einschätzen, welcher Anteil der Veränderung tatsächlich auf die Modernisierung zurückzuführen sein könnte. Die Verwaltung plant außerdem, die Ergebnisse offen zu veröffentlichen. So können Fachleute nachvollziehen, welche Annahmen verwendet wurden, wie groß die Unsicherheit ist und welche Maßnahmen sich möglicherweise auf andere Gebäude übertragen lassen.",
+      "tr": "Bir belediye, kent merkezindeki binalarda enerji tüketimini azaltmak için üç yıllık program başlattı. İlk yıl kamu binalarında ayrıntılı ölçüm yapıldı; ikinci yıl yalıtım ve ısıtma sistemleri yenilendi. Ön rapora göre tüketim yüzde 18 azalmış olabilir, ancak kışın önceki yıla göre daha ılık geçmesi sonucu kısmen etkilemiş olabilir. Uzmanlar, programın etkisinin kesin olarak değerlendirilebilmesi için sıcaklık verilerinin ve kullanım yoğunluğunun birlikte analiz edilmesi gerektiğini belirtiyor."
+    },
+    "listening": {
+      "de": "Eine Expertin erklärt, die bisherige Einsparung dürfte zum Teil auf die Sanierung zurückzuführen sein. Gleichzeitig könne das mildere Wetter eine Rolle gespielt haben. Die Daten müssten deshalb bereinigt werden, bevor behauptet werde, das Programm habe allein eine bestimmte Wirkung verursacht. Sie ergänzt, dass einzelne Prozentwerte ohne Vergleichsgruppe leicht überinterpretiert werden könnten. Erst wenn Wetter, Nutzungsdauer und technische Ausgangslage kontrolliert seien, lasse sich eine belastbarere Aussage formulieren. Für politische Entscheidungen sei deshalb nicht nur die Höhe der Einsparung wichtig, sondern auch die Transparenz der Berechnung.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u06-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Üç yıllık enerji programı",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Üç yıllık enerji programı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u06-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "İlk yıl ölçüm yapıldı",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "İlk yıl ölçüm yapıldı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u06-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Ön raporda yüzde 18 azalma",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Ön raporda yüzde 18 azalma",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u06-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Hava koşulları sonucu etkilemiş olabilir",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Hava koşulları sonucu etkilemiş olabilir",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u06-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u06-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u06-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u06-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Çevre, İklim ve Sürdürülebilir Dönüşüm”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Çevre, İklim ve Sürdürülebilir Dönüşüm”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Çevre, İklim ve Sürdürülebilir Dönüşüm” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u07",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Ekonomi, Tüketim ve Karar Verme“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Ekonomi, Tüketim ve Karar Verme” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "In einer Verbraucheruntersuchung entschieden 600 Personen zwischen zwei Abonnementmodellen. Zunächst achteten viele vor allem auf den niedrigen Monatspreis. Nachdem ihnen jedoch die Gesamtkosten über die gesamte Vertragsdauer gezeigt worden waren, änderte ein erheblicher Teil seine Wahl. Die Forschenden schließen daraus, dass die Darstellung von Preisinformationen Entscheidungen beeinflussen kann. Gleichzeitig hängen Präferenzen auch von Einkommen, Nutzungshäufigkeit und Kündigungsflexibilität ab. Besonders deutlich war der Effekt bei Angeboten, deren Zusatzkosten erst in den Vertragsdetails sichtbar wurden. Einige Teilnehmende bezeichneten ihre ursprüngliche Wahl im Nachhinein als vorschnell. Die Studie empfiehlt deshalb, Gesamtpreise, Kündigungsfristen und mögliche Zusatzgebühren in einer vergleichbaren Form darzustellen. Eine solche Darstellung soll die Entscheidung nicht vorgeben, sondern verhindern, dass ein einzelner auffälliger Preisbestandteil die übrigen Bedingungen vollständig überdeckt.",
+      "tr": "Bir tüketici araştırmasında 600 kişi iki abonelik modeli arasında seçim yaptı. Katılımcıların çoğu düşük aylık ücrete dikkat etti; ancak toplam sözleşme maliyeti gösterildiğinde tercihlerin önemli bölümü değişti. Araştırmacılar bundan, fiyat bilgisinin sunuluş biçiminin karar üzerinde etkili olabileceği sonucunu çıkarıyor. Bununla birlikte gelir düzeyi, kullanım sıklığı ve iptal esnekliği de tercihleri etkileyen değişkenler arasında."
+    },
+    "listening": {
+      "de": "Ein Verbraucherberater sagt, bei langfristigen Verträgen komme es nicht nur auf den Monatspreis an. Entscheidend sei, worauf sich zusätzliche Gebühren beziehen, wovon Rabatte abhängen und damit welche Gesamtkosten über die gesamte Laufzeit entstehen. Der Berater rät außerdem dazu, Angebote anhand eines realistischen Nutzungsszenarios zu vergleichen. Ein Rabatt könne attraktiv wirken, verliere aber an Bedeutung, wenn er nur unter Bedingungen gelte, die im Alltag kaum erfüllt würden. Deshalb solle man prüfen, welche Kosten sicher entstehen und welche nur unter bestimmten Voraussetzungen möglich seien.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u07-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "600 kişi katıldı",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "600 kişi katıldı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u07-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Aylık fiyat ilk tercihi etkiledi",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Aylık fiyat ilk tercihi etkiledi",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u07-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Toplam maliyet gösterilince tercihler değişti",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Toplam maliyet gösterilince tercihler değişti",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u07-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Başka etkenler de var",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Başka etkenler de var",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u07-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u07-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u07-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u07-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Ekonomi, Tüketim ve Karar Verme”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Ekonomi, Tüketim ve Karar Verme”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Ekonomi, Tüketim ve Karar Verme” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u08",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Toplum, Demografi ve Birlikte Yaşam“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Toplum, Demografi ve Birlikte Yaşam” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Eine Befragung in einem Stadtviertel zeigt, dass öffentliche Räume von Alters- und Nutzergruppen unterschiedlich bewertet werden. Einige wünschen sich mehr Spielflächen, andere legen größeren Wert auf ruhige Aufenthaltsbereiche. Mehrere Initiativen argumentieren, beide Bedürfnisse ließen sich durch eine flexible Aufteilung verbinden. Die Stadtverwaltung will deshalb nicht die Forderung einer einzelnen Gruppe als allgemeinen Wunsch darstellen, sondern die Interessen verschiedener Nutzer getrennt dokumentieren. Für die nächste Planungsphase sollen deshalb nicht nur Onlinebefragungen genutzt werden. Vorgesehen sind zusätzlich Beobachtungen vor Ort und moderierte Gespräche mit Gruppen, die in bisherigen Verfahren selten vertreten waren. Die Verantwortlichen hoffen, dadurch auch Nutzungskonflikte sichtbar zu machen, die in allgemeinen Fragebögen leicht verloren gehen. Am Ende soll kein idealer Platz für eine gedachte Durchschnittsperson entstehen, sondern ein Raum, dessen unterschiedliche Funktionen begründet miteinander kombiniert werden.",
+      "tr": "Bir mahallede yapılan araştırma, kamusal alan kullanımının yaş gruplarına göre farklılaştığını gösteriyor. Bazı sakinler daha fazla oyun alanı isterken, bazıları sessiz dinlenme bölgelerini önemsiyor. Birkaç grup ise ikisinin birlikte planlanabileceğini savunuyor. Belediye, tek bir grubun beklentisini genel talep gibi sunmak yerine farklı kullanıcıların ihtiyaçlarını ayrı ayrı belgelemeye karar verdi."
+    },
+    "listening": {
+      "de": "Eine Stadtplanerin erklärt, niemand nutze einen Platz genau gleich. Einige kämen täglich, mehrere nur am Wochenende und manche fast nie. Deshalb müsse man verschiedene Gruppen befragen, statt von einer vermeintlich einheitlichen Bevölkerung auszugehen. Die Stadtplanerin weist zudem darauf hin, dass Befragungen vom Zeitpunkt abhängen können. Wer einen Platz im Sommer besucht, bewertet Schatten, Sitzmöglichkeiten oder Lärm möglicherweise anders als jemand im Winter. Deshalb seien mehrere Beobachtungszeiträume sinnvoll, bevor aus einzelnen Antworten langfristige Planungsziele abgeleitet würden.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u08-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Yaş grupları farklı ihtiyaç bildiriyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Yaş grupları farklı ihtiyaç bildiriyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u08-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Oyun alanı talebi var",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Oyun alanı talebi var",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u08-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Sessiz alan talebi var",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Sessiz alan talebi var",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u08-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Belediye ihtiyaçları ayrı belgeleyecek",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Belediye ihtiyaçları ayrı belgeleyecek",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u08-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u08-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u08-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u08-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Toplum, Demografi ve Birlikte Yaşam”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Toplum, Demografi ve Birlikte Yaşam”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Toplum, Demografi ve Birlikte Yaşam” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u09",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Ulaşım, Kentleşme ve Kamusal Alan“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Ulaşım, Kentleşme ve Kamusal Alan” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "In einer Großstadt wurde eine Fahrspur einer Hauptstraße in eine Bus- und Radspur umgewandelt. In den ersten sechs Monaten sank die durchschnittliche Fahrzeit mehrerer Buslinien. Gleichzeitig nahm der Verkehr in einigen Nebenstraßen zu. Das Projektteam warnt davor, nur einen Indikator als Erfolgskriterium zu verwenden. Neben Reisezeiten sollen auch Sicherheit, Lärm, Erreichbarkeit lokaler Geschäfte und die Entwicklung in angrenzenden Straßen über einen längeren Zeitraum beobachtet werden. Auch die Perspektive der Anwohner wird einbezogen. Einige berichten von kürzeren Busfahrten und sichereren Radwegen, andere kritisieren zusätzliche Umwege mit dem Auto. Die Stadt will deshalb nicht nur Durchschnittswerte veröffentlichen, sondern auch zeigen, wo sich Belastungen räumlich verlagern. Nach zwölf Monaten soll entschieden werden, welche Elemente beibehalten, verändert oder zurückgenommen werden. Dabei sollen sowohl messbare Daten als auch nachvollziehbar dokumentierte Erfahrungen berücksichtigt werden.",
+      "tr": "Bir kentte ana caddedeki otomobil şeritlerinden biri otobüs ve bisiklet şeridine dönüştürüldü. İlk altı ayda otobüslerin ortalama yolculuk süresi azaldı, fakat bazı yan sokaklarda yoğunluk arttı. Proje ekibi, tek bir ölçüte bakmanın yeterli olmadığını; seyahat süresi, güvenlik, gürültü ve yerel işletmelerin erişimi gibi göstergelerin birlikte izlenmesi gerektiğini belirtiyor."
+    },
+    "listening": {
+      "de": "Ein Verkehrsplaner sagt, es sei zu früh, das Projekt als Erfolg oder Misserfolg zu bezeichnen. Es gebe positive Signale beim öffentlichen Verkehr, gleichzeitig sei es notwendig, die Auswirkungen auf Nebenstraßen länger zu beobachten. Er ergänzt, dass kurzfristige Veränderungen nach einer Umstellung besonders stark wirken können, weil Verkehrsteilnehmer ihre Routen zunächst neu suchen. Erst nach einer längeren Gewöhnungsphase zeige sich, welche Effekte stabil seien. Eine seriöse Bewertung müsse daher Zeitverlauf, räumliche Unterschiede und verschiedene Verkehrsmittel gemeinsam betrachten.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u09-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Bir şerit dönüştürüldü",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Bir şerit dönüştürüldü",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u09-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Otobüs süresi azaldı",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Otobüs süresi azaldı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u09-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Bazı yan sokaklarda yoğunluk arttı",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Bazı yan sokaklarda yoğunluk arttı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u09-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Birden fazla gösterge izlenecek",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Birden fazla gösterge izlenecek",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u09-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u09-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u09-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u09-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Ulaşım, Kentleşme ve Kamusal Alan”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Ulaşım, Kentleşme ve Kamusal Alan”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Ulaşım, Kentleşme ve Kamusal Alan” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u10",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Ein Unternehmen hat sein Besprechungskonzept verändert, um lange ununterbrochene Sitzzeiten zu reduzieren. Kurze Meetings können teilweise im Stehen stattfinden, und Teams dürfen Bewegungspausen in ihre Kalender integrieren. Das Programm ist nicht verpflichtend und kann an Tätigkeit sowie individuelle Voraussetzungen angepasst werden. Bei der Auswertung wird daher nicht nur gezählt, wie viele Personen teilnehmen. Entscheidend ist auch, ob die Maßnahmen im Alltag realistisch und dauerhaft nutzbar sind. In ersten Gesprächen begrüßten viele Beschäftigte die größere Flexibilität, während andere befürchteten, aus freiwilligen Angeboten könnte indirekter sozialer Druck entstehen. Die Personalabteilung reagierte darauf mit einer klaren Regel: Niemand muss Gesundheitsmaßnahmen begründen oder seine Teilnahme offenlegen. Zusätzlich sollen Arbeitsabläufe so gestaltet werden, dass Pausen nicht nur theoretisch erlaubt, sondern praktisch möglich sind. Die Wirksamkeit des Programms wird daher auch daran gemessen, ob organisatorische Hindernisse tatsächlich reduziert werden.",
+      "tr": "Bir şirket, çalışanların uzun süre kesintisiz oturmasını azaltmak amacıyla toplantı düzenini değiştirdi. Kısa toplantıların bir bölümü ayakta yapılabiliyor ve ekipler takvimlerine hareket molaları ekleyebiliyor. Program zorunlu değil; çalışanların sağlık durumuna ve görevine göre uyarlanıyor. Değerlendirmede yalnız katılım sayısına değil, çalışanların programı sürdürülebilir bulup bulmadığına da bakılıyor."
+    },
+    "listening": {
+      "de": "Eine Arbeitsmedizinerin warnt davor, Prävention als einzelne Maßnahme zu verstehen. Nicht jede Empfehlung passe für jede Person, und nicht jede kurzfristige Veränderung führe automatisch zu einem langfristigen Effekt. Entscheidend sei ein realistischer und freiwillig nutzbarer Rahmen. Die Ärztin ergänzt, Prävention dürfe nicht zu einer moralischen Bewertung individuellen Verhaltens führen. Gesundheit werde von vielen Faktoren beeinflusst, darunter Arbeitsbedingungen, Erholung und persönliche Lebenssituationen. Gute Programme schafften deshalb Wahlmöglichkeiten und unterstützende Strukturen, statt Beschäftigte allein für Ergebnisse verantwortlich zu machen.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u10-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Amaç kesintisiz oturmayı azaltmak",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Amaç kesintisiz oturmayı azaltmak",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u10-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Bazı toplantılar ayakta",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Bazı toplantılar ayakta",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u10-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Program zorunlu değil",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Program zorunlu değil",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u10-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Sürdürülebilirlik de ölçülüyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Sürdürülebilirlik de ölçülüyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u10-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u10-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u10-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u10-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u11",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Kültür, Sanat ve Eleştirel Değerlendirme“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Kültür, Sanat ve Eleştirel Değerlendirme” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Ein Stadttheater hat ein klassisches Stück in die Gegenwart übertragen. Ein Teil der Kritik lobt die Bühne, weil sie zentrale Konflikte sichtbar mache. Andere Rezensionen bemängeln dagegen, moderne visuelle Elemente drängten die Sprache zu stark in den Hintergrund. Auch beim Publikum gehen die Bewertungen auseinander. Die Theaterleitung weist darauf hin, unterschiedliche Reaktionen seien nicht automatisch ein Zeichen des Scheiterns. Sie könnten ebenso zeigen, dass eine Inszenierung verschiedene Deutungen ermöglicht und eine ernsthafte Diskussion auslöst. In mehreren Besprechungen nach der Premiere wurde deutlich, dass selbst gegensätzliche Kritiken auf ähnliche Beobachtungen zurückgingen. Sowohl positive als auch negative Rezensionen erwähnten etwa die starke visuelle Gestaltung, bewerteten deren Wirkung jedoch unterschiedlich. Für eine differenzierte Kritik reicht es deshalb nicht, einzelne Elemente nur zu benennen. Entscheidend ist, ihre Funktion zu erklären, Maßstäbe offenzulegen und deutlich zu machen, weshalb dieselbe Gestaltung bei verschiedenen Zuschauern unterschiedliche Wirkungen auslösen kann.",
+      "tr": "Bir şehir tiyatrosu klasik bir oyunu günümüze uyarladı. Eleştirmenlerin bir bölümü sahne tasarımının metindeki çatışmayı görünür kıldığını düşünüyor; diğerleri ise modern görsel unsurların dili geri plana ittiğini savunuyor. Seyirci yorumlarında da benzer bir ayrışma var. Tiyatro, farklı yorumların eserin başarısızlığını değil, tartışma yaratma gücünü de gösterebileceğini belirtiyor."
+    },
+    "listening": {
+      "de": "Ein Kritiker erklärt, ihm sei besonders die präzise Figurenführung aufgefallen. Weniger überzeugt habe ihn hingegen die Musik, die an mehreren Stellen zu dominant gewesen sei. Insgesamt halte er die Inszenierung dennoch für diskussionswürdig und eigenständig. Der Kritiker erklärt weiter, eine Rezension solle zwischen Beschreibung und Bewertung unterscheiden. Zunächst müsse nachvollziehbar sein, was auf der Bühne tatsächlich geschehe. Erst danach könne begründet werden, warum eine bestimmte Entscheidung überzeugend, irritierend oder problematisch wirke. Dadurch werde die eigene Bewertung für Leser überprüfbarer.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u11-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Klasik oyun günümüze uyarlandı",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Klasik oyun günümüze uyarlandı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u11-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Eleştirmenler ayrışıyor",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Eleştirmenler ayrışıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u11-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Seyircilerde de farklı görüşler var",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Seyircilerde de farklı görüşler var",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u11-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Tiyatro tartışmayı olumlu görüyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tiyatro tartışmayı olumlu görüyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u11-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u11-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u11-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u11-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Kültür, Sanat ve Eleştirel Değerlendirme”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Kültür, Sanat ve Eleştirel Değerlendirme”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Kültür, Sanat ve Eleştirel Değerlendirme” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u12",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Hukuk, Kurumlar ve Kamusal Sorumluluk“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Hukuk, Kurumlar ve Kamusal Sorumluluk” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Eine Behörde hat ihr digitales Antragsverfahren überarbeitet. Antragstellende können nun sehen, warum bestimmte Unterlagen verlangt werden, und erhalten bei fehlenden Dokumenten automatische Hinweise. Zusätzlich wurde das Verfahren extern auf Datenschutzanforderungen geprüft. Bürgervertretungen begrüßen die Verbesserungen, fordern jedoch, dass für Menschen ohne zuverlässigen digitalen Zugang weiterhin persönliche Beratung möglich bleibt. Effizienz und Zugänglichkeit sollen daher nicht als Gegensätze behandelt werden. Parallel zur technischen Umstellung wurde ein Beschwerdeverfahren eingerichtet. Wer eine Entscheidung des Systems nicht versteht, kann eine menschliche Prüfung verlangen. Außerdem werden Protokolle darüber geführt, welche Daten zu welchem Zweck verarbeitet werden. Datenschützer sehen darin einen wichtigen Schritt, weisen aber darauf hin, dass Transparenz nicht nur aus langen rechtlichen Texten bestehen dürfe. Informationen müssten so formuliert sein, dass Bürger ihre Rechte tatsächlich erkennen und nutzen können.",
+      "tr": "Bir kamu kurumu çevrim içi başvuru sürecini yeniledi. Yeni sistemde başvuru sahipleri hangi belgenin neden istendiğini görebiliyor ve eksik belge durumunda otomatik bildirim alıyor. Kurum, veri koruma kurallarına uygunluk konusunda dış denetimden de geçti. Buna rağmen kullanıcı temsilcileri, dijital erişimi olmayan kişiler için yüz yüze alternatifin korunmasını talep ediyor."
+    },
+    "listening": {
+      "de": "Eine Juristin erklärt, bei digitalen Verwaltungsverfahren komme es sowohl auf Effizienz als auch auf Rechtssicherheit an. Bürger müssten sich darauf verlassen können, dass ihre Daten geschützt werden und dass es für besondere Situationen nachvollziehbare Ausnahmen gebe. Die Juristin ergänzt, dass digitale Verfahren immer auch eine Frage des Zugangs seien. Ein rechtlich korrektes Portal helfe wenig, wenn bestimmte Gruppen es praktisch nicht nutzen könnten. Deshalb müsse eine Behörde neben Datenschutz und Geschwindigkeit auch Verständlichkeit, Barrierefreiheit und erreichbare Unterstützung berücksichtigen.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u12-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Başvuru sistemi yenilendi",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Başvuru sistemi yenilendi",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u12-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Belge gerekçesi gösteriliyor",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Belge gerekçesi gösteriliyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u12-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Dış veri koruma denetimi yapıldı",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Dış veri koruma denetimi yapıldı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u12-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Yüz yüze alternatif talep ediliyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Yüz yüze alternatif talep ediliyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u12-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u12-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u12-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u12-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Hukuk, Kurumlar ve Kamusal Sorumluluk”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Hukuk, Kurumlar ve Kamusal Sorumluluk”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Hukuk, Kurumlar ve Kamusal Sorumluluk” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u13",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Teknoloji, Yapay Zekâ ve Dijital Etik“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Teknoloji, Yapay Zekâ ve Dijital Etik” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Ein Unternehmen plant ein KI-gestütztes System, das eingehende Kundenanfragen nach Dringlichkeit vorsortiert. Das System soll keine endgültigen Entscheidungen treffen, sondern Beschäftigten Vorschläge machen. Während der Pilotphase wird dokumentiert, auf welche Daten sich Empfehlungen stützen, und problematische Fälle werden regelmäßig geprüft. Die Beschäftigtenvertretung fordert zusätzlich, dass automatische Bewertungen niemals das einzige Kriterium für Leistungs- oder Personalentscheidungen werden. Während der Pilotphase soll außerdem untersucht werden, ob bestimmte Kundengruppen systematisch häufiger als dringend oder weniger dringend eingestuft werden. Falls solche Muster auftreten, müssen sie erklärt und gegebenenfalls korrigiert werden. Das Unternehmen plant, Entscheidungen stichprobenartig von unabhängigen Mitarbeitenden überprüfen zu lassen. Ziel ist nicht, menschliche Verantwortung an ein Modell abzugeben, sondern technische Unterstützung so einzusetzen, dass sie kontrollierbar, anfechtbar und nachvollziehbar bleibt.",
+      "tr": "Bir şirket, müşteri taleplerini önceliklendirmek için yapay zekâ destekli sistem kullanmayı planlıyor. Sistem karar vermeyecek, yalnız insan çalışanlara öneri sunacak. Pilot aşamada önerilerin hangi veriye dayandığı kaydedilecek ve hatalı örnekler düzenli olarak incelenecek. Çalışan temsilcileri, performans değerlendirmesinde sistem çıktısının tek ölçüt olarak kullanılmamasını istiyor."
+    },
+    "listening": {
+      "de": "Eine Datenethikerin betont, ein automatisches System sei weder grundsätzlich objektiv noch grundsätzlich unfair. Entscheidend seien Datenauswahl, Zieldefinition, Kontrolle und die Möglichkeit, Entscheidungen anzufechten. Nicht nur Genauigkeit, sondern auch Transparenz müsse berücksichtigt werden. Die Expertin betont außerdem, dass auch ein sehr genaues Modell problematisch sein könne, wenn sein Ziel falsch definiert sei. Ein System könne beispielsweise Anfragen effizient sortieren und trotzdem wichtige soziale Folgen übersehen. Deshalb müsse vor der technischen Optimierung geklärt werden, welche Werte und Grenzen für den Einsatz gelten sollen.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u13-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Sistem müşteri taleplerini önceliklendirecek",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Sistem müşteri taleplerini önceliklendirecek",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u13-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Son karar insanda",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Son karar insanda",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u13-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Gerekçe verisi kaydedilecek",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçe verisi kaydedilecek",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u13-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Tek ölçüt olmaması isteniyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek ölçüt olmaması isteniyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u13-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u13-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u13-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u13-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Teknoloji, Yapay Zekâ ve Dijital Etik”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Teknoloji, Yapay Zekâ ve Dijital Etik”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Teknoloji, Yapay Zekâ ve Dijital Etik” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u14",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Akademik İletişim, Sunum ve Kaynak Aktarımı“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Akademik İletişim, Sunum ve Kaynak Aktarımı” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "In einem Hochschulseminar vergleichen Studierende zwei Untersuchungen zum gleichen Thema. Die erste Studie arbeitet mit einer großen Stichprobe, basiert jedoch ausschließlich auf Fragebogendaten. Die zweite befragt deutlich weniger Personen, untersucht deren Erfahrungen dafür in ausführlichen Interviews. Die Aufgabe besteht nicht darin, eine Methode pauschal für überlegen zu erklären. Stattdessen sollen die Studierenden zeigen, welche Methode zu welcher Forschungsfrage passt und wie sich die jeweiligen Grenzen transparent darstellen lassen. In den Präsentationen sollen die Studierenden deshalb nicht nur Ergebnisse nebeneinanderstellen. Sie müssen erläutern, welche Art von Evidenz jede Methode liefern kann und welche Schlussfolgerungen unzulässig wären. Eine große Stichprobe erhöht beispielsweise nicht automatisch die Aussagekraft einer unklar formulierten Frage. Umgekehrt kann ein kleines Interviewprojekt wertvolle Zusammenhänge sichtbar machen, ohne repräsentativ zu sein. Wissenschaftliche Qualität entsteht somit auch dadurch, dass Reichweite und Grenzen einer Untersuchung präzise benannt werden.",
+      "tr": "Bir üniversite seminerinde öğrenciler aynı konu hakkında iki araştırmayı karşılaştırıyor. İlk çalışma geniş örneklem kullanıyor ancak yalnız anket verisine dayanıyor. İkinci çalışma daha küçük örneklemle ayrıntılı görüşmeler yapıyor. Öğrencilerden bir yöntemi diğerinden üstün ilan etmek yerine, hangi araştırma sorusuna hangi yöntemin daha uygun olduğunu tartışmaları isteniyor."
+    },
+    "listening": {
+      "de": "Eine Dozentin sagt, gute Präsentationen hätten ein klares Ziel. Quellen sollten nicht nur genannt werden, damit eine Folie wissenschaftlich wirke, sondern um nachvollziehbar zu machen, worauf eine Aussage beruhe. Statt lange Zitate vorzulesen, solle man Ergebnisse präzise paraphrasieren. Die Dozentin weist darauf hin, dass eine Quelle nicht allein durch ihren Titel wissenschaftlich werde. Entscheidend seien Autorenschaft, Veröffentlichungsort, Methode und Nachvollziehbarkeit. In einer guten Präsentation werde deshalb klar, welche Aussage aus welcher Quelle stammt und an welcher Stelle die eigene Interpretation beginnt.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u14-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "İki araştırma karşılaştırılıyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "İki araştırma karşılaştırılıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u14-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Birinci çalışma geniş anket örneklemli",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Birinci çalışma geniş anket örneklemli",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u14-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "İkinci çalışma küçük ama derin görüşmeli",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "İkinci çalışma küçük ama derin görüşmeli",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u14-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Amaç yöntemi soruya göre değerlendirmek",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Amaç yöntemi soruya göre değerlendirmek",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u14-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u14-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u14-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u14-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Akademik İletişim, Sunum ve Kaynak Aktarımı”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Akademik İletişim, Sunum ve Kaynak Aktarımı”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Akademik İletişim, Sunum ve Kaynak Aktarımı” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u15",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Kültürlerarası İletişim ve Uygun Üslup“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Kültürlerarası İletişim ve Uygun Üslup” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Ein internationales Team hat wiederkehrende Missverständnisse in der E-Mail-Kommunikation analysiert. Schnell zeigte sich, dass die Ursache nicht allein in der Grammatik lag. Einige Beschäftigte empfanden kurze Nachrichten als effizient, andere als unnötig scharf. Das Team verzichtete darauf, die Unterschiede ausschließlich mit nationaler Kultur zu erklären. Stattdessen wurden Aufgabe, Beziehung, betriebliche Gewohnheiten und persönliche Präferenzen gemeinsam betrachtet und konkrete Regeln für Anrede, Reaktionszeit und Direktheit vereinbart. Nach der Analyse entwickelte das Team eine gemeinsame Kommunikationsvereinbarung. Dringende Anfragen werden nun ausdrücklich markiert, bei sensiblen Themen soll der gewünschte Entscheidungsspielraum genannt werden und Rückfragen gelten nicht als Zeichen mangelnder Kompetenz. Nach einigen Wochen berichteten mehrere Mitarbeitende von weniger Missverständnissen. Gleichzeitig blieb bewusst offen, ob jede Verbesserung auf die neue Vereinbarung zurückzuführen war. Die Gruppe möchte die Regeln daher regelmäßig überprüfen und bei veränderten Arbeitsbedingungen anpassen.",
+      "tr": "Uluslararası bir ekip, e-posta iletişiminde tekrar eden yanlış anlamaları incelemek için atölye yaptı. Sorunun yalnız dilbilgisi olmadığı görüldü: bazı çalışanlar kısa mesajları verimli bulurken, bazıları bu mesajları sert algılıyordu. Ekip, tek bir kültürel açıklamaya başvurmak yerine görev, ilişki, kurum alışkanlığı ve kişisel tercihin birlikte değerlendirilmesine karar verdi."
+    },
+    "listening": {
+      "de": "Eine Trainerin erklärt, man könne Missverständnisse reduzieren, indem man Erwartungen explizit mache. Dadurch, dass Teams über Anrede, Reaktionszeiten und Direktheit sprechen, werde aus einer vermuteten kulturellen Regel eine konkrete gemeinsame Vereinbarung. Die Trainerin ergänzt, kulturelle Kategorien könnten Orientierung geben, dürften aber einzelne Personen nicht festlegen. Zwei Menschen aus demselben Land könnten sehr unterschiedliche Kommunikationsstile bevorzugen. Professionell sei es deshalb, Erwartungen zu erfragen, statt Verhalten vorschnell einer vermeintlich festen Kulturregel zuzuschreiben.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u15-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Ekip e-posta yanlış anlamalarını inceledi",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Ekip e-posta yanlış anlamalarını inceledi",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u15-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Sorun yalnız gramer değil",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Sorun yalnız gramer değil",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u15-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Kısa mesaj farklı algılanıyor",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Kısa mesaj farklı algılanıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u15-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Tek kültürel genellemeden kaçınılıyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek kültürel genellemeden kaçınılıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u15-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u15-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u15-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u15-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Kültürlerarası İletişim ve Uygun Üslup”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Kültürlerarası İletişim ve Uygun Üslup”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Kültürlerarası İletişim ve Uygun Üslup” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u16",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Argümantasyon, Tartışma ve Uzlaşma“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Argümantasyon, Tartışma ve Uzlaşma” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Eine Universität diskutiert, ob ihre Bibliothek nachts geöffnet bleiben soll. Befürworter verweisen auf den hohen Bedarf in Prüfungsphasen. Kritiker betonen dagegen zusätzliche Personalkosten und Sicherheitsfragen. Der Studierendenrat schlägt vor, nicht nur zwischen vollständiger Öffnung und vollständiger Schließung zu wählen. Eine begrenzte Nachtöffnung während bestimmter Prüfungswochen könnte als Kompromiss getestet und anschließend anhand von Nutzung, Kosten und Sicherheitsdaten bewertet werden. Für die nächste Sitzung sollen die Beteiligten ihre wichtigsten Argumente priorisieren und jeweils angeben, welche Bedingungen für einen Kompromiss unverzichtbar sind. Dadurch wird sichtbar, dass nicht jede Forderung gleich wichtig ist. Die Universitätsleitung möchte anschließend ein zeitlich begrenztes Modell testen. Nach der Prüfungsphase sollen Nutzung, Kosten, Sicherheitsmeldungen und Rückmeldungen gemeinsam ausgewertet werden. Eine endgültige Entscheidung wird also bewusst vertagt, bis praktische Erfahrungen vorliegen.",
+      "tr": "Bir üniversite, kütüphanenin gece açık kalıp kalmamasını tartışıyor. Gece erişimini destekleyenler sınav dönemindeki ihtiyacı vurguluyor. Karşı çıkanlar personel maliyeti ve güvenlik sorunlarına dikkat çekiyor. Öğrenci konseyi, yalnız iki uç seçenek yerine sınav haftalarında sınırlı gece açılışı gibi ara çözümleri de değerlendirmeyi öneriyor."
+    },
+    "listening": {
+      "de": "Ein Moderator sagt, eine gute Diskussion bestehe nicht darin, die Gegenposition möglichst schnell zu widerlegen. Wer ein Argument zusammenfasse, dessen Voraussetzung benenne und anschließend die eigene Position erläutere, ermögliche eher eine sachliche Annäherung. Der Moderator ergänzt, ein Kompromiss sei nicht automatisch eine schwache Lösung. Er könne besonders tragfähig sein, wenn klar werde, welche Interessen miteinander verbunden wurden und welche Nachteile bewusst akzeptiert werden. Wichtig sei, dass die Beteiligten die Kriterien für eine spätere Bewertung schon vor dem Test festlegen.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u16-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Konu gece açık kütüphane",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Konu gece açık kütüphane",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u16-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Destekleyenler sınav ihtiyacını vurguluyor",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Destekleyenler sınav ihtiyacını vurguluyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u16-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Karşı çıkanlar maliyet ve güvenliği vurguluyor",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Karşı çıkanlar maliyet ve güvenliği vurguluyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u16-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Ara çözüm öneriliyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Ara çözüm öneriliyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u16-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u16-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u16-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u16-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Argümantasyon, Tartışma ve Uzlaşma”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Argümantasyon, Tartışma ve Uzlaşma”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Argümantasyon, Tartışma ve Uzlaşma” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u17",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Veri, Grafik ve Eğilimleri Yorumlama“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Veri, Grafik ve Eğilimleri Yorumlama” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Eine Grafik zeigt, dass der Anteil der mit dem Fahrrad zurückgelegten Wege innerhalb von fünf Jahren von 12 auf 21 Prozent gestiegen ist. Im selben Zeitraum nahm auch der Anteil des öffentlichen Verkehrs leicht zu, während der Autoanteil sank. Da jedoch die Gesamtzahl aller Wege ebenfalls gewachsen ist, lässt sich aus den Prozentwerten allein nicht ableiten, dass die absolute Zahl der Autofahrten im gleichen Verhältnis zurückging. Der Bericht stellt deshalb relative und absolute Werte nebeneinander. Das Beispiel zeigt außerdem, wie leicht Diagramme ohne Kontext missverstanden werden können. Ein steiler Anstieg kann je nach gewählter Achse dramatischer wirken, als er tatsächlich ist. Umgekehrt können große absolute Veränderungen in einer stark gestreckten Darstellung unscheinbar erscheinen. Der Bericht nennt deshalb Bezugsgröße, Zeitraum und Datenquelle direkt neben der Grafik. Leser sollen erkennen können, worauf ein Vergleich basiert und welche zusätzlichen Informationen für eine belastbare Interpretation fehlen.",
+      "tr": "Bir grafikte şehir içi bisiklet kullanımının beş yılda yüzde 12’den yüzde 21’e yükseldiği görülüyor. Aynı dönemde toplu taşıma kullanımı hafif artarken otomobil payı azalmış. Ancak toplam yolculuk sayısı da yükseldiği için yalnız yüzdelere bakarak mutlak araç sayısının aynı oranda düştüğü söylenemiyor. Rapor bu nedenle oran ve mutlak değerleri birlikte sunuyor."
+    },
+    "listening": {
+      "de": "Eine Statistikexpertin erklärt, je stärker sich die Gesamtzahl verändert, desto vorsichtiger müsse man Prozentanteile interpretieren. Eine steigende Quote bedeute nicht automatisch, dass jede andere Kategorie in absoluten Zahlen zurückgegangen sei. Die Expertin empfiehlt, bei jeder Grafik zuerst drei Fragen zu stellen: Was genau wird gemessen, worauf bezieht sich der Prozentwert und welcher Zeitraum wird verglichen? Erst danach solle man Trends erklären. Besonders vorsichtig müsse man sein, wenn aus einer gemeinsamen Entwicklung sofort auf einen ursächlichen Zusammenhang geschlossen werde.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u17-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Bisiklet payı 12'den 21'e çıktı",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Bisiklet payı 12'den 21'e çıktı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u17-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Toplu taşıma hafif arttı",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Toplu taşıma hafif arttı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u17-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Otomobil payı azaldı",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Otomobil payı azaldı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u17-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Toplam yolculuk sayısı da arttı",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Toplam yolculuk sayısı da arttı",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u17-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u17-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u17-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u17-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Veri, Grafik ve Eğilimleri Yorumlama”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Veri, Grafik ve Eğilimleri Yorumlama”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Veri, Grafik ve Eğilimleri Yorumlama” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u18",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Zwei Abteilungen geraten in einem Softwareprojekt über die Prioritäten in Konflikt. Der Vertrieb fordert eine schnelle Auslieferung, während das technische Team zusätzliche Testzeit verlangt. Die Projektleitung versucht nicht, eine Seite unmittelbar durchzusetzen. Stattdessen identifiziert sie die dahinterliegenden Interessen: Ein zugesagter Kundentermin soll eingehalten und gleichzeitig das Risiko kritischer Fehler reduziert werden. Als Kompromiss wird eine schrittweise Auslieferung mit einem zusätzlichen Testfenster vereinbart. Im weiteren Verlauf vereinbaren die Teams zusätzliche Kommunikationsregeln. Technische Risiken werden nicht nur als abstrakte Warnungen, sondern mit möglicher Auswirkung und Eintrittswahrscheinlichkeit beschrieben. Der Vertrieb nennt im Gegenzug, welche Kundentermine tatsächlich unveränderbar sind. Dadurch können Ressourcen gezielter eingesetzt werden. Der Konflikt verschwindet nicht vollständig, wird aber bearbeitbar, weil beide Seiten ihre Prioritäten begründen und zwischen Wunsch, Risiko und Mindestanforderung unterscheiden.",
+      "tr": "İki departman ortak bir yazılım projesinde öncelik konusunda anlaşamıyor. Satış ekibi hızlı teslimatı, teknik ekip ise ek test süresini savunuyor. Proje yöneticisi talepleri karşı karşıya koymak yerine her iki tarafın asıl ihtiyacını tanımlıyor: müşteri tarihine uyum ve kritik hata riskini azaltma. Bunun üzerine aşamalı teslim ve ek test penceresi içeren uzlaşma hazırlanıyor."
+    },
+    "listening": {
+      "de": "Eine Mediatorin sagt, während Positionen oft unvereinbar klingen, können die dahinterliegenden Interessen durchaus kombinierbar sein. Die eine Seite fordert etwa mehr Zeit, wohingegen die andere Planungssicherheit braucht. Eine Lösung müsse deshalb nicht jede ursprüngliche Forderung vollständig erfüllen. Die Mediatorin ergänzt, Interessen müssten konkret genug formuliert werden. Aussagen wie „Wir brauchen mehr Flexibilität“ seien zunächst zu ungenau. Hilfreicher sei die Frage, wofür Flexibilität benötigt werde und welche Grenze trotzdem bestehen müsse. Erst dann könnten mehrere Lösungswege miteinander verglichen werden.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u18-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "İki departman anlaşamıyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "İki departman anlaşamıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u18-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Satış hızlı teslim istiyor",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Satış hızlı teslim istiyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u18-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Teknik ekip test süresi istiyor",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Teknik ekip test süresi istiyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u18-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Aşamalı teslim uzlaşması var",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Aşamalı teslim uzlaşması var",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u18-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u18-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u18-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u18-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u19",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Eine Studierendengruppe erstellt für neue Kommilitonen einen kurzen Leitfaden zu einer komplexen Hochschulordnung. Beim Vereinfachen achten die Mitglieder darauf, keine wichtigen Bedingungen zu entfernen. Fachbegriffe werden bei der ersten Verwendung erklärt, lange Abschnitte in Handlungsschritte gegliedert und die offizielle Quelle verlinkt. Die Gruppe versteht Vermittlung nicht als bloßes Kürzen oder Übersetzen, sondern als zielgruppengerechte Neuorganisation von Informationen bei erhaltener Bedeutung. Vor der Veröffentlichung lässt die Gruppe den Leitfaden von neuen Studierenden testen. Dabei zeigt sich, dass einige Formulierungen zwar sprachlich korrekt, aber ohne Vorwissen schwer verständlich sind. Diese Stellen werden mit Beispielen ergänzt. Gleichzeitig bleibt bei rechtlich wichtigen Bedingungen ein Hinweis auf den Originalwortlaut bestehen. So soll verhindert werden, dass die vereinfachte Fassung mehr Sicherheit vortäuscht, als sie bieten kann. Vermittlung bedeutet hier also auch, Grenzen der eigenen Zusammenfassung sichtbar zu machen.",
+      "tr": "Bir öğrenci grubu karmaşık bir üniversite yönergesini yeni öğrencilere açıklamak için kısa rehber hazırlıyor. Metni basitleştirirken önemli koşulları çıkarmamaya dikkat ediyorlar. Teknik terimler ilk kullanımda açıklanıyor, uzun paragraflar adımlara bölünüyor ve resmî kaynağa bağlantı veriliyor. Grup, aracılığın metni kısaltmak değil, hedef kişinin ihtiyacına göre yeniden yapılandırmak olduğunu vurguluyor."
+    },
+    "listening": {
+      "de": "Ein Tutor erklärt, beim Vermitteln gehe es nicht darum, jedes Detail wortwörtlich zu übersetzen. Man solle zuerst den Informationsbedarf klären, anschließend zentrale Punkte auswählen und sie so reformulieren, dass Zusammenhänge erhalten bleiben. Unsichere Punkte müssten als solche markiert werden. Der Tutor ergänzt, gute Vermittlung prüfe nicht nur, ob Informationen kürzer geworden seien. Entscheidend sei, ob die Zielperson danach sinnvoll handeln könne. Wenn eine Vereinfachung zu einer falschen Entscheidung führen könnte, müsse zusätzliche Erklärung gegeben oder ausdrücklich auf die Originalquelle verwiesen werden.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u19-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Karmaşık yönerge basitleştiriliyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Karmaşık yönerge basitleştiriliyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u19-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Önemli koşullar korunuyor",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Önemli koşullar korunuyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u19-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Terimler açıklanıyor",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Terimler açıklanıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u19-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Resmî kaynağa bağlantı veriliyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Resmî kaynağa bağlantı veriliyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u19-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u19-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u19-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u19-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  },
+  {
+    "id": "b2-u20",
+    "cefrCanDo": [
+      "Ich kann zentrale Aussagen zu „B2 Genel Uygulama ve Bağımsız İletişim“ in komplexeren Texten erfassen und einordnen.",
+      "Ich kann unterschiedliche Standpunkte zusammenfassen, vergleichen und sprachlich voneinander abgrenzen.",
+      "Ich kann meine Position mit Gründen, Beispielen, Einschränkungen und einem nachvollziehbaren Schluss entwickeln.",
+      "Ich kann meinen sprachlichen Stil an sachliche, akademische oder berufliche Situationen anpassen."
+    ],
+    "cultureNote": {
+      "title": "B2 iletişim ve kullanım notu",
+      "text": "B2’de “B2 Genel Uygulama ve Bağımsız İletişim” konusu işlenirken amaç yalnız kelime öğrenmek değil; bilgiyi yapılandırmak, farklı bakışları adil aktarmak ve dilsel kesinlik derecesini kontrol etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      },
+      {
+        "speaker": "speaker",
+        "de": "de",
+        "tr": "tr"
+      }
+    ],
+    "reading": {
+      "de": "Eine Stadt organisiert ein Bürgerforum über die Zukunft eines nicht mehr genutzten öffentlichen Gebäudes. Zur Diskussion stehen ein Jugendzentrum, ein gemeinsamer Arbeitsort und ein Kulturzentrum. Die Teilnehmenden vergleichen Kosten, Zugänglichkeit, Bedürfnisse des Viertels und langfristige Betriebsausgaben. Ziel des Forums ist nicht, eine Idee möglichst laut zu verteidigen. Stattdessen sollen Stärken und Schwächen der Optionen transparent gemacht und am Ende eine umsetzbare Empfehlung mit nachvollziehbarer Begründung entwickelt werden. In kleinen Arbeitsgruppen werden anschließend drei Modelle ausgearbeitet. Jede Gruppe muss Finanzierung, Zielgruppen, Nutzungskonflikte und mögliche Risiken darstellen. Danach wechseln die Teilnehmenden die Perspektive und prüfen den Vorschlag einer anderen Gruppe. Diese zweite Runde soll verhindern, dass nur die Vorteile der eigenen Idee sichtbar bleiben. Zum Abschluss werden Kriterien gewichtet und offene Fragen markiert. Die endgültige Empfehlung enthält deshalb nicht nur eine bevorzugte Option, sondern auch Voraussetzungen, unter denen sie erfolgreich umgesetzt werden könnte.",
+      "tr": "Bir şehir, kullanılmayan bir kamu binasının geleceği için vatandaş forumu düzenliyor. Öneriler arasında gençlik merkezi, ortak çalışma alanı ve kültür merkezi bulunuyor. Katılımcılar maliyet, erişilebilirlik, mahalle ihtiyacı ve uzun vadeli işletme giderlerini karşılaştırıyor. Forumun amacı tek bir fikri savunmak değil; seçeneklerin güçlü ve zayıf yönlerini şeffaf biçimde ortaya koyup uygulanabilir bir öneri geliştirmek."
+    },
+    "listening": {
+      "de": "In der Abschlussrunde fasst eine Moderatorin zusammen: Eine tragfähige Empfehlung müsse Fakten, unterschiedliche Interessen und Unsicherheiten miteinander verbinden. Wer nur die eigene Präferenz wiederhole, argumentiere noch nicht auf B2-Niveau. Erwartet werde, dass man Einwände aufgreife, Beispiele nenne und zu einem nachvollziehbaren Schluss komme. Die Moderatorin ergänzt, eine überzeugende B2-Argumentation müsse Unsicherheit aushalten können. Nicht jede Frage lasse sich mit den vorhandenen Informationen endgültig beantworten. Gerade dann sei es wichtig, zwischen gesichertem Wissen, plausibler Annahme und persönlicher Präferenz zu unterscheiden und trotzdem zu einer begründeten vorläufigen Entscheidung zu kommen.",
+      "tr": "Bu dinleme metni, ünitenin ana temasını B2 düzeyinde nüanslı değerlendirme, gerekçe ve sınırlılık diliyle ele alır."
+    },
+    "readingQuestions": [
+      {
+        "id": "b2-u20-v36-r-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin ana konusu nedir?",
+        "options": [
+          "Kamu binasının geleceği tartışılıyor",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Kamu binasının geleceği tartışılıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u20-v36-r-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metinde hangi gelişme/özellik vurgulanıyor?",
+        "options": [
+          "Üç kullanım önerisi var",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Üç kullanım önerisi var",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u20-v36-r-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi ek bulgu veya karşı nokta veriliyor?",
+        "options": [
+          "Birden fazla ölçüt karşılaştırılıyor",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Birden fazla ölçüt karşılaştırılıyor",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u20-v36-r-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metnin sonuç veya değerlendirmesi nedir?",
+        "options": [
+          "Amaç uygulanabilir öneri geliştirmek",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Amaç uygulanabilir öneri geliştirmek",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "b2-u20-v36-l-1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı hangi yaklaşımı savunuyor?",
+        "options": [
+          "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u20-v36-l-2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dilsel olarak hangi özellik öne çıkıyor?",
+        "options": [
+          "Kesinlik derecesini kontrollü ifade etmek.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor.",
+          "Metinde bunun tersi belirtiliyor."
+        ],
+        "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u20-v36-l-3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "B2 düzeyinde hangi beceri gerekiyor?",
+        "options": [
+          "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+          "Metinde bunun tersi belirtiliyor.",
+          "Bu bilgi metinde desteklenmiyor."
+        ],
+        "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      },
+      {
+        "id": "b2-u20-v36-l-4",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacının amacı nedir?",
+        "options": [
+          "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+          "Bu bilgi metinde desteklenmiyor.",
+          "Yalnızca tek bir kişisel örnekten söz ediliyor."
+        ],
+        "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+      }
+    ],
+    "writingPrompt": "230–300 kelimelik B2 metni yaz: “B2 Genel Uygulama ve Bağımsız İletişim”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
+    "speakingPrompt": "3 dakikalık B2 sunum hazırla: “B2 Genel Uygulama ve Bağımsız İletişim”. Konuyu çerçevele, iki bakış açısını karşılaştır, kendi görüşünü gerekçelendir ve iki takip sorusuna cevap ver.",
+    "realLifeMission": "“B2 Genel Uygulama ve Bağımsız İletişim” alanında gerçekçi bir durum seç. Bir kaynağın görüşünü özetle, önemli bilgiyi hedef kişiye aktar ve kendi değerlendirmenden açıkça ayır.",
+    "sourceMethod": "Deutschimo V36 için özgün olarak yazıldı. CEFR B2 tanımlayıcıları, Goethe-Zertifikat B2 modül ve görev türleri, telc Deutsch B2 öğrenme hedefleri ve vhs-Lernportal B2'nin eylem odaklı yaklaşımı seviye/kapsam referansı olarak kullanıldı. Kullanıcının yüklediği A1/A2/B1 materyalleri yalnız önceki kurlarla pedagojik sürekliliği karşılaştırmak için incelendi; kaynak metin, alıştırma, diyalog veya cevap kopyalanmadı."
+  }
+]

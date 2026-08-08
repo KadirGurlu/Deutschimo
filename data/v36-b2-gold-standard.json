@@ -1,0 +1,3238 @@
+[
+  {
+    "id": "b2-u01",
+    "title": "Kimlik, Değerler ve Farklı Bakış Açıları",
+    "intro": "Bu ünitede kimlik, değerler ve toplumsal beklentiler hakkında nüanslı biçimde konuşacak; bir kişinin veya kurumun sözünü doğrudan doğrulamadan aktarmak için Konjunktiv I kullanacak ve farklı bakış açılarını kaynak mesafesiyle ayıracaksın.",
+    "goals": [
+      "Konjunktiv I ile başkasının sözünü tarafsız biçimde aktarmak",
+      "Kimlik ve değerler üzerine iki bakış açısını karşılaştırmak",
+      "Kaynak, iddia ve kişisel yorumu açıkça ayırmak",
+      "Soyut bir konuda gerekçeli B2 görüşü geliştirmek"
+    ],
+    "grammarTitle": "Konjunktiv I ile dolaylı anlatım ve kaynak mesafesi",
+    "grammarExplanation": "B2 düzeyinde Konjunktiv I özellikle haber, rapor, görüşme özeti ve akademik aktarımda konuşanın sözünü kendi görüşünden ayırmak için kullanılır. Tipik biçimler sei, habe, werde, könne, müsse ve düzenli fiillerde üçüncü tekil için -e sonudur. Konjunktiv-I biçimi Indikativ ile aynı görünüyorsa çoğu zaman Konjunktiv II veya würde yapısı seçilerek dolaylı anlatım açık tutulur. dass ile Indikativ de mümkündür; ancak Konjunktiv I kaynak mesafesini daha görünür kılar. B2 öğrencisi yalnız biçimi değil, bu seçimin metindeki işlevini de tanımalıdır.",
+    "grammarColumns": [
+      {
+        "header": "Doğrudan söz",
+        "values": [
+          "„Ich bin überzeugt.“",
+          "„Wir haben genug Daten.“",
+          "„Das wird sich ändern.“",
+          "„Sie kann teilnehmen.“",
+          "„Wir müssen reagieren.“",
+          "„Sie kommen später.“"
+        ]
+      },
+      {
+        "header": "Dolaylı anlatım",
+        "values": [
+          "Er sagt, er sei überzeugt.",
+          "Sie erklärt, sie hätten genug Daten.",
+          "Er meint, das werde sich ändern.",
+          "Sie sagt, sie könne teilnehmen.",
+          "Sie betonen, sie müssten reagieren.",
+          "Er berichtet, sie kämen später."
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "kaynak mesafesi",
+          "biçim çakışmasını önleme",
+          "geleceği aktarma",
+          "modal anlamı aktarma",
+          "zorunluluğu aktarma",
+          "Konj. II yedek biçimi"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Identität — kimlik",
+      "die Wertvorstellung — değer anlayışı",
+      "die Zugehörigkeit — aidiyet",
+      "die Perspektive — bakış açısı",
+      "die Erwartung — beklenti",
+      "die Selbstwahrnehmung — öz algı",
+      "die Fremdwahrnehmung — dışarıdan algı",
+      "die Haltung — tutum",
+      "die Aussage — ifade / beyan",
+      "die Quelle — kaynak",
+      "behaupten — iddia etmek",
+      "betonen — vurgulamak",
+      "einräumen — kabul etmek / teslim etmek",
+      "sich abgrenzen von — kendini ...den ayırmak",
+      "hinterfragen — sorgulamak",
+      "nachvollziehbar — anlaşılır / izlenebilir",
+      "widersprüchlich — çelişkili",
+      "prägend — şekillendirici"
+    ],
+    "examples": [
+      {
+        "de": "Die Autorin erklärt, Identität sei kein unveränderlicher Zustand, sondern entwickle sich in unterschiedlichen Lebensphasen.",
+        "tr": "Yazar, kimliğin değişmez bir durum olmadığını, farklı yaşam evrelerinde geliştiğini açıklıyor."
+      },
+      {
+        "de": "Ein Teilnehmer betonte, seine berufliche Rolle habe seine Selbstwahrnehmung stärker geprägt als erwartet.",
+        "tr": "Bir katılımcı, mesleki rolünün öz algısını beklediğinden daha fazla şekillendirdiğini vurguladı."
+      },
+      {
+        "de": "Die Studie kommt zu dem Schluss, gesellschaftliche Erwartungen könnten Entscheidungen beeinflussen, ohne sie vollständig zu bestimmen.",
+        "tr": "Araştırma, toplumsal beklentilerin kararları tamamen belirlemeden etkileyebileceği sonucuna varıyor."
+      },
+      {
+        "de": "Während die eine Gruppe Zugehörigkeit vor allem mit Herkunft verbindet, versteht die andere darunter gemeinsame Werte.",
+        "tr": "Bir grup aidiyeti öncelikle kökenle ilişkilendirirken diğer grup bunu ortak değerler olarak anlıyor."
+      },
+      {
+        "de": "Ich halte diese Sichtweise für nachvollziehbar, würde aber zwischen persönlicher Erfahrung und allgemeiner Behauptung unterscheiden.",
+        "tr": "Bu bakış açısını anlaşılır buluyorum ancak kişisel deneyim ile genel iddiayı ayırırdım."
+      },
+      {
+        "de": "Dass eine Aussage häufig wiederholt wird, bedeutet noch nicht, dass sie ausreichend belegt ist.",
+        "tr": "Bir ifadenin sık tekrarlanması onun yeterince kanıtlanmış olduğu anlamına gelmez."
+      }
+    ],
+    "warning": "Konjunktiv I kullanmak aktarılan bilginin yanlış olduğu anlamına gelmez; yalnızca bilgiyi kimin söylediğini ve anlatıcının ondan dilsel olarak mesafe aldığını gösterir.",
+    "tip": "Bir röportajdan üç görüş hayal et. Önce doğrudan söz olarak yaz, sonra Konjunktiv I ile tarafsız bir haber paragrafına dönüştür.",
+    "miniCheck": {
+      "question": "Kaynak mesafesini açıkça gösteren dolaylı anlatım hangisidir?",
+      "options": [
+        "Die Sprecherin sagt, die Lage sei kompliziert.",
+        "Die Sprecherin sagt: Die Lage ist kompliziert.",
+        "Die Sprecherin sagt, die Lage kompliziert."
+      ],
+      "correctAnswer": "Die Sprecherin sagt, die Lage sei kompliziert."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Der Experte erklärt, die Veränderung ___ langfristig wichtig.",
+      "answer": "sei",
+      "acceptedAnswers": [
+        "sei"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Autorin",
+        "betont,",
+        "die Ergebnisse",
+        "seien",
+        "vorläufig."
+      ],
+      "answer": "Die Autorin betont, die Ergebnisse seien vorläufig."
+    },
+    "translation": {
+      "prompt": "“Araştırmacı, daha fazla veriye ihtiyaç olduğunu söylüyor.” cümlesini Almancaya çevir.",
+      "answer": "Der Forscher sagt, es seien mehr Daten nötig.",
+      "acceptedAnswers": [
+        "Der Forscher sagt, es seien mehr Daten nötig",
+        "Der Forscher sagt, es seien mehr Daten nötig."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was sagt die Projektleiterin zur Kritik? — B: ___",
+      "options": [
+        "Sie erklärt, die Kritik sei teilweise berechtigt.",
+        "Sie erklärt, die Kritik ist sei berechtigt.",
+        "Sie erklärt, sei die Kritik teilweise."
+      ],
+      "answer": "Sie erklärt, die Kritik sei teilweise berechtigt."
+    },
+    "trueFalse": {
+      "prompt": "Konjunktiv I kann helfen, fremde Aussagen von der eigenen Position zu trennen.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Kaynak aktarımına uygun iki fiili seç.",
+      "options": [
+        "betonen",
+        "behaupten",
+        "parken",
+        "schneiden"
+      ],
+      "answers": [
+        "betonen",
+        "behaupten"
+      ]
+    },
+    "summary": [
+      "Konjunktiv I",
+      "kaynak mesafesi",
+      "kimlik ve değerler",
+      "görüş ile iddiayı ayırma"
+    ]
+  },
+  {
+    "id": "b2-u02",
+    "title": "Eğitim, Öğrenme ve Yaşam Boyu Gelişim",
+    "intro": "Bu ünitede eğitim modellerini, yetkinlik gelişimini ve yaşam boyu öğrenmeyi tartışacak; süreç ile sonucu ayırmak için Vorgangspassiv, Zustandspassiv ve yaygın Passiversatzformen yapılarından yararlanacaksın.",
+    "goals": [
+      "Süreç ve sonuç odaklı Passiv yapılarını ayırmak",
+      "Passiversatzformen ile resmî ve akademik anlatımı çeşitlendirmek",
+      "Eğitim modellerinin güçlü ve zayıf yönlerini değerlendirmek",
+      "Bir öğrenme politikasını açık ölçütlerle tartışmak"
+    ],
+    "grammarTitle": "Vorgangspassiv, Zustandspassiv ve Passiversatzformen",
+    "grammarExplanation": "Vorgangspassiv werden + Partizip II ile bir sürecin gerçekleşmesini, Zustandspassiv sein + Partizip II ile bu sürecin sonucunda oluşan durumu vurgular. B2 düzeyinde ayrıca sich lassen + Infinitiv, sein + zu + Infinitiv ve -bar/-lich sıfatları gibi Passiversatzformen metni daha doğal ve çeşitli yapar: Die Aufgabe lässt sich lösen; Die Aufgabe ist zu lösen; Die Aufgabe ist lösbar. Bu yapılar özellikle talimat, eğitim politikası, teknik açıklama ve resmî metinlerde sık görülür. Hangi yapının seçileceği süreç, sonuç, gereklilik veya imkân vurgusuna bağlıdır.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "wird überprüft",
+          "ist überprüft",
+          "lässt sich überprüfen",
+          "ist zu überprüfen",
+          "ist überprüfbar",
+          "wurde entwickelt"
+        ]
+      },
+      {
+        "header": "Tür",
+        "values": [
+          "Vorgangspassiv",
+          "Zustandspassiv",
+          "Passiversatz",
+          "Passiversatz",
+          "Passiversatz",
+          "Vorgangspassiv geçmiş"
+        ]
+      },
+      {
+        "header": "Vurgu",
+        "values": [
+          "süreç",
+          "sonuç/durum",
+          "imkân",
+          "gereklilik",
+          "imkân/özellik",
+          "geçmiş süreç"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Weiterbildung — mesleki / ileri eğitim",
+      "die Fortbildung — hizmet içi / mesleki gelişim",
+      "die Kompetenz — yetkinlik",
+      "die Qualifikation — nitelik",
+      "der Lernprozess — öğrenme süreci",
+      "die Lernumgebung — öğrenme ortamı",
+      "die Anerkennung — tanınma",
+      "der Zugang — erişim",
+      "die Voraussetzung — ön koşul",
+      "die Wirksamkeit — etkililik",
+      "vermitteln — aktarmak / öğretmek",
+      "fördern — desteklemek",
+      "erwerben — edinmek",
+      "anerkennen — tanımak",
+      "überprüfen — kontrol etmek",
+      "praxisnah — uygulamaya yakın",
+      "zugänglich — erişilebilir",
+      "nachhaltig — kalıcı / sürdürülebilir"
+    ],
+    "examples": [
+      {
+        "de": "In dem neuen Programm werden fachliche Inhalte mit praktischen Projekten verbunden.",
+        "tr": "Yeni programda alan bilgileri uygulamalı projelerle birleştiriliyor."
+      },
+      {
+        "de": "Nach der Pilotphase sind die wichtigsten Lernziele klar definiert.",
+        "tr": "Pilot aşamadan sonra en önemli öğrenme hedefleri açık biçimde tanımlanmış durumda."
+      },
+      {
+        "de": "Viele digitale Übungen lassen sich flexibel in unterschiedliche Lernpläne integrieren.",
+        "tr": "Birçok dijital alıştırma farklı öğrenme planlarına esnek biçimde entegre edilebilir."
+      },
+      {
+        "de": "Vor der Anerkennung ist zu prüfen, ob die Qualifikation den geforderten Standards entspricht.",
+        "tr": "Tanınmadan önce niteliğin istenen standartlara uyup uymadığı kontrol edilmelidir."
+      },
+      {
+        "de": "Nicht jede Kompetenz ist durch einen einzigen Test zuverlässig messbar.",
+        "tr": "Her yetkinlik tek bir testle güvenilir biçimde ölçülebilir değildir."
+      },
+      {
+        "de": "Lebenslanges Lernen wird wichtiger, weil sich berufliche Anforderungen schneller verändern.",
+        "tr": "Mesleki gereklilikler daha hızlı değiştiği için yaşam boyu öğrenme daha önemli hale geliyor."
+      }
+    ],
+    "warning": "sein + Partizip II her zaman Zustandspassiv değildir; bazı Partizipler kalıcı sıfat gibi kullanılabilir. Bağlamda önceki bir sürecin sonucu vurgulanıp vurgulanmadığına bak.",
+    "tip": "Bir çevrim içi kursu değerlendir: ne hazırlanıyor, ne tamamlanmış durumda, ne yapılabilir ve ne kontrol edilmelidir? Dört farklı Passiv/Passiversatz kullan.",
+    "miniCheck": {
+      "question": "Sonuç durumunu vurgulayan cümle hangisidir?",
+      "options": [
+        "Der Kurs ist vollständig vorbereitet.",
+        "Der Kurs wird gerade vorbereitet.",
+        "Der Kurs lässt sich vorbereiten."
+      ],
+      "correctAnswer": "Der Kurs ist vollständig vorbereitet."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Aufgabe lässt sich mit dieser Methode leichter ___.",
+      "answer": "lösen",
+      "acceptedAnswers": [
+        "lösen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Vor der Prüfung",
+        "sind",
+        "die Unterlagen",
+        "zu kontrollieren."
+      ],
+      "answer": "Vor der Prüfung sind die Unterlagen zu kontrollieren."
+    },
+    "translation": {
+      "prompt": "“Bu yöntem kolayca uygulanabilir.” cümlesini Almancaya çevir.",
+      "answer": "Diese Methode lässt sich leicht anwenden.",
+      "acceptedAnswers": [
+        "Diese Methode lässt sich leicht anwenden",
+        "Diese Methode lässt sich leicht anwenden."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Ist das neue Lernmaterial schon fertig? — B: ___",
+      "options": [
+        "Ja, die wichtigsten Module sind bereits vorbereitet.",
+        "Ja, die Module werden fertig Zustand.",
+        "Ja, die Module lassen vorbereitet."
+      ],
+      "answer": "Ja, die wichtigsten Module sind bereits vorbereitet."
+    },
+    "trueFalse": {
+      "prompt": "Zustandspassiv sein + Partizip II ile bir sonuç durumunu gösterebilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Passiversatzform olan iki yapıyı seç.",
+      "options": [
+        "sich lassen + Infinitiv",
+        "sein + zu + Infinitiv",
+        "haben + Partizip II",
+        "würde + Infinitiv"
+      ],
+      "answers": [
+        "sich lassen + Infinitiv",
+        "sein + zu + Infinitiv"
+      ]
+    },
+    "summary": [
+      "Vorgangs-/Zustandspassiv",
+      "Passiversatzformen",
+      "eğitim ve yetkinlik",
+      "süreç-sonuç ayrımı"
+    ]
+  },
+  {
+    "id": "b2-u03",
+    "title": "İş Dünyası, Sorumluluk ve Kurumsal İletişim",
+    "intro": "Bu ünitede iş süreçlerini, sorumluluk paylaşımını ve kurumsal kararları tartışacak; B2 düzeyinde sık kullanılan Nomen-Verb-Verbindungen ile daha profesyonel, yoğun ve doğal bir anlatım kuracaksın.",
+    "goals": [
+      "Yaygın Nomen-Verb-Verbindungen yapılarını doğru kullanmak",
+      "Kurumsal sorumluluk ve karar süreçlerini açıklamak",
+      "Toplantıda öneri, itiraz ve değerlendirme sunmak",
+      "Mesleki bir metni daha resmî ve yoğun biçimde yeniden ifade etmek"
+    ],
+    "grammarTitle": "Nomen-Verb-Verbindungen: kurumsal ve resmî anlatım",
+    "grammarExplanation": "Nomen-Verb-Verbindungen, anlamın büyük bölümünü isim unsurunun taşıdığı sabit veya yarı sabit yapılardır: eine Entscheidung treffen, Verantwortung übernehmen, zur Verfügung stehen, in Betracht ziehen. B2 düzeyinde bu yapılar özellikle profesyonel, idari ve akademik metinlerde kelime seçimini doğal hâle getirir. Fiil her zaman sözlük anlamıyla yorumlanamaz; bu nedenle kalıp bütün olarak öğrenilmelidir. Bazı yapılar basit fiille eşdeğerdir, ancak register ve vurgu değişebilir: prüfen → eine Prüfung vornehmen; entscheiden → eine Entscheidung treffen.",
+    "grammarColumns": [
+      {
+        "header": "Nomen-Verb-Verbindung",
+        "values": [
+          "eine Entscheidung treffen",
+          "Verantwortung übernehmen",
+          "zur Verfügung stehen",
+          "in Betracht ziehen",
+          "Maßnahmen ergreifen",
+          "Kritik üben an"
+        ]
+      },
+      {
+        "header": "Yakın anlam",
+        "values": [
+          "entscheiden",
+          "verantwortlich sein",
+          "verfügbar sein",
+          "berücksichtigen",
+          "handeln",
+          "kritisieren"
+        ]
+      },
+      {
+        "header": "Bağlam",
+        "values": [
+          "toplantı/karar",
+          "görev",
+          "kaynak",
+          "seçenek",
+          "sorun çözme",
+          "değerlendirme"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Zuständigkeit — yetki / sorumluluk alanı",
+      "die Verantwortung — sorumluluk",
+      "die Abstimmung — oylama / koordinasyon",
+      "die Rückmeldung — geri bildirim",
+      "der Arbeitsablauf — iş akışı",
+      "die Maßnahme — önlem",
+      "die Priorität — öncelik",
+      "die Entscheidung — karar",
+      "die Umsetzung — uygulama",
+      "die Vereinbarung — anlaşma",
+      "Verantwortung übernehmen — sorumluluk üstlenmek",
+      "eine Entscheidung treffen — karar vermek",
+      "zur Verfügung stellen — kullanıma sunmak",
+      "in Betracht ziehen — değerlendirmeye almak",
+      "Maßnahmen ergreifen — önlem almak",
+      "eine Rückmeldung geben — geri bildirim vermek",
+      "Kritik üben an — eleştirmek",
+      "eine Rolle spielen — rol oynamak"
+    ],
+    "examples": [
+      {
+        "de": "Die Projektleitung wird morgen eine endgültige Entscheidung über die Zuständigkeiten treffen.",
+        "tr": "Proje yönetimi yarın sorumluluk alanları hakkında kesin karar verecek."
+      },
+      {
+        "de": "Für die Umsetzung übernimmt jedes Team die Verantwortung für einen klar abgegrenzten Bereich.",
+        "tr": "Uygulamada her ekip açıkça sınırlandırılmış bir alanın sorumluluğunu üstleniyor."
+      },
+      {
+        "de": "Für Rückfragen steht eine gemeinsame Dokumentation allen Beteiligten zur Verfügung.",
+        "tr": "Sorular için ortak dokümantasyon tüm katılımcıların kullanımına açık."
+      },
+      {
+        "de": "Wir sollten auch eine schrittweise Einführung in Betracht ziehen, bevor wir den gesamten Prozess ändern.",
+        "tr": "Tüm süreci değiştirmeden önce aşamalı uygulamayı da değerlendirmeliyiz."
+      },
+      {
+        "de": "Nach mehreren Beschwerden wurden konkrete Maßnahmen zur Verbesserung der internen Kommunikation ergriffen.",
+        "tr": "Birkaç şikâyetten sonra iç iletişimi geliştirmek için somut önlemler alındı."
+      },
+      {
+        "de": "Im Bericht wird Kritik daran geübt, dass wichtige Entscheidungen nicht transparent dokumentiert wurden.",
+        "tr": "Raporda önemli kararların şeffaf biçimde belgelenmemesi eleştiriliyor."
+      }
+    ],
+    "warning": "Bu kalıplarda isim ve fiili rastgele birleştirme. Örneğin “eine Entscheidung machen” yerine standart kullanım “eine Entscheidung treffen”dir.",
+    "tip": "Son yaptığın bir proje toplantısını düşün. Karar, sorumluluk, önlem, geri bildirim ve seçenek için en az beş Nomen-Verb-Verbindung kullanarak kısa tutanak yaz.",
+    "miniCheck": {
+      "question": "Standart kurumsal ifade hangisidir?",
+      "options": [
+        "eine Entscheidung treffen",
+        "eine Entscheidung machen",
+        "eine Entscheidung tun"
+      ],
+      "correctAnswer": "eine Entscheidung treffen"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Wir müssen zusätzliche Maßnahmen ___.",
+      "answer": "ergreifen",
+      "acceptedAnswers": [
+        "ergreifen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Abteilung",
+        "übernimmt",
+        "für die Umsetzung",
+        "die Verantwortung."
+      ],
+      "answer": "Die Abteilung übernimmt für die Umsetzung die Verantwortung."
+    },
+    "translation": {
+      "prompt": "“Bu seçeneği de değerlendirmeye almalıyız.” cümlesini Almancaya çevir.",
+      "answer": "Wir sollten auch diese Option in Betracht ziehen.",
+      "acceptedAnswers": [
+        "Wir sollten auch diese Option in Betracht ziehen",
+        "Wir sollten auch diese Option in Betracht ziehen."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wer ist für die Umsetzung zuständig? — B: ___",
+      "options": [
+        "Unser Team übernimmt dafür die Verantwortung.",
+        "Unser Team macht dafür die Verantwortung.",
+        "Unser Team steht die Verantwortung."
+      ],
+      "answer": "Unser Team übernimmt dafür die Verantwortung."
+    },
+    "trueFalse": {
+      "prompt": "Nomen-Verb-Verbindungen özellikle resmî ve mesleki registerda sık kullanılabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Doğru iki Nomen-Verb-Verbindung seç.",
+      "options": [
+        "Maßnahmen ergreifen",
+        "Kritik üben",
+        "Maßnahmen machen nehmen",
+        "Kritik nehmen an"
+      ],
+      "answers": [
+        "Maßnahmen ergreifen",
+        "Kritik üben"
+      ]
+    },
+    "summary": [
+      "Nomen-Verb-Verbindungen",
+      "kurumsal iletişim",
+      "sorumluluk ve karar",
+      "profesyonel register"
+    ]
+  },
+  {
+    "id": "b2-u04",
+    "title": "Medya, Haber Dili ve Kaynak Güvenilirliği",
+    "intro": "Bu ünitede haber, yorum ve veri açıklamalarını eleştirel okuyacak; fiil ağırlıklı günlük anlatımı Nominalstil ile yoğunlaştırmayı, ağır nominal ifadeleri ise Verbalisierung yoluyla daha açık hale getirmeyi öğreneceksin.",
+    "goals": [
+      "Nominalisierung ve Verbalisierung arasında dönüşüm yapmak",
+      "Haber metninde bilgi yoğunluğu ve registerı değerlendirmek",
+      "Kaynak güvenilirliğini ölçütlerle tartışmak",
+      "Bir haberi tarafsız ve açık biçimde özetlemek"
+    ],
+    "grammarTitle": "Nominalisierung ve Verbalisierung: haber ve resmî metin stili",
+    "grammarExplanation": "Almancada resmî, akademik ve haber metinleri çoğu zaman eylemleri isimleştirerek bilgi yoğunluğunu artırır: weil die Preise steigen → wegen des Preisanstiegs; nachdem die Daten geprüft wurden → nach der Prüfung der Daten. Verbalisierung bunun tersidir ve ağır isim gruplarını daha dinamik yan cümlelere dönüştürür. B2 düzeyinde amaç yalnızca ekleri ezberlemek değil, metin türüne göre stil seçebilmektir. Aşırı Nominalstil anlaşılabilirliği azaltabilir; bu nedenle yoğunluk ve açıklık arasında denge gerekir.",
+    "grammarColumns": [
+      {
+        "header": "Verbal yapı",
+        "values": [
+          "weil die Preise steigen",
+          "nachdem man geprüft hat",
+          "obwohl Kritik geäußert wurde",
+          "wenn die Zahlen sinken",
+          "damit man informiert",
+          "bevor man veröffentlicht"
+        ]
+      },
+      {
+        "header": "Nominal yapı",
+        "values": [
+          "wegen des Preisanstiegs",
+          "nach der Prüfung",
+          "trotz der Kritik",
+          "bei sinkenden Zahlen",
+          "zur Information",
+          "vor der Veröffentlichung"
+        ]
+      },
+      {
+        "header": "İlişki",
+        "values": [
+          "neden",
+          "zaman",
+          "karşıtlık",
+          "koşul",
+          "amaç",
+          "öncelik"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Berichterstattung — haber aktarımı",
+      "die Veröffentlichung — yayımlama",
+      "die Einordnung — bağlama oturtma",
+      "die Glaubwürdigkeit — güvenilirlik",
+      "die Reichweite — erişim / yayılım",
+      "die Verzerrung — çarpıtma",
+      "die Quellenangabe — kaynak gösterimi",
+      "die Schlagzeile — manşet",
+      "die Stellungnahme — açıklama",
+      "die Überprüfung — doğrulama / kontrol",
+      "einordnen — bağlama oturtmak",
+      "verifizieren — doğrulamak",
+      "widerlegen — çürütmek",
+      "veröffentlichen — yayımlamak",
+      "verkürzen — aşırı basitleştirmek / kısaltmak",
+      "sachlich — nesnel",
+      "belegt — kanıtlanmış",
+      "irreführend — yanıltıcı"
+    ],
+    "examples": [
+      {
+        "de": "Wegen der kurzfristigen Veröffentlichung konnten mehrere Angaben zunächst nicht unabhängig überprüft werden.",
+        "tr": "Kısa sürede yayımlanması nedeniyle bazı bilgiler başlangıçta bağımsız olarak doğrulanamadı."
+      },
+      {
+        "de": "Nachdem die Redaktion die Originaldaten geprüft hatte, korrigierte sie die missverständliche Schlagzeile.",
+        "tr": "Editörlük orijinal verileri kontrol ettikten sonra yanlış anlaşılabilir manşeti düzeltti."
+      },
+      {
+        "de": "Trotz der großen Reichweite liefert der Beitrag kaum nachvollziehbare Quellenangaben.",
+        "tr": "Yüksek erişime rağmen gönderi neredeyse hiç takip edilebilir kaynak bilgisi sunmuyor."
+      },
+      {
+        "de": "Die Glaubwürdigkeit steigt nicht automatisch dadurch, dass dieselbe Behauptung auf vielen Seiten erscheint.",
+        "tr": "Aynı iddianın birçok sayfada görünmesi güvenilirliği otomatik olarak artırmaz."
+      },
+      {
+        "de": "Zur besseren Einordnung werden im Artikel sowohl absolute Zahlen als auch Vergleichswerte genannt.",
+        "tr": "Daha iyi bağlama oturtmak için makalede hem mutlak sayılar hem karşılaştırma değerleri veriliyor."
+      },
+      {
+        "de": "Ein sachlicher Bericht trennt möglichst klar zwischen überprüfbaren Informationen und wertenden Kommentaren.",
+        "tr": "Nesnel bir haber, doğrulanabilir bilgiler ile değerlendirici yorumları mümkün olduğunca net ayırır."
+      }
+    ],
+    "warning": "Nominalstil “daha iyi Almanca” değildir. Çok sayıda uzun Genitiv zinciri metni gereksiz yere ağırlaştırabilir; B2’de stilin iletişim amacına uygunluğu önemlidir.",
+    "tip": "Kısa bir haber paragrafını iki kez yaz: önce daha verbal ve açık, sonra seçilmiş iki yerde Nominalisierung kullanarak daha resmî.",
+    "miniCheck": {
+      "question": "“weil die Kosten steigen” yapısının uygun nominal karşılığı hangisidir?",
+      "options": [
+        "wegen des Kostenanstiegs",
+        "weil des Kostenanstiegs",
+        "durch die Kosten steigen"
+      ],
+      "correctAnswer": "wegen des Kostenanstiegs"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Vor der ___ des Artikels wurden die Zahlen erneut geprüft. (veröffentlichen)",
+      "answer": "Veröffentlichung",
+      "acceptedAnswers": [
+        "Veröffentlichung"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Trotz",
+        "der Kritik",
+        "wurde",
+        "der Bericht",
+        "veröffentlicht."
+      ],
+      "answer": "Trotz der Kritik wurde der Bericht veröffentlicht."
+    },
+    "translation": {
+      "prompt": "“Veriler kontrol edildikten sonra sonuç açıklandı.” cümlesini Almancaya çevir.",
+      "answer": "Nach der Prüfung der Daten wurde das Ergebnis veröffentlicht.",
+      "acceptedAnswers": [
+        "Nach der Prüfung der Daten wurde das Ergebnis veröffentlicht",
+        "Nach der Prüfung der Daten wurde das Ergebnis veröffentlicht."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Warum wurde die Meldung korrigiert? — B: ___",
+      "options": [
+        "Nach der Überprüfung der Originaldaten wurden mehrere Fehler entdeckt.",
+        "Nach die Überprüfung wurden Fehler entdecken.",
+        "Wegen überprüften Originaldaten Fehler."
+      ],
+      "answer": "Nach der Überprüfung der Originaldaten wurden mehrere Fehler entdeckt."
+    },
+    "trueFalse": {
+      "prompt": "Verbalisierung kann einen sehr nominalen Satz verständlicher und dynamischer machen.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Nominalisierung örneği olan iki ifadeyi seç.",
+      "options": [
+        "wegen der Verzögerung",
+        "nach der Veröffentlichung",
+        "weil es sich verzögert",
+        "nachdem man veröffentlicht hat"
+      ],
+      "answers": [
+        "wegen der Verzögerung",
+        "nach der Veröffentlichung"
+      ]
+    },
+    "summary": [
+      "Nominalisierung/Verbalisierung",
+      "haber dili",
+      "kaynak güvenilirliği",
+      "register ve açıklık"
+    ]
+  },
+  {
+    "id": "b2-u05",
+    "title": "Bilim, Araştırma ve Kanıta Dayalı Düşünme",
+    "intro": "Bu ünitede bilimsel iddiaları, araştırma sonuçlarını ve belirsizlikleri değerlendirecek; Partizip I ve Partizip II’yi sıfat olarak kullanarak karmaşık bilgiyi daha yoğun ve kesin isim gruplarında ifade edeceksin.",
+    "goals": [
+      "Partizip I ve II’yi attributiv sıfat olarak doğru çekmek",
+      "Araştırma yöntemi ve sonucu arasında ayrım yapmak",
+      "Kanıtın gücünü ve sınırlılıklarını ifade etmek",
+      "Bilimsel bir bulguyu ihtiyatlı ve anlaşılır biçimde özetlemek"
+    ],
+    "grammarTitle": "Partizip I ve Partizip II’nin sıfat olarak kullanımı",
+    "grammarExplanation": "Partizip I fiil kökü + -d ile devam eden veya aktif nitelikli süreci anlatır: die steigenden Temperaturen. Partizip II ise çoğu zaman tamamlanmış süreç veya pasif sonuç bildirir: die veröffentlichten Ergebnisse. Her ikisi de attributiv kullanıldığında normal sıfat çekimini alır: mit den veröffentlichten Daten. B2 metinlerinde bu yapılar özellikle bilim, teknik, haber ve raporlama dilinde bilgiyi sıkıştırır. Ancak uzun Partizipialattribute art arda kullanıldığında okunabilirlik düşebilir; gerektiğinde Relativsatz daha açık bir alternatiftir.",
+    "grammarColumns": [
+      {
+        "header": "Fiil",
+        "values": [
+          "steigen",
+          "messen",
+          "veröffentlichen",
+          "untersuchen",
+          "zunehmen",
+          "beobachten"
+        ]
+      },
+      {
+        "header": "Partizipli grup",
+        "values": [
+          "steigende Werte",
+          "gemessene Werte",
+          "veröffentlichte Daten",
+          "untersuchte Gruppe",
+          "zunehmende Belastung",
+          "beobachteter Effekt"
+        ]
+      },
+      {
+        "header": "Anlam",
+        "values": [
+          "devam eden/aktif",
+          "ölçülmüş/pasif",
+          "yayımlanmış",
+          "incelenmiş",
+          "artan",
+          "gözlemlenmiş"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Untersuchung — araştırma / inceleme",
+      "die Stichprobe — örneklem",
+      "die Datengrundlage — veri temeli",
+      "die Messung — ölçüm",
+      "der Zusammenhang — ilişki",
+      "die Ursache — neden",
+      "die Korrelation — korelasyon",
+      "die Schlussfolgerung — sonuç çıkarımı",
+      "die Einschränkung — sınırlılık",
+      "die Reproduzierbarkeit — tekrarlanabilirlik",
+      "erheben — veri toplamak",
+      "auswerten — değerlendirmek",
+      "nachweisen — kanıtlamak / göstermek",
+      "deuten auf — işaret etmek",
+      "berücksichtigen — dikkate almak",
+      "aussagekräftig — anlamlı / güçlü bilgi veren",
+      "vorläufig — geçici",
+      "belastbar — sağlam / güvenilir"
+    ],
+    "examples": [
+      {
+        "de": "Die in mehreren Städten erhobenen Daten zeigen einen ähnlichen, aber nicht identischen Trend.",
+        "tr": "Birçok şehirde toplanan veriler benzer ancak aynı olmayan bir eğilim gösteriyor."
+      },
+      {
+        "de": "Steigende Durchschnittswerte allein beweisen noch keinen direkten ursächlichen Zusammenhang.",
+        "tr": "Artan ortalama değerler tek başına doğrudan nedensel ilişkiyi kanıtlamaz."
+      },
+      {
+        "de": "Die veröffentlichte Studie weist ausdrücklich auf die begrenzte Größe der Stichprobe hin.",
+        "tr": "Yayımlanan çalışma örneklemin sınırlı büyüklüğüne açıkça dikkat çekiyor."
+      },
+      {
+        "de": "Ein wiederholt beobachteter Effekt ist interessanter, muss aber unter vergleichbaren Bedingungen überprüft werden.",
+        "tr": "Tekrar tekrar gözlemlenen bir etki daha ilgi çekicidir ancak benzer koşullarda kontrol edilmelidir."
+      },
+      {
+        "de": "Die Forschenden unterscheiden zwischen gemessenen Veränderungen und daraus abgeleiteten Erklärungen.",
+        "tr": "Araştırmacılar ölçülen değişimler ile bunlardan çıkarılan açıklamaları ayırıyor."
+      },
+      {
+        "de": "Eine belastbare Schlussfolgerung setzt transparente Methoden und nachvollziehbare Daten voraus.",
+        "tr": "Sağlam bir sonuç şeffaf yöntemler ve takip edilebilir veriler gerektirir."
+      }
+    ],
+    "warning": "Korrelation ile Kausalität aynı değildir. Dilbilgisel olarak doğru bir B2 cümlesi de kanıtın desteklemediği nedensel bir iddiayı otomatik olarak doğru yapmaz.",
+    "tip": "Bir araştırma özeti yaz: “erhobene Daten, beobachteter Effekt, zunehmende Tendenz” gibi üç Partizipli isim grubu kullan; ardından bir sınırlılık belirt.",
+    "miniCheck": {
+      "question": "Tamamlanmış/pasif anlam taşıyan uygun grup hangisidir?",
+      "options": [
+        "die veröffentlichten Ergebnisse",
+        "die veröffentlichenden Ergebnisse",
+        "die Ergebnisse veröffentlichen"
+      ],
+      "correctAnswer": "die veröffentlichten Ergebnisse"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die in der Studie ___ Daten sind öffentlich zugänglich. (erheben)",
+      "answer": "erhobenen",
+      "acceptedAnswers": [
+        "erhobenen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die",
+        "steigenden Werte",
+        "müssen",
+        "genauer",
+        "untersucht werden."
+      ],
+      "answer": "Die steigenden Werte müssen genauer untersucht werden."
+    },
+    "translation": {
+      "prompt": "“Gözlemlenen etki henüz kesin olarak açıklanmadı.” cümlesini Almancaya çevir.",
+      "answer": "Der beobachtete Effekt ist noch nicht eindeutig erklärt.",
+      "acceptedAnswers": [
+        "Der beobachtete Effekt ist noch nicht eindeutig erklärt",
+        "Der beobachtete Effekt ist noch nicht eindeutig erklärt."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Beweist die Studie einen direkten Zusammenhang? — B: ___",
+      "options": [
+        "Nein, die erhobenen Daten deuten nur auf einen möglichen Zusammenhang hin.",
+        "Nein, die erhebenden Daten beweisen automatisch nicht.",
+        "Nein, erhoben Daten ist Zusammenhang."
+      ],
+      "answer": "Nein, die erhobenen Daten deuten nur auf einen möglichen Zusammenhang hin."
+    },
+    "trueFalse": {
+      "prompt": "Partizip I kann eine laufende oder aktive Eigenschaft ausdrücken.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Doğru iki Partizipli sıfat grubunu seç.",
+      "options": [
+        "die gemessenen Werte",
+        "die zunehmende Belastung",
+        "die messen Werte",
+        "die zunehmen Belastung"
+      ],
+      "answers": [
+        "die gemessenen Werte",
+        "die zunehmende Belastung"
+      ]
+    },
+    "summary": [
+      "Partizip I/II als Adjektiv",
+      "bilimsel dil",
+      "kanıt ve sınırlılık",
+      "araştırma özeti"
+    ]
+  },
+  {
+    "id": "b2-u06",
+    "title": "Çevre, İklim ve Sürdürülebilir Dönüşüm",
+    "intro": "Bu ünitede iklim politikaları, enerji dönüşümü ve bireysel-kurumsal sorumluluk hakkında tartışacak; subjektive Modalverben ile olasılık, güçlü tahmin, duyum ve aktarılan iddia arasındaki farkları daha hassas ifade edeceksin.",
+    "goals": [
+      "Modal fiillerin subjektive Bedeutungen kullanımını ayırt etmek",
+      "Olasılık ve kesinlik derecesini nüanslı ifade etmek",
+      "Çevre politikasıyla ilgili iddia ve tahminleri değerlendirmek",
+      "Bir önlemin etkisini kanıt ve belirsizlikle birlikte tartışmak"
+    ],
+    "grammarTitle": "Subjektive Modalverben: tahmin, varsayım ve aktarılan iddia",
+    "grammarExplanation": "B2 düzeyinde müssen, dürfen, können, mögen, sollen ve wollen yalnız zorunluluk/izin gibi objektif anlamlarda değil, konuşanın bir bilginin olasılığına veya kaynağına yaklaşımını göstermek için de kullanılabilir. “Er muss recht haben” güçlü bir çıkarım; “Das dürfte stimmen” yüksek olasılık; “Das kann stimmen” olasılık; “Die Emissionen sollen gesunken sein” başkasından aktarılan bilgi; “Der Hersteller will klimaneutral sein” öznenin kendi iddiasıdır. Geçmişe ilişkin tahminlerde Modalverb + Partizip II + haben/sein yapısı görülür.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "muss sein",
+          "dürfte sein",
+          "kann sein",
+          "mag sein",
+          "soll gesunken sein",
+          "will reduziert haben"
+        ]
+      },
+      {
+        "header": "Anlam",
+        "values": [
+          "güçlü çıkarım",
+          "yüksek olasılık",
+          "olasılık",
+          "ihtiyatlı kabul",
+          "duyum/aktarım",
+          "öz iddia"
+        ]
+      },
+      {
+        "header": "Örnek işlev",
+        "values": [
+          "kanıttan sonuç",
+          "muhtemel değerlendirme",
+          "açık olasılık",
+          "karşı görüş kabulü",
+          "kaynağı belirsiz bilgi",
+          "kurumun kendi beyanı"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Energiewende — enerji dönüşümü",
+      "die Emission — emisyon",
+      "die Klimaanpassung — iklime uyum",
+      "der Ressourcenverbrauch — kaynak tüketimi",
+      "die Kreislaufwirtschaft — döngüsel ekonomi",
+      "der Zielkonflikt — hedef çatışması",
+      "die Folgenabschätzung — etki değerlendirmesi",
+      "der Anreiz — teşvik",
+      "die Belastung — yük / çevresel baskı",
+      "die Einsparung — tasarruf / azaltım",
+      "senken — düşürmek",
+      "umstellen auf — ... sistemine geçmek",
+      "ausgleichen — dengelemek / telafi etmek",
+      "verursachen — neden olmak",
+      "abschätzen — tahmin etmek",
+      "wirksam — etkili",
+      "umstritten — tartışmalı",
+      "langfristig — uzun vadeli"
+    ],
+    "examples": [
+      {
+        "de": "Der starke Rückgang des Verbrauchs dürfte teilweise auf die neuen Effizienzstandards zurückzuführen sein.",
+        "tr": "Tüketimdeki güçlü düşüş muhtemelen kısmen yeni verimlilik standartlarından kaynaklanıyor."
+      },
+      {
+        "de": "Die ungewöhnlich hohen Werte müssen durch mehrere Faktoren gleichzeitig verursacht worden sein.",
+        "tr": "Alışılmadık derecede yüksek değerler birden fazla etkenin aynı anda etkisiyle oluşmuş olmalı."
+      },
+      {
+        "de": "Das neue Verfahren kann Emissionen senken, wenn die benötigte Energie tatsächlich aus erneuerbaren Quellen stammt.",
+        "tr": "Gerekli enerji gerçekten yenilenebilir kaynaklardan gelirse yeni yöntem emisyonları azaltabilir."
+      },
+      {
+        "de": "Die Stadt soll ihre Klimaziele früher als geplant erreicht haben; der vollständige Bericht liegt jedoch noch nicht vor.",
+        "tr": "Şehrin iklim hedeflerine planlanandan erken ulaştığı söyleniyor; ancak tam rapor henüz mevcut değil."
+      },
+      {
+        "de": "Der Anbieter will seinen Ressourcenverbrauch innerhalb von fünf Jahren halbiert haben.",
+        "tr": "Sağlayıcı, kaynak tüketimini beş yıl içinde yarıya indirmiş olduğunu iddia ediyor."
+      },
+      {
+        "de": "Mag die Maßnahme kurzfristig teuer sein, langfristig könnte sie dennoch erhebliche Folgekosten vermeiden.",
+        "tr": "Önlem kısa vadede pahalı olabilir; yine de uzun vadede önemli ek maliyetleri önleyebilir."
+      }
+    ],
+    "warning": "“sollen” ve “wollen” subjektive kullanımda doğruluk garantisi vermez. sollen dış kaynaktan aktarılan bilgiyi, wollen ise öznenin kendi iddiasını işaretleyebilir.",
+    "tip": "Bir çevre haberi için beş cümle yaz: kesin veri, güçlü çıkarım, yüksek olasılık, duyum ve kurumun kendi iddiasını farklı yapılarla ayır.",
+    "miniCheck": {
+      "question": "“Bunun doğru olması kuvvetle muhtemel.” anlamına en yakın yapı hangisidir?",
+      "options": [
+        "Das dürfte stimmen.",
+        "Das muss verboten sein.",
+        "Das soll müssen stimmen."
+      ],
+      "correctAnswer": "Das dürfte stimmen."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Werte ___ durch den milden Winter beeinflusst worden sein. (güçlü çıkarım)",
+      "answer": "müssen",
+      "acceptedAnswers": [
+        "müssen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Stadt",
+        "soll",
+        "ihre Ziele",
+        "früher",
+        "erreicht haben."
+      ],
+      "answer": "Die Stadt soll ihre Ziele früher erreicht haben."
+    },
+    "translation": {
+      "prompt": "“Yeni önlemin etkili olması muhtemeldir.” cümlesini Almancaya çevir.",
+      "answer": "Die neue Maßnahme dürfte wirksam sein.",
+      "acceptedAnswers": [
+        "Die neue Maßnahme dürfte wirksam sein",
+        "Die neue Maßnahme dürfte wirksam sein."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Sind die gemeldeten Einsparungen sicher bestätigt? — B: ___",
+      "options": [
+        "Noch nicht. Sie sollen laut Anbieter deutlich höher ausgefallen sein.",
+        "Noch nicht. Sie müssen laut Anbieter soll sein.",
+        "Noch nicht. Sie wollen Anbieter gesunken."
+      ],
+      "answer": "Noch nicht. Sie sollen laut Anbieter deutlich höher ausgefallen sein."
+    },
+    "trueFalse": {
+      "prompt": "“Das dürfte stimmen” drückt typischerweise eine Wahrscheinlichkeitsbewertung aus.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Kaynak/olasılık mesafesi gösterebilen iki kullanım seç.",
+      "options": [
+        "soll erreicht haben",
+        "dürfte wirken",
+        "muss die Tür schließen",
+        "darf hier parken"
+      ],
+      "answers": [
+        "soll erreicht haben",
+        "dürfte wirken"
+      ]
+    },
+    "summary": [
+      "subjektive Modalverben",
+      "olasılık derecesi",
+      "iklim ve enerji",
+      "iddia ile kanıtı ayırma"
+    ]
+  },
+  {
+    "id": "b2-u07",
+    "title": "Ekonomi, Tüketim ve Karar Verme",
+    "intro": "Bu ünitede fiyat, bütçe, tüketici davranışı ve ekonomik kararları tartışacak; Präpositionaladverbien ile önceki bir konuya tekrar tekrar uzun isim grupları kullanmadan gönderme yapacak ve metin bağlantısını güçlendireceksin.",
+    "goals": [
+      "da(r)- ve wo(r)- biçimlerini doğru kurmak",
+      "Şeyler ve kişiler için edatlı gönderimi ayırmak",
+      "Ekonomik bir kararın ölçütlerini bağlantılı anlatmak",
+      "Tüketici davranışına ilişkin argümanları değerlendirmek"
+    ],
+    "grammarTitle": "Präpositionaladverbien: daran, darauf, damit, davon / woran, worauf ...",
+    "grammarExplanation": "Bir fiil, isim veya sıfat belirli bir edat gerektiriyorsa daha önce sözü geçen şeylere da(r)- + Präposition, sorularda wo(r)- + Präposition ile gönderme yapılabilir: Wir sprechen über die Kosten. → Wir sprechen darüber. Woran liegt das? Ünlüyle başlayan edatlarda r eklenir: darauf, daran, darüber. İnsanlara gönderme yapılırken da-/wo- biçimleri yerine edat + kişi zamiri kullanılır: mit ihr, über ihn, auf wen. B2’de bu yapılar özellikle uzun tartışmalarda tekrarları azaltır ve kohäsion sağlar.",
+    "grammarColumns": [
+      {
+        "header": "Edatlı yapı",
+        "values": [
+          "denken an",
+          "warten auf",
+          "sprechen über",
+          "rechnen mit",
+          "abhängen von",
+          "sich entscheiden für"
+        ]
+      },
+      {
+        "header": "Şeye gönderim",
+        "values": [
+          "daran",
+          "darauf",
+          "darüber",
+          "damit",
+          "davon",
+          "dafür"
+        ]
+      },
+      {
+        "header": "Soru",
+        "values": [
+          "woran?",
+          "worauf?",
+          "worüber?",
+          "womit?",
+          "wovon?",
+          "wofür?"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Kaufkraft — satın alma gücü",
+      "die Nachfrage — talep",
+      "das Konsumverhalten — tüketim davranışı",
+      "die Preisentwicklung — fiyat gelişimi",
+      "die Lebenshaltungskosten — yaşam maliyetleri",
+      "die Anschaffung — satın alma / edinim",
+      "die Zahlungsbereitschaft — ödeme isteği",
+      "die Folgekosten — sonraki maliyetler",
+      "die Entscheidungskriterien — karar ölçütleri",
+      "die Marktübersicht — piyasa görünümü",
+      "abwägen — tartmak / değerlendirmek",
+      "verzichten auf — vazgeçmek",
+      "sich orientieren an — esas almak",
+      "abhängen von — bağlı olmak",
+      "rechnen mit — hesaba katmak",
+      "preisbewusst — fiyat bilinci olan",
+      "wirtschaftlich — ekonomik",
+      "erschwinglich — karşılanabilir"
+    ],
+    "examples": [
+      {
+        "de": "Viele Haushalte achten stärker auf Folgekosten; darauf reagieren inzwischen auch mehrere Anbieter.",
+        "tr": "Birçok hane sonraki maliyetlere daha fazla dikkat ediyor; birçok sağlayıcı da artık buna tepki veriyor."
+      },
+      {
+        "de": "Ob ein Kauf wirklich wirtschaftlich ist, hängt davon ab, wie lange das Produkt genutzt werden kann.",
+        "tr": "Bir alışverişin gerçekten ekonomik olup olmadığı ürünün ne kadar süre kullanılabildiğine bağlı."
+      },
+      {
+        "de": "Womit rechnen Verbraucherinnen und Verbraucher, wenn die Energiepreise erneut steigen?",
+        "tr": "Enerji fiyatları tekrar artarsa tüketiciler neyi hesaba katıyor?"
+      },
+      {
+        "de": "Bei größeren Anschaffungen informiere ich mich darüber, welche Reparatur- und Garantiebedingungen gelten.",
+        "tr": "Büyük alışverişlerde hangi tamir ve garanti koşullarının geçerli olduğu hakkında bilgi alırım."
+      },
+      {
+        "de": "Über persönliche Empfehlungen spreche ich mit Freunden; bei statistischen Aussagen achte ich dagegen auf die Datengrundlage.",
+        "tr": "Kişisel önerileri arkadaşlarımla konuşurum; istatistiksel iddialarda ise veri temelinə dikkat ederim."
+      },
+      {
+        "de": "Eine günstige Monatsrate sagt wenig darüber aus, wie hoch die Gesamtkosten über mehrere Jahre sind.",
+        "tr": "Uygun aylık taksit, birkaç yıl boyunca toplam maliyetin ne kadar olduğu hakkında az şey söyler."
+      }
+    ],
+    "warning": "da(r)-/wo(r)- biçimlerini kişiler için kullanma. “Mit wem sprichst du?” kişi sorusudur; “Womit beschäftigst du dich?” ise bir şey/konu sorusudur.",
+    "tip": "Bir ürün veya abonelik kararı seç. Beş edatlı fiil kullan ve ikinci cümleden itibaren aynı isimleri da(r)- biçimleriyle tekrar etmeden bağla.",
+    "miniCheck": {
+      "question": "“Bu neye bağlı?” için doğru soru hangisidir?",
+      "options": [
+        "Wovon hängt das ab?",
+        "Von wem hängt das Ding ab?",
+        "Woran hängt von das?"
+      ],
+      "correctAnswer": "Wovon hängt das ab?"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Wir sprechen über die Gesamtkosten. Wir sprechen ___ morgen ausführlicher.",
+      "answer": "darüber",
+      "acceptedAnswers": [
+        "darüber"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Entscheidung",
+        "hängt",
+        "davon ab,",
+        "wie hoch",
+        "die Folgekosten sind."
+      ],
+      "answer": "Die Entscheidung hängt davon ab, wie hoch die Folgekosten sind."
+    },
+    "translation": {
+      "prompt": "“Bununla daha sonra ilgileneceğiz.” cümlesini Almancaya çevir.",
+      "answer": "Damit werden wir uns später beschäftigen.",
+      "acceptedAnswers": [
+        "Damit werden wir uns später beschäftigen",
+        "Damit werden wir uns später beschäftigen."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Worauf achtest du bei einem Vertrag besonders? — B: ___",
+      "options": [
+        "Darauf, wie hoch die Gesamtkosten und die Kündigungsfristen sind.",
+        "Auf das, wie hoch Kosten sind darauf.",
+        "Worauf ich achte mit der Person."
+      ],
+      "answer": "Darauf, wie hoch die Gesamtkosten und die Kündigungsfristen sind."
+    },
+    "trueFalse": {
+      "prompt": "“darüber” kann auf eine zuvor genannte Sache mit der Präposition über verweisen.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Doğru iki Präpositionaladverb seç.",
+      "options": [
+        "davon",
+        "worauf",
+        "mit er",
+        "über wem"
+      ],
+      "answers": [
+        "davon",
+        "worauf"
+      ]
+    },
+    "summary": [
+      "Präpositionaladverbien",
+      "metin bağlantısı",
+      "ekonomik karar",
+      "tüketici dili"
+    ]
+  },
+  {
+    "id": "b2-u08",
+    "title": "Toplum, Demografi ve Birlikte Yaşam",
+    "intro": "Bu ünitede nüfus değişimi, kuşaklar, sosyal katılım ve birlikte yaşam hakkında konuşacak; miktarı, belirsiz grupları ve genellemeleri Indefinitpronomen ile daha doğal ve hassas biçimde ifade edeceksin.",
+    "goals": [
+      "Indefinitpronomenleri sayı ve hâl bağlamında kullanmak",
+      "Genelleme yaparken aşırı kesinlikten kaçınmak",
+      "Demografik veriyi toplumsal sonuçlarla ilişkilendirmek",
+      "Farklı grupların ihtiyaçlarını dengeli biçimde tartışmak"
+    ],
+    "grammarTitle": "Indefinitpronomen ve miktar ifadeleri: man, jemand, niemand, einige, mehrere, viele ...",
+    "grammarExplanation": "B2 düzeyinde Indefinitpronomenler yalnız “birisi/kimse” anlamıyla değil, nicelik ve grup yapısını nüanslı ifade etmek için önemlidir. jemand/niemand kişi belirtmeden gönderim yapar; einige, mehrere, viele, wenige gibi biçimler isim yerine kullanılabilir ve gerektiğinde çekim alır. manche genellemenin sınırlı olduğunu gösterirken man genel özne kurar. “Viele der Befragten”, “einige von ihnen” gibi partitif yapılar özellikle veri ve anket yorumunda kullanışlıdır. B2’de belirsiz zamir seçimi iddianın kapsamını doğru göstermelidir.",
+    "grammarColumns": [
+      {
+        "header": "İfade",
+        "values": [
+          "jemand",
+          "niemand",
+          "man",
+          "einige",
+          "mehrere",
+          "manche"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "belirsiz kişi",
+          "olumsuz kişi",
+          "genel özne",
+          "sınırlı grup",
+          "birden fazla",
+          "bazı / herkes değil"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "jemandem helfen",
+          "niemanden ausschließen",
+          "man beobachtet",
+          "einige stimmen zu",
+          "mehrere berichten",
+          "manche bezweifeln"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der demografische Wandel — demografik değişim",
+      "die Altersstruktur — yaş yapısı",
+      "die Zuwanderung — göç / ülkeye geliş",
+      "die Abwanderung — bölgeden ayrılma",
+      "die Teilhabe — katılım",
+      "die Daseinsvorsorge — temel kamu hizmetleri",
+      "die Nachbarschaft — mahalle / komşuluk",
+      "der Zusammenhalt — dayanışma",
+      "die Bevölkerungsentwicklung — nüfus gelişimi",
+      "der Bedarf — ihtiyaç",
+      "zunehmen — artmak",
+      "zurückgehen — gerilemek",
+      "sich verteilen — dağılmak",
+      "teilhaben an — katılmak",
+      "berücksichtigen — dikkate almak",
+      "vielfältig — çeşitli",
+      "generationenübergreifend — kuşaklar arası",
+      "strukturschwach — yapısal olarak zayıf"
+    ],
+    "examples": [
+      {
+        "de": "Einige der Befragten wünschen sich mehr generationenübergreifende Angebote, während andere vor allem bessere Verkehrsanbindungen nennen.",
+        "tr": "Katılımcıların bazıları daha fazla kuşaklar arası hizmet isterken diğerleri özellikle daha iyi ulaşım bağlantıları belirtiyor."
+      },
+      {
+        "de": "Niemand sollte von grundlegenden Dienstleistungen ausgeschlossen werden, nur weil er in einer dünn besiedelten Region lebt.",
+        "tr": "Kimse yalnız seyrek nüfuslu bölgede yaşadığı için temel hizmetlerden dışlanmamalı."
+      },
+      {
+        "de": "Man kann aus einem landesweiten Durchschnitt nicht automatisch auf jede einzelne Gemeinde schließen.",
+        "tr": "Ülke çapındaki ortalamadan otomatik olarak her bir belediye hakkında sonuç çıkarılamaz."
+      },
+      {
+        "de": "Mehrere Kommunen berichten, dass sich der Bedarf an Pflege- und Beratungsangeboten deutlich verändert.",
+        "tr": "Birçok belediye bakım ve danışmanlık hizmetlerine ihtiyacın belirgin biçimde değiştiğini bildiriyor."
+      },
+      {
+        "de": "Manche Maßnahmen helfen kurzfristig, lösen jedoch nicht alle strukturellen Ursachen.",
+        "tr": "Bazı önlemler kısa vadede yardımcı oluyor ancak tüm yapısal nedenleri çözmüyor."
+      },
+      {
+        "de": "Viele von ihnen würden sich stärker engagieren, wenn Informationen leichter zugänglich wären.",
+        "tr": "Bilgiler daha kolay erişilebilir olsaydı onların birçoğu daha fazla katılım gösterirdi."
+      }
+    ],
+    "warning": "“alle”, “viele”, “manche” ve “einige” aynı kapsamı ifade etmez. Özellikle veri yorumunda miktarı olduğundan daha kesin veya daha büyük göstermemeye dikkat et.",
+    "tip": "Bir anket sonucu hayal et. “einige, mehrere, viele, manche, niemand” ile beş farklı grup ifadesi kur ve her cümlede kapsamı bilinçli seç.",
+    "miniCheck": {
+      "question": "“Katılımcıların bazıları” için uygun ifade hangisidir?",
+      "options": [
+        "einige der Teilnehmenden",
+        "jemand Teilnehmenden",
+        "man der Teilnehmenden"
+      ],
+      "correctAnswer": "einige der Teilnehmenden"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: ___ der Befragten nannten bezahlbaren Wohnraum als Priorität. (birkaç/bazıları)",
+      "answer": "Einige",
+      "acceptedAnswers": [
+        "Einige"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Manche",
+        "Maßnahmen",
+        "wirken",
+        "nur",
+        "kurzfristig."
+      ],
+      "answer": "Manche Maßnahmen wirken nur kurzfristig."
+    },
+    "translation": {
+      "prompt": "“Kimse bu değişimden tamamen etkilenmeden kalmıyor.” cümlesini Almancaya çevir.",
+      "answer": "Niemand bleibt von dieser Veränderung völlig unberührt.",
+      "acceptedAnswers": [
+        "Niemand bleibt von dieser Veränderung völlig unberührt",
+        "Niemand bleibt von dieser Veränderung völlig unberührt."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Sind alle Gemeinden gleich betroffen? — B: ___",
+      "options": [
+        "Nein, manche stärker als andere.",
+        "Nein, jemand stärker alle.",
+        "Nein, man niemand Gemeinden."
+      ],
+      "answer": "Nein, manche stärker als andere."
+    },
+    "trueFalse": {
+      "prompt": "“manche” kann zeigen, dass eine Aussage nur für einen Teil einer Gruppe gilt.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Belirsiz grup/miktar bildiren iki ifade seç.",
+      "options": [
+        "mehrere",
+        "einige",
+        "dieser genaue Mann",
+        "Berlin"
+      ],
+      "answers": [
+        "mehrere",
+        "einige"
+      ]
+    },
+    "summary": [
+      "Indefinitpronomen",
+      "nicelik ve kapsam",
+      "demografi",
+      "toplumsal birlikte yaşam"
+    ]
+  },
+  {
+    "id": "b2-u09",
+    "title": "Ulaşım, Kentleşme ve Kamusal Alan",
+    "intro": "Bu ünitede kent planlaması, ulaşım tercihleri ve kamusal alanın kullanımı hakkında tartışacak; Almancadaki “es” unsurunun hava-zaman yapıları, korrelat, Platzhalter ve sabit ifadelerdeki farklı işlevlerini tanıyacaksın.",
+    "goals": [
+      "“es” sözcüğünün başlıca B2 işlevlerini ayırt etmek",
+      "Korrelat-es ile dass/zu yan yapılarını kurmak",
+      "Kent ve ulaşım politikalarını gerekçeli karşılaştırmak",
+      "Soyut bir öneriyi kamusal etki açısından değerlendirmek"
+    ],
+    "grammarTitle": "Das Wort „es“: Platzhalter, Korrelat ve sabit yapılar",
+    "grammarExplanation": "Almancadaki es her zaman gerçek bir “o” zamiri değildir. Hava ve bazı edilgen yapılarda biçimsel özne olabilir: Es regnet; Es wird diskutiert. dass veya Infinitivsatz’ı önden haber veren Korrelat olabilir: Ich finde es sinnvoll, den Takt zu erhöhen. Bazı sabit yapılarda zorunludur: Es geht um ..., es kommt darauf an ..., es gibt .... Cümle başında Platzhalter olarak da görülebilir ve gerçek özne fiilden sonra gelir: Es stehen mehrere Optionen zur Verfügung. B2’de es’in işlevini anlamak özellikle uzun resmî ve tartışmacı metinlerde cümle yapısını çözmeyi kolaylaştırır.",
+    "grammarColumns": [
+      {
+        "header": "Örnek",
+        "values": [
+          "Es regnet.",
+          "Es wird diskutiert.",
+          "Ich halte es für sinnvoll, ...",
+          "Es geht um Mobilität.",
+          "Es stehen drei Optionen zur Wahl.",
+          "Es kommt darauf an, ..."
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "biçimsel özne",
+          "unpersönliches Passiv",
+          "Korrelat",
+          "sabit ifade",
+          "Platzhalter",
+          "sabit korrelat yapı"
+        ]
+      },
+      {
+        "header": "Not",
+        "values": [
+          "hava",
+          "eyleyen belirsiz",
+          "zu/dass önden haber",
+          "konu belirtme",
+          "özne sonra gelir",
+          "şarta bağlılık"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der öffentliche Raum — kamusal alan",
+      "die Verkehrsplanung — ulaşım planlaması",
+      "die Erreichbarkeit — erişilebilirlik",
+      "die Taktung — sefer sıklığı",
+      "die Verkehrsberuhigung — trafiği sakinleştirme",
+      "die Flächennutzung — alan kullanımı",
+      "die Barrierefreiheit — engelsiz erişim",
+      "der Nutzungskonflikt — kullanım çatışması",
+      "die Pendelstrecke — işe gidiş-geliş güzergâhı",
+      "die Infrastruktur — altyapı",
+      "ausbauen — geliştirmek / genişletmek",
+      "entlasten — yükünü azaltmak",
+      "umgestalten — yeniden düzenlemek",
+      "priorisieren — önceliklendirmek",
+      "zugänglich machen — erişilebilir kılmak",
+      "fußläufig — yürüyüş mesafesinde",
+      "dicht besiedelt — yoğun nüfuslu",
+      "verkehrsarm — az trafikli"
+    ],
+    "examples": [
+      {
+        "de": "Es geht bei der Debatte nicht nur um Autos, sondern um die gerechte Nutzung begrenzter Flächen.",
+        "tr": "Tartışmada yalnız otomobiller değil, sınırlı alanların adil kullanımı söz konusu."
+      },
+      {
+        "de": "Viele Anwohner halten es für sinnvoll, den Busverkehr abends häufiger anzubieten.",
+        "tr": "Birçok mahalle sakini akşam otobüs seferlerinin sıklaştırılmasını mantıklı buluyor."
+      },
+      {
+        "de": "Es wird darüber diskutiert, ob zusätzliche Parkplätze den Verkehr tatsächlich entlasten würden.",
+        "tr": "Ek park yerlerinin trafiği gerçekten rahatlatıp rahatlatmayacağı tartışılıyor."
+      },
+      {
+        "de": "Es stehen mehrere Varianten zur Verfügung, die sich hinsichtlich Kosten und Flächenbedarf deutlich unterscheiden.",
+        "tr": "Maliyet ve alan ihtiyacı açısından belirgin biçimde farklılaşan birkaç seçenek mevcut."
+      },
+      {
+        "de": "Ob ein neues Mobilitätsangebot angenommen wird, kommt auch darauf an, wie zuverlässig es im Alltag funktioniert.",
+        "tr": "Yeni ulaşım seçeneğinin benimsenmesi günlük hayatta ne kadar güvenilir çalıştığına da bağlı."
+      },
+      {
+        "de": "In dicht besiedelten Vierteln ist es besonders schwierig, unterschiedliche Interessen gleichzeitig zu berücksichtigen.",
+        "tr": "Yoğun nüfuslu mahallelerde farklı çıkarları aynı anda dikkate almak özellikle zordur."
+      }
+    ],
+    "warning": "Her es aynı işlevde değildir ve bazı durumlarda silinebilir, bazılarında silinemez. Cümlenin anlamını ve gerçek öznenin/yan cümlenin nerede olduğunu kontrol et.",
+    "tip": "Bir ulaşım projesi hakkında altı cümle yaz ve es’i en az dört farklı işlevde kullan: es geht um, es wird, ich finde es..., es stehen....",
+    "miniCheck": {
+      "question": "Korrelat-es içeren cümle hangisidir?",
+      "options": [
+        "Ich finde es sinnvoll, den Takt zu erhöhen.",
+        "Es regnet seit gestern.",
+        "Es gibt zwei Bahnhöfe."
+      ],
+      "correctAnswer": "Ich finde es sinnvoll, den Takt zu erhöhen."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: ___ geht darum, den öffentlichen Raum besser zu nutzen.",
+      "answer": "Es",
+      "acceptedAnswers": [
+        "Es"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Es",
+        "stehen",
+        "drei Varianten",
+        "zur Verfügung."
+      ],
+      "answer": "Es stehen drei Varianten zur Verfügung."
+    },
+    "translation": {
+      "prompt": "“Bu çözümü test etmek faydalı olur.” cümlesini Almancaya çevir.",
+      "answer": "Es wäre sinnvoll, diese Lösung zu testen.",
+      "acceptedAnswers": [
+        "Es wäre sinnvoll, diese Lösung zu testen",
+        "Es wäre sinnvoll, diese Lösung zu testen."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Worum geht es bei dem Projekt? — B: ___",
+      "options": [
+        "Es geht darum, den Platz barrierefreier zu gestalten.",
+        "Es darum geht den Platz gestaltet.",
+        "Es ist Platz um barrierefrei."
+      ],
+      "answer": "Es geht darum, den Platz barrierefreier zu gestalten."
+    },
+    "trueFalse": {
+      "prompt": "“Es wird diskutiert” kann als unpersönliche Passivkonstruktion verwendet werden.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Sabit es yapısı olan iki ifadeyi seç.",
+      "options": [
+        "es geht um",
+        "es kommt darauf an",
+        "ich gebe ihn",
+        "wir fahren"
+      ],
+      "answers": [
+        "es geht um",
+        "es kommt darauf an"
+      ]
+    },
+    "summary": [
+      "işlevsel es",
+      "kent ve ulaşım",
+      "Korrelat/Platzhalter",
+      "kamusal politika tartışması"
+    ]
+  },
+  {
+    "id": "b2-u10",
+    "title": "Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar",
+    "intro": "Bu ünitede sağlık davranışları, yaşam kalitesi ve önleyici uygulamalar hakkında kanıta dayalı görüş geliştirecek; nicht, kein, weder ... noch, kaum, keineswegs ve yalnızca belirli ögeyi olumsuzlayan yapılarla negation kapsamını hassaslaştıracaksın.",
+    "goals": [
+      "Negation kapsamını cümle içinde doğru belirlemek",
+      "nicht/kein ve kısmi olumsuzluk yapılarını ayırt etmek",
+      "Sağlık önerisini aşırı genellemeden değerlendirmek",
+      "Risk ve faydayı dengeli bir B2 argümanıyla açıklamak"
+    ],
+    "grammarTitle": "B2’de Negation: kapsam, odak ve nüans",
+    "grammarExplanation": "B2 düzeyinde olumsuzluk yalnız nicht ve kein seçimi değildir; nicht’in cümlede nereye yerleştiği hangi unsurun olumsuzlandığını değiştirir. “Nicht alle profitieren” herkesin yararlanmadığını, “Alle profitieren nicht” ise bağlama göre belirsiz veya farklı vurgulu bir yapı oluşturabilir. weder ... noch iki unsuru dışlar; kaum düşük dereceyi; keineswegs güçlü reddi; nicht unbedingt ise ihtiyatlı sınırlamayı gösterir. “nicht nur ... sondern auch” olumsuzluk değil, genişletme işlevindedir. Hassas sağlık iletişiminde bu kapsam farkları önemlidir.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "nicht alle",
+          "kein eindeutiger Beleg",
+          "weder ... noch",
+          "kaum",
+          "keineswegs",
+          "nicht unbedingt"
+        ]
+      },
+      {
+        "header": "Anlam",
+        "values": [
+          "kısmi olumsuzluk",
+          "isim olumsuzluğu",
+          "iki unsuru dışlama",
+          "çok az",
+          "kesin reddetme",
+          "zorunlu değil / ihtiyat"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "Nicht alle reagieren gleich.",
+          "Es gibt keinen Beleg.",
+          "weder billig noch wirksam",
+          "kaum verändert",
+          "keineswegs harmlos",
+          "nicht unbedingt besser"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Prävention — önleme",
+      "die Vorsorge — koruyucu sağlık / tarama",
+      "die Lebensqualität — yaşam kalitesi",
+      "der Risikofaktor — risk faktörü",
+      "die Nebenwirkung — yan etki",
+      "die Belastbarkeit — dayanıklılık",
+      "die Empfehlung — öneri",
+      "die Evidenz — kanıt düzeyi",
+      "die Früherkennung — erken tespit",
+      "die Verhaltensänderung — davranış değişikliği",
+      "vorbeugen — önlemek",
+      "reduzieren — azaltmak",
+      "abwägen — değerlendirmek",
+      "sich auswirken auf — etkilemek",
+      "nachweisen — kanıtlamak",
+      "maßvoll — ölçülü",
+      "nachweisbar — kanıtlanabilir",
+      "pauschal — genelleyici"
+    ],
+    "examples": [
+      {
+        "de": "Nicht alle Menschen reagieren auf dieselbe Empfehlung in gleicher Weise.",
+        "tr": "Tüm insanlar aynı öneriye aynı şekilde tepki vermez."
+      },
+      {
+        "de": "Für einen langfristigen Nutzen gibt es bislang keinen eindeutigen Beleg.",
+        "tr": "Uzun vadeli fayda için şu ana kadar kesin bir kanıt yok."
+      },
+      {
+        "de": "Eine Maßnahme ist weder automatisch wirksam noch für jede Zielgruppe gleichermaßen geeignet.",
+        "tr": "Bir önlem ne otomatik olarak etkilidir ne de her hedef grup için aynı ölçüde uygundur."
+      },
+      {
+        "de": "Die Werte haben sich trotz der Kampagne kaum verändert.",
+        "tr": "Kampanyaya rağmen değerler neredeyse hiç değişmedi."
+      },
+      {
+        "de": "Ein alltägliches Produkt ist keineswegs risikofrei, nur weil es frei verkauft wird.",
+        "tr": "Bir ürün yalnız serbest satılıyor diye kesinlikle risksiz değildir."
+      },
+      {
+        "de": "Mehr Information führt nicht unbedingt zu einer dauerhaften Verhaltensänderung.",
+        "tr": "Daha fazla bilgi mutlaka kalıcı davranış değişikliğine yol açmaz."
+      }
+    ],
+    "warning": "“nicht alle” ile “alle nicht” aynı netliğe sahip değildir. Özellikle bilimsel/sağlık metninde kısmi olumsuzluğu açık biçimde kur.",
+    "tip": "Bir sağlık iddiasını yeniden yaz: önce aşırı kesin biçimde, sonra “nicht alle, kaum, nicht unbedingt, keineswegs” ile daha hassas dört versiyon üret.",
+    "miniCheck": {
+      "question": "“Herkes fayda görmüyor” anlamını en açık veren cümle hangisidir?",
+      "options": [
+        "Nicht alle profitieren davon.",
+        "Alle profitieren davon nicht unbedingt immer gar.",
+        "Kein alle profitieren."
+      ],
+      "correctAnswer": "Nicht alle profitieren davon."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Maßnahme ist ___ für jede Person geeignet.",
+      "answer": "nicht unbedingt",
+      "acceptedAnswers": [
+        "nicht unbedingt"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Es gibt",
+        "keinen",
+        "eindeutigen Beleg",
+        "für diese Behauptung."
+      ],
+      "answer": "Es gibt keinen eindeutigen Beleg für diese Behauptung."
+    },
+    "translation": {
+      "prompt": "“Bu yöntem kesinlikle risksiz değildir.” cümlesini Almancaya çevir.",
+      "answer": "Diese Methode ist keineswegs risikofrei.",
+      "acceptedAnswers": [
+        "Diese Methode ist keineswegs risikofrei",
+        "Diese Methode ist keineswegs risikofrei."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Hilft diese Methode allen? — B: ___",
+      "options": [
+        "Nein, nicht alle profitieren in gleicher Weise davon.",
+        "Nein, kein alle profitieren gleich.",
+        "Nein, alle nicht gleiche profitieren."
+      ],
+      "answer": "Nein, nicht alle profitieren in gleicher Weise davon."
+    },
+    "trueFalse": {
+      "prompt": "“kaum” kann eine sehr geringe Menge oder Veränderung ausdrücken.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Güçlü veya kısmi olumsuzluk bildiren iki ifadeyi seç.",
+      "options": [
+        "keineswegs",
+        "nicht unbedingt",
+        "sowohl",
+        "außerdem"
+      ],
+      "answers": [
+        "keineswegs",
+        "nicht unbedingt"
+      ]
+    },
+    "summary": [
+      "Negation kapsamı",
+      "sağlık ve önleme",
+      "ihtiyatlı ifade",
+      "risk-fayda değerlendirmesi"
+    ]
+  },
+  {
+    "id": "b2-u11",
+    "title": "Kültür, Sanat ve Eleştirel Değerlendirme",
+    "intro": "Bu ünitede film, edebiyat, sergi ve kültürel etkinlikleri içerik, biçim ve etki açısından değerlendirecek; Almancadaki Mittelfeld sözcük sırasını kullanarak zaman, neden, tarz, yer ve zamir unsurlarını daha doğal biçimde düzenleyeceksin.",
+    "goals": [
+      "Mittelfeld’de öğe sırasını anlam ve vurguya göre düzenlemek",
+      "Zamirlerin ve isim gruplarının tipik konumlarını kullanmak",
+      "Bir sanat eserini çok ölçütlü biçimde değerlendirmek",
+      "Eleştiri metninde bilgi akışı ve vurguyu kontrol etmek"
+    ],
+    "grammarTitle": "Wortstellung im Mittelfeld ve bilgi yapısı",
+    "grammarExplanation": "Almanca ana cümlede çekimli fiil ikinci konumda olsa da Mittelfeld’deki öğelerin sırası tek bir mekanik kurala indirgenemez. Zamirler genellikle isim gruplarından önce gelir; Dativ kişi zamiri çoğu zaman Akkusativ zamirinden önce yer alır. Zaman-neden-tarz-yer için TeKaMoLo yararlı bir başlangıçtır, ancak tema-rheme ve vurgu sıralamayı değiştirebilir. B2 düzeyinde amaç cümleyi “gramer olarak mümkün” olmaktan çıkarıp doğal bilgi akışına kavuşturmaktır. Özellikle uzun eleştiri ve sunum cümlelerinde ön alanın bilinçli kullanımı metin ritmini iyileştirir.",
+    "grammarColumns": [
+      {
+        "header": "Öğe türü",
+        "values": [
+          "zaman",
+          "neden",
+          "tarz",
+          "yer",
+          "zamir",
+          "isim grubu"
+        ]
+      },
+      {
+        "header": "Tipik konum",
+        "values": [
+          "erken",
+          "zamandan sonra",
+          "neden sonrası",
+          "daha geç",
+          "isimden önce",
+          "zamirden sonra"
+        ]
+      },
+      {
+        "header": "Örnek parça",
+        "values": [
+          "gestern",
+          "wegen der Kritik",
+          "mit großer Sorgfalt",
+          "im Museum",
+          "ihm das",
+          "dem Regisseur den Preis"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Inszenierung — sahneleme / rejisörlük",
+      "die Interpretation — yorum",
+      "die Wirkung — etki",
+      "die Ästhetik — estetik",
+      "die Erzählweise — anlatım biçimi",
+      "die Figurenzeichnung — karakter işlenişi",
+      "die Rezeption — alımlanma / kabul",
+      "die Kontroverse — tartışma",
+      "die Ausstellung — sergi",
+      "die Rezension — eleştiri yazısı",
+      "inszenieren — sahnelemek",
+      "interpretieren — yorumlamak",
+      "hervorheben — öne çıkarmak",
+      "überzeugen — ikna etmek",
+      "polarisieren — kutuplaştırmak",
+      "vielschichtig — çok katmanlı",
+      "eindringlich — etkileyici / çarpıcı",
+      "konventionell — geleneksel"
+    ],
+    "examples": [
+      {
+        "de": "Die Regisseurin hat dem Publikum gestern trotz der schwierigen Thematik einen überraschend zugänglichen Film präsentiert.",
+        "tr": "Yönetmen dün zor konuya rağmen izleyiciye şaşırtıcı derecede erişilebilir bir film sundu."
+      },
+      {
+        "de": "Besonders eindringlich wirkt die Geschichte durch die ruhige Erzählweise und die sparsam eingesetzte Musik.",
+        "tr": "Hikâye özellikle sakin anlatım biçimi ve ölçülü kullanılan müzik sayesinde etkileyici oluyor."
+      },
+      {
+        "de": "Die Kritik hat dem Werk nach der Premiere ungewöhnlich viel Aufmerksamkeit verschafft.",
+        "tr": "Eleştiri prömiyerden sonra esere alışılmadık ölçüde fazla ilgi kazandırdı."
+      },
+      {
+        "de": "Im zweiten Teil entwickelt der Film seine zentralen Konflikte deutlich überzeugender als zu Beginn.",
+        "tr": "Filmin ikinci kısmı temel çatışmalarını başlangıca göre belirgin biçimde daha ikna edici geliştiriyor."
+      },
+      {
+        "de": "Ich würde dem Roman wegen seiner präzisen Figurenzeichnung vor allem geduldigen Leserinnen und Lesern empfehlen.",
+        "tr": "Romanı kesin karakter işleyişi nedeniyle özellikle sabırlı okurlara önerirdim."
+      },
+      {
+        "de": "Trotz einzelner Längen bleibt die Inszenierung für mich insgesamt ästhetisch konsequent und inhaltlich vielschichtig.",
+        "tr": "Bazı uzun bölümlere rağmen sahneleme benim için genel olarak estetik açıdan tutarlı ve içerik bakımından çok katmanlı kalıyor."
+      }
+    ],
+    "warning": "TeKaMoLo mutlak bir yasa değildir. Vurgu veya önceden bilinen bilgi sıralamayı değiştirebilir; B2’de doğal bağlam her zaman mekanik ezberden önemlidir.",
+    "tip": "Bir film/kitap eleştirisinden üç uzun cümle yaz ve her birinde zaman, neden, tarz ve yer öğelerinin sırasını bilinçli kontrol et.",
+    "miniCheck": {
+      "question": "Nötr bilgi akışına daha yakın cümle hangisidir?",
+      "options": [
+        "Die Regisseurin hat dem Publikum gestern wegen der Premiere im Kino den Film gezeigt.",
+        "Die Regisseurin hat im Kino den Film wegen der Premiere gestern dem Publikum gezeigt.",
+        "Den Film hat gestern im Kino wegen der Premiere dem Publikum Regisseurin."
+      ],
+      "correctAnswer": "Die Regisseurin hat dem Publikum gestern wegen der Premiere im Kino den Film gezeigt."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Jury hat ___ den Preis gestern überreicht. (ona)",
+      "answer": "ihm",
+      "acceptedAnswers": [
+        "ihm"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die Autorin",
+        "hat",
+        "den Leserinnen",
+        "gestern",
+        "ihr neues Buch vorgestellt."
+      ],
+      "answer": "Die Autorin hat den Leserinnen gestern ihr neues Buch vorgestellt."
+    },
+    "translation": {
+      "prompt": "“Yönetmen izleyiciye dün yeni filmi tanıttı.” cümlesini Almancaya çevir.",
+      "answer": "Der Regisseur hat dem Publikum gestern den neuen Film vorgestellt.",
+      "acceptedAnswers": [
+        "Der Regisseur hat dem Publikum gestern den neuen Film vorgestellt",
+        "Der Regisseur hat dem Publikum gestern den neuen Film vorgestellt."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wem würdest du den Film empfehlen? — B: ___",
+      "options": [
+        "Ich würde ihn wegen seiner ruhigen Erzählweise vor allem geduldigen Zuschauern empfehlen.",
+        "Ich würde wegen ruhige ihn Zuschauer empfehlen vor allem.",
+        "Ich ihn würde Zuschauer wegen empfehlen."
+      ],
+      "answer": "Ich würde ihn wegen seiner ruhigen Erzählweise vor allem geduldigen Zuschauern empfehlen."
+    },
+    "trueFalse": {
+      "prompt": "Zamirler Mittelfeld’de çoğu zaman uzun isim gruplarından önce gelir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Mittelfeld sırasını etkileyebilen iki unsur seç.",
+      "options": [
+        "bilgi yapısı/vurgu",
+        "zamir mi isim grubu mu olduğu",
+        "yalnız kelimenin uzunluğu",
+        "harf sayısı"
+      ],
+      "answers": [
+        "bilgi yapısı/vurgu",
+        "zamir mi isim grubu mu olduğu"
+      ]
+    },
+    "summary": [
+      "Wortstellung",
+      "Mittelfeld",
+      "kültür eleştirisi",
+      "bilgi akışı"
+    ]
+  },
+  {
+    "id": "b2-u12",
+    "title": "Hukuk, Kurumlar ve Kamusal Sorumluluk",
+    "intro": "Bu ünitede kurumların görevleri, haklar, yükümlülükler ve kamusal sorumluluk hakkında daha resmî bir dil kullanacak; isim, fiil ve sıfatların gerektirdiği edatları doğru hâlle birlikte uygulayacaksın.",
+    "goals": [
+      "Nomen, Verben ve Adjektive mit Präpositionen yapılarını kullanmak",
+      "Edatın gerektirdiği hâli doğru seçmek",
+      "Hak ve yükümlülükleri resmî registerda açıklamak",
+      "Bir kurum kararını gerekçe ve itirazla değerlendirmek"
+    ],
+    "grammarTitle": "Nomen, Verben und Adjektive mit Präpositionen",
+    "grammarExplanation": "B2 düzeyinde birçok resmî ve soyut ifade belirli bir edatla birlikte öğrenilmelidir: Anspruch auf + Akk., Zweifel an + Dat., Verantwortung für + Akk.; bestehen aus + Dat., verfügen über + Akk.; abhängig von + Dat., zuständig für + Akk. Bu ilişkiler her zaman Türkçeden tahmin edilemez. Edat yalnız anlamı değil, hâli de belirler. Bu yapıların Präpositionaladverbien ile bağlantısı vardır: Anspruch darauf, Zweifel daran. Hukuk ve kurum dilinde yanlış edat anlamı ciddi biçimde değiştirebildiği için kalıpları bütün olarak öğrenmek önemlidir.",
+    "grammarColumns": [
+      {
+        "header": "Tür",
+        "values": [
+          "Nomen",
+          "Nomen",
+          "Verb",
+          "Verb",
+          "Adjektiv",
+          "Adjektiv"
+        ]
+      },
+      {
+        "header": "Yapı",
+        "values": [
+          "Anspruch auf + Akk.",
+          "Zweifel an + Dat.",
+          "verfügen über + Akk.",
+          "bestehen aus + Dat.",
+          "zuständig für + Akk.",
+          "abhängig von + Dat."
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "Anspruch auf Auskunft",
+          "Zweifel an der Regel",
+          "über Mittel verfügen",
+          "aus zwei Teilen bestehen",
+          "für Anträge zuständig",
+          "von Fristen abhängig"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der Anspruch — hak / talep hakkı",
+      "die Verpflichtung — yükümlülük",
+      "die Zuständigkeit — yetki alanı",
+      "die Rechtsgrundlage — hukuki dayanak",
+      "die Genehmigung — izin / onay",
+      "die Beschwerde — itiraz / şikâyet",
+      "die Frist — süre / son tarih",
+      "die Auskunft — bilgi",
+      "die Gleichbehandlung — eşit muamele",
+      "die Transparenz — şeffaflık",
+      "Anspruch haben auf — hak sahibi olmak",
+      "Zweifel haben an — şüphe duymak",
+      "verfügen über — sahip olmak",
+      "bestehen aus — oluşmak",
+      "zuständig sein für — sorumlu olmak",
+      "abhängig sein von — bağlı olmak",
+      "verbindlich — bağlayıcı",
+      "rechtmäßig — hukuka uygun"
+    ],
+    "examples": [
+      {
+        "de": "Bürgerinnen und Bürger haben unter bestimmten Voraussetzungen Anspruch auf eine nachvollziehbare Auskunft.",
+        "tr": "Vatandaşlar belirli koşullar altında anlaşılır bir bilgi alma hakkına sahiptir."
+      },
+      {
+        "de": "An der Rechtmäßigkeit der Entscheidung bestehen weiterhin Zweifel.",
+        "tr": "Kararın hukuka uygunluğu konusunda şüpheler devam ediyor."
+      },
+      {
+        "de": "Die zuständige Stelle verfügt über mehrere Möglichkeiten, den Sachverhalt erneut zu prüfen.",
+        "tr": "Yetkili birim durumu yeniden incelemek için birkaç imkâna sahip."
+      },
+      {
+        "de": "Das Verfahren besteht aus einer schriftlichen Prüfung und einer anschließenden Entscheidung.",
+        "tr": "Süreç yazılı inceleme ve ardından gelen karardan oluşuyor."
+      },
+      {
+        "de": "Welche Behörde für den Antrag zuständig ist, hängt vom konkreten Fall ab.",
+        "tr": "Başvurudan hangi kurumun sorumlu olduğu somut duruma bağlıdır."
+      },
+      {
+        "de": "Eine transparente Begründung ist für die Akzeptanz öffentlicher Entscheidungen von großer Bedeutung.",
+        "tr": "Şeffaf gerekçe, kamusal kararların kabulü için büyük önem taşır."
+      }
+    ],
+    "warning": "Edatı ayrı bir kelime olarak ezberlemek yerine bütün kalıbı ve hâli birlikte öğren: “Anspruch auf + Akk.”, “Zweifel an + Dat.”.",
+    "tip": "Bir kurumdan bilgi talebi yaz. En az dört edatlı isim/fiil/sıfat kalıbı kullan ve kullandığın hâlleri ayrıca işaretle.",
+    "miniCheck": {
+      "question": "Doğru kalıp hangisidir?",
+      "options": [
+        "Anspruch auf eine Auskunft",
+        "Anspruch an eine Auskunft",
+        "Anspruch mit einer Auskunft"
+      ],
+      "correctAnswer": "Anspruch auf eine Auskunft"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Abteilung ist ___ die Genehmigung zuständig.",
+      "answer": "für",
+      "acceptedAnswers": [
+        "für"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Der Erfolg",
+        "hängt",
+        "von",
+        "einer klaren Regelung",
+        "ab."
+      ],
+      "answer": "Der Erfolg hängt von einer klaren Regelung ab."
+    },
+    "translation": {
+      "prompt": "“Kararın doğruluğu konusunda şüpheler var.” cümlesini Almancaya çevir.",
+      "answer": "Es bestehen Zweifel an der Richtigkeit der Entscheidung.",
+      "acceptedAnswers": [
+        "Es bestehen Zweifel an der Richtigkeit der Entscheidung",
+        "Es bestehen Zweifel an der Richtigkeit der Entscheidung."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wer ist für meinen Antrag zuständig? — B: ___",
+      "options": [
+        "Das hängt davon ab, auf welcher Rechtsgrundlage der Antrag beruht.",
+        "Das hängt auf welcher Rechtsgrundlage an.",
+        "Das ist zuständig von Grundlage."
+      ],
+      "answer": "Das hängt davon ab, auf welcher Rechtsgrundlage der Antrag beruht."
+    },
+    "trueFalse": {
+      "prompt": "“abhängig von” verlangt typischerweise den Dativ.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Doğru iki edatlı kalıbı seç.",
+      "options": [
+        "verfügen über",
+        "zuständig für",
+        "abhängig auf",
+        "Anspruch von"
+      ],
+      "answers": [
+        "verfügen über",
+        "zuständig für"
+      ]
+    },
+    "summary": [
+      "edatlı isim/fiil/sıfat",
+      "hukuk ve kurum",
+      "hâl yönetimi",
+      "resmî register"
+    ]
+  },
+  {
+    "id": "b2-u13",
+    "title": "Teknoloji, Yapay Zekâ ve Dijital Etik",
+    "intro": "Bu ünitede yapay zekâ, veri kullanımı, otomasyon ve dijital etik üzerine çok yönlü tartışacak; aynı fikrin iki yönünü nicht nur ... sondern auch, sowohl ... als auch, einerseits ... andererseits ve zwar ... aber gibi çift bağlaçlarla yapılandıracaksın.",
+    "goals": [
+      "Gelişmiş zweiteilige Konnektoren ile argüman yapılandırmak",
+      "Paralel sözdizimini korumak",
+      "Teknolojik fırsat ve riskleri dengeli tartışmak",
+      "Dijital etik konusunda karşı görüşe yanıt vermek"
+    ],
+    "grammarTitle": "Zweiteilige Konnektoren ile gelişmiş argümantasyon",
+    "grammarExplanation": "B2’de çift bağlaçlar yalnız listeleme değil, argümanın mantıksal mimarisini kurar. sowohl ... als auch iki eşdeğer unsuru; nicht nur ... sondern auch ek vurguyu; einerseits ... andererseits iki yönü; zwar ... aber kabul + sınırlamayı; weder ... noch çift olumsuzluğu; entweder ... oder alternatifi gösterir. Bağlanan öğelerin biçimsel paralelliği önemlidir. Birinci bölüm cümlenin farklı yerlerinde bulunabilir ve sözcük sırasını etkileyebilir. Tartışmacı metinde aynı bağlacı sürekli tekrarlamak yerine işlevine göre çeşitlendirme yapılmalıdır.",
+    "grammarColumns": [
+      {
+        "header": "Bağlaç",
+        "values": [
+          "sowohl ... als auch",
+          "nicht nur ... sondern auch",
+          "einerseits ... andererseits",
+          "zwar ... aber",
+          "weder ... noch",
+          "entweder ... oder"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "iki ekleme",
+          "güçlendirilmiş ekleme",
+          "iki yön",
+          "kabul + sınırlama",
+          "iki olumsuzluk",
+          "alternatif"
+        ]
+      },
+      {
+        "header": "Örnek parça",
+        "values": [
+          "sicher als auch praktisch",
+          "nicht nur schnell, sondern auch transparent",
+          "einerseits effizient, andererseits riskant",
+          "zwar hilfreich, aber fehleranfällig",
+          "weder neutral noch vollständig",
+          "entweder lokal oder zentral"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die künstliche Intelligenz — yapay zekâ",
+      "die Automatisierung — otomasyon",
+      "die Datenverarbeitung — veri işleme",
+      "die Nachvollziehbarkeit — açıklanabilirlik / izlenebilirlik",
+      "die Verzerrung — önyargılı sapma",
+      "die Verantwortung — sorumluluk",
+      "die Entscheidungsgrundlage — karar temeli",
+      "der Kontrollmechanismus — kontrol mekanizması",
+      "die Einwilligung — rıza",
+      "die Transparenz — şeffaflık",
+      "automatisieren — otomatikleştirmek",
+      "auswerten — değerlendirmek",
+      "nachvollziehen — takip edebilmek",
+      "verzerren — çarpıtmak",
+      "eingreifen — müdahale etmek",
+      "datenschutzkonform — veri korumaya uygun",
+      "fehleranfällig — hataya açık",
+      "verantwortbar — savunulabilir / sorumlu"
+    ],
+    "examples": [
+      {
+        "de": "Automatisierte Systeme können sowohl Routineaufgaben beschleunigen als auch große Datenmengen konsistent auswerten.",
+        "tr": "Otomatik sistemler hem rutin işleri hızlandırabilir hem büyük veri miktarlarını tutarlı değerlendirebilir."
+      },
+      {
+        "de": "Entscheidend ist nicht nur die technische Genauigkeit, sondern auch die Frage, wer für Fehlentscheidungen Verantwortung trägt.",
+        "tr": "Belirleyici olan yalnız teknik doğruluk değil, hatalı kararlardan kimin sorumlu olduğu sorusudur."
+      },
+      {
+        "de": "Einerseits erleichtern digitale Assistenten den Zugang zu Informationen, andererseits können undurchsichtige Systeme neue Abhängigkeiten schaffen.",
+        "tr": "Bir yandan dijital asistanlar bilgiye erişimi kolaylaştırırken diğer yandan şeffaf olmayan sistemler yeni bağımlılıklar yaratabilir."
+      },
+      {
+        "de": "Das Verfahren ist zwar effizient, aber ohne nachvollziehbare Kontrollmechanismen nur eingeschränkt verantwortbar.",
+        "tr": "Yöntem verimli olsa da takip edilebilir kontrol mekanizmaları olmadan yalnız sınırlı ölçüde savunulabilir."
+      },
+      {
+        "de": "Ein Modell ist weder automatisch neutral noch frei von Fehlern, nur weil es mit großen Datenmengen trainiert wurde.",
+        "tr": "Bir model yalnız büyük veriyle eğitildi diye ne otomatik olarak tarafsız ne de hatasızdır."
+      },
+      {
+        "de": "Bei besonders sensiblen Entscheidungen sollte entweder eine menschliche Prüfung vorgesehen oder das System nur beratend eingesetzt werden.",
+        "tr": "Özellikle hassas kararlarda ya insan kontrolü öngörülmeli ya da sistem yalnız danışman olarak kullanılmalıdır."
+      }
+    ],
+    "warning": "Çift bağlaçların iki tarafında mümkün olduğunca paralel yapılar kur. İsim + isim, sıfat + sıfat veya yan cümle + yan cümle eşleşmesi metni daha açık yapar.",
+    "tip": "“Yapay zekâ eğitimde kullanılmalı mı?” konusunda altı cümle yaz ve her cümlede farklı bir çift bağlaç kullan.",
+    "miniCheck": {
+      "question": "Kabul + sınırlama bildiren bağlaç çifti hangisidir?",
+      "options": [
+        "zwar ... aber",
+        "sowohl ... als auch",
+        "weder ... noch"
+      ],
+      "correctAnswer": "zwar ... aber"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Das System ist zwar schnell, ___ nicht immer nachvollziehbar.",
+      "answer": "aber",
+      "acceptedAnswers": [
+        "aber"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Einerseits",
+        "spart die Automatisierung Zeit,",
+        "andererseits",
+        "entstehen",
+        "neue Risiken."
+      ],
+      "answer": "Einerseits spart die Automatisierung Zeit, andererseits entstehen neue Risiken."
+    },
+    "translation": {
+      "prompt": "“Sistem yalnız hızlı değil, aynı zamanda şeffaf da olmalı.” cümlesini Almancaya çevir.",
+      "answer": "Das System sollte nicht nur schnell, sondern auch transparent sein.",
+      "acceptedAnswers": [
+        "Das System sollte nicht nur schnell, sondern auch transparent sein",
+        "Das System sollte nicht nur schnell, sondern auch transparent sein."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Ist Automatisierung grundsätzlich positiv? — B: ___",
+      "options": [
+        "Einerseits bietet sie Chancen, andererseits müssen die Risiken kontrolliert werden.",
+        "Einerseits Chancen, und andererseits muss Risiken.",
+        "Zwar einerseits, sondern auch Risiko."
+      ],
+      "answer": "Einerseits bietet sie Chancen, andererseits müssen die Risiken kontrolliert werden."
+    },
+    "trueFalse": {
+      "prompt": "“nicht nur ... sondern auch” verstärkt eine zusätzliche Information.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Karşıt iki yönü düzenleyebilen iki yapı seç.",
+      "options": [
+        "einerseits ... andererseits",
+        "zwar ... aber",
+        "sowohl ... als auch",
+        "nicht nur ... sondern auch"
+      ],
+      "answers": [
+        "einerseits ... andererseits",
+        "zwar ... aber"
+      ]
+    },
+    "summary": [
+      "zweiteilige Konnektoren",
+      "yapay zekâ ve etik",
+      "denge argümanı",
+      "paralel yapı"
+    ]
+  },
+  {
+    "id": "b2-u14",
+    "title": "Akademik İletişim, Sunum ve Kaynak Aktarımı",
+    "intro": "Bu ünitede akademik e-posta, kısa sunum, özet ve kaynak aktarımı üzerinde çalışacak; amaç ilişkilerini um ... zu, damit, ohne ... zu, ohne dass, statt ... zu ve statt dass gibi alternatif yapılarla daha esnek ifade edeceksin.",
+    "goals": [
+      "Amaç ve alternatif yapıları özne ilişkisine göre seçmek",
+      "ohne/statt yapılarında Infinitivsatz ve Nebensatz farkını kullanmak",
+      "Akademik bir talebi uygun registerda yazmak",
+      "Sunumda kaynak ve amacı açık biçimde aktarmak"
+    ],
+    "grammarTitle": "Finalsätze ve Infinitiv alternatifleri: um/damit, ohne/statt",
+    "grammarExplanation": "um ... zu genellikle iki eylemin öznesi aynı olduğunda amaç bildirir; özne farklıysa damit daha uygundur. Benzer biçimde ohne ... zu ve statt ... zu aynı özneyle kısa yapı kurarken ohne dass ve statt dass farklı özneleri veya daha açık bir yan cümleyi mümkün kılar. B2 düzeyinde bu seçenekler özellikle akademik yazıda cümleleri çeşitlendirir: Die Daten wurden anonymisiert, damit niemand identifiziert werden kann. / Die Daten wurden ausgewertet, ohne persönliche Angaben zu speichern. Geçmişe ilişkin Infinitiv Perfekt yapıları da görülebilir, ancak öncelik açık ve doğal kullanımdır.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "um ... zu",
+          "damit",
+          "ohne ... zu",
+          "ohne dass",
+          "statt ... zu",
+          "statt dass"
+        ]
+      },
+      {
+        "header": "Özne ilişkisi",
+        "values": [
+          "aynı",
+          "farklı olabilir",
+          "aynı",
+          "farklı olabilir",
+          "aynı",
+          "farklı olabilir"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "amaç",
+          "amaç",
+          "yapmadan",
+          "yapılmadan",
+          "yerine",
+          "... yerine başka özne"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Fragestellung — araştırma sorusu",
+      "die Gliederung — yapı / plan",
+      "die Quelle — kaynak",
+      "der Beleg — kanıt / kaynak gösterimi",
+      "die Zusammenfassung — özet",
+      "die Rückfrage — ek soru",
+      "die Sprechstunde — danışma saati",
+      "die Abgabefrist — teslim tarihi",
+      "die Überarbeitung — revizyon",
+      "der Schwerpunkt — odak noktası",
+      "zitieren — alıntılamak",
+      "zusammenfassen — özetlemek",
+      "belegen — kaynakla desteklemek",
+      "strukturieren — yapılandırmak",
+      "überarbeiten — gözden geçirmek",
+      "präzise — kesin",
+      "wissenschaftlich — bilimsel",
+      "nachvollziehbar — takip edilebilir"
+    ],
+    "examples": [
+      {
+        "de": "Ich habe die Fragestellung eingegrenzt, um die Argumentation klarer strukturieren zu können.",
+        "tr": "Argümantasyonu daha açık yapılandırabilmek için araştırma sorusunu daralttım."
+      },
+      {
+        "de": "Die Quellenangaben werden vereinheitlicht, damit alle Belege leicht überprüft werden können.",
+        "tr": "Tüm kaynakların kolayca kontrol edilebilmesi için kaynak gösterimleri standartlaştırılıyor."
+      },
+      {
+        "de": "Die Autorin fasst die Ergebnisse zusammen, ohne jede einzelne Zahl erneut zu nennen.",
+        "tr": "Yazar her bir sayıyı yeniden belirtmeden sonuçları özetliyor."
+      },
+      {
+        "de": "Der Vortrag wurde fortgesetzt, ohne dass die technische Störung vollständig behoben war.",
+        "tr": "Teknik arıza tamamen giderilmeden sunuma devam edildi."
+      },
+      {
+        "de": "Statt nur die Position der Gegenseite zu kritisieren, sollte man ihre stärksten Argumente fair darstellen.",
+        "tr": "Yalnız karşı tarafın görüşünü eleştirmek yerine en güçlü argümanlarını adil biçimde sunmak gerekir."
+      },
+      {
+        "de": "Die Gruppe entschied sich für eine kürzere Präsentation, statt dass jede Person denselben Hintergrund erneut erklärte.",
+        "tr": "Her kişinin aynı arka planı yeniden açıklaması yerine grup daha kısa bir sunuma karar verdi."
+      }
+    ],
+    "warning": "um ... zu yapısında özne eşitliği önemlidir. “Ich schicke dir die Datei, um du sie liest” yanlış; burada “damit du sie liest” gerekir.",
+    "tip": "Bir öğretim görevlisine akademik e-posta yaz: amaç, teslim tarihi, ek belge ve ricayı en az üç farklı final/alternatif yapıyla bağla.",
+    "miniCheck": {
+      "question": "Özneler farklıysa amaç için en güvenli yapı hangisidir?",
+      "options": [
+        "damit",
+        "um ... zu",
+        "statt ... zu"
+      ],
+      "correctAnswer": "damit"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Ich schicke die Grafik, ___ Sie die Entwicklung besser nachvollziehen können.",
+      "answer": "damit",
+      "acceptedAnswers": [
+        "damit"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Statt",
+        "nur zu kritisieren,",
+        "sollten wir",
+        "eine Alternative",
+        "vorschlagen."
+      ],
+      "answer": "Statt nur zu kritisieren, sollten wir eine Alternative vorschlagen."
+    },
+    "translation": {
+      "prompt": "“Kaynağı kontrol edebilmeniz için bağlantıyı gönderiyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich schicke Ihnen den Link, damit Sie die Quelle überprüfen können.",
+      "acceptedAnswers": [
+        "Ich schicke Ihnen den Link, damit Sie die Quelle überprüfen können",
+        "Ich schicke Ihnen den Link, damit Sie die Quelle überprüfen können."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Warum hast du die Gliederung überarbeitet? — B: ___",
+      "options": [
+        "Um die Argumentation klarer und nachvollziehbarer zu machen.",
+        "Damit ich zu machen die Argumentation.",
+        "Ohne dass Argumentation machen."
+      ],
+      "answer": "Um die Argumentation klarer und nachvollziehbarer zu machen."
+    },
+    "trueFalse": {
+      "prompt": "“ohne dass” kann auch verwendet werden, wenn Haupt- und Nebensatz unterschiedliche Subjekte haben.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Aynı özneyle Infinitivsatz kuran iki yapı seç.",
+      "options": [
+        "um ... zu",
+        "statt ... zu",
+        "damit",
+        "ohne dass"
+      ],
+      "answers": [
+        "um ... zu",
+        "statt ... zu"
+      ]
+    },
+    "summary": [
+      "Finalsätze",
+      "Infinitiv alternatifleri",
+      "akademik iletişim",
+      "sunum ve kaynak aktarımı"
+    ]
+  },
+  {
+    "id": "b2-u15",
+    "title": "Kültürlerarası İletişim ve Uygun Üslup",
+    "intro": "Bu ünitede farklı iletişim normları, nezaket, doğrudanlık ve yanlış anlaşılmaları ele alacak; indem, dadurch dass, ohne dass ve als ob gibi Modalsätze ile bir davranışın nasıl gerçekleştiğini ve nasıl algılandığını ayrıntılı anlatacaksın.",
+    "goals": [
+      "indem/dadurch dass ile yöntem ve araç ifade etmek",
+      "ohne dass ile eşlik etmeyen durumu anlatmak",
+      "als ob ile görünüş/izlenim ifade etmek",
+      "Kültürlerarası yanlış anlamayı stereotipe düşmeden analiz etmek"
+    ],
+    "grammarTitle": "Modalsätze: indem, dadurch dass, ohne dass, als ob",
+    "grammarExplanation": "Modalsätze bir eylemin nasıl gerçekleştiğini veya hangi koşullarla algılandığını açıklar. indem ve dadurch, dass yöntem/araç bildirir; ohne dass beklenen eşlik eden durumun gerçekleşmediğini gösterir. als ob gerçek olmayan veya yalnız görünüşe dayalı karşılaştırma kurar ve çoğu zaman Konjunktiv II ile kullanılır: Er spricht, als ob er alles wüsste. B2’de bu yapılar özellikle davranış, iletişim tarzı ve süreç analizinde weil gibi genel neden bağlaçlarına göre daha kesin ilişkiler kurar.",
+    "grammarColumns": [
+      {
+        "header": "Bağlaç",
+        "values": [
+          "indem",
+          "dadurch, dass",
+          "ohne dass",
+          "als ob",
+          "indem",
+          "ohne dass"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "yöntem",
+          "yöntem/sonuç",
+          "eşlik etmeyen durum",
+          "görünüş/varsayım",
+          "araç",
+          "eksik eşlik"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "indem man nachfragt",
+          "dadurch, dass man erklärt",
+          "ohne dass jemand reagiert",
+          "als ob er sicher wäre",
+          "indem wir paraphrasieren",
+          "ohne dass es auffällt"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Gesprächsnorm — konuşma normu",
+      "die Direktheit — doğrudanlık",
+      "die Höflichkeit — nezaket",
+      "die Missdeutung — yanlış yorumlama",
+      "der Gesprächsanteil — konuşmadaki pay",
+      "die Rücksichtnahme — anlayış / dikkate alma",
+      "die Konvention — gelenek / norm",
+      "die Erwartungshaltung — beklenti tutumu",
+      "der Kontext — bağlam",
+      "die Irritation — rahatsızlık / şaşkınlık",
+      "missverstehen — yanlış anlamak",
+      "andeuten — ima etmek",
+      "nachfragen — ek soru sormak",
+      "paraphrasieren — başka sözlerle açıklamak",
+      "relativieren — nüanslandırmak",
+      "indirekt — dolaylı",
+      "angemessen — uygun",
+      "situationsabhängig — duruma bağlı"
+    ],
+    "examples": [
+      {
+        "de": "Missverständnisse lassen sich häufig vermeiden, indem man unklare Aussagen frühzeitig nachfragt.",
+        "tr": "Belirsiz ifadeler erken sorularla açıklığa kavuşturularak yanlış anlaşılmalar çoğu zaman önlenebilir."
+      },
+      {
+        "de": "Dadurch, dass beide Seiten ihre Erwartungen offen benennen, wird der Gesprächsrahmen transparenter.",
+        "tr": "İki taraf beklentilerini açıkça dile getirerek konuşma çerçevesini daha şeffaf hale getirir."
+      },
+      {
+        "de": "Eine Bemerkung kann direkt wirken, ohne dass sie unhöflich gemeint ist.",
+        "tr": "Bir söz kaba niyet taşımadan doğrudan görünebilir."
+      },
+      {
+        "de": "Er reagierte, als ob die abweichende Meinung ein persönlicher Angriff wäre.",
+        "tr": "Farklı görüş kişisel saldırıymış gibi tepki verdi."
+      },
+      {
+        "de": "Kulturelle Unterschiede erklären Kommunikation nicht vollständig; Persönlichkeit und Situation spielen ebenfalls eine Rolle.",
+        "tr": "Kültürel farklılıklar iletişimi tamamen açıklamaz; kişilik ve durum da rol oynar."
+      },
+      {
+        "de": "Wer Verhalten vorschnell einer ganzen Kultur zuschreibt, übersieht leicht individuelle und institutionelle Faktoren.",
+        "tr": "Davranışı aceleyle bütün bir kültüre bağlayan kişi bireysel ve kurumsal etkenleri kolayca gözden kaçırır."
+      }
+    ],
+    "warning": "Kültürlerarası iletişimde dilbilgisel genellemeleri toplumsal stereotiplere dönüştürme. “Bazı bağlamlarda” ve “kişiye göre” gibi sınırlayıcı ifadeler kullan.",
+    "tip": "Bir yanlış anlaşılma senaryosu yaz: olay nasıl oluştu, taraflar neyi varsaydı ve sorun hangi iletişim stratejisiyle çözülebilirdi?",
+    "miniCheck": {
+      "question": "Yöntem bildiren yapı hangisidir?",
+      "options": [
+        "indem man nachfragt",
+        "obwohl man nachfragt",
+        "seitdem man nachfragt"
+      ],
+      "correctAnswer": "indem man nachfragt"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Er spricht, als ___ er die Entscheidung allein getroffen hätte.",
+      "answer": "ob",
+      "acceptedAnswers": [
+        "ob"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Dadurch, dass",
+        "wir nachfragen,",
+        "vermeiden wir",
+        "unnötige",
+        "Missverständnisse."
+      ],
+      "answer": "Dadurch, dass wir nachfragen, vermeiden wir unnötige Missverständnisse."
+    },
+    "translation": {
+      "prompt": "“Kimseyi suçlamadan sorunu açıkladı.” cümlesini Almancaya çevir.",
+      "answer": "Er erklärte das Problem, ohne dass er jemanden beschuldigte.",
+      "acceptedAnswers": [
+        "Er erklärte das Problem, ohne dass er jemanden beschuldigte",
+        "Er erklärte das Problem, ohne dass er jemanden beschuldigte."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wie können wir das Missverständnis klären? — B: ___",
+      "options": [
+        "Indem wir zuerst fragen, wie die Aussage gemeint war.",
+        "Weil wir zuerst wie gemeint fragen.",
+        "Als ob wir fragen und klären."
+      ],
+      "answer": "Indem wir zuerst fragen, wie die Aussage gemeint war."
+    },
+    "trueFalse": {
+      "prompt": "“als ob” kann einen nur angenommenen oder scheinbaren Vergleich ausdrücken.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Modal ilişki kuran iki yapı seç.",
+      "options": [
+        "indem",
+        "dadurch, dass",
+        "deshalb",
+        "trotzdem"
+      ],
+      "answers": [
+        "indem",
+        "dadurch, dass"
+      ]
+    },
+    "summary": [
+      "Modalsätze",
+      "kültürlerarası iletişim",
+      "yanlış anlama",
+      "iletişim stratejileri"
+    ]
+  },
+  {
+    "id": "b2-u16",
+    "title": "Argümantasyon, Tartışma ve Uzlaşma",
+    "intro": "Bu ünitede karmaşık bir görüşü savunacak, karşı argümanı adil biçimde özetleyecek ve uzlaşma alanı arayacaksın; deren/dessen, was, wer ve wo(r)- ile kurulan daha gelişmiş Relativsätze sayesinde bilgiyi kesin biçimde ilişkilendireceksin.",
+    "goals": [
+      "dessen/deren ile aitlik bildiren Relativsatz kurmak",
+      "was ve wer ile genel öncüllere gönderme yapmak",
+      "Karşı görüşü çarpıtmadan özetlemek",
+      "Tartışmada ortak zemin ve uzlaşma önerisi geliştirmek"
+    ],
+    "grammarTitle": "Gelişmiş Relativsätze: dessen, deren, was, wer ve wo(r)-",
+    "grammarExplanation": "B2 düzeyinde Relativsätze yalnız der/die/das ile sınırlı değildir. dessen/deren Relativsatz içindeki aitliği gösterir: die Studie, deren Ergebnisse ...; der Autor, dessen Argument .... alles, etwas, nichts, das gibi genel öncüllerden sonra çoğu zaman was kullanılır: Das, was mich überzeugt, .... Belirsiz kişi anlamında wer ... der ... yapısı mümkündür. Yer veya soyut ilişki için worüber, wofür gibi Präpositionaladverbial-Relativformen kullanılabilir. Bu yapılar tartışmada kaynak, iddia ve ilişkiyi daha kesin bağlar.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "dessen",
+          "deren",
+          "was",
+          "wer ... der",
+          "worüber",
+          "wofür"
+        ]
+      },
+      {
+        "header": "Gönderim",
+        "values": [
+          "m./n. aitlik",
+          "f./pl. aitlik",
+          "genel öncül",
+          "belirsiz kişi",
+          "über + şey",
+          "für + şey"
+        ]
+      },
+      {
+        "header": "Örnek parça",
+        "values": [
+          "der Autor, dessen These",
+          "die Studie, deren Daten",
+          "alles, was zählt",
+          "Wer zustimmt, der ...",
+          "das Thema, worüber ...",
+          "das Ziel, wofür ..."
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Argumentationslinie — argüman çizgisi",
+      "der Einwand — itiraz",
+      "die Gegenposition — karşı görüş",
+      "die Voraussetzung — ön koşul",
+      "der Konsens — uzlaşma / fikir birliği",
+      "der Kompromiss — uzlaşma çözümü",
+      "die Gewichtung — ağırlıklandırma",
+      "die Schlussfolgerung — sonuç",
+      "die Prämisse — öncül",
+      "die Differenzierung — ayrıntılı ayrım",
+      "entkräften — çürütmek / etkisizleştirmek",
+      "einwenden — itiraz etmek",
+      "zugestehen — kabul etmek",
+      "abwägen — tartmak",
+      "sich einigen auf — uzlaşmak",
+      "stichhaltig — sağlam",
+      "differenziert — nüanslı",
+      "konsensfähig — uzlaşmaya uygun"
+    ],
+    "examples": [
+      {
+        "de": "Die Expertin, deren Argumentation sich auf mehrere unabhängige Studien stützt, widerspricht einer pauschalen Lösung.",
+        "tr": "Argümantasyonu birkaç bağımsız çalışmaya dayanan uzman genelleyici bir çözüme karşı çıkıyor."
+      },
+      {
+        "de": "Der Vorschlag, dessen finanzielle Folgen noch unklar sind, sollte vor einer Entscheidung genauer geprüft werden.",
+        "tr": "Mali sonuçları henüz belirsiz olan öneri karar verilmeden önce daha ayrıntılı incelenmelidir."
+      },
+      {
+        "de": "Das, was beide Seiten verbindet, ist der Wunsch nach einer verlässlichen und fairen Regelung.",
+        "tr": "İki tarafı birleştiren şey güvenilir ve adil bir düzenleme isteğidir."
+      },
+      {
+        "de": "Wer eine strengere Regel fordert, der sollte auch erklären, wie unverhältnismäßige Folgen vermieden werden können.",
+        "tr": "Daha katı kural isteyen kişi orantısız sonuçların nasıl önleneceğini de açıklamalıdır."
+      },
+      {
+        "de": "Ein Punkt, worüber noch keine Einigkeit besteht, ist die genaue Verteilung der Kosten.",
+        "tr": "Henüz fikir birliği bulunmayan noktalardan biri maliyetlerin tam dağılımıdır."
+      },
+      {
+        "de": "Ein tragfähiger Kompromiss berücksichtigt nicht jede Forderung vollständig, aber die wichtigsten Interessen beider Seiten.",
+        "tr": "Sürdürülebilir bir uzlaşma her talebi tamamen karşılamaz ancak iki tarafın en önemli çıkarlarını dikkate alır."
+      }
+    ],
+    "warning": "dessen ve deren, açıklanan ismin değil ait olunan kişinin/şeyin cinsiyet ve sayısına göre seçilir; ardından gelen ismin artikeli yerine geçebilir.",
+    "tip": "Bir tartışmayı iki görüşle özetle. En az bir dessen/deren, bir was ve bir worüber yapısı kullan; sonunda uzlaşma öner.",
+    "miniCheck": {
+      "question": "“Sonuçları tartışmalı olan çalışma” için doğru yapı hangisidir?",
+      "options": [
+        "die Studie, deren Ergebnisse umstritten sind",
+        "die Studie, dessen Ergebnisse umstritten sind",
+        "die Studie, die Ergebnisse deren umstritten"
+      ],
+      "correctAnswer": "die Studie, deren Ergebnisse umstritten sind"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Der Autor, ___ These wir diskutieren, nimmt später teil.",
+      "answer": "dessen",
+      "acceptedAnswers": [
+        "dessen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Das,",
+        "was uns verbindet,",
+        "ist",
+        "das gemeinsame Ziel."
+      ],
+      "answer": "Das, was uns verbindet, ist das gemeinsame Ziel."
+    },
+    "translation": {
+      "prompt": "“Verileri açık olan rapor daha ikna edici.” cümlesini Almancaya çevir.",
+      "answer": "Der Bericht, dessen Daten transparent sind, ist überzeugender.",
+      "acceptedAnswers": [
+        "Der Bericht, dessen Daten transparent sind, ist überzeugender",
+        "Der Bericht, dessen Daten transparent sind, ist überzeugender."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Gibt es überhaupt einen gemeinsamen Punkt? — B: ___",
+      "options": [
+        "Ja, das, was beide Seiten fordern, ist mehr Transparenz.",
+        "Ja, dessen beide Seiten fordern Transparenz.",
+        "Ja, was beide der Transparenz."
+      ],
+      "answer": "Ja, das, was beide Seiten fordern, ist mehr Transparenz."
+    },
+    "trueFalse": {
+      "prompt": "“deren” kann Besitz/Zugehörigkeit bei femininem oder pluralem Bezugswort ausdrücken.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Gelişmiş Relativsatz biçimi olan iki öğeyi seç.",
+      "options": [
+        "dessen",
+        "deren",
+        "deshalb",
+        "trotzdem"
+      ],
+      "answers": [
+        "dessen",
+        "deren"
+      ]
+    },
+    "summary": [
+      "gelişmiş Relativsätze",
+      "argümantasyon",
+      "karşı görüş",
+      "uzlaşma"
+    ]
+  },
+  {
+    "id": "b2-u17",
+    "title": "Veri, Grafik ve Eğilimleri Yorumlama",
+    "intro": "Bu ünitede grafik, oran, değişim ve karşılaştırmalı verileri yorumlayacak; als ob, als wenn, je ... desto/umso ve karşılaştırmalı korrelasyon yapılarıyla görünüş, oran ve eğilim ilişkilerini daha hassas anlatacaksın.",
+    "goals": [
+      "als ob/als wenn ile görünüşe dayalı karşılaştırma yapmak",
+      "je ... desto/umso ile birlikte değişen eğilimleri ifade etmek",
+      "Grafikte mutlak değer ile oranı ayırmak",
+      "Veriden desteklenmeyen aşırı sonuçlardan kaçınmak"
+    ],
+    "grammarTitle": "Vergleichssätze: als ob / als wenn ve je ... desto/umso",
+    "grammarExplanation": "als ob ve als wenn bir durumun gerçekte öyle olup olmadığı kesin olmadan “...miş gibi” izlenimi verir; çoğu zaman Konjunktiv II kullanılır: Es sieht aus, als ob die Nachfrage sinken würde. je ... desto/umso ise iki değişken arasındaki paralel ilişkiyi anlatır: Je höher der Preis steigt, desto geringer wird die Nachfrage. Bu yapı bir nedenselliği otomatik olarak kanıtlamaz; yalnız birlikte değişimi dilsel olarak gösterir. B2 veri yorumunda “scheint, deutet darauf hin, im Vergleich zu, während” gibi ihtiyatlı ifadelerle birlikte kullanılması önemlidir.",
+    "grammarColumns": [
+      {
+        "header": "Yapı",
+        "values": [
+          "als ob + Konj. II",
+          "als wenn + Konj. II",
+          "je ... desto",
+          "je ... umso",
+          "im Vergleich zu",
+          "während"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "görünüş",
+          "görünüş",
+          "orantılı değişim",
+          "orantılı değişim",
+          "karşılaştırma",
+          "karşıt eğilim"
+        ]
+      },
+      {
+        "header": "Örnek",
+        "values": [
+          "als ob es sinken würde",
+          "als wenn nichts passiert wäre",
+          "je höher, desto mehr",
+          "je länger, umso geringer",
+          "im Vergleich zum Vorjahr",
+          "während A steigt, sinkt B"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Entwicklung — gelişim",
+      "der Anteil — oran / pay",
+      "der Durchschnitt — ortalama",
+      "der Höchstwert — en yüksek değer",
+      "der Tiefstwert — en düşük değer",
+      "die Schwankung — dalgalanma",
+      "der Trend — eğilim",
+      "der Vergleichszeitraum — karşılaştırma dönemi",
+      "die Größenordnung — büyüklük düzeyi",
+      "die Datenreihe — veri serisi",
+      "ansteigen — yükselmek",
+      "zurückgehen — gerilemek",
+      "schwanken — dalgalanmak",
+      "stagnieren — durağan kalmak",
+      "sich verdoppeln — iki katına çıkmak",
+      "anteilig — oransal",
+      "kontinuierlich — kesintisiz",
+      "auffällig — dikkat çekici"
+    ],
+    "examples": [
+      {
+        "de": "Auf den ersten Blick sieht es so aus, als ob die Nachfrage stark zurückgegangen wäre.",
+        "tr": "İlk bakışta talep güçlü biçimde gerilemiş gibi görünüyor."
+      },
+      {
+        "de": "Je länger der Beobachtungszeitraum ist, desto deutlicher werden saisonale Schwankungen sichtbar.",
+        "tr": "Gözlem süresi uzadıkça mevsimsel dalgalanmalar daha belirgin hale geliyor."
+      },
+      {
+        "de": "Je höher der Anteil digitaler Anträge steigt, umso geringer wird der Anteil rein papierbasierter Verfahren.",
+        "tr": "Dijital başvuruların payı arttıkça yalnız kâğıt tabanlı süreçlerin payı azalıyor."
+      },
+      {
+        "de": "Im Vergleich zum Vorjahr ist der Durchschnitt gestiegen, obwohl der Höchstwert nahezu unverändert blieb.",
+        "tr": "En yüksek değer neredeyse değişmeden kalmasına rağmen ortalama geçen yıla göre yükseldi."
+      },
+      {
+        "de": "Während die absolute Zahl zunimmt, bleibt der prozentuale Anteil nahezu konstant.",
+        "tr": "Mutlak sayı artarken yüzde payı neredeyse sabit kalıyor."
+      },
+      {
+        "de": "Die Grafik deutet auf einen Zusammenhang hin, liefert jedoch allein keinen Beweis für eine Ursache.",
+        "tr": "Grafik bir ilişkiye işaret ediyor ancak tek başına bir neden için kanıt sunmuyor."
+      }
+    ],
+    "warning": "Grafikte iki eğrinin birlikte hareket etmesi nedensellik kanıtı değildir. “führt dazu” demeden önce veri ve çalışma tasarımının bunu gerçekten destekleyip desteklemediğini kontrol et.",
+    "tip": "Bir grafik hayal et ve altı cümlelik yorum yaz: genel eğilim, iki sayı, bir karşılaştırma, bir je-desto ilişkisi ve bir sınırlılık.",
+    "miniCheck": {
+      "question": "Birlikte değişen iki eğilimi anlatan yapı hangisidir?",
+      "options": [
+        "Je höher der Wert ist, desto größer ist der Unterschied.",
+        "Als ob höher der Wert deshalb.",
+        "Wegen höher desto Wert."
+      ],
+      "correctAnswer": "Je höher der Wert ist, desto größer ist der Unterschied."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Je länger der Zeitraum ist, ___ klarer wird der Trend.",
+      "answer": "desto",
+      "acceptedAnswers": [
+        "desto",
+        "umso"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Es sieht aus,",
+        "als ob",
+        "die Werte",
+        "wieder steigen würden."
+      ],
+      "answer": "Es sieht aus, als ob die Werte wieder steigen würden."
+    },
+    "translation": {
+      "prompt": "“Fiyat yükseldikçe talep azalıyor.” cümlesini Almancaya çevir.",
+      "answer": "Je höher der Preis steigt, desto geringer wird die Nachfrage.",
+      "acceptedAnswers": [
+        "Je höher der Preis steigt, desto geringer wird die Nachfrage",
+        "Je höher der Preis steigt, desto geringer wird die Nachfrage."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Zeigt die Grafik eindeutig eine Ursache? — B: ___",
+      "options": [
+        "Nein, sie sieht nur so aus, als ob beide Entwicklungen direkt zusammenhingen.",
+        "Nein, als ob die Ursache ist eindeutig.",
+        "Nein, je Grafik Ursache."
+      ],
+      "answer": "Nein, sie sieht nur so aus, als ob beide Entwicklungen direkt zusammenhingen."
+    },
+    "trueFalse": {
+      "prompt": "je ... desto kann eine parallele Veränderung ausdrücken, ohne automatisch Kausalität zu beweisen.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Grafik yorumunda yararlı iki karşılaştırma yapısını seç.",
+      "options": [
+        "im Vergleich zu",
+        "je ... desto",
+        "damit",
+        "obwohl dass"
+      ],
+      "answers": [
+        "im Vergleich zu",
+        "je ... desto"
+      ]
+    },
+    "summary": [
+      "Vergleichssätze",
+      "grafik yorumlama",
+      "eğilim ve oran",
+      "kanıt sınırı"
+    ]
+  },
+  {
+    "id": "b2-u18",
+    "title": "Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği",
+    "intro": "Bu ünitede profesyonel bir anlaşmazlığı yapılandıracak, çıkarları pozisyonlardan ayıracak ve uygulanabilir uzlaşma seçenekleri geliştireceksin; während, wohingegen, hingegen, dagegen ve benzeri adversativ yapılarla karşıtlık ilişkilerini hassaslaştıracaksın.",
+    "goals": [
+      "Adversativ bağlayıcıları sözdizimine uygun kullanmak",
+      "Pozisyon ve temel çıkarı birbirinden ayırmak",
+      "Müzakerede öneri ve koşullu uzlaşma sunmak",
+      "Çatışmayı tarafsız ve çözüm odaklı özetlemek"
+    ],
+    "grammarTitle": "Adversativ ilişkiler: während, wohingegen, hingegen, dagegen",
+    "grammarExplanation": "B2 düzeyinde karşıtlık her zaman aber ile kurulmak zorunda değildir. während ve wohingegen iki durumu yan cümle ilişkisiyle karşılaştırabilir; çekimli fiil yan cümlenin sonundadır. hingegen ve dagegen ise çoğu zaman ana cümlede bağlayıcı zarflar olarak kullanılır ve sözcük sırasını etkiler: Team A bevorzugt Option X; Team B hingegen schlägt Y vor. Bu yapılar müzakere metninde tarafların farkını nesnel biçimde görünür kılar. Karşıtlığın gerçek çelişki mi, yalnız tercih farkı mı olduğunu bağlam belirler.",
+    "grammarColumns": [
+      {
+        "header": "Bağlayıcı",
+        "values": [
+          "während",
+          "wohingegen",
+          "hingegen",
+          "dagegen",
+          "aber",
+          "im Gegensatz dazu"
+        ]
+      },
+      {
+        "header": "Tür",
+        "values": [
+          "yan cümle",
+          "yan cümle",
+          "bağlayıcı zarf",
+          "bağlayıcı zarf",
+          "koordinasyon",
+          "metinsel ifade"
+        ]
+      },
+      {
+        "header": "Örnek işlev",
+        "values": [
+          "iki tercih",
+          "iki sonuç",
+          "ikinci taraf",
+          "karşı seçenek",
+          "basit karşıtlık",
+          "açık karşılaştırma"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Verhandlung — müzakere",
+      "der Interessenkonflikt — çıkar çatışması",
+      "die Position — pozisyon",
+      "das Interesse — çıkar / ihtiyaç",
+      "der Spielraum — hareket alanı",
+      "das Zugeständnis — taviz",
+      "die Eskalation — gerilimin tırmanması",
+      "die Vereinbarung — anlaşma",
+      "die Vermittlung — arabuluculuk",
+      "die Lösungsoption — çözüm seçeneği",
+      "verhandeln — müzakere etmek",
+      "nachgeben — taviz vermek",
+      "entgegenkommen — orta yol göstermek",
+      "vermitteln — arabuluculuk etmek",
+      "priorisieren — önceliklendirmek",
+      "konstruktiv — yapıcı",
+      "tragfähig — sürdürülebilir / uygulanabilir",
+      "verbindlich — bağlayıcı"
+    ],
+    "examples": [
+      {
+        "de": "Während die eine Seite vor allem Planungssicherheit verlangt, legt die andere größeren Wert auf Flexibilität.",
+        "tr": "Bir taraf öncelikle planlama güvencesi isterken diğer taraf esnekliğe daha fazla önem veriyor."
+      },
+      {
+        "de": "Das Management bevorzugt eine schnelle Einführung, wohingegen das Projektteam zunächst einen begrenzten Test fordert.",
+        "tr": "Yönetim hızlı uygulamayı tercih ederken proje ekibi önce sınırlı test talep ediyor."
+      },
+      {
+        "de": "Die Kosten sind für Team A das Hauptproblem; Team B hingegen sieht vor allem die knappen personellen Ressourcen kritisch.",
+        "tr": "A ekibi için temel sorun maliyet; B ekibi ise özellikle sınırlı insan kaynağını kritik görüyor."
+      },
+      {
+        "de": "Eine vollständige Verschiebung lehnen wir ab. Gegen eine schrittweise Einführung hätten wir dagegen keine grundsätzlichen Einwände.",
+        "tr": "Tam ertelemeyi reddediyoruz. Buna karşılık aşamalı uygulamaya prensipte itirazımız yok."
+      },
+      {
+        "de": "Ein tragfähiger Kompromiss entsteht eher, wenn beide Seiten ihre Interessen statt nur ihre Ausgangspositionen erklären.",
+        "tr": "Sürdürülebilir uzlaşma, iki taraf yalnız başlangıç pozisyonlarını değil temel çıkarlarını açıkladığında daha kolay oluşur."
+      },
+      {
+        "de": "Die Vereinbarung sollte konkrete Zuständigkeiten enthalten, damit spätere Missverständnisse nicht erneut zur Eskalation führen.",
+        "tr": "Anlaşma, sonraki yanlış anlaşılmalar yeniden gerilime yol açmasın diye somut sorumluluklar içermelidir."
+      }
+    ],
+    "warning": "während hem zaman hem karşıtlık anlamı taşıyabilir. İki paralel durum karşılaştırılıyorsa adversativ, aynı anda gerçekleşme vurgulanıyorsa temporal yorum öne çıkar.",
+    "tip": "İki ekip arasında bütçe-zaman çatışması yaz. Her tarafın pozisyonunu ve asıl çıkarını ayır; ardından iki adversativ bağlayıcıyla farkı göster ve uzlaşma öner.",
+    "miniCheck": {
+      "question": "Yan cümleyle açık karşıtlık kuran yapı hangisidir?",
+      "options": [
+        "wohingegen",
+        "dagegen",
+        "jedoch"
+      ],
+      "correctAnswer": "wohingegen"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Team A will sofort starten, ___ Team B zunächst testen möchte.",
+      "answer": "wohingegen",
+      "acceptedAnswers": [
+        "wohingegen",
+        "während"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Team A",
+        "bevorzugt Option 1;",
+        "Team B",
+        "hingegen",
+        "schlägt Option 2 vor."
+      ],
+      "answer": "Team A bevorzugt Option 1; Team B hingegen schlägt Option 2 vor."
+    },
+    "translation": {
+      "prompt": "“Bir taraf hız isterken diğer taraf güvenliği önceliklendiriyor.” cümlesini Almancaya çevir.",
+      "answer": "Während die eine Seite Tempo fordert, priorisiert die andere Sicherheit.",
+      "acceptedAnswers": [
+        "Während die eine Seite Tempo fordert, priorisiert die andere Sicherheit",
+        "Während die eine Seite Tempo fordert, priorisiert die andere Sicherheit."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wo liegt der eigentliche Unterschied zwischen den Teams? — B: ___",
+      "options": [
+        "Team A priorisiert den Termin, Team B hingegen die Qualitätssicherung.",
+        "Team A hingegen weil Termin und Team B.",
+        "Während Team A, dagegen Qualität ohne Verb."
+      ],
+      "answer": "Team A priorisiert den Termin, Team B hingegen die Qualitätssicherung."
+    },
+    "trueFalse": {
+      "prompt": "“hingegen” kann zwei Hauptaussagen kontrastiv miteinander verbinden.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Adversativ işlevli iki bağlayıcı seç.",
+      "options": [
+        "wohingegen",
+        "hingegen",
+        "seitdem",
+        "sobald"
+      ],
+      "answers": [
+        "wohingegen",
+        "hingegen"
+      ]
+    },
+    "summary": [
+      "adversativ bağlayıcılar",
+      "müzakere",
+      "çıkar ve pozisyon",
+      "uzlaşma"
+    ]
+  },
+  {
+    "id": "b2-u19",
+    "title": "Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı",
+    "intro": "Bu ünitede karmaşık ama iyi yapılandırılmış bir bilgiyi başka bir kişiye veya gruba anlaşılır biçimde aktaracak, çevrim içi tartışmada açıklık isteyecek ve metin bağlantısını tekrar, gönderim, reformülasyon ve bağlayıcılarla yöneteceksin.",
+    "goals": [
+      "Karmaşık bilgiyi hedef kişiye uygun biçimde yeniden ifade etmek",
+      "Metin içinde gönderim ve reformülasyonla kohäsion kurmak",
+      "Çevrim içi etkileşimde belirsiz noktaları açıklığa kavuşturmak",
+      "Kaynak argümanını anlamı bozmadan kısaltmak"
+    ],
+    "grammarTitle": "Textzusammenhang: Kohäsion, reformülasyon ve referans",
+    "grammarExplanation": "B2’de iyi metin yalnız doğru cümlelerin toplamı değildir. Kohäsion için zamirler, Präpositionaladverbien, eş anlamlı/üst kavramlı tekrarlar ve bağlayıcılar kullanılır; Kohärenz ise fikirlerin mantıksal ilerlemesidir. Reformülasyon ifadeleri “anders gesagt, genauer gesagt, damit ist gemeint, mit anderen Worten” karmaşık bilgiyi hedef kişiye uyarlamayı sağlar. Online etkileşimde “Verstehe ich richtig, dass ...?”, “Könnten Sie präzisieren, worauf ...?” gibi açıklık soruları önemlidir. Mediation görevinde yeni içerik uydurmak yerine kaynağın önemli argümanlarını güvenilir biçimde aktarmak gerekir.",
+    "grammarColumns": [
+      {
+        "header": "Araç",
+        "values": [
+          "daran/dabei",
+          "dieser Aspekt",
+          "anders gesagt",
+          "genauer gesagt",
+          "daraus folgt",
+          "im Gegensatz dazu"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "gönderim",
+          "lexikal gönderim",
+          "yeniden ifade",
+          "kesinleştirme",
+          "sonuç",
+          "karşıtlık"
+        ]
+      },
+      {
+        "header": "Kullanım",
+        "values": [
+          "önceki fikre bağlanma",
+          "tekrarı azaltma",
+          "anlaşılırlaştırma",
+          "belirsizliği giderme",
+          "mantık",
+          "iki bölüm ilişkisi"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Vermittlung — aracılık / aktarım",
+      "die Kernaussage — temel mesaj",
+      "die Zusammenfassung — özet",
+      "die Umformulierung — yeniden ifade",
+      "der Bezug — referans / bağlantı",
+      "die Rückfrage — ek soru",
+      "die Erläuterung — açıklama",
+      "die Zielgruppe — hedef kitle",
+      "der Informationsstand — bilgi durumu",
+      "der Kontext — bağlam",
+      "vermitteln — aktarmak / aracılık etmek",
+      "zusammenfassen — özetlemek",
+      "präzisieren — kesinleştirmek",
+      "umformulieren — yeniden ifade etmek",
+      "klarstellen — açıklığa kavuşturmak",
+      "adressatengerecht — hedef kişiye uygun",
+      "kohärent — tutarlı",
+      "missverständlich — yanlış anlaşılabilir"
+    ],
+    "examples": [
+      {
+        "de": "Der Bericht nennt drei Risiken. Dabei wird besonders hervorgehoben, dass fehlende Transparenz langfristig Vertrauen schwächen kann.",
+        "tr": "Rapor üç risk belirtiyor. Bu bağlamda özellikle şeffaflık eksikliğinin uzun vadede güveni zayıflatabileceği vurgulanıyor."
+      },
+      {
+        "de": "Anders gesagt geht es nicht darum, jede Einzelheit weiterzugeben, sondern die entscheidenden Informationen zuverlässig zu vermitteln.",
+        "tr": "Başka bir deyişle amaç her ayrıntıyı aktarmak değil, belirleyici bilgileri güvenilir biçimde iletmektir."
+      },
+      {
+        "de": "Genauer gesagt betrifft die Änderung nur neu eingereichte Anträge und nicht bereits laufende Verfahren.",
+        "tr": "Daha kesin söylersek değişiklik yalnız yeni başvuruları etkiliyor, devam eden süreçleri değil."
+      },
+      {
+        "de": "Verstehe ich richtig, dass sich die Frist auf den Eingang der Unterlagen und nicht auf die Bearbeitung bezieht?",
+        "tr": "Doğru anladıysam süre belgelerin ulaşmasına ilişkin, işlenmesine değil mi?"
+      },
+      {
+        "de": "Die erste Quelle beschreibt den Vorteil ausführlich; im Gegensatz dazu konzentriert sich die zweite stärker auf mögliche Nebenwirkungen.",
+        "tr": "İlk kaynak avantajı ayrıntılı anlatırken ikinci kaynak buna karşılık olası yan etkilere daha çok odaklanıyor."
+      },
+      {
+        "de": "Eine gute Vermittlung bewahrt die Bedeutung des Ausgangstextes, passt aber Wortwahl und Detailgrad an die Zielgruppe an.",
+        "tr": "İyi aracılık kaynak metnin anlamını korur ancak kelime seçimi ve ayrıntı düzeyini hedef gruba uyarlar."
+      }
+    ],
+    "warning": "Özet veya aracılık yaparken kaynakta olmayan sonucu “mantıklı göründüğü için” ekleme. Kendi yorumun varsa bunu açıkça ayrı işaretle.",
+    "tip": "Teknik bir paragraf seçtiğini düşün: uzman olmayan arkadaşına üç cümlede aktar; sonra çevrim içi tartışmada belirsiz bir noktaya açıklık sorusu yaz.",
+    "miniCheck": {
+      "question": "Reformülasyon bildiren ifade hangisidir?",
+      "options": [
+        "anders gesagt",
+        "seit gestern",
+        "trotzdem weil"
+      ],
+      "correctAnswer": "anders gesagt"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: ___ gesagt betrifft die Regel nur neue Anträge.",
+      "answer": "Genauer",
+      "acceptedAnswers": [
+        "Genauer"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Verstehe ich richtig,",
+        "dass",
+        "die Frist",
+        "nur neue Anträge",
+        "betrifft?"
+      ],
+      "answer": "Verstehe ich richtig, dass die Frist nur neue Anträge betrifft?"
+    },
+    "translation": {
+      "prompt": "“Başka bir deyişle, yalnız ana bilgileri aktarmalıyız.” cümlesini Almancaya çevir.",
+      "answer": "Anders gesagt sollten wir nur die wichtigsten Informationen vermitteln.",
+      "acceptedAnswers": [
+        "Anders gesagt sollten wir nur die wichtigsten Informationen vermitteln",
+        "Anders gesagt sollten wir nur die wichtigsten Informationen vermitteln."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Ich verstehe den letzten Punkt nicht ganz. — B: ___",
+      "options": [
+        "Anders gesagt gilt die neue Regel nur für zukünftige Fälle.",
+        "Anders gesagt neue Regel zukünftige.",
+        "Dagegen gesagt weil Regel."
+      ],
+      "answer": "Anders gesagt gilt die neue Regel nur für zukünftige Fälle."
+    },
+    "trueFalse": {
+      "prompt": "Mediation bedeutet, relevante Informationen zuverlässig für andere zugänglich zu machen, ohne neue Fakten zu erfinden.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Kohäsion/reformülasyona katkı sunan iki ifade seç.",
+      "options": [
+        "dabei",
+        "mit anderen Worten",
+        "gestern um acht",
+        "drei Kilometer"
+      ],
+      "answers": [
+        "dabei",
+        "mit anderen Worten"
+      ]
+    },
+    "summary": [
+      "metin bağlantısı",
+      "mediation",
+      "online etkileşim",
+      "reformülasyon"
+    ]
+  },
+  {
+    "id": "b2-u20",
+    "title": "B2 Genel Uygulama ve Bağımsız İletişim",
+    "intro": "Bu son ünitede B2 boyunca geliştirdiğin eleştirel okuma, ayrıntılı dinleme, argümantasyon, resmî yazma, sunum, tartışma ve aracılık becerilerini tek bir bağımsız iletişim paketinde birleştireceksin.",
+    "goals": [
+      "Karmaşık somut ve soyut bir metnin ana fikriyle önemli ayrıntılarını ayırmak",
+      "Güncel bir konuda avantaj/dezavantajları tartarak açık görüş yazmak",
+      "Hazırlıklı sunum yapıp takip sorularına akıcı cevap vermek",
+      "Kaynak bilgisini hedef kişiye uygun biçimde aracılık ederek aktarmak"
+    ],
+    "grammarTitle": "B2 sentezi: register, kohäsion, argüman ve karmaşık yapı seçimi",
+    "grammarExplanation": "B2 sonunda hedef her gramer yapısını aynı metinde göstermek değildir. Öğrenci iletişim amacına göre Konjunktiv I, Passiv/Passiversatz, Nomen-Verb-Verbindungen, Nominalisierung, subjektive Modalverben, çift bağlaçlar, gelişmiş Relativsätze ve kohäsion araçları arasından uygun olanı seçebilmelidir. Açık paragraf yapısı, kaynak ile görüşün ayrılması, avantaj/dezavantajların dengeli ele alınması ve uygun register B2 performansının temelidir. Karmaşık yapı yalnız hata riskini artırıyorsa daha açık bir seçenek tercih edilmelidir.",
+    "grammarColumns": [
+      {
+        "header": "İletişim amacı",
+        "values": [
+          "kaynak aktarma",
+          "süreç anlatma",
+          "argüman bağlama",
+          "olasılık",
+          "karşı görüş",
+          "aracılık"
+        ]
+      },
+      {
+        "header": "Yararlı araç",
+        "values": [
+          "Konjunktiv I",
+          "Passiv/Passiversatz",
+          "zweiteilige Konnektoren",
+          "subjektive Modalverben",
+          "adversativ yapılar",
+          "Reformulierung"
+        ]
+      },
+      {
+        "header": "Kalite ölçütü",
+        "values": [
+          "mesafe",
+          "işlevsel seçim",
+          "mantık/paralellik",
+          "derecelendirme",
+          "adil temsil",
+          "anlamı koruma"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Abwägung — değerlendirme / tartma",
+      "die Perspektive — bakış açısı",
+      "die Voraussetzung — ön koşul",
+      "die Konsequenz — sonuç",
+      "die Einordnung — bağlama oturtma",
+      "die Stellungnahme — görüş açıklaması",
+      "die Vermittlung — aracılık",
+      "die Kohärenz — metin tutarlılığı",
+      "die Zielgruppe — hedef grup",
+      "die Schlussfolgerung — sonuç çıkarımı",
+      "abwägen — tartmak",
+      "begründen — gerekçelendirmek",
+      "einordnen — bağlama oturtmak",
+      "relativieren — nüanslandırmak",
+      "vermitteln — aktarmak",
+      "differenziert — nüanslı",
+      "schlüssig — mantıksal olarak tutarlı",
+      "adressatengerecht — hedef kişiye uygun"
+    ],
+    "examples": [
+      {
+        "de": "Zunächst fasse ich die zentralen Argumente zusammen, bevor ich ihre Stärken und Schwächen getrennt bewerte.",
+        "tr": "Önce temel argümanları özetliyor, ardından güçlü ve zayıf yönlerini ayrı ayrı değerlendiriyorum."
+      },
+      {
+        "de": "Die Autorin erklärt, die Maßnahme sei kurzfristig teuer, könne langfristig jedoch erhebliche Vorteile bringen.",
+        "tr": "Yazar önlemin kısa vadede pahalı olduğunu ancak uzun vadede önemli avantajlar sağlayabileceğini açıklıyor."
+      },
+      {
+        "de": "Einerseits sprechen die verfügbaren Daten für eine Veränderung, andererseits bleiben wichtige Folgen noch unsicher.",
+        "tr": "Bir yandan mevcut veriler değişimi desteklerken diğer yandan önemli sonuçlar hâlâ belirsiz."
+      },
+      {
+        "de": "Für eine endgültige Entscheidung sind sowohl die finanziellen Auswirkungen als auch die Interessen der Betroffenen zu berücksichtigen.",
+        "tr": "Kesin karar için hem mali etkiler hem etkilenenlerin çıkarları dikkate alınmalıdır."
+      },
+      {
+        "de": "Anders gesagt sollte die Lösung nicht nur technisch funktionieren, sondern auch verständlich, fair und praktisch umsetzbar sein.",
+        "tr": "Başka bir deyişle çözüm yalnız teknik olarak çalışmamalı, aynı zamanda anlaşılır, adil ve uygulanabilir olmalıdır."
+      },
+      {
+        "de": "Insgesamt halte ich einen begrenzten Test für überzeugender als eine sofortige vollständige Einführung.",
+        "tr": "Genel olarak sınırlı bir testi anında tam uygulamadan daha ikna edici buluyorum."
+      }
+    ],
+    "warning": "B2’de “karmaşık” olmak ile “karmaşık görünmek” aynı değildir. Ana fikir anlaşılmıyorsa uzun cümle, ağır Nominalstil veya nadir kelime performansı yükseltmez.",
+    "tip": "Tek bir güncel konu seç. 250–300 kelimelik görüş yazısı, 3 dakikalık sunum, iki takip sorusuna cevap ve 4 cümlelik aracılık özeti üret.",
+    "miniCheck": {
+      "question": "Dengeli B2 argümantasyonuna en uygun seçenek hangisidir?",
+      "options": [
+        "Einerseits bietet die Lösung klare Vorteile, andererseits bleiben Kosten und Zugänglichkeit kritisch zu prüfen.",
+        "Die Lösung ist gut, Punkt.",
+        "Alles ist kompliziert und deshalb egal."
+      ],
+      "correctAnswer": "Einerseits bietet die Lösung klare Vorteile, andererseits bleiben Kosten und Zugänglichkeit kritisch zu prüfen."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Insgesamt halte ich diese Lösung ___ überzeugender.",
+      "answer": "für",
+      "acceptedAnswers": [
+        "für"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Zunächst",
+        "fasse ich",
+        "die Argumente zusammen,",
+        "anschließend",
+        "bewerte ich sie."
+      ],
+      "answer": "Zunächst fasse ich die Argumente zusammen, anschließend bewerte ich sie."
+    },
+    "translation": {
+      "prompt": "“Genel olarak avantajlar daha ağır basıyor, ancak riskler göz ardı edilmemeli.” cümlesini Almancaya çevir.",
+      "answer": "Insgesamt überwiegen die Vorteile, die Risiken sollten jedoch nicht außer Acht gelassen werden.",
+      "acceptedAnswers": [
+        "Insgesamt überwiegen die Vorteile, die Risiken sollten jedoch nicht außer Acht gelassen werden",
+        "Insgesamt überwiegen die Vorteile, die Risiken sollten jedoch nicht außer Acht gelassen werden."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wie lautet dein Fazit nach der Abwägung? — B: ___",
+      "options": [
+        "Ich würde einen begrenzten Test empfehlen, weil er Nutzen und Risiken besser überprüfbar macht.",
+        "Ich Fazit Test weil besser.",
+        "Begrenzt Test, daher alles gut."
+      ],
+      "answer": "Ich würde einen begrenzten Test empfehlen, weil er Nutzen und Risiken besser überprüfbar macht."
+    },
+    "trueFalse": {
+      "prompt": "B2 verlangt neben sprachlicher Richtigkeit auch klare Argumentstruktur und adressatengerechten Register.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "B2 bağımsız iletişimin iki temel özelliğini seç.",
+      "options": [
+        "açık gerekçe",
+        "farklı seçeneklerin avantaj/dezavantajlarını değerlendirme",
+        "yalnız ezberlenmiş tek cümle",
+        "kaynağı görüşle karıştırma"
+      ],
+      "answers": [
+        "açık gerekçe",
+        "farklı seçeneklerin avantaj/dezavantajlarını değerlendirme"
+      ]
+    },
+    "summary": [
+      "B2 sentezi",
+      "argümantasyon",
+      "sunum ve tartışma",
+      "mediation ve register"
+    ]
+  }
+]

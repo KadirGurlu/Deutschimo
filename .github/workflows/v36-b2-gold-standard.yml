@@ -1,0 +1,26 @@
+name: Deutschimo V36 B2 Gold Standard
+on:
+  push:
+    branches: [v36-staging]
+  pull_request:
+    branches: [main, v36-staging]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  b2-content-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: npm run validate:v33
+      - run: npm run validate:v34
+      - run: npm run validate:v35
+      - run: npm run validate:v36
+      - run: npm run typecheck
+      - run: npm run build

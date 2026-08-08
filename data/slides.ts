@@ -232,9 +232,9 @@ function createUnitSlides(unit: Unit): LessonSlide[] {
   const prerequisites = buildPrerequisites(unit);
   const structureExamples = buildStructureExamples(content, unit);
   const registerExamples = buildRegisterExamples(content, unit);
-  const dialogue = (unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1") && v16Content ? v16Content.dialogue : buildDialogue(content, unit);
-  const readingPassage = (unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1") && v16Content ? v16Content.reading : buildReadingText(content, unit);
-  const listeningPassage = (unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1") && v16Content ? v16Content.listening : buildListeningText(content, unit);
+  const dialogue = (unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1" || unit.courseId === "b2") && v16Content ? v16Content.dialogue : buildDialogue(content, unit);
+  const readingPassage = (unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1" || unit.courseId === "b2") && v16Content ? v16Content.reading : buildReadingText(content, unit);
+  const listeningPassage = (unit.courseId === "a1" || unit.courseId === "a2" || unit.courseId === "b1" || unit.courseId === "b2") && v16Content ? v16Content.listening : buildListeningText(content, unit);
   const mistakes = buildCommonMistakes(content);
   const checkpoint = buildTopicCheckpoint(content, unit);
   const vocabularyTerms = content.vocabulary.map((item) => item.split(" — ")[0].trim());

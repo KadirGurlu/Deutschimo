@@ -10,7 +10,10 @@ async function GETHandler() {
   const currentUser = await getApiUser();
   if (!currentUser) return NextResponse.json({ error: "Oturum gerekli." }, { status: 401 });
   const snapshot = await prisma.learningStateSnapshot.findUnique({ where: { userId: currentUser.id } });
-  return NextResponse.json({ state: snapshot?.state ?? null, updatedAt: snapshot?.updatedAt.toISOString() });
+  const state = snapshot?.state
+    ? normalizeLearningStateForUser(snapshot.state, currentUser.id)
+    : null;
+  return NextResponse.json({ state, updatedAt: snapshot?.updatedAt.toISOString() });
 }
 
 async function PUTHandler(request: Request) {

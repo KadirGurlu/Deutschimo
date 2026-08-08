@@ -9,6 +9,7 @@ import {
 import { buildDailyPlan } from "@/lib/intelligence/daily-plan";
 import type { DailyPlanTask, DailyStudyPlan, IntelligenceInsights, IntelligenceLevel, PlacementResult } from "@/types/intelligence";
 import type { LearningState } from "@/types/progress";
+import { normalizeLearningStateForUser } from "@/lib/learning/server-state";
 import { onboardingFocusSkills, type OnboardingFocusSkill } from "@/types/onboarding";
 
 function jsonValue(value: unknown): Prisma.InputJsonValue {
@@ -19,7 +20,8 @@ const focusSkillSet = new Set<string>(onboardingFocusSkills);
 
 export async function readLearningState(userId: string): Promise<LearningState | null> {
   const snapshot = await prisma.learningStateSnapshot.findUnique({ where: { userId }, select: { state: true } });
-  return (snapshot?.state as unknown as LearningState | undefined) ?? null;
+  if (!snapshot?.state) return null;
+  return normalizeLearningStateForUser(snapshot.state, userId);
 }
 export async function refreshInsights(userId: string, stateOverride?: LearningState | null): Promise<IntelligenceInsights> {
   const state = stateOverride === undefined ? await readLearningState(userId) : stateOverride;
@@ -101,7 +103,7 @@ export async function getOrRefreshReviewState(userId: string, force = false) {
       attempts: existing.attempts as Record<string, number>,
     };
   }
-  const state = (stateSnapshot?.state as unknown as LearningState | undefined) ?? null;
+  const state = stateSnapshot?.state ? normalizeLearningStateForUser(stateSnapshot.state, userId) : null;
   const [insights, errorHistory] = await Promise.all([
     refreshInsights(userId, state),
     readOpenErrorSignals(userId),

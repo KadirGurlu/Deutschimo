@@ -4,7 +4,7 @@ const root=process.cwd(); const errors=[];
 const read=(p)=>fs.existsSync(path.join(root,p))?fs.readFileSync(path.join(root,p),"utf8"):"";
 const req=(p)=>{if(!fs.existsSync(path.join(root,p))) errors.push(`Eksik dosya: ${p}`)};
 const pkg=JSON.parse(read("package.json")||"{}");
-if(pkg.version!=="32.1.0") errors.push(`Surum 32.1.0 olmali: ${pkg.version}`);
+const [pkgMajor,pkgMinor]=String(pkg.version??"").split(".").map(Number); if(!Number.isFinite(pkgMajor)||pkgMajor<32||(pkgMajor===32&&pkgMinor<1)) errors.push(`Surum en az 32.1.0 olmali: ${pkg.version}`);
 for(const name of ["validate:v32.1","test:e2e:v32.1","release:v32.1"]) if(!pkg.scripts?.[name]) errors.push(`Eksik npm scripti: ${name}`);
 for(const name of ["prebuild","quality:check","vercel-build"]) if(!String(pkg.scripts?.[name]??"").includes("validate:v32.1")) errors.push(`${name} V32.1 kontrolunu calistirmiyor.`);
 [

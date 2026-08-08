@@ -1,12 +1,12 @@
 {
   "name": "deutschimo-platform",
-  "version": "32.1.0",
+  "version": "33.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1",
+    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33",
     "build": "prisma generate && next build",
-    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run db:environment:verify && npm run verify:toolchain && npm run verify:lockfile && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run security:release && npm run db:data-boundaries && npm run db:backup:policy && node scripts/db-deploy.mjs && prisma generate && next build",
+    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run db:environment:verify && npm run verify:toolchain && npm run verify:lockfile && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run security:release && npm run db:data-boundaries && npm run db:backup:policy && node scripts/db-deploy.mjs && prisma generate && next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -55,7 +55,7 @@
     "validate:v27": "node scripts/validate-v27.mjs",
     "validate:v28": "node scripts/validate-v28.mjs",
     "validate:v28.1": "node scripts/validate-v28-1.mjs",
-    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1",
+    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:ui": "playwright test --ui",
@@ -96,7 +96,9 @@
     "validate:v32.1": "node scripts/validate-v32-1.mjs",
     "test:e2e:v32.1": "playwright test --config=playwright.v32-1.config.ts",
     "test:e2e:v32.1:headed": "playwright test --config=playwright.v32-1.config.ts --headed",
-    "release:v32.1": "npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run security:release && npm run db:data-boundaries && npm run lint && npm run typecheck && npm run build && npm run test:e2e:v32 && npm run test:e2e:v32.1"
+    "release:v32.1": "npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run security:release && npm run db:data-boundaries && npm run lint && npm run typecheck && npm run build && npm run test:e2e:v32 && npm run test:e2e:v32.1",
+    "validate:v33": "node scripts/validate-v33.mjs",
+    "release:v33": "npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run security:release && npm run db:data-boundaries && npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.8.0",

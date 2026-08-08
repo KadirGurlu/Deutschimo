@@ -7,18 +7,18 @@ const rules = { requireAllSlides: true, requireAllExercises: true, requireUnitQu
 
 const titles: Record<string, string[]> = {
   "A1": [
-    "Tanışma ve Selamlaşma",
-    "Kişisel Bilgiler ve Meslekler",
-    "Şehirde Yön Bulma",
+        "Tanışma, Selamlaşma ve Alfabe",
+    "Kişisel Bilgiler, Diller ve Meslek",
+    "Aile, İnsanlar ve Sahiplik",
+    "Eşyalar, Alışveriş ve Fiyatlar",
     "Yeme İçme ve Sipariş",
-    "Günlük Hayat ve Aile",
-    "Boş Zaman ve Davetler",
-    "İş Günü ve Randevular",
-    "Sağlık ve Günlük İhtiyaçlar",
-    "Ev ve Yaşam Alanı",
-    "Eğitim ve Meslek",
-    "Giyim ve Alışveriş",
-    "Seyahat ve Tatil"
+    "Günlük Rutin, Saat ve Randevular",
+    "Boş Zaman, Yetenekler ve Davetler",
+    "Şehirde Yön Bulma ve Ulaşım",
+    "Ev, Oda ve Yaşam Alanı",
+    "Sağlık, Vücut ve Basit Tavsiye",
+    "Giyim, Hava Durumu ve Alışveriş",
+    "Seyahat, Tatil ve A1 Genel Uygulama"
   ],
   "A2": [
     "Geçmiş ve Biyografiler",

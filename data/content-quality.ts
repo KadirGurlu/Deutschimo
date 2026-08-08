@@ -1,7 +1,13 @@
 import rawContentQuality from "@/data/content-quality.json";
+import v33A1Quality from "@/data/v33-a1-quality.json";
 import type { ContentQualityRecord } from "@/types/content-quality";
 
-export const contentQuality = rawContentQuality as ContentQualityRecord[];
+const baseQuality = rawContentQuality as ContentQualityRecord[];
+const v33Map = new Map((v33A1Quality as ContentQualityRecord[]).map((record) => [record.unitId, record]));
+
+export const contentQuality: ContentQualityRecord[] = baseQuality.map(
+  (record) => v33Map.get(record.unitId) ?? record,
+);
 
 const qualityByUnitId = new Map(contentQuality.map((record) => [record.unitId, record]));
 

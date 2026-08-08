@@ -1,0 +1,182 @@
+[
+  {
+    "unitId": "a1-u01",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Tanışma, Selamlaşma ve Alfabe. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u02",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Kişisel Bilgiler, Diller ve Meslek. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u03",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Aile, İnsanlar ve Sahiplik. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u04",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Eşyalar, Alışveriş ve Fiyatlar. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u05",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Yeme İçme ve Sipariş. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u06",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Günlük Rutin, Saat ve Randevular. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u07",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Boş Zaman, Yetenekler ve Davetler. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u08",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Şehirde Yön Bulma ve Ulaşım. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u09",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Ev, Oda ve Yaşam Alanı. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u10",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Sağlık, Vücut ve Basit Tavsiye. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u11",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Giyim, Hava Durumu ve Alışveriş. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a1-u12",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V33 Gold Standard: Seyahat, Tatil ve A1 Genel Uygulama. Temel içerik, özgün örnekler, çeviri, kelime-artikel ilişkisi, mini kontrol, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  }
+]

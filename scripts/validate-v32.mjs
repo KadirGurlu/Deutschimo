@@ -4,7 +4,7 @@ const root=process.cwd(); const errors=[];
 const read=(p)=>fs.existsSync(path.join(root,p))?fs.readFileSync(path.join(root,p),"utf8"):"";
 const req=(p)=>{if(!fs.existsSync(path.join(root,p)))errors.push(`Eksik dosya: ${p}`)};
 const pkg=JSON.parse(read("package.json")||"{}");
-if(!/^32\./.test(String(pkg.version??""))) errors.push(`Surum V32 ailesinde olmali: ${pkg.version}`);
+const [pkgMajor]=String(pkg.version??"").split(".").map(Number); if(!Number.isFinite(pkgMajor)||pkgMajor<32) errors.push(`Surum en az 32.x olmali: ${pkg.version}`);
 for(const name of ["validate:v32","test:e2e:v32","release:v32"]) if(!pkg.scripts?.[name]) errors.push(`Eksik npm scripti: ${name}`);
 for(const name of ["prebuild","quality:check","vercel-build"]) if(!String(pkg.scripts?.[name]??"").includes("validate:v32")) errors.push(`${name} V32 kontrolunu calistirmiyor.`);
 [

@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "a1-u01",
+    "cefrCanDo": [
+      "Basit bir selamlaşmayı başlatıp bitirebilirim.",
+      "Kendimi ad, şehir ve ülke bilgisiyle tanıtabilirim.",
+      "Ad ve köken hakkında kısa sorular sorabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "İlk karşılaşmada resmî Sie ile samimi du arasındaki seçim ortama bağlıdır; emin olmadığında resmî Sie güvenli bir başlangıçtır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Sophie",
+        "de": "Guten Morgen! Ich heiße Sophie.",
+        "tr": "Günaydın! Benim adım Sophie."
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Hallo Sophie. Ich bin Jonas.",
+        "tr": "Merhaba Sophie. Ben Jonas."
+      },
+      {
+        "speaker": "Sophie",
+        "de": "Woher kommst du?",
+        "tr": "Nereden geliyorsun?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ich komme aus Österreich. Und du?",
+        "tr": "Avusturya'dan geliyorum. Ya sen?"
+      },
+      {
+        "speaker": "Sophie",
+        "de": "Ich komme aus Frankreich und wohne jetzt in Bonn.",
+        "tr": "Fransa'dan geliyorum ve şimdi Bonn'da yaşıyorum."
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Schön, dich kennenzulernen. Bis später!",
+        "tr": "Tanıştığımıza sevindim. Sonra görüşürüz!"
+      }
+    ],
+    "reading": {
+      "de": "Im Deutschkurs sitzt Emma neben Leon. Emma kommt aus Belgien und wohnt seit kurzem in Mainz. Leon wohnt in Mainz, aber seine Familie lebt in Dresden. Vor dem Unterricht sprechen sie über ihre Namen und Herkunft. Danach beginnt die Lehrerin mit einer kurzen Vorstellungsrunde.",
+      "tr": "Almanca kursunda Emma, Leon'un yanında oturuyor. Emma Belçika'dan geliyor ve kısa süredir Mainz'da yaşıyor. Leon Mainz'da yaşıyor ama ailesi Dresden'da. Dersten önce adları ve kökenleri hakkında konuşuyorlar. Sonra öğretmen kısa bir tanışma turu başlatıyor."
+    },
+    "listening": {
+      "de": "Eine neue Teilnehmerin kommt in den Kurs. Sie sagt: „Guten Tag, ich heiße Marie Klein. Ich komme aus der Schweiz und wohne in Mannheim.“ Der Lehrer fragt: „Wie schreibt man Klein?“ Marie buchstabiert: „K-L-E-I-N.“ Dann setzt sie sich neben Hannah.",
+      "tr": "Kursa yeni bir katılımcı geliyor. “İyi günler, adım Marie Klein. İsviçre'den geliyorum ve Mannheim'da yaşıyorum.” diyor. Öğretmen “Klein nasıl yazılıyor?” diye soruyor. Marie “K-L-E-I-N” diye heceliyor. Sonra Hannah'nın yanına oturuyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u01-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u01-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u01-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u01-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u01-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u01-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "4-6 kısa cümleyle kendini tanıt: adın, yaşadığın şehir, geldiğin ülke ve bildiğin bir selamlaşma/vedalaşma ifadesi olsun.",
+    "speakingPrompt": "30-45 saniye konuş: adını söyle, nereden geldiğini ve nerede yaşadığını anlat; ardından karşındaki kişiye iki basit soru sor.",
+    "realLifeMission": "Bir kursun ilk gününde yeni bir öğrenciyle Almanca tanış: selam ver, kendini tanıt, adını sor ve vedalaş.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u02",
+    "cefrCanDo": [
+      "Mesleğimi veya eğitimimi basit cümlelerle söyleyebilirim.",
+      "Telefon numarası ve yaş gibi temel bilgileri anlayıp söyleyebilirim.",
+      "Birinin mesleği ve konuştuğu diller hakkında soru sorabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Almancada meslek adları genel tanıtımda çoğu zaman artikelsiz kullanılır; kadın/erkek meslek biçimleri yazılış bakımından farklı olabilir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Nora",
+        "de": "Was bist du von Beruf?",
+        "tr": "Mesleğin ne?"
+      },
+      {
+        "speaker": "Felix",
+        "de": "Ich bin Koch. Und du?",
+        "tr": "Aşçıyım. Ya sen?"
+      },
+      {
+        "speaker": "Nora",
+        "de": "Ich studiere Chemie.",
+        "tr": "Kimya okuyorum."
+      },
+      {
+        "speaker": "Felix",
+        "de": "Welche Sprachen sprichst du?",
+        "tr": "Hangi dilleri konuşuyorsun?"
+      },
+      {
+        "speaker": "Nora",
+        "de": "Deutsch, Englisch und ein bisschen Spanisch.",
+        "tr": "Almanca, İngilizce ve biraz İspanyolca."
+      },
+      {
+        "speaker": "Felix",
+        "de": "Super. Ich lerne gerade Englisch.",
+        "tr": "Harika. Ben şu anda İngilizce öğreniyorum."
+      }
+    ],
+    "reading": {
+      "de": "Paul ist 27 Jahre alt und arbeitet in einem Hotel in Freiburg. Er spricht Deutsch und Italienisch. Seine Kollegin Elisa studiert am Abend Wirtschaft. Für einen Kurs braucht Elisa Pauls Telefonnummer. Paul schreibt die Nummer auf einen kleinen Zettel.",
+      "tr": "Paul 27 yaşında ve Freiburg'da bir otelde çalışıyor. Almanca ve İtalyanca konuşuyor. İş arkadaşı Elisa akşamları işletme okuyor. Bir kurs için Elisa'nın Paul'ün telefon numarasına ihtiyacı var. Paul numarayı küçük bir kâğıda yazıyor."
+    },
+    "listening": {
+      "de": "Am Telefon sagt ein Mann langsam: „Mein Name ist David Roth. Ich bin 31 Jahre alt. Ich arbeite als Techniker. Meine Nummer ist 0157 332 90 41.“ Die Mitarbeiterin wiederholt die Nummer und fragt nach seiner E-Mail-Adresse.",
+      "tr": "Telefonda bir adam yavaşça şöyle diyor: “Adım David Roth. 31 yaşındayım. Teknisyen olarak çalışıyorum. Numaram 0157 332 90 41.” Görevli numarayı tekrar ediyor ve e-posta adresini soruyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u02-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u02-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u02-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u02-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u02-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u02-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "5-6 cümlelik kısa bir profil yaz: yaş, eğitim/meslek, şehir, iki dil ve isteğe bağlı bir iletişim bilgisi kullan.",
+    "speakingPrompt": "40 saniye boyunca kendini meslek/eğitim ve diller açısından tanıt; sonra bir kişinin mesleğini sor.",
+    "realLifeMission": "Bir dil kursu kayıt masasında adını, yaşını, mesleğini/öğrenciliğini ve konuştuğun dilleri Almanca söyle.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u03",
+    "cefrCanDo": [
+      "Aile bireylerimi basit ifadelerle tanıtabilirim.",
+      "mein/dein kullanarak sahiplik bildirebilirim.",
+      "Kardeş ve ebeveynler hakkında kısa soru-cevap yapabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Almanca aile isimlerini artikel ve mümkünse çoğul biçimiyle öğrenmek iyelik artikellerini doğru seçmeyi kolaylaştırır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Marie",
+        "de": "Ist das deine Familie?",
+        "tr": "Bu senin ailen mi?"
+      },
+      {
+        "speaker": "Leon",
+        "de": "Ja. Das ist meine Mutter Anna.",
+        "tr": "Evet. Bu annem Anna."
+      },
+      {
+        "speaker": "Marie",
+        "de": "Und wer ist der Mann neben ihr?",
+        "tr": "Peki yanındaki adam kim?"
+      },
+      {
+        "speaker": "Leon",
+        "de": "Das ist mein Vater Robert.",
+        "tr": "Bu babam Robert."
+      },
+      {
+        "speaker": "Marie",
+        "de": "Hast du Geschwister?",
+        "tr": "Kardeşin var mı?"
+      },
+      {
+        "speaker": "Leon",
+        "de": "Ja, ich habe eine Schwester. Sie heißt Julia.",
+        "tr": "Evet, bir kız kardeşim var. Adı Julia."
+      }
+    ],
+    "reading": {
+      "de": "Clara lebt mit ihrem Bruder Ben in Aachen. Ihre Eltern wohnen in einer kleinen Stadt in der Nähe. Am Sonntag besucht die Familie oft die Großeltern. Clara bringt Kuchen mit, Ben macht Kaffee. Dann essen alle zusammen und erzählen von ihrer Woche.",
+      "tr": "Clara, erkek kardeşi Ben ile Aachen'da yaşıyor. Ebeveynleri yakınlardaki küçük bir şehirde yaşıyor. Pazar günleri aile sık sık büyükanne ve büyükbabayı ziyaret ediyor. Clara kek getiriyor, Ben kahve yapıyor. Sonra herkes birlikte yemek yiyor ve haftasını anlatıyor."
+    },
+    "listening": {
+      "de": "Ein Mann zeigt ein Foto und sagt: „Hier ist meine Familie. Meine Frau heißt Eva. Wir haben zwei Kinder: einen Sohn und eine Tochter. Mein Sohn ist zehn und meine Tochter ist sieben. Meine Eltern wohnen auch in unserer Stadt.“",
+      "tr": "Bir adam bir fotoğraf gösterip şöyle diyor: “İşte ailem. Eşimin adı Eva. İki çocuğumuz var: bir oğul ve bir kız. Oğlum on, kızım yedi yaşında. Ebeveynlerim de şehrimizde yaşıyor.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u03-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u03-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u03-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u03-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u03-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u03-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Ailenden veya hayalî bir aileden 5 kısa cümleyle söz et; en az üç iyelik artikeli kullan.",
+    "speakingPrompt": "Bir aile fotoğrafını anlatıyormuş gibi 45 saniye konuş: en az üç kişiyi tanıt ve bir akrabalık sorusu sor.",
+    "realLifeMission": "Yeni bir arkadaşına telefonundaki bir aile fotoğrafını Almanca anlat; iki kişiyi tanıt ve “Hast du Geschwister?” sorusuna cevap ver.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u04",
+    "cefrCanDo": [
+      "Basit ürün ve eşya isimlerini artikel ile kullanabilirim.",
+      "Fiyat sorup temel fiyatları anlayabilirim.",
+      "Bir ürünü istemek veya istemediğimi söyleyebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Almanya, Avusturya ve İsviçre'de fiyatlar yazılı olarak virgülle gösterilebilir; sözlü pratikte para birimini açık söylemek anlaşılmayı kolaylaştırır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Verkäuferin",
+        "de": "Guten Tag. Kann ich helfen?",
+        "tr": "İyi günler. Yardımcı olabilir miyim?"
+      },
+      {
+        "speaker": "Kunde",
+        "de": "Ja, ich suche eine Lampe.",
+        "tr": "Evet, bir lamba arıyorum."
+      },
+      {
+        "speaker": "Verkäuferin",
+        "de": "Diese Lampe kostet 28 Euro.",
+        "tr": "Bu lamba 28 avro."
+      },
+      {
+        "speaker": "Kunde",
+        "de": "Und der kleine Tisch?",
+        "tr": "Peki küçük masa?"
+      },
+      {
+        "speaker": "Verkäuferin",
+        "de": "Der kostet 65 Euro.",
+        "tr": "O 65 avro."
+      },
+      {
+        "speaker": "Kunde",
+        "de": "Die Lampe nehme ich. Den Tisch brauche ich nicht.",
+        "tr": "Lambayı alıyorum. Masaya ihtiyacım yok."
+      }
+    ],
+    "reading": {
+      "de": "Jonas zieht in ein neues Zimmer. Er hat schon ein Bett und einen Schrank, aber keinen Schreibtisch. In einem Möbelgeschäft findet er einen einfachen Tisch für 79 Euro und eine Lampe für 24 Euro. Der Tisch ist gut, aber die Lampe ist ihm zu teuer. Er kauft nur den Tisch.",
+      "tr": "Jonas yeni bir odaya taşınıyor. Zaten bir yatağı ve dolabı var ama çalışma masası yok. Bir mobilya mağazasında 79 avroya sade bir masa ve 24 avroya bir lamba buluyor. Masa iyi ama lamba ona pahalı geliyor. Sadece masayı satın alıyor."
+    },
+    "listening": {
+      "de": "Im Geschäft hört man eine Durchsage: „Heute kostet der weiße Stuhl nur 39 Euro. Der kleine Schreibtisch kostet 89 Euro. Eine schwarze Lampe kostet 19 Euro.“ Eine Kundin fragt danach nach dem Schreibtisch.",
+      "tr": "Mağazada bir anons duyuluyor: “Bugün beyaz sandalye yalnızca 39 avro. Küçük çalışma masası 89 avro. Siyah bir lamba 19 avro.” Sonra bir müşteri çalışma masasını soruyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u04-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u04-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u04-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u04-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u04-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u04-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Yeni bir oda için alışveriş listesi yaz: dört eşya, iki fiyat ve bir “brauchen/kaufen” cümlesi kullan.",
+    "speakingPrompt": "Bir mağazada 40 saniyelik rol konuşması yap: bir ürün ara, fiyatını sor, bir ürünü al ve bir ürünü reddet.",
+    "realLifeMission": "Bir ikinci el eşya mağazasında bütçene uygun iki ürün seç; fiyat sor ve neye ihtiyacın olmadığını da söyle.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u05",
+    "cefrCanDo": [
+      "Basit bir yiyecek-içecek siparişi verebilirim.",
+      "Ne istediğimi ve istemediğimi söyleyebilirim.",
+      "Hesap isteyebilir ve temel menü bilgisini anlayabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Kafe ve restoranlarda “bitte” kullanmak kısa sipariş cümlelerini daha nazik yapar; uzun cümle kuramasan bile açık bir isim + bitte çoğu günlük durumda anlaşılırdır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Kellner",
+        "de": "Guten Abend. Was möchten Sie trinken?",
+        "tr": "İyi akşamlar. Ne içmek istersiniz?"
+      },
+      {
+        "speaker": "Gast",
+        "de": "Einen Tee, bitte.",
+        "tr": "Bir çay, lütfen."
+      },
+      {
+        "speaker": "Kellner",
+        "de": "Und möchten Sie etwas essen?",
+        "tr": "Bir şey yemek ister misiniz?"
+      },
+      {
+        "speaker": "Gast",
+        "de": "Ja, eine Gemüsesuppe.",
+        "tr": "Evet, bir sebze çorbası."
+      },
+      {
+        "speaker": "Kellner",
+        "de": "Gern. Sonst noch etwas?",
+        "tr": "Memnuniyetle. Başka bir şey?"
+      },
+      {
+        "speaker": "Gast",
+        "de": "Nein, danke. Später die Rechnung, bitte.",
+        "tr": "Hayır, teşekkürler. Sonra hesabı, lütfen."
+      }
+    ],
+    "reading": {
+      "de": "Lea trifft ihren Kollegen Max in einem kleinen Café. Max bestellt einen Kaffee und ein Käsebrot. Lea trinkt lieber Tee und nimmt eine Suppe. Sie isst kein Fleisch. Nach dem Essen bezahlt Max seinen Kaffee, Lea bezahlt Tee und Suppe.",
+      "tr": "Lea iş arkadaşı Max ile küçük bir kafede buluşuyor. Max bir kahve ve peynirli ekmek sipariş ediyor. Lea çayı tercih ediyor ve bir çorba alıyor. Et yemiyor. Yemekten sonra Max kahvesini, Lea ise çay ve çorbayı ödüyor."
+    },
+    "listening": {
+      "de": "Eine Servicekraft sagt: „Heute haben wir Tomatensuppe, Salat und Nudeln. Die Suppe kostet fünf Euro, der Salat sechs Euro. Kaffee kostet drei Euro. Wasser kostet zwei Euro.“ Ein Gast bestellt Suppe und Wasser.",
+      "tr": "Bir servis çalışanı şöyle diyor: “Bugün domates çorbası, salata ve makarna var. Çorba beş avro, salata altı avro. Kahve üç avro. Su iki avro.” Bir müşteri çorba ve su sipariş ediyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u05-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u05-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u05-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u05-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u05-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u05-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Bir kafeye kısa not yaz: ne yemek ve içmek istediğini, ne yemediğini ve hesabı istediğini 4-6 cümlede belirt.",
+    "speakingPrompt": "Restoran rolü yap: içecek ve yemek sipariş et, bir tercihini belirt ve sonunda hesabı iste.",
+    "realLifeMission": "Bir kafede arkadaşınla iki farklı sipariş ver; bir ürünün olmadığını/istenmediğini kein veya nicht ile söyle.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u06",
+    "cefrCanDo": [
+      "Günlük rutinimi saatlerle anlatabilirim.",
+      "Bir randevunun saatini sorup anlayabilirim.",
+      "Ayrılabilen fiilleri basit ana cümlede kullanabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Almanca randevu iletişiminde 24 saat biçimi yazılı ilanlarda çok yaygındır; günlük konuşmada 18 Uhr gibi açık saatler başlangıç seviyesi için güvenlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Hannah",
+        "de": "Wann fängt dein Kurs an?",
+        "tr": "Kursun ne zaman başlıyor?"
+      },
+      {
+        "speaker": "Tim",
+        "de": "Um neun Uhr. Ich stehe um sieben auf.",
+        "tr": "Saat dokuzda. Yedide kalkıyorum."
+      },
+      {
+        "speaker": "Hannah",
+        "de": "Und was machst du am Nachmittag?",
+        "tr": "Öğleden sonra ne yapıyorsun?"
+      },
+      {
+        "speaker": "Tim",
+        "de": "Ich arbeite bis vier und kaufe danach ein.",
+        "tr": "Dörde kadar çalışıyorum, sonra alışveriş yapıyorum."
+      },
+      {
+        "speaker": "Hannah",
+        "de": "Hast du um sechs Zeit?",
+        "tr": "Saat altıda vaktin var mı?"
+      },
+      {
+        "speaker": "Tim",
+        "de": "Ja. Ruf mich bitte um halb sechs an.",
+        "tr": "Evet. Lütfen beni beş buçukta ara."
+      }
+    ],
+    "reading": {
+      "de": "Eva beginnt ihren Tag früh. Um sechs Uhr dreißig steht sie auf. Um sieben frühstückt sie. Ihr Zug fährt um acht Uhr, und die Arbeit fängt um neun an. Am Nachmittag arbeitet sie bis fünf. Danach kauft sie ein und kocht zu Hause.",
+      "tr": "Eva güne erken başlıyor. Altı buçukta kalkıyor. Yedide kahvaltı yapıyor. Treni sekizde kalkıyor ve iş dokuzda başlıyor. Öğleden sonra beşe kadar çalışıyor. Sonra alışveriş yapıyor ve evde yemek yapıyor."
+    },
+    "listening": {
+      "de": "Auf der Mailbox hört man: „Hallo Tom, hier ist Nina. Unser Termin ist nicht um drei, sondern um vier Uhr. Bitte ruf mich am Vormittag an. Der Kurs fängt danach um halb sechs an.“",
+      "tr": "Telesekreterde şu duyuluyor: “Merhaba Tom, ben Nina. Randevumuz üçte değil, dörtte. Lütfen beni öğleden önce ara. Kurs bundan sonra beş buçukta başlıyor.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u06-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u06-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u06-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u06-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u06-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u06-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Bir hafta içi gününü 6 kısa cümleyle yaz; en az iki saat ve iki ayrılabilen fiil kullan.",
+    "speakingPrompt": "Bir gününü 45 saniyede anlat; ne zaman kalktığını, çalıştığını/okuduğunu ve akşam ne yaptığını söyle.",
+    "realLifeMission": "Bir arkadaşınla aynı gün buluşmak için Almanca saat belirle; teklif et, uygun olup olmadığını söyle ve kesin saati tekrar et.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u07",
+    "cefrCanDo": [
+      "Hobilerimi ve sevdiğim etkinlikleri söyleyebilirim.",
+      "Yapabildiğim bir şeyi können ile ifade edebilirim.",
+      "Basit daveti kabul veya reddedebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Davetlerde uzun açıklama yapmak zorunda değilsin; “Ja, gern.” ve “Leider habe ich keine Zeit.” gibi kısa, nazik cevaplar A1 iletişimi için yeterlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Lisa",
+        "de": "Was machst du am Wochenende?",
+        "tr": "Hafta sonu ne yapıyorsun?"
+      },
+      {
+        "speaker": "Ben",
+        "de": "Ich fahre Fahrrad und höre gern Musik.",
+        "tr": "Bisiklete biniyorum ve müzik dinlemeyi seviyorum."
+      },
+      {
+        "speaker": "Lisa",
+        "de": "Kannst du auch schwimmen?",
+        "tr": "Yüzebiliyor musun?"
+      },
+      {
+        "speaker": "Ben",
+        "de": "Ja, aber nicht sehr gut.",
+        "tr": "Evet ama çok iyi değil."
+      },
+      {
+        "speaker": "Lisa",
+        "de": "Möchtest du am Sonntag mit ins Schwimmbad kommen?",
+        "tr": "Pazar günü bizimle yüzme havuzuna gelmek ister misin?"
+      },
+      {
+        "speaker": "Ben",
+        "de": "Ja, gern. Ich habe am Sonntag Zeit.",
+        "tr": "Evet, memnuniyetle. Pazar vaktim var."
+      }
+    ],
+    "reading": {
+      "de": "Am Samstag hat Mia frei. Am Vormittag liest sie gern und hört Musik. Am Nachmittag trifft sie ihre Freundin Paula. Paula kann sehr gut tanzen, Mia kann gut kochen. Am Abend machen sie zusammen Pizza und sehen einen Film.",
+      "tr": "Cumartesi Mia boş. Öğleden önce okumayı ve müzik dinlemeyi seviyor. Öğleden sonra arkadaşı Paula ile buluşuyor. Paula çok iyi dans edebiliyor, Mia iyi yemek yapabiliyor. Akşam birlikte pizza yapıp film izliyorlar."
+    },
+    "listening": {
+      "de": "Jonas ruft seinen Freund an: „Hallo Felix, hast du morgen Zeit? Wir möchten im Park Fußball spielen. Wir treffen uns um elf Uhr am Eingang. Wenn du nicht kannst, ist das kein Problem.“ Felix sagt später zu.",
+      "tr": "Jonas arkadaşını arıyor: “Merhaba Felix, yarın vaktin var mı? Parkta futbol oynamak istiyoruz. Saat on birde girişte buluşuyoruz. Gelemezsen sorun değil.” Felix daha sonra kabul ediyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u07-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u07-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u07-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u07-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u07-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u07-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Bir arkadaşına 4-6 cümlelik kısa davet yaz: etkinlik, gün, saat ve buluşma yeri olsun.",
+    "speakingPrompt": "45 saniye hobilerinden söz et; bir yapabildiğin şeyi ve bir sevdiğin etkinliği söyle, sonra karşındakini davet et.",
+    "realLifeMission": "Hafta sonu için Almanca bir plan yap: bir etkinlik öner, saat belirle ve karşı tarafın kabul/ret cevabına uygun karşılık ver.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u08",
+    "cefrCanDo": [
+      "Basit yön tarifini anlayıp verebilirim.",
+      "Toplu taşıma aracını söyleyebilirim.",
+      "Bir yabancıya resmî biçimde yol sorabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Tanımadığın bir kişiye yol sorarken “Entschuldigung” ile başlamak ve Sie kullanmak günlük iletişimde nazik ve güvenli bir seçimdir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Touristin",
+        "de": "Entschuldigung, wo ist das Stadtmuseum?",
+        "tr": "Affedersiniz, şehir müzesi nerede?"
+      },
+      {
+        "speaker": "Passant",
+        "de": "Gehen Sie hier geradeaus.",
+        "tr": "Buradan dümdüz gidin."
+      },
+      {
+        "speaker": "Touristin",
+        "de": "Bis zur Ampel?",
+        "tr": "Trafik ışığına kadar mı?"
+      },
+      {
+        "speaker": "Passant",
+        "de": "Ja. Biegen Sie dort links ab.",
+        "tr": "Evet. Orada sola dönün."
+      },
+      {
+        "speaker": "Touristin",
+        "de": "Ist es weit?",
+        "tr": "Uzak mı?"
+      },
+      {
+        "speaker": "Passant",
+        "de": "Nein, nur fünf Minuten zu Fuß.",
+        "tr": "Hayır, yürüyerek sadece beş dakika."
+      }
+    ],
+    "reading": {
+      "de": "Daniel ist neu in der Stadt und sucht die Bibliothek. Am Bahnhof fragt er eine Frau nach dem Weg. Er geht zuerst bis zur großen Kreuzung, dann rechts und noch zweihundert Meter geradeaus. Die Bibliothek liegt neben einem Café.",
+      "tr": "Daniel şehirde yeni ve kütüphaneyi arıyor. İstasyonda bir kadına yolu soruyor. Önce büyük kavşağa kadar gidiyor, sonra sağa dönüyor ve iki yüz metre daha düz gidiyor. Kütüphane bir kafenin yanında."
+    },
+    "listening": {
+      "de": "Eine Ansage in der U-Bahn: „Nächster Halt: Rathaus. Umsteigen zu den Buslinien 3 und 8. Für das Stadtmuseum steigen Sie bitte hier aus.“ Zwei Touristen hören die Ansage und steigen aus.",
+      "tr": "Metroda bir anons: “Sonraki durak: Belediye. 3 ve 8 numaralı otobüslere aktarma. Şehir müzesi için lütfen burada inin.” İki turist anonsu dinliyor ve iniyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u08-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u08-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u08-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u08-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u08-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u08-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Bir başlangıç noktasından bir hedefe 4 kısa yön cümlesi yaz; geradeaus, links/rechts ve en az bir ulaşım ifadesi kullan.",
+    "speakingPrompt": "Bir turist sana yol soruyormuş gibi 45 saniye konuş; resmî Sie ile üç yönlendirme ver.",
+    "realLifeMission": "İstasyondan bir müzeye gitmek isteyen kişiye Almanca yol tarif et ve hangi durakta inmesi gerektiğini söyle.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u09",
+    "cefrCanDo": [
+      "Evimi ve odalarımı basit cümlelerle tanıtabilirim.",
+      "Bir eşyanın nerede olduğunu söyleyebilirim.",
+      "Basit ev ilanındaki oda, kira ve özellik bilgilerini anlayabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Konut ilanlarında “Zimmer” sayısı oda sayısını ifade eder; başlangıçta m², Miete ve möbliert gibi sık görülen anahtar kelimeleri tanımak yeterlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Anna",
+        "de": "Wie ist deine neue Wohnung?",
+        "tr": "Yeni dairen nasıl?"
+      },
+      {
+        "speaker": "Paul",
+        "de": "Sie ist klein, aber sehr hell.",
+        "tr": "Küçük ama çok aydınlık."
+      },
+      {
+        "speaker": "Anna",
+        "de": "Wie viele Zimmer hat sie?",
+        "tr": "Kaç odası var?"
+      },
+      {
+        "speaker": "Paul",
+        "de": "Zwei Zimmer und eine Küche.",
+        "tr": "İki oda ve bir mutfak."
+      },
+      {
+        "speaker": "Anna",
+        "de": "Gibt es auch einen Balkon?",
+        "tr": "Balkon da var mı?"
+      },
+      {
+        "speaker": "Paul",
+        "de": "Ja. Der Balkon ist neben dem Wohnzimmer.",
+        "tr": "Evet. Balkon oturma odasının yanında."
+      }
+    ],
+    "reading": {
+      "de": "Für ihr Studium sucht Nele ein Zimmer in Nürnberg. Sie findet eine Anzeige: ein möbliertes Zimmer, 18 Quadratmeter, 420 Euro im Monat. Die Küche und das Bad sind gemeinsam. Die Wohnung liegt nahe der Universität. Nele schreibt der Vermieterin eine kurze Nachricht.",
+      "tr": "Nele eğitimi için Nürnberg'de bir oda arıyor. Bir ilan buluyor: mobilyalı bir oda, 18 metrekare, aylık 420 avro. Mutfak ve banyo ortak. Daire üniversiteye yakın. Nele ev sahibine kısa bir mesaj yazıyor."
+    },
+    "listening": {
+      "de": "Ein Mann beschreibt sein Wohnzimmer: „Das Sofa steht an der Wand. Vor dem Sofa steht ein kleiner Tisch. Auf dem Tisch liegt eine Zeitung. Neben dem Fenster steht eine Lampe. Es gibt auch ein großes Regal.“",
+      "tr": "Bir adam oturma odasını anlatıyor: “Kanepe duvarın yanında duruyor. Kanepenin önünde küçük bir masa var. Masanın üzerinde bir gazete duruyor. Pencerenin yanında bir lamba var. Büyük bir raf da var.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u09-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u09-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u09-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u09-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u09-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u09-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Basit bir oda ilanı yaz: oda sayısı/oda türü, kira, iki eşya veya özellik ve bir konum bilgisi ver.",
+    "speakingPrompt": "Evini veya hayalî bir odayı 45 saniye anlat; en az üç eşyanın yerini söyle.",
+    "realLifeMission": "Bir ev ilanına bakıp arkadaşına Almanca olarak üç önemli bilgi aktar: oda, kira ve bir özellik.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u10",
+    "cefrCanDo": [
+      "Basit sağlık şikâyetimi söyleyebilirim.",
+      "Birinin şikâyetine temel tavsiye verebilirim.",
+      "Eczane veya doktor ihtiyacını ifade edebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Sağlık durumlarında kısa ve açık cümleler önemlidir; ciddi veya acil durumlarda dil alıştırması yerine profesyonel sağlık hizmetine başvurmak gerekir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Nina",
+        "de": "Du siehst müde aus. Was ist los?",
+        "tr": "Yorgun görünüyorsun. Ne oldu?"
+      },
+      {
+        "speaker": "Tom",
+        "de": "Mir tut der Kopf weh.",
+        "tr": "Başım ağrıyor."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Hast du auch Fieber?",
+        "tr": "Ateşin de var mı?"
+      },
+      {
+        "speaker": "Tom",
+        "de": "Nein, aber ich bin sehr müde.",
+        "tr": "Hayır ama çok yorgunum."
+      },
+      {
+        "speaker": "Nina",
+        "de": "Du musst dich heute ausruhen.",
+        "tr": "Bugün dinlenmen gerekiyor."
+      },
+      {
+        "speaker": "Tom",
+        "de": "Ja. Ich trinke noch Wasser und gehe früh schlafen.",
+        "tr": "Evet. Biraz daha su içip erken yatacağım."
+      }
+    ],
+    "reading": {
+      "de": "Am Montag fühlt sich Carla nicht gut. Sie hat Husten und Halsschmerzen. Am Vormittag bleibt sie zu Hause und trinkt warmen Tee. Am Nachmittag geht sie zur Apotheke. Dort beschreibt sie ihre Beschwerden mit kurzen Sätzen.",
+      "tr": "Pazartesi Carla kendini iyi hissetmiyor. Öksürüğü ve boğaz ağrısı var. Öğleden önce evde kalıyor ve ılık çay içiyor. Öğleden sonra eczaneye gidiyor. Orada şikâyetlerini kısa cümlelerle anlatıyor."
+    },
+    "listening": {
+      "de": "Eine Person sagt am Telefon: „Ich kann heute nicht zum Kurs kommen. Ich habe Fieber und mein Rücken tut weh. Ich bleibe zu Hause und ruhe mich aus. Morgen melde ich mich noch einmal.“",
+      "tr": "Bir kişi telefonda şöyle diyor: “Bugün kursa gelemiyorum. Ateşim var ve sırtım ağrıyor. Evde kalıp dinleneceğim. Yarın tekrar haber vereceğim.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u10-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u10-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u10-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u10-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u10-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u10-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Bir kursa 4 kısa cümlelik mazeret mesajı yaz: sağlık sorunu, bugün yapamadığın şey ve basit planın olsun.",
+    "speakingPrompt": "40 saniye bir sağlık şikâyetini anlat; sonra başka bir şikâyet için iki basit tavsiye söyle.",
+    "realLifeMission": "Eczanede temel bir şikâyeti Almanca anlat ve nerende ağrı olduğunu söyle; karşı tarafın kısa tavsiyesini tekrar et.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u11",
+    "cefrCanDo": [
+      "Kıyafet, renk ve beden hakkında temel bilgi verebilirim.",
+      "Mağazada hangi ürünü istediğimi gösterebilirim.",
+      "Hava durumuna göre basit kıyafet seçimi söyleyebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Kıyafet mağazasında beden sistemleri markaya göre değişebilir; A1 düzeyinde Größe + sayı/harf ve renk kelimelerini anlamak temel iletişim için yeterlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Verkäufer",
+        "de": "Kann ich Ihnen helfen?",
+        "tr": "Size yardımcı olabilir miyim?"
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Ja, ich suche eine warme Jacke.",
+        "tr": "Evet, sıcak tutan bir ceket arıyorum."
+      },
+      {
+        "speaker": "Verkäufer",
+        "de": "Welche Farbe möchten Sie?",
+        "tr": "Hangi rengi istersiniz?"
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Blau oder schwarz.",
+        "tr": "Mavi veya siyah."
+      },
+      {
+        "speaker": "Verkäufer",
+        "de": "Diese blaue Jacke ist in Größe M da.",
+        "tr": "Bu mavi ceket M bedende var."
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Gut. Ich probiere sie an.",
+        "tr": "İyi. Onu deniyorum."
+      }
+    ],
+    "reading": {
+      "de": "Heute ist es in Dresden kalt und regnerisch. Felix trägt einen warmen Mantel und schwarze Schuhe. Seine Schwester Lea braucht eine neue Jacke. Nach der Arbeit gehen sie zusammen in ein Geschäft. Lea sucht Größe S und möchte keine rote Jacke.",
+      "tr": "Bugün Dresden'da hava soğuk ve yağmurlu. Felix sıcak tutan bir palto ve siyah ayakkabılar giyiyor. Kız kardeşi Lea'nın yeni bir cekete ihtiyacı var. İşten sonra birlikte bir mağazaya gidiyorlar. Lea S beden arıyor ve kırmızı ceket istemiyor."
+    },
+    "listening": {
+      "de": "Im Wetterbericht heißt es: „Am Vormittag ist es kühl und windig. Am Nachmittag kommt Regen. Die Temperatur liegt bei zwölf Grad.“ Eine Person entscheidet sich deshalb für eine Jacke und feste Schuhe.",
+      "tr": "Hava raporunda şöyle deniyor: “Öğleden önce hava serin ve rüzgârlı. Öğleden sonra yağmur geliyor. Sıcaklık on iki derece.” Bu yüzden bir kişi ceket ve sağlam ayakkabı seçiyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u11-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u11-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u11-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u11-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u11-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u11-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Bir mağazaya kısa alışveriş notu yaz: aradığın kıyafet, renk, beden ve istemediğin bir özellik olsun.",
+    "speakingPrompt": "Bir mağaza rolünde 45 saniye konuş: kıyafet sor, renk/beden belirt ve bir ürünü değerlendir.",
+    "realLifeMission": "Bugünün hava durumuna uygun iki kıyafet seç ve nedenini çok basit Almanca cümlelerle söyle.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  },
+  {
+    "id": "a1-u12",
+    "cefrCanDo": [
+      "Geçmişte yaptığım basit bir etkinliği Perfekt ile anlatabilirim.",
+      "Seyahat ulaşımı ve temel konaklama kelimelerini kullanabilirim.",
+      "Kısa bir tatil/hafta sonu deneyimini sıralayabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım notu",
+      "text": "Perfekt'te Partizip II biçimleri her zaman tek kuralla tahmin edilemez; başlangıçta sık kullanılan fiilleri yardımcı fiiliyle birlikte öğrenmek en güvenli yöntemdir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Marie",
+        "de": "Wie war dein Wochenende?",
+        "tr": "Hafta sonun nasıldı?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Sehr schön. Ich bin nach Lübeck gefahren.",
+        "tr": "Çok güzeldi. Lübeck'e gittim."
+      },
+      {
+        "speaker": "Marie",
+        "de": "Was hast du dort gemacht?",
+        "tr": "Orada ne yaptın?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ich habe die Altstadt besucht und viele Fotos gemacht.",
+        "tr": "Eski şehri gezdim ve çok fotoğraf çektim."
+      },
+      {
+        "speaker": "Marie",
+        "de": "Bist du mit dem Zug gefahren?",
+        "tr": "Trenle mi gittin?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ja. Am Sonntagabend bin ich zurückgekommen.",
+        "tr": "Evet. Pazar akşamı geri döndüm."
+      }
+    ],
+    "reading": {
+      "de": "Am letzten Wochenende ist Clara mit dem Zug nach Weimar gefahren. Sie hat in einem kleinen Hotel übernachtet und am Samstag ein Museum besucht. Danach hat sie in einem Café Kuchen gegessen. Am Sonntag ist sie früh aufgestanden und durch den Park gegangen. Am Abend ist sie nach Hause gefahren.",
+      "tr": "Geçen hafta sonu Clara trenle Weimar'a gitti. Küçük bir otelde kaldı ve cumartesi bir müzeyi ziyaret etti. Sonra bir kafede kek yedi. Pazar erken kalktı ve parkta yürüdü. Akşam eve döndü."
+    },
+    "listening": {
+      "de": "Eine Reisende erzählt: „Unser Zug ist um zehn Uhr angekommen. Wir haben zuerst die Koffer ins Hotel gebracht. Danach haben wir die Stadt besucht. Am Abend haben wir in einem kleinen Restaurant gegessen. Die Reise war ruhig und schön.“",
+      "tr": "Bir yolcu şöyle anlatıyor: “Trenimiz saat onda vardı. Önce valizleri otele götürdük. Sonra şehri gezdik. Akşam küçük bir restoranda yemek yedik. Seyahat sakin ve güzeldi.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a1-u12-v33-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Okuma metninin ana konusu hangisidir?",
+        "options": [
+          "Kişilerin günlük bir iletişim durumu",
+          "Bir bilimsel araştırma",
+          "Uzun bir tarih anlatısı"
+        ],
+        "correctAnswer": "Kişilerin günlük bir iletişim durumu",
+        "explanation": "Metin A1 düzeyinde günlük ve somut bir iletişim durumuna odaklanır."
+      },
+      {
+        "id": "a1-u12-v33-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metindeki kişilerle ilgili doğru seçeneği işaretle.",
+        "options": [
+          "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+          "Metinde hiç kişi yoktur.",
+          "Metin yalnızca sayı listesidir."
+        ],
+        "correctAnswer": "Metinde en az bir kişi, yer veya günlük eylem bilgisi vardır.",
+        "explanation": "A1 okuma görevinde kişi, yer, zaman ve temel eylem bilgileri özellikle görünür tutulmuştur."
+      },
+      {
+        "id": "a1-u12-v33-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Metni ikinci kez okurken hangi bilgiyi özellikle bulmalısın?",
+        "options": [
+          "Kişi/yer/zaman gibi somut ayrıntıları",
+          "Yazarın akademik kaynakçasını",
+          "Soyut bir siyasi tartışmayı"
+        ],
+        "correctAnswer": "Kişi/yer/zaman gibi somut ayrıntıları",
+        "explanation": "CEFR A1 için somut ve doğrudan bilgiler önceliklidir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a1-u12-v33-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Dinleme metninde önce neyi belirlemek en yararlıdır?",
+        "options": [
+          "Konuyu ve ana durumu",
+          "Her kelimenin yazımını",
+          "Uzun bir özetin tüm ayrıntılarını"
+        ],
+        "correctAnswer": "Konuyu ve ana durumu",
+        "explanation": "İlk dinlemede genel durum; ikinci dinlemede ayrıntılar hedeflenir."
+      },
+      {
+        "id": "a1-u12-v33-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu dinleme A1 düzeyinde neden uygundur?",
+        "options": [
+          "Kısa, somut ve günlük bilgiler içerir.",
+          "Yalnızca soyut kavramlardan oluşur.",
+          "Çok uzun akademik cümleler kullanır."
+        ],
+        "correctAnswer": "Kısa, somut ve günlük bilgiler içerir.",
+        "explanation": "A1 dinleme materyali açık, kısa ve somut bağlama dayanır."
+      },
+      {
+        "id": "a1-u12-v33-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci dinlemede ne not etmelisin?",
+        "options": [
+          "İki veya üç anahtar bilgi",
+          "Bütün metni kelime kelime",
+          "Yalnızca bilmediğin kelimeleri"
+        ],
+        "correctAnswer": "İki veya üç anahtar bilgi",
+        "explanation": "Kısa notlar dinlerken önemli ayrıntıları yakalamayı kolaylaştırır."
+      }
+    ],
+    "writingPrompt": "Geçen hafta sonunu 6 kısa cümleyle anlat; en az üç Perfekt cümlesi ve iki seyahat kelimesi kullan.",
+    "speakingPrompt": "60 saniyelik basit bir hafta sonu/tatil anlatımı yap: nereye gittin, nasıl gittin, iki şey ne yaptın, nasıl geçti?",
+    "realLifeMission": "Bir arkadaşına kısa bir seyahat dönüşü anlat: ulaşım, konaklama ve iki geçmiş etkinlik bilgisi ver.",
+    "sourceMethod": "Deutschimo V33 için özgün olarak yazıldı. CEFR A1 iletişim hedefleri, Goethe A1 beceri kapsamı ve kullanıcı tarafından sağlanan A1 kaynaklarının konu dağılımı yalnızca kapsam/seviye referansı olarak kullanıldı; kaynak cümle ve görevleri kopyalanmadı."
+  }
+]

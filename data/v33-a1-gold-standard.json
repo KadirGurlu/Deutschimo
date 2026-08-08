@@ -1,0 +1,1880 @@
+[
+  {
+    "id": "a1-u01",
+    "intro": "Bu ünitede Almanca bir karşılaşmayı doğal biçimde başlatmayı, kendini tanıtmayı, ad ve köken sormayı, temel bilgileri hecelemeyi ve resmî-samimi hitabı ayırt etmeyi öğreneceksin.",
+    "goals": [
+      "Selamlaşmak ve vedalaşmak",
+      "Adını, yaşadığın yeri ve geldiğin ülkeyi söylemek",
+      "sein ve heißen fiillerini temel kişilerle kullanmak",
+      "Basit kişisel sorular sormak ve cevaplamak"
+    ],
+    "grammarTitle": "sein, heißen ve temel W-soruları",
+    "grammarExplanation": "Almancada kendini tanıtırken en sık kullanılan yapılardan ikisi sein ve heißen fiilleridir. Ich bin ... kimlik veya durum bildirir; Ich heiße ... ise adı söyler. W-sorularında soru kelimesi başta, çekimli fiil ikinci sırada bulunur: Wie heißt du? Wo wohnst du? Woher kommst du? Resmî hitapta Sie büyük harfle yazılır ve fiil çoğul çekimle kullanılır.",
+    "grammarColumns": [
+      {
+        "header": "Kişi",
+        "values": [
+          "ich",
+          "du",
+          "er/sie",
+          "wir",
+          "ihr",
+          "Sie"
+        ]
+      },
+      {
+        "header": "sein",
+        "values": [
+          "bin",
+          "bist",
+          "ist",
+          "sind",
+          "seid",
+          "sind"
+        ]
+      },
+      {
+        "header": "heißen",
+        "values": [
+          "heiße",
+          "heißt",
+          "heißt",
+          "heißen",
+          "heißt",
+          "heißen"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "Hallo — merhaba",
+      "Guten Morgen — günaydın",
+      "Guten Tag — iyi günler",
+      "Guten Abend — iyi akşamlar",
+      "Tschüs — hoşça kal",
+      "Auf Wiedersehen — görüşmek üzere",
+      "der Name — ad",
+      "der Vorname — ad / ilk isim",
+      "der Nachname — soyadı",
+      "heißen — adı olmak",
+      "sein — olmak",
+      "kommen — gelmek",
+      "wohnen — ikamet etmek",
+      "aus — -den/-dan",
+      "in — içinde / -de",
+      "buchstabieren — hecelemek"
+    ],
+    "examples": [
+      {
+        "de": "Ich heiße Sophie.",
+        "tr": "Benim adım Sophie."
+      },
+      {
+        "de": "Wie heißen Sie?",
+        "tr": "Adınız ne?"
+      },
+      {
+        "de": "Ich komme aus Spanien.",
+        "tr": "İspanya'dan geliyorum."
+      },
+      {
+        "de": "Wo wohnst du?",
+        "tr": "Nerede yaşıyorsun?"
+      },
+      {
+        "de": "Wir sind neu im Kurs.",
+        "tr": "Kursta yeniyiz."
+      },
+      {
+        "de": "Meyer schreibt man M-E-Y-E-R.",
+        "tr": "Meyer, M-E-Y-E-R diye yazılır."
+      }
+    ],
+    "warning": "du samimi hitaptır; Sie resmî hitaptır. Sie zamirini kişi hitabında her zaman büyük harfle yaz.",
+    "tip": "Yeni tanışma kalıplarını kendi adın, şehrin ve ülkenle üç kez yeniden kur. Böylece ezberlediğin cümleyi gerçek iletişime dönüştürürsün.",
+    "miniCheck": {
+      "question": "Resmî olarak “Adınız ne?” nasıl sorulur?",
+      "options": [
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Woher kommen Sie?"
+      ],
+      "correctAnswer": "Wie heißen Sie?"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Ich ___ Sophie.",
+      "answer": "heiße",
+      "acceptedAnswers": [
+        "heiße"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Ich",
+        "komme",
+        "aus",
+        "Italien."
+      ],
+      "answer": "Ich komme aus Italien."
+    },
+    "translation": {
+      "prompt": "“Ben Hamburg'da yaşıyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich wohne in Hamburg.",
+      "acceptedAnswers": [
+        "Ich wohne in Hamburg",
+        "Ich wohne in Hamburg."
+      ]
+    },
+    "dialogue": {
+      "prompt": "Lena: Guten Tag! Ich heiße Lena. Wie heißen Sie? — Herr Berg: ___",
+      "options": [
+        "Ich heiße Paul Berg.",
+        "Ich wohne morgen.",
+        "Tschüs, Lena."
+      ],
+      "answer": "Ich heiße Paul Berg."
+    },
+    "trueFalse": {
+      "prompt": "“Woher kommst du?” sorusu kişinin nereden geldiğini sorar.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Vedalaşma ifadesi olan iki seçeneği seç.",
+      "options": [
+        "Tschüs",
+        "Auf Wiedersehen",
+        "Guten Morgen",
+        "der Name"
+      ],
+      "answers": [
+        "Tschüs",
+        "Auf Wiedersehen"
+      ]
+    },
+    "summary": [
+      "selamlaşma ve vedalaşma",
+      "sein ve heißen çekimi",
+      "wie, wo ve woher ile kişisel soru kurma",
+      "du ve Sie hitap farkı"
+    ]
+  },
+  {
+    "id": "a1-u02",
+    "intro": "Bu ünitede yaş, telefon numarası, dil, eğitim ve meslek gibi temel kişisel bilgileri söyleyecek; karşındaki kişiden aynı bilgileri basit sorularla isteyeceksin.",
+    "goals": [
+      "Meslek ve eğitim durumunu söylemek",
+      "0–100 arası sayıları iletişim bilgilerinde kullanmak",
+      "Düzenli fiilleri Präsens'te çekmek",
+      "haben ve sprechen fiillerini temel kişilerle kullanmak"
+    ],
+    "grammarTitle": "Präsens: düzenli fiiller, haben ve sprechen",
+    "grammarExplanation": "Düzenli fiillerde mastardaki -en çıkarılır ve köke kişi eki gelir: lernen → ich lerne, du lernst, er lernt. haben ve sprechen bazı kişilerde kök değiştirir. Meslekler sein ile çoğu zaman artikelsiz kullanılır: Ich bin Ingenieur. Üniversite bölümü söylerken studieren fiili doğrudan alan adıyla kullanılabilir: Ich studiere Informatik.",
+    "grammarColumns": [
+      {
+        "header": "Kişi",
+        "values": [
+          "ich",
+          "du",
+          "er/sie",
+          "wir",
+          "ihr",
+          "Sie"
+        ]
+      },
+      {
+        "header": "lernen",
+        "values": [
+          "lerne",
+          "lernst",
+          "lernt",
+          "lernen",
+          "lernt",
+          "lernen"
+        ]
+      },
+      {
+        "header": "haben",
+        "values": [
+          "habe",
+          "hast",
+          "hat",
+          "haben",
+          "habt",
+          "haben"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der Beruf — meslek",
+      "der Student — erkek üniversite öğrencisi",
+      "die Studentin — kadın üniversite öğrencisi",
+      "der Lehrer — erkek öğretmen",
+      "die Lehrerin — kadın öğretmen",
+      "arbeiten — çalışmak",
+      "studieren — üniversitede okumak",
+      "lernen — öğrenmek / ders çalışmak",
+      "sprechen — konuşmak",
+      "Deutsch — Almanca",
+      "Englisch — İngilizce",
+      "die Telefonnummer — telefon numarası",
+      "die E-Mail-Adresse — e-posta adresi",
+      "die Zahl — sayı",
+      "alt — yaşında / yaşlı",
+      "die Sprache — dil"
+    ],
+    "examples": [
+      {
+        "de": "Ich studiere Informatik.",
+        "tr": "Bilgisayar bilimi okuyorum."
+      },
+      {
+        "de": "Was bist du von Beruf?",
+        "tr": "Mesleğin ne?"
+      },
+      {
+        "de": "Mara arbeitet in einer Schule.",
+        "tr": "Mara bir okulda çalışıyor."
+      },
+      {
+        "de": "Ich spreche Deutsch und Englisch.",
+        "tr": "Almanca ve İngilizce konuşuyorum."
+      },
+      {
+        "de": "Wie alt sind Sie?",
+        "tr": "Kaç yaşındasınız?"
+      },
+      {
+        "de": "Meine Telefonnummer ist 0176 420 18 35.",
+        "tr": "Telefon numaram 0176 420 18 35."
+      }
+    ],
+    "warning": "Meslek söylerken genel kullanımda artikel kullanma: Ich bin Lehrer. Belirli bir kişiden söz ederken artikel gerekebilir: Er ist der neue Lehrer.",
+    "tip": "Telefon numaralarını önce tek tek, sonra ikili gruplar hâlinde sesli oku; dinleme ve söyleme becerisini birlikte çalış.",
+    "miniCheck": {
+      "question": "“Mesleğiniz ne?” sorusunun resmî biçimi hangisidir?",
+      "options": [
+        "Was sind Sie von Beruf?",
+        "Wie heißen Sie?",
+        "Wo wohnen Sie?"
+      ],
+      "correctAnswer": "Was sind Sie von Beruf?"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Du ___ Deutsch. (lernen)",
+      "answer": "lernst",
+      "acceptedAnswers": [
+        "lernst"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Mia",
+        "arbeitet",
+        "in",
+        "Berlin."
+      ],
+      "answer": "Mia arbeitet in Berlin."
+    },
+    "translation": {
+      "prompt": "“Ben Almanca ve Fransızca konuşuyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich spreche Deutsch und Französisch.",
+      "acceptedAnswers": [
+        "Ich spreche Deutsch und Französisch",
+        "Ich spreche Deutsch und Französisch."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was bist du von Beruf? — B: ___",
+      "options": [
+        "Ich bin Architekt.",
+        "Ich bin dreißig Jahre.",
+        "Ich komme am Montag."
+      ],
+      "answer": "Ich bin Architekt."
+    },
+    "trueFalse": {
+      "prompt": "“Du hast eine E-Mail-Adresse.” cümlesinde hast, haben fiilinin du çekimidir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Kişisel bilgi veren iki cümleyi seç.",
+      "options": [
+        "Ich bin 24 Jahre alt.",
+        "Ich studiere Biologie.",
+        "Der Zug kommt später.",
+        "Das Brot kostet zwei Euro."
+      ],
+      "answers": [
+        "Ich bin 24 Jahre alt.",
+        "Ich studiere Biologie."
+      ]
+    },
+    "summary": [
+      "Präsens'te düzenli fiil çekimi",
+      "meslek ve eğitim bilgisi verme",
+      "haben ve sprechen fiillerini kullanma",
+      "sayı ve iletişim bilgisi söyleme"
+    ]
+  },
+  {
+    "id": "a1-u03",
+    "intro": "Bu ünitede aile bireylerini tanıtacak, insanların kim olduğunu söyleyecek ve bir şeyin kime ait olduğunu mein/dein gibi iyelik artikelleriyle ifade edeceksin.",
+    "goals": [
+      "Aile bireylerini tanıtmak",
+      "mein ve dein ile sahiplik bildirmek",
+      "er, sie ve wir zamirlerini kullanmak",
+      "Tekil ve çoğul aile kelimelerini bağlamda kullanmak"
+    ],
+    "grammarTitle": "İyelik artikelleri mein/dein ve kişi zamirleri",
+    "grammarExplanation": "mein ve dein, bir ismin kime ait olduğunu gösterir ve ismin artikel cinsiyetine göre biçim değiştirir. Maskulin ve nötr isimlerde Nominativ'de mein/dein; feminin ve çoğul isimlerde meine/deine kullanılır. er erkek veya maskulin bir kişiye, sie kadın veya feminin bir kişiye, wir ise “biz” anlamına gelir.",
+    "grammarColumns": [
+      {
+        "header": "İsim türü",
+        "values": [
+          "maskulin",
+          "nötr",
+          "feminin",
+          "çoğul"
+        ]
+      },
+      {
+        "header": "mein",
+        "values": [
+          "mein Vater",
+          "mein Kind",
+          "meine Mutter",
+          "meine Eltern"
+        ]
+      },
+      {
+        "header": "dein",
+        "values": [
+          "dein Bruder",
+          "dein Kind",
+          "deine Schwester",
+          "deine Eltern"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Familie — aile",
+      "die Mutter — anne",
+      "der Vater — baba",
+      "die Eltern — ebeveynler",
+      "die Schwester — kız kardeş",
+      "der Bruder — erkek kardeş",
+      "die Tochter — kız çocuk",
+      "der Sohn — erkek çocuk",
+      "das Kind — çocuk",
+      "die Großmutter — büyükanne",
+      "der Großvater — büyükbaba",
+      "verheiratet — evli",
+      "ledig — bekâr",
+      "mein — benim",
+      "dein — senin",
+      "zusammen — birlikte"
+    ],
+    "examples": [
+      {
+        "de": "Das ist meine Schwester Clara.",
+        "tr": "Bu benim kız kardeşim Clara."
+      },
+      {
+        "de": "Mein Vater heißt Thomas.",
+        "tr": "Babamın adı Thomas."
+      },
+      {
+        "de": "Hast du Geschwister?",
+        "tr": "Kardeşin var mı?"
+      },
+      {
+        "de": "Ja, ich habe einen Bruder.",
+        "tr": "Evet, bir erkek kardeşim var."
+      },
+      {
+        "de": "Meine Eltern wohnen in Bremen.",
+        "tr": "Ebeveynlerim Bremen'de yaşıyor."
+      },
+      {
+        "de": "Wir essen am Sonntag zusammen.",
+        "tr": "Pazar günü birlikte yemek yiyoruz."
+      }
+    ],
+    "warning": "meine yalnızca “benim” demek değildir; ardından gelen ismin feminin veya çoğul olduğunu da gösterebilir: meine Mutter, meine Eltern.",
+    "tip": "Aile kelimelerini tek başına ezberleme; her isim için artikel + kelime + bir iyelik biçimini birlikte söyle: die Schwester – meine Schwester.",
+    "miniCheck": {
+      "question": "“Benim annem” hangisidir?",
+      "options": [
+        "mein Mutter",
+        "meine Mutter",
+        "meinen Mutter"
+      ],
+      "correctAnswer": "meine Mutter"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Das ist ___ Bruder. (benim)",
+      "answer": "mein",
+      "acceptedAnswers": [
+        "mein"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Meine",
+        "Eltern",
+        "wohnen",
+        "in",
+        "Leipzig."
+      ],
+      "answer": "Meine Eltern wohnen in Leipzig."
+    },
+    "translation": {
+      "prompt": "“Benim kız kardeşim öğrenci.” cümlesini Almancaya çevir.",
+      "answer": "Meine Schwester ist Studentin.",
+      "acceptedAnswers": [
+        "Meine Schwester ist Studentin",
+        "Meine Schwester ist Studentin."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Hast du Geschwister? — B: ___",
+      "options": [
+        "Ja, ich habe eine Schwester.",
+        "Ja, ich bin Schwester.",
+        "Nein, ich wohne Schwester."
+      ],
+      "answer": "Ja, ich habe eine Schwester."
+    },
+    "trueFalse": {
+      "prompt": "“meine Eltern” ifadesinde meine çoğul isimle kullanılmıştır.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Aile bireyi olan iki kelimeyi seç.",
+      "options": [
+        "die Tochter",
+        "der Großvater",
+        "die Haltestelle",
+        "der Mantel"
+      ],
+      "answers": [
+        "die Tochter",
+        "der Großvater"
+      ]
+    },
+    "summary": [
+      "aile bireylerini tanıtma",
+      "mein/dein iyelik artikelleri",
+      "er/sie/wir kişi zamirleri",
+      "haben ile aile hakkında soru ve cevap"
+    ]
+  },
+  {
+    "id": "a1-u04",
+    "intro": "Bu ünitede mağazada temel eşyaları adlandıracak, fiyat soracak, neye ihtiyacın olduğunu söyleyecek ve satın alma cümlelerinde Akkusativ artikel biçimlerini kullanacaksın.",
+    "goals": [
+      "Eşyaları artikel ile adlandırmak",
+      "Fiyat sormak ve anlamak",
+      "brauchen ve kaufen fiillerini kullanmak",
+      "Akkusativ'de ein/eine/einen ve kein biçimlerini ayırt etmek"
+    ],
+    "grammarTitle": "Artikel, Akkusativ ve kein",
+    "grammarExplanation": "Bir şeyi satın almak, aramak veya ihtiyaç olarak belirtmek için nesne çoğu zaman Akkusativ olur. Maskulin der → den, ein → einen, kein → keinen biçimine geçer. Feminin ve nötr belirsiz artikeller bu düzeyde aynı görünür: eine Lampe, ein Regal. kein, bir ismin bulunmadığını veya istenmediğini belirtir.",
+    "grammarColumns": [
+      {
+        "header": "Cinsiyet",
+        "values": [
+          "maskulin",
+          "feminin",
+          "nötr",
+          "çoğul"
+        ]
+      },
+      {
+        "header": "Nominativ",
+        "values": [
+          "ein Stuhl",
+          "eine Lampe",
+          "ein Regal",
+          "Stühle"
+        ]
+      },
+      {
+        "header": "Akkusativ",
+        "values": [
+          "einen Stuhl",
+          "eine Lampe",
+          "ein Regal",
+          "Stühle"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der Tisch — masa",
+      "der Stuhl — sandalye",
+      "die Lampe — lamba",
+      "das Regal — raf / kitaplık",
+      "das Bett — yatak",
+      "der Schrank — dolap",
+      "das Handy — cep telefonu",
+      "der Computer — bilgisayar",
+      "brauchen — ihtiyaç duymak",
+      "kaufen — satın almak",
+      "suchen — aramak",
+      "kosten — fiyatı olmak",
+      "billig — ucuz",
+      "teuer — pahalı",
+      "der Euro — avro",
+      "der Preis — fiyat"
+    ],
+    "examples": [
+      {
+        "de": "Ich brauche einen Stuhl.",
+        "tr": "Bir sandalyeye ihtiyacım var."
+      },
+      {
+        "de": "Wie viel kostet die Lampe?",
+        "tr": "Lamba ne kadar?"
+      },
+      {
+        "de": "Das Regal kostet neunzig Euro.",
+        "tr": "Raf doksan avro."
+      },
+      {
+        "de": "Wir kaufen einen kleinen Tisch.",
+        "tr": "Küçük bir masa satın alıyoruz."
+      },
+      {
+        "de": "Ich brauche keinen Schrank.",
+        "tr": "Bir dolaba ihtiyacım yok."
+      },
+      {
+        "de": "Der Computer ist zu teuer.",
+        "tr": "Bilgisayar çok pahalı."
+      }
+    ],
+    "warning": "Maskulin isimlerde ein, Akkusativ olduğunda einen olur: ein Tisch → Ich kaufe einen Tisch.",
+    "tip": "Mağaza kelimelerini renk veya fiyatla birleştir: ein Tisch – 80 Euro; eine Lampe – 25 Euro. Böylece kelimeyi gerçek bir seçimle hatırlarsın.",
+    "miniCheck": {
+      "question": "“Bir sandalye satın alıyorum.” cümlesindeki doğru artikel hangisidir?",
+      "options": [
+        "ein Stuhl",
+        "einen Stuhl",
+        "eine Stuhl"
+      ],
+      "correctAnswer": "einen Stuhl"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Ich kaufe ___ Tisch.",
+      "answer": "einen",
+      "acceptedAnswers": [
+        "einen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Die",
+        "Lampe",
+        "kostet",
+        "dreißig",
+        "Euro."
+      ],
+      "answer": "Die Lampe kostet dreißig Euro."
+    },
+    "translation": {
+      "prompt": "“Bir bilgisayara ihtiyacım yok.” cümlesini Almancaya çevir.",
+      "answer": "Ich brauche keinen Computer.",
+      "acceptedAnswers": [
+        "Ich brauche keinen Computer",
+        "Ich brauche keinen Computer."
+      ]
+    },
+    "dialogue": {
+      "prompt": "Verkäuferin: Kann ich helfen? — Kunde: ___",
+      "options": [
+        "Ja, ich suche eine Lampe.",
+        "Ja, ich bin eine Lampe.",
+        "Nein, ich heiße Lampe."
+      ],
+      "answer": "Ja, ich suche eine Lampe."
+    },
+    "trueFalse": {
+      "prompt": "“Ich kaufe einen Tisch.” cümlesinde Tisch maskulin olduğu için einen kullanılır.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Mağazada fiyat veya ihtiyaç bildiren iki ifadeyi seç.",
+      "options": [
+        "Wie viel kostet das?",
+        "Ich brauche eine Lampe.",
+        "Gute Besserung!",
+        "Woher kommst du?"
+      ],
+      "answers": [
+        "Wie viel kostet das?",
+        "Ich brauche eine Lampe."
+      ]
+    },
+    "summary": [
+      "der/die/das ile isim öğrenme",
+      "Akkusativ'de maskulin artikel değişimi",
+      "fiyat sorma ve söyleme",
+      "kein ile isim olumsuzluğu"
+    ]
+  },
+  {
+    "id": "a1-u05",
+    "intro": "Bu ünitede kafede veya restoranda yiyecek-içecek siparişi verecek, tercihlerini söyleyecek, basit olumsuzluk kuracak ve hesabı isteyeceksin.",
+    "goals": [
+      "Yiyecek ve içecek sipariş etmek",
+      "möchten ile nazik istek kurmak",
+      "kein ve nicht kullanımını ayırt etmek",
+      "Hesap istemek ve basit tercih belirtmek"
+    ],
+    "grammarTitle": "möchten, Akkusativ ve nicht/kein",
+    "grammarExplanation": "möchten nazik istek bildirmek için kullanılır: Ich möchte einen Tee. Bir ismi olumsuzlamak için kein/keine/keinen, fiili, sıfatı veya tüm durumu olumsuzlamak için çoğunlukla nicht kullanılır. möchten yanında ikinci bir fiille kullanılırsa ikinci fiil cümlenin sonunda mastar biçiminde bulunur: Ich möchte bezahlen.",
+    "grammarColumns": [
+      {
+        "header": "Kişi",
+        "values": [
+          "ich",
+          "du",
+          "er/sie",
+          "wir",
+          "ihr",
+          "Sie"
+        ]
+      },
+      {
+        "header": "möchten",
+        "values": [
+          "möchte",
+          "möchtest",
+          "möchte",
+          "möchten",
+          "möchtet",
+          "möchten"
+        ]
+      },
+      {
+        "header": "Örnek nesne",
+        "values": [
+          "einen Tee",
+          "eine Suppe",
+          "ein Wasser",
+          "zwei Kaffees",
+          "zwei Salate",
+          "einen Kaffee"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "das Frühstück — kahvaltı",
+      "das Brot — ekmek",
+      "der Käse — peynir",
+      "die Suppe — çorba",
+      "der Salat — salata",
+      "das Wasser — su",
+      "der Kaffee — kahve",
+      "der Tee — çay",
+      "bestellen — sipariş vermek",
+      "bezahlen — ödemek",
+      "möchten — istemek / arzu etmek",
+      "lecker — lezzetli",
+      "hungrig — aç",
+      "durstig — susamış",
+      "die Speisekarte — menü",
+      "die Rechnung — hesap"
+    ],
+    "examples": [
+      {
+        "de": "Ich möchte eine Suppe, bitte.",
+        "tr": "Bir çorba istiyorum, lütfen."
+      },
+      {
+        "de": "Was möchten Sie trinken?",
+        "tr": "Ne içmek istersiniz?"
+      },
+      {
+        "de": "Für mich einen Tee.",
+        "tr": "Benim için bir çay."
+      },
+      {
+        "de": "Ich esse kein Fleisch.",
+        "tr": "Et yemiyorum."
+      },
+      {
+        "de": "Der Salat ist nicht teuer.",
+        "tr": "Salata pahalı değil."
+      },
+      {
+        "de": "Die Rechnung, bitte.",
+        "tr": "Hesap, lütfen."
+      }
+    ],
+    "warning": "kein bir isimle birlikte kullanılır; nicht ise burada sıfatı veya fiili olumsuzlayabilir. “kein teuer” gibi bir kullanım yapma.",
+    "tip": "Bir menü oluştur ve üç sipariş cümlesini sesli söyle. Her siparişte farklı artikel kullanmaya çalış.",
+    "miniCheck": {
+      "question": "“Hesap, lütfen.” ifadesi hangisidir?",
+      "options": [
+        "Die Rechnung, bitte.",
+        "Die Speisekarte, bitte.",
+        "Das Frühstück, bitte."
+      ],
+      "correctAnswer": "Die Rechnung, bitte."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Ich möchte ___ Kaffee.",
+      "answer": "einen",
+      "acceptedAnswers": [
+        "einen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Wir",
+        "möchten",
+        "zwei",
+        "Salate",
+        "bestellen."
+      ],
+      "answer": "Wir möchten zwei Salate bestellen."
+    },
+    "translation": {
+      "prompt": "“Ben et yemiyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich esse kein Fleisch.",
+      "acceptedAnswers": [
+        "Ich esse kein Fleisch",
+        "Ich esse kein Fleisch."
+      ]
+    },
+    "dialogue": {
+      "prompt": "Kellner: Was möchten Sie trinken? — Gast: ___",
+      "options": [
+        "Ein Wasser, bitte.",
+        "Ich wohne in Bonn.",
+        "Bis morgen."
+      ],
+      "answer": "Ein Wasser, bitte."
+    },
+    "trueFalse": {
+      "prompt": "“Der Kaffee ist nicht heiß.” cümlesinde nicht bir özelliği olumsuzlar.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Restoranda doğal olan iki ifadeyi seç.",
+      "options": [
+        "Ich möchte bestellen.",
+        "Die Rechnung, bitte.",
+        "Wie heißt die Straße?",
+        "Mein Bruder ist Student."
+      ],
+      "answers": [
+        "Ich möchte bestellen.",
+        "Die Rechnung, bitte."
+      ]
+    },
+    "summary": [
+      "möchten ile nazik istek",
+      "yiyecek-içecek kelimeleri",
+      "kein ve nicht farkı",
+      "sipariş ve hesap isteme"
+    ]
+  },
+  {
+    "id": "a1-u06",
+    "intro": "Bu ünitede gün içinde ne zaman ne yaptığını anlatacak, saat sorup söyleyecek, ayrılabilen fiilleri doğru yere yerleştirecek ve basit bir randevu zamanı belirleyeceksin.",
+    "goals": [
+      "Saat sormak ve söylemek",
+      "Günlük rutin anlatmak",
+      "Ayrılabilen fiilleri ana cümlede kullanmak",
+      "am, um ve von ... bis ... zaman ifadelerini kullanmak"
+    ],
+    "grammarTitle": "Ayrılabilen fiiller ve zaman ifadeleri",
+    "grammarExplanation": "Ayrılabilen fiiller çekimli ana cümlede iki parçaya ayrılır: aufstehen → Ich stehe um sieben Uhr auf. Çekimli fiil ikinci konumda, ön ek cümle sonunda bulunur. um saatle, am günlerle veya günün bölümleriyle, von ... bis ... ise başlangıç ve bitiş zamanı ile kullanılır.",
+    "grammarColumns": [
+      {
+        "header": "Fiil",
+        "values": [
+          "aufstehen",
+          "einkaufen",
+          "anrufen",
+          "fernsehen",
+          "anfangen",
+          "ankommen"
+        ]
+      },
+      {
+        "header": "ich",
+        "values": [
+          "stehe ... auf",
+          "kaufe ... ein",
+          "rufe ... an",
+          "sehe ... fern",
+          "fange ... an",
+          "komme ... an"
+        ]
+      },
+      {
+        "header": "Ön ek",
+        "values": [
+          "auf",
+          "ein",
+          "an",
+          "fern",
+          "an",
+          "an"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der Morgen — sabah",
+      "der Vormittag — öğleden önce",
+      "der Mittag — öğle",
+      "der Nachmittag — öğleden sonra",
+      "der Abend — akşam",
+      "die Uhr — saat",
+      "aufstehen — kalkmak",
+      "frühstücken — kahvaltı yapmak",
+      "anfangen — başlamak",
+      "arbeiten — çalışmak",
+      "einkaufen — alışveriş yapmak",
+      "anrufen — telefon etmek",
+      "fernsehen — televizyon izlemek",
+      "schlafen — uyumak",
+      "pünktlich — dakik",
+      "der Termin — randevu"
+    ],
+    "examples": [
+      {
+        "de": "Ich stehe um halb sieben auf.",
+        "tr": "Saat altı buçukta kalkıyorum."
+      },
+      {
+        "de": "Der Kurs fängt um neun Uhr an.",
+        "tr": "Kurs saat dokuzda başlıyor."
+      },
+      {
+        "de": "Am Nachmittag kaufe ich ein.",
+        "tr": "Öğleden sonra alışveriş yapıyorum."
+      },
+      {
+        "de": "Wir arbeiten von acht bis vier.",
+        "tr": "Sekizden dörde kadar çalışıyoruz."
+      },
+      {
+        "de": "Rufst du Anna heute an?",
+        "tr": "Anna'yı bugün arıyor musun?"
+      },
+      {
+        "de": "Der Zug kommt um 18 Uhr an.",
+        "tr": "Tren saat 18'de varıyor."
+      }
+    ],
+    "warning": "Ayrılabilen fiilin ön ekini unutma: “Ich stehe um sieben Uhr.” başka bir anlam verir; “aufstehen” için auf cümle sonunda olmalı.",
+    "tip": "Bir gününü altı saat noktasına böl ve her saate bir Almanca eylem yaz. Sonra bu notlardan tam cümleler kur.",
+    "miniCheck": {
+      "question": "“Saat yedide kalkıyorum.” hangisidir?",
+      "options": [
+        "Ich stehe um sieben Uhr auf.",
+        "Ich aufstehe um sieben Uhr.",
+        "Ich stehe auf um sieben Uhr."
+      ],
+      "correctAnswer": "Ich stehe um sieben Uhr auf."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Der Film ___ um acht Uhr an. (anfangen)",
+      "answer": "fängt",
+      "acceptedAnswers": [
+        "fängt"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Am Abend",
+        "sehe",
+        "ich",
+        "fern."
+      ],
+      "answer": "Am Abend sehe ich fern."
+    },
+    "translation": {
+      "prompt": "“Kurs saat onda başlıyor.” cümlesini Almancaya çevir.",
+      "answer": "Der Kurs fängt um zehn Uhr an.",
+      "acceptedAnswers": [
+        "Der Kurs fängt um zehn Uhr an",
+        "Der Kurs fängt um zehn Uhr an."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wann hast du Zeit? — B: ___",
+      "options": [
+        "Am Freitag um sechs.",
+        "Mit einem Kaffee.",
+        "In der Küche."
+      ],
+      "answer": "Am Freitag um sechs."
+    },
+    "trueFalse": {
+      "prompt": "“Ich rufe dich morgen an.” cümlesinde an ön eki cümle sonunda bulunur.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Zaman belirten iki ifadeyi seç.",
+      "options": [
+        "um neun Uhr",
+        "am Montag",
+        "neben dem Schrank",
+        "einen Tee"
+      ],
+      "answers": [
+        "um neun Uhr",
+        "am Montag"
+      ]
+    },
+    "summary": [
+      "saat ve günlük zaman ifadeleri",
+      "ayrılabilen fiiller",
+      "günlük rutin anlatma",
+      "basit randevu zamanı belirleme"
+    ]
+  },
+  {
+    "id": "a1-u07",
+    "intro": "Bu ünitede hobilerinden, yapabildiğin şeylerden ve boş zaman planlarından söz edecek; birini davet edecek ve davete kısa, nazik bir cevap vereceksin.",
+    "goals": [
+      "Hobi ve boş zaman aktivitelerini anlatmak",
+      "können ile yetenek veya imkân bildirmek",
+      "gern ile sevdiğin etkinlikleri söylemek",
+      "Davet etmek, kabul etmek ve basitçe reddetmek"
+    ],
+    "grammarTitle": "können, gern ve modal fiilde cümle sırası",
+    "grammarExplanation": "können çekimli modal fiildir; asıl eylemi bildiren fiil mastar biçiminde cümlenin sonunda bulunur: Ich kann gut schwimmen. gern ise bir eylemi severek yaptığını bildirir: Ich lese gern. Davetlerde Hast du Zeit? veya Möchtest du mitkommen? gibi kısa kalıplar A1 düzeyinde çok kullanışlıdır.",
+    "grammarColumns": [
+      {
+        "header": "Kişi",
+        "values": [
+          "ich",
+          "du",
+          "er/sie",
+          "wir",
+          "ihr",
+          "Sie"
+        ]
+      },
+      {
+        "header": "können",
+        "values": [
+          "kann",
+          "kannst",
+          "kann",
+          "können",
+          "könnt",
+          "können"
+        ]
+      },
+      {
+        "header": "Fiil sonu",
+        "values": [
+          "schwimmen",
+          "tanzen",
+          "kochen",
+          "kommen",
+          "spielen",
+          "mitkommen"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Freizeit — boş zaman",
+      "das Hobby — hobi",
+      "schwimmen — yüzmek",
+      "tanzen — dans etmek",
+      "kochen — yemek pişirmek",
+      "lesen — okumak",
+      "wandern — yürüyüş yapmak",
+      "fotografieren — fotoğraf çekmek",
+      "Musik hören — müzik dinlemek",
+      "Fußball spielen — futbol oynamak",
+      "können — yapabilmek",
+      "gern — severek",
+      "die Einladung — davet",
+      "Zeit haben — zamanı olmak",
+      "mitkommen — birlikte gelmek",
+      "leider — maalesef"
+    ],
+    "examples": [
+      {
+        "de": "Ich kann gut kochen.",
+        "tr": "İyi yemek yapabiliyorum."
+      },
+      {
+        "de": "Was machst du gern?",
+        "tr": "Ne yapmayı seversin?"
+      },
+      {
+        "de": "Ich höre gern Musik.",
+        "tr": "Müzik dinlemeyi seviyorum."
+      },
+      {
+        "de": "Hast du am Samstag Zeit?",
+        "tr": "Cumartesi vaktin var mı?"
+      },
+      {
+        "de": "Ja, gern! Ich komme mit.",
+        "tr": "Evet, memnuniyetle! Ben de geliyorum."
+      },
+      {
+        "de": "Leider kann ich heute nicht.",
+        "tr": "Maalesef bugün yapamam."
+      }
+    ],
+    "warning": "Modal fiilli ana cümlede ikinci fiili çekme: “Ich kann schwimme” değil, “Ich kann schwimmen.”",
+    "tip": "Üç hobi için birer “Ich kann ...” ve “Ich ... gern.” cümlesi kur; yetenek ile tercih arasındaki farkı hisset.",
+    "miniCheck": {
+      "question": "“Yüzebiliyorum.” cümlesi hangisidir?",
+      "options": [
+        "Ich kann schwimmen.",
+        "Ich kann schwimme.",
+        "Ich schwimmen kann."
+      ],
+      "correctAnswer": "Ich kann schwimmen."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Du ___ sehr gut tanzen.",
+      "answer": "kannst",
+      "acceptedAnswers": [
+        "kannst"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Wir",
+        "können",
+        "am Sonntag",
+        "wandern."
+      ],
+      "answer": "Wir können am Sonntag wandern."
+    },
+    "translation": {
+      "prompt": "“Ben kitap okumayı seviyorum.” cümlesini Almancaya çevir.",
+      "answer": "Ich lese gern.",
+      "acceptedAnswers": [
+        "Ich lese gern",
+        "Ich lese gern."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Möchtest du am Freitag ins Kino gehen? — B: ___",
+      "options": [
+        "Ja, gern. Ich habe Zeit.",
+        "Ja, ich bin Kino.",
+        "Nein, Freitag kostet viel."
+      ],
+      "answer": "Ja, gern. Ich habe Zeit."
+    },
+    "trueFalse": {
+      "prompt": "können ile kullanılan asıl fiil mastar biçiminde cümle sonunda yer alır.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Bir davete uygun iki kısa cevap seç.",
+      "options": [
+        "Ja, gern!",
+        "Leider habe ich keine Zeit.",
+        "Der Tisch ist braun.",
+        "Ich komme aus Wien."
+      ],
+      "answers": [
+        "Ja, gern!",
+        "Leider habe ich keine Zeit."
+      ]
+    },
+    "summary": [
+      "können ile yetenek ve imkân",
+      "gern ile tercih",
+      "hobi ve boş zaman kelimeleri",
+      "davet etme ve cevap verme"
+    ]
+  },
+  {
+    "id": "a1-u08",
+    "intro": "Bu ünitede şehirde bir yer soracak, kısa yön tariflerini anlayacak, toplu taşımayla nasıl gidileceğini söyleyecek ve resmî Imperativ ile basit yol tarifi vereceksin.",
+    "goals": [
+      "Şehirde yer ve yön sormak",
+      "links, rechts ve geradeaus ifadelerini kullanmak",
+      "Resmî Imperativ ile kısa yön tarifi vermek",
+      "Temel ulaşım araçlarını ve durakları adlandırmak"
+    ],
+    "grammarTitle": "Imperativ mit Sie ve temel yön kalıpları",
+    "grammarExplanation": "Resmî Imperativ'de fiil başta, ardından Sie gelir: Gehen Sie geradeaus. Fahren Sie zwei Stationen. Kısa yön tariflerinde zuerst, dann ve danach gibi sıralama kelimeleri kullanabilirsin. “mit dem Bus”, “mit der U-Bahn” gibi ulaşım kalıplarını başlangıçta bütün olarak öğrenmek pratiktir.",
+    "grammarColumns": [
+      {
+        "header": "Mastar",
+        "values": [
+          "gehen",
+          "fahren",
+          "nehmen",
+          "warten",
+          "abbiegen",
+          "aussteigen"
+        ]
+      },
+      {
+        "header": "Sie-Imperativ",
+        "values": [
+          "Gehen Sie",
+          "Fahren Sie",
+          "Nehmen Sie",
+          "Warten Sie",
+          "Biegen Sie ab",
+          "Steigen Sie aus"
+        ]
+      },
+      {
+        "header": "Kısa yön",
+        "values": [
+          "geradeaus",
+          "zwei Stationen",
+          "den Bus 12",
+          "hier",
+          "links",
+          "am Bahnhof"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der Bahnhof — tren istasyonu",
+      "die Haltestelle — durak",
+      "die U-Bahn — metro",
+      "der Bus — otobüs",
+      "die Straße — sokak / cadde",
+      "die Kreuzung — kavşak",
+      "die Ampel — trafik ışığı",
+      "geradeaus — dümdüz",
+      "links — sol / sola",
+      "rechts — sağ / sağa",
+      "abbiegen — dönmek",
+      "einsteigen — binmek",
+      "aussteigen — inmek",
+      "fahren — gitmek / sürmek",
+      "zu Fuß — yürüyerek",
+      "Entschuldigung — affedersiniz"
+    ],
+    "examples": [
+      {
+        "de": "Entschuldigung, wo ist der Bahnhof?",
+        "tr": "Affedersiniz, istasyon nerede?"
+      },
+      {
+        "de": "Gehen Sie bis zur Ampel.",
+        "tr": "Trafik ışığına kadar gidin."
+      },
+      {
+        "de": "Biegen Sie dann rechts ab.",
+        "tr": "Sonra sağa dönün."
+      },
+      {
+        "de": "Fahren Sie mit der U-Bahn.",
+        "tr": "Metroyla gidin."
+      },
+      {
+        "de": "Steigen Sie am Rathaus aus.",
+        "tr": "Belediye binasında inin."
+      },
+      {
+        "de": "Ich gehe zu Fuß.",
+        "tr": "Yürüyerek gidiyorum."
+      }
+    ],
+    "warning": "Resmî Imperativ'de Sie'yi düşürme: “Gehen Sie ...” doğru; yalnızca “Gehen ...” bu bağlamda eksiktir.",
+    "tip": "Basit bir sokak krokisi çiz. Bir başlangıç ve hedef seçip üç kısa yön cümlesi yaz.",
+    "miniCheck": {
+      "question": "Resmî olarak “Dümdüz gidin.” nasıl söylenir?",
+      "options": [
+        "Gehen Sie geradeaus.",
+        "Du gehst geradeaus.",
+        "Geht Sie geradeaus."
+      ],
+      "correctAnswer": "Gehen Sie geradeaus."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: ___ Sie am Bahnhof aus.",
+      "answer": "Steigen",
+      "acceptedAnswers": [
+        "Steigen"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Biegen",
+        "Sie",
+        "links",
+        "ab."
+      ],
+      "answer": "Biegen Sie links ab."
+    },
+    "translation": {
+      "prompt": "“Otobüsle gidin.” cümlesini Almancaya çevir.",
+      "answer": "Fahren Sie mit dem Bus.",
+      "acceptedAnswers": [
+        "Fahren Sie mit dem Bus",
+        "Fahren Sie mit dem Bus."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Entschuldigung, wie komme ich zum Bahnhof? — B: ___",
+      "options": [
+        "Gehen Sie geradeaus und dann links.",
+        "Ich trinke einen Kaffee.",
+        "Der Bahnhof ist lecker."
+      ],
+      "answer": "Gehen Sie geradeaus und dann links."
+    },
+    "trueFalse": {
+      "prompt": "“Steigen Sie hier aus.” resmî bir yönlendirme cümlesidir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Yol tarifinde kullanılan iki ifadeyi seç.",
+      "options": [
+        "geradeaus",
+        "rechts abbiegen",
+        "Gute Besserung",
+        "die Rechnung"
+      ],
+      "answers": [
+        "geradeaus",
+        "rechts abbiegen"
+      ]
+    },
+    "summary": [
+      "şehirde yer sorma",
+      "Sie-Imperativ",
+      "temel yön ifadeleri",
+      "toplu taşıma ile kısa yol tarifi"
+    ]
+  },
+  {
+    "id": "a1-u09",
+    "intro": "Bu ünitede evini ve odalarını tanıtacak, eşyanın nerede olduğunu söyleyecek, bir ev ilanındaki temel bilgileri anlayacak ve bir yerde ne bulunduğunu ifade edeceksin.",
+    "goals": [
+      "Ev ve oda kelimelerini artikel ile kullanmak",
+      "Bir eşyanın konumunu söylemek",
+      "es gibt ile bir yerde ne bulunduğunu belirtmek",
+      "wo? sorusuna temel yer edatlarıyla cevap vermek"
+    ],
+    "grammarTitle": "es gibt ve wo? için temel yer edatları",
+    "grammarExplanation": "es gibt “var” anlamında kullanılır ve ardından Akkusativ gelir: Es gibt einen Balkon. Bir şeyin sabit konumunu söylerken wo? sorusuna in, auf, an, neben gibi yer edatlarıyla cevap verilir. A1 düzeyinde bu kalıpları isim grubuyla birlikte öğren: in der Küche, auf dem Tisch, neben dem Bett.",
+    "grammarColumns": [
+      {
+        "header": "Soru",
+        "values": [
+          "Wo ist die Lampe?",
+          "Wo ist das Buch?",
+          "Wo ist der Schrank?",
+          "Was gibt es?"
+        ]
+      },
+      {
+        "header": "Kalıp",
+        "values": [
+          "auf dem Tisch",
+          "im Regal",
+          "neben dem Bett",
+          "einen Balkon"
+        ]
+      },
+      {
+        "header": "İşlev",
+        "values": [
+          "üstünde",
+          "içinde",
+          "yanında",
+          "bir şeyin varlığı"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Wohnung — daire",
+      "das Haus — ev",
+      "das Zimmer — oda",
+      "das Wohnzimmer — oturma odası",
+      "das Schlafzimmer — yatak odası",
+      "die Küche — mutfak",
+      "das Bad — banyo",
+      "der Balkon — balkon",
+      "die Miete — kira",
+      "möbliert — mobilyalı",
+      "auf — üzerinde",
+      "in — içinde",
+      "neben — yanında",
+      "unter — altında",
+      "es gibt — var",
+      "die Anzeige — ilan"
+    ],
+    "examples": [
+      {
+        "de": "Meine Wohnung hat drei Zimmer.",
+        "tr": "Dairemde üç oda var."
+      },
+      {
+        "de": "Es gibt einen kleinen Balkon.",
+        "tr": "Küçük bir balkon var."
+      },
+      {
+        "de": "Die Lampe steht auf dem Tisch.",
+        "tr": "Lamba masanın üzerinde duruyor."
+      },
+      {
+        "de": "Das Bett ist neben dem Fenster.",
+        "tr": "Yatak pencerenin yanında."
+      },
+      {
+        "de": "In der Küche gibt es einen Kühlschrank.",
+        "tr": "Mutfakta bir buzdolabı var."
+      },
+      {
+        "de": "Die Miete ist 650 Euro im Monat.",
+        "tr": "Kira aylık 650 avro."
+      }
+    ],
+    "warning": "es gibt sonrasında maskulin belirsiz artikel Akkusativ olur: ein Balkon → Es gibt einen Balkon.",
+    "tip": "Kendi odanın üç eşyasını seç ve her biri için “wo?” sorusuna farklı bir yer edatıyla cevap yaz.",
+    "miniCheck": {
+      "question": "“Bir balkon var.” hangisidir?",
+      "options": [
+        "Es gibt einen Balkon.",
+        "Es ist ein Balkon gibt.",
+        "Ein Balkon hat es."
+      ],
+      "correctAnswer": "Es gibt einen Balkon."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Die Lampe steht ___ dem Tisch.",
+      "answer": "auf",
+      "acceptedAnswers": [
+        "auf"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Das",
+        "Bett",
+        "ist",
+        "neben",
+        "dem Fenster."
+      ],
+      "answer": "Das Bett ist neben dem Fenster."
+    },
+    "translation": {
+      "prompt": "“Mutfakta bir masa var.” cümlesini Almancaya çevir.",
+      "answer": "In der Küche gibt es einen Tisch.",
+      "acceptedAnswers": [
+        "In der Küche gibt es einen Tisch",
+        "In der Küche gibt es einen Tisch."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Wie ist die Wohnung? — B: ___",
+      "options": [
+        "Sie ist hell und hat zwei Zimmer.",
+        "Sie fährt um acht Uhr.",
+        "Sie kostet einen Kaffee."
+      ],
+      "answer": "Sie ist hell und hat zwei Zimmer."
+    },
+    "trueFalse": {
+      "prompt": "“auf dem Tisch” ifadesi sabit bir konumu anlatabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Evdeki oda olan iki kelimeyi seç.",
+      "options": [
+        "die Küche",
+        "das Schlafzimmer",
+        "der Bahnhof",
+        "die Apotheke"
+      ],
+      "answers": [
+        "die Küche",
+        "das Schlafzimmer"
+      ]
+    },
+    "summary": [
+      "ev ve oda kelimeleri",
+      "es gibt + Akkusativ",
+      "wo? sorusuna yer kalıpları",
+      "basit ev ilanı bilgileri"
+    ]
+  },
+  {
+    "id": "a1-u10",
+    "intro": "Bu ünitede temel vücut bölümlerini adlandıracak, basit bir sağlık sorununu anlatacak, birine kısa tavsiye verecek ve müssen/können ile gereklilik veya öneri ifade edeceksin.",
+    "goals": [
+      "Vücut bölümlerini ve temel şikâyetleri söylemek",
+      "“Mir tut ... weh.” kalıbını kullanmak",
+      "müssen ile gereklilik bildirmek",
+      "Basit sağlık tavsiyesi vermek ve anlamak"
+    ],
+    "grammarTitle": "müssen, können ve sağlıkta temel Imperativ",
+    "grammarExplanation": "müssen güçlü gereklilik bildirir: Du musst heute zu Hause bleiben. können bu ünitede mümkün olan bir öneriyi gösterebilir: Du kannst Tee trinken. Sağlık şikâyetlerinde sık kullanılan kalıp “Mir tut der Kopf weh.” veya çoğulda “Mir tun die Augen weh.” biçimindedir. Kısa tavsiyelerde Trink ..., Ruh dich aus ... gibi du-Imperativ kalıpları da kullanılır.",
+    "grammarColumns": [
+      {
+        "header": "Kişi",
+        "values": [
+          "ich",
+          "du",
+          "er/sie",
+          "wir",
+          "ihr",
+          "Sie"
+        ]
+      },
+      {
+        "header": "müssen",
+        "values": [
+          "muss",
+          "musst",
+          "muss",
+          "müssen",
+          "müsst",
+          "müssen"
+        ]
+      },
+      {
+        "header": "können",
+        "values": [
+          "kann",
+          "kannst",
+          "kann",
+          "können",
+          "könnt",
+          "können"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "der Kopf — baş",
+      "der Bauch — karın",
+      "der Rücken — sırt",
+      "der Hals — boğaz",
+      "das Auge — göz",
+      "der Arm — kol",
+      "das Bein — bacak",
+      "krank — hasta",
+      "gesund — sağlıklı",
+      "weh tun — ağrımak",
+      "Fieber haben — ateşi olmak",
+      "Husten haben — öksürüğü olmak",
+      "sich ausruhen — dinlenmek",
+      "trinken — içmek",
+      "der Arzt — erkek doktor",
+      "die Apotheke — eczane"
+    ],
+    "examples": [
+      {
+        "de": "Mir tut der Kopf weh.",
+        "tr": "Başım ağrıyor."
+      },
+      {
+        "de": "Ich habe heute Fieber.",
+        "tr": "Bugün ateşim var."
+      },
+      {
+        "de": "Du musst dich ausruhen.",
+        "tr": "Dinlenmen gerekiyor."
+      },
+      {
+        "de": "Du kannst viel Wasser trinken.",
+        "tr": "Bol su içebilirsin."
+      },
+      {
+        "de": "Trink einen warmen Tee.",
+        "tr": "Ilık bir çay iç."
+      },
+      {
+        "de": "Ich brauche eine Apotheke.",
+        "tr": "Bir eczaneye ihtiyacım var."
+      }
+    ],
+    "warning": "müssen ile ikinci fiil mastar hâlinde cümle sonunda bulunur: Du musst zu Hause bleiben.",
+    "tip": "Şikâyet ve tavsiyeyi çift olarak öğren: “Ich habe Husten.” → “Du kannst Tee trinken.”",
+    "miniCheck": {
+      "question": "“Başım ağrıyor.” hangisidir?",
+      "options": [
+        "Mir tut der Kopf weh.",
+        "Ich bin der Kopf.",
+        "Mein Kopf kann trinken."
+      ],
+      "correctAnswer": "Mir tut der Kopf weh."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Du ___ heute zu Hause bleiben.",
+      "answer": "musst",
+      "acceptedAnswers": [
+        "musst"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Du",
+        "kannst",
+        "viel",
+        "Wasser",
+        "trinken."
+      ],
+      "answer": "Du kannst viel Wasser trinken."
+    },
+    "translation": {
+      "prompt": "“Ateşim var.” cümlesini Almancaya çevir.",
+      "answer": "Ich habe Fieber.",
+      "acceptedAnswers": [
+        "Ich habe Fieber",
+        "Ich habe Fieber."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Mir tut der Hals weh. — B: ___",
+      "options": [
+        "Du kannst warmen Tee trinken.",
+        "Bieg links ab.",
+        "Die Jacke kostet fünfzig Euro."
+      ],
+      "answer": "Du kannst warmen Tee trinken."
+    },
+    "trueFalse": {
+      "prompt": "müssen ile kullanılan asıl fiil cümle sonunda mastar biçiminde bulunabilir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Sağlık tavsiyesi olan iki seçeneği seç.",
+      "options": [
+        "Ruh dich aus.",
+        "Trink viel Wasser.",
+        "Nimm die U-Bahn.",
+        "Wie viel kostet das?"
+      ],
+      "answers": [
+        "Ruh dich aus.",
+        "Trink viel Wasser."
+      ]
+    },
+    "summary": [
+      "vücut ve şikâyet kelimeleri",
+      "Mir tut ... weh kalıbı",
+      "müssen ile gereklilik",
+      "können ve Imperativ ile basit tavsiye"
+    ]
+  },
+  {
+    "id": "a1-u11",
+    "intro": "Bu ünitede kıyafetleri ve hava durumunu anlatacak, mağazada beden veya renk soracak, bir kıyafeti basit sıfatlarla değerlendirecek ve welcher/dieser kalıplarını temel düzeyde kullanacaksın.",
+    "goals": [
+      "Kıyafetleri artikel ile adlandırmak",
+      "Renk, beden ve temel özellik söylemek",
+      "welcher/welche/welches ile seçim sormak",
+      "dieser/diese/dieses ile bir ürünü göstermek"
+    ],
+    "grammarTitle": "welcher/dieser ve sıfatların temel kullanımı",
+    "grammarExplanation": "welcher/welche/welches “hangi?” sorusunu isimle birlikte kurar; dieser/diese/dieses ise belirli bir şeyi gösterir. Nominativ'de biçim ismin cinsiyetine uyar: welcher Pullover, welche Jacke, welches Hemd. A1 düzeyinde sıfatları önce sein ile yalın kullanmak güvenlidir: Die Jacke ist warm. Der Pullover ist zu groß.",
+    "grammarColumns": [
+      {
+        "header": "Cinsiyet",
+        "values": [
+          "maskulin",
+          "feminin",
+          "nötr",
+          "çoğul"
+        ]
+      },
+      {
+        "header": "Soru",
+        "values": [
+          "welcher Pullover",
+          "welche Jacke",
+          "welches Hemd",
+          "welche Schuhe"
+        ]
+      },
+      {
+        "header": "Gösterme",
+        "values": [
+          "dieser Pullover",
+          "diese Jacke",
+          "dieses Hemd",
+          "diese Schuhe"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Jacke — ceket",
+      "der Mantel — palto",
+      "der Pullover — kazak",
+      "das Hemd — gömlek",
+      "die Hose — pantolon",
+      "das Kleid — elbise",
+      "die Schuhe — ayakkabılar",
+      "die Größe — beden",
+      "die Farbe — renk",
+      "rot — kırmızı",
+      "blau — mavi",
+      "schwarz — siyah",
+      "groß — büyük",
+      "klein — küçük",
+      "warm — sıcak tutan",
+      "das Wetter — hava durumu"
+    ],
+    "examples": [
+      {
+        "de": "Welche Größe brauchen Sie?",
+        "tr": "Hangi bedene ihtiyacınız var?"
+      },
+      {
+        "de": "Dieser Pullover ist zu groß.",
+        "tr": "Bu kazak fazla büyük."
+      },
+      {
+        "de": "Die Jacke ist warm und leicht.",
+        "tr": "Ceket sıcak tutuyor ve hafif."
+      },
+      {
+        "de": "Ich nehme das blaue Hemd.",
+        "tr": "Mavi gömleği alıyorum."
+      },
+      {
+        "de": "Heute ist es kalt.",
+        "tr": "Bugün hava soğuk."
+      },
+      {
+        "de": "Bei Regen trage ich einen Mantel.",
+        "tr": "Yağmurda palto giyiyorum."
+      }
+    ],
+    "warning": "welcher/welche/welches biçimini ismin artikeliyle eşleştir: der Pullover → welcher; die Jacke → welche; das Hemd → welches.",
+    "tip": "Dolabından üç kıyafet seç; artikelini, rengini ve “ist ...” ile bir özelliğini Almanca söyle.",
+    "miniCheck": {
+      "question": "“Hangi ceket?” hangisidir?",
+      "options": [
+        "Welche Jacke?",
+        "Welcher Jacke?",
+        "Welches Jacke?"
+      ],
+      "correctAnswer": "Welche Jacke?"
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: ___ Pullover gefällt dir?",
+      "answer": "Welcher",
+      "acceptedAnswers": [
+        "Welcher"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Diese",
+        "Jacke",
+        "ist",
+        "sehr",
+        "warm."
+      ],
+      "answer": "Diese Jacke ist sehr warm."
+    },
+    "translation": {
+      "prompt": "“Bu gömlek çok küçük.” cümlesini Almancaya çevir.",
+      "answer": "Dieses Hemd ist zu klein.",
+      "acceptedAnswers": [
+        "Dieses Hemd ist zu klein",
+        "Dieses Hemd ist zu klein."
+      ]
+    },
+    "dialogue": {
+      "prompt": "Verkäufer: Welche Größe brauchen Sie? — Kundin: ___",
+      "options": [
+        "Größe M, bitte.",
+        "Am Bahnhof, bitte.",
+        "Ich habe Fieber."
+      ],
+      "answer": "Größe M, bitte."
+    },
+    "trueFalse": {
+      "prompt": "“welches Hemd” ifadesi nötr bir isimle kullanılır.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Kıyafet olan iki kelimeyi seç.",
+      "options": [
+        "der Pullover",
+        "die Schuhe",
+        "die Kreuzung",
+        "der Termin"
+      ],
+      "answers": [
+        "der Pullover",
+        "die Schuhe"
+      ]
+    },
+    "summary": [
+      "kıyafet ve hava durumu kelimeleri",
+      "welcher/dieser temel biçimleri",
+      "renk ve beden sorma",
+      "sein ile basit sıfat değerlendirmesi"
+    ]
+  },
+  {
+    "id": "a1-u12",
+    "intro": "Bu ünitede kısa bir gezi veya hafta sonu deneyimini anlatacak, ulaşım ve tatil kelimelerini kullanacak, en sık görülen Perfekt yapısını kuracak ve A1 boyunca öğrendiğin iletişim görevlerini birlikte uygulayacaksın.",
+    "goals": [
+      "Basit bir geçmiş olayı Perfekt ile anlatmak",
+      "haben ve sein yardımcı fiillerini ayırt etmek",
+      "Seyahat ve tatil hakkında kısa bilgi vermek",
+      "A1 düzeyindeki temel soru-cevap ve günlük yaşam kalıplarını birleştirmek"
+    ],
+    "grammarTitle": "Perfekt: haben/sein + Partizip II",
+    "grammarExplanation": "Günlük konuşmada yakın geçmişi anlatmak için Perfekt çok kullanılır. Yardımcı fiil ikinci konumda, Partizip II çoğunlukla cümle sonunda bulunur: Wir haben Berlin besucht. Hareket veya yer değişimi bildiren bazı temel fiiller sein ile kullanılır: Ich bin nach Köln gefahren. Bu ünitede yalnızca sık kullanılan fiillerin hazır Partizip II biçimlerine odaklan.",
+    "grammarColumns": [
+      {
+        "header": "Mastar",
+        "values": [
+          "machen",
+          "besuchen",
+          "kaufen",
+          "fahren",
+          "gehen",
+          "kommen"
+        ]
+      },
+      {
+        "header": "Yardımcı",
+        "values": [
+          "haben",
+          "haben",
+          "haben",
+          "sein",
+          "sein",
+          "sein"
+        ]
+      },
+      {
+        "header": "Partizip II",
+        "values": [
+          "gemacht",
+          "besucht",
+          "gekauft",
+          "gefahren",
+          "gegangen",
+          "gekommen"
+        ]
+      }
+    ],
+    "vocabulary": [
+      "die Reise — seyahat",
+      "der Urlaub — tatil",
+      "das Hotel — otel",
+      "der Zug — tren",
+      "das Flugzeug — uçak",
+      "die Fahrkarte — bilet",
+      "der Koffer — valiz",
+      "reisen — seyahat etmek",
+      "fahren — gitmek / araçla gitmek",
+      "fliegen — uçmak",
+      "besuchen — ziyaret etmek",
+      "buchen — rezervasyon yapmak",
+      "ankommen — varmak",
+      "gestern — dün",
+      "letztes Wochenende — geçen hafta sonu",
+      "schön — güzel"
+    ],
+    "examples": [
+      {
+        "de": "Ich bin gestern nach Köln gefahren.",
+        "tr": "Dün Köln'e gittim."
+      },
+      {
+        "de": "Wir haben ein Museum besucht.",
+        "tr": "Bir müzeyi ziyaret ettik."
+      },
+      {
+        "de": "Mara hat ein Hotel gebucht.",
+        "tr": "Mara bir otel rezervasyonu yaptı."
+      },
+      {
+        "de": "Der Zug ist pünktlich angekommen.",
+        "tr": "Tren zamanında vardı."
+      },
+      {
+        "de": "Am Wochenende habe ich viel fotografiert.",
+        "tr": "Hafta sonu çok fotoğraf çektim."
+      },
+      {
+        "de": "Die Reise war sehr schön.",
+        "tr": "Seyahat çok güzeldi."
+      }
+    ],
+    "warning": "Perfekt'te yardımcı fiili unutma ve Partizip II'yi sona koy: “Ich bin nach Köln gefahren.” Hareket fiillerinin hepsi değil, bu ünitede verilen temel örnekler sein ile çalışılmalıdır.",
+    "tip": "Geçen hafta sonundan üç gerçek eylem seç ve her biri için kısa bir Perfekt cümlesi kur. Bilmediğin fiiller yerine ünitedeki güvenli fiilleri kullan.",
+    "miniCheck": {
+      "question": "“Dün Berlin'e gittim.” için doğru cümle hangisidir?",
+      "options": [
+        "Ich bin gestern nach Berlin gefahren.",
+        "Ich habe gestern nach Berlin gefahren.",
+        "Ich gestern Berlin fahren."
+      ],
+      "correctAnswer": "Ich bin gestern nach Berlin gefahren."
+    },
+    "fill": {
+      "prompt": "Boşluğu tamamla: Wir ___ ein Museum besucht.",
+      "answer": "haben",
+      "acceptedAnswers": [
+        "haben"
+      ]
+    },
+    "ordering": {
+      "tokens": [
+        "Mia",
+        "ist",
+        "am Abend",
+        "angekommen."
+      ],
+      "answer": "Mia ist am Abend angekommen."
+    },
+    "translation": {
+      "prompt": "“Bir otel rezervasyonu yaptık.” cümlesini Almancaya çevir.",
+      "answer": "Wir haben ein Hotel gebucht.",
+      "acceptedAnswers": [
+        "Wir haben ein Hotel gebucht",
+        "Wir haben ein Hotel gebucht."
+      ]
+    },
+    "dialogue": {
+      "prompt": "A: Was hast du am Wochenende gemacht? — B: ___",
+      "options": [
+        "Ich habe Hamburg besucht.",
+        "Ich besuche gestern Hamburg.",
+        "Ich bin ein Wochenende."
+      ],
+      "answer": "Ich habe Hamburg besucht."
+    },
+    "trueFalse": {
+      "prompt": "“Ich bin nach München gefahren.” cümlesinde gefahren, fahren fiilinin Partizip II biçimidir.",
+      "answer": true
+    },
+    "multiSelect": {
+      "prompt": "Perfekt cümlesi olan iki seçeneği seç.",
+      "options": [
+        "Wir haben ein Hotel gebucht.",
+        "Sie ist gestern angekommen.",
+        "Ich fahre jeden Tag.",
+        "Das Hotel ist teuer."
+      ],
+      "answers": [
+        "Wir haben ein Hotel gebucht.",
+        "Sie ist gestern angekommen."
+      ]
+    },
+    "summary": [
+      "Perfekt'te yardımcı fiil + Partizip II",
+      "temel haben/sein ayrımı",
+      "seyahat ve tatil kelimeleri",
+      "A1 günlük iletişim becerilerini birlikte kullanma"
+    ]
+  }
+]

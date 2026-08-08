@@ -8,6 +8,11 @@ import type {
   SlideProgress,
   UnitProgress,
 } from "@/types/progress";
+export type ServerLearningPayload = {
+  state: LearningState | null;
+  updatedAt?: string;
+};
+
 import type { LearningPosition, StudySession } from "@/types/learning";
 
 type UnknownRecord = Record<string, unknown>;

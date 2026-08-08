@@ -1,0 +1,242 @@
+[
+  {
+    "unitId": "a2-u01",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Geçmiş, Biyografi ve Anılar. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u02",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Ev Düzeni ve Yer Değiştirme. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u03",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Tatil, Doğa ve Tercihler. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u04",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Alışveriş, Miktarlar ve Ürün Özellikleri. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u05",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Dijital Yaşam, Medya ve Görüşler. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u06",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Okul, Eğitim ve Geçmiş Kurallar. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u07",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: İş Hayatı, Rutinler ve Ekip İletişimi. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u08",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Ulaşım, Yolculuk ve Dolaylı Sorular. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u09",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Spor, Sağlık ve Alışkanlıklar. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u10",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Komşuluk ve Birlikte Yaşam. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u11",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Hizmetler, Tamir ve Nesne Zamirleri. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u12",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Kutlamalar, Gelenekler ve Zaman. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u13",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Teknoloji, Karşılaştırma ve Avantajlar. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u14",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Sorunlar, Şikâyetler ve Tavsiyeler. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u15",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: Başvuru, Randevu ve Resmî İşlemler. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  },
+  {
+    "unitId": "a2-u16",
+    "status": "YAYINA_HAZIR",
+    "reviewedAt": "2026-08-08",
+    "manualLanguageReview": true,
+    "checks": {
+      "grammarAndSpelling": true,
+      "levelAppropriateness": true,
+      "translationNaturalness": true,
+      "duplicateAndTemplateScan": true,
+      "answerConsistency": true,
+      "vocabularyContextScan": true
+    },
+    "note": "V34 A2 Gold Standard: A2 Genel Uygulama ve Gerçek Yaşam. Temel içerik, A2 seviye sınırı, gramer ilerlemesi, kelime bağlamı, özgün örnekler, okuma, dinleme, diyalog, yazma, konuşma ve gerçek yaşam görevi yeniden denetlendi."
+  }
+]

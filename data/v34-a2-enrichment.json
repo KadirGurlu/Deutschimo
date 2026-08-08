@@ -1,0 +1,2114 @@
+[
+  {
+    "id": "a2-u01",
+    "cefrCanDo": [
+      "Geçmişte yaşadığım bir olayı kısa ve anlaşılır biçimde anlatabilirim.",
+      "Geçmiş olayları önce/sonra ilişkisiyle sıralayabilirim.",
+      "Kısa biyografik bilgilerden temel ayrıntıları çıkarabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Almanca gündelik anlatımda yakın geçmiş için Perfekt çok yaygındır; sein ve haben gibi birkaç çok sık fiilin Präteritum biçimleri de doğal konuşmada sık görülür."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mara",
+        "de": "Was hast du nach der Schule gemacht?",
+        "tr": "Okuldan sonra ne yaptın?"
+      },
+      {
+        "speaker": "Nils",
+        "de": "Zuerst habe ich ein Jahr gearbeitet.",
+        "tr": "Önce bir yıl çalıştım."
+      },
+      {
+        "speaker": "Mara",
+        "de": "Und danach?",
+        "tr": "Peki sonra?"
+      },
+      {
+        "speaker": "Nils",
+        "de": "Dann bin ich nach Graz gezogen und habe dort eine Ausbildung angefangen.",
+        "tr": "Sonra Graz’a taşındım ve orada mesleki eğitime başladım."
+      },
+      {
+        "speaker": "Mara",
+        "de": "War das am Anfang schwierig?",
+        "tr": "Başta zor muydu?"
+      },
+      {
+        "speaker": "Nils",
+        "de": "Ja, ich hatte wenig Geld, aber die Zeit war sehr interessant.",
+        "tr": "Evet, az param vardı ama dönem çok ilginçti."
+      }
+    ],
+    "reading": {
+      "de": "Vor fünf Jahren wohnte Nora noch bei ihren Eltern in Ulm. Nach der Schule machte sie zuerst ein Praktikum in einer kleinen Firma. Danach begann sie eine Ausbildung zur Mediengestalterin. Im zweiten Jahr zog sie in eine WG. Dort lernte sie viele neue Leute kennen. Heute arbeitet sie in Stuttgart und erzählt gern von dieser Zeit.",
+      "tr": "Beş yıl önce Nora hâlâ Ulm’da ailesiyle yaşıyordu. Okuldan sonra önce küçük bir firmada staj yaptı. Daha sonra medya tasarımcılığı eğitimi başladı. İkinci yılda paylaşımlı eve taşındı. Orada birçok yeni insanla tanıştı. Bugün Stuttgart’ta çalışıyor ve o dönemden memnuniyetle söz ediyor."
+    },
+    "listening": {
+      "de": "Ein Mann erzählt: „Als ich 19 war, hatte ich noch keinen festen Plan. Zuerst habe ich in einem Café gearbeitet. Später bin ich für sechs Monate nach Österreich gefahren. Dort habe ich Deutsch gelernt und viele Freunde gefunden. Danach war für mich klar: Ich wollte im Tourismus arbeiten.“",
+      "tr": "Bir adam şöyle anlatıyor: “19 yaşındayken henüz kesin bir planım yoktu. Önce bir kafede çalıştım. Daha sonra altı aylığına Avusturya’ya gittim. Orada Almanca öğrendim ve birçok arkadaş buldum. Sonra benim için netleşti: turizm alanında çalışmak istiyordum.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u01-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Nora okuldan sonra önce ne yaptı?",
+        "options": [
+          "Bir staj yaptı.",
+          "Hemen üniversiteye başladı.",
+          "Yurt dışına taşındı."
+        ],
+        "correctAnswer": "Bir staj yaptı.",
+        "explanation": "Metin stajın ilk adım olduğunu açıkça söyler."
+      },
+      {
+        "id": "a2-u01-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Nora ikinci yılda nereye taşındı?",
+        "options": [
+          "Bir WG’ye.",
+          "Bir otele.",
+          "Ailesinin yanına."
+        ],
+        "correctAnswer": "Bir WG’ye.",
+        "explanation": "Metinde ikinci yılda WG’ye taşındığı belirtilir."
+      },
+      {
+        "id": "a2-u01-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Nora bugün nerede çalışıyor?",
+        "options": [
+          "Stuttgart’ta.",
+          "Ulm’da.",
+          "Graz’da."
+        ],
+        "correctAnswer": "Stuttgart’ta.",
+        "explanation": "Son cümlede çalışma yeri Stuttgart olarak verilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u01-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı 19 yaşındayken neye sahip değildi?",
+        "options": [
+          "Kesin bir plana.",
+          "Bir kafeye.",
+          "Arkadaşlara."
+        ],
+        "correctAnswer": "Kesin bir plana.",
+        "explanation": "İlk cümlede festen Plan olmadığı söylenir."
+      },
+      {
+        "id": "a2-u01-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Avusturya’da ne yaptı?",
+        "options": [
+          "Almanca öğrendi.",
+          "Araba sattı.",
+          "Ev satın aldı."
+        ],
+        "correctAnswer": "Almanca öğrendi.",
+        "explanation": "Dinleme metninde Deutsch gelernt ifadesi geçer."
+      },
+      {
+        "id": "a2-u01-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sonunda hangi alanda çalışmak istedi?",
+        "options": [
+          "Turizm.",
+          "Tıp.",
+          "Mühendislik."
+        ],
+        "correctAnswer": "Turizm.",
+        "explanation": "Son cümlede Tourismus hedefi belirtilir."
+      }
+    ],
+    "writingPrompt": "70–90 kelimeyle eğitim veya iş hayatındaki geçmiş bir dönemi anlat. En az dört zaman sıralama ifadesi ve iki farklı geçmiş yapı kullan.",
+    "speakingPrompt": "60 saniye boyunca geçmişteki bir okul, iş veya taşınma deneyimini sırayla anlat.",
+    "realLifeMission": "Yeni tanıştığın birine “Okuldan sonra ne yaptın?” sorusuna kısa ama bağlantılı bir A2 cevabı ver.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u02",
+    "cefrCanDo": [
+      "Bir odadaki eşyaların konumunu ayrıntılı tarif edebilirim.",
+      "Bir eşyanın nereye taşınacağını söyleyebilirim.",
+      "Basit ev düzenleme önerilerini anlayıp verebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Kiralık ev veya WG iletişiminde oda düzeni, ortak alan ve eşya konumu hakkında açık ve kısa tarifler günlük pratikte önemlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Eda",
+        "de": "Wohin soll ich den kleinen Tisch stellen?",
+        "tr": "Küçük masayı nereye koyayım?"
+      },
+      {
+        "speaker": "Tom",
+        "de": "Stell ihn bitte neben das Fenster.",
+        "tr": "Lütfen onu pencerenin yanına koy."
+      },
+      {
+        "speaker": "Eda",
+        "de": "Und die Lampe?",
+        "tr": "Peki lamba?"
+      },
+      {
+        "speaker": "Tom",
+        "de": "Die kann auf dem Tisch stehen.",
+        "tr": "O masanın üzerinde durabilir."
+      },
+      {
+        "speaker": "Eda",
+        "de": "Soll das Bild über das Sofa?",
+        "tr": "Resim kanepenin üstüne mi gelsin?"
+      },
+      {
+        "speaker": "Tom",
+        "de": "Ja, dann sieht das Zimmer gemütlicher aus.",
+        "tr": "Evet, o zaman oda daha rahat görünür."
+      }
+    ],
+    "reading": {
+      "de": "Jule renoviert ihr Arbeitszimmer. Der Schreibtisch steht jetzt direkt am Fenster, weil dort mehr Licht ist. Neben den Schreibtisch stellt sie ein schmales Regal. Den Teppich legt sie unter den Stuhl. An die Wand über dem Regal hängt sie zwei Bilder. Der große Schrank bleibt an seinem alten Platz neben der Tür.",
+      "tr": "Jule çalışma odasını yeniliyor. Çalışma masası artık doğrudan pencerenin yanında, çünkü orada daha fazla ışık var. Masanın yanına dar bir raf koyuyor. Halıyı sandalyenin altına seriyor. Rafın üstündeki duvara iki resim asıyor. Büyük dolap kapının yanındaki eski yerinde kalıyor."
+    },
+    "listening": {
+      "de": "Eine Wohnberaterin sagt: „Stellen Sie große Möbel nicht direkt vor das Fenster. Ein Spiegel an einer hellen Wand kann einen kleinen Raum größer wirken lassen. Legen Sie einen hellen Teppich in die Mitte. Wenn der Raum sehr dunkel ist, benutzen Sie lieber mehrere kleine Lampen.“",
+      "tr": "Bir ev danışmanı şöyle diyor: “Büyük mobilyaları doğrudan pencerenin önüne koymayın. Aydınlık bir duvardaki ayna küçük bir odayı daha büyük gösterebilir. Ortaya açık renkli bir halı serin. Oda çok karanlıksa birkaç küçük lamba kullanmayı tercih edin.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u02-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Jule çalışma masasını nereye koydu?",
+        "options": [
+          "Pencerenin yanına.",
+          "Kapının önüne.",
+          "Koridora."
+        ],
+        "correctAnswer": "Pencerenin yanına.",
+        "explanation": "Metinde Schreibtisch am Fenster olarak belirtilir."
+      },
+      {
+        "id": "a2-u02-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Halı nereye konuyor?",
+        "options": [
+          "Sandalyenin altına.",
+          "Rafın üstüne.",
+          "Dolabın içine."
+        ],
+        "correctAnswer": "Sandalyenin altına.",
+        "explanation": "Metinde unter den Stuhl ifadesi kullanılır."
+      },
+      {
+        "id": "a2-u02-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi eşya eski yerinde kalıyor?",
+        "options": [
+          "Büyük dolap.",
+          "Masa.",
+          "Halı."
+        ],
+        "correctAnswer": "Büyük dolap.",
+        "explanation": "Son cümlede Schrank’ın eski yerinde kaldığı söylenir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u02-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Büyük mobilyalar nereye konmamalı?",
+        "options": [
+          "Pencerenin önüne.",
+          "Kapının yanına.",
+          "Duvarın yanına."
+        ],
+        "correctAnswer": "Pencerenin önüne.",
+        "explanation": "İlk öneri bunu söyler."
+      },
+      {
+        "id": "a2-u02-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ayna küçük odada ne sağlayabilir?",
+        "options": [
+          "Daha büyük görünüm.",
+          "Daha fazla ses.",
+          "Daha düşük kira."
+        ],
+        "correctAnswer": "Daha büyük görünüm.",
+        "explanation": "Danışman aynanın odayı daha büyük gösterebileceğini söyler."
+      },
+      {
+        "id": "a2-u02-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Karanlık oda için ne öneriliyor?",
+        "options": [
+          "Birden fazla küçük lamba.",
+          "Hiç lamba kullanmamak.",
+          "Sadece perde kullanmak."
+        ],
+        "correctAnswer": "Birden fazla küçük lamba.",
+        "explanation": "Son cümlede mehrere kleine Lampen denir."
+      }
+    ],
+    "writingPrompt": "Bir arkadaşına yeni odanı 70–90 kelimeyle anlat: en az dört konum, iki yerleştirme eylemi ve bir öneri kullan.",
+    "speakingPrompt": "Bir oda planına bakıyormuş gibi 60 saniye boyunca eşyaların nerede olduğunu ve iki eşyayı nereye taşıyacağını anlat.",
+    "realLifeMission": "Yeni taşındığın evde bir arkadaşından yardım isterken üç eşyayı nereye koyacağını Almanca kararlaştır.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u03",
+    "cefrCanDo": [
+      "Tatil seçenekleri arasında karşılaştırma yapabilirim.",
+      "Ne yapmayı daha çok veya en çok istediğimi söyleyebilirim.",
+      "Bir öneriyi basit gerekçeyle değerlendirebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "DACH bölgesinde hafta sonu ve kısa tatil planlarında doğa yürüyüşü, bisiklet, göl kenarı ve şehir gezileri sık konuşulan gündelik konulardır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mila",
+        "de": "Möchtest du lieber ans Meer oder in die Berge?",
+        "tr": "Denizi mi yoksa dağları mı tercih edersin?"
+      },
+      {
+        "speaker": "Jan",
+        "de": "Ich würde gern in die Berge fahren.",
+        "tr": "Dağlara gitmek isterdim."
+      },
+      {
+        "speaker": "Mila",
+        "de": "Warum?",
+        "tr": "Neden?"
+      },
+      {
+        "speaker": "Jan",
+        "de": "Dort ist es ruhiger, und ich wandere sehr gern.",
+        "tr": "Orası daha sakin ve yürüyüş yapmayı çok seviyorum."
+      },
+      {
+        "speaker": "Mila",
+        "de": "Ich schwimme am liebsten.",
+        "tr": "Ben en çok yüzmeyi seviyorum."
+      },
+      {
+        "speaker": "Jan",
+        "de": "Dann suchen wir einen See in den Bergen.",
+        "tr": "O zaman dağlarda bir göl bulalım."
+      }
+    ],
+    "reading": {
+      "de": "Ein Reiseportal vergleicht drei Wochenendangebote. Die Tour am Fluss ist günstig und leicht, aber sie dauert fast den ganzen Tag. Der Aufenthalt auf einem Bauernhof ist teurer, dafür gibt es dort viel Ruhe und regionale Produkte. Die Bergwanderung ist am anstrengendsten, bietet aber die schönste Aussicht.",
+      "tr": "Bir seyahat sitesi üç hafta sonu seçeneğini karşılaştırıyor. Nehir turu uygun fiyatlı ve kolay ama neredeyse tüm gün sürüyor. Çiftlikte konaklama daha pahalı, buna karşılık çok sakinlik ve yerel ürünler var. Dağ yürüyüşü en yorucu ama en güzel manzarayı sunuyor."
+    },
+    "listening": {
+      "de": "Zwei Freundinnen planen: „Ich würde gern Rad fahren, aber nicht bei starkem Wind.“ – „Dann ist die Tour am See besser. Sie ist kürzer und nicht so anstrengend.“ – „Gut. Am liebsten würde ich dort auch übernachten.“ – „Das geht. Es gibt einen kleinen Campingplatz am Ufer.“",
+      "tr": "İki arkadaş plan yapıyor: “Bisiklete binmek isterdim ama güçlü rüzgârda değil.” – “O zaman göl turu daha iyi. Daha kısa ve o kadar yorucu değil.” – “İyi. En çok orada gecelemek de isterdim.” – “Olur. Kıyıda küçük bir kamp alanı var.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u03-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "En ucuz seçenek hangisi?",
+        "options": [
+          "Nehir turu.",
+          "Çiftlik.",
+          "Dağ yürüyüşü."
+        ],
+        "correctAnswer": "Nehir turu.",
+        "explanation": "Metin nehir turunu günstig olarak tanımlar."
+      },
+      {
+        "id": "a2-u03-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi seçenek en yorucu?",
+        "options": [
+          "Dağ yürüyüşü.",
+          "Nehir turu.",
+          "Çiftlik."
+        ],
+        "correctAnswer": "Dağ yürüyüşü.",
+        "explanation": "Metinde am anstrengendsten ifadesi kullanılır."
+      },
+      {
+        "id": "a2-u03-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Çiftliğin avantajı nedir?",
+        "options": [
+          "Sakinlik ve yerel ürünler.",
+          "En kısa yol.",
+          "Ücretsiz ulaşım."
+        ],
+        "correctAnswer": "Sakinlik ve yerel ürünler.",
+        "explanation": "Metinde Ruhe ve regionale Produkte verilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u03-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk kişi hangi etkinliği yapmak istiyor?",
+        "options": [
+          "Bisiklete binmek.",
+          "Kayak yapmak.",
+          "Müze gezmek."
+        ],
+        "correctAnswer": "Bisiklete binmek.",
+        "explanation": "İlk cümlede Rad fahren denir."
+      },
+      {
+        "id": "a2-u03-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Göl turu nasıl?",
+        "options": [
+          "Daha kısa ve daha az yorucu.",
+          "Daha pahalı ve uzun.",
+          "Kapalı."
+        ],
+        "correctAnswer": "Daha kısa ve daha az yorucu.",
+        "explanation": "İkinci konuşmacı bunu açıklar."
+      },
+      {
+        "id": "a2-u03-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kıyıda ne var?",
+        "options": [
+          "Küçük kamp alanı.",
+          "Havaalanı.",
+          "Fabrika."
+        ],
+        "correctAnswer": "Küçük kamp alanı.",
+        "explanation": "Son cümlede Campingplatz am Ufer denir."
+      }
+    ],
+    "writingPrompt": "80–100 kelimeyle üç tatil seçeneğini karşılaştır ve hangisini neden tercih ettiğini yaz.",
+    "speakingPrompt": "60–75 saniye boyunca iki hafta sonu planını karşılaştır, tercih yap ve gerekçeni söyle.",
+    "realLifeMission": "Arkadaşınla iki günlük bir gezi seç: iki seçeneği karşılaştır, bütçe ve aktiviteyi konuşup ortak karar ver.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u04",
+    "cefrCanDo": [
+      "Markette miktar ve paket birimleriyle sipariş verebilirim.",
+      "Ürünleri sıfatlarla daha ayrıntılı tanımlayabilirim.",
+      "Fiyat ve kalite açısından ürünleri karşılaştırabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Pazar ve market alışverişinde kilo, gram, litre, paket ve adet gibi ölçülerle birlikte ürünün tazeliği ve yerelliği de sık konuşulur."
+    },
+    "dialogue": [
+      {
+        "speaker": "Verkäufer",
+        "de": "Was möchten Sie?",
+        "tr": "Ne istersiniz?"
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Ich hätte gern ein Kilo reife Tomaten.",
+        "tr": "Bir kilo olgun domates istiyorum."
+      },
+      {
+        "speaker": "Verkäufer",
+        "de": "Gern. Sonst noch etwas?",
+        "tr": "Memnuniyetle. Başka?"
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Ja, einen kleinen regionalen Käse.",
+        "tr": "Evet, küçük bir yerel peynir."
+      },
+      {
+        "speaker": "Verkäufer",
+        "de": "Der hier ist heute günstiger.",
+        "tr": "Bu bugün daha uygun fiyatlı."
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Gut, dann nehme ich ihn.",
+        "tr": "İyi, o zaman onu alıyorum."
+      }
+    ],
+    "reading": {
+      "de": "Ein kleiner Wochenmarkt wirbt mit regionalen Produkten. Am Samstag gibt es frisches Brot, verschiedene Käsesorten und reifes Obst aus der Region. Wer mehr als zwei Kilo Äpfel kauft, bekommt einen günstigeren Preis. Für Milch und Saft können Kundinnen und Kunden eigene Flaschen mitbringen.",
+      "tr": "Küçük bir haftalık pazar yerel ürünlerin reklamını yapıyor. Cumartesi taze ekmek, farklı peynir çeşitleri ve bölgeden olgun meyveler var. İki kilodan fazla elma alanlar daha uygun fiyat alıyor. Süt ve meyve suyu için müşteriler kendi şişelerini getirebiliyor."
+    },
+    "listening": {
+      "de": "Im Laden sagt eine Kundin: „Ich brauche eine große Packung Reis, zwei Dosen Tomaten und eine Flasche Olivenöl. Haben Sie auch frischen Spinat?“ Der Verkäufer antwortet: „Ja, der Spinat ist heute gekommen. Die kleine Packung kostet drei Euro, die große fünf.“",
+      "tr": "Mağazada bir müşteri şöyle diyor: “Büyük bir paket pirinç, iki kutu domates ve bir şişe zeytinyağına ihtiyacım var. Taze ıspanağınız da var mı?” Satıcı cevaplıyor: “Evet, ıspanak bugün geldi. Küçük paket üç, büyük paket beş avro.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u04-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Pazarda cumartesi ne var?",
+        "options": [
+          "Taze ekmek ve yerel ürünler.",
+          "Sadece elektronik ürünler.",
+          "Yalnızca içecek."
+        ],
+        "correctAnswer": "Taze ekmek ve yerel ürünler.",
+        "explanation": "Metin bunları açıkça listeler."
+      },
+      {
+        "id": "a2-u04-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Daha uygun elma fiyatı için ne kadar alınmalı?",
+        "options": [
+          "İki kilodan fazla.",
+          "Yarım kilo.",
+          "Bir adet."
+        ],
+        "correctAnswer": "İki kilodan fazla.",
+        "explanation": "Metinde mehr als zwei Kilo denir."
+      },
+      {
+        "id": "a2-u04-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Müşteriler ne getirebilir?",
+        "options": [
+          "Kendi şişelerini.",
+          "Kendi masalarını.",
+          "Kendi kasalarını."
+        ],
+        "correctAnswer": "Kendi şişelerini.",
+        "explanation": "Süt ve meyve suyu için eigene Flaschen bilgisi vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u04-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Müşteri kaç kutu domates istiyor?",
+        "options": [
+          "İki.",
+          "Bir.",
+          "Dört."
+        ],
+        "correctAnswer": "İki.",
+        "explanation": "Dinlemede zwei Dosen Tomaten denir."
+      },
+      {
+        "id": "a2-u04-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi taze ürünü soruyor?",
+        "options": [
+          "Ispanak.",
+          "Peynir.",
+          "Ekmek."
+        ],
+        "correctAnswer": "Ispanak.",
+        "explanation": "frischen Spinat ifadesi geçer."
+      },
+      {
+        "id": "a2-u04-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Büyük ıspanak paketi kaç avro?",
+        "options": [
+          "Beş.",
+          "Üç.",
+          "Sekiz."
+        ],
+        "correctAnswer": "Beş.",
+        "explanation": "Satıcı büyük paketin beş avro olduğunu söyler."
+      }
+    ],
+    "writingPrompt": "Bir market siparişi veya alışveriş notunu 70–90 kelimeyle yaz; miktar, paket ve en az dört sıfatlı isim grubu kullan.",
+    "speakingPrompt": "Pazar tezgâhında müşteri rolüyle 60 saniye konuş: miktar belirt, iki ürünün özelliğini sor ve seçim yap.",
+    "realLifeMission": "Gerçek bir alışveriş listeni A2 düzeyinde miktar + özellik + ürün biçiminde Almancaya çevir ve sesli oku.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u05",
+    "cefrCanDo": [
+      "Dijital alışkanlıklarımın nedenlerini açıklayabilirim.",
+      "Birinin söylediği veya düşündüğü şeyi dass ile aktarabilirim.",
+      "Çevrim içi davranış hakkında kısa görüş belirtebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Fotoğraf ve kişisel bilgi paylaşırken izin istemek yalnızca dil konusu değil, günlük dijital nezaket ve mahremiyetin de parçasıdır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Lina",
+        "de": "Warum hast du das Foto gelöscht?",
+        "tr": "Fotoğrafı neden sildin?"
+      },
+      {
+        "speaker": "Oskar",
+        "de": "Weil eine Freundin darauf zu sehen war.",
+        "tr": "Çünkü üzerinde bir arkadaş görünüyordu."
+      },
+      {
+        "speaker": "Lina",
+        "de": "Hat sie sich beschwert?",
+        "tr": "Şikâyet etti mi?"
+      },
+      {
+        "speaker": "Oskar",
+        "de": "Nein, aber ich finde, dass man vorher fragen sollte.",
+        "tr": "Hayır ama bence önce sormak gerekir."
+      },
+      {
+        "speaker": "Lina",
+        "de": "Das sehe ich genauso.",
+        "tr": "Ben de aynı düşünüyorum."
+      },
+      {
+        "speaker": "Oskar",
+        "de": "Ich poste jetzt nur noch Fotos mit Erlaubnis von allen.",
+        "tr": "Artık yalnızca herkesin izniyle fotoğraf paylaşıyorum."
+      }
+    ],
+    "reading": {
+      "de": "Eine Lerngruppe hat eine neue Regel: Während der gemeinsamen Lernzeit bleiben die Handys in einer Box. Die Gruppe sagt, dass sie sich dann besser konzentrieren kann. In den Pausen dürfen alle ihre Nachrichten prüfen. Einige fanden die Regel zuerst streng, aber nach zwei Wochen wollen sie sie behalten, weil die Treffen ruhiger geworden sind.",
+      "tr": "Bir çalışma grubunun yeni bir kuralı var: ortak çalışma sırasında telefonlar bir kutuda kalıyor. Grup böylece daha iyi odaklanabildiğini söylüyor. Molalarda herkes mesajlarını kontrol edebiliyor. Bazıları kuralı önce katı buldu ama iki hafta sonra toplantılar daha sakin olduğu için kuralı korumak istiyorlar."
+    },
+    "listening": {
+      "de": "Eine Studentin erzählt: „Ich benutze soziale Medien jeden Tag, aber ich habe alle Benachrichtigungen ausgeschaltet. Ich merke, dass ich dadurch weniger oft aufs Handy schaue. Abends lege ich das Telefon nicht neben das Bett, weil ich besser schlafen möchte.“",
+      "tr": "Bir öğrenci şöyle anlatıyor: “Sosyal medyayı her gün kullanıyorum ama tüm bildirimleri kapattım. Bu sayede telefona daha az baktığımı fark ediyorum. Akşamları daha iyi uyumak istediğim için telefonu yatağın yanına koymuyorum.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u05-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Çalışma sırasında telefonlar nerede?",
+        "options": [
+          "Bir kutuda.",
+          "Masada açık.",
+          "Evde."
+        ],
+        "correctAnswer": "Bir kutuda.",
+        "explanation": "İlk cümlelerde Handys in einer Box denir."
+      },
+      {
+        "id": "a2-u05-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Molalarda ne yapılabilir?",
+        "options": [
+          "Mesajlar kontrol edilebilir.",
+          "Telefon kullanmak tamamen yasak.",
+          "Ders bitirilir."
+        ],
+        "correctAnswer": "Mesajlar kontrol edilebilir.",
+        "explanation": "Metinde in den Pausen dürfen ... Nachrichten prüfen denir."
+      },
+      {
+        "id": "a2-u05-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Grup neden kuralı korumak istiyor?",
+        "options": [
+          "Toplantılar daha sakin olduğu için.",
+          "Telefonlar daha ucuz olduğu için.",
+          "Yeni kutu aldıkları için."
+        ],
+        "correctAnswer": "Toplantılar daha sakin olduğu için.",
+        "explanation": "weil die Treffen ruhiger geworden sind ifadesi verilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u05-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Öğrenci neyi kapattı?",
+        "options": [
+          "Bildirimleri.",
+          "İnterneti tamamen.",
+          "Telefonu sattı."
+        ],
+        "correctAnswer": "Bildirimleri.",
+        "explanation": "alle Benachrichtigungen ausgeschaltet denir."
+      },
+      {
+        "id": "a2-u05-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ne fark ediyor?",
+        "options": [
+          "Telefona daha az baktığını.",
+          "Daha çok mesaj aldığını.",
+          "Daha geç uyandığını."
+        ],
+        "correctAnswer": "Telefona daha az baktığını.",
+        "explanation": "weniger oft aufs Handy schaue ifadesi geçer."
+      },
+      {
+        "id": "a2-u05-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Telefonu neden yatağın yanına koymuyor?",
+        "options": [
+          "Daha iyi uyumak için.",
+          "Şarj olmadığı için.",
+          "Telefon bozuk olduğu için."
+        ],
+        "correctAnswer": "Daha iyi uyumak için.",
+        "explanation": "Sonunda besser schlafen möchte denir."
+      }
+    ],
+    "writingPrompt": "80–100 kelimeyle dijital alışkanlıkların hakkında kısa görüş yaz; en az iki weil ve iki dass yapısı kullan.",
+    "speakingPrompt": "60 saniye boyunca bir dijital alışkanlığını, nedenini ve değiştirmek istediğin bir noktayı anlat.",
+    "realLifeMission": "Bir arkadaşınla fotoğraf paylaşma konusunda kısa bir dijital nezaket kuralı kararlaştır.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u06",
+    "cefrCanDo": [
+      "Geçmiş okul kurallarını ve imkanlarını anlatabilirim.",
+      "Modal fiillerin Präteritum biçimlerini anlayabilirim.",
+      "Eğitim seçenekleri hakkında kısa görüş belirtebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Almanca konuşulan ülkelerde eğitim yolları çeşitlidir; A2 düzeyinde amaç sistemi ezberlemek değil, kendi eğitim geçmişini ve temel seçenekleri anlatabilmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Sara",
+        "de": "Musstest du in der Schule eine Uniform tragen?",
+        "tr": "Okulda üniforma giymek zorunda mıydın?"
+      },
+      {
+        "speaker": "David",
+        "de": "Nein, das musste ich nicht.",
+        "tr": "Hayır, zorunda değildim."
+      },
+      {
+        "speaker": "Sara",
+        "de": "Durftet ihr Handys benutzen?",
+        "tr": "Telefon kullanmanıza izin var mıydı?"
+      },
+      {
+        "speaker": "David",
+        "de": "Nur in der Pause. Im Unterricht durften wir sie nicht benutzen.",
+        "tr": "Sadece molada. Derste kullanmamıza izin yoktu."
+      },
+      {
+        "speaker": "Sara",
+        "de": "Was wolltest du nach der Schule machen?",
+        "tr": "Okuldan sonra ne yapmak istiyordun?"
+      },
+      {
+        "speaker": "David",
+        "de": "Ich wollte zuerst eine Ausbildung machen.",
+        "tr": "Önce mesleki eğitim yapmak istiyordum."
+      }
+    ],
+    "reading": {
+      "de": "Mina erinnert sich gern an ihre Schulzeit. Sie musste morgens früh losfahren, weil ihre Schule außerhalb des Ortes lag. Im Unterricht durfte sie kein Handy benutzen. Nachmittags konnte sie oft an einer Theatergruppe teilnehmen. Nach dem Abschluss wollte sie nicht sofort studieren und machte zuerst ein freiwilliges Jahr.",
+      "tr": "Mina okul yıllarını memnuniyetle hatırlıyor. Okulu şehrin dışında olduğu için sabah erken yola çıkmak zorundaydı. Derste telefon kullanmasına izin yoktu. Öğleden sonraları sık sık tiyatro grubuna katılabiliyordu. Mezuniyetten sonra hemen üniversite okumak istemedi ve önce gönüllü bir yıl yaptı."
+    },
+    "listening": {
+      "de": "Ein junger Mann erzählt: „In meiner Ausbildung musste ich dreimal pro Woche im Betrieb sein und zweimal in der Berufsschule. Ich konnte sehr viel praktisch lernen. Am Anfang durfte ich schwierige Maschinen noch nicht allein benutzen. Später hatte ich mehr Verantwortung.“",
+      "tr": "Genç bir adam şöyle anlatıyor: “Mesleki eğitimimde haftada üç kez iş yerinde, iki kez meslek okulunda olmak zorundaydım. Çok fazla pratik öğrenebildim. Başta zor makineleri tek başıma kullanmama henüz izin yoktu. Daha sonra daha fazla sorumluluğum oldu.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u06-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Mina neden sabah erken yola çıkıyordu?",
+        "options": [
+          "Okulu uzakta olduğu için.",
+          "Spor yaptığı için.",
+          "İşi olduğu için."
+        ],
+        "correctAnswer": "Okulu uzakta olduğu için.",
+        "explanation": "weil ihre Schule außerhalb ... lag ifadesi vardır."
+      },
+      {
+        "id": "a2-u06-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Derste ne yapmasına izin yoktu?",
+        "options": [
+          "Telefon kullanmak.",
+          "Not almak.",
+          "Soru sormak."
+        ],
+        "correctAnswer": "Telefon kullanmak.",
+        "explanation": "Metin açıkça kein Handy benutzen der."
+      },
+      {
+        "id": "a2-u06-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Mezuniyetten sonra önce ne yaptı?",
+        "options": [
+          "Gönüllü bir yıl.",
+          "Hemen doktora yaptı.",
+          "Ev aldı."
+        ],
+        "correctAnswer": "Gönüllü bir yıl.",
+        "explanation": "Metnin son cümlesi bunu belirtir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u06-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Haftada kaç gün işletmedeydi?",
+        "options": [
+          "Üç.",
+          "İki.",
+          "Beş."
+        ],
+        "correctAnswer": "Üç.",
+        "explanation": "dreimal pro Woche im Betrieb denir."
+      },
+      {
+        "id": "a2-u06-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Başta neyi tek başına kullanamıyordu?",
+        "options": [
+          "Zor makineleri.",
+          "Bilgisayarı.",
+          "Telefonu."
+        ],
+        "correctAnswer": "Zor makineleri.",
+        "explanation": "schwierige Maschinen ifadesi geçer."
+      },
+      {
+        "id": "a2-u06-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Daha sonra ne arttı?",
+        "options": [
+          "Sorumluluğu.",
+          "Okul sayısı.",
+          "Yolculuk süresi."
+        ],
+        "correctAnswer": "Sorumluluğu.",
+        "explanation": "mehr Verantwortung denir."
+      }
+    ],
+    "writingPrompt": "80–100 kelimeyle okul veya eğitim geçmişini anlat; musste/konnte/durfte/wollte biçimlerinden en az üçünü kullan.",
+    "speakingPrompt": "60 saniyede geçmiş okul kurallarını, sevdiğin bir şeyi ve okul sonrası planını anlat.",
+    "realLifeMission": "Bir Alman arkadaşına kendi eğitim geçmişini karşılaştırmalı olarak anlat: bir zorunluluk, bir izin ve bir imkan söyle.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u07",
+    "cefrCanDo": [
+      "İş rutinimi koşul ve zaman ilişkisiyle anlatabilirim.",
+      "Reflexive fiilleri günlük iş iletişiminde kullanabilirim.",
+      "Kısa iş yeri görev ve telefon konuşması yapabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "İş ortamında kısa, net ve zaman odaklı iletişim özellikle randevu, vardiya ve müşteri geri dönüşlerinde önemlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Chef",
+        "de": "Können Sie sich auf den Termin um elf vorbereiten?",
+        "tr": "Saat on birdeki randevuya hazırlanabilir misiniz?"
+      },
+      {
+        "speaker": "Mira",
+        "de": "Ja. Wenn ich die Unterlagen habe, brauche ich etwa zwanzig Minuten.",
+        "tr": "Evet. Belgeler elimde olursa yaklaşık yirmi dakikaya ihtiyacım var."
+      },
+      {
+        "speaker": "Chef",
+        "de": "Die liegen schon auf Ihrem Schreibtisch.",
+        "tr": "Zaten masanızın üzerinde."
+      },
+      {
+        "speaker": "Mira",
+        "de": "Gut, dann bereite ich mich sofort vor.",
+        "tr": "İyi, o zaman hemen hazırlanıyorum."
+      },
+      {
+        "speaker": "Chef",
+        "de": "Und melden Sie sich bitte danach beim Kunden.",
+        "tr": "Sonra lütfen müşteriye geri dönüş yapın."
+      },
+      {
+        "speaker": "Mira",
+        "de": "Mache ich.",
+        "tr": "Yaparım."
+      }
+    ],
+    "reading": {
+      "de": "In einem kleinen Hotel beginnt die Frühschicht um sechs Uhr. Wenn Gäste abreisen, kontrolliert das Team zuerst die Zimmerlisten. Die Mitarbeiterin an der Rezeption kümmert sich um Rechnungen und Fragen. Gegen neun Uhr trifft sich das Team kurz und bespricht die restlichen Aufgaben. Neue Kollegen melden sich bei der Schichtleitung.",
+      "tr": "Küçük bir otelde sabah vardiyası altıda başlıyor. Misafirler ayrıldığında ekip önce oda listelerini kontrol ediyor. Resepsiyondaki çalışan faturalar ve sorularla ilgileniyor. Dokuz civarı ekip kısa süre buluşup kalan görevleri konuşuyor. Yeni çalışanlar vardiya sorumlusuna haber veriyor."
+    },
+    "listening": {
+      "de": "Eine Kollegin hinterlässt eine Nachricht: „Hallo Amir, ich bin heute etwas später da. Wenn Frau Keller anruft, sag ihr bitte, dass ich mich nach zehn Uhr melde. Die Unterlagen für die Besprechung liegen im Besprechungsraum. Bitte bereite dich schon auf den ersten Punkt vor.“",
+      "tr": "Bir iş arkadaşı mesaj bırakıyor: “Merhaba Amir, bugün biraz geç geleceğim. Frau Keller ararsa lütfen ona ondan sonra geri dönüş yapacağımı söyle. Toplantı belgeleri toplantı odasında. Lütfen ilk maddeye şimdiden hazırlan.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u07-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sabah vardiyası kaçta başlıyor?",
+        "options": [
+          "Altıda.",
+          "Sekizde.",
+          "Dokuzda."
+        ],
+        "correctAnswer": "Altıda.",
+        "explanation": "İlk cümlede um sechs Uhr denir."
+      },
+      {
+        "id": "a2-u07-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Resepsiyon çalışanı neyle ilgileniyor?",
+        "options": [
+          "Faturalar ve sorularla.",
+          "Bahçe işleriyle.",
+          "Sadece yemekle."
+        ],
+        "correctAnswer": "Faturalar ve sorularla.",
+        "explanation": "Metinde Rechnungen und Fragen denir."
+      },
+      {
+        "id": "a2-u07-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ekip dokuz civarı ne yapıyor?",
+        "options": [
+          "Kalan görevleri konuşuyor.",
+          "Kahvaltıya gidiyor.",
+          "Vardiyayı bitiriyor."
+        ],
+        "correctAnswer": "Kalan görevleri konuşuyor.",
+        "explanation": "Metinde ekibin kalan görevleri konuştuğu açıkça belirtilir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u07-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kim ararsa özel mesaj iletilecek?",
+        "options": [
+          "Frau Keller.",
+          "Amir.",
+          "Şef."
+        ],
+        "correctAnswer": "Frau Keller.",
+        "explanation": "Wenn Frau Keller anruft denir."
+      },
+      {
+        "id": "a2-u07-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Belgeler nerede?",
+        "options": [
+          "Toplantı odasında.",
+          "Resepsiyonda.",
+          "Evde."
+        ],
+        "correctAnswer": "Toplantı odasında.",
+        "explanation": "Besprechungsraum bilgisi vardır."
+      },
+      {
+        "id": "a2-u07-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Amir neye hazırlanmalı?",
+        "options": [
+          "İlk gündem maddesine.",
+          "Yolculuğa.",
+          "Yemeğe."
+        ],
+        "correctAnswer": "İlk gündem maddesine.",
+        "explanation": "auf den ersten Punkt vorbereiten denir."
+      }
+    ],
+    "writingPrompt": "80–100 kelimeyle tipik bir iş/okul gününü anlat; iki wenn cümlesi ve üç reflexive fiil kullan.",
+    "speakingPrompt": "Bir iş gününü 60 saniye anlat; bir müşteri/öğretmen aradığında ne yaptığını da ekle.",
+    "realLifeMission": "Kısa bir iş yeri sesli mesajı yaz/oku: gecikme, görev ve geri dönüş bilgisi ver.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u08",
+    "cefrCanDo": [
+      "Ulaşım hizmetinde nazik dolaylı soru sorabilirim.",
+      "ob ile evet/hayır bilgisini dolaylı isteyebilirim.",
+      "Yolculuk seçeneğini süre ve fiyat açısından değerlendirebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "İstasyon ve müşteri hizmetlerinde “Könnten Sie mir sagen ...?” gibi dolaylı soru kalıpları, doğrudan sorudan daha nazik bir seçenek sunar."
+    },
+    "dialogue": [
+      {
+        "speaker": "Reisender",
+        "de": "Entschuldigung, könnten Sie mir sagen, wann der Zug nach Basel fährt?",
+        "tr": "Affedersiniz, Basel treninin ne zaman kalktığını söyleyebilir misiniz?"
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Um 14:18 Uhr von Gleis 6.",
+        "tr": "14.18’de 6. perondan."
+      },
+      {
+        "speaker": "Reisender",
+        "de": "Wissen Sie auch, ob ich in Freiburg umsteigen muss?",
+        "tr": "Freiburg’da aktarma yapmam gerekip gerekmediğini de biliyor musunuz?"
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Nein, die Verbindung ist direkt.",
+        "tr": "Hayır, bağlantı doğrudan."
+      },
+      {
+        "speaker": "Reisender",
+        "de": "Und wie lange dauert die Fahrt?",
+        "tr": "Peki yolculuk ne kadar sürüyor?"
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Ungefähr zwei Stunden.",
+        "tr": "Yaklaşık iki saat."
+      }
+    ],
+    "reading": {
+      "de": "Ein Mobilitätsportal zeigt drei Verbindungen von Nürnberg nach Innsbruck. Die erste Verbindung ist direkt, aber am teuersten. Die zweite ist günstiger und hat einen Umstieg in München. Die dritte fährt erst am Abend und dauert am längsten. Bei allen drei Verbindungen kann man einen Sitzplatz reservieren.",
+      "tr": "Bir ulaşım sitesi Nürnberg’den Innsbruck’a üç bağlantı gösteriyor. İlk bağlantı doğrudan ama en pahalı. İkincisi daha uygun fiyatlı ve Münih’te bir aktarması var. Üçüncüsü ancak akşam hareket ediyor ve en uzun sürüyor. Üç bağlantıda da koltuk ayırtılabiliyor."
+    },
+    "listening": {
+      "de": "Am Bahnhof hört man: „Der Regionalzug nach Augsburg fährt heute nicht von Gleis 3, sondern von Gleis 5. Die Abfahrt bleibt um 17:42 Uhr. Reisende nach Ulm steigen bitte in Augsburg um. Der Anschluss wartet zehn Minuten.“",
+      "tr": "İstasyonda şu duyuluyor: “Augsburg bölgesel treni bugün 3. perondan değil, 5. perondan kalkacak. Kalkış saati 17.42 olarak kalıyor. Ulm yolcuları lütfen Augsburg’da aktarma yapsın. Bağlantı treni on dakika bekleyecek.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u08-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi bağlantı en pahalı?",
+        "options": [
+          "İlk bağlantı.",
+          "İkinci bağlantı.",
+          "Üçüncü bağlantı."
+        ],
+        "correctAnswer": "İlk bağlantı.",
+        "explanation": "Metinde erste Verbindung ... am teuersten denir."
+      },
+      {
+        "id": "a2-u08-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İkinci bağlantının özelliği nedir?",
+        "options": [
+          "Münih’te aktarma var.",
+          "Doğrudan ve en pahalı.",
+          "Sadece gece çalışıyor."
+        ],
+        "correctAnswer": "Münih’te aktarma var.",
+        "explanation": "Metin einen Umstieg in München der."
+      },
+      {
+        "id": "a2-u08-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Koltuk rezervasyonu hangi seferlerde mümkün?",
+        "options": [
+          "Üçünde de.",
+          "Sadece ilkinde.",
+          "Hiçbirinde."
+        ],
+        "correctAnswer": "Üçünde de.",
+        "explanation": "Bei allen drei Verbindungen ifadesi vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u08-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Augsburg treni bugün hangi perondan kalkıyor?",
+        "options": [
+          "5.",
+          "3.",
+          "7."
+        ],
+        "correctAnswer": "5.",
+        "explanation": "Anons Gleis 5 der."
+      },
+      {
+        "id": "a2-u08-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kalkış saati değişiyor mu?",
+        "options": [
+          "Hayır.",
+          "Evet, bir saat ileri.",
+          "İptal."
+        ],
+        "correctAnswer": "Hayır.",
+        "explanation": "Abfahrt bleibt um 17:42 denir."
+      },
+      {
+        "id": "a2-u08-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ulm yolcuları nerede aktarma yapıyor?",
+        "options": [
+          "Augsburg’da.",
+          "Nürnberg’de.",
+          "Basel’de."
+        ],
+        "correctAnswer": "Augsburg’da.",
+        "explanation": "Anons bunu açıkça söyler."
+      }
+    ],
+    "writingPrompt": "Bir ulaşım müşteri hizmetine 70–90 kelimelik bilgi mesajı yaz; en az üç dolaylı soru kullan.",
+    "speakingPrompt": "İstasyonda 60 saniyelik rol konuşması yap: kalkış, peron, aktarma ve rezervasyon hakkında nazikçe sor.",
+    "realLifeMission": "Gerçek bir gezi planı için üç soruyu doğrudan değil, dolaylı soru biçiminde Almanca hazırla.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u09",
+    "cefrCanDo": [
+      "Spor ve sağlık alışkanlıklarımı neden-sonuç ilişkisiyle anlatabilirim.",
+      "deshalb ve trotzdem ile iki cümleyi bağlayabilirim.",
+      "Basit sağlık önerisini gerekçelendirebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Gündelik sağlık konuşmalarında dil dersi tıbbi teşhis yerine geçmez; A2 hedefi alışkanlık, basit şikâyet ve günlük öneriyi anlaşılır ifade etmektir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Lea",
+        "de": "Du warst gestern krank. Gehst du heute schon wieder trainieren?",
+        "tr": "Dün hastaydın. Bugün yine antrenmana mı gidiyorsun?"
+      },
+      {
+        "speaker": "Sam",
+        "de": "Ich fühle mich besser. Trotzdem mache ich nur leichtes Training.",
+        "tr": "Kendimi daha iyi hissediyorum. Yine de sadece hafif antrenman yapacağım."
+      },
+      {
+        "speaker": "Lea",
+        "de": "Das ist vernünftig.",
+        "tr": "Bu mantıklı."
+      },
+      {
+        "speaker": "Sam",
+        "de": "Ich habe viel gesessen, deshalb möchte ich mich etwas bewegen.",
+        "tr": "Çok oturdum, bu yüzden biraz hareket etmek istiyorum."
+      },
+      {
+        "speaker": "Lea",
+        "de": "Dann geh doch lieber spazieren.",
+        "tr": "O zaman yürüyüşe çıkmayı tercih et."
+      },
+      {
+        "speaker": "Sam",
+        "de": "Gute Idee.",
+        "tr": "İyi fikir."
+      }
+    ],
+    "reading": {
+      "de": "Ein Büro startet eine kleine Gesundheitsaktion. Viele Mitarbeitende sitzen fast den ganzen Tag, deshalb gibt es jetzt zweimal pro Woche eine gemeinsame Mittagspause mit Spaziergang. Niemand muss teilnehmen. Einige Kollegen haben wenig Zeit, trotzdem gehen sie wenigstens zehn Minuten mit. Nach einem Monat möchten viele die Aktion fortsetzen.",
+      "tr": "Bir ofis küçük bir sağlık etkinliği başlatıyor. Birçok çalışan neredeyse tüm gün oturuyor, bu yüzden artık haftada iki kez ortak yürüyüşlü öğle molası var. Kimse katılmak zorunda değil. Bazı çalışanların az zamanı var, buna rağmen en az on dakika katılıyorlar. Bir ay sonra çoğu etkinliği sürdürmek istiyor."
+    },
+    "listening": {
+      "de": "Ein Trainer sagt: „Heute ist es sehr warm. Trinken Sie deshalb regelmäßig Wasser. Wir trainieren draußen, trotzdem machen wir viele Pausen. Wenn Ihnen schwindlig wird oder Sie Schmerzen haben, hören Sie bitte sofort auf und sagen Sie Bescheid.“",
+      "tr": "Bir antrenör şöyle diyor: “Bugün hava çok sıcak. Bu yüzden düzenli su için. Dışarıda antrenman yapıyoruz, buna rağmen çok mola veriyoruz. Başınız dönerse veya ağrınız olursa lütfen hemen bırakın ve haber verin.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u09-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ofiste neden yürüyüş molası başlatıldı?",
+        "options": [
+          "Çalışanlar çok oturduğu için.",
+          "Yeni bina açıldığı için.",
+          "Yağmur yağdığı için."
+        ],
+        "correctAnswer": "Çalışanlar çok oturduğu için.",
+        "explanation": "deshalb öncesinde sitzen bilgisi verilir."
+      },
+      {
+        "id": "a2-u09-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Katılım zorunlu mu?",
+        "options": [
+          "Hayır.",
+          "Evet.",
+          "Sadece yöneticiler için."
+        ],
+        "correctAnswer": "Hayır.",
+        "explanation": "Niemand muss teilnehmen denir."
+      },
+      {
+        "id": "a2-u09-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Az zamanı olanlar ne yapıyor?",
+        "options": [
+          "En az on dakika katılıyor.",
+          "Hiç gelmiyor.",
+          "Bir saat koşuyor."
+        ],
+        "correctAnswer": "En az on dakika katılıyor.",
+        "explanation": "wenigstens zehn Minuten ifadesi vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u09-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Neden düzenli su içilmeli?",
+        "options": [
+          "Hava sıcak olduğu için.",
+          "Spor salonu kapalı olduğu için.",
+          "Su ücretsiz olduğu için."
+        ],
+        "correctAnswer": "Hava sıcak olduğu için.",
+        "explanation": "İlk cümlede sehr warm, deshalb ... Wasser denir."
+      },
+      {
+        "id": "a2-u09-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Antrenmanda ne sık yapılacak?",
+        "options": [
+          "Molalar.",
+          "Sınavlar.",
+          "Toplantılar."
+        ],
+        "correctAnswer": "Molalar.",
+        "explanation": "viele Pausen denir."
+      },
+      {
+        "id": "a2-u09-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ağrı olursa ne yapılmalı?",
+        "options": [
+          "Hemen bırakıp haber vermek.",
+          "Devam etmek.",
+          "Koşmak."
+        ],
+        "correctAnswer": "Hemen bırakıp haber vermek.",
+        "explanation": "Son cümlede açıkça söylenir."
+      }
+    ],
+    "writingPrompt": "70–90 kelimeyle bir sağlık veya hareket alışkanlığını anlat; iki deshalb ve iki trotzdem kullan.",
+    "speakingPrompt": "Bir arkadaşına 60 saniye boyunca günlük hareket düzenini ve buna rağmen zorlandığın bir durumu anlat.",
+    "realLifeMission": "Yoğun bir gün için 15 dakikalık sağlıklı hareket planı yap ve nedenini Almanca açıkla.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u10",
+    "cefrCanDo": [
+      "Bir komşuyu veya evi Relativsatz ile tanımlayabilirim.",
+      "Nazik rica ve özür ifadesi kullanabilirim.",
+      "Ortak yaşam sorununa kısa çözüm önerebilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Apartman yaşamında paket kabulü, gürültü, çöp ve ortak alan gibi konular kısa ama nazik komşuluk iletişiminin tipik örnekleridir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Nora",
+        "de": "Entschuldigung, könnten Sie morgen ein Paket für mich annehmen?",
+        "tr": "Affedersiniz, yarın benim için bir paket teslim alabilir misiniz?"
+      },
+      {
+        "speaker": "Herr Koch",
+        "de": "Ja, natürlich. Ich bin am Nachmittag zu Hause.",
+        "tr": "Evet, tabii. Öğleden sonra evdeyim."
+      },
+      {
+        "speaker": "Nora",
+        "de": "Vielen Dank. Es ist ein Paket, das ziemlich groß ist.",
+        "tr": "Çok teşekkürler. Oldukça büyük bir paket."
+      },
+      {
+        "speaker": "Herr Koch",
+        "de": "Kein Problem.",
+        "tr": "Sorun değil."
+      },
+      {
+        "speaker": "Nora",
+        "de": "Und noch etwas: War die Musik gestern zu laut?",
+        "tr": "Bir şey daha: Dün müzik çok mu yüksekti?"
+      },
+      {
+        "speaker": "Herr Koch",
+        "de": "Ein bisschen. Aber danke, dass Sie fragen.",
+        "tr": "Biraz. Ama sorduğunuz için teşekkürler."
+      }
+    ],
+    "reading": {
+      "de": "In einem Mehrfamilienhaus gibt es einen kleinen Hof. Alle Bewohner nutzen ihn. Eine Nachbarin, die gern gärtnert, kümmert sich um die Pflanzen. Ein Student, der im Erdgeschoss wohnt, nimmt oft Pakete an. Einmal im Monat treffen sich alle, weil sie kleine Probleme gemeinsam lösen möchten.",
+      "tr": "Bir apartmanda küçük bir avlu var. Tüm sakinler onu kullanıyor. Bahçeyle ilgilenmeyi seven bir komşu bitkilerle ilgileniyor. Zemin katta oturan bir öğrenci sık sık paket teslim alıyor. Ayda bir herkes buluşuyor, çünkü küçük sorunları birlikte çözmek istiyorlar."
+    },
+    "listening": {
+      "de": "Eine Nachricht im Hausflur: „Liebe Nachbarn, am Samstag möchten wir den Keller aufräumen. Wer Zeit hat, kann ab zehn Uhr helfen. Die Familie, die im dritten Stock wohnt, bringt Getränke mit. Bitte stellen Sie vorher keine neuen Sachen in den Keller.“",
+      "tr": "Apartman girişinde bir mesaj: “Sevgili komşular, cumartesi bodrumu düzenlemek istiyoruz. Vakti olan saat ondan itibaren yardım edebilir. Üçüncü katta oturan aile içecek getirecek. Lütfen öncesinde bodruma yeni eşya koymayın.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u10-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Avluyu kim kullanıyor?",
+        "options": [
+          "Tüm sakinler.",
+          "Sadece öğrenci.",
+          "Sadece bahçıvan."
+        ],
+        "correctAnswer": "Tüm sakinler.",
+        "explanation": "alle Bewohner nutzen ifadesi vardır."
+      },
+      {
+        "id": "a2-u10-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bitkilerle kim ilgileniyor?",
+        "options": [
+          "Bahçeyi seven bir komşu.",
+          "Kapıcı.",
+          "Öğrenci."
+        ],
+        "correctAnswer": "Bahçeyi seven bir komşu.",
+        "explanation": "Relativsatz bu kişiyi açıklar."
+      },
+      {
+        "id": "a2-u10-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Sakinler neden ayda bir buluşuyor?",
+        "options": [
+          "Sorunları birlikte çözmek için.",
+          "Kira toplamak için.",
+          "Sınav yapmak için."
+        ],
+        "correctAnswer": "Sorunları birlikte çözmek için.",
+        "explanation": "weil sie kleine Probleme gemeinsam lösen möchten denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u10-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bodrum ne zaman düzenlenecek?",
+        "options": [
+          "Cumartesi.",
+          "Pazartesi.",
+          "Cuma gecesi."
+        ],
+        "correctAnswer": "Cumartesi.",
+        "explanation": "Dinleme metni cumartesi gününü açıkça belirtir."
+      },
+      {
+        "id": "a2-u10-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kim içecek getiriyor?",
+        "options": [
+          "Üçüncü kattaki aile.",
+          "Zemin kattaki öğrenci.",
+          "Kimse."
+        ],
+        "correctAnswer": "Üçüncü kattaki aile.",
+        "explanation": "Relativsatz ile belirtilir."
+      },
+      {
+        "id": "a2-u10-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Önceden ne yapılmamalı?",
+        "options": [
+          "Bodruma yeni eşya koymak.",
+          "İçecek getirmek.",
+          "Yardım etmek."
+        ],
+        "correctAnswer": "Bodruma yeni eşya koymak.",
+        "explanation": "Son cümlede söylenir."
+      }
+    ],
+    "writingPrompt": "Bir apartman grubuna 70–90 kelimelik nazik mesaj yaz: sorun, rica, zaman ve çözüm önerisi olsun.",
+    "speakingPrompt": "Komşuluk sorununu 60 saniye anlat ve iki nazik çözüm öner.",
+    "realLifeMission": "Komşundan paket alma veya sessizlik konusunda bir rica iste; uygun özür/teşekkür ifadesiyle konuşmayı bitir.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u11",
+    "cefrCanDo": [
+      "Bozuk bir ürün veya hizmet sorununu açıklayabilirim.",
+      "Bir nesneyi bir kişiye zamirlerle aktarabilirim.",
+      "Servis görevlisiyle çözüm odaklı kısa konuşma yapabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Garanti, fatura ve servis randevusu gibi kelimeler Almanca günlük tüketici ve müşteri hizmetleri iletişiminde sık karşılaşılan temel kavramlardır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Kundin",
+        "de": "Mein Drucker funktioniert seit gestern nicht mehr.",
+        "tr": "Yazıcım dünden beri çalışmıyor."
+      },
+      {
+        "speaker": "Techniker",
+        "de": "Haben Sie die Rechnung noch?",
+        "tr": "Fatura hâlâ sizde mi?"
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Ja, ich kann sie Ihnen zeigen.",
+        "tr": "Evet, onu size gösterebilirim."
+      },
+      {
+        "speaker": "Techniker",
+        "de": "Gut. Schicken Sie sie mir bitte auch per E-Mail.",
+        "tr": "İyi. Lütfen onu bana e-postayla da gönderin."
+      },
+      {
+        "speaker": "Kundin",
+        "de": "Wann kann ich das Gerät bringen?",
+        "tr": "Cihazı ne zaman getirebilirim?"
+      },
+      {
+        "speaker": "Techniker",
+        "de": "Morgen Vormittag. Dann sehen wir es uns an.",
+        "tr": "Yarın öğleden önce. O zaman ona bakarız."
+      }
+    ],
+    "reading": {
+      "de": "Ein Repair-Treff öffnet jeden zweiten Samstag. Besucher können kleine elektrische Geräte und Fahrräder mitbringen. Freiwillige erklären ihnen, was kaputt ist, und zeigen ihnen mögliche Reparaturen. Die Hilfe ist kostenlos; nur nötige Ersatzteile müssen bezahlt werden. Wer eine Rechnung oder Anleitung hat, soll sie mitbringen.",
+      "tr": "Bir tamir buluşması iki cumarteside bir açılıyor. Ziyaretçiler küçük elektrikli cihaz ve bisiklet getirebiliyor. Gönüllüler onlara neyin bozuk olduğunu açıklıyor ve olası tamirleri gösteriyor. Yardım ücretsiz; yalnızca gerekli yedek parçalar ödenmeli. Faturası veya kullanım kılavuzu olan onu getirmeli."
+    },
+    "listening": {
+      "de": "Am Telefon sagt ein Mitarbeiter: „Wir haben Ihr Gerät geprüft. Der Akku ist defekt. Wir können ihn Ihnen morgen ersetzen. Das Ersatzteil kostet 35 Euro. Wenn Sie einverstanden sind, schicken wir Ihnen die Rechnung per E-Mail.“",
+      "tr": "Telefonda bir çalışan şöyle diyor: “Cihazınızı kontrol ettik. Batarya arızalı. Onu yarın sizin için değiştirebiliriz. Yedek parça 35 avro. Kabul ederseniz faturayı size e-postayla göndeririz.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u11-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Tamir buluşması ne sıklıkla açılıyor?",
+        "options": [
+          "İki cumarteside bir.",
+          "Her gün.",
+          "Yılda bir."
+        ],
+        "correctAnswer": "İki cumarteside bir.",
+        "explanation": "jeden zweiten Samstag denir."
+      },
+      {
+        "id": "a2-u11-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yardımın ücreti nasıl?",
+        "options": [
+          "Ücretsiz.",
+          "Saatlik ücretli.",
+          "Sadece üyeler için."
+        ],
+        "correctAnswer": "Ücretsiz.",
+        "explanation": "Die Hilfe ist kostenlos denir."
+      },
+      {
+        "id": "a2-u11-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ne için ödeme yapılabilir?",
+        "options": [
+          "Yedek parçalar.",
+          "Açıklama.",
+          "Giriş."
+        ],
+        "correctAnswer": "Yedek parçalar.",
+        "explanation": "nur nötige Ersatzteile müssen bezahlt werden denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u11-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hangi parça arızalı?",
+        "options": [
+          "Batarya.",
+          "Ekran.",
+          "Kablo."
+        ],
+        "correctAnswer": "Batarya.",
+        "explanation": "Der Akku ist defekt denir."
+      },
+      {
+        "id": "a2-u11-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yedek parça kaç avro?",
+        "options": [
+          "35.",
+          "15.",
+          "50."
+        ],
+        "correctAnswer": "35.",
+        "explanation": "35 Euro bilgisi verilir."
+      },
+      {
+        "id": "a2-u11-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Fatura nasıl gönderilecek?",
+        "options": [
+          "E-postayla.",
+          "Posta güverciniyle.",
+          "Hiç gönderilmeyecek."
+        ],
+        "correctAnswer": "E-postayla.",
+        "explanation": "per E-Mail ifadesi geçer."
+      }
+    ],
+    "writingPrompt": "Bir servise 70–90 kelimelik sorun mesajı yaz: ürün, sorun, satın alma bilgisi ve istediğin çözüm olsun.",
+    "speakingPrompt": "Servis görevlisiyle 60 saniye konuş: sorunu açıkla, fatura/garanti bilgisini ver ve randevu sor.",
+    "realLifeMission": "Evindeki bir cihazı seç ve “onu bana/ona göster, gönder, ver” zamirleriyle üç servis cümlesi üret.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u12",
+    "cefrCanDo": [
+      "Bir kutlama veya geleneği kısa metinle anlatabilirim.",
+      "als ile tek seferlik geçmiş deneyim kurabilirim.",
+      "wenn ile tekrarlanan gelenek anlatabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "DACH bölgesinde Noel, yılbaşı, Paskalya ve bölgesel festivaller farklı biçimlerde kutlanabilir; genelleme yapmak yerine belirli bir kişinin veya yerin deneyimini anlatmak daha güvenlidir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Elif",
+        "de": "Was macht ihr, wenn jemand Geburtstag hat?",
+        "tr": "Birinin doğum günü olduğunda ne yaparsınız?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Wir essen meistens zusammen und backen einen Kuchen.",
+        "tr": "Genellikle birlikte yer ve pasta yaparız."
+      },
+      {
+        "speaker": "Elif",
+        "de": "Und erinnerst du dich an einen besonderen Geburtstag?",
+        "tr": "Özel bir doğum gününü hatırlıyor musun?"
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Ja. Als ich achtzehn war, haben meine Freunde eine Überraschungsparty organisiert.",
+        "tr": "Evet. On sekiz yaşındayken arkadaşlarım sürpriz parti düzenledi."
+      },
+      {
+        "speaker": "Elif",
+        "de": "Das klingt schön.",
+        "tr": "Kulağa güzel geliyor."
+      },
+      {
+        "speaker": "Jonas",
+        "de": "Das war wirklich ein besonderer Abend.",
+        "tr": "Gerçekten özel bir akşamdı."
+      }
+    ],
+    "reading": {
+      "de": "In einer kleinen Stadt organisiert ein Kulturverein jedes Frühjahr ein Nachbarschaftsfest. Wenn das Wetter gut ist, findet es auf dem Marktplatz statt. Familien bringen Essen mit, Musiker spielen draußen und Kinder machen kleine Spiele. Vor zwei Jahren musste das Fest einmal in die Sporthalle umziehen, als es den ganzen Tag stark geregnet hat.",
+      "tr": "Küçük bir şehirde kültür derneği her bahar komşuluk festivali düzenliyor. Hava iyi olduğunda pazar meydanında yapılıyor. Aileler yemek getiriyor, müzisyenler dışarıda çalıyor ve çocuklar küçük oyunlar oynuyor. İki yıl önce tüm gün çok yağmur yağdığında festival bir kez spor salonuna taşınmak zorunda kaldı."
+    },
+    "listening": {
+      "de": "Eine Frau erzählt: „Wenn bei uns Silvester ist, treffen wir uns meistens mit Freunden. Als ich letztes Jahr in Zürich war, haben wir das Feuerwerk am See angesehen. Dieses Jahr bleiben wir zu Hause, weil unser kleines Kind früh schlafen muss.“",
+      "tr": "Bir kadın şöyle anlatıyor: “Bizde yılbaşı olduğunda genellikle arkadaşlarla buluşuruz. Geçen yıl Zürih’teyken havai fişekleri göl kenarında izledik. Bu yıl küçük çocuğumuz erken uyumak zorunda olduğu için evde kalıyoruz.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u12-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Festival ne zaman düzenleniyor?",
+        "options": [
+          "Her bahar.",
+          "Her hafta.",
+          "Kışın her gün."
+        ],
+        "correctAnswer": "Her bahar.",
+        "explanation": "jedes Frühjahr denir."
+      },
+      {
+        "id": "a2-u12-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Hava iyi olursa nerede yapılır?",
+        "options": [
+          "Pazar meydanında.",
+          "Sadece spor salonunda.",
+          "İstasyonda."
+        ],
+        "correctAnswer": "Pazar meydanında.",
+        "explanation": "auf dem Marktplatz bilgisi vardır."
+      },
+      {
+        "id": "a2-u12-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İki yıl önce neden yer değiştirdi?",
+        "options": [
+          "Şiddetli yağmur yüzünden.",
+          "Çok sıcak olduğu için.",
+          "Müzik olmadığı için."
+        ],
+        "correctAnswer": "Şiddetli yağmur yüzünden.",
+        "explanation": "als es den ganzen Tag stark geregnet hat ifadesi vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u12-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yılbaşında genellikle kimlerle buluşuyorlar?",
+        "options": [
+          "Arkadaşlarla.",
+          "Müşterilerle.",
+          "Öğretmenlerle."
+        ],
+        "correctAnswer": "Arkadaşlarla.",
+        "explanation": "mit Freunden denir."
+      },
+      {
+        "id": "a2-u12-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Geçen yıl neredeydi?",
+        "options": [
+          "Zürih’te.",
+          "Berlin’de.",
+          "Viyana’da."
+        ],
+        "correctAnswer": "Zürih’te.",
+        "explanation": "in Zürich war ifadesi vardır."
+      },
+      {
+        "id": "a2-u12-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bu yıl neden evde kalıyorlar?",
+        "options": [
+          "Çocuk erken uyumalı.",
+          "Hava çok sıcak.",
+          "Tren yok."
+        ],
+        "correctAnswer": "Çocuk erken uyumalı.",
+        "explanation": "Son yan cümle bunu açıklar."
+      }
+    ],
+    "writingPrompt": "80–100 kelimeyle bir aile geleneğini ve bir tek seferlik özel kutlamayı karşılaştır; wenn ve als kullan.",
+    "speakingPrompt": "60 saniye boyunca tekrarlanan bir gelenek ile geçmişteki özel bir kutlamayı anlat.",
+    "realLifeMission": "Bir arkadaşına kendi kültüründeki bir kutlamayı genelleme yapmadan, kendi aile/çevre deneyimin üzerinden anlat.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u13",
+    "cefrCanDo": [
+      "İki teknolojik aracı ayrıntılı karşılaştırabilirim.",
+      "Avantaj ve dezavantajı görüş cümlesiyle açıklayabilirim.",
+      "so ... wie ve ...er als yapılarını doğru kullanabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Teknoloji tercihleri yaş, iş, erişilebilirlik ve bütçeye göre değişir; A2 düzeyinde amaç “en iyi” genellemesi değil, kişisel ihtiyaca göre karşılaştırmadır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Tobias",
+        "de": "Arbeitest du lieber mit dem Tablet oder mit dem Laptop?",
+        "tr": "Tablet mi dizüstü bilgisayarla mı çalışmayı tercih edersin?"
+      },
+      {
+        "speaker": "Mina",
+        "de": "Mit dem Laptop. Der Bildschirm ist größer.",
+        "tr": "Dizüstüyle. Ekran daha büyük."
+      },
+      {
+        "speaker": "Tobias",
+        "de": "Aber das Tablet ist leichter.",
+        "tr": "Ama tablet daha hafif."
+      },
+      {
+        "speaker": "Mina",
+        "de": "Stimmt. Ich finde auch, dass es unterwegs praktischer ist.",
+        "tr": "Doğru. Seyahatte daha pratik olduğunu da düşünüyorum."
+      },
+      {
+        "speaker": "Tobias",
+        "de": "Welches Gerät benutzt du am häufigsten?",
+        "tr": "Hangi cihazı en sık kullanıyorsun?"
+      },
+      {
+        "speaker": "Mina",
+        "de": "Trotzdem benutze ich den Laptop häufiger, weil ich viel schreibe.",
+        "tr": "Yine de çok yazdığım için dizüstünü daha sık kullanıyorum."
+      }
+    ],
+    "reading": {
+      "de": "Ein Student vergleicht zwei Geräte für den Unterricht. Das ältere Tablet ist so schnell wie das neue Modell, aber der Akku hält nicht so lange. Das neue Gerät ist leichter und hat mehr Speicher. Es kostet aber fast doppelt so viel. Der Student entscheidet sich gegen einen Neukauf, weil das alte Tablet für seine Aufgaben noch ausreicht.",
+      "tr": "Bir öğrenci ders için iki cihazı karşılaştırıyor. Eski tablet yeni model kadar hızlı ama bataryası o kadar uzun dayanmıyor. Yeni cihaz daha hafif ve daha fazla hafızası var. Ancak neredeyse iki kat pahalı. Öğrenci eski tablet görevleri için hâlâ yeterli olduğu için yeni almamaya karar veriyor."
+    },
+    "listening": {
+      "de": "In einem Podcast sagt eine Nutzerin: „Meine Smartwatch ist praktisch beim Sport, aber sie ersetzt mein Handy nicht. Das Display ist viel kleiner und Schreiben ist schwieriger. Für kurze Nachrichten ist sie okay. Am wichtigsten ist für mich, dass der Akku lange hält.“",
+      "tr": "Bir podcast’te kullanıcı şöyle diyor: “Akıllı saatim sporda pratik ama telefonumun yerini tutmuyor. Ekranı çok daha küçük ve yazmak daha zor. Kısa mesajlar için iyi. Benim için en önemlisi bataryanın uzun dayanması.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u13-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Eski tablet hız açısından nasıl?",
+        "options": [
+          "Yeni model kadar hızlı.",
+          "Çok daha yavaş.",
+          "Çalışmıyor."
+        ],
+        "correctAnswer": "Yeni model kadar hızlı.",
+        "explanation": "so schnell wie das neue Modell denir."
+      },
+      {
+        "id": "a2-u13-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yeni cihazın iki avantajı nedir?",
+        "options": [
+          "Daha hafif ve daha çok hafıza.",
+          "Daha ucuz ve daha ağır.",
+          "Daha küçük ve eski."
+        ],
+        "correctAnswer": "Daha hafif ve daha çok hafıza.",
+        "explanation": "Metin leichter ve mehr Speicher der."
+      },
+      {
+        "id": "a2-u13-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Öğrenci neden yeni cihaz almıyor?",
+        "options": [
+          "Eski cihaz yeterli olduğu için.",
+          "Yeni cihaz bedava olduğu için.",
+          "Tablet kullanmadığı için."
+        ],
+        "correctAnswer": "Eski cihaz yeterli olduğu için.",
+        "explanation": "weil das alte Tablet für seine Aufgaben noch ausreicht denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u13-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Smartwatch ne zaman pratik?",
+        "options": [
+          "Sporda.",
+          "Yemek yaparken özellikle.",
+          "Uyurken sadece."
+        ],
+        "correctAnswer": "Sporda.",
+        "explanation": "Konuşmacı saatin özellikle spor sırasında pratik olduğunu söyler."
+      },
+      {
+        "id": "a2-u13-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yazmak neden daha zor?",
+        "options": [
+          "Ekran daha küçük.",
+          "Klavye daha büyük.",
+          "İnternet yok."
+        ],
+        "correctAnswer": "Ekran daha küçük.",
+        "explanation": "Display ist viel kleiner bağlantısı kurulur."
+      },
+      {
+        "id": "a2-u13-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Konuşmacı için en önemli şey ne?",
+        "options": [
+          "Bataryanın uzun dayanması.",
+          "Renk.",
+          "Fiyatın sıfır olması."
+        ],
+        "correctAnswer": "Bataryanın uzun dayanması.",
+        "explanation": "am wichtigsten ... Akku lange hält denir."
+      }
+    ],
+    "writingPrompt": "80–100 kelimeyle iki teknolojik aracı avantaj/dezavantaj açısından karşılaştır ve seçim yap.",
+    "speakingPrompt": "60 saniyede iki cihazı fiyat, ağırlık, hız ve kullanım açısından karşılaştır.",
+    "realLifeMission": "Kullandığın iki dijital aracı karşılaştırıp hangisini hangi durumda tercih ettiğini Almanca açıkla.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u14",
+    "cefrCanDo": [
+      "Günlük bir hizmet sorununu nazikçe açıklayabilirim.",
+      "könnte/sollte/würde ile farklı çözüm türleri sunabilirim.",
+      "Kısa şikâyet mesajı yazabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Şikâyet iletişiminde net tarih, işlem ve istenen çözümü yazmak; öfkeli genellemeler yerine somut bilgi vermek daha işlevseldir."
+    },
+    "dialogue": [
+      {
+        "speaker": "Kunde",
+        "de": "Guten Tag, meine Bestellung ist noch nicht angekommen.",
+        "tr": "İyi günler, siparişim henüz gelmedi."
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Das tut mir leid. Haben Sie die Bestellnummer?",
+        "tr": "Üzgünüm. Sipariş numaranız var mı?"
+      },
+      {
+        "speaker": "Kunde",
+        "de": "Ja. Könnten Sie bitte prüfen, wo das Paket ist?",
+        "tr": "Evet. Paketin nerede olduğunu kontrol edebilir misiniz?"
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Natürlich. Einen Moment bitte.",
+        "tr": "Tabii. Bir dakika lütfen."
+      },
+      {
+        "speaker": "Kunde",
+        "de": "Wenn es heute nicht kommt, würde ich die Lieferung gern ändern.",
+        "tr": "Bugün gelmezse teslimatı değiştirmek isterdim."
+      },
+      {
+        "speaker": "Mitarbeiterin",
+        "de": "Ich prüfe zuerst die Sendung und melde mich gleich.",
+        "tr": "Önce gönderiyi kontrol edip hemen geri döneceğim."
+      }
+    ],
+    "reading": {
+      "de": "Eine Kundin hat für Montag einen Handwerkertermin vereinbart. Am Montagmorgen bekommt sie jedoch eine Nachricht: Der Mitarbeiter ist krank und der Termin fällt aus. Die Kundin arbeitet am Dienstag im Büro und kann nicht zu Hause bleiben. Sie schreibt deshalb eine kurze Nachricht und bittet um einen neuen Termin am Mittwoch oder Donnerstag.",
+      "tr": "Bir müşteri pazartesi için usta randevusu ayarladı. Ancak pazartesi sabahı mesaj alıyor: çalışan hasta ve randevu iptal. Müşteri salı ofiste çalışıyor ve evde kalamıyor. Bu yüzden kısa bir mesaj yazıp çarşamba veya perşembe yeni randevu istiyor."
+    },
+    "listening": {
+      "de": "Ein Hotelgast ruft an: „In meinem Zimmer funktioniert die Heizung nicht richtig. Es ist ziemlich kalt. Könnten Sie bitte jemanden schicken? Wenn die Reparatur länger dauert, würde ich gern ein anderes Zimmer bekommen.“ Die Rezeption verspricht, sofort Hilfe zu organisieren.",
+      "tr": "Bir otel misafiri arıyor: “Odamdaki ısıtma doğru çalışmıyor. Oldukça soğuk. Birini gönderebilir misiniz? Tamir uzun sürerse başka bir oda almak isterdim.” Resepsiyon hemen yardım ayarlayacağına söz veriyor."
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u14-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk randevu hangi gün?",
+        "options": [
+          "Pazartesi.",
+          "Salı.",
+          "Perşembe."
+        ],
+        "correctAnswer": "Pazartesi.",
+        "explanation": "Metnin ilk cümlesinde randevunun pazartesi için olduğu belirtilir."
+      },
+      {
+        "id": "a2-u14-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Randevu neden iptal?",
+        "options": [
+          "Çalışan hasta.",
+          "Müşteri şehir dışında.",
+          "Parça yok."
+        ],
+        "correctAnswer": "Çalışan hasta.",
+        "explanation": "Mitarbeiter ist krank denir."
+      },
+      {
+        "id": "a2-u14-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Müşteri hangi günleri öneriyor?",
+        "options": [
+          "Çarşamba veya perşembe.",
+          "Sadece salı.",
+          "Hafta sonu."
+        ],
+        "correctAnswer": "Çarşamba veya perşembe.",
+        "explanation": "Mittwoch oder Donnerstag bilgisi vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u14-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Odadaki sorun nedir?",
+        "options": [
+          "Isıtma düzgün çalışmıyor.",
+          "İnternet hızlı.",
+          "Kapı açık."
+        ],
+        "correctAnswer": "Isıtma düzgün çalışmıyor.",
+        "explanation": "Heizung funktioniert nicht richtig denir."
+      },
+      {
+        "id": "a2-u14-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Misafir ilk olarak ne istiyor?",
+        "options": [
+          "Birinin gönderilmesini.",
+          "Otelin kapanmasını.",
+          "Yemek."
+        ],
+        "correctAnswer": "Birinin gönderilmesini.",
+        "explanation": "jemanden schicken rica edilir."
+      },
+      {
+        "id": "a2-u14-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Tamir uzun sürerse ne istiyor?",
+        "options": [
+          "Başka oda.",
+          "Ücretsiz kahvaltı.",
+          "Taksi."
+        ],
+        "correctAnswer": "Başka oda.",
+        "explanation": "anderes Zimmer bekommen denir."
+      }
+    ],
+    "writingPrompt": "Bir otel, teslimat veya servis sorunuyla ilgili 80–110 kelimelik nazik şikâyet mesajı yaz; könnte, sollte veya würde yapılarından en az ikisini kullan.",
+    "speakingPrompt": "Müşteri hizmeti rolünde 60 saniye konuş: sorun, tarih/numara ve istediğin çözümü söyle.",
+    "realLifeMission": "Gerçek hayatta yaşayabileceğin bir hizmet sorununu seç ve nazik Almanca çözüm talebi hazırla.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u15",
+    "cefrCanDo": [
+      "Bir kurumdan bilgi talep edebilirim.",
+      "Edatlı fiillerle doğru soru-cevap kurabilirim.",
+      "Form, belge ve son tarih gibi temel resmî işlem kelimelerini anlayabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "Resmî günlük işlemlerde başvuru numarası, son tarih, gerekli belge ve randevu bilgisini not etmek iletişim hatalarını azaltır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Guten Tag. Wofür interessieren Sie sich?",
+        "tr": "İyi günler. Neyle ilgileniyorsunuz?"
+      },
+      {
+        "speaker": "Leyla",
+        "de": "Für den Abendkurs ab Oktober.",
+        "tr": "Ekimden itibaren akşam kursuyla."
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Haben Sie das Formular schon ausgefüllt?",
+        "tr": "Formu doldurdunuz mu?"
+      },
+      {
+        "speaker": "Leyla",
+        "de": "Ja. Ich warte nur noch auf die Bestätigung.",
+        "tr": "Evet. Sadece onayı bekliyorum."
+      },
+      {
+        "speaker": "Mitarbeiter",
+        "de": "Darauf müssen Sie noch zwei Tage warten.",
+        "tr": "Onun için iki gün daha beklemeniz gerekiyor."
+      },
+      {
+        "speaker": "Leyla",
+        "de": "Gut, danke für die Auskunft.",
+        "tr": "İyi, bilgi için teşekkürler."
+      }
+    ],
+    "reading": {
+      "de": "Für einen Sprachkurs müssen Interessierte zuerst das Online-Formular ausfüllen. Danach bekommen sie eine E-Mail mit einer Liste der nötigen Unterlagen. Die Anmeldung ist erst vollständig, wenn alle Dokumente eingereicht sind. Wer sich für einen Abendkurs interessiert, sollte die gewünschte Uhrzeit direkt im Formular angeben.",
+      "tr": "Bir dil kursu için ilgilenenler önce çevrim içi formu doldurmalı. Sonra gerekli belgelerin listesi e-postayla geliyor. Kayıt ancak tüm belgeler teslim edildiğinde tamamlanmış oluyor. Akşam kursuyla ilgilenen kişi istediği saati doğrudan formda belirtmeli."
+    },
+    "listening": {
+      "de": "Am Informationsschalter sagt ein Mitarbeiter: „Für Ihren Termin brauchen Sie Ihren Pass und die Bestätigung per E-Mail. Bitte kommen Sie zehn Minuten früher. Wenn Sie den Termin nicht wahrnehmen können, melden Sie sich spätestens einen Tag vorher.“",
+      "tr": "Bilgi gişesinde çalışan şöyle diyor: “Randevunuz için pasaportunuz ve e-posta onayınız gerekiyor. Lütfen on dakika erken gelin. Randevuya gelemeyecekseniz en geç bir gün önce haber verin.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u15-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk adım nedir?",
+        "options": [
+          "Online formu doldurmak.",
+          "Telefonu kapatmak.",
+          "Belgesiz gitmek."
+        ],
+        "correctAnswer": "Online formu doldurmak.",
+        "explanation": "zuerst das Online-Formular ausfüllen denir."
+      },
+      {
+        "id": "a2-u15-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Kayıt ne zaman tamamlanır?",
+        "options": [
+          "Tüm belgeler teslim edilince.",
+          "Form açılınca.",
+          "İlk telefon görüşmesinde."
+        ],
+        "correctAnswer": "Tüm belgeler teslim edilince.",
+        "explanation": "wenn alle Dokumente eingereicht sind denir."
+      },
+      {
+        "id": "a2-u15-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Akşam kursu isteyen neyi belirtmeli?",
+        "options": [
+          "İstenen saati.",
+          "Ev adresini silmeli.",
+          "Mesleğini değiştirmeli."
+        ],
+        "correctAnswer": "İstenen saati.",
+        "explanation": "gewünschte Uhrzeit bilgisi vardır."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u15-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Randevu için hangi iki şey gerekiyor?",
+        "options": [
+          "Pasaport ve e-posta onayı.",
+          "Sadece para.",
+          "İki fotoğraf ve bilet."
+        ],
+        "correctAnswer": "Pasaport ve e-posta onayı.",
+        "explanation": "Pass und Bestätigung per E-Mail denir."
+      },
+      {
+        "id": "a2-u15-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ne kadar erken gelinmeli?",
+        "options": [
+          "On dakika.",
+          "Bir saat.",
+          "Tam zamanında bile değil."
+        ],
+        "correctAnswer": "On dakika.",
+        "explanation": "zehn Minuten früher denir."
+      },
+      {
+        "id": "a2-u15-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Gelemeyecek kişi ne zaman haber vermeli?",
+        "options": [
+          "En geç bir gün önce.",
+          "Bir ay sonra.",
+          "Randevudan sonra."
+        ],
+        "correctAnswer": "En geç bir gün önce.",
+        "explanation": "spätestens einen Tag vorher denir."
+      }
+    ],
+    "writingPrompt": "Bir kurs veya kurumdan 80–100 kelimelik bilgi talebi yaz; iki edatlı fiil ve üç somut soru kullan.",
+    "speakingPrompt": "Bilgi masasında 60 saniyelik rol konuşması: başvuru, belge, randevu ve son tarih sor.",
+    "realLifeMission": "Bir gerçek başvuru senaryosu seç ve “Wofür/Worauf/Woran?” türünde üç soru hazırla.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  },
+  {
+    "id": "a2-u16",
+    "cefrCanDo": [
+      "A2 düzeyinde kısa, bağlantılı bir günlük yaşam mesajı yazabilirim.",
+      "Bir problem, neden ve çözümü birlikte anlatabilirim.",
+      "Partnerle plan yapıp ortak karara ulaşabilirim."
+    ],
+    "cultureNote": {
+      "title": "Günlük kullanım ve iletişim notu",
+      "text": "A2 sonunda hedef kusursuz ve uzun konuşma değil; tanıdık günlük durumlarda karşılıklı bilgi alışverişini sürdürebilecek kadar açık ve bağlantılı iletişim kurmaktır."
+    },
+    "dialogue": [
+      {
+        "speaker": "Mina",
+        "de": "Der Zug am Freitag ist sehr teuer.",
+        "tr": "Cuma günkü tren çok pahalı."
+      },
+      {
+        "speaker": "Leo",
+        "de": "Dann könnten wir am Samstagmorgen fahren.",
+        "tr": "O zaman cumartesi sabahı gidebiliriz."
+      },
+      {
+        "speaker": "Mina",
+        "de": "Das ist besser, weil ich Freitag lange arbeite.",
+        "tr": "Bu daha iyi, çünkü cuma uzun çalışıyorum."
+      },
+      {
+        "speaker": "Leo",
+        "de": "Ich denke auch, dass Samstag ruhiger ist.",
+        "tr": "Ben de cumartesinin daha sakin olduğunu düşünüyorum."
+      },
+      {
+        "speaker": "Mina",
+        "de": "Wenn wir früh fahren, haben wir fast den ganzen Tag dort.",
+        "tr": "Erken gidersek neredeyse tüm gün orada oluruz."
+      },
+      {
+        "speaker": "Leo",
+        "de": "Gut, dann reserviere ich die Tickets.",
+        "tr": "İyi, o zaman biletleri ayırtıyorum."
+      }
+    ],
+    "reading": {
+      "de": "Eine Lerngruppe plant einen gemeinsamen Ausflug. Zuerst wollten alle am Freitag fahren, aber zwei Personen müssen bis spät arbeiten. Deshalb schlägt jemand Samstag vor. Die Gruppe findet, dass die Verbindung um 8:30 Uhr am besten passt. Wenn alle bis Mittwoch zusagen, reserviert Mila die Tickets. Wenn jemand später absagt, soll die Person der Gruppe sofort schreiben.",
+      "tr": "Bir çalışma grubu ortak gezi planlıyor. Önce herkes cuma gitmek istiyordu ama iki kişi geç saate kadar çalışmak zorunda. Bu yüzden biri cumartesiyi öneriyor. Grup 8.30 bağlantısının en uygun olduğunu düşünüyor. Herkes çarşambaya kadar onaylarsa Mila biletleri ayırtacak. Birisi sonra iptal ederse gruba hemen yazmalı."
+    },
+    "listening": {
+      "de": "Eine Nachricht: „Hallo zusammen, unser Kursraum ist morgen nicht frei. Deshalb treffen wir uns im Raum 204. Könnten alle bitte zehn Minuten früher kommen? Wenn ihr die Hausaufgabe noch nicht geschickt habt, sendet sie mir heute Abend. Ich glaube, dass wir dann morgen pünktlich anfangen können.“",
+      "tr": "Bir mesaj: “Herkese merhaba, yarın kurs odamız boş değil. Bu yüzden 204 numaralı odada buluşuyoruz. Herkes on dakika erken gelebilir mi? Ödevi henüz göndermediyseniz bu akşam bana yollayın. O zaman yarın zamanında başlayabileceğimizi düşünüyorum.”"
+    },
+    "readingQuestions": [
+      {
+        "id": "a2-u16-v34-r1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "İlk plan hangi gündü?",
+        "options": [
+          "Cuma.",
+          "Cumartesi.",
+          "Pazar."
+        ],
+        "correctAnswer": "Cuma.",
+        "explanation": "Zuerst ... am Freitag denir."
+      },
+      {
+        "id": "a2-u16-v34-r2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Neden gün değişiyor?",
+        "options": [
+          "İki kişi geç çalışıyor.",
+          "Tren yok.",
+          "Hava çok sıcak."
+        ],
+        "correctAnswer": "İki kişi geç çalışıyor.",
+        "explanation": "zwei Personen müssen bis spät arbeiten denir."
+      },
+      {
+        "id": "a2-u16-v34-r3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Biletleri kim ayırtacak?",
+        "options": [
+          "Mila.",
+          "Leo.",
+          "Öğretmen."
+        ],
+        "correctAnswer": "Mila.",
+        "explanation": "Mila die Tickets reserviert denir."
+      }
+    ],
+    "listeningQuestions": [
+      {
+        "id": "a2-u16-v34-l1",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Yarın nerede buluşulacak?",
+        "options": [
+          "204 numaralı oda.",
+          "Eski oda.",
+          "İstasyonda."
+        ],
+        "correctAnswer": "204 numaralı oda.",
+        "explanation": "Mesajda yeni buluşma yeri açıkça Raum 204 olarak verilir."
+      },
+      {
+        "id": "a2-u16-v34-l2",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ne kadar erken gelinmesi isteniyor?",
+        "options": [
+          "On dakika.",
+          "Bir saat.",
+          "Yarım saat."
+        ],
+        "correctAnswer": "On dakika.",
+        "explanation": "zehn Minuten früher denir."
+      },
+      {
+        "id": "a2-u16-v34-l3",
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Ödev ne zaman gönderilmeli?",
+        "options": [
+          "Bu akşam.",
+          "Yarın akşam.",
+          "Gelecek hafta."
+        ],
+        "correctAnswer": "Bu akşam.",
+        "explanation": "heute Abend ifadesi vardır."
+      }
+    ],
+    "writingPrompt": "90–120 kelimelik A2 mesajı yaz: plan değişikliği, neden, yeni öneri, zaman ve nazik rica olsun; en az dört farklı A2 yapısı kullan.",
+    "speakingPrompt": "Bir partnerle iki dakikalık plan yap: iki seçenek, bir sorun, neden, çözüm ve ortak karar.",
+    "realLifeMission": "Günlük hayattan bir plan değişikliği senaryosunu Almanca mesaj + kısa konuşma olarak tamamla.",
+    "sourceMethod": "Deutschimo V34 için özgün olarak yazıldı. Kullanıcı tarafından sağlanan Menschen A2 ve Netzwerk neu A2 materyalleri ile Goethe/CEFR A2 kapsamı yalnızca seviye, konu ve iletişim görevlerini doğrulamak için referans alındı; kaynak cümle, diyalog, metin veya alıştırmalar kopyalanmadı."
+  }
+]

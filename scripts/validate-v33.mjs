@@ -17,7 +17,7 @@ const required = [
 required.forEach(req);
 
 const pkg = JSON.parse(read("package.json"));
-if (!/^33\./.test(String(pkg.version ?? ""))) errors.push(`V33 paket surumu bekleniyor: ${pkg.version}`);
+const [pkgMajor]=String(pkg.version??"").split(".").map(Number); if(!Number.isFinite(pkgMajor)||pkgMajor<33) errors.push(`Surum en az 33.x olmali: ${pkg.version}`);
 if (!pkg.scripts?.["validate:v33"]) errors.push("validate:v33 npm scripti eksik.");
 for (const name of ["prebuild","quality:check","vercel-build"]) {
   if (!String(pkg.scripts?.[name] ?? "").includes("validate:v33")) errors.push(`${name} validate:v33 calistirmiyor.`);
@@ -91,7 +91,7 @@ for (const r of quality) {
 }
 
 const slides=read("data/slides.ts");
-for (const token of ["v16ReadingQuestions = v16Content?.readingQuestions ?? []","v16ListeningQuestions = v16Content?.listeningQuestions ?? []","unit.courseId === \"a1\" && v16Content ? v16Content.dialogue","unit.courseId === \"a1\" && v16Content ? v16Content.reading","unit.courseId === \"a1\" && v16Content ? v16Content.listening"]) {
+for (const token of ["v16ReadingQuestions = v16Content?.readingQuestions ?? []","v16ListeningQuestions = v16Content?.listeningQuestions ?? []","(unit.courseId === \"a1\" || unit.courseId === \"a2\") && v16Content ? v16Content.dialogue","(unit.courseId === \"a1\" || unit.courseId === \"a2\") && v16Content ? v16Content.reading","(unit.courseId === \"a1\" || unit.courseId === \"a2\") && v16Content ? v16Content.listening"]) {
   if (!slides.includes(token)) errors.push(`V33 A1 zengin icerik entegrasyonu eksik: ${token}`);
 }
 

@@ -1,12 +1,17 @@
 import rawCurriculumContent from "@/data/curriculum-content.json";
 import v33A1Content from "@/data/v33-a1-gold-standard.json";
+import v34A2Content from "@/data/v34-a2-gold-standard.json";
 import type { CurriculumUnitContent } from "@/types/content";
 
 const baseContent = rawCurriculumContent as CurriculumUnitContent[];
-const v33Map = new Map((v33A1Content as CurriculumUnitContent[]).map((unit) => [unit.id, unit]));
+const overlays = [
+  ...(v33A1Content as CurriculumUnitContent[]),
+  ...(v34A2Content as CurriculumUnitContent[]),
+];
+const overlayMap = new Map(overlays.map((unit) => [unit.id, unit]));
 
 export const curriculumContent: CurriculumUnitContent[] = baseContent.map(
-  (unit) => v33Map.get(unit.id) ?? unit,
+  (unit) => overlayMap.get(unit.id) ?? unit,
 );
 
 export const curriculumContentByUnitId: Record<string, CurriculumUnitContent> = Object.fromEntries(

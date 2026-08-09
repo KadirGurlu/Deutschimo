@@ -1,0 +1,66 @@
+name: Deutschimo V44 Admin Content Studio
+on:
+  push:
+    branches: [v44-staging]
+  pull_request:
+    branches: [main, v44-staging]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: deutschimo-v44-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  CI: "true"
+  DATABASE_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v44_ci
+  DATABASE_POSTGRES_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v44_ci
+  DATABASE_ENVIRONMENT: test
+  AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+  SEED_PREVIEW_TEST_DATA: "false"
+  AUTH_SECRET: v44-ci-auth-secret-32-characters-minimum-2026
+  SECURITY_HASH_KEY: v44-ci-security-hash-key-32-characters-minimum-2026
+  CRON_SECRET: v44-ci-cron-secret-32-characters-minimum-2026
+  AUTH_URL: http://127.0.0.1:3000
+  AUTH_TRUST_HOST: "true"
+  NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+  REQUIRE_EMAIL_VERIFICATION: "false"
+  BOOTSTRAP_ADMIN_ON_BUILD: "false"
+jobs:
+  admin-content-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: ci_password
+          POSTGRES_DB: deutschimo_v44_ci
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ci_user -d deutschimo_v44_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci --no-audit --no-fund
+      - run: npm run verify:toolchain
+      - run: npm run verify:lockfile
+      - run: npm run validate:v43
+      - run: npm run validate:v44
+      - run: npm run db:baseline:init
+      - run: npm run db:deploy
+      - run: npm run db:deploy
+      - run: npm run db:migrate:status
+      - run: npm run db:drift:check
+      - run: npm run security:release
+      - run: npm run db:data-boundaries
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build

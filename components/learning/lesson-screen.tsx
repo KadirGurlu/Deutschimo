@@ -21,7 +21,7 @@ import type { Course, Unit } from "@/types/course";
 export function LessonScreen({ course, unit }: { course: Course; unit: Unit }) {
   const router = useRouter();
   const progress = useLearningProgress(course);
-  const content = useContentStore();
+  const content = useContentStore(unit.id);
   const managedUnit = content.getUnit(unit.id) ?? unit;
   const unitSlides = content.getSlides(unit.id).filter((slide) => slide.status === "PUBLISHED");
   const unitExercises = content.getExercises(unit.id);

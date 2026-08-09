@@ -14,7 +14,7 @@ import type { Course, Unit } from "@/types/course";
 
 export function UnitQuiz({ course, unit, nextUnitId }: { course: Course; unit: Unit; nextUnitId?: string }) {
   const progress = useLearningProgress(course);
-  const content = useContentStore();
+  const content = useContentStore(unit.id);
   const managedUnit = content.getUnit(unit.id) ?? unit;
   const slides = content.getSlides(unit.id);
   const exercises = content.getExercises(unit.id);

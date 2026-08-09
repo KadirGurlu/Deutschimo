@@ -1053,3 +1053,68 @@ model MasteryReviewQueueItem {
   @@index([userId, skill, dueAt])
   @@index([userId, courseId, unitId])
 }
+
+enum CmsEntityType {
+  COURSE
+  UNIT
+  LESSON
+  VOCABULARY
+  QUESTION
+  LISTENING
+}
+
+enum CmsWorkflowStatus {
+  DRAFT
+  REVIEW
+  READY
+  PUBLISHED
+  ARCHIVED
+}
+
+enum CmsQualityTier {
+  GOLD
+  STANDARD
+  REVIEW_REQUIRED
+}
+
+model CmsContentRecord {
+  id          String            @id @default(cuid())
+  key         String            @unique
+  entityType  CmsEntityType
+  parentKey   String?
+  courseKey   String?
+  unitKey     String?
+  level       Level?
+  title       String
+  status      CmsWorkflowStatus @default(DRAFT)
+  active      Boolean           @default(true)
+  qualityTier CmsQualityTier    @default(STANDARD)
+  version     Int               @default(1)
+  payload     Json
+  createdById String?
+  updatedById String?
+  publishedAt DateTime?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  revisions   CmsContentRevision[]
+
+  @@index([entityType, status])
+  @@index([courseKey, unitKey])
+  @@index([unitKey, entityType])
+  @@index([level, qualityTier])
+}
+
+model CmsContentRevision {
+  id          String            @id @default(cuid())
+  contentId   String
+  version     Int
+  status      CmsWorkflowStatus
+  snapshot    Json
+  actorUserId String?
+  changeNote  String?
+  createdAt   DateTime          @default(now())
+  content     CmsContentRecord  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+
+  @@unique([contentId, version])
+  @@index([contentId, createdAt])
+}

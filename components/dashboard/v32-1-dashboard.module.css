@@ -205,3 +205,33 @@
   .lowerGrid { grid-template-columns: 1fr; }
   .activityWrap { grid-column: auto; }
 }
+.v43EngineStrip{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:12px;
+  margin:4px 0 16px;
+  padding:12px 14px;
+  border:1px solid #cbe9eb;
+  border-radius:12px;
+  background:#f4fcfc;
+  color:#12324a;
+}
+.v43EngineStrip svg{color:#0ba8b5}
+.v43EngineStrip div{display:flex;flex-direction:column;gap:2px}
+.v43EngineStrip strong{font-size:13px}
+.v43EngineStrip span{font-size:12px;color:#627287}
+.v43EngineStrip a{font-size:12px;font-weight:800;color:#0a7680;text-decoration:none}
+.v43TaskReason{
+  display:flex!important;
+  align-items:flex-start;
+  gap:6px;
+  margin-top:7px!important;
+  color:#607387!important;
+  font-size:12px!important;
+}
+.v43TaskReason svg{flex:0 0 auto;color:#0aa5b0;margin-top:1px}
+@media(max-width:720px){
+  .v43EngineStrip{grid-template-columns:auto 1fr}
+  .v43EngineStrip a{grid-column:2}
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { BrainCircuit, Check, Sparkles } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { DailyPlanTask, DailyStudyPlan } from "@/types/intelligence";
 import styles from "./v32-1-dashboard.module.css";
@@ -39,9 +39,14 @@ export function TodayPlanCard() {
     setLoading(true);
     setError("");
     try {
-      const response = await fetch(`/api/intelligence/daily-plan?date=${date}`, { cache: "no-store" });
+      const response = await fetch(
+        `/api/intelligence/daily-plan?date=${date}`,
+        { cache: "no-store" },
+      );
       const payload = await response.json() as { plan?: DailyStudyPlan; error?: string };
-      if (!response.ok || !payload.plan) throw new Error(payload.error ?? "Bugünkü plan getirilemedi.");
+      if (!response.ok || !payload.plan) {
+        throw new Error(payload.error ?? "Bugünkü plan getirilemedi.");
+      }
       setPlan(payload.plan);
     } catch (reason) {
       setError(reason instanceof Error ? reason.message : "Bugünkü plan getirilemedi.");
@@ -54,9 +59,14 @@ export function TodayPlanCard() {
 
   async function toggle(taskId: string, completed: boolean) {
     if (!plan) return;
-    const tasks = plan.tasks.map((task) => task.id === taskId ? { ...task, completed } : task);
-    const completedMinutes = tasks.filter((task) => task.completed).reduce((sum, task) => sum + task.minutes, 0);
+    const tasks = plan.tasks.map((task) =>
+      task.id === taskId ? { ...task, completed } : task
+    );
+    const completedMinutes = tasks
+      .filter((task) => task.completed)
+      .reduce((sum, task) => sum + task.minutes, 0);
     setPlan({ ...plan, tasks, completedMinutes });
+
     try {
       const response = await fetch("/api/intelligence/daily-plan", {
         method: "PATCH",
@@ -64,7 +74,9 @@ export function TodayPlanCard() {
         body: JSON.stringify({ planDate: plan.planDate, taskId, completed }),
       });
       const payload = await response.json() as { plan?: DailyStudyPlan; error?: string };
-      if (!response.ok || !payload.plan) throw new Error(payload.error ?? "Görev güncellenemedi.");
+      if (!response.ok || !payload.plan) {
+        throw new Error(payload.error ?? "Görev güncellenemedi.");
+      }
       setPlan(payload.plan);
     } catch (reason) {
       setError(reason instanceof Error ? reason.message : "Görev güncellenemedi.");
@@ -72,17 +84,36 @@ export function TodayPlanCard() {
     }
   }
 
-  if (loading) return <section className={styles.loading} data-testid="v32-1-plan-loading">Bugünkü kişisel çalışma paketin hazırlanıyor…</section>;
-  if (!plan) return <section className={styles.error}><strong>Bugünkü plan yüklenemedi.</strong><p>{error}</p><Link className={styles.smallLink} href="/study-plan">Günlük Plan sayfasını aç</Link></section>;
+  if (loading) {
+    return (
+      <section className={styles.loading} data-testid="v32-1-plan-loading">
+        Bugünkü kişisel çalışma paketin hazırlanıyor…
+      </section>
+    );
+  }
 
-  const percent = plan.goalMinutes ? Math.min(100, Math.round((plan.completedMinutes / plan.goalMinutes) * 100)) : 0;
+  if (!plan) {
+    return (
+      <section className={styles.error}>
+        <strong>Bugünkü plan yüklenemedi.</strong>
+        <p>{error}</p>
+        <Link className={styles.smallLink} href="/study-plan">Günlük Plan sayfasını aç</Link>
+      </section>
+    );
+  }
+
+  const percent = plan.goalMinutes
+    ? Math.min(100, Math.round((plan.completedMinutes / plan.goalMinutes) * 100))
+    : 0;
+  const engine = plan.personalization;
+
   return (
     <section className={styles.planCard} data-testid="v32-1-today-plan">
       <div className={styles.planHeader}>
         <div>
           <span className={styles.eyebrow}>BUGÜN BUNLARI YAP</span>
           <h2>Bugünkü Planın</h2>
-          <p>Ders, tekrar ve kısa pratiğin tek bir çalışma paketinde.</p>
+          <p>Ders, tekrar ve beceri pratiğin tek kişisel çalışma paketinde.</p>
         </div>
         <div className={styles.planScore} data-testid="v32-1-plan-minutes">
           <strong>{plan.completedMinutes} / {plan.goalMinutes} dk</strong>
@@ -90,16 +121,47 @@ export function TodayPlanCard() {
         </div>
       </div>
 
+      {engine ? (
+        <div className={styles.v43EngineStrip}>
+          <BrainCircuit size={19}/>
+          <div>
+            <strong>V43 kişisel motor</strong>
+            <span>
+              {engine.profile.goalLabel} · {engine.profile.studyDaysPerWeek} gün/hafta ·
+              {" "}{engine.mode === "ADAPTIVE" ? `veri kapsamı %${engine.dataCoverage}` : "profil ağırlıklı başlangıç"}
+            </span>
+          </div>
+          <Link href="/study-plan">Neden?</Link>
+        </div>
+      ) : null}
+
       <div className={styles.taskList}>
         {plan.tasks.map((task, index) => (
-          <article className={`${styles.task} ${task.completed ? styles.taskDone : ""}`} key={task.id} data-testid={`v32-1-task-${index}`}>
-            <button className={styles.check} type="button" onClick={() => void toggle(task.id, !task.completed)} aria-label={task.completed ? `${task.title} görevini geri al` : `${task.title} görevini tamamla`}>
+          <article
+            className={`${styles.task} ${task.completed ? styles.taskDone : ""}`}
+            key={task.id}
+            data-testid={`v32-1-task-${index}`}
+          >
+            <button
+              className={styles.check}
+              type="button"
+              onClick={() => void toggle(task.id, !task.completed)}
+              aria-label={task.completed ? `${task.title} görevini geri al` : `${task.title} görevini tamamla`}
+            >
               {task.completed ? <Check size={18}/> : index + 1}
             </button>
             <div className={styles.taskBody}>
-              <div className={styles.taskMeta}><span>{typeLabel[task.type] ?? task.type}</span><span>•</span><span>{task.priority === "HIGH" ? "Öncelikli" : "Destek çalışması"}</span></div>
+              <div className={styles.taskMeta}>
+                <span>{typeLabel[task.type] ?? task.type}</span>
+                <span>•</span>
+                <span>{task.priority === "HIGH" ? "Öncelikli" : "Destek çalışması"}</span>
+                {task.adaptive ? <><span>•</span><span>Uyarlanmış</span></> : null}
+              </div>
               <h3>{task.title}</h3>
               <p>{task.description}</p>
+              {task.reason ? (
+                <p className={styles.v43TaskReason}><Sparkles size={14}/>{task.reason}</p>
+              ) : null}
             </div>
             <span className={styles.minutes}>{task.minutes} dk</span>
             <Link className={styles.action} href={task.href}>{actionLabel(task)}</Link>
@@ -107,7 +169,9 @@ export function TodayPlanCard() {
         ))}
       </div>
 
-      <div className={styles.progressTrack} aria-hidden="true"><div className={styles.progressFill} style={{ width: `${percent}%` }}/></div>
+      <div className={styles.progressTrack} aria-hidden="true">
+        <div className={styles.progressFill} style={{ width: `${percent}%` }}/>
+      </div>
       <div className={styles.planFooter}>
         <span><strong>%{percent}</strong> tamamlandı</span>
         <Link className={styles.smallLink} href="/study-plan">Planın ayrıntılarını görüntüle</Link>

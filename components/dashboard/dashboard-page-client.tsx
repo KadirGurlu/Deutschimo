@@ -7,7 +7,7 @@ import { TodayContinueCard } from "@/components/dashboard/today-continue-card";
 import { TodayPlanCard } from "@/components/dashboard/today-plan-card";
 import { courses } from "@/data/courses";
 import { useLearningProgress } from "@/hooks/use-learning-progress";
-import type { OnboardingFocusSkill } from "@/types/onboarding";
+import type { LearningGoal, OnboardingFocusSkill } from "@/types/onboarding";
 import { useSession } from "next-auth/react";
 import styles from "./v32-1-dashboard.module.css";
 
@@ -18,6 +18,16 @@ const focusLabels: Record<OnboardingFocusSkill, string> = {
   LISTENING: "dinleme",
   WRITING: "yazma",
   SPEAKING: "konuşma",
+};
+const goalLabels: Record<LearningGoal, string> = {
+  GERMANY_LIFE: "Almanya'da yaşam",
+  UNIVERSITY: "üniversite",
+  WORK: "iş hayatı",
+  DAILY_GERMAN: "günlük Almanca",
+  TESTDAF: "TestDaF",
+  TELC: "TELC",
+  GOETHE: "Goethe",
+  IMPROVE: "genel gelişim",
 };
 
 function startOfCurrentWeek() {
@@ -49,9 +59,10 @@ function relativeStudyLabel(value?: string) {
   return source.toLocaleDateString("tr-TR", { day: "numeric", month: "long" });
 }
 
-export function DashboardPageClient({ weeklyTargetDays = 5, focusSkills = [] }: {
+export function DashboardPageClient({ weeklyTargetDays = 5, focusSkills = [], learningGoal = null }: {
   weeklyTargetDays?: number;
   focusSkills?: OnboardingFocusSkill[];
+  learningGoal?: LearningGoal | null;
 }) {
   const { data: session } = useSession();
   const firstName = session?.user.firstName ?? session?.user.name?.split(" ")[0] ?? "Öğrenci";
@@ -96,6 +107,7 @@ export function DashboardPageClient({ weeklyTargetDays = 5, focusSkills = [] }: 
   const focusText = focusSkills.length
     ? focusSkills.map((skill) => focusLabels[skill]).join(" ve ")
     : "mevcut ilerleme";
+  const goalText = learningGoal ? goalLabels[learningGoal] : "genel Almanca";
 
   return (
     <div className="dashboard-shell">
@@ -107,7 +119,7 @@ export function DashboardPageClient({ weeklyTargetDays = 5, focusSkills = [] }: 
             <h1 data-testid="v32-1-greeting">Guten Tag, {firstName}</h1>
             <p className={styles.goalLine}>Bugünkü hedefin: <strong>{dailyGoal} dakika</strong></p>
           </div>
-          <div className={styles.focusNote}>Bugünkü planın <strong>{focusText}</strong> önceliklerin ve son öğrenme hareketlerin dikkate alınarak hazırlanır.</div>
+          <div className={styles.focusNote}>Bugünkü planın <strong>{goalText}</strong> hedefin, <strong>{focusText}</strong> önceliklerin ve gerçek performans sinyallerin birlikte değerlendirilerek hazırlanır.</div>
         </div>
 
         <TodayPlanCard/>

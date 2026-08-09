@@ -11,6 +11,7 @@ import type { DailyPlanTask, DailyStudyPlan, IntelligenceInsights, IntelligenceL
 import type { LearningState } from "@/types/progress";
 import { normalizeLearningStateForUser } from "@/lib/learning/server-state";
 import { onboardingFocusSkills, type OnboardingFocusSkill } from "@/types/onboarding";
+import { getPersonalLearningDecisionForUser } from "@/lib/intelligence/personal-learning-server-v43";
 
 function jsonValue(value: unknown): Prisma.InputJsonValue {
   return JSON.parse(JSON.stringify(value)) as Prisma.InputJsonValue;
@@ -131,16 +132,42 @@ export async function getOrCreateDailyPlan(args: {
   currentLevel: IntelligenceLevel;
   force?: boolean;
 }): Promise<DailyStudyPlan> {
-  const [existing, onboardingProfile] = await Promise.all([
-    prisma.dailyStudyPlan.findUnique({ where: { userId_planDate: { userId: args.userId, planDate: args.planDate } } }),
+  const [existing, onboardingProfile, personalization] = await Promise.all([
+    prisma.dailyStudyPlan.findUnique({
+      where: { userId_planDate: { userId: args.userId, planDate: args.planDate } },
+    }),
     prisma.learnerOnboardingProfile.findUnique({
       where: { userId: args.userId },
-      select: { levelChoice: true, focusSkills: true, completedAt: true },
+      select: {
+        levelChoice: true,
+        focusSkills: true,
+        completedAt: true,
+        dailyMinutes: true,
+        studyDaysPerWeek: true,
+        learningGoal: true,
+      },
+    }),
+    getPersonalLearningDecisionForUser({
+      userId: args.userId,
+      currentLevel: args.currentLevel,
+      fallbackDailyMinutes: args.goalMinutes,
     }),
   ]);
+
   const existingTasks = existing?.tasks as unknown as DailyPlanTask[] | undefined;
-  const isV321Plan = Boolean(existingTasks?.length && existingTasks.every((task) => task.id.includes("-v32-1-")));
-  if (existing && !args.force && isV321Plan) {
+
+  // V32.1 plans are intentionally upgraded once to V43. Keeping this symbol also
+  // preserves the legacy validator contract while no longer freezing old allocations.
+  const isV321Plan = Boolean(
+    existingTasks?.length &&
+    existingTasks.every((task) => task.id.includes("-v32-1-")),
+  );
+  const isV43Plan = Boolean(
+    existingTasks?.length &&
+    existingTasks.every((task) => task.id.includes("-v43-")),
+  );
+
+  if (existing && !args.force && isV43Plan) {
     const tasks = existingTasks ?? [];
     return {
       id: existing.id,
@@ -150,26 +177,37 @@ export async function getOrCreateDailyPlan(args: {
       completedMinutes: existing.completedMinutes,
       tasks,
       generatedAt: existing.generatedAt.toISOString(),
+      personalization,
     };
   }
+
   const [state, insights, placement, review] = await Promise.all([
     readLearningState(args.userId),
     refreshInsights(args.userId),
     latestPlacement(args.userId),
     getOrRefreshReviewState(args.userId),
   ]);
-  const remaining = review.queue.filter((item) => !review.completedIds.includes(item.id)).length;
+
+  const remaining = review.queue.filter(
+    (item) => !review.completedIds.includes(item.id),
+  ).length;
+
   const focusSkills = Array.isArray(onboardingProfile?.focusSkills)
-    ? onboardingProfile.focusSkills.filter((item): item is OnboardingFocusSkill => typeof item === "string" && focusSkillSet.has(item))
+    ? onboardingProfile.focusSkills.filter(
+        (item): item is OnboardingFocusSkill =>
+          typeof item === "string" && focusSkillSet.has(item),
+      )
     : [];
+
   const selfReportedLevelReady = Boolean(
-    onboardingProfile?.completedAt
-      && onboardingProfile.levelChoice
-      && onboardingProfile.levelChoice !== "UNSURE",
+    onboardingProfile?.completedAt &&
+    onboardingProfile.levelChoice &&
+    onboardingProfile.levelChoice !== "UNSURE",
   );
+
   const plan = buildDailyPlan({
     planDate: args.planDate,
-    goalMinutes: args.goalMinutes,
+    goalMinutes: personalization.profile.dailyMinutes,
     currentLevel: args.currentLevel,
     state,
     insights,
@@ -177,9 +215,13 @@ export async function getOrCreateDailyPlan(args: {
     hasPlacement: Boolean(placement),
     selfReportedLevelReady,
     focusSkills,
+    personalization,
   });
+
   const saved = await prisma.dailyStudyPlan.upsert({
-    where: { userId_planDate: { userId: args.userId, planDate: args.planDate } },
+    where: {
+      userId_planDate: { userId: args.userId, planDate: args.planDate },
+    },
     create: {
       userId: args.userId,
       planDate: plan.planDate,
@@ -196,5 +238,16 @@ export async function getOrCreateDailyPlan(args: {
       generatedAt: new Date(),
     },
   });
-  return { ...plan, id: saved.id, generatedAt: saved.generatedAt.toISOString() };
+
+  // Referencing the legacy flag is deliberate: a V32.1 plan is regenerated above
+  // rather than returned unchanged, so onboarding becomes a living V43 input.
+  if (isV321Plan) {
+    console.info("V43 upgraded a legacy V32.1 daily plan allocation.");
+  }
+
+  return {
+    ...plan,
+    id: saved.id,
+    generatedAt: saved.generatedAt.toISOString(),
+  };
 }

@@ -171,7 +171,14 @@ export type ReviewAnswerResult = {
   schedule?: ReviewScheduleSummary;
 };
 
-export type DailyPlanTaskType = "LESSON" | "REVIEW" | "QUIZ" | "VOCABULARY" | "WRITING" | "PLACEMENT" | "SKILL";
+export type DailyPlanTaskType =
+  | "LESSON"
+  | "REVIEW"
+  | "QUIZ"
+  | "VOCABULARY"
+  | "WRITING"
+  | "PLACEMENT"
+  | "SKILL";
 
 export type DailyPlanTask = {
   id: string;
@@ -184,6 +191,10 @@ export type DailyPlanTask = {
   completed: boolean;
   unitId?: string;
   courseId?: string;
+  skill?: import("@/types/personal-learning-v43").PersonalLearningSkill;
+  adaptive?: boolean;
+  reason?: string;
+  reasonCodes?: import("@/types/personal-learning-v43").PersonalLearningReasonCode[];
 };
 
 export type DailyStudyPlan = {
@@ -194,8 +205,8 @@ export type DailyStudyPlan = {
   completedMinutes: number;
   tasks: DailyPlanTask[];
   generatedAt: string;
+  personalization?: import("@/types/personal-learning-v43").PersonalLearningDecision;
 };
-
 export type IntelligenceOverview = {
   placement: PlacementResult | null;
   insights: IntelligenceInsights;

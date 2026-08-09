@@ -134,6 +134,23 @@ export type ReviewItem = {
   expectedSeconds?: number;
   nextReviewAt?: string | null;
   hint?: string;
+  masteryPhase?: "RECALL" | "SENTENCE" | "PRODUCTION" | "CONTRAST";
+  masteryPhaseLabel?: string;
+  masteryPhaseInstruction?: string;
+  masteryPriorityScore?: number;
+  masteryTags?: string[];
+  masterySignals?: {
+    lastCorrectAt: string | null;
+    lastIncorrectAt: string | null;
+    responseMs: number | null;
+    averageResponseMs: number | null;
+    errorCount: number;
+    skillMastery: number | null;
+    difficulty: number;
+    lastReviewAt: string | null;
+    confidence: string | null;
+    similarTopicScore: number | null;
+  };
 };
 
 export type ReviewScheduleSummary = {

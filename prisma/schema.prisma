@@ -1018,3 +1018,38 @@ model MasteryTopicSnapshot {
   @@index([userId, courseId, unitId])
   @@index([userId, tag])
 }
+
+// Deutschimo V38 — Smart Review 3.0 / Mastery-aware review queue
+model MasteryReviewQueueItem {
+  id                String           @id @default(cuid())
+  userId            String
+  courseId          String
+  unitId            String?
+  questionId        String
+  source            String
+  skill             MasterySkillArea
+  tags              String[]         @default([])
+  status            String           @default("ACTIVE")
+  phase             String           @default("RECALL")
+  dueAt             DateTime         @default(now())
+  priorityScore     Float            @default(50)
+  failureCount      Int              @default(1)
+  successCount      Int              @default(0)
+  lastCorrectAt     DateTime?
+  lastIncorrectAt   DateTime?
+  lastResponseMs    Int?
+  averageResponseMs Int?
+  confidenceLabel   String?
+  difficulty        Int              @default(3)
+  masteryScore      Float?
+  similarTopicScore Float?
+  lastReviewedAt    DateTime?
+  lastMode          String?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+
+  @@unique([userId, courseId, questionId, skill])
+  @@index([userId, status, dueAt])
+  @@index([userId, skill, dueAt])
+  @@index([userId, courseId, unitId])
+}

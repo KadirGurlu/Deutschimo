@@ -4,6 +4,7 @@ import { prisma } from "@/lib/db";
 import { evolveSnapshot, normalizeEvidence } from "@/lib/mastery/score";
 import { inferMasterySkill, inferMasteryTags } from "@/lib/mastery/skill-tags";
 import { MASTERY_SKILLS, type MasteryEvidenceInput, type MasterySkill, type MasterySkillSummary, type MasteryOverviewResponse } from "@/types/mastery";
+import { enqueueMasteryEvidenceForReview } from "@/lib/review/mastery-review-3";
 
 const scopeKey=(courseId:string,unitId?:string|null)=>unitId?`unit:${courseId}:${unitId}`:`course:${courseId}`;
 const eventKey=(userId:string,input:MasteryEvidenceInput)=>input.externalId?createHash("sha256").update(`${userId}|${input.source}|${input.externalId}`).digest("hex"):randomUUID();
@@ -31,6 +32,7 @@ export async function recordMasteryEvidence(userId:string,raw:MasteryEvidenceInp
       await updateSkill(tx,userId,input,skill as MasterySkillArea,input.unitId??null,evidenceScore,evidenceWeight);
       await updateSkill(tx,userId,input,skill as MasterySkillArea,null,evidenceScore,evidenceWeight);
       for(const tag of tags){ await updateTopic(tx,userId,input,tag,input.unitId??null,evidenceScore,evidenceWeight); await updateTopic(tx,userId,input,tag,null,evidenceScore,evidenceWeight); }
+      await enqueueMasteryEvidenceForReview(tx,userId,input,evidenceScore);
     });
   }catch(error){ if(error instanceof Prisma.PrismaClientKnownRequestError&&error.code==="P2002") return; throw error; }
 }

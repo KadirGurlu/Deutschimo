@@ -57,6 +57,23 @@ const modeLabels: Record<NonNullable<ReviewItem["reviewMode"]>, string> = {
   CONCEPT: "Kuralı açıkla",
 };
 
+const v38PhaseOrder = ["RECALL", "SENTENCE", "PRODUCTION", "CONTRAST"] as const;
+const v38PhaseLabels: Record<(typeof v38PhaseOrder)[number], string> = {
+  RECALL: "Hatırlama",
+  SENTENCE: "Cümle",
+  PRODUCTION: "Üretim",
+  CONTRAST: "Karşılaştırma",
+};
+function formatReviewDate(value?: string | null) {
+  if (!value) return "Henüz yok";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "Henüz yok";
+  return new Intl.DateTimeFormat("tr-TR", { day: "2-digit", month: "2-digit" }).format(date);
+}
+function formatResponseMs(value?: number | null) {
+  if (!value) return "Henüz yok";
+  return `${Math.round((value / 1000) * 10) / 10} sn`;
+}
 export function SmartReview() {
   const [payload, setPayload] = useState<ReviewPayload | null>(null);
   const [index, setIndex] = useState(0);
@@ -121,6 +138,7 @@ export function SmartReview() {
           responseMs: Date.now() - startedAt,
           hintUsed,
           confidence,
+          masteryPhase: current.masteryPhase,
         }),
       });
       const result = await response.json() as { result?: ReviewAnswerResult; error?: string };
@@ -149,7 +167,7 @@ export function SmartReview() {
     <section className="panel intelligence-loading">
       <RotateCcw className="spin-soft" />
       <h2>Kişisel tekrar sıran hazırlanıyor</h2>
-      <p>Doğruluk, hız, ipucu, hata geçmişi, zorluk ve güven seçimi birlikte değerlendiriliyor.</p>
+      <p>Mastery, son doğru/yanlış, hız, hata sayısı, zorluk, güven, son tekrar ve benzer konu performansı birlikte değerlendiriliyor.</p>
     </section>
   );
 
@@ -180,7 +198,7 @@ export function SmartReview() {
         <span>{payload.total} öğe tamamlandı</span>
       </div>
       <div className="placement-result-content">
-        <span className="eyebrow">AKILLI TEKRAR 2.0 TAMAMLANDI</span>
+        <span className="eyebrow">AKILLI TEKRAR 3.0 TAMAMLANDI</span>
         <h1>Zayıf noktalarını hedefleyerek aktif hatırlama yaptın.</h1>
         <p>Her öğe, verdiğin sinyallere göre kendi uygun tekrar tarihine yerleştirildi.</p>
         <div className="placement-result-actions">
@@ -200,7 +218,7 @@ export function SmartReview() {
     <section className="review-shell">
       <div className="review-header">
         <div>
-          <span className="eyebrow">V28.3 · KİŞİSEL AKILLI TEKRAR</span>
+          <span className="eyebrow">V38 · AKILLI TEKRAR 3.0</span>
           <h2>{current.unitTitle}</h2>
           <p>{current.skill}</p>
         </div>
@@ -228,6 +246,34 @@ export function SmartReview() {
           <span><CheckCircle2 size={16} />Ustalık %{current.mastery ?? 0}</span>
           {(current.sameErrorStreak ?? 0) > 0 ? <span><RotateCcw size={16} />Aynı hata ×{current.sameErrorStreak}</span> : null}
         </div>
+        {current.masteryPhase ? (
+          <div className="review-v38-engine" aria-label="Akıllı Tekrar 3.0 öğrenme motoru">
+            <div className="review-v38-ladder">
+              {v38PhaseOrder.map((phase, phaseIndex) => (
+                <div key={phase} className={`review-v38-phase ${phase === current.masteryPhase ? "active" : ""}`}>
+                  <span>{phaseIndex + 1}</span>
+                  <strong>{v38PhaseLabels[phase]}</strong>
+                </div>
+              ))}
+            </div>
+            {current.masteryPhaseInstruction ? (
+              <p className="review-v38-instruction">{current.masteryPhaseInstruction}</p>
+            ) : null}
+            {current.masterySignals ? (
+              <div className="review-v38-signals">
+                <span><strong>Son doğru</strong>{formatReviewDate(current.masterySignals.lastCorrectAt)}</span>
+                <span><strong>Son yanlış</strong>{formatReviewDate(current.masterySignals.lastIncorrectAt)}</span>
+                <span><strong>Yanıt süresi</strong>{formatResponseMs(current.masterySignals.responseMs ?? current.masterySignals.averageResponseMs)}</span>
+                <span><strong>Hata</strong>×{current.masterySignals.errorCount}</span>
+                <span><strong>Beceri</strong>{current.skill} · {current.masterySignals.skillMastery === null ? "Veri yok" : `%${current.masterySignals.skillMastery}`}</span>
+                <span><strong>Zorluk</strong>{current.masterySignals.difficulty}/5</span>
+                <span><strong>Son tekrar</strong>{formatReviewDate(current.masterySignals.lastReviewAt)}</span>
+                <span><strong>Güven</strong>{current.masterySignals.confidence === "SURE" ? "Emin" : current.masterySignals.confidence === "UNSURE" ? "Emin değil" : "Henüz yok"}</span>
+                <span><strong>Benzer konu</strong>{current.masterySignals.similarTopicScore === null ? "Veri yok" : `%${current.masterySignals.similarTopicScore}`}</span>
+              </div>
+            ) : null}
+          </div>
+        ) : null}
 
         {current.reason ? <p className="review-reason">{current.reason}</p> : null}
         <h2>{current.prompt}</h2>
@@ -252,7 +298,7 @@ export function SmartReview() {
         ) : current.type === "CONCEPT" ? (
           <div className="concept-review">
             <CircleAlert />
-            <p>İlgili kuralı incele ve öğrendiğini kendi Almanca örneğinle aktif olarak üret.</p>
+            <p>{current.masteryPhaseInstruction ?? "İlgili kuralı incele ve öğrendiğini kendi Almanca örneğinle aktif olarak üret."}</p>
             <Link className="button button-secondary" href={current.href}>Ders Notlarını Aç<ArrowRight size={17} /></Link>
             <label className="field">
               <span>Kendi Almanca örneğin</span>

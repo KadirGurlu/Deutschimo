@@ -13,6 +13,16 @@ import {
 } from "@/lib/review/adaptive-scheduler";
 import { withApiMonitoring } from "@/lib/security/api-monitor";
 import type { ReviewConfidence, ReviewPracticeMode } from "@/types/intelligence";
+import {
+  decorateSmartReviewQueue,
+  getStandaloneMasteryReviewItem,
+  listStandaloneMasteryReviewItems,
+  syncMasteryReviewOutcome,
+} from "@/lib/review/mastery-review-3";
+import {
+  normalizeMasteryReviewPhase,
+  type MasteryReviewPhase,
+} from "@/types/smart-review-v38";
 
 
 /* V37_ROUTE_COMPAT_INLINE
@@ -136,11 +146,19 @@ async function GETHandler(request: Request) {
       hint: item.reason ?? "İlgili ders notundaki örnek yapıyı hatırla.",
     }));
 
+  const standaloneMasteryItems = await listStandaloneMasteryReviewItems(
+    user.id,
+    dueQueue.map((item) => item.sourceId),
+  );
+  const masteryDueQueue = await decorateSmartReviewQueue(
+    user.id,
+    [...dueQueue, ...standaloneMasteryItems],
+  );
   return NextResponse.json({
-    items: dueQueue,
+    items: masteryDueQueue,
     completedIds: [],
     attempts: state.attempts,
-    total: dueQueue.length,
+    total: masteryDueQueue.length,
     completed: 0,
     personalization: sourceSummary(state.queue),
   });
@@ -152,6 +170,7 @@ type SmartReviewRequest = {
   responseMs?: number;
   hintUsed?: boolean;
   confidence?: ReviewConfidence;
+  masteryPhase?: MasteryReviewPhase;
 };
 
 async function POSTHandler(request: Request) {
@@ -163,9 +182,16 @@ async function POSTHandler(request: Request) {
     return NextResponse.json({ error: "Önce ‘Eminim’ veya ‘Emin değilim’ seçimini yap." }, { status: 400 });
   }
   const confidence: ReviewConfidence = body.confidence;
+  const masteryPhase = normalizeMasteryReviewPhase(body.masteryPhase);
 
   const state = await getOrRefreshReviewState(user.id);
-  const item = state.queue.find((entry) => entry.id === body.itemId);
+  let item = state.queue.find((entry) => entry.id === body.itemId);
+  if (!item) {
+    const standaloneItem = await getStandaloneMasteryReviewItem(user.id, body.itemId);
+    item = standaloneItem
+      ? standaloneItem as unknown as typeof state.queue[number]
+      : undefined;
+  }
   if (!item) return NextResponse.json({ error: "Tekrar öğesi artık mevcut değil." }, { status: 404 });
 
   const key = objectiveKey(item);
@@ -176,9 +202,13 @@ async function POSTHandler(request: Request) {
   const itemDifficulty = current?.difficulty ?? difficulty(item);
   const responseMs = Number.isFinite(body.responseMs) ? Math.max(0, Math.round(body.responseMs ?? 0)) : null;
   const conceptAnswer = typeof body.answer === "string" ? body.answer.trim() : "";
-  const correct = item.type === "CONCEPT"
+  const openMasteryPhase = masteryPhase === "PRODUCTION" ||
+    (masteryPhase === "CONTRAST" && item.type !== "MULTIPLE_CHOICE");
+  const correct = openMasteryPhase
     ? conceptAnswer.length >= 12
-    : answersMatch(body.answer, item.correctAnswer, item.acceptedAnswers ?? []);
+    : item.type === "CONCEPT"
+      ? conceptAnswer.length >= 12
+      : answersMatch(body.answer, item.correctAnswer, item.acceptedAnswers ?? []);
   const attempts = { ...state.attempts, [item.id]: (state.attempts[item.id] ?? 0) + 1 };
   const expectedSeconds = expectedResponseSeconds(mode, itemDifficulty);
   const rating = ratingFromSignals({
@@ -305,10 +335,26 @@ async function POSTHandler(request: Request) {
           unitId: item.unitId,
           skill: item.skill,
           attemptNumber: attempts[item.id],
+          masteryPhase,
         },
       },
     });
 
+    await syncMasteryReviewOutcome(tx, {
+      userId: user.id,
+      courseId: item.courseId,
+      unitId: item.unitId ?? null,
+      questionId: item.sourceId,
+      source: "SMART_REVIEW",
+      skillLabel: item.skill,
+      correct,
+      responseMs,
+      confidence,
+      difficulty: itemDifficulty,
+      nextReviewAt: scheduled.nextReviewAt,
+      mode,
+      phase: masteryPhase,
+    });
     if (item.errorHistoryId) {
       if (correct) {
         await tx.learningErrorHistory.updateMany({
@@ -330,7 +376,7 @@ async function POSTHandler(request: Request) {
       explanation: item.type === "CONCEPT" && !correct
         ? "Kuralı kendi Almanca örneğinle yaz. En az birkaç kelimelik anlamlı bir cümle kur."
         : item.explanation,
-      correctAnswer: !correct && attempts[item.id] >= 2 ? item.correctAnswer : undefined,
+      correctAnswer: !openMasteryPhase && !correct && attempts[item.id] >= 2 ? item.correctAnswer : undefined,
       completedCount: completedIds.length,
       totalCount: state.queue.length,
       schedule: {

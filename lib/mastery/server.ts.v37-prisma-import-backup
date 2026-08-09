@@ -1,6 +1,6 @@
 import { createHash, randomUUID } from "node:crypto";
 import { MasterySkillArea, Prisma } from "@prisma/client";
-import { prisma } from "@/lib/db";
+import { prisma } from "@/lib/prisma";
 import { evolveSnapshot, normalizeEvidence } from "@/lib/mastery/score";
 import { inferMasterySkill, inferMasteryTags } from "@/lib/mastery/skill-tags";
 import { MASTERY_SKILLS, type MasteryEvidenceInput, type MasterySkill, type MasterySkillSummary, type MasteryOverviewResponse } from "@/types/mastery";

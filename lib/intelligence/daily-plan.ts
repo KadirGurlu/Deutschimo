@@ -242,7 +242,7 @@ export function buildDailyPlan(args: {
     10,
     Math.min(
       120,
-      Math.round(personalization?.profile.dailyMinutes ?? args.goalMinutes || 30),
+      Math.round(personalization?.profile.dailyMinutes ?? (args.goalMinutes || 30)),
     ),
   );
   const courseId = currentCourseId(currentLevel);

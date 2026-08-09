@@ -27,7 +27,7 @@ test("V46.4 Listening and Speaking laboratories degrade safely", async ({ page }
     // Listening: unsupported speech engine must show a recoverable state, not crash.
     await page.addInitScript(() => {
       try {
-        delete (window as Window & { speechSynthesis?: unknown }).speechSynthesis;
+        Reflect.deleteProperty(window, "speechSynthesis");
       } catch {
         Object.defineProperty(window, "speechSynthesis", {
           configurable: true,

@@ -38,13 +38,13 @@ jobs:
       REQUIRE_EMAIL_VERIFICATION: "false"
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm install --global npm@10.9.2
-      - run: npm ci
+      - run: npm ci --no-audit --no-fund
       - run: npm run validate:v37
       - run: npm run validate:v38
       - run: npx prisma migrate deploy

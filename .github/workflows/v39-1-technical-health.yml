@@ -1,0 +1,108 @@
+name: Deutschimo V39.1 Technical Health
+
+on:
+  push:
+    branches: [v39-1-staging]
+  pull_request:
+    branches: [main, v39-1-staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deutschimo-v39-1-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CI: "true"
+  DATABASE_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v39_1_ci
+  DATABASE_POSTGRES_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v39_1_ci
+  DATABASE_ENVIRONMENT: test
+  AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+  SEED_PREVIEW_TEST_DATA: "false"
+  AUTH_SECRET: v39-1-ci-auth-secret-32-characters-minimum-2026
+  SECURITY_HASH_KEY: v39-1-ci-security-hash-key-32-characters-2026
+  CRON_SECRET: v39-1-ci-cron-secret-32-characters-minimum-2026
+  AUTH_URL: http://127.0.0.1:3000
+  AUTH_TRUST_HOST: "true"
+  NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+  REQUIRE_EMAIL_VERIFICATION: "false"
+  BOOTSTRAP_ADMIN_ON_BUILD: "false"
+
+jobs:
+  technical-health:
+    name: Toolchain, database and production build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: ci_password
+          POSTGRES_DB: deutschimo_v39_1_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U ci_user -d deutschimo_v39_1_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Use pinned Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Pin npm
+        run: npm install --global npm@10.9.2
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Verify toolchain
+        run: npm run verify:toolchain
+
+      - name: Verify lockfile
+        run: npm run verify:lockfile
+
+      - name: Validate CI environment
+        run: npm run validate:env
+
+      - name: Validate V39 compatibility
+        run: npm run validate:v39
+
+      - name: Validate V39.1 technical hardening
+        run: npm run validate:v39.1
+
+      - name: Initialize isolated database baseline
+        run: npm run db:baseline:init
+
+      - name: Verify migration idempotency and drift
+        run: |
+          npm run db:deploy
+          npm run db:deploy
+          npm run db:migrate:status
+          npm run db:drift:check
+
+      - name: Security release checks
+        run: npm run security:release
+
+      - name: Verify database boundaries
+        run: npm run db:data-boundaries
+
+      - name: ESLint
+        run: npm run lint
+
+      - name: TypeScript
+        run: npm run typecheck
+
+      - name: Production build
+        run: npm run build

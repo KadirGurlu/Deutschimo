@@ -44,16 +44,15 @@ jobs:
       SEED_PREVIEW_TEST_DATA: "false"
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
 
       - run: npm install --global npm@10.9.2
-      - run: npm ci
-
+      - run: npm ci --no-audit --no-fund
       - name: Validate V38 compatibility
         run: npm run validate:v38
 

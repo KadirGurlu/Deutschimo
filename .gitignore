@@ -12,3 +12,4 @@ coverage/
 .stability/
 .backups/
 .release/
+.github/workflows/_local-backups/

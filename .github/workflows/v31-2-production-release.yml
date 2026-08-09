@@ -52,16 +52,16 @@ jobs:
       PLAYWRIGHT_SKIP_BUILD: "true"
       PORT: "3102"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ inputs.ref }}
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm install --global npm@10.9.2
-      - run: npm ci
+      - run: npm ci --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
       - run: npm run release:readiness:static
       - run: npm audit --omit=dev --audit-level=high
@@ -97,16 +97,16 @@ jobs:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ inputs.ref }}
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm install --global npm@10.9.2
-      - run: npm ci
+      - run: npm ci --no-audit --no-fund
       - run: sudo apt-get update && sudo apt-get install -y postgresql-client
       - run: npx prisma generate
       - name: Configure release identity

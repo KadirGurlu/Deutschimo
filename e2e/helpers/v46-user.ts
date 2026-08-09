@@ -8,7 +8,19 @@ export function v46Email(prefix: string) {
   return `e2e.v46.${prefix}.${Date.now()}.${Math.random().toString(36).slice(2, 8)}@preview.deutschimo.test`;
 }
 
+function v46ClientIp(email: string) {
+  let hash = 2166136261;
+  for (let i = 0; i < email.length; i += 1) {
+    hash ^= email.charCodeAt(i);
+    hash = Math.imul(hash, 16777619) >>> 0;
+  }
+  const third = (hash >>> 8) & 255;
+  const fourth = (hash & 253) + 1;
+  return `198.18.${third}.${fourth}`;
+}
+
 export async function registerToOnboarding(page: Page, email: string) {
+  await page.setExtraHTTPHeaders({ "x-forwarded-for": v46ClientIp(email) });
   await page.goto("/auth?mode=register");
   await page.getByLabel("Ad", { exact: true }).fill("V46");
   await page.getByLabel("Soyad", { exact: true }).fill("Release");
@@ -83,14 +95,4 @@ export async function logout(page: Page) {
 
 export async function cleanupUser(email: string) {
   await prisma.user.deleteMany({ where: { email } });
-
-  // V46 E2E runs against an isolated CI database with one browser worker.
-  // Clear auth throttling evidence between scenarios/retries so a failed
-  // scenario does not make the next scenario fail for an unrelated 429.
-  await Promise.all([
-    prisma.rateLimitEvent.deleteMany({
-      where: { scope: { in: ["register", "register-email"] } },
-    }),
-    prisma.loginAttempt.deleteMany({}),
-  ]);
 }

@@ -62,6 +62,11 @@ for (const token of [
   if (!workflow.includes(token)) errors.push(`workflow eksik: ${token}`);
 }
 
+const v46Helper = read("e2e/helpers/v46-user.ts");
+if (!v46Helper.includes("x-forwarded-for") || !v46Helper.includes("v46ClientIp")) errors.push("V46 E2E rate-limit izolasyonu eksik.");
+if (v46Helper.includes("rateLimitEvent.deleteMany")) errors.push("V46 E2E cleanup guvenlik rate-limit tablosunu silmemeli.");
+const masteryBridge = read("lib/mastery/bridge.ts");
+if (!masteryBridge.includes("skillLabCorrect") || !masteryBridge.includes("correct:multiCorrect")) errors.push("V46.3 Skill Lab yanlis cevabi Smart Review kuyruguna bagli degil.");
 if (errors.length) {
   for (const error of errors) console.error("HATA:", error);
   console.error(`V46 dogrulamasi basarisiz: ${errors.length} hata.`);

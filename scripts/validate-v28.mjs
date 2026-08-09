@@ -42,7 +42,17 @@ const workflow = await text(".github/workflows/ci.yml");
 for (const marker of ["quality:", "e2e:", "production-build-gate:", "npm run quality:check", "npm run test:e2e", "npm run build"]) {
   if (!workflow.includes(marker)) errors.push(`CI workflow: ${marker} bulunamadı`);
 }
-if (!/needs:\s*\[quality, e2e\]/.test(workflow)) errors.push("CI workflow: production build kalite ve E2E işlerine bağlı değil");
+const productionBuildGate = workflow.match(
+  /(?:^|\n)  production-build-gate:\s*\n([\s\S]*?)(?=\n  [A-Za-z0-9_-]+:\s*\n|\s*$)/
+);
+const productionBuildNeeds = productionBuildGate?.[1]
+  ?.match(/needs:\s*\[([^\]]+)\]/)?.[1]
+  ?.split(",")
+  .map((value) => value.trim())
+  .filter(Boolean) ?? [];
+if (!(productionBuildNeeds.includes("quality") && productionBuildNeeds.includes("e2e"))) {
+  errors.push("CI workflow: production build kalite ve E2E işlerine bağlı değil");
+}
 
 const e2eFiles = [await text("e2e/public-learning-flow.spec.ts"), await text("e2e/security-and-responsive.spec.ts")];
 const testCount = e2eFiles.reduce((count, source) => count + (source.match(/\btest\s*\(/g)?.length ?? 0), 0);

@@ -13,15 +13,61 @@ permissions:
 jobs:
   listening-quality:
     runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschimo_v39_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d deutschimo_v39_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v39_ci
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v39_ci
+      DATABASE_ENVIRONMENT: test
+
+      AUTH_SECRET: 8ef28e38c3f54fc2981bce888fa4e74191e44b6209b79af8db7f564772e3a1f6
+      SECURITY_HASH_KEY: 41f8d916934d40308a2d6b1e338eed1967881701761a4cc6916453b3fdb43202
+      CRON_SECRET: f0bd7ccb49a04dc2a2ae92e16bcc3b5d5e52932135b44c95bb9e1ed58fd8ca7b
+
+      AUTH_TRUST_HOST: "true"
+      NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+      REQUIRE_EMAIL_VERIFICATION: "false"
+      SEED_PREVIEW_TEST_DATA: "false"
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
           cache: npm
+
       - run: npm install --global npm@10.9.2
       - run: npm ci
-      - run: npm run validate:v38
-      - run: npm run validate:v39
-      - run: npm run typecheck
-      - run: npm run build
+
+      - name: Validate V38 compatibility
+        run: npm run validate:v38
+
+      - name: Validate V39 Listening Laboratory
+        run: npm run validate:v39
+
+      - name: Apply CI database migrations
+        run: npx prisma migrate deploy
+
+      - name: Generate Prisma client
+        run: npx prisma generate
+
+      - name: TypeScript check
+        run: npm run typecheck
+
+      - name: Production build
+        run: npm run build

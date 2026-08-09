@@ -6,7 +6,7 @@ import { ArrowRight, BookOpenText, Headphones, Mic2, PenLine, Sparkles, Trophy }
 import type { SkillOverview, SkillType } from "@/types/skills";
 
 const cards: Array<{ skill: SkillType; title: string; description: string; href: string; icon: typeof Headphones }> = [
-  { skill:"LISTENING", title:"Dinleme Laboratuvarı", description:"Metni görmeden dinle, ana fikri ve ayrıntıları çöz, ardından transkriptle çalış.", href:"/listening", icon:Headphones },
+  { skill:"LISTENING", title:"Dinleme Laboratuvarı", description:"Gold Standard dinlemeleri hız kontrolü, ana fikir–detay–çıkarım–tutum soruları, dikte ve shadowing ile çalış.", href:"/listening", icon:Headphones },
   { skill:"SPEAKING", title:"Konuşma Laboratuvarı", description:"Mikrofonla cevap ver, konuşmanı yazıya dönüştür ve görev odaklı geri bildirim al.", href:"/speaking", icon:Mic2 },
   { skill:"READING", title:"Okuma Laboratuvarı", description:"Gerçek metin türlerini oku, çıkarım yap ve bilinmeyen kelimeleri defterine ekle.", href:"/reading", icon:BookOpenText },
   { skill:"WRITING", title:"Yazma Laboratuvarı", description:"Seviyene uygun görev yaz, dört ölçütte değerlendirme ve düzeltme önerileri al.", href:"/writing", icon:PenLine },

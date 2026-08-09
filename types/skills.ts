@@ -4,12 +4,21 @@ export type LabLevel = "A1" | "A2" | "B1" | "B2";
 export type ChoiceOption = { id: string; label: string };
 export type ComprehensionQuestion = {
   id: string;
-  kind: "MAIN_IDEA" | "DETAIL";
+  kind: "MAIN_IDEA" | "DETAIL" | "INFERENCE" | "ATTITUDE";
   prompt: string;
   options: ChoiceOption[];
   correctAnswer: string;
   explanation: string;
+  masteryQuestionId?: string;
+  masteryTags?: string[];
 };
+
+export type ListeningKeyword = {
+  de: string;
+  tr: string;
+};
+
+export type ListeningPlaybackMode = "NORMAL" | "SLOW_75" | "REPEAT";
 
 export type VocabularyItem = {
   word: string;
@@ -31,6 +40,14 @@ export type ListeningTask = {
   translation: string;
   questions: ComprehensionQuestion[];
   vocabulary: VocabularyItem[];
+  unitId?: string;
+  keywords?: ListeningKeyword[];
+  dictationSegments?: string[];
+  shadowingSegments?: string[];
+  normalRate?: number;
+  slowRate?: number;
+  sourceVersion?: "V33" | "V34" | "V35" | "V36";
+  sourceMethod?: string;
 };
 
 export type ReadingTask = {

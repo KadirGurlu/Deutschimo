@@ -1,0 +1,27 @@
+name: Deutschimo V39 Listening Laboratory
+
+on:
+  push:
+    branches: [v39-staging]
+  pull_request:
+    branches: [main, v39-staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  listening-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: npm run validate:v38
+      - run: npm run validate:v39
+      - run: npm run typecheck
+      - run: npm run build

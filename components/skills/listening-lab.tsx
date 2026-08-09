@@ -1,6 +1,7 @@
 "use client";
 
 // V45_ACCESSIBLE_LISTENING_TRANSCRIPT
+// V46_LISTENING_RESILIENCE
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -245,9 +246,21 @@ export function ListeningLab() {
       setSpeaking(false);
       onEnd?.();
     };
-    utterance.onerror = () => setSpeaking(false);
+    utterance.onerror = () => {
+      setSpeaking(false);
+      setSaveState(
+        "Sesli okuma sırasında bir sorun oluştu. Metin alternatifini kullanabilir veya yeniden deneyebilirsin.",
+      );
+    };
 
-    window.speechSynthesis.speak(utterance);
+    try {
+      window.speechSynthesis.speak(utterance);
+    } catch {
+      setSpeaking(false);
+      setSaveState(
+        "Tarayıcı sesli okumayı başlatamadı. Metin alternatifini kullanabilir veya sayfayı yenileyip yeniden deneyebilirsin.",
+      );
+    }
   }
 
   function speakTask(mode: ListeningPlaybackMode) {

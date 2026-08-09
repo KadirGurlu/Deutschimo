@@ -1,6 +1,7 @@
 "use client";
 
 // V45_ACCESSIBLE_SPEAKING_STATUS
+// V46_SPEAKING_RESILIENCE
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -39,7 +40,7 @@ interface RecognitionLike {
   onresult: ((event: RecognitionEventLike) => void) | null;
   onstart: (() => void) | null;
   onend: (() => void) | null;
-  onerror: (() => void) | null;
+  onerror: ((event: { error?: string; message?: string }) => void) | null;
   start(): void;
   stop(): void;
 }
@@ -171,16 +172,42 @@ export function SpeakingLab() {
         );
       }
     };
-    recognition.onerror = () => {
+    recognition.onerror = (event) => {
       setRecording(false);
-      setStatus(
-        "Mikrofon veya ses tanıma sırasında sorun oluştu. Mikrofon iznini ve ortam gürültüsünü kontrol edip yeniden deneyebilirsin.",
-      );
+      const code = String(event?.error ?? "").toLowerCase();
+      if (code === "not-allowed" || code === "service-not-allowed") {
+        setStatus(
+          "Mikrofon izni verilmedi. Tarayıcı ayarlarından izin verebilir veya konuşma metnini aşağıdaki alana elle yazıp değerlendirmeye devam edebilirsin.",
+        );
+      } else if (code === "audio-capture") {
+        setStatus(
+          "Kullanılabilir bir mikrofon bulunamadı. Cihaz bağlantını kontrol edebilir veya konuşma metnini elle yazabilirsin.",
+        );
+      } else if (code === "network") {
+        setStatus(
+          "Ses tanıma servisine bağlanılamadı. İnternet bağlantını kontrol edip yeniden deneyebilir veya metni elle yazabilirsin.",
+        );
+      } else if (code === "no-speech") {
+        setStatus(
+          "Herhangi bir konuşma algılanmadı. Mikrofonu yeniden başlatabilir veya metni elle yazabilirsin.",
+        );
+      } else {
+        setStatus(
+          "Mikrofon veya ses tanıma sırasında sorun oluştu. Mikrofon iznini ve ortam gürültüsünü kontrol edip yeniden deneyebilir ya da metni elle yazabilirsin.",
+        );
+      }
     };
     recognition.onend = () => setRecording(false);
 
     recognitionRef.current = recognition;
-    recognition.start();
+    try {
+      recognition.start();
+    } catch {
+      setRecording(false);
+      setStatus(
+        "Ses tanıma başlatılamadı. Mikrofon iznini kontrol edip yeniden deneyebilir veya konuşma metnini elle yazabilirsin.",
+      );
+    }
   }
 
   function stopRecording() {

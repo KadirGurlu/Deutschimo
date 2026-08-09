@@ -1,0 +1,115 @@
+name: Deutschimo V46 Release Readiness
+
+on:
+  push:
+    branches: [v46-staging]
+  pull_request:
+    branches: [main, v46-staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deutschimo-v46-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CI: "true"
+  DATABASE_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v46_ci
+  DATABASE_POSTGRES_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v46_ci
+  DATABASE_ENVIRONMENT: test
+  AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+  SEED_PREVIEW_TEST_DATA: "false"
+  AUTH_SECRET: v46-ci-auth-secret-32-characters-minimum-2026
+  SECURITY_HASH_KEY: v46-ci-security-hash-key-32-characters-minimum-2026
+  CRON_SECRET: v46-ci-cron-secret-32-characters-minimum-2026
+  AUTH_URL: http://127.0.0.1:4600
+  AUTH_TRUST_HOST: "true"
+  NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+  REQUIRE_EMAIL_VERIFICATION: "false"
+  BOOTSTRAP_ADMIN_ON_BUILD: "false"
+  PLAYWRIGHT_SKIP_BUILD: "true"
+  PORT: "4600"
+
+jobs:
+  release-readiness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: ci_password
+          POSTGRES_DB: deutschimo_v46_ci
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ci_user -d deutschimo_v46_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm install --global npm@10.9.2
+      - run: npm ci --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+
+      - name: V45 regression baseline
+        run: |
+          npm run verify:toolchain
+          npm run verify:lockfile
+          npm run validate:v44
+          npm run validate:v45
+          npm run a11y:v45
+
+      - name: V46 source and release contracts
+        run: |
+          npm run validate:v46
+          npm run audit:v46
+
+      - name: Isolated database
+        run: |
+          npm run db:baseline:init
+          npm run db:deploy
+          npm run db:deploy
+          npm run db:migrate:status
+          npm run db:drift:check
+          npm run db:readiness:v46
+
+      - name: Security and boundaries
+        run: |
+          npm run security:release
+          npm run db:data-boundaries
+
+      - name: Static quality
+        run: |
+          npm run lint
+          npm run typecheck
+
+      - name: Production build
+        run: npm run build
+
+      - name: V45 performance regression gate
+        run: npm run perf:v45
+
+      - name: V46.1-V46.4 end-to-end release scenarios
+        run: npm run test:e2e:v46
+
+      - name: Upload Playwright diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deutschimo-v46-playwright-diagnostics
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 7

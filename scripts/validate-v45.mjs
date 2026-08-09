@@ -25,7 +25,7 @@ const req = (rel) => {
 ].forEach(req);
 
 const pkg = JSON.parse(read("package.json") || "{}");
-if (pkg.version !== "45.0.0") errors.push(`package version 45.0.0 degil: ${pkg.version}`);
+if (!["45.0.0", "46.0.0"].includes(pkg.version)) errors.push(`package version 45.0.0 veya 46.0.0 degil: ${pkg.version}`);
 
 for (const script of ["validate:v45", "a11y:v45", "perf:v45", "release:v45"]) {
   if (!pkg.scripts?.[script]) errors.push(`package script eksik: ${script}`);

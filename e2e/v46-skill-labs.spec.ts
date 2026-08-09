@@ -40,6 +40,10 @@ test("V46.4 Listening and Speaking laboratories degrade safely", async ({ page }
     expect(listeningResponse?.status() ?? 500).toBeLessThan(400);
     await expect(page.getByRole("heading", { name: /Dinle/i }).first()).toBeVisible();
 
+    await page.getByRole("button", { name: /Dinlemeye/i }).click();
+
+    await expect(page.getByRole("button", { name: /Normal [^/]+/i }).first()).toBeVisible();
+
     await page.getByRole("button", { name: /Normal hız/i }).first().click();
     await expect(page.locator("body")).toContainText(/desteklemiyor|sesli okuma|yeniden deney/i);
 

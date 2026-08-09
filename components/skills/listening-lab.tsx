@@ -196,6 +196,15 @@ export function ListeningLab() {
     startedAt.current = Date.now();
   }
 
+  function hasUsableSpeechSynthesis() {
+    const engine = window.speechSynthesis;
+    return Boolean(
+      engine &&
+        typeof engine.cancel === "function" &&
+        typeof engine.speak === "function" &&
+        typeof engine.getVoices === "function",
+    );
+  }
   function voiceForGerman() {
     return window.speechSynthesis
       ?.getVoices()
@@ -208,7 +217,7 @@ export function ListeningLab() {
     explicitRate?: number,
     onEnd?: () => void,
   ) {
-    if (!("speechSynthesis" in window)) {
+    if (!hasUsableSpeechSynthesis()) {
       setSaveState("Tarayıcın sesli okuma özelliğini desteklemiyor.");
       return;
     }

@@ -1,3 +1,5 @@
+import { AccessibilityRuntime } from "@/components/accessibility/accessibility-runtime";
+import { WebVitalsDevReporter } from "@/components/performance/web-vitals-dev";
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -13,6 +15,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="tr">
       <body>
+        <AccessibilityRuntime />
+        <WebVitalsDevReporter />
         <Providers>
           <SiteHeader />
           <main>{children}</main>

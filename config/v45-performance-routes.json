@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Dashboard",
+    "routeHint": "/dashboard",
+    "priority": "critical"
+  },
+  {
+    "name": "Kurslar",
+    "routeHint": "/courses",
+    "priority": "critical"
+  },
+  {
+    "name": "Ders",
+    "routeHint": "course/unit lesson route",
+    "priority": "critical"
+  },
+  {
+    "name": "Test",
+    "routeHint": "level / assessment route",
+    "priority": "high"
+  },
+  {
+    "name": "Günlük Plan",
+    "routeHint": "daily plan surface",
+    "priority": "critical"
+  },
+  {
+    "name": "Admin",
+    "routeHint": "/admin",
+    "priority": "high"
+  }
+]

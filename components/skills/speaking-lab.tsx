@@ -1,5 +1,7 @@
 "use client";
 
+// V45_ACCESSIBLE_SPEAKING_STATUS
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -312,10 +314,10 @@ export function SpeakingLab() {
         </article>
 
         <article className="panel recorder-panel">
-          <div className={`recording-orb ${recording ? "active" : ""}`}>
+          <div className={`recording-orb ${recording ? "active" : ""}`} aria-hidden="true">
             {recording ? <Mic2 size={42} /> : <MicOff size={42} />}
           </div>
-          <h2>{recording ? "Dinliyorum..." : "Konuşmaya hazır mısın?"}</h2>
+          <h2 aria-live="polite">{recording ? "Dinliyorum..." : "Konuşmaya hazır mısın?"}</h2>
           <p>
             {recording
               ? "Almanca konuş. Bitirdiğinde kaydı durdur."
@@ -327,6 +329,9 @@ export function SpeakingLab() {
           </strong>
           <button
             className={`button ${recording ? "button-danger" : "button-primary"}`}
+            type="button"
+            aria-pressed={recording}
+            aria-label={recording ? "Mikrofon kaydını durdur" : "Mikrofonla Almanca konuşmayı başlat"}
             onClick={recording ? stopRecording : startRecording}
           >
             {recording
@@ -352,6 +357,7 @@ export function SpeakingLab() {
 
         <textarea
           className="editor speaking-editor"
+          aria-label="Konuşma metni"
           value={`${transcript}${interim ? ` ${interim}` : ""}`}
           onChange={(event) => {
             setTranscript(event.target.value);
@@ -376,7 +382,7 @@ export function SpeakingLab() {
             <Sparkles />Konuşmayı Değerlendir
           </button>
         </div>
-        {status ? <p className="lab-note">{status}</p> : null}
+        {status ? <p className="lab-note" role="status" aria-live="polite">{status}</p> : null}
       </section>
 
       {evaluation ? (

@@ -1,0 +1,75 @@
+name: Deutschimo V45 Accessibility UX Performance
+
+on:
+  push:
+    branches: [v45-staging]
+  pull_request:
+    branches: [main, v45-staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deutschimo-v45-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CI: "true"
+  DATABASE_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v45_ci
+  DATABASE_POSTGRES_URL: postgresql://ci_user:ci_password@127.0.0.1:5432/deutschimo_v45_ci
+  DATABASE_ENVIRONMENT: test
+  AUTO_INIT_NON_PRODUCTION_DATABASE: "true"
+  SEED_PREVIEW_TEST_DATA: "false"
+  AUTH_SECRET: v45-ci-auth-secret-32-characters-minimum-2026
+  SECURITY_HASH_KEY: v45-ci-security-hash-key-32-characters-minimum-2026
+  CRON_SECRET: v45-ci-cron-secret-32-characters-minimum-2026
+  AUTH_URL: http://127.0.0.1:3000
+  AUTH_TRUST_HOST: "true"
+  NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+  REQUIRE_EMAIL_VERIFICATION: "false"
+  BOOTSTRAP_ADMIN_ON_BUILD: "false"
+
+jobs:
+  accessibility-ux-performance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: ci_password
+          POSTGRES_DB: deutschimo_v45_ci
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ci_user -d deutschimo_v45_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci --no-audit --no-fund
+      - run: npm run verify:toolchain
+      - run: npm run verify:lockfile
+      - run: npm run validate:v44
+      - run: npm run validate:v45
+      - run: npm run a11y:v45
+      - run: npm run db:baseline:init
+      - run: npm run db:deploy
+      - run: npm run db:deploy
+      - run: npm run db:migrate:status
+      - run: npm run db:drift:check
+      - run: npm run security:release
+      - run: npm run db:data-boundaries
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm run perf:v45

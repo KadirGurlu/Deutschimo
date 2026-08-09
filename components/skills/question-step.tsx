@@ -1,5 +1,7 @@
 "use client";
 
+// V45_ACCESSIBILITY_QUESTION_SEMANTICS
+
 import { CheckCircle2, XCircle } from "lucide-react";
 import type { ComprehensionQuestion } from "@/types/skills";
 
@@ -26,8 +28,8 @@ export function QuestionStep({
   return (
     <div className="lab-question">
       <span className="eyebrow">{kindLabels[question.kind]}</span>
-      <h2>{question.prompt}</h2>
-      <div className="lab-options">
+      <h2 id={`question-${question.id}`}>{question.prompt}</h2>
+      <div className="lab-options" role="radiogroup" aria-labelledby={`question-${question.id}`}>
         {question.options.map((option, index) => {
           const state = checked
             ? option.id === question.correctAnswer
@@ -43,6 +45,9 @@ export function QuestionStep({
             <button
               key={option.id}
               className={state}
+              type="button"
+              role="radio"
+              aria-checked={option.id === selected}
               disabled={checked}
               onClick={() => onSelect(option.id)}
             >
@@ -54,7 +59,7 @@ export function QuestionStep({
       </div>
 
       {checked ? (
-        <div className={`lab-feedback ${correct ? "correct" : "wrong"}`}>
+        <div className={`lab-feedback ${correct ? "correct" : "wrong"}`} role="status" aria-live="polite">
           {correct ? <CheckCircle2 /> : <XCircle />}
           <div>
             <strong>{correct ? "Doğru cevap" : "Cevabını tekrar incele"}</strong>

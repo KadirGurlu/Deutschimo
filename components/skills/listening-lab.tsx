@@ -1,5 +1,7 @@
 "use client";
 
+// V45_ACCESSIBLE_LISTENING_TRANSCRIPT
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -139,6 +141,7 @@ export function ListeningLab() {
   });
   const [savedWords, setSavedWords] = useState<string[]>([]);
   const [saveState, setSaveState] = useState("");
+  const [accessibleTranscriptOpened, setAccessibleTranscriptOpened] = useState(false);
   const [dictationIndex, setDictationIndex] = useState(0);
   const [dictationResults, setDictationResults] = useState<Record<number, DictationResult>>({});
   const [shadowIndex, setShadowIndex] = useState(0);
@@ -183,6 +186,7 @@ export function ListeningLab() {
     setPlaybackCounts({ NORMAL: 0, SLOW_75: 0, REPEAT: 0 });
     setSavedWords([]);
     setSaveState("");
+    setAccessibleTranscriptOpened(false);
     setDictationIndex(0);
     setDictationResults({});
     setShadowIndex(0);
@@ -400,12 +404,14 @@ export function ListeningLab() {
           answers,
           playCount,
           playbackCounts,
+          accessibleTranscriptOpened,
           dictationResults,
           shadowCompleted,
         },
         feedback: {
           sourceVersion: task.sourceVersion,
           unitId: task.unitId,
+          accessibleTranscriptOpened,
           listeningScore: scores.overall,
           comprehensionScore: scores.comprehension,
           dictationScore: scores.dictation,
@@ -535,6 +541,24 @@ export function ListeningLab() {
               : "B1–B2 normal hızı doğal konuşma temposuna yakındır; %75 seçeneğini yalnız gerektiğinde kullan."}
           </p>
 
+          <details
+            className="v45-accessible-transcript"
+            onToggle={(event) => {
+              if (event.currentTarget.open) setAccessibleTranscriptOpened(true);
+            }}
+          >
+            <summary>Erişilebilir transkript / metin alternatifi</summary>
+            <p className="lab-note">
+              İşitsel içeriğe metin alternatifi gerekiyorsa transkripti açabilirsin.
+              Sistem bu kullanım sinyalini çalışma kanıtına ekler.
+            </p>
+            <p className="lab-long-text" lang="de">{task.transcript}</p>
+            <details>
+              <summary>Türkçe çeviriyi göster</summary>
+              <p className="lab-long-text" lang="tr">{task.translation}</p>
+            </details>
+          </details>
+
           <div className="lab-actions">
             <button
               className="button button-primary"
@@ -544,7 +568,7 @@ export function ListeningLab() {
               Anlama Sorularına Geç <ArrowRight />
             </button>
           </div>
-          {saveState ? <p className="lab-note">{saveState}</p> : null}
+          {saveState ? <p className="lab-note" role="status" aria-live="polite">{saveState}</p> : null}
         </section>
       ) : null}
 
@@ -751,7 +775,7 @@ export function ListeningLab() {
           <article className="panel">
             <span className="eyebrow">ALMANCA TRANSKRİPT</span>
             <h2>{task.title}</h2>
-            <p className="lab-long-text">{task.transcript}</p>
+            <p className="lab-long-text" lang="de">{task.transcript}</p>
             <div className="v39-speed-controls">
               <button className="button button-secondary" onClick={() => speakTask("NORMAL")}>
                 <Volume2 size={17} /> Normal hız
@@ -767,7 +791,7 @@ export function ListeningLab() {
 
           <article className="panel translation-panel">
             <span className="eyebrow">TÜRKÇE ÇEVİRİ</span>
-            <p className="lab-long-text">{task.translation}</p>
+            <p className="lab-long-text" lang="tr">{task.translation}</p>
           </article>
 
           <section className="panel">
@@ -849,7 +873,7 @@ export function ListeningLab() {
               dikte performansın ile shadowing çalışma tamamlama oranını birlikte
               gösterir.
             </p>
-            <p className="lab-note">{saveState}</p>
+            <p className="lab-note" role="status" aria-live="polite">{saveState}</p>
 
             <div className="lab-actions">
               <button className="button button-primary" onClick={() => reset(task)}>

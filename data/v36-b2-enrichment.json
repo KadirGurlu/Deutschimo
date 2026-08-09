@@ -72,7 +72,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Kökenin yanı sıra deneyim ve ortak değerleri.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u01-v36-r-1"
+        ]
       },
       {
         "id": "b2-u01-v36-r-2",
@@ -84,7 +89,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Sabit kategorilere ve basit genellemelere.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u01-v36-r-2"
+        ]
       },
       {
         "id": "b2-u01-v36-r-3",
@@ -96,7 +106,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Duruma göre farklı aidiyetleri öne çıkarabilir.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u01-v36-r-3"
+        ]
       },
       {
         "id": "b2-u01-v36-r-4",
@@ -108,7 +123,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tüm nüfusu temsil ettiğini.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u01-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -122,7 +142,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Daha ihtiyatlı.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u01-v36-l-1"
+        ]
       },
       {
         "id": "b2-u01-v36-l-2",
@@ -134,7 +159,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "İfadenin kime ait olduğunu.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u01-v36-l-2"
+        ]
       },
       {
         "id": "b2-u01-v36-l-3",
@@ -146,7 +176,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Hassas konularda.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u01-v36-l-3"
+        ]
       },
       {
         "id": "b2-u01-v36-l-4",
@@ -158,7 +193,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Kişisel deneyimin genel kanıt sanılması.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u01-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u01-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Kimlik, Değerler ve Farklı Bakış Açıları”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -239,7 +279,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Bir yıl.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u02-v36-r-1"
+        ]
       },
       {
         "id": "b2-u02-v36-r-2",
@@ -251,7 +296,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Danışmanlık ve karmaşık grup görevleri.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u02-v36-r-2"
+        ]
       },
       {
         "id": "b2-u02-v36-r-3",
@@ -263,7 +313,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Daha bağımsız öğrenenler.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u02-v36-r-3"
+        ]
       },
       {
         "id": "b2-u02-v36-r-4",
@@ -275,7 +330,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Farklı kurs seçenekleri sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u02-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -289,7 +349,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Teknik işleyiş ve pedagojik kullanım.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u02-v36-l-1"
+        ]
       },
       {
         "id": "b2-u02-v36-l-2",
@@ -301,7 +366,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Uygun olmayan görevler içerebilir.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u02-v36-l-2"
+        ]
       },
       {
         "id": "b2-u02-v36-l-3",
@@ -313,7 +383,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Karmaşık kullanımla.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u02-v36-l-3"
+        ]
       },
       {
         "id": "b2-u02-v36-l-4",
@@ -325,7 +400,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "İki düzeyi ayrı incelemek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u02-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u02-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Eğitim, Öğrenme ve Yaşam Boyu Gelişim”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -406,7 +486,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Ek idari yük korkusu nedeniyle.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u03-v36-r-1"
+        ]
       },
       {
         "id": "b2-u03-v36-r-2",
@@ -418,7 +503,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "İlgili departmanlarla görüşmeler yaptı.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u03-v36-r-2"
+        ]
       },
       {
         "id": "b2-u03-v36-r-3",
@@ -430,7 +520,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Dört hafta sonra.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u03-v36-r-3"
+        ]
       },
       {
         "id": "b2-u03-v36-r-4",
@@ -442,7 +537,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Üç aylık test.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u03-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -456,7 +556,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Kararlar gerekçesiz duyurulduğunda.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u03-v36-l-1"
+        ]
       },
       {
         "id": "b2-u03-v36-l-2",
@@ -468,7 +573,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Erken iletişime geçmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u03-v36-l-2"
+        ]
       },
       {
         "id": "b2-u03-v36-l-3",
@@ -480,7 +590,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Dikkate alınmalı.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u03-v36-l-3"
+        ]
       },
       {
         "id": "b2-u03-v36-l-4",
@@ -492,7 +607,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Hangi noktaların dikkate alındığı.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u03-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u03-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “İş Dünyası, Sorumluluk ve Kurumsal İletişim”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -573,7 +693,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Yeni ücretlerin uygulandığını.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u04-v36-r-1"
+        ]
       },
       {
         "id": "b2-u04-v36-r-2",
@@ -585,7 +710,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Finansman modellerini inceliyordu.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u04-v36-r-2"
+        ]
       },
       {
         "id": "b2-u04-v36-r-3",
@@ -597,7 +727,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Kamu dinlemesinden sonra.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u04-v36-r-3"
+        ]
       },
       {
         "id": "b2-u04-v36-r-4",
@@ -609,7 +744,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Einführung.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u04-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -623,7 +763,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Doğru-yanlış kontrolü değildir.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u04-v36-l-1"
+        ]
       },
       {
         "id": "b2-u04-v36-l-2",
@@ -635,7 +780,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u04-v36-l-2"
+        ]
       },
       {
         "id": "b2-u04-v36-l-3",
@@ -647,7 +797,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Görüş olduğu anlaşılmalı.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u04-v36-l-3"
+        ]
       },
       {
         "id": "b2-u04-v36-l-4",
@@ -659,7 +814,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "İddiayı gerçekten destekleyip desteklemediği.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u04-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u04-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Medya, Haber Dili ve Kaynak Güvenilirliği”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -740,7 +900,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Esnek saatler ve uyku kalitesi ilişkisini.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u05-v36-r-1"
+        ]
       },
       {
         "id": "b2-u05-v36-r-2",
@@ -752,7 +917,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "420.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u05-v36-r-2"
+        ]
       },
       {
         "id": "b2-u05-v36-r-3",
@@ -764,7 +934,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Rastgele grup ataması yok.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u05-v36-r-3"
+        ]
       },
       {
         "id": "b2-u05-v36-r-4",
@@ -776,7 +951,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Esnekliğin tek neden olduğunu.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u05-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -790,7 +970,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Pratikte küçük olabilir.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u05-v36-l-1"
+        ]
       },
       {
         "id": "b2-u05-v36-l-2",
@@ -802,7 +987,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Verinin nasıl toplandığı.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u05-v36-l-2"
+        ]
       },
       {
         "id": "b2-u05-v36-l-3",
@@ -814,7 +1004,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Sonucun tekrarlanması.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u05-v36-l-3"
+        ]
       },
       {
         "id": "b2-u05-v36-l-4",
@@ -826,7 +1021,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Hayır.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u05-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u05-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Bilim, Araştırma ve Kanıta Dayalı Düşünme”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -907,7 +1107,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Üç yıllık enerji programı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u06-v36-r-1"
+        ]
       },
       {
         "id": "b2-u06-v36-r-2",
@@ -919,7 +1124,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "İlk yıl ölçüm yapıldı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u06-v36-r-2"
+        ]
       },
       {
         "id": "b2-u06-v36-r-3",
@@ -931,7 +1141,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Ön raporda yüzde 18 azalma",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u06-v36-r-3"
+        ]
       },
       {
         "id": "b2-u06-v36-r-4",
@@ -943,7 +1158,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Hava koşulları sonucu etkilemiş olabilir",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u06-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -957,7 +1177,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u06-v36-l-1"
+        ]
       },
       {
         "id": "b2-u06-v36-l-2",
@@ -969,7 +1194,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u06-v36-l-2"
+        ]
       },
       {
         "id": "b2-u06-v36-l-3",
@@ -981,7 +1211,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u06-v36-l-3"
+        ]
       },
       {
         "id": "b2-u06-v36-l-4",
@@ -993,7 +1228,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u06-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u06-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Çevre, İklim ve Sürdürülebilir Dönüşüm”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -1074,7 +1314,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "600 kişi katıldı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u07-v36-r-1"
+        ]
       },
       {
         "id": "b2-u07-v36-r-2",
@@ -1086,7 +1331,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Aylık fiyat ilk tercihi etkiledi",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u07-v36-r-2"
+        ]
       },
       {
         "id": "b2-u07-v36-r-3",
@@ -1098,7 +1348,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Toplam maliyet gösterilince tercihler değişti",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u07-v36-r-3"
+        ]
       },
       {
         "id": "b2-u07-v36-r-4",
@@ -1110,7 +1365,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Başka etkenler de var",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u07-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1124,7 +1384,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u07-v36-l-1"
+        ]
       },
       {
         "id": "b2-u07-v36-l-2",
@@ -1136,7 +1401,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u07-v36-l-2"
+        ]
       },
       {
         "id": "b2-u07-v36-l-3",
@@ -1148,7 +1418,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u07-v36-l-3"
+        ]
       },
       {
         "id": "b2-u07-v36-l-4",
@@ -1160,7 +1435,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u07-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u07-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Ekonomi, Tüketim ve Karar Verme”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -1241,7 +1521,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Yaş grupları farklı ihtiyaç bildiriyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u08-v36-r-1"
+        ]
       },
       {
         "id": "b2-u08-v36-r-2",
@@ -1253,7 +1538,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Oyun alanı talebi var",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u08-v36-r-2"
+        ]
       },
       {
         "id": "b2-u08-v36-r-3",
@@ -1265,7 +1555,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Sessiz alan talebi var",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u08-v36-r-3"
+        ]
       },
       {
         "id": "b2-u08-v36-r-4",
@@ -1277,7 +1572,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Belediye ihtiyaçları ayrı belgeleyecek",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u08-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1291,7 +1591,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u08-v36-l-1"
+        ]
       },
       {
         "id": "b2-u08-v36-l-2",
@@ -1303,7 +1608,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u08-v36-l-2"
+        ]
       },
       {
         "id": "b2-u08-v36-l-3",
@@ -1315,7 +1625,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u08-v36-l-3"
+        ]
       },
       {
         "id": "b2-u08-v36-l-4",
@@ -1327,7 +1642,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u08-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u08-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Toplum, Demografi ve Birlikte Yaşam”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -1408,7 +1728,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Bir şerit dönüştürüldü",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u09-v36-r-1"
+        ]
       },
       {
         "id": "b2-u09-v36-r-2",
@@ -1420,7 +1745,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Otobüs süresi azaldı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u09-v36-r-2"
+        ]
       },
       {
         "id": "b2-u09-v36-r-3",
@@ -1432,7 +1762,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Bazı yan sokaklarda yoğunluk arttı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u09-v36-r-3"
+        ]
       },
       {
         "id": "b2-u09-v36-r-4",
@@ -1444,7 +1779,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Birden fazla gösterge izlenecek",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u09-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1458,7 +1798,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u09-v36-l-1"
+        ]
       },
       {
         "id": "b2-u09-v36-l-2",
@@ -1470,7 +1815,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u09-v36-l-2"
+        ]
       },
       {
         "id": "b2-u09-v36-l-3",
@@ -1482,7 +1832,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u09-v36-l-3"
+        ]
       },
       {
         "id": "b2-u09-v36-l-4",
@@ -1494,7 +1849,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u09-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u09-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Ulaşım, Kentleşme ve Kamusal Alan”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -1575,7 +1935,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Amaç kesintisiz oturmayı azaltmak",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u10-v36-r-1"
+        ]
       },
       {
         "id": "b2-u10-v36-r-2",
@@ -1587,7 +1952,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Bazı toplantılar ayakta",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u10-v36-r-2"
+        ]
       },
       {
         "id": "b2-u10-v36-r-3",
@@ -1599,7 +1969,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Program zorunlu değil",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u10-v36-r-3"
+        ]
       },
       {
         "id": "b2-u10-v36-r-4",
@@ -1611,7 +1986,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Sürdürülebilirlik de ölçülüyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u10-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1625,7 +2005,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u10-v36-l-1"
+        ]
       },
       {
         "id": "b2-u10-v36-l-2",
@@ -1637,7 +2022,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u10-v36-l-2"
+        ]
       },
       {
         "id": "b2-u10-v36-l-3",
@@ -1649,7 +2039,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u10-v36-l-3"
+        ]
       },
       {
         "id": "b2-u10-v36-l-4",
@@ -1661,7 +2056,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u10-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u10-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Sağlık, Yaşam Kalitesi ve Önleyici Yaklaşımlar”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -1742,7 +2142,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Klasik oyun günümüze uyarlandı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u11-v36-r-1"
+        ]
       },
       {
         "id": "b2-u11-v36-r-2",
@@ -1754,7 +2159,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Eleştirmenler ayrışıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u11-v36-r-2"
+        ]
       },
       {
         "id": "b2-u11-v36-r-3",
@@ -1766,7 +2176,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Seyircilerde de farklı görüşler var",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u11-v36-r-3"
+        ]
       },
       {
         "id": "b2-u11-v36-r-4",
@@ -1778,7 +2193,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tiyatro tartışmayı olumlu görüyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u11-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1792,7 +2212,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u11-v36-l-1"
+        ]
       },
       {
         "id": "b2-u11-v36-l-2",
@@ -1804,7 +2229,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u11-v36-l-2"
+        ]
       },
       {
         "id": "b2-u11-v36-l-3",
@@ -1816,7 +2246,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u11-v36-l-3"
+        ]
       },
       {
         "id": "b2-u11-v36-l-4",
@@ -1828,7 +2263,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u11-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u11-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Kültür, Sanat ve Eleştirel Değerlendirme”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -1909,7 +2349,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Başvuru sistemi yenilendi",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u12-v36-r-1"
+        ]
       },
       {
         "id": "b2-u12-v36-r-2",
@@ -1921,7 +2366,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Belge gerekçesi gösteriliyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u12-v36-r-2"
+        ]
       },
       {
         "id": "b2-u12-v36-r-3",
@@ -1933,7 +2383,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Dış veri koruma denetimi yapıldı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u12-v36-r-3"
+        ]
       },
       {
         "id": "b2-u12-v36-r-4",
@@ -1945,7 +2400,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Yüz yüze alternatif talep ediliyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u12-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1959,7 +2419,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u12-v36-l-1"
+        ]
       },
       {
         "id": "b2-u12-v36-l-2",
@@ -1971,7 +2436,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u12-v36-l-2"
+        ]
       },
       {
         "id": "b2-u12-v36-l-3",
@@ -1983,7 +2453,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u12-v36-l-3"
+        ]
       },
       {
         "id": "b2-u12-v36-l-4",
@@ -1995,7 +2470,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u12-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u12-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Hukuk, Kurumlar ve Kamusal Sorumluluk”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -2076,7 +2556,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Sistem müşteri taleplerini önceliklendirecek",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u13-v36-r-1"
+        ]
       },
       {
         "id": "b2-u13-v36-r-2",
@@ -2088,7 +2573,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Son karar insanda",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u13-v36-r-2"
+        ]
       },
       {
         "id": "b2-u13-v36-r-3",
@@ -2100,7 +2590,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçe verisi kaydedilecek",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u13-v36-r-3"
+        ]
       },
       {
         "id": "b2-u13-v36-r-4",
@@ -2112,7 +2607,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek ölçüt olmaması isteniyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u13-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2126,7 +2626,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u13-v36-l-1"
+        ]
       },
       {
         "id": "b2-u13-v36-l-2",
@@ -2138,7 +2643,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u13-v36-l-2"
+        ]
       },
       {
         "id": "b2-u13-v36-l-3",
@@ -2150,7 +2660,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u13-v36-l-3"
+        ]
       },
       {
         "id": "b2-u13-v36-l-4",
@@ -2162,7 +2677,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u13-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u13-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Teknoloji, Yapay Zekâ ve Dijital Etik”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -2243,7 +2763,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "İki araştırma karşılaştırılıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u14-v36-r-1"
+        ]
       },
       {
         "id": "b2-u14-v36-r-2",
@@ -2255,7 +2780,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Birinci çalışma geniş anket örneklemli",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u14-v36-r-2"
+        ]
       },
       {
         "id": "b2-u14-v36-r-3",
@@ -2267,7 +2797,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "İkinci çalışma küçük ama derin görüşmeli",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u14-v36-r-3"
+        ]
       },
       {
         "id": "b2-u14-v36-r-4",
@@ -2279,7 +2814,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Amaç yöntemi soruya göre değerlendirmek",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u14-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2293,7 +2833,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u14-v36-l-1"
+        ]
       },
       {
         "id": "b2-u14-v36-l-2",
@@ -2305,7 +2850,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u14-v36-l-2"
+        ]
       },
       {
         "id": "b2-u14-v36-l-3",
@@ -2317,7 +2867,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u14-v36-l-3"
+        ]
       },
       {
         "id": "b2-u14-v36-l-4",
@@ -2329,7 +2884,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u14-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u14-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Akademik İletişim, Sunum ve Kaynak Aktarımı”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -2410,7 +2970,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Ekip e-posta yanlış anlamalarını inceledi",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u15-v36-r-1"
+        ]
       },
       {
         "id": "b2-u15-v36-r-2",
@@ -2422,7 +2987,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Sorun yalnız gramer değil",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u15-v36-r-2"
+        ]
       },
       {
         "id": "b2-u15-v36-r-3",
@@ -2434,7 +3004,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Kısa mesaj farklı algılanıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u15-v36-r-3"
+        ]
       },
       {
         "id": "b2-u15-v36-r-4",
@@ -2446,7 +3021,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek kültürel genellemeden kaçınılıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u15-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2460,7 +3040,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u15-v36-l-1"
+        ]
       },
       {
         "id": "b2-u15-v36-l-2",
@@ -2472,7 +3057,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u15-v36-l-2"
+        ]
       },
       {
         "id": "b2-u15-v36-l-3",
@@ -2484,7 +3074,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u15-v36-l-3"
+        ]
       },
       {
         "id": "b2-u15-v36-l-4",
@@ -2496,7 +3091,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u15-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u15-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Kültürlerarası İletişim ve Uygun Üslup”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -2577,7 +3177,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Konu gece açık kütüphane",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u16-v36-r-1"
+        ]
       },
       {
         "id": "b2-u16-v36-r-2",
@@ -2589,7 +3194,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Destekleyenler sınav ihtiyacını vurguluyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u16-v36-r-2"
+        ]
       },
       {
         "id": "b2-u16-v36-r-3",
@@ -2601,7 +3211,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Karşı çıkanlar maliyet ve güvenliği vurguluyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u16-v36-r-3"
+        ]
       },
       {
         "id": "b2-u16-v36-r-4",
@@ -2613,7 +3228,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Ara çözüm öneriliyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u16-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2627,7 +3247,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u16-v36-l-1"
+        ]
       },
       {
         "id": "b2-u16-v36-l-2",
@@ -2639,7 +3264,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u16-v36-l-2"
+        ]
       },
       {
         "id": "b2-u16-v36-l-3",
@@ -2651,7 +3281,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u16-v36-l-3"
+        ]
       },
       {
         "id": "b2-u16-v36-l-4",
@@ -2663,7 +3298,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u16-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u16-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Argümantasyon, Tartışma ve Uzlaşma”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -2744,7 +3384,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Bisiklet payı 12'den 21'e çıktı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u17-v36-r-1"
+        ]
       },
       {
         "id": "b2-u17-v36-r-2",
@@ -2756,7 +3401,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Toplu taşıma hafif arttı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u17-v36-r-2"
+        ]
       },
       {
         "id": "b2-u17-v36-r-3",
@@ -2768,7 +3418,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Otomobil payı azaldı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u17-v36-r-3"
+        ]
       },
       {
         "id": "b2-u17-v36-r-4",
@@ -2780,7 +3435,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Toplam yolculuk sayısı da arttı",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u17-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2794,7 +3454,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u17-v36-l-1"
+        ]
       },
       {
         "id": "b2-u17-v36-l-2",
@@ -2806,7 +3471,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u17-v36-l-2"
+        ]
       },
       {
         "id": "b2-u17-v36-l-3",
@@ -2818,7 +3488,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u17-v36-l-3"
+        ]
       },
       {
         "id": "b2-u17-v36-l-4",
@@ -2830,7 +3505,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u17-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u17-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Veri, Grafik ve Eğilimleri Yorumlama”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -2911,7 +3591,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "İki departman anlaşamıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u18-v36-r-1"
+        ]
       },
       {
         "id": "b2-u18-v36-r-2",
@@ -2923,7 +3608,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Satış hızlı teslim istiyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u18-v36-r-2"
+        ]
       },
       {
         "id": "b2-u18-v36-r-3",
@@ -2935,7 +3625,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Teknik ekip test süresi istiyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u18-v36-r-3"
+        ]
       },
       {
         "id": "b2-u18-v36-r-4",
@@ -2947,7 +3642,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Aşamalı teslim uzlaşması var",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u18-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2961,7 +3661,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u18-v36-l-1"
+        ]
       },
       {
         "id": "b2-u18-v36-l-2",
@@ -2973,7 +3678,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u18-v36-l-2"
+        ]
       },
       {
         "id": "b2-u18-v36-l-3",
@@ -2985,7 +3695,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u18-v36-l-3"
+        ]
       },
       {
         "id": "b2-u18-v36-l-4",
@@ -2997,7 +3712,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u18-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u18-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Müzakere, Çatışma Çözümü ve Profesyonel İş Birliği”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -3078,7 +3798,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Karmaşık yönerge basitleştiriliyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u19-v36-r-1"
+        ]
       },
       {
         "id": "b2-u19-v36-r-2",
@@ -3090,7 +3815,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Önemli koşullar korunuyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u19-v36-r-2"
+        ]
       },
       {
         "id": "b2-u19-v36-r-3",
@@ -3102,7 +3832,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Terimler açıklanıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u19-v36-r-3"
+        ]
       },
       {
         "id": "b2-u19-v36-r-4",
@@ -3114,7 +3849,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Resmî kaynağa bağlantı veriliyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u19-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -3128,7 +3868,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u19-v36-l-1"
+        ]
       },
       {
         "id": "b2-u19-v36-l-2",
@@ -3140,7 +3885,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u19-v36-l-2"
+        ]
       },
       {
         "id": "b2-u19-v36-l-3",
@@ -3152,7 +3902,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u19-v36-l-3"
+        ]
       },
       {
         "id": "b2-u19-v36-l-4",
@@ -3164,7 +3919,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u19-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u19-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “Aracılık, Çevrim İçi Etkileşim ve Bilgi Aktarımı”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",
@@ -3245,7 +4005,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Kamu binasının geleceği tartışılıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-r-1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u20-v36-r-1"
+        ]
       },
       {
         "id": "b2-u20-v36-r-2",
@@ -3257,7 +4022,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Üç kullanım önerisi var",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-r-2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u20-v36-r-2"
+        ]
       },
       {
         "id": "b2-u20-v36-r-3",
@@ -3269,7 +4039,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Birden fazla ölçüt karşılaştırılıyor",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-r-3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u20-v36-r-3"
+        ]
       },
       {
         "id": "b2-u20-v36-r-4",
@@ -3281,7 +4056,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Amaç uygulanabilir öneri geliştirmek",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-r-4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b2-u20-v36-r-4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -3295,7 +4075,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Tek bir basit ölçüt yerine bağlamı ve sınırlılıkları birlikte değerlendirmeyi.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-l-1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u20-v36-l-1"
+        ]
       },
       {
         "id": "b2-u20-v36-l-2",
@@ -3307,7 +4092,12 @@
           "Metinde bunun tersi belirtiliyor."
         ],
         "correctAnswer": "Kesinlik derecesini kontrollü ifade etmek.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-l-2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u20-v36-l-2"
+        ]
       },
       {
         "id": "b2-u20-v36-l-3",
@@ -3319,7 +4109,12 @@
           "Bu bilgi metinde desteklenmiyor."
         ],
         "correctAnswer": "Gerekçeyi, karşı görüşü ve sonucu birbirine bağlamak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-l-3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u20-v36-l-3"
+        ]
       },
       {
         "id": "b2-u20-v36-l-4",
@@ -3331,7 +4126,12 @@
           "Yalnızca tek bir kişisel örnekten söz ediliyor."
         ],
         "correctAnswer": "Dinleyiciye daha nüanslı ve uygulanabilir bir değerlendirme çerçevesi sunmak.",
-        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez."
+        "explanation": "Doğru seçenek metindeki açık bilgi veya çıkarımla uyumludur; diğer seçenekler metin tarafından desteklenmez.",
+        "masteryQuestionId": "b2-u20-v36-l-4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b2-u20-v36-l-4"
+        ]
       }
     ],
     "writingPrompt": "230–300 kelimelik B2 metni yaz: “B2 Genel Uygulama ve Bağımsız İletişim”. Açık tez, en az iki gerekçe, bir karşı görüş veya sınırlılık, somut örnek ve dengeli sonuç kullan. Uygun register ve paragraf bağlantılarına dikkat et.",

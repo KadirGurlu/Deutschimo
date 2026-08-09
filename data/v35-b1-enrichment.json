@@ -71,7 +71,12 @@
           "Sadece bina yöneticileri."
         ],
         "correctAnswer": "Mahalleye yeni gelenler ve uzun süredir yaşayanlar.",
-        "explanation": "Metin iki grubu da açıkça tanımlar."
+        "explanation": "Metin iki grubu da açıkça tanımlar.",
+        "masteryQuestionId": "b1-u01-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u01-v35-r1"
+        ]
       },
       {
         "id": "b1-u01-v35-r2",
@@ -83,7 +88,12 @@
           "Yılda bir."
         ],
         "correctAnswer": "Ayda bir.",
-        "explanation": "Einmal im Monat ifadesi geçer."
+        "explanation": "Einmal im Monat ifadesi geçer.",
+        "masteryQuestionId": "b1-u01-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u01-v35-r2"
+        ]
       },
       {
         "id": "b1-u01-v35-r3",
@@ -95,7 +105,12 @@
           "Sadece kira ödemesinde."
         ],
         "correctAnswer": "Günlük küçük sorunlarda.",
-        "explanation": "Metin Handwerker arama ve mektup anlama örnekleri verir."
+        "explanation": "Metin Handwerker arama ve mektup anlama örnekleri verir.",
+        "masteryQuestionId": "b1-u01-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u01-v35-r3"
+        ]
       },
       {
         "id": "b1-u01-v35-r4",
@@ -107,7 +122,12 @@
           "Her konuda aynı düşünmek."
         ],
         "correctAnswer": "İyi dinlemek ve farklı görüşleri kabul etmek.",
-        "explanation": "Son bölüm bu davranışları vurgular."
+        "explanation": "Son bölüm bu davranışları vurgular.",
+        "masteryQuestionId": "b1-u01-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u01-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -121,7 +141,12 @@
           "Yalnız yaşamanın daha iyi olduğunu."
         ],
         "correctAnswer": "Ortak ilgi alanlarının çok önemli olduğunu.",
-        "explanation": "İlk cümlelerde eski düşüncesini açıklar."
+        "explanation": "İlk cümlelerde eski düşüncesini açıklar.",
+        "masteryQuestionId": "b1-u01-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u01-v35-l1"
+        ]
       },
       {
         "id": "b1-u01-v35-l2",
@@ -133,7 +158,12 @@
           "Yalnızca aynı şehirde yaşayanları."
         ],
         "correctAnswer": "Dürüst konuşabildiği ve farklı görüşte sakin kalanları.",
-        "explanation": "Podcast’te bu iki özellik belirtilir."
+        "explanation": "Podcast’te bu iki özellik belirtilir.",
+        "masteryQuestionId": "b1-u01-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u01-v35-l2"
+        ]
       },
       {
         "id": "b1-u01-v35-l3",
@@ -145,7 +175,12 @@
           "Yan daireye."
         ],
         "correctAnswer": "Başka bir şehre.",
-        "explanation": "in eine andere Stadt gezogen denir."
+        "explanation": "in eine andere Stadt gezogen denir.",
+        "masteryQuestionId": "b1-u01-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u01-v35-l3"
+        ]
       },
       {
         "id": "b1-u01-v35-l4",
@@ -157,7 +192,12 @@
           "Artık hiç konuşmuyorlar."
         ],
         "correctAnswer": "Daha seyrek ama daha yoğun konuşuyorlar.",
-        "explanation": "Son bölümde bu karşılaştırma yapılır."
+        "explanation": "Son bölümde bu karşılaştırma yapılır.",
+        "masteryQuestionId": "b1-u01-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u01-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–180 kelimeyle “İyi bir arkadaşlıkta benim için ne önemlidir?” konulu forum yazısı yaz. En az iki Relativsatz, bir karşıtlık ve somut örnek kullan.",
@@ -237,7 +277,12 @@
           "Ocaktan itibaren."
         ],
         "correctAnswer": "Ekimden itibaren.",
-        "explanation": "ab Oktober bilgisi verilir."
+        "explanation": "ab Oktober bilgisi verilir.",
+        "masteryQuestionId": "b1-u02-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u02-v35-r1"
+        ]
       },
       {
         "id": "b1-u02-v35-r2",
@@ -249,7 +294,12 @@
           "Sadece arabayla."
         ],
         "correctAnswer": "Bisikletle on dakika.",
-        "explanation": "Metinde mit dem Fahrrad in zehn Minuten denir."
+        "explanation": "Metinde mit dem Fahrrad in zehn Minuten denir.",
+        "masteryQuestionId": "b1-u02-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u02-v35-r2"
+        ]
       },
       {
         "id": "b1-u02-v35-r3",
@@ -261,7 +311,12 @@
           "Sadece hafta sonu kullanılmaları."
         ],
         "correctAnswer": "Kullanımdan sonra düzenli bırakılmaları.",
-        "explanation": "Bu kural açıkça belirtilir."
+        "explanation": "Bu kural açıkça belirtilir.",
+        "masteryQuestionId": "b1-u02-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u02-v35-r3"
+        ]
       },
       {
         "id": "b1-u02-v35-r4",
@@ -273,7 +328,12 @@
           "Evcil hayvan getirmesi."
         ],
         "correctAnswer": "Günlük hayatı ve beklentisi hakkında kısa bilgi.",
-        "explanation": "Son cümlede bu istek açıkça yazılıdır."
+        "explanation": "Son cümlede bu istek açıkça yazılıdır.",
+        "masteryQuestionId": "b1-u02-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u02-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -287,7 +347,12 @@
           "Mutfakta."
         ],
         "correctAnswer": "Küçük yatak odasında.",
-        "explanation": "kleinen Schlafzimmer ifadesi geçer."
+        "explanation": "kleinen Schlafzimmer ifadesi geçer.",
+        "masteryQuestionId": "b1-u02-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u02-v35-l1"
+        ]
       },
       {
         "id": "b1-u02-v35-l2",
@@ -299,7 +364,12 @@
           "Bugün başladı."
         ],
         "correctAnswer": "Üç gündür.",
-        "explanation": "Seit drei Tagen denir."
+        "explanation": "Seit drei Tagen denir.",
+        "masteryQuestionId": "b1-u02-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u02-v35-l2"
+        ]
       },
       {
         "id": "b1-u02-v35-l3",
@@ -311,7 +381,12 @@
           "Sökülmüş."
         ],
         "correctAnswer": "Çalışıyor.",
-        "explanation": "ist in Ordnung denir."
+        "explanation": "ist in Ordnung denir.",
+        "masteryQuestionId": "b1-u02-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u02-v35-l3"
+        ]
       },
       {
         "id": "b1-u02-v35-l4",
@@ -323,7 +398,12 @@
           "Yeni daire."
         ],
         "correctAnswer": "İki alternatif öneri.",
-        "explanation": "Son cümlede zwei andere Vorschläge denir."
+        "explanation": "Son cümlede zwei andere Vorschläge denir.",
+        "masteryQuestionId": "b1-u02-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u02-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "130–170 kelimeyle bir WG ilanına cevap yaz veya evdeki bir sorun için bina yönetimine mesaj gönder. Konut özellikleri, durum ve istediğin çözüm açık olsun.",
@@ -403,7 +483,12 @@
           "Sadece seyahat etmek."
         ],
         "correctAnswer": "Toplantıları hazırlamak.",
-        "explanation": "Vorbereitung von Besprechungen görev olarak verilir."
+        "explanation": "Vorbereitung von Besprechungen görev olarak verilir.",
+        "masteryQuestionId": "b1-u03-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u03-v35-r1"
+        ]
       },
       {
         "id": "b1-u03-v35-r2",
@@ -415,7 +500,12 @@
           "Ehliyet zorunluluğu."
         ],
         "correctAnswer": "Office programlarını güvenli kullanmak.",
-        "explanation": "İlanda açıkça belirtilir."
+        "explanation": "İlanda açıkça belirtilir.",
+        "masteryQuestionId": "b1-u03-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u03-v35-r2"
+        ]
       },
       {
         "id": "b1-u03-v35-r3",
@@ -427,7 +517,12 @@
           "Hiç önemli değil ve yasak."
         ],
         "correctAnswer": "Hayır, tercih nedeni.",
-        "explanation": "wünschenswert, aber keine Voraussetzung denir."
+        "explanation": "wünschenswert, aber keine Voraussetzung denir.",
+        "masteryQuestionId": "b1-u03-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u03-v35-r3"
+        ]
       },
       {
         "id": "b1-u03-v35-r4",
@@ -439,7 +534,12 @@
           "Sınırsız izin."
         ],
         "correctAnswer": "İç eğitimlere katılmak.",
-        "explanation": "Son bölüm Weiterbildungen imkânını verir."
+        "explanation": "Son bölüm Weiterbildungen imkânını verir.",
+        "masteryQuestionId": "b1-u03-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u03-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -453,7 +553,12 @@
           "Adresini değiştirmek için."
         ],
         "correctAnswer": "Güncel projeleri tanımak için.",
-        "explanation": "um die aktuellen Projekte kennenzulernen denir."
+        "explanation": "um die aktuellen Projekte kennenzulernen denir.",
+        "masteryQuestionId": "b1-u03-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u03-v35-l1"
+        ]
       },
       {
         "id": "b1-u03-v35-l2",
@@ -465,7 +570,12 @@
           "Beş."
         ],
         "correctAnswer": "Üç.",
-        "explanation": "drei Beispiele denir."
+        "explanation": "drei Beispiele denir.",
+        "masteryQuestionId": "b1-u03-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u03-v35-l2"
+        ]
       },
       {
         "id": "b1-u03-v35-l3",
@@ -477,7 +587,12 @@
           "Kişisel fotoğraflar."
         ],
         "correctAnswer": "Somut deneyimler.",
-        "explanation": "konkrete Erfahrungen ifadesi geçer."
+        "explanation": "konkrete Erfahrungen ifadesi geçer.",
+        "masteryQuestionId": "b1-u03-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u03-v35-l3"
+        ]
       },
       {
         "id": "b1-u03-v35-l4",
@@ -489,7 +604,12 @@
           "Kantin menüsü."
         ],
         "correctAnswer": "Bölümler arası iş birliği.",
-        "explanation": "Son cümlede Zusammenarbeit zwischen den Abteilungen denir."
+        "explanation": "Son cümlede Zusammenarbeit zwischen den Abteilungen denir.",
+        "masteryQuestionId": "b1-u03-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u03-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "140–190 kelimelik kısa başvuru e-postası yaz: pozisyona ilgi, iki somut deneyim, öğrenme hedefi ve uygun başlangıç tarihi olsun.",
@@ -569,7 +689,12 @@
           "Sadece konuşma."
         ],
         "correctAnswer": "Sadece kelime listeleri.",
-        "explanation": "Metin ilk haftayı açıkça tanımlar."
+        "explanation": "Metin ilk haftayı açıkça tanımlar.",
+        "masteryQuestionId": "b1-u04-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u04-v35-r1"
+        ]
       },
       {
         "id": "b1-u04-v35-r2",
@@ -581,7 +706,12 @@
           "Sadece sınav yapılıyor."
         ],
         "correctAnswer": "Her kelimeyle özgün cümle yazılıyor.",
-        "explanation": "zweiten Woche kısmında belirtilir."
+        "explanation": "zweiten Woche kısmında belirtilir.",
+        "masteryQuestionId": "b1-u04-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u04-v35-r2"
+        ]
       },
       {
         "id": "b1-u04-v35-r3",
@@ -593,7 +723,12 @@
           "Yalnız isimler."
         ],
         "correctAnswer": "Kendi örneklerinde kullanılanlar.",
-        "explanation": "Grubun sonucu bunu söyler."
+        "explanation": "Grubun sonucu bunu söyler.",
+        "masteryQuestionId": "b1-u04-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u04-v35-r3"
+        ]
       },
       {
         "id": "b1-u04-v35-r4",
@@ -605,7 +740,12 @@
           "Sadece sözlük kullanmaya."
         ],
         "correctAnswer": "İki başarılı yöntemi birleştirmeye.",
-        "explanation": "Son cümlede yöntemlerin birleştirileceği belirtilir."
+        "explanation": "Son cümlede yöntemlerin birleştirileceği belirtilir.",
+        "masteryQuestionId": "b1-u04-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u04-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -619,7 +759,12 @@
           "Daha çok dinlemek."
         ],
         "correctAnswer": "Metnin bağlantısını kaybetmek.",
-        "explanation": "Zusammenhang verlieren denir."
+        "explanation": "Zusammenhang verlieren denir.",
+        "masteryQuestionId": "b1-u04-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u04-v35-l1"
+        ]
       },
       {
         "id": "b1-u04-v35-l2",
@@ -631,7 +776,13 @@
           "Metni ezberlemek."
         ],
         "correctAnswer": "Ana fikri anlamak.",
-        "explanation": "Hauptidee verstehen önerilir."
+        "explanation": "Hauptidee verstehen önerilir.",
+        "masteryQuestionId": "b1-u04-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "hoeren-hauptidee",
+          "listening-b1-u04-v35-l2"
+        ]
       },
       {
         "id": "b1-u04-v35-l3",
@@ -643,7 +794,12 @@
           "Sadece ilk kelime."
         ],
         "correctAnswer": "Tekrarlanan veya önemli olanlar.",
-        "explanation": "Trainer iki ölçüt verir."
+        "explanation": "Trainer iki ölçüt verir.",
+        "masteryQuestionId": "b1-u04-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u04-v35-l3"
+        ]
       },
       {
         "id": "b1-u04-v35-l4",
@@ -655,7 +811,12 @@
           "Hiçbir zaman."
         ],
         "correctAnswer": "İlk okumadan sonra.",
-        "explanation": "Son cümlede nach dem ersten Lesen denir."
+        "explanation": "Son cümlede nach dem ersten Lesen denir.",
+        "masteryQuestionId": "b1-u04-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u04-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "140–180 kelimeyle kendi Almanca çalışma yöntemini değerlendir: işe yarayan iki yöntem, işe yaramayan bir yöntem ve nedenleri.",
@@ -735,7 +896,12 @@
           "Ücretsiz konut."
         ],
         "correctAnswer": "Şehir merkezinde araçsız bölge.",
-        "explanation": "İlk cümlede proje açıklanır."
+        "explanation": "İlk cümlede proje açıklanır.",
+        "masteryQuestionId": "b1-u05-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u05-v35-r1"
+        ]
       },
       {
         "id": "b1-u05-v35-r2",
@@ -747,7 +913,12 @@
           "Sadece park ücretini artırma."
         ],
         "correctAnswer": "Daha sık otobüs ve bisiklet parkı.",
-        "explanation": "İki somut önlem listelenir."
+        "explanation": "İki somut önlem listelenir.",
+        "masteryQuestionId": "b1-u05-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u05-v35-r2"
+        ]
       },
       {
         "id": "b1-u05-v35-r3",
@@ -759,7 +930,12 @@
           "Otobüsler sıklaşacak."
         ],
         "correctAnswer": "Daha az spontane müşteri gelebilir.",
-        "explanation": "Geschäftsleute bu noktayı befürchten."
+        "explanation": "Geschäftsleute bu noktayı befürchten.",
+        "masteryQuestionId": "b1-u05-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u05-v35-r3"
+        ]
       },
       {
         "id": "b1-u05-v35-r4",
@@ -771,7 +947,12 @@
           "Yalnız bina fiyatı."
         ],
         "correctAnswer": "Trafik, ziyaretçi sayısı ve geri bildirim.",
-        "explanation": "Son cümlede üç ölçüt listelenir."
+        "explanation": "Son cümlede üç ölçüt listelenir.",
+        "masteryQuestionId": "b1-u05-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u05-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -785,7 +966,12 @@
           "İnternet gerektirmiyor."
         ],
         "correctAnswer": "İlgi alanlarını daha hızlı bulduruyor.",
-        "explanation": "weil cümlesi gerekçeyi verir."
+        "explanation": "weil cümlesi gerekçeyi verir.",
+        "masteryQuestionId": "b1-u05-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u05-v35-l1"
+        ]
       },
       {
         "id": "b1-u05-v35-l2",
@@ -797,7 +983,12 @@
           "Sadece tek gazeteyi okumak."
         ],
         "correctAnswer": "Yalnız kişiselleştirilmiş içerik okumamak.",
-        "explanation": "nur solche Inhalte uyarısı vardır."
+        "explanation": "nur solche Inhalte uyarısı vardır.",
+        "masteryQuestionId": "b1-u05-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u05-v35-l2"
+        ]
       },
       {
         "id": "b1-u05-v35-l3",
@@ -809,7 +1000,12 @@
           "Haber sayısı artar."
         ],
         "correctAnswer": "Başka bakış açıları eksik kalabilir.",
-        "explanation": "andere Perspektiven fehlen denir."
+        "explanation": "andere Perspektiven fehlen denir.",
+        "masteryQuestionId": "b1-u05-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u05-v35-l3"
+        ]
       },
       {
         "id": "b1-u05-v35-l4",
@@ -821,7 +1017,12 @@
           "Sadece resme."
         ],
         "correctAnswer": "Tarih ve ilk kaynağa.",
-        "explanation": "Son cümlede Datum und ursprüngliche Quelle denir."
+        "explanation": "Son cümlede Datum und ursprüngliche Quelle denir.",
+        "masteryQuestionId": "b1-u05-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u05-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–190 kelimelik forum yazısı: “Haberleri sosyal medyadan takip etmek yeterli mi?” Görüş, iki gerekçe, karşı görüş ve sonuç ekle.",
@@ -901,7 +1102,12 @@
           "En fazla uygulama."
         ],
         "correctAnswer": "Ucuz ve az enerji tüketiyor.",
-        "explanation": "İki avantaj ilk bölümde verilir."
+        "explanation": "İki avantaj ilk bölümde verilir.",
+        "masteryQuestionId": "b1-u06-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u06-v35-r1"
+        ]
       },
       {
         "id": "b1-u06-v35-r2",
@@ -913,7 +1119,12 @@
           "Uygulama zorunlu."
         ],
         "correctAnswer": "Temizliği ve tamiri daha kolay.",
-        "explanation": "dafür leichter reinigen und reparieren denir."
+        "explanation": "dafür leichter reinigen und reparieren denir.",
+        "masteryQuestionId": "b1-u06-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u06-v35-r2"
+        ]
       },
       {
         "id": "b1-u06-v35-r3",
@@ -925,7 +1136,12 @@
           "Hiç program yok."
         ],
         "correctAnswer": "Uygulama kontrolü.",
-        "explanation": "App-Steuerung bilgisi vardır."
+        "explanation": "App-Steuerung bilgisi vardır.",
+        "masteryQuestionId": "b1-u06-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u06-v35-r3"
+        ]
       },
       {
         "id": "b1-u06-v35-r4",
@@ -937,7 +1153,12 @@
           "Satıcının logosunu."
         ],
         "correctAnswer": "Yedek parça bulunabilirliğini.",
-        "explanation": "Son cümle Ersatzteile konusunu ekler."
+        "explanation": "Son cümle Ersatzteile konusunu ekler.",
+        "masteryQuestionId": "b1-u06-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u06-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -951,7 +1172,12 @@
           "Telefon."
         ],
         "correctAnswer": "Sırt çantası.",
-        "explanation": "Dinleme metninde Rucksack kelimesi açıkça geçer."
+        "explanation": "Dinleme metninde Rucksack kelimesi açıkça geçer.",
+        "masteryQuestionId": "b1-u06-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u06-v35-l1"
+        ]
       },
       {
         "id": "b1-u06-v35-l2",
@@ -963,7 +1189,12 @@
           "Aynı gün."
         ],
         "correctAnswer": "İki hafta sonra.",
-        "explanation": "nach zwei Wochen ifadesi vardır."
+        "explanation": "nach zwei Wochen ifadesi vardır.",
+        "masteryQuestionId": "b1-u06-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u06-v35-l2"
+        ]
       },
       {
         "id": "b1-u06-v35-l3",
@@ -975,7 +1206,12 @@
           "Yeni ürün."
         ],
         "correctAnswer": "Hediye çeki.",
-        "explanation": "zunächst nur einen Gutschein denir."
+        "explanation": "zunächst nur einen Gutschein denir.",
+        "masteryQuestionId": "b1-u06-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u06-v35-l3"
+        ]
       },
       {
         "id": "b1-u06-v35-l4",
@@ -987,7 +1223,12 @@
           "Paket rengini."
         ],
         "correctAnswer": "Tamir hizmetini.",
-        "explanation": "Son cümlede Reparaturen angeboten werden denir."
+        "explanation": "Son cümlede Reparaturen angeboten werden denir.",
+        "masteryQuestionId": "b1-u06-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u06-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "140–180 kelimeyle bir ürün incelemesi yaz: kullanım amacı, iki avantaj, iki dezavantaj ve kime önerip önermediğin.",
@@ -1067,7 +1308,12 @@
           "Otele döndü."
         ],
         "correctAnswer": "Bağlantıyı kontrol etti.",
-        "explanation": "Bevor yan cümlesi bunu anlatır."
+        "explanation": "Bevor yan cümlesi bunu anlatır.",
+        "masteryQuestionId": "b1-u07-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u07-v35-r1"
+        ]
       },
       {
         "id": "b1-u07-v35-r2",
@@ -1079,7 +1325,12 @@
           "Konser iptal olduğu için."
         ],
         "correctAnswer": "Teknik arıza.",
-        "explanation": "technische Störung nedeni verilir."
+        "explanation": "technische Störung nedeni verilir.",
+        "masteryQuestionId": "b1-u07-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u07-v35-r2"
+        ]
       },
       {
         "id": "b1-u07-v35-r3",
@@ -1091,7 +1342,12 @@
           "Otobüs çok erken geldi."
         ],
         "correctAnswer": "Bağlantı kaçtı.",
-        "explanation": "Anschluss verpasst denir."
+        "explanation": "Anschluss verpasst denir.",
+        "masteryQuestionId": "b1-u07-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u07-v35-r3"
+        ]
       },
       {
         "id": "b1-u07-v35-r4",
@@ -1103,7 +1359,12 @@
           "Bir gazeteyi."
         ],
         "correctAnswer": "Konaklama yerini.",
-        "explanation": "Son cümlede Unterkunft bilgilendiriliyor."
+        "explanation": "Son cümlede Unterkunft bilgilendiriliyor.",
+        "masteryQuestionId": "b1-u07-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u07-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1117,7 +1378,12 @@
           "Salzburg’da."
         ],
         "correctAnswer": "Rosenheim’da.",
-        "explanation": "endet ... in Rosenheim denir."
+        "explanation": "endet ... in Rosenheim denir.",
+        "masteryQuestionId": "b1-u07-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u07-v35-l1"
+        ]
       },
       {
         "id": "b1-u07-v35-l2",
@@ -1129,7 +1395,12 @@
           "Bisiklet."
         ],
         "correctAnswer": "Yedek otobüs.",
-        "explanation": "Ersatzbus talimatı verilir."
+        "explanation": "Ersatzbus talimatı verilir.",
+        "masteryQuestionId": "b1-u07-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u07-v35-l2"
+        ]
       },
       {
         "id": "b1-u07-v35-l3",
@@ -1141,7 +1412,12 @@
           "Hiç kimseyi."
         ],
         "correctAnswer": "Trenin varışını.",
-        "explanation": "wartet auf die Ankunft des Zuges denir."
+        "explanation": "wartet auf die Ankunft des Zuges denir.",
+        "masteryQuestionId": "b1-u07-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u07-v35-l3"
+        ]
       },
       {
         "id": "b1-u07-v35-l4",
@@ -1153,7 +1429,12 @@
           "İstasyondan çıkmalı."
         ],
         "correctAnswer": "Servis noktasından bilgi almalı.",
-        "explanation": "Son cümle güncel Weiterfahrt bilgisini işaret eder."
+        "explanation": "Son cümle güncel Weiterfahrt bilgisini işaret eder.",
+        "masteryQuestionId": "b1-u07-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u07-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–190 kelimeyle bir seyahat şirketine yaşadığın gecikme veya iptal sorununu sırayla anlat ve makul bir çözüm talep et.",
@@ -1233,7 +1514,12 @@
           "Tüm çalışanlar erken çıkıyor."
         ],
         "correctAnswer": "Birçok kişi mesai sonrası da mesaj okuyor.",
-        "explanation": "İlk bölümde bu sonuç verilir."
+        "explanation": "İlk bölümde bu sonuç verilir.",
+        "masteryQuestionId": "b1-u08-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u08-v35-r1"
+        ]
       },
       {
         "id": "b1-u08-v35-r2",
@@ -1245,7 +1531,12 @@
           "Tüm gün."
         ],
         "correctAnswer": "19–7 arası.",
-        "explanation": "Saat aralığı açıkça verilir."
+        "explanation": "Saat aralığı açıkça verilir.",
+        "masteryQuestionId": "b1-u08-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u08-v35-r2"
+        ]
       },
       {
         "id": "b1-u08-v35-r3",
@@ -1257,7 +1548,12 @@
           "Sadece yöneticilere açık."
         ],
         "correctAnswer": "Hayır.",
-        "explanation": "Nachrichten selbst bleiben erreichbar denir."
+        "explanation": "Nachrichten selbst bleiben erreichbar denir.",
+        "masteryQuestionId": "b1-u08-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u08-v35-r3"
+        ]
       },
       {
         "id": "b1-u08-v35-r4",
@@ -1269,7 +1565,12 @@
           "Hiç verilmeyecek."
         ],
         "correctAnswer": "Testten sonra.",
-        "explanation": "Son cümlede kararın test sonrası alınacağı belirtilir."
+        "explanation": "Son cümlede kararın test sonrası alınacağı belirtilir.",
+        "masteryQuestionId": "b1-u08-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u08-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1283,7 +1584,12 @@
           "Hiç plan yapmamak."
         ],
         "correctAnswer": "Acil ve önemliyi ayırmak.",
-        "explanation": "Danışman ilk adım olarak bunu söyler."
+        "explanation": "Danışman ilk adım olarak bunu söyler.",
+        "masteryQuestionId": "b1-u08-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u08-v35-l1"
+        ]
       },
       {
         "id": "b1-u08-v35-l2",
@@ -1295,7 +1601,12 @@
           "Görev sayısı azalır."
         ],
         "correctAnswer": "Fazla plan yapılır.",
-        "explanation": "plant man schnell zu viel denir."
+        "explanation": "plant man schnell zu viel denir.",
+        "masteryQuestionId": "b1-u08-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u08-v35-l2"
+        ]
       },
       {
         "id": "b1-u08-v35-l3",
@@ -1307,7 +1618,12 @@
           "Bir zorunlu."
         ],
         "correctAnswer": "En fazla üç.",
-        "explanation": "höchstens drei Hauptaufgaben denir."
+        "explanation": "höchstens drei Hauptaufgaben denir.",
+        "masteryQuestionId": "b1-u08-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u08-v35-l3"
+        ]
       },
       {
         "id": "b1-u08-v35-l4",
@@ -1319,7 +1635,12 @@
           "Tüm molaları kaldırmak."
         ],
         "correctAnswer": "Ek destek aramak.",
-        "explanation": "Son cümlede Unterstützung suchen denir."
+        "explanation": "Son cümlede Unterstützung suchen denir.",
+        "masteryQuestionId": "b1-u08-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u08-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "140–180 kelimeyle yoğun bir hafta için gerçekçi denge planı yaz; iki Konjunktiv-II önerisi ve bir somut öncelik sistemi kullan.",
@@ -1399,7 +1720,12 @@
           "Çalışan maaşlarını."
         ],
         "correctAnswer": "Enerji tüketimini.",
-        "explanation": "İlk cümle bunu belirtir."
+        "explanation": "İlk cümle bunu belirtir.",
+        "masteryQuestionId": "b1-u09-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u09-v35-r1"
+        ]
       },
       {
         "id": "b1-u09-v35-r2",
@@ -1411,7 +1737,12 @@
           "Asansör."
         ],
         "correctAnswer": "Eski aydınlatma.",
-        "explanation": "alte Beleuchtung vurgulanır."
+        "explanation": "alte Beleuchtung vurgulanır.",
+        "masteryQuestionId": "b1-u09-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u09-v35-r2"
+        ]
       },
       {
         "id": "b1-u09-v35-r3",
@@ -1423,7 +1754,13 @@
           "Çatı satıldı."
         ],
         "correctAnswer": "Tüm lambalar değiştirildi.",
-        "explanation": "Passiv cümlesi bunu anlatır."
+        "explanation": "Passiv cümlesi bunu anlatır.",
+        "masteryQuestionId": "b1-u09-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "passiv",
+          "reading-b1-u09-v35-r3"
+        ]
       },
       {
         "id": "b1-u09-v35-r4",
@@ -1435,7 +1772,12 @@
           "Yalnız hava durumu."
         ],
         "correctAnswer": "Maliyet, teknik imkân ve tasarruf.",
-        "explanation": "Son cümlede üç ölçüt verilir."
+        "explanation": "Son cümlede üç ölçüt verilir.",
+        "masteryQuestionId": "b1-u09-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u09-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1449,7 +1791,12 @@
           "Hiç üretilmemeleri."
         ],
         "correctAnswer": "Çok kısa kullanılıp atılmaları.",
-        "explanation": "nur wenige Minuten benutzt denir."
+        "explanation": "nur wenige Minuten benutzt denir.",
+        "masteryQuestionId": "b1-u09-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u09-v35-l1"
+        ]
       },
       {
         "id": "b1-u09-v35-l2",
@@ -1461,7 +1808,12 @@
           "Bilet."
         ],
         "correctAnswer": "Yeniden kullanılabilir kaplar.",
-        "explanation": "wiederverwendbare Behälter denir."
+        "explanation": "wiederverwendbare Behälter denir.",
+        "masteryQuestionId": "b1-u09-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u09-v35-l2"
+        ]
       },
       {
         "id": "b1-u09-v35-l3",
@@ -1473,7 +1825,13 @@
           "Satılıyor."
         ],
         "correctAnswer": "Temizlenip yeniden dağıtılıyor.",
-        "explanation": "İki Passiv eylem verilir."
+        "explanation": "İki Passiv eylem verilir.",
+        "masteryQuestionId": "b1-u09-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "passiv",
+          "listening-b1-u09-v35-l3"
+        ]
       },
       {
         "id": "b1-u09-v35-l4",
@@ -1485,7 +1843,12 @@
           "Müşterilerin yaşı."
         ],
         "correctAnswer": "Kaç kabın geri döndüğü.",
-        "explanation": "Son cümle Rückkehr oranını işaret eder."
+        "explanation": "Son cümle Rückkehr oranını işaret eder.",
+        "masteryQuestionId": "b1-u09-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u09-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–190 kelimelik sürdürülebilirlik önerisi yaz: mevcut sorun, önerilen önlem, beklenen fayda ve olası zorluk.",
@@ -1565,7 +1928,12 @@
           "Turistlerle otelleri."
         ],
         "correctAnswer": "Gönüllüler ve dijital desteğe ihtiyaç duyan yaşlıları.",
-        "explanation": "İlk cümle iki grubu tanımlar."
+        "explanation": "İlk cümle iki grubu tanımlar.",
+        "masteryQuestionId": "b1-u10-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u10-v35-r1"
+        ]
       },
       {
         "id": "b1-u10-v35-r2",
@@ -1577,7 +1945,12 @@
           "Yılda bir."
         ],
         "correctAnswer": "Genellikle iki haftada bir.",
-        "explanation": "alle zwei Wochen denir."
+        "explanation": "alle zwei Wochen denir.",
+        "masteryQuestionId": "b1-u10-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u10-v35-r2"
+        ]
       },
       {
         "id": "b1-u10-v35-r3",
@@ -1589,7 +1962,12 @@
           "Uzun seyahat."
         ],
         "correctAnswer": "Kısa eğitim.",
-        "explanation": "Schulung bilgisi vardır."
+        "explanation": "Schulung bilgisi vardır.",
+        "masteryQuestionId": "b1-u10-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u10-v35-r3"
+        ]
       },
       {
         "id": "b1-u10-v35-r4",
@@ -1601,7 +1979,12 @@
           "Sorun gizlenir."
         ],
         "correctAnswer": "Profesyonel yere yönlendirme.",
-        "explanation": "Son cümlede professionelle Stellen denir."
+        "explanation": "Son cümlede professionelle Stellen denir.",
+        "masteryQuestionId": "b1-u10-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u10-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1615,7 +1998,12 @@
           "Beş yıldır."
         ],
         "correctAnswer": "Bir yıldır.",
-        "explanation": "seit einem Jahr denir."
+        "explanation": "seit einem Jahr denir.",
+        "masteryQuestionId": "b1-u10-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u10-v35-l1"
+        ]
       },
       {
         "id": "b1-u10-v35-l2",
@@ -1627,7 +2015,12 @@
           "Sadece çocuklar."
         ],
         "correctAnswer": "Farklı ana dillere sahip insanlar.",
-        "explanation": "unterschiedlichen Muttersprachen ifadesi vardır."
+        "explanation": "unterschiedlichen Muttersprachen ifadesi vardır.",
+        "masteryQuestionId": "b1-u10-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u10-v35-l2"
+        ]
       },
       {
         "id": "b1-u10-v35-l3",
@@ -1639,7 +2032,12 @@
           "Sadece yazı yazacağını."
         ],
         "correctAnswer": "Sürekli açıklaması gerektiğini.",
-        "explanation": "ich müsste ständig erklären denir."
+        "explanation": "ich müsste ständig erklären denir.",
+        "masteryQuestionId": "b1-u10-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u10-v35-l3"
+        ]
       },
       {
         "id": "b1-u10-v35-l4",
@@ -1651,7 +2049,12 @@
           "Yazılı sınava."
         ],
         "correctAnswer": "Konuşma başlatıcılarına.",
-        "explanation": "Son cümlede Gesprächsimpulse denir."
+        "explanation": "Son cümlede Gesprächsimpulse denir.",
+        "masteryQuestionId": "b1-u10-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u10-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–190 kelimeyle bir gönüllülük projesi öner: hedef grup, görevler, sınırlar, zaman ve beklenen fayda.",
@@ -1731,7 +2134,12 @@
           "Teknoloji şirketi."
         ],
         "correctAnswer": "Memlekete dönen üç kardeş.",
-        "explanation": "İlk cümlede konu verilir."
+        "explanation": "İlk cümlede konu verilir.",
+        "masteryQuestionId": "b1-u11-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u11-v35-r1"
+        ]
       },
       {
         "id": "b1-u11-v35-r2",
@@ -1743,7 +2151,12 @@
           "Fiyat."
         ],
         "correctAnswer": "Diyaloglar ve bakış açıları.",
-        "explanation": "İki olumlu ölçüt belirtilir."
+        "explanation": "İki olumlu ölçüt belirtilir.",
+        "masteryQuestionId": "b1-u11-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u11-v35-r2"
+        ]
       },
       {
         "id": "b1-u11-v35-r3",
@@ -1755,7 +2168,12 @@
           "Kitabın çok kısa olmasını."
         ],
         "correctAnswer": "Bazı yan karakterlerin zayıf gelişimini.",
-        "explanation": "Nebenfiguren kısmında bu eleştiri yapılır."
+        "explanation": "Nebenfiguren kısmında bu eleştiri yapılır.",
+        "masteryQuestionId": "b1-u11-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u11-v35-r3"
+        ]
       },
       {
         "id": "b1-u11-v35-r4",
@@ -1767,7 +2185,12 @@
           "Hiç etkilenmez."
         ],
         "correctAnswer": "Sabırsız.",
-        "explanation": "Son cümlede ungeduldig werden denir."
+        "explanation": "Son cümlede ungeduldig werden denir.",
+        "masteryQuestionId": "b1-u11-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u11-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1781,7 +2204,12 @@
           "Hiç yok."
         ],
         "correctAnswer": "Çok sade.",
-        "explanation": "sehr einfach gestaltet denir."
+        "explanation": "sehr einfach gestaltet denir.",
+        "masteryQuestionId": "b1-u11-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u11-v35-l1"
+        ]
       },
       {
         "id": "b1-u11-v35-l2",
@@ -1793,7 +2221,12 @@
           "Süreyi uzatmak."
         ],
         "correctAnswer": "Dile daha çok odaklanmak.",
-        "explanation": "dadurch ... auf die Sprache denir."
+        "explanation": "dadurch ... auf die Sprache denir.",
+        "masteryQuestionId": "b1-u11-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u11-v35-l2"
+        ]
       },
       {
         "id": "b1-u11-v35-l3",
@@ -1805,7 +2238,12 @@
           "Seyirci oluyor."
         ],
         "correctAnswer": "Birden fazla rol arasında geçiyor.",
-        "explanation": "wechseln ... zwischen mehreren Rollen denir."
+        "explanation": "wechseln ... zwischen mehreren Rollen denir.",
+        "masteryQuestionId": "b1-u11-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u11-v35-l3"
+        ]
       },
       {
         "id": "b1-u11-v35-l4",
@@ -1817,7 +2255,12 @@
           "Sahnenin büyüklüğü."
         ],
         "correctAnswer": "Seyircinin oyuna katılması.",
-        "explanation": "Son cümlede Publikum einbezogen denir."
+        "explanation": "Son cümlede Publikum einbezogen denir.",
+        "masteryQuestionId": "b1-u11-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u11-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–190 kelimelik film/kitap incelemesi yaz: kısa içerik, en az iki ölçüt, bir eleştiri, hedef kitle ve sonuç.",
@@ -1897,7 +2340,12 @@
           "Hiç kayıt gerekmiyor."
         ],
         "correctAnswer": "Resepsiyonda kaydedilmeli.",
-        "explanation": "angemeldet werden kuralı vardır."
+        "explanation": "angemeldet werden kuralı vardır.",
+        "masteryQuestionId": "b1-u12-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u12-v35-r1"
+        ]
       },
       {
         "id": "b1-u12-v35-r2",
@@ -1909,7 +2357,12 @@
           "Asansör."
         ],
         "correctAnswer": "Çalışma alanı kapıları.",
-        "explanation": "Türen zu Arbeitsbereichen denir."
+        "explanation": "Türen zu Arbeitsbereichen denir.",
+        "masteryQuestionId": "b1-u12-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u12-v35-r2"
+        ]
       },
       {
         "id": "b1-u12-v35-r3",
@@ -1921,7 +2374,12 @@
           "Ofis masasına."
         ],
         "correctAnswer": "İç avluya.",
-        "explanation": "im Innenhof abgestellt werden denir."
+        "explanation": "im Innenhof abgestellt werden denir.",
+        "masteryQuestionId": "b1-u12-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u12-v35-r3"
+        ]
       },
       {
         "id": "b1-u12-v35-r4",
@@ -1933,7 +2391,12 @@
           "Hiçbir şekilde."
         ],
         "correctAnswer": "Girişteki QR kodla.",
-        "explanation": "Son cümlede QR-Code bilgisi verilir."
+        "explanation": "Son cümlede QR-Code bilgisi verilir.",
+        "masteryQuestionId": "b1-u12-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u12-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -1947,7 +2410,12 @@
           "Teslim edilemez."
         ],
         "correctAnswer": "Dijital.",
-        "explanation": "digital eingereicht werden denir."
+        "explanation": "digital eingereicht werden denir.",
+        "masteryQuestionId": "b1-u12-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u12-v35-l1"
+        ]
       },
       {
         "id": "b1-u12-v35-l2",
@@ -1959,7 +2427,12 @@
           "Hiç saklanmamalı."
         ],
         "correctAnswer": "Kontrol bitene kadar.",
-        "explanation": "bis zum Abschluss der Prüfung denir."
+        "explanation": "bis zum Abschluss der Prüfung denir.",
+        "masteryQuestionId": "b1-u12-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u12-v35-l2"
+        ]
       },
       {
         "id": "b1-u12-v35-l3",
@@ -1971,7 +2444,12 @@
           "Yalnız müşteriler."
         ],
         "correctAnswer": "Yetkili kişiler.",
-        "explanation": "nur von zuständigen Personen denir."
+        "explanation": "nur von zuständigen Personen denir.",
+        "masteryQuestionId": "b1-u12-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u12-v35-l3"
+        ]
       },
       {
         "id": "b1-u12-v35-l4",
@@ -1983,7 +2461,12 @@
           "Güvenli kanaldan."
         ],
         "correctAnswer": "Kişisel e-posta adreslerinden.",
-        "explanation": "Son cümlede private E-Mail-Adressen yasaklanır."
+        "explanation": "Son cümlede private E-Mail-Adressen yasaklanır.",
+        "masteryQuestionId": "b1-u12-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u12-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "140–180 kelimelik kurum kuralı bilgilendirmesi yaz: dört kural, iki gerekçe ve bir istisna.",
@@ -2063,7 +2546,12 @@
           "Sağlık teşhisi."
         ],
         "correctAnswer": "Oda, son tarih ve genel süreç.",
-        "explanation": "Üç alan açıkça verilir."
+        "explanation": "Üç alan açıkça verilir.",
+        "masteryQuestionId": "b1-u13-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u13-v35-r1"
+        ]
       },
       {
         "id": "b1-u13-v35-r2",
@@ -2075,7 +2563,12 @@
           "Öğrenciler rastgele."
         ],
         "correctAnswer": "Çalışanlar.",
-        "explanation": "weiterhin von Mitarbeitenden getroffen denir."
+        "explanation": "weiterhin von Mitarbeitenden getroffen denir.",
+        "masteryQuestionId": "b1-u13-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u13-v35-r2"
+        ]
       },
       {
         "id": "b1-u13-v35-r3",
@@ -2087,7 +2580,12 @@
           "Bina sayısı."
         ],
         "correctAnswer": "Hangi soruların güvenilir cevaplandığı.",
-        "explanation": "ausgewertet werden cümlesi bunu anlatır."
+        "explanation": "ausgewertet werden cümlesi bunu anlatır.",
+        "masteryQuestionId": "b1-u13-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u13-v35-r3"
+        ]
       },
       {
         "id": "b1-u13-v35-r4",
@@ -2099,7 +2597,12 @@
           "Hiç iletişim yok."
         ],
         "correctAnswer": "Kişisel bir yetkili.",
-        "explanation": "Son cümlede persönliche Ansprechperson denir."
+        "explanation": "Son cümlede persönliche Ansprechperson denir.",
+        "masteryQuestionId": "b1-u13-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u13-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2113,7 +2616,12 @@
           "Uzmanlığı."
         ],
         "correctAnswer": "Rutin görevleri.",
-        "explanation": "Routineaufgaben übernehmen denir."
+        "explanation": "Routineaufgaben übernehmen denir.",
+        "masteryQuestionId": "b1-u13-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u13-v35-l1"
+        ]
       },
       {
         "id": "b1-u13-v35-l2",
@@ -2125,7 +2633,12 @@
           "Söylenmiyor."
         ],
         "correctAnswer": "Hayır.",
-        "explanation": "Das bedeutet aber nicht ... denir."
+        "explanation": "Das bedeutet aber nicht ... denir.",
+        "masteryQuestionId": "b1-u13-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u13-v35-l2"
+        ]
       },
       {
         "id": "b1-u13-v35-l3",
@@ -2137,7 +2650,12 @@
           "Sadece yazdırma."
         ],
         "correctAnswer": "Kontrol, açıklama, karar.",
-        "explanation": "Üç beceri açıkça sayılır."
+        "explanation": "Üç beceri açıkça sayılır.",
+        "masteryQuestionId": "b1-u13-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u13-v35-l3"
+        ]
       },
       {
         "id": "b1-u13-v35-l4",
@@ -2149,7 +2667,12 @@
           "Aynı yöntemi hiç değiştirmemek."
         ],
         "correctAnswer": "Yeni araçları öğrenip uyum sağlamak.",
-        "explanation": "Son cümlede Arbeitsweise anpassen denir."
+        "explanation": "Son cümlede Arbeitsweise anpassen denir.",
+        "masteryQuestionId": "b1-u13-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u13-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–200 kelimelik görüş yazısı: “Dijital araçlar iş hayatını nasıl değiştirecek?” En az iki tahmin, bir fırsat, bir risk ve sonuç ekle.",
@@ -2229,7 +2752,12 @@
           "24 yıl sonra."
         ],
         "correctAnswer": "12 ay sonra.",
-        "explanation": "nach zwölf Monaten denir."
+        "explanation": "nach zwölf Monaten denir.",
+        "masteryQuestionId": "b1-u14-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u14-v35-r1"
+        ]
       },
       {
         "id": "b1-u14-v35-r2",
@@ -2241,7 +2769,12 @@
           "Ulaşım bileti."
         ],
         "correctAnswer": "Aktivasyon ücreti.",
-        "explanation": "Aktivierungsgebühr belirtilir."
+        "explanation": "Aktivierungsgebühr belirtilir.",
+        "masteryQuestionId": "b1-u14-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u14-v35-r2"
+        ]
       },
       {
         "id": "b1-u14-v35-r3",
@@ -2253,7 +2786,12 @@
           "6 ay."
         ],
         "correctAnswer": "24 ay.",
-        "explanation": "Mindestlaufzeit 24 Monate denir."
+        "explanation": "Mindestlaufzeit 24 Monate denir.",
+        "masteryQuestionId": "b1-u14-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u14-v35-r3"
+        ]
       },
       {
         "id": "b1-u14-v35-r4",
@@ -2265,7 +2803,12 @@
           "Sözleşmeyi okumamak."
         ],
         "correctAnswer": "Takvime not etmek.",
-        "explanation": "Son cümlede Kündigungsfrist için takvim önerilir."
+        "explanation": "Son cümlede Kündigungsfrist için takvim önerilir.",
+        "masteryQuestionId": "b1-u14-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u14-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2279,7 +2822,12 @@
           "Beş."
         ],
         "correctAnswer": "Üç.",
-        "explanation": "in drei Gruppen denir."
+        "explanation": "in drei Gruppen denir.",
+        "masteryQuestionId": "b1-u14-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u14-v35-l1"
+        ]
       },
       {
         "id": "b1-u14-v35-l2",
@@ -2291,7 +2839,12 @@
           "Gelir."
         ],
         "correctAnswer": "Sabit maliyetler.",
-        "explanation": "feste Kosten ilk sırada."
+        "explanation": "feste Kosten ilk sırada.",
+        "masteryQuestionId": "b1-u14-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u14-v35-l2"
+        ]
       },
       {
         "id": "b1-u14-v35-l3",
@@ -2303,7 +2856,12 @@
           "Beklenmedik zorunlu masraf."
         ],
         "correctAnswer": "Planlı eğlence alışverişleri.",
-        "explanation": "nicht für geplante Freizeitkäufe denir."
+        "explanation": "nicht für geplante Freizeitkäufe denir.",
+        "masteryQuestionId": "b1-u14-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u14-v35-l3"
+        ]
       },
       {
         "id": "b1-u14-v35-l4",
@@ -2315,7 +2873,12 @@
           "Bütçeyi kaldırmak."
         ],
         "correctAnswer": "Sabit aylık tasarruf planı.",
-        "explanation": "Son cümlede Sparplan önerilir."
+        "explanation": "Son cümlede Sparplan önerilir.",
+        "masteryQuestionId": "b1-u14-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u14-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "140–180 kelimeyle iki abonelik veya alışveriş seçeneğini toplam maliyet, süre ve ek koşullar açısından karşılaştır; kararını gerekçelendir.",
@@ -2395,7 +2958,12 @@
           "Festival başladı."
         ],
         "correctAnswer": "Kısa süre elektrik kesildi.",
-        "explanation": "İlk cümlede Strom aus denir."
+        "explanation": "İlk cümlede Strom aus denir.",
+        "masteryQuestionId": "b1-u15-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u15-v35-r1"
+        ]
       },
       {
         "id": "b1-u15-v35-r2",
@@ -2407,7 +2975,12 @@
           "Büyük hasar olduğu."
         ],
         "correctAnswer": "Teknik arızanın incelendiği.",
-        "explanation": "zunächst mit ... untersucht werde denir."
+        "explanation": "zunächst mit ... untersucht werde denir.",
+        "masteryQuestionId": "b1-u15-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u15-v35-r2"
+        ]
       },
       {
         "id": "b1-u15-v35-r3",
@@ -2419,7 +2992,12 @@
           "İnsan hatası kesin."
         ],
         "correctAnswer": "Bozuk bir parça.",
-        "explanation": "defektes Bauteil nedeni verilir."
+        "explanation": "defektes Bauteil nedeni verilir.",
+        "masteryQuestionId": "b1-u15-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u15-v35-r3"
+        ]
       },
       {
         "id": "b1-u15-v35-r4",
@@ -2431,7 +3009,12 @@
           "Sadece bir saniyeydi."
         ],
         "correctAnswer": "Semte göre değişti.",
-        "explanation": "Son cümlede je nach Stadtteil denir."
+        "explanation": "Son cümlede je nach Stadtteil denir.",
+        "masteryQuestionId": "b1-u15-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u15-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2445,7 +3028,14 @@
           "Bilet satmıştı."
         ],
         "correctAnswer": "Güçlü rüzgâr uyarısı.",
-        "explanation": "hatten ... gewarnt Plusquamperfekt kullanılır."
+        "explanation": "hatten ... gewarnt Plusquamperfekt kullanılır.",
+        "masteryQuestionId": "b1-u15-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "plusquamperfekt",
+          "perfekt",
+          "listening-b1-u15-v35-l1"
+        ]
       },
       {
         "id": "b1-u15-v35-l2",
@@ -2457,7 +3047,12 @@
           "Fırtına bitti."
         ],
         "correctAnswer": "Çoğu kişi alanı terk etti.",
-        "explanation": "verließen die meisten Menschen denir."
+        "explanation": "verließen die meisten Menschen denir.",
+        "masteryQuestionId": "b1-u15-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u15-v35-l2"
+        ]
       },
       {
         "id": "b1-u15-v35-l3",
@@ -2469,7 +3064,12 @@
           "Hiç rüzgâr olmadığı."
         ],
         "correctAnswer": "Kimsenin yaralanmadığı.",
-        "explanation": "Später wurde bestätigt ... denir."
+        "explanation": "Später wurde bestätigt ... denir.",
+        "masteryQuestionId": "b1-u15-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u15-v35-l3"
+        ]
       },
       {
         "id": "b1-u15-v35-l4",
@@ -2481,7 +3081,12 @@
           "Konser yapmak için."
         ],
         "correctAnswer": "Yollar kontrol edilebilsin diye.",
-        "explanation": "Son cümlede damit amacı verilir."
+        "explanation": "Son cümlede damit amacı verilir.",
+        "masteryQuestionId": "b1-u15-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u15-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–190 kelimelik kısa haber özeti yaz: ilk bilgi, daha önce olan olay, sonraki gelişme, doğrulanmış durum ve henüz belirsiz nokta.",
@@ -2561,7 +3166,12 @@
           "Sınavı bırakmak."
         ],
         "correctAnswer": "Yurt dışında staj.",
-        "explanation": "İlk cümlede hedef verilir."
+        "explanation": "İlk cümlede hedef verilir.",
+        "masteryQuestionId": "b1-u16-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u16-v35-r1"
+        ]
       },
       {
         "id": "b1-u16-v35-r2",
@@ -2573,7 +3183,12 @@
           "Staja başlamak."
         ],
         "correctAnswer": "CV’yi güncellemek.",
-        "explanation": "Zuerst aktualisiert ... Lebenslauf denir."
+        "explanation": "Zuerst aktualisiert ... Lebenslauf denir.",
+        "masteryQuestionId": "b1-u16-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u16-v35-r2"
+        ]
       },
       {
         "id": "b1-u16-v35-r3",
@@ -2585,7 +3200,12 @@
           "Onun yerine çalışsın diye."
         ],
         "correctAnswer": "Hatalar erken fark edilsin diye.",
-        "explanation": "damit Fehler früh auffallen denir."
+        "explanation": "damit Fehler früh auffallen denir.",
+        "masteryQuestionId": "b1-u16-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u16-v35-r3"
+        ]
       },
       {
         "id": "b1-u16-v35-r4",
@@ -2597,7 +3217,12 @@
           "Hiç plan yok."
         ],
         "correctAnswer": "Daha kısa yedek plan.",
-        "explanation": "Son cümlede Ersatzplan vardır."
+        "explanation": "Son cümlede Ersatzplan vardır.",
+        "masteryQuestionId": "b1-u16-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u16-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2611,7 +3236,12 @@
           "Sadece uzun vadeli."
         ],
         "correctAnswer": "İlerleme ölçülebilecek kadar somut.",
-        "explanation": "erkennen können gerekçesi vardır."
+        "explanation": "erkennen können gerekçesi vardır.",
+        "masteryQuestionId": "b1-u16-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u16-v35-l1"
+        ]
       },
       {
         "id": "b1-u16-v35-l2",
@@ -2623,7 +3253,12 @@
           "Yeni telefon."
         ],
         "correctAnswer": "Küçük alternatif.",
-        "explanation": "eine kleine Alternative denir."
+        "explanation": "eine kleine Alternative denir.",
+        "masteryQuestionId": "b1-u16-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u16-v35-l2"
+        ]
       },
       {
         "id": "b1-u16-v35-l3",
@@ -2635,7 +3270,12 @@
           "Yeni hedef silmek."
         ],
         "correctAnswer": "Görevi başka güne kaydırmak.",
-        "explanation": "auf einen anderen Tag verschieben denir."
+        "explanation": "auf einen anderen Tag verschieben denir.",
+        "masteryQuestionId": "b1-u16-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u16-v35-l3"
+        ]
       },
       {
         "id": "b1-u16-v35-l4",
@@ -2647,7 +3287,12 @@
           "Başka insanların planı."
         ],
         "correctAnswer": "İşe yarayan ve uyarlanması gerekenler.",
-        "explanation": "Son cümlede değerlendirme önerilir."
+        "explanation": "Son cümlede değerlendirme önerilir.",
+        "masteryQuestionId": "b1-u16-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u16-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–190 kelimeyle altı aylık bir hedef planı yaz: amaç, üç adım, başka bir kişinin rolü, alternatif plan ve kaçınmak istediğin davranış.",
@@ -2727,7 +3372,12 @@
           "Hiç ders yok."
         ],
         "correctAnswer": "12 canlı ders.",
-        "explanation": "zwölf Live-Termine bilgisi vardır."
+        "explanation": "zwölf Live-Termine bilgisi vardır.",
+        "masteryQuestionId": "b1-u17-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u17-v35-r1"
+        ]
       },
       {
         "id": "b1-u17-v35-r2",
@@ -2739,7 +3389,12 @@
           "Tüm dersler iptal."
         ],
         "correctAnswer": "Dört dersin kayıt olduğu.",
-        "explanation": "vier Termine nur als Aufzeichnung denir."
+        "explanation": "vier Termine nur als Aufzeichnung denir.",
+        "masteryQuestionId": "b1-u17-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u17-v35-r2"
+        ]
       },
       {
         "id": "b1-u17-v35-r3",
@@ -2751,7 +3406,12 @@
           "Telefon rehberine."
         ],
         "correctAnswer": "İlk kurs açıklamasına.",
-        "explanation": "bezieht sich auf die ursprüngliche Kursbeschreibung denir."
+        "explanation": "bezieht sich auf die ursprüngliche Kursbeschreibung denir.",
+        "masteryQuestionId": "b1-u17-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u17-v35-r3"
+        ]
       },
       {
         "id": "b1-u17-v35-r4",
@@ -2763,7 +3423,12 @@
           "Aynı dakika."
         ],
         "correctAnswer": "Bir hafta içinde.",
-        "explanation": "Son cümlede innerhalb einer Woche denir."
+        "explanation": "Son cümlede innerhalb einer Woche denir.",
+        "masteryQuestionId": "b1-u17-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u17-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2777,7 +3442,12 @@
           "7310."
         ],
         "correctAnswer": "K-731.",
-        "explanation": "Dinleme metninde referans numarası açıkça söylenir."
+        "explanation": "Dinleme metninde referans numarası açıkça söylenir.",
+        "masteryQuestionId": "b1-u17-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u17-v35-l1"
+        ]
       },
       {
         "id": "b1-u17-v35-l2",
@@ -2789,7 +3459,12 @@
           "Bir saat."
         ],
         "correctAnswer": "3–5 iş günü.",
-        "explanation": "drei bis fünf Werktage denir."
+        "explanation": "drei bis fünf Werktage denir.",
+        "masteryQuestionId": "b1-u17-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u17-v35-l2"
+        ]
       },
       {
         "id": "b1-u17-v35-l3",
@@ -2801,7 +3476,12 @@
           "Telefon kapanır."
         ],
         "correctAnswer": "Otomatik mesaj gelir.",
-        "explanation": "automatisch eine Nachricht denir."
+        "explanation": "automatisch eine Nachricht denir.",
+        "masteryQuestionId": "b1-u17-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u17-v35-l3"
+        ]
       },
       {
         "id": "b1-u17-v35-l4",
@@ -2813,7 +3493,12 @@
           "Talebi unutmak."
         ],
         "correctAnswer": "Referans numarasıyla tekrar iletişim.",
-        "explanation": "Son cümle bu adımı söyler."
+        "explanation": "Son cümle bu adımı söyler.",
+        "masteryQuestionId": "b1-u17-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u17-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "150–200 kelimelik resmî şikâyet yaz: referans, beklenti, gerçek durum, daha önce yaptığın işlem ve istediğin çözüm.",
@@ -2894,7 +3579,12 @@
           "Yalnız geziyi."
         ],
         "correctAnswer": "Yüz yüze ve çevrim içi aşamaları.",
-        "explanation": "İlk cümlede format açıklanır."
+        "explanation": "İlk cümlede format açıklanır.",
+        "masteryQuestionId": "b1-u18-v35-r1",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u18-v35-r1"
+        ]
       },
       {
         "id": "b1-u18-v35-r2",
@@ -2906,7 +3596,12 @@
           "Daha fazla dikkat dağınıklığı."
         ],
         "correctAnswer": "Esnek zaman.",
-        "explanation": "Teilnehmende bunu Vorteil olarak söyler."
+        "explanation": "Teilnehmende bunu Vorteil olarak söyler.",
+        "masteryQuestionId": "b1-u18-v35-r2",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u18-v35-r2"
+        ]
       },
       {
         "id": "b1-u18-v35-r3",
@@ -2918,7 +3613,12 @@
           "Sadece öğretmen sayısı."
         ],
         "correctAnswer": "Başarı, memnuniyet ve katılım.",
-        "explanation": "Üç ölçüt açıkça listelenir."
+        "explanation": "Üç ölçüt açıkça listelenir.",
+        "masteryQuestionId": "b1-u18-v35-r3",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u18-v35-r3"
+        ]
       },
       {
         "id": "b1-u18-v35-r4",
@@ -2930,7 +3630,12 @@
           "Sadece not."
         ],
         "correctAnswer": "Kısa görüşmelerde günlük uyum.",
-        "explanation": "Son cümlede kurze Interviews vardır."
+        "explanation": "Son cümlede kurze Interviews vardır.",
+        "masteryQuestionId": "b1-u18-v35-r4",
+        "masterySkill": "READING",
+        "masteryTags": [
+          "reading-b1-u18-v35-r4"
+        ]
       }
     ],
     "listeningQuestions": [
@@ -2944,7 +3649,12 @@
           "Konut kiralama."
         ],
         "correctAnswer": "Evden çalışma.",
-        "explanation": "İlk cümlede Thema verilir."
+        "explanation": "İlk cümlede Thema verilir.",
+        "masteryQuestionId": "b1-u18-v35-l1",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u18-v35-l1"
+        ]
       },
       {
         "id": "b1-u18-v35-l2",
@@ -2956,7 +3666,12 @@
           "Daha fazla trafik."
         ],
         "correctAnswer": "Yol süresi olmaması.",
-        "explanation": "keine Zeit für den Arbeitsweg denir."
+        "explanation": "keine Zeit für den Arbeitsweg denir.",
+        "masteryQuestionId": "b1-u18-v35-l2",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u18-v35-l2"
+        ]
       },
       {
         "id": "b1-u18-v35-l3",
@@ -2968,7 +3683,12 @@
           "Tamamen ev."
         ],
         "correctAnswer": "Karma model.",
-        "explanation": "gemischte Lösung sinnvoll denir."
+        "explanation": "gemischte Lösung sinnvoll denir.",
+        "masteryQuestionId": "b1-u18-v35-l3",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u18-v35-l3"
+        ]
       },
       {
         "id": "b1-u18-v35-l4",
@@ -2980,7 +3700,12 @@
           "Kira."
         ],
         "correctAnswer": "İş birliği.",
-        "explanation": "Son cümlede Zusammenarbeit komplizierter denir."
+        "explanation": "Son cümlede Zusammenarbeit komplizierter denir.",
+        "masteryQuestionId": "b1-u18-v35-l4",
+        "masterySkill": "LISTENING",
+        "masteryTags": [
+          "listening-b1-u18-v35-l4"
+        ]
       }
     ],
     "writingPrompt": "160–200 kelimelik B1 forum görüşü yaz: gündelik bir konu, açık görüş, iki gerekçe, bir karşı görüş, örnek ve sonuç.",

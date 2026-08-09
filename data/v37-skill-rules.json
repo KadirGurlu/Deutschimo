@@ -1,0 +1,94 @@
+{
+  "version": "37.0.0",
+  "skills": [
+    {
+      "id": "VOCABULARY",
+      "label": "Kelime"
+    },
+    {
+      "id": "GRAMMAR",
+      "label": "Gramer"
+    },
+    {
+      "id": "READING",
+      "label": "Okuma"
+    },
+    {
+      "id": "LISTENING",
+      "label": "Dinleme"
+    },
+    {
+      "id": "WRITING",
+      "label": "Yazma"
+    },
+    {
+      "id": "SPEAKING",
+      "label": "Konuşma"
+    }
+  ],
+  "canonicalTags": {
+    "VOCABULARY": [
+      "wortschatz-alltag",
+      "wortschatz-familie",
+      "artikel",
+      "plural"
+    ],
+    "GRAMMAR": [
+      "nominativ",
+      "akkusativ",
+      "dativ",
+      "genitiv",
+      "der-die-das",
+      "verb-position",
+      "trennbare-verben",
+      "modalverben",
+      "tempus",
+      "perfekt",
+      "praeteritum",
+      "plusquamperfekt",
+      "konjunktiv",
+      "relativsatz",
+      "passiv",
+      "praepositionen",
+      "konnektoren"
+    ],
+    "READING": [
+      "lesen-hauptidee",
+      "lesen-detail",
+      "lesen-inferenz",
+      "lesen-haltung",
+      "lesen-struktur",
+      "lesen-quelle"
+    ],
+    "LISTENING": [
+      "hoeren-hauptidee",
+      "hoeren-detail",
+      "hoeren-inferenz",
+      "hoeren-haltung",
+      "hoeren-schluesselinfo"
+    ],
+    "WRITING": [
+      "schreiben-formell",
+      "schreiben-informell",
+      "schreiben-kohaerenz",
+      "schreiben-argumentation",
+      "schreiben-register",
+      "schreiben-aufgabe"
+    ],
+    "SPEAKING": [
+      "sprechen-fluessigkeit",
+      "sprechen-interaktion",
+      "sprechen-aussprache",
+      "sprechen-argumentation",
+      "sprechen-register",
+      "sprechen-aufgabe"
+    ]
+  },
+  "principles": {
+    "completionIsNotMastery": true,
+    "missingEvidenceIsNotZero": true,
+    "storeRawAnswer": false,
+    "showCoverage": true,
+    "sixSkillModel": true
+  }
+}

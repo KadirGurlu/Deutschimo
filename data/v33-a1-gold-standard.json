@@ -98,13 +98,23 @@
         "Wie heißen Sie?",
         "Woher kommen Sie?"
       ],
-      "correctAnswer": "Wie heißen Sie?"
+      "correctAnswer": "Wie heißen Sie?",
+      "masteryQuestionId": "535aa8e5d1e8f140",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich ___ Sophie.",
       "answer": "heiße",
       "acceptedAnswers": [
         "heiße"
+      ],
+      "masteryQuestionId": "981dbfba5dbf4e80",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
       ]
     },
     "ordering": {
@@ -122,6 +132,11 @@
       "acceptedAnswers": [
         "Ich wohne in Hamburg",
         "Ich wohne in Hamburg."
+      ],
+      "masteryQuestionId": "b40fbbc99c4f31d2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
       ]
     },
     "dialogue": {
@@ -131,11 +146,21 @@
         "Ich wohne morgen.",
         "Tschüs, Lena."
       ],
-      "answer": "Ich heiße Paul Berg."
+      "answer": "Ich heiße Paul Berg.",
+      "masteryQuestionId": "bfe8b9bc597c403f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
+      ]
     },
     "trueFalse": {
       "prompt": "“Woher kommst du?” sorusu kişinin nereden geldiğini sorar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "85c78791827b013a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
+      ]
     },
     "multiSelect": {
       "prompt": "Vedalaşma ifadesi olan iki seçeneği seç.",
@@ -256,13 +281,23 @@
         "Wie heißen Sie?",
         "Wo wohnen Sie?"
       ],
-      "correctAnswer": "Was sind Sie von Beruf?"
+      "correctAnswer": "Was sind Sie von Beruf?",
+      "masteryQuestionId": "0f3fbe68002df905",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u02"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Du ___ Deutsch. (lernen)",
       "answer": "lernst",
       "acceptedAnswers": [
         "lernst"
+      ],
+      "masteryQuestionId": "93280bff16e8ebca",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u02"
       ]
     },
     "ordering": {
@@ -280,6 +315,11 @@
       "acceptedAnswers": [
         "Ich spreche Deutsch und Französisch",
         "Ich spreche Deutsch und Französisch."
+      ],
+      "masteryQuestionId": "04f69f5f33e6cc10",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-a1-u02"
       ]
     },
     "dialogue": {
@@ -289,11 +329,21 @@
         "Ich bin dreißig Jahre.",
         "Ich komme am Montag."
       ],
-      "answer": "Ich bin Architekt."
+      "answer": "Ich bin Architekt.",
+      "masteryQuestionId": "867f08795c28411f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u02"
+      ]
     },
     "trueFalse": {
       "prompt": "“Du hast eine E-Mail-Adresse.” cümlesinde hast, haben fiilinin du çekimidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "be33499a758190fd",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-a1-u02"
+      ]
     },
     "multiSelect": {
       "prompt": "Kişisel bilgi veren iki cümleyi seç.",
@@ -408,13 +458,23 @@
         "meine Mutter",
         "meinen Mutter"
       ],
-      "correctAnswer": "meine Mutter"
+      "correctAnswer": "meine Mutter",
+      "masteryQuestionId": "a41083a5f230779e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Das ist ___ Bruder. (benim)",
       "answer": "mein",
       "acceptedAnswers": [
         "mein"
+      ],
+      "masteryQuestionId": "c165e9a9b19dfe60",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
       ]
     },
     "ordering": {
@@ -433,6 +493,11 @@
       "acceptedAnswers": [
         "Meine Schwester ist Studentin",
         "Meine Schwester ist Studentin."
+      ],
+      "masteryQuestionId": "cd047963d187f633",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
       ]
     },
     "dialogue": {
@@ -442,11 +507,21 @@
         "Ja, ich bin Schwester.",
         "Nein, ich wohne Schwester."
       ],
-      "answer": "Ja, ich habe eine Schwester."
+      "answer": "Ja, ich habe eine Schwester.",
+      "masteryQuestionId": "90e63c2acedf09e8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
+      ]
     },
     "trueFalse": {
       "prompt": "“meine Eltern” ifadesinde meine çoğul isimle kullanılmıştır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "bdae8c1c8660a3c3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
+      ]
     },
     "multiSelect": {
       "prompt": "Aile bireyi olan iki kelimeyi seç.",
@@ -561,13 +636,24 @@
         "einen Stuhl",
         "eine Stuhl"
       ],
-      "correctAnswer": "einen Stuhl"
+      "correctAnswer": "einen Stuhl",
+      "masteryQuestionId": "5065351db8b50c26",
+      "masterySkill": "VOCABULARY",
+      "masteryTags": [
+        "der-die-das",
+        "vocabulary-a1-u04"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich kaufe ___ Tisch.",
       "answer": "einen",
       "acceptedAnswers": [
         "einen"
+      ],
+      "masteryQuestionId": "c57da3c5443cec47",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
       ]
     },
     "ordering": {
@@ -586,6 +672,11 @@
       "acceptedAnswers": [
         "Ich brauche keinen Computer",
         "Ich brauche keinen Computer."
+      ],
+      "masteryQuestionId": "464e581d32f9e852",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
       ]
     },
     "dialogue": {
@@ -595,11 +686,21 @@
         "Ja, ich bin eine Lampe.",
         "Nein, ich heiße Lampe."
       ],
-      "answer": "Ja, ich suche eine Lampe."
+      "answer": "Ja, ich suche eine Lampe.",
+      "masteryQuestionId": "93c380038a088682",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
+      ]
     },
     "trueFalse": {
       "prompt": "“Ich kaufe einen Tisch.” cümlesinde Tisch maskulin olduğu için einen kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "52f9b24b155121db",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
+      ]
     },
     "multiSelect": {
       "prompt": "Mağazada fiyat veya ihtiyaç bildiren iki ifadeyi seç.",
@@ -720,13 +821,23 @@
         "Die Speisekarte, bitte.",
         "Das Frühstück, bitte."
       ],
-      "correctAnswer": "Die Rechnung, bitte."
+      "correctAnswer": "Die Rechnung, bitte.",
+      "masteryQuestionId": "f968c690651954c2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich möchte ___ Kaffee.",
       "answer": "einen",
       "acceptedAnswers": [
         "einen"
+      ],
+      "masteryQuestionId": "70ae56479711df79",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
       ]
     },
     "ordering": {
@@ -745,6 +856,11 @@
       "acceptedAnswers": [
         "Ich esse kein Fleisch",
         "Ich esse kein Fleisch."
+      ],
+      "masteryQuestionId": "1f56cbdd62e6f524",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
       ]
     },
     "dialogue": {
@@ -754,11 +870,21 @@
         "Ich wohne in Bonn.",
         "Bis morgen."
       ],
-      "answer": "Ein Wasser, bitte."
+      "answer": "Ein Wasser, bitte.",
+      "masteryQuestionId": "3fdb93413ce94d05",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
+      ]
     },
     "trueFalse": {
       "prompt": "“Der Kaffee ist nicht heiß.” cümlesinde nicht bir özelliği olumsuzlar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "4d61313227bfdb37",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
+      ]
     },
     "multiSelect": {
       "prompt": "Restoranda doğal olan iki ifadeyi seç.",
@@ -879,13 +1005,23 @@
         "Ich aufstehe um sieben Uhr.",
         "Ich stehe auf um sieben Uhr."
       ],
-      "correctAnswer": "Ich stehe um sieben Uhr auf."
+      "correctAnswer": "Ich stehe um sieben Uhr auf.",
+      "masteryQuestionId": "bf3dd364fd45674f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Film ___ um acht Uhr an. (anfangen)",
       "answer": "fängt",
       "acceptedAnswers": [
         "fängt"
+      ],
+      "masteryQuestionId": "883a122bc96a2690",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
       ]
     },
     "ordering": {
@@ -903,6 +1039,11 @@
       "acceptedAnswers": [
         "Der Kurs fängt um zehn Uhr an",
         "Der Kurs fängt um zehn Uhr an."
+      ],
+      "masteryQuestionId": "c8aa527d18a09a03",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
       ]
     },
     "dialogue": {
@@ -912,11 +1053,21 @@
         "Mit einem Kaffee.",
         "In der Küche."
       ],
-      "answer": "Am Freitag um sechs."
+      "answer": "Am Freitag um sechs.",
+      "masteryQuestionId": "8cca39e8311eb721",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
+      ]
     },
     "trueFalse": {
       "prompt": "“Ich rufe dich morgen an.” cümlesinde an ön eki cümle sonunda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "0c681f8f96ce5de7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
+      ]
     },
     "multiSelect": {
       "prompt": "Zaman belirten iki ifadeyi seç.",
@@ -1037,13 +1188,23 @@
         "Ich kann schwimme.",
         "Ich schwimmen kann."
       ],
-      "correctAnswer": "Ich kann schwimmen."
+      "correctAnswer": "Ich kann schwimmen.",
+      "masteryQuestionId": "85f53fda7681788d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Du ___ sehr gut tanzen.",
       "answer": "kannst",
       "acceptedAnswers": [
         "kannst"
+      ],
+      "masteryQuestionId": "a6a8056ca48124a2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
       ]
     },
     "ordering": {
@@ -1061,6 +1222,11 @@
       "acceptedAnswers": [
         "Ich lese gern",
         "Ich lese gern."
+      ],
+      "masteryQuestionId": "a84660880fcb8dae",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-a1-u07"
       ]
     },
     "dialogue": {
@@ -1070,11 +1236,21 @@
         "Ja, ich bin Kino.",
         "Nein, Freitag kostet viel."
       ],
-      "answer": "Ja, gern. Ich habe Zeit."
+      "answer": "Ja, gern. Ich habe Zeit.",
+      "masteryQuestionId": "b567316d60746386",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
+      ]
     },
     "trueFalse": {
       "prompt": "können ile kullanılan asıl fiil mastar biçiminde cümle sonunda yer alır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "8d5145952c18974e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
+      ]
     },
     "multiSelect": {
       "prompt": "Bir davete uygun iki kısa cevap seç.",
@@ -1195,13 +1371,23 @@
         "Du gehst geradeaus.",
         "Geht Sie geradeaus."
       ],
-      "correctAnswer": "Gehen Sie geradeaus."
+      "correctAnswer": "Gehen Sie geradeaus.",
+      "masteryQuestionId": "e5ff51b224c328c4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ Sie am Bahnhof aus.",
       "answer": "Steigen",
       "acceptedAnswers": [
         "Steigen"
+      ],
+      "masteryQuestionId": "cc2e3adff023909c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
       ]
     },
     "ordering": {
@@ -1219,6 +1405,11 @@
       "acceptedAnswers": [
         "Fahren Sie mit dem Bus",
         "Fahren Sie mit dem Bus."
+      ],
+      "masteryQuestionId": "7d09e58ff19ec49b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
       ]
     },
     "dialogue": {
@@ -1228,11 +1419,21 @@
         "Ich trinke einen Kaffee.",
         "Der Bahnhof ist lecker."
       ],
-      "answer": "Gehen Sie geradeaus und dann links."
+      "answer": "Gehen Sie geradeaus und dann links.",
+      "masteryQuestionId": "16a488feb9a5ddf6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
+      ]
     },
     "trueFalse": {
       "prompt": "“Steigen Sie hier aus.” resmî bir yönlendirme cümlesidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "9016727e3adea608",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
+      ]
     },
     "multiSelect": {
       "prompt": "Yol tarifinde kullanılan iki ifadeyi seç.",
@@ -1347,13 +1548,23 @@
         "Es ist ein Balkon gibt.",
         "Ein Balkon hat es."
       ],
-      "correctAnswer": "Es gibt einen Balkon."
+      "correctAnswer": "Es gibt einen Balkon.",
+      "masteryQuestionId": "6f7a087c37d088be",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Lampe steht ___ dem Tisch.",
       "answer": "auf",
       "acceptedAnswers": [
         "auf"
+      ],
+      "masteryQuestionId": "5d90dccff8e0e3b1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
       ]
     },
     "ordering": {
@@ -1372,6 +1583,11 @@
       "acceptedAnswers": [
         "In der Küche gibt es einen Tisch",
         "In der Küche gibt es einen Tisch."
+      ],
+      "masteryQuestionId": "3172779f90dd2bff",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
       ]
     },
     "dialogue": {
@@ -1381,11 +1597,21 @@
         "Sie fährt um acht Uhr.",
         "Sie kostet einen Kaffee."
       ],
-      "answer": "Sie ist hell und hat zwei Zimmer."
+      "answer": "Sie ist hell und hat zwei Zimmer.",
+      "masteryQuestionId": "3671d52314c988b2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
+      ]
     },
     "trueFalse": {
       "prompt": "“auf dem Tisch” ifadesi sabit bir konumu anlatabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "ad880c2f7c24dc98",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
+      ]
     },
     "multiSelect": {
       "prompt": "Evdeki oda olan iki kelimeyi seç.",
@@ -1506,13 +1732,23 @@
         "Ich bin der Kopf.",
         "Mein Kopf kann trinken."
       ],
-      "correctAnswer": "Mir tut der Kopf weh."
+      "correctAnswer": "Mir tut der Kopf weh.",
+      "masteryQuestionId": "2e84936f39ec5547",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Du ___ heute zu Hause bleiben.",
       "answer": "musst",
       "acceptedAnswers": [
         "musst"
+      ],
+      "masteryQuestionId": "461391381cab4c8c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
       ]
     },
     "ordering": {
@@ -1531,6 +1767,11 @@
       "acceptedAnswers": [
         "Ich habe Fieber",
         "Ich habe Fieber."
+      ],
+      "masteryQuestionId": "b7fc46a5f27c14cd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
       ]
     },
     "dialogue": {
@@ -1540,11 +1781,21 @@
         "Bieg links ab.",
         "Die Jacke kostet fünfzig Euro."
       ],
-      "answer": "Du kannst warmen Tee trinken."
+      "answer": "Du kannst warmen Tee trinken.",
+      "masteryQuestionId": "b54076031a626229",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
+      ]
     },
     "trueFalse": {
       "prompt": "müssen ile kullanılan asıl fiil cümle sonunda mastar biçiminde bulunabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "5aa5f379ef6ca00d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
+      ]
     },
     "multiSelect": {
       "prompt": "Sağlık tavsiyesi olan iki seçeneği seç.",
@@ -1659,13 +1910,23 @@
         "Welcher Jacke?",
         "Welches Jacke?"
       ],
-      "correctAnswer": "Welche Jacke?"
+      "correctAnswer": "Welche Jacke?",
+      "masteryQuestionId": "e4da82332e53432c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ Pullover gefällt dir?",
       "answer": "Welcher",
       "acceptedAnswers": [
         "Welcher"
+      ],
+      "masteryQuestionId": "48ef50c5f92230f2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
       ]
     },
     "ordering": {
@@ -1684,6 +1945,11 @@
       "acceptedAnswers": [
         "Dieses Hemd ist zu klein",
         "Dieses Hemd ist zu klein."
+      ],
+      "masteryQuestionId": "ad17877efff6934c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
       ]
     },
     "dialogue": {
@@ -1693,11 +1959,21 @@
         "Am Bahnhof, bitte.",
         "Ich habe Fieber."
       ],
-      "answer": "Größe M, bitte."
+      "answer": "Größe M, bitte.",
+      "masteryQuestionId": "6c28030b4f15508c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
+      ]
     },
     "trueFalse": {
       "prompt": "“welches Hemd” ifadesi nötr bir isimle kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "5800895e2c7c1b9d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
+      ]
     },
     "multiSelect": {
       "prompt": "Kıyafet olan iki kelimeyi seç.",
@@ -1818,13 +2094,23 @@
         "Ich habe gestern nach Berlin gefahren.",
         "Ich gestern Berlin fahren."
       ],
-      "correctAnswer": "Ich bin gestern nach Berlin gefahren."
+      "correctAnswer": "Ich bin gestern nach Berlin gefahren.",
+      "masteryQuestionId": "e2882ec5e80eb456",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir ___ ein Museum besucht.",
       "answer": "haben",
       "acceptedAnswers": [
         "haben"
+      ],
+      "masteryQuestionId": "6f5f7471548b6e6d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
       ]
     },
     "ordering": {
@@ -1842,6 +2128,11 @@
       "acceptedAnswers": [
         "Wir haben ein Hotel gebucht",
         "Wir haben ein Hotel gebucht."
+      ],
+      "masteryQuestionId": "caac2c2ec1f47fca",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
       ]
     },
     "dialogue": {
@@ -1851,11 +2142,21 @@
         "Ich besuche gestern Hamburg.",
         "Ich bin ein Wochenende."
       ],
-      "answer": "Ich habe Hamburg besucht."
+      "answer": "Ich habe Hamburg besucht.",
+      "masteryQuestionId": "dcd00fe98e82066b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
+      ]
     },
     "trueFalse": {
       "prompt": "“Ich bin nach München gefahren.” cümlesinde gefahren, fahren fiilinin Partizip II biçimidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "f2b2431a031b5140",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
+      ]
     },
     "multiSelect": {
       "prompt": "Perfekt cümlesi olan iki seçeneği seç.",

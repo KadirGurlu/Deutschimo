@@ -101,13 +101,23 @@
         "Die Sprecherin sagt: Die Lage ist kompliziert.",
         "Die Sprecherin sagt, die Lage kompliziert."
       ],
-      "correctAnswer": "Die Sprecherin sagt, die Lage sei kompliziert."
+      "correctAnswer": "Die Sprecherin sagt, die Lage sei kompliziert.",
+      "masteryQuestionId": "a02ff2219630d599",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u01"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Experte erklärt, die Veränderung ___ langfristig wichtig.",
       "answer": "sei",
       "acceptedAnswers": [
         "sei"
+      ],
+      "masteryQuestionId": "699940f1d76d4df5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u01"
       ]
     },
     "ordering": {
@@ -126,6 +136,11 @@
       "acceptedAnswers": [
         "Der Forscher sagt, es seien mehr Daten nötig",
         "Der Forscher sagt, es seien mehr Daten nötig."
+      ],
+      "masteryQuestionId": "546771f765321ef0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u01"
       ]
     },
     "dialogue": {
@@ -135,11 +150,22 @@
         "Sie erklärt, die Kritik ist sei berechtigt.",
         "Sie erklärt, sei die Kritik teilweise."
       ],
-      "answer": "Sie erklärt, die Kritik sei teilweise berechtigt."
+      "answer": "Sie erklärt, die Kritik sei teilweise berechtigt.",
+      "masteryQuestionId": "ee2241b3c6f2a85c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u01"
+      ]
     },
     "trueFalse": {
       "prompt": "Konjunktiv I kann helfen, fremde Aussagen von der eigenen Position zu trennen.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "371b7883232abd17",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "konjunktiv",
+        "grammar-b2-u01"
+      ]
     },
     "multiSelect": {
       "prompt": "Kaynak aktarımına uygun iki fiili seç.",
@@ -263,13 +289,23 @@
         "Der Kurs wird gerade vorbereitet.",
         "Der Kurs lässt sich vorbereiten."
       ],
-      "correctAnswer": "Der Kurs ist vollständig vorbereitet."
+      "correctAnswer": "Der Kurs ist vollständig vorbereitet.",
+      "masteryQuestionId": "d0b6edf773bf3939",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u02"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Aufgabe lässt sich mit dieser Methode leichter ___.",
       "answer": "lösen",
       "acceptedAnswers": [
         "lösen"
+      ],
+      "masteryQuestionId": "06980de947a55562",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u02"
       ]
     },
     "ordering": {
@@ -287,6 +323,11 @@
       "acceptedAnswers": [
         "Diese Methode lässt sich leicht anwenden",
         "Diese Methode lässt sich leicht anwenden."
+      ],
+      "masteryQuestionId": "d52236fb3576e8c7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u02"
       ]
     },
     "dialogue": {
@@ -296,11 +337,22 @@
         "Ja, die Module werden fertig Zustand.",
         "Ja, die Module lassen vorbereitet."
       ],
-      "answer": "Ja, die wichtigsten Module sind bereits vorbereitet."
+      "answer": "Ja, die wichtigsten Module sind bereits vorbereitet.",
+      "masteryQuestionId": "e4311d31ab08f487",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u02"
+      ]
     },
     "trueFalse": {
       "prompt": "Zustandspassiv sein + Partizip II ile bir sonuç durumunu gösterebilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "44e512ba9f649ffa",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "grammar-b2-u02"
+      ]
     },
     "multiSelect": {
       "prompt": "Passiversatzform olan iki yapıyı seç.",
@@ -424,13 +476,23 @@
         "eine Entscheidung machen",
         "eine Entscheidung tun"
       ],
-      "correctAnswer": "eine Entscheidung treffen"
+      "correctAnswer": "eine Entscheidung treffen",
+      "masteryQuestionId": "5fab1edd7f3c3635",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir müssen zusätzliche Maßnahmen ___.",
       "answer": "ergreifen",
       "acceptedAnswers": [
         "ergreifen"
+      ],
+      "masteryQuestionId": "d8b7ee0bb9018c52",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
       ]
     },
     "ordering": {
@@ -448,6 +510,11 @@
       "acceptedAnswers": [
         "Wir sollten auch diese Option in Betracht ziehen",
         "Wir sollten auch diese Option in Betracht ziehen."
+      ],
+      "masteryQuestionId": "47fafe631d31f105",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
       ]
     },
     "dialogue": {
@@ -457,11 +524,21 @@
         "Unser Team macht dafür die Verantwortung.",
         "Unser Team steht die Verantwortung."
       ],
-      "answer": "Unser Team übernimmt dafür die Verantwortung."
+      "answer": "Unser Team übernimmt dafür die Verantwortung.",
+      "masteryQuestionId": "53cc3538c3526bb0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
+      ]
     },
     "trueFalse": {
       "prompt": "Nomen-Verb-Verbindungen özellikle resmî ve mesleki registerda sık kullanılabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "86155cdfe5f8de98",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
+      ]
     },
     "multiSelect": {
       "prompt": "Doğru iki Nomen-Verb-Verbindung seç.",
@@ -585,13 +662,24 @@
         "weil des Kostenanstiegs",
         "durch die Kosten steigen"
       ],
-      "correctAnswer": "wegen des Kostenanstiegs"
+      "correctAnswer": "wegen des Kostenanstiegs",
+      "masteryQuestionId": "a52819a02f1541a3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Vor der ___ des Artikels wurden die Zahlen erneut geprüft. (veröffentlichen)",
       "answer": "Veröffentlichung",
       "acceptedAnswers": [
         "Veröffentlichung"
+      ],
+      "masteryQuestionId": "5f678c3e4bd370fb",
+      "masterySkill": "VOCABULARY",
+      "masteryTags": [
+        "der-die-das",
+        "vocabulary-b2-u04"
       ]
     },
     "ordering": {
@@ -610,6 +698,11 @@
       "acceptedAnswers": [
         "Nach der Prüfung der Daten wurde das Ergebnis veröffentlicht",
         "Nach der Prüfung der Daten wurde das Ergebnis veröffentlicht."
+      ],
+      "masteryQuestionId": "6f1b9dfa9b090641",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
       ]
     },
     "dialogue": {
@@ -619,11 +712,21 @@
         "Nach die Überprüfung wurden Fehler entdecken.",
         "Wegen überprüften Originaldaten Fehler."
       ],
-      "answer": "Nach der Überprüfung der Originaldaten wurden mehrere Fehler entdeckt."
+      "answer": "Nach der Überprüfung der Originaldaten wurden mehrere Fehler entdeckt.",
+      "masteryQuestionId": "13aed32ed0d2a5ac",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
+      ]
     },
     "trueFalse": {
       "prompt": "Verbalisierung kann einen sehr nominalen Satz verständlicher und dynamischer machen.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "1c609b7a2c7959a5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
+      ]
     },
     "multiSelect": {
       "prompt": "Nominalisierung örneği olan iki ifadeyi seç.",
@@ -747,13 +850,23 @@
         "die veröffentlichenden Ergebnisse",
         "die Ergebnisse veröffentlichen"
       ],
-      "correctAnswer": "die veröffentlichten Ergebnisse"
+      "correctAnswer": "die veröffentlichten Ergebnisse",
+      "masteryQuestionId": "5c63a829ff94dbbd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die in der Studie ___ Daten sind öffentlich zugänglich. (erheben)",
       "answer": "erhobenen",
       "acceptedAnswers": [
         "erhobenen"
+      ],
+      "masteryQuestionId": "87d1b0c9174e0b53",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
       ]
     },
     "ordering": {
@@ -772,6 +885,11 @@
       "acceptedAnswers": [
         "Der beobachtete Effekt ist noch nicht eindeutig erklärt",
         "Der beobachtete Effekt ist noch nicht eindeutig erklärt."
+      ],
+      "masteryQuestionId": "3f5a6f0f75bc397b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
       ]
     },
     "dialogue": {
@@ -781,11 +899,21 @@
         "Nein, die erhebenden Daten beweisen automatisch nicht.",
         "Nein, erhoben Daten ist Zusammenhang."
       ],
-      "answer": "Nein, die erhobenen Daten deuten nur auf einen möglichen Zusammenhang hin."
+      "answer": "Nein, die erhobenen Daten deuten nur auf einen möglichen Zusammenhang hin.",
+      "masteryQuestionId": "10430c1ff36c1c7d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
+      ]
     },
     "trueFalse": {
       "prompt": "Partizip I kann eine laufende oder aktive Eigenschaft ausdrücken.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "58e63bfe0a0cc70f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
+      ]
     },
     "multiSelect": {
       "prompt": "Doğru iki Partizipli sıfat grubunu seç.",
@@ -909,13 +1037,23 @@
         "Das muss verboten sein.",
         "Das soll müssen stimmen."
       ],
-      "correctAnswer": "Das dürfte stimmen."
+      "correctAnswer": "Das dürfte stimmen.",
+      "masteryQuestionId": "64d1e3bc16fa3352",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Werte ___ durch den milden Winter beeinflusst worden sein. (güçlü çıkarım)",
       "answer": "müssen",
       "acceptedAnswers": [
         "müssen"
+      ],
+      "masteryQuestionId": "4caea3f8c790f470",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
       ]
     },
     "ordering": {
@@ -934,6 +1072,11 @@
       "acceptedAnswers": [
         "Die neue Maßnahme dürfte wirksam sein",
         "Die neue Maßnahme dürfte wirksam sein."
+      ],
+      "masteryQuestionId": "6a90e6f4e7adb242",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
       ]
     },
     "dialogue": {
@@ -943,11 +1086,21 @@
         "Noch nicht. Sie müssen laut Anbieter soll sein.",
         "Noch nicht. Sie wollen Anbieter gesunken."
       ],
-      "answer": "Noch nicht. Sie sollen laut Anbieter deutlich höher ausgefallen sein."
+      "answer": "Noch nicht. Sie sollen laut Anbieter deutlich höher ausgefallen sein.",
+      "masteryQuestionId": "e007cb1d493adac2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
+      ]
     },
     "trueFalse": {
       "prompt": "“Das dürfte stimmen” drückt typischerweise eine Wahrscheinlichkeitsbewertung aus.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "5c9f8e8f73d981d3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
+      ]
     },
     "multiSelect": {
       "prompt": "Kaynak/olasılık mesafesi gösterebilen iki kullanım seç.",
@@ -1071,13 +1224,23 @@
         "Von wem hängt das Ding ab?",
         "Woran hängt von das?"
       ],
-      "correctAnswer": "Wovon hängt das ab?"
+      "correctAnswer": "Wovon hängt das ab?",
+      "masteryQuestionId": "0c8cc80706002597",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u07"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir sprechen über die Gesamtkosten. Wir sprechen ___ morgen ausführlicher.",
       "answer": "darüber",
       "acceptedAnswers": [
         "darüber"
+      ],
+      "masteryQuestionId": "915c25d577e8421e",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b2-u07"
       ]
     },
     "ordering": {
@@ -1096,6 +1259,11 @@
       "acceptedAnswers": [
         "Damit werden wir uns später beschäftigen",
         "Damit werden wir uns später beschäftigen."
+      ],
+      "masteryQuestionId": "f54bce3f2fdc8f3a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u07"
       ]
     },
     "dialogue": {
@@ -1105,11 +1273,22 @@
         "Auf das, wie hoch Kosten sind darauf.",
         "Worauf ich achte mit der Person."
       ],
-      "answer": "Darauf, wie hoch die Gesamtkosten und die Kündigungsfristen sind."
+      "answer": "Darauf, wie hoch die Gesamtkosten und die Kündigungsfristen sind.",
+      "masteryQuestionId": "e8d00ded13fba97a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u07"
+      ]
     },
     "trueFalse": {
       "prompt": "“darüber” kann auf eine zuvor genannte Sache mit der Präposition über verweisen.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "38be42729b9a3c27",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "praepositionen",
+        "grammar-b2-u07"
+      ]
     },
     "multiSelect": {
       "prompt": "Doğru iki Präpositionaladverb seç.",
@@ -1233,13 +1412,23 @@
         "jemand Teilnehmenden",
         "man der Teilnehmenden"
       ],
-      "correctAnswer": "einige der Teilnehmenden"
+      "correctAnswer": "einige der Teilnehmenden",
+      "masteryQuestionId": "86bb1d7820bcd22a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ der Befragten nannten bezahlbaren Wohnraum als Priorität. (birkaç/bazıları)",
       "answer": "Einige",
       "acceptedAnswers": [
         "Einige"
+      ],
+      "masteryQuestionId": "e46c2e8cdf0be38e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
       ]
     },
     "ordering": {
@@ -1258,6 +1447,11 @@
       "acceptedAnswers": [
         "Niemand bleibt von dieser Veränderung völlig unberührt",
         "Niemand bleibt von dieser Veränderung völlig unberührt."
+      ],
+      "masteryQuestionId": "c22b896188dc0ecd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
       ]
     },
     "dialogue": {
@@ -1267,11 +1461,21 @@
         "Nein, jemand stärker alle.",
         "Nein, man niemand Gemeinden."
       ],
-      "answer": "Nein, manche stärker als andere."
+      "answer": "Nein, manche stärker als andere.",
+      "masteryQuestionId": "a9ad675d5c33a59d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
+      ]
     },
     "trueFalse": {
       "prompt": "“manche” kann zeigen, dass eine Aussage nur für einen Teil einer Gruppe gilt.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "c3f42c4c3910eb0f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
+      ]
     },
     "multiSelect": {
       "prompt": "Belirsiz grup/miktar bildiren iki ifade seç.",
@@ -1395,13 +1599,23 @@
         "Es regnet seit gestern.",
         "Es gibt zwei Bahnhöfe."
       ],
-      "correctAnswer": "Ich finde es sinnvoll, den Takt zu erhöhen."
+      "correctAnswer": "Ich finde es sinnvoll, den Takt zu erhöhen.",
+      "masteryQuestionId": "6292ec7a95c8eb4a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u09"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ geht darum, den öffentlichen Raum besser zu nutzen.",
       "answer": "Es",
       "acceptedAnswers": [
         "Es"
+      ],
+      "masteryQuestionId": "9a32164f31ee6ba8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u09"
       ]
     },
     "ordering": {
@@ -1419,6 +1633,11 @@
       "acceptedAnswers": [
         "Es wäre sinnvoll, diese Lösung zu testen",
         "Es wäre sinnvoll, diese Lösung zu testen."
+      ],
+      "masteryQuestionId": "53e21834fd5a6585",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u09"
       ]
     },
     "dialogue": {
@@ -1428,11 +1647,22 @@
         "Es darum geht den Platz gestaltet.",
         "Es ist Platz um barrierefrei."
       ],
-      "answer": "Es geht darum, den Platz barrierefreier zu gestalten."
+      "answer": "Es geht darum, den Platz barrierefreier zu gestalten.",
+      "masteryQuestionId": "4d37e7b6b4f3cca1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u09"
+      ]
     },
     "trueFalse": {
       "prompt": "“Es wird diskutiert” kann als unpersönliche Passivkonstruktion verwendet werden.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "d2d5ad8b656380ca",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "grammar-b2-u09"
+      ]
     },
     "multiSelect": {
       "prompt": "Sabit es yapısı olan iki ifadeyi seç.",
@@ -1556,13 +1786,23 @@
         "Alle profitieren davon nicht unbedingt immer gar.",
         "Kein alle profitieren."
       ],
-      "correctAnswer": "Nicht alle profitieren davon."
+      "correctAnswer": "Nicht alle profitieren davon.",
+      "masteryQuestionId": "29dd2b6c7c6a019d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Maßnahme ist ___ für jede Person geeignet.",
       "answer": "nicht unbedingt",
       "acceptedAnswers": [
         "nicht unbedingt"
+      ],
+      "masteryQuestionId": "49a12d18db5fd594",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
       ]
     },
     "ordering": {
@@ -1580,6 +1820,11 @@
       "acceptedAnswers": [
         "Diese Methode ist keineswegs risikofrei",
         "Diese Methode ist keineswegs risikofrei."
+      ],
+      "masteryQuestionId": "da283fc4168f5aef",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
       ]
     },
     "dialogue": {
@@ -1589,11 +1834,21 @@
         "Nein, kein alle profitieren gleich.",
         "Nein, alle nicht gleiche profitieren."
       ],
-      "answer": "Nein, nicht alle profitieren in gleicher Weise davon."
+      "answer": "Nein, nicht alle profitieren in gleicher Weise davon.",
+      "masteryQuestionId": "4f5ce71aaeb0a0cb",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
+      ]
     },
     "trueFalse": {
       "prompt": "“kaum” kann eine sehr geringe Menge oder Veränderung ausdrücken.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "1c5e879eb74bc91e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
+      ]
     },
     "multiSelect": {
       "prompt": "Güçlü veya kısmi olumsuzluk bildiren iki ifadeyi seç.",
@@ -1717,13 +1972,23 @@
         "Die Regisseurin hat im Kino den Film wegen der Premiere gestern dem Publikum gezeigt.",
         "Den Film hat gestern im Kino wegen der Premiere dem Publikum Regisseurin."
       ],
-      "correctAnswer": "Die Regisseurin hat dem Publikum gestern wegen der Premiere im Kino den Film gezeigt."
+      "correctAnswer": "Die Regisseurin hat dem Publikum gestern wegen der Premiere im Kino den Film gezeigt.",
+      "masteryQuestionId": "8e1c8169271e4fcc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Jury hat ___ den Preis gestern überreicht. (ona)",
       "answer": "ihm",
       "acceptedAnswers": [
         "ihm"
+      ],
+      "masteryQuestionId": "268f27efd903ab5c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
       ]
     },
     "ordering": {
@@ -1742,6 +2007,11 @@
       "acceptedAnswers": [
         "Der Regisseur hat dem Publikum gestern den neuen Film vorgestellt",
         "Der Regisseur hat dem Publikum gestern den neuen Film vorgestellt."
+      ],
+      "masteryQuestionId": "268ea404fc960abd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
       ]
     },
     "dialogue": {
@@ -1751,11 +2021,21 @@
         "Ich würde wegen ruhige ihn Zuschauer empfehlen vor allem.",
         "Ich ihn würde Zuschauer wegen empfehlen."
       ],
-      "answer": "Ich würde ihn wegen seiner ruhigen Erzählweise vor allem geduldigen Zuschauern empfehlen."
+      "answer": "Ich würde ihn wegen seiner ruhigen Erzählweise vor allem geduldigen Zuschauern empfehlen.",
+      "masteryQuestionId": "2bcee33ddb64700a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
+      ]
     },
     "trueFalse": {
       "prompt": "Zamirler Mittelfeld’de çoğu zaman uzun isim gruplarından önce gelir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "b78e9023879fc437",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
+      ]
     },
     "multiSelect": {
       "prompt": "Mittelfeld sırasını etkileyebilen iki unsur seç.",
@@ -1879,13 +2159,23 @@
         "Anspruch an eine Auskunft",
         "Anspruch mit einer Auskunft"
       ],
-      "correctAnswer": "Anspruch auf eine Auskunft"
+      "correctAnswer": "Anspruch auf eine Auskunft",
+      "masteryQuestionId": "fc8db86594405e5e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u12"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Abteilung ist ___ die Genehmigung zuständig.",
       "answer": "für",
       "acceptedAnswers": [
         "für"
+      ],
+      "masteryQuestionId": "44c82d53a54e0e3d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u12"
       ]
     },
     "ordering": {
@@ -1904,6 +2194,11 @@
       "acceptedAnswers": [
         "Es bestehen Zweifel an der Richtigkeit der Entscheidung",
         "Es bestehen Zweifel an der Richtigkeit der Entscheidung."
+      ],
+      "masteryQuestionId": "68e81237eaca4d2e",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b2-u12"
       ]
     },
     "dialogue": {
@@ -1913,11 +2208,22 @@
         "Das hängt auf welcher Rechtsgrundlage an.",
         "Das ist zuständig von Grundlage."
       ],
-      "answer": "Das hängt davon ab, auf welcher Rechtsgrundlage der Antrag beruht."
+      "answer": "Das hängt davon ab, auf welcher Rechtsgrundlage der Antrag beruht.",
+      "masteryQuestionId": "df24e4654073caa5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u12"
+      ]
     },
     "trueFalse": {
       "prompt": "“abhängig von” verlangt typischerweise den Dativ.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "177494ab5530d4b3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "dativ",
+        "grammar-b2-u12"
+      ]
     },
     "multiSelect": {
       "prompt": "Doğru iki edatlı kalıbı seç.",
@@ -2041,13 +2347,23 @@
         "sowohl ... als auch",
         "weder ... noch"
       ],
-      "correctAnswer": "zwar ... aber"
+      "correctAnswer": "zwar ... aber",
+      "masteryQuestionId": "ae0146f9c9505994",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Das System ist zwar schnell, ___ nicht immer nachvollziehbar.",
       "answer": "aber",
       "acceptedAnswers": [
         "aber"
+      ],
+      "masteryQuestionId": "c77eff2b33202899",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
       ]
     },
     "ordering": {
@@ -2066,6 +2382,11 @@
       "acceptedAnswers": [
         "Das System sollte nicht nur schnell, sondern auch transparent sein",
         "Das System sollte nicht nur schnell, sondern auch transparent sein."
+      ],
+      "masteryQuestionId": "d695210b22608830",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
       ]
     },
     "dialogue": {
@@ -2075,11 +2396,21 @@
         "Einerseits Chancen, und andererseits muss Risiken.",
         "Zwar einerseits, sondern auch Risiko."
       ],
-      "answer": "Einerseits bietet sie Chancen, andererseits müssen die Risiken kontrolliert werden."
+      "answer": "Einerseits bietet sie Chancen, andererseits müssen die Risiken kontrolliert werden.",
+      "masteryQuestionId": "32831d81f6872838",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
+      ]
     },
     "trueFalse": {
       "prompt": "“nicht nur ... sondern auch” verstärkt eine zusätzliche Information.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "9cb96d3ee5acc446",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
+      ]
     },
     "multiSelect": {
       "prompt": "Karşıt iki yönü düzenleyebilen iki yapı seç.",
@@ -2203,13 +2534,23 @@
         "um ... zu",
         "statt ... zu"
       ],
-      "correctAnswer": "damit"
+      "correctAnswer": "damit",
+      "masteryQuestionId": "471e5be3c0f1d3e2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich schicke die Grafik, ___ Sie die Entwicklung besser nachvollziehen können.",
       "answer": "damit",
       "acceptedAnswers": [
         "damit"
+      ],
+      "masteryQuestionId": "0abcdd3ede3529c5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
       ]
     },
     "ordering": {
@@ -2228,6 +2569,11 @@
       "acceptedAnswers": [
         "Ich schicke Ihnen den Link, damit Sie die Quelle überprüfen können",
         "Ich schicke Ihnen den Link, damit Sie die Quelle überprüfen können."
+      ],
+      "masteryQuestionId": "9056fdefe77a0822",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
       ]
     },
     "dialogue": {
@@ -2237,11 +2583,21 @@
         "Damit ich zu machen die Argumentation.",
         "Ohne dass Argumentation machen."
       ],
-      "answer": "Um die Argumentation klarer und nachvollziehbarer zu machen."
+      "answer": "Um die Argumentation klarer und nachvollziehbarer zu machen.",
+      "masteryQuestionId": "ac4f77c827729e89",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
+      ]
     },
     "trueFalse": {
       "prompt": "“ohne dass” kann auch verwendet werden, wenn Haupt- und Nebensatz unterschiedliche Subjekte haben.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "f1df2c1cee6f3d65",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
+      ]
     },
     "multiSelect": {
       "prompt": "Aynı özneyle Infinitivsatz kuran iki yapı seç.",
@@ -2365,13 +2721,23 @@
         "obwohl man nachfragt",
         "seitdem man nachfragt"
       ],
-      "correctAnswer": "indem man nachfragt"
+      "correctAnswer": "indem man nachfragt",
+      "masteryQuestionId": "e0dd45f5fec9cff4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Er spricht, als ___ er die Entscheidung allein getroffen hätte.",
       "answer": "ob",
       "acceptedAnswers": [
         "ob"
+      ],
+      "masteryQuestionId": "1da37cafd7d94bdf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
       ]
     },
     "ordering": {
@@ -2390,6 +2756,11 @@
       "acceptedAnswers": [
         "Er erklärte das Problem, ohne dass er jemanden beschuldigte",
         "Er erklärte das Problem, ohne dass er jemanden beschuldigte."
+      ],
+      "masteryQuestionId": "5949fcc371a8a596",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
       ]
     },
     "dialogue": {
@@ -2399,11 +2770,21 @@
         "Weil wir zuerst wie gemeint fragen.",
         "Als ob wir fragen und klären."
       ],
-      "answer": "Indem wir zuerst fragen, wie die Aussage gemeint war."
+      "answer": "Indem wir zuerst fragen, wie die Aussage gemeint war.",
+      "masteryQuestionId": "56b69fa552c2f651",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
+      ]
     },
     "trueFalse": {
       "prompt": "“als ob” kann einen nur angenommenen oder scheinbaren Vergleich ausdrücken.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "8f34af9c631f2ce4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
+      ]
     },
     "multiSelect": {
       "prompt": "Modal ilişki kuran iki yapı seç.",
@@ -2527,13 +2908,23 @@
         "die Studie, dessen Ergebnisse umstritten sind",
         "die Studie, die Ergebnisse deren umstritten"
       ],
-      "correctAnswer": "die Studie, deren Ergebnisse umstritten sind"
+      "correctAnswer": "die Studie, deren Ergebnisse umstritten sind",
+      "masteryQuestionId": "aef1d57289d4b3a0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Autor, ___ These wir diskutieren, nimmt später teil.",
       "answer": "dessen",
       "acceptedAnswers": [
         "dessen"
+      ],
+      "masteryQuestionId": "02bb0fffb5142bb8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
       ]
     },
     "ordering": {
@@ -2551,6 +2942,11 @@
       "acceptedAnswers": [
         "Der Bericht, dessen Daten transparent sind, ist überzeugender",
         "Der Bericht, dessen Daten transparent sind, ist überzeugender."
+      ],
+      "masteryQuestionId": "c63e87185b2774d3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
       ]
     },
     "dialogue": {
@@ -2560,11 +2956,21 @@
         "Ja, dessen beide Seiten fordern Transparenz.",
         "Ja, was beide der Transparenz."
       ],
-      "answer": "Ja, das, was beide Seiten fordern, ist mehr Transparenz."
+      "answer": "Ja, das, was beide Seiten fordern, ist mehr Transparenz.",
+      "masteryQuestionId": "a894c062430221da",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
+      ]
     },
     "trueFalse": {
       "prompt": "“deren” kann Besitz/Zugehörigkeit bei femininem oder pluralem Bezugswort ausdrücken.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "e25166f116bb251f",
+      "masterySkill": "VOCABULARY",
+      "masteryTags": [
+        "vocabulary-b2-u16"
+      ]
     },
     "multiSelect": {
       "prompt": "Gelişmiş Relativsatz biçimi olan iki öğeyi seç.",
@@ -2688,7 +3094,12 @@
         "Als ob höher der Wert deshalb.",
         "Wegen höher desto Wert."
       ],
-      "correctAnswer": "Je höher der Wert ist, desto größer ist der Unterschied."
+      "correctAnswer": "Je höher der Wert ist, desto größer ist der Unterschied.",
+      "masteryQuestionId": "85edcfbd64a98981",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Je länger der Zeitraum ist, ___ klarer wird der Trend.",
@@ -2696,6 +3107,11 @@
       "acceptedAnswers": [
         "desto",
         "umso"
+      ],
+      "masteryQuestionId": "5797a5c01af67a38",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
       ]
     },
     "ordering": {
@@ -2713,6 +3129,11 @@
       "acceptedAnswers": [
         "Je höher der Preis steigt, desto geringer wird die Nachfrage",
         "Je höher der Preis steigt, desto geringer wird die Nachfrage."
+      ],
+      "masteryQuestionId": "4cc8e1e6f7b20970",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
       ]
     },
     "dialogue": {
@@ -2722,11 +3143,21 @@
         "Nein, als ob die Ursache ist eindeutig.",
         "Nein, je Grafik Ursache."
       ],
-      "answer": "Nein, sie sieht nur so aus, als ob beide Entwicklungen direkt zusammenhingen."
+      "answer": "Nein, sie sieht nur so aus, als ob beide Entwicklungen direkt zusammenhingen.",
+      "masteryQuestionId": "85d7801a12e3d740",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
+      ]
     },
     "trueFalse": {
       "prompt": "je ... desto kann eine parallele Veränderung ausdrücken, ohne automatisch Kausalität zu beweisen.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "6beb5c5b40ac283f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
+      ]
     },
     "multiSelect": {
       "prompt": "Grafik yorumunda yararlı iki karşılaştırma yapısını seç.",
@@ -2850,7 +3281,12 @@
         "dagegen",
         "jedoch"
       ],
-      "correctAnswer": "wohingegen"
+      "correctAnswer": "wohingegen",
+      "masteryQuestionId": "05c5c807f2f66ddd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Team A will sofort starten, ___ Team B zunächst testen möchte.",
@@ -2858,6 +3294,11 @@
       "acceptedAnswers": [
         "wohingegen",
         "während"
+      ],
+      "masteryQuestionId": "0df6313be1735042",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
       ]
     },
     "ordering": {
@@ -2876,6 +3317,11 @@
       "acceptedAnswers": [
         "Während die eine Seite Tempo fordert, priorisiert die andere Sicherheit",
         "Während die eine Seite Tempo fordert, priorisiert die andere Sicherheit."
+      ],
+      "masteryQuestionId": "d84f9e0730eeaa12",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
       ]
     },
     "dialogue": {
@@ -2885,11 +3331,21 @@
         "Team A hingegen weil Termin und Team B.",
         "Während Team A, dagegen Qualität ohne Verb."
       ],
-      "answer": "Team A priorisiert den Termin, Team B hingegen die Qualitätssicherung."
+      "answer": "Team A priorisiert den Termin, Team B hingegen die Qualitätssicherung.",
+      "masteryQuestionId": "42587694e7eb83b3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
+      ]
     },
     "trueFalse": {
       "prompt": "“hingegen” kann zwei Hauptaussagen kontrastiv miteinander verbinden.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "768b8411f0ba29c7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
+      ]
     },
     "multiSelect": {
       "prompt": "Adversativ işlevli iki bağlayıcı seç.",
@@ -3013,13 +3469,23 @@
         "seit gestern",
         "trotzdem weil"
       ],
-      "correctAnswer": "anders gesagt"
+      "correctAnswer": "anders gesagt",
+      "masteryQuestionId": "2ff55ab1fda63374",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ gesagt betrifft die Regel nur neue Anträge.",
       "answer": "Genauer",
       "acceptedAnswers": [
         "Genauer"
+      ],
+      "masteryQuestionId": "d7ecc1c6ca4ea7b1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
       ]
     },
     "ordering": {
@@ -3038,6 +3504,11 @@
       "acceptedAnswers": [
         "Anders gesagt sollten wir nur die wichtigsten Informationen vermitteln",
         "Anders gesagt sollten wir nur die wichtigsten Informationen vermitteln."
+      ],
+      "masteryQuestionId": "6ff4d6b29f8818b7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
       ]
     },
     "dialogue": {
@@ -3047,11 +3518,21 @@
         "Anders gesagt neue Regel zukünftige.",
         "Dagegen gesagt weil Regel."
       ],
-      "answer": "Anders gesagt gilt die neue Regel nur für zukünftige Fälle."
+      "answer": "Anders gesagt gilt die neue Regel nur für zukünftige Fälle.",
+      "masteryQuestionId": "030c9379b4e7d5d4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
+      ]
     },
     "trueFalse": {
       "prompt": "Mediation bedeutet, relevante Informationen zuverlässig für andere zugänglich zu machen, ohne neue Fakten zu erfinden.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "107210b45cdf822f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
+      ]
     },
     "multiSelect": {
       "prompt": "Kohäsion/reformülasyona katkı sunan iki ifade seç.",
@@ -3175,13 +3656,23 @@
         "Die Lösung ist gut, Punkt.",
         "Alles ist kompliziert und deshalb egal."
       ],
-      "correctAnswer": "Einerseits bietet die Lösung klare Vorteile, andererseits bleiben Kosten und Zugänglichkeit kritisch zu prüfen."
+      "correctAnswer": "Einerseits bietet die Lösung klare Vorteile, andererseits bleiben Kosten und Zugänglichkeit kritisch zu prüfen.",
+      "masteryQuestionId": "cb38d5b18b25b1cc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Insgesamt halte ich diese Lösung ___ überzeugender.",
       "answer": "für",
       "acceptedAnswers": [
         "für"
+      ],
+      "masteryQuestionId": "62555ce4145b4780",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
       ]
     },
     "ordering": {
@@ -3200,6 +3691,11 @@
       "acceptedAnswers": [
         "Insgesamt überwiegen die Vorteile, die Risiken sollten jedoch nicht außer Acht gelassen werden",
         "Insgesamt überwiegen die Vorteile, die Risiken sollten jedoch nicht außer Acht gelassen werden."
+      ],
+      "masteryQuestionId": "be38e19021890084",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
       ]
     },
     "dialogue": {
@@ -3209,11 +3705,22 @@
         "Ich Fazit Test weil besser.",
         "Begrenzt Test, daher alles gut."
       ],
-      "answer": "Ich würde einen begrenzten Test empfehlen, weil er Nutzen und Risiken besser überprüfbar macht."
+      "answer": "Ich würde einen begrenzten Test empfehlen, weil er Nutzen und Risiken besser überprüfbar macht.",
+      "masteryQuestionId": "a4c0a41f6ce30f61",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
+      ]
     },
     "trueFalse": {
       "prompt": "B2 verlangt neben sprachlicher Richtigkeit auch klare Argumentstruktur und adressatengerechten Register.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "d8c1f843c0c17c24",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "sprechen-argumentation",
+        "grammar-b2-u20"
+      ]
     },
     "multiSelect": {
       "prompt": "B2 bağımsız iletişimin iki temel özelliğini seç.",

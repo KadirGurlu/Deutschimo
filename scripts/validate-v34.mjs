@@ -1,6 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// V37_VERSION_COMPAT_34: legacy content validator accepts later package majors.
+const __legacyVersionCompatible = (value) => {
+  const major = Number(String(value ?? "").split(".")[0]);
+  return Number.isFinite(major) && major >= 34;
+};
+
 const root = process.cwd();
 const errors = [];
 const warnings = [];

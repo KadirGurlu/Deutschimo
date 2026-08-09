@@ -1,5 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
+// V37_VERSION_COMPAT_35: legacy content validator accepts later package majors.
+const __legacyVersionCompatible = (value) => {
+  const major = Number(String(value ?? "").split(".")[0]);
+  return Number.isFinite(major) && major >= 35;
+};
+
 const root=process.cwd(), errors=[], warnings=[];
 const read=(p)=>fs.readFileSync(path.join(root,p),"utf8");
 const req=(p)=>{if(!fs.existsSync(path.join(root,p)))errors.push(`Eksik dosya: ${p}`);};

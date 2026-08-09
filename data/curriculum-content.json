@@ -75,13 +75,23 @@
         "Wie heißen Sie?",
         "Wo wohnen Sie?"
       ],
-      "correctAnswer": "Wie heißen Sie?"
+      "correctAnswer": "Wie heißen Sie?",
+      "masteryQuestionId": "7b0866604cec7e6e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich ___ Lukas.",
       "answer": "heiße",
       "acceptedAnswers": [
         "heiße"
+      ],
+      "masteryQuestionId": "58c5943f4196db8a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
       ]
     },
     "ordering": {
@@ -99,6 +109,11 @@
       "acceptedAnswers": [
         "Ich wohne in Istanbul",
         "Ich wohne in Istanbul."
+      ],
+      "masteryQuestionId": "06d1c891a540a8dc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
       ]
     },
     "dialogue": {
@@ -108,11 +123,21 @@
         "Guten Abend.",
         "Ich komme morgen."
       ],
-      "answer": "Ich heiße Lukas."
+      "answer": "Ich heiße Lukas.",
+      "masteryQuestionId": "69b1167e8c394c3f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
+      ]
     },
     "trueFalse": {
       "prompt": "‘Ich bin Lukas.’ cümlesinde bin, sein fiilinin ich çekimidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "d32beb20467b73ee",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u01"
+      ]
     },
     "multiSelect": {
       "prompt": "Selamlaşma veya vedalaşma ifadesi olan iki seçeneği işaretle.",
@@ -209,13 +234,23 @@
         "Was bist du von Beruf?",
         "Woher kommst du?"
       ],
-      "correctAnswer": "Was bist du von Beruf?"
+      "correctAnswer": "Was bist du von Beruf?",
+      "masteryQuestionId": "97049764cddf19ad",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u02"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Du ___ in Berlin. (arbeiten)",
       "answer": "arbeitest",
       "acceptedAnswers": [
         "arbeitest"
+      ],
+      "masteryQuestionId": "181139524ce2d8ed",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u02"
       ]
     },
     "ordering": {
@@ -233,6 +268,11 @@
       "answer": "Ich studiere Informatik",
       "acceptedAnswers": [
         "Ich studiere Informatik"
+      ],
+      "masteryQuestionId": "b565841854bf002a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u02"
       ]
     },
     "dialogue": {
@@ -242,11 +282,21 @@
         "Ich bin 22 Jahre alt.",
         "Ich wohne in Köln."
       ],
-      "answer": "Ich bin Lehrer."
+      "answer": "Ich bin Lehrer.",
+      "masteryQuestionId": "d7c3f903d85e3e77",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u02"
+      ]
     },
     "trueFalse": {
       "prompt": "‘Du hast eine E-Mail-Adresse.’ cümlesinde hast, haben fiilinin du çekimidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "041de70d214e5353",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-a1-u02"
+      ]
     },
     "multiSelect": {
       "prompt": "Kişisel bilgi belirtmek için kullanılabilecek iki ifadeyi seç.",
@@ -335,13 +385,23 @@
         "Gehen Sie zurück.",
         "Kommen Sie morgen."
       ],
-      "correctAnswer": "Gehen Sie geradeaus."
+      "correctAnswer": "Gehen Sie geradeaus.",
+      "masteryQuestionId": "7f97c0bebe6e83e6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Es gibt hier ___ Park.",
       "answer": "einen",
       "acceptedAnswers": [
         "einen"
+      ],
+      "masteryQuestionId": "aa2f4dd0b194b650",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
       ]
     },
     "ordering": {
@@ -359,6 +419,11 @@
       "answer": "Wo ist der Bahnhof",
       "acceptedAnswers": [
         "Wo ist der Bahnhof"
+      ],
+      "masteryQuestionId": "05302e2351c69748",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
       ]
     },
     "dialogue": {
@@ -368,11 +433,21 @@
         "Ich heiße Anna.",
         "Zwei Kaffee, bitte."
       ],
-      "answer": "Gehen Sie geradeaus und dann rechts."
+      "answer": "Gehen Sie geradeaus und dann rechts.",
+      "masteryQuestionId": "154064f0d58454b1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
+      ]
     },
     "trueFalse": {
       "prompt": "Wo? sorusu bir yerin konumunu sorar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "0a98c2d1eb4a341b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u03"
+      ]
     },
     "multiSelect": {
       "prompt": "Yön tarifinde kullanılan iki ifadeyi seç.",
@@ -461,13 +536,23 @@
         "Das Menü, bitte.",
         "Guten Appetit."
       ],
-      "correctAnswer": "Die Rechnung, bitte."
+      "correctAnswer": "Die Rechnung, bitte.",
+      "masteryQuestionId": "2e4c551a7e64a1d4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich möchte ___ Kaffee.",
       "answer": "einen",
       "acceptedAnswers": [
         "einen"
+      ],
+      "masteryQuestionId": "1b06ef8fb38d7512",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
       ]
     },
     "ordering": {
@@ -485,6 +570,11 @@
       "answer": "Ich esse kein Fleisch",
       "acceptedAnswers": [
         "Ich esse kein Fleisch"
+      ],
+      "masteryQuestionId": "ea6716203d4d7b28",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
       ]
     },
     "dialogue": {
@@ -494,11 +584,21 @@
         "Ich wohne in Wien.",
         "Bis morgen."
       ],
-      "answer": "Ein Wasser, bitte."
+      "answer": "Ein Wasser, bitte.",
+      "masteryQuestionId": "eb5b4ae34a245941",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
+      ]
     },
     "trueFalse": {
       "prompt": "İsim olumsuzluğunda kein, fiil veya sıfat olumsuzluğunda çoğunlukla nicht kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "badd83c6701f4da2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u04"
+      ]
     },
     "multiSelect": {
       "prompt": "Restoranda kullanılabilecek iki ifadeyi seç.",
@@ -595,13 +695,23 @@
         "Ich schlafe um sechs Uhr.",
         "Ich komme um sechs Uhr an."
       ],
-      "correctAnswer": "Ich stehe um sechs Uhr auf."
+      "correctAnswer": "Ich stehe um sechs Uhr auf.",
+      "masteryQuestionId": "a09bdf673c643ace",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Das ist ___ Bruder. (benim)",
       "answer": "mein",
       "acceptedAnswers": [
         "mein"
+      ],
+      "masteryQuestionId": "1545c3cc77349fdf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
       ]
     },
     "ordering": {
@@ -618,6 +728,11 @@
       "answer": "Meine Mutter ist Lehrerin",
       "acceptedAnswers": [
         "Meine Mutter ist Lehrerin"
+      ],
+      "masteryQuestionId": "e94801eb172be6cf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
       ]
     },
     "dialogue": {
@@ -627,11 +742,21 @@
         "Mit meiner Schwester.",
         "In Ankara."
       ],
-      "answer": "Um sieben Uhr."
+      "answer": "Um sieben Uhr.",
+      "masteryQuestionId": "94793b05c22de965",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
+      ]
     },
     "trueFalse": {
       "prompt": "‘Ich kaufe heute ein.’ cümlesinde ein ön eki cümlenin sonunda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "f9aed2f06c39f258",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u05"
+      ]
     },
     "multiSelect": {
       "prompt": "Aile bireyi veya günlük rutin belirten iki seçeneği işaretle.",
@@ -720,13 +845,23 @@
         "Kommst du aus Samstag?",
         "Willst du Samstag sein?"
       ],
-      "correctAnswer": "Kannst du am Samstag kommen?"
+      "correctAnswer": "Kannst du am Samstag kommen?",
+      "masteryQuestionId": "9414212b3ea3ab6e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir ___ heute tanzen. (wollen)",
       "answer": "wollen",
       "acceptedAnswers": [
         "wollen"
+      ],
+      "masteryQuestionId": "f411f66e01c63b1d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
       ]
     },
     "ordering": {
@@ -744,6 +879,11 @@
       "answer": "Leider habe ich keine Zeit",
       "acceptedAnswers": [
         "Leider habe ich keine Zeit"
+      ],
+      "masteryQuestionId": "44b6f89293bcf7a0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
       ]
     },
     "dialogue": {
@@ -753,11 +893,21 @@
         "Ich bin 22 Jahre alt.",
         "Die Apotheke ist links."
       ],
-      "answer": "Ja, gern. Was machen wir?"
+      "answer": "Ja, gern. Was machen wir?",
+      "masteryQuestionId": "3a9240adb876d8cf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
+      ]
     },
     "trueFalse": {
       "prompt": "Modal fiilli ana cümlede ikinci fiil cümlenin sonunda mastar hâlde bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "7f208f3ce8d4a716",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u06"
+      ]
     },
     "multiSelect": {
       "prompt": "Boş zaman etkinliği olan iki seçeneği işaretle.",
@@ -846,13 +996,23 @@
         "Der Termin ist am drei Uhr.",
         "Der Termin ist von drei Uhr."
       ],
-      "correctAnswer": "Der Termin ist um drei Uhr."
+      "correctAnswer": "Der Termin ist um drei Uhr.",
+      "masteryQuestionId": "4d63901978177517",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich ___ heute arbeiten.",
       "answer": "muss",
       "acceptedAnswers": [
         "muss"
+      ],
+      "masteryQuestionId": "0caab2c778409d8f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
       ]
     },
     "ordering": {
@@ -869,6 +1029,11 @@
       "answer": "Ich arbeite von Montag bis Freitag",
       "acceptedAnswers": [
         "Ich arbeite von Montag bis Freitag"
+      ],
+      "masteryQuestionId": "13df74e44aa573f2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
       ]
     },
     "dialogue": {
@@ -878,11 +1043,22 @@
         "Ich komme aus Ankara.",
         "Ein Kaffee, bitte."
       ],
-      "answer": "Ja, der Termin passt."
+      "answer": "Ja, der Termin passt.",
+      "masteryQuestionId": "6c80cce09f78b660",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u07"
+      ]
     },
     "trueFalse": {
       "prompt": "Saatten önce genellikle um edatı kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "a4e40d87ca25741d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "praepositionen",
+        "grammar-a1-u07"
+      ]
     },
     "multiSelect": {
       "prompt": "Zaman belirten iki ifadeyi seç.",
@@ -971,13 +1147,23 @@
         "Ich bin der Kopf.",
         "Mein Kopf ist trinken."
       ],
-      "correctAnswer": "Mein Kopf tut weh."
+      "correctAnswer": "Mein Kopf tut weh.",
+      "masteryQuestionId": "6d209815d03f643b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Du ___ im Bett bleiben. (sollen)",
       "answer": "sollst",
       "acceptedAnswers": [
         "sollst"
+      ],
+      "masteryQuestionId": "2c4d2c8bc680fde6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
       ]
     },
     "ordering": {
@@ -995,6 +1181,11 @@
       "answer": "Gute Besserung",
       "acceptedAnswers": [
         "Gute Besserung"
+      ],
+      "masteryQuestionId": "c40c40496c16ddaf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
       ]
     },
     "dialogue": {
@@ -1004,11 +1195,21 @@
         "Ich heiße Murat.",
         "Ich möchte zahlen."
       ],
-      "answer": "Ich habe Bauchschmerzen."
+      "answer": "Ich habe Bauchschmerzen.",
+      "masteryQuestionId": "b2b2ca78476bb23f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
+      ]
     },
     "trueFalse": {
       "prompt": "Resmî emir cümlesinde fiil başta, Sie ise hemen sonra gelir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "4d8ba210cbf2c293",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u08"
+      ]
     },
     "multiSelect": {
       "prompt": "Sağlık tavsiyesi olan iki seçeneği işaretle.",
@@ -1105,13 +1306,23 @@
         "Das Buch geht auf den Tisch.",
         "Der Tisch liegt im Buch."
       ],
-      "correctAnswer": "Das Buch liegt auf dem Tisch."
+      "correctAnswer": "Das Buch liegt auf dem Tisch.",
+      "masteryQuestionId": "af0ed39261e2e691",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Lampe steht neben ___ Bett.",
       "answer": "dem",
       "acceptedAnswers": [
         "dem"
+      ],
+      "masteryQuestionId": "fedad593240a392b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
       ]
     },
     "ordering": {
@@ -1128,6 +1339,11 @@
       "answer": "Der Schrank steht neben der Tür",
       "acceptedAnswers": [
         "Der Schrank steht neben der Tür"
+      ],
+      "masteryQuestionId": "d1e42e02f93c8b6c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
       ]
     },
     "dialogue": {
@@ -1137,11 +1353,22 @@
         "Er fährt mit dem Bus.",
         "Er ist sehr lecker."
       ],
-      "answer": "Er liegt auf dem Tisch."
+      "answer": "Er liegt auf dem Tisch.",
+      "masteryQuestionId": "339c9879de0da946",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u09"
+      ]
     },
     "trueFalse": {
       "prompt": "‘auf dem Tisch’ ifadesi sabit konum bildirir ve Dativ kullanır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "bd7343b600ec7e3d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "dativ",
+        "grammar-a1-u09"
+      ]
     },
     "multiSelect": {
       "prompt": "Ev eşyası olan iki seçeneği işaretle.",
@@ -1230,13 +1457,23 @@
         "Ich kann die Prüfung sein.",
         "Ich lerne aus der Prüfung."
       ],
-      "correctAnswer": "Ich muss für die Prüfung lernen."
+      "correctAnswer": "Ich muss für die Prüfung lernen.",
+      "masteryQuestionId": "ba726daf1b5c4c38",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich ___ gut programmieren. (können)",
       "answer": "kann",
       "acceptedAnswers": [
         "kann"
+      ],
+      "masteryQuestionId": "1f7c95fc98dd8a0e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
       ]
     },
     "ordering": {
@@ -1254,6 +1491,11 @@
       "answer": "Ich besuche einen Deutschkurs",
       "acceptedAnswers": [
         "Ich besuche einen Deutschkurs"
+      ],
+      "masteryQuestionId": "ada072df080f4b80",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
       ]
     },
     "dialogue": {
@@ -1263,11 +1505,21 @@
         "Um acht Uhr.",
         "Neben der Schule."
       ],
-      "answer": "Ich lerne Deutsch, denn ich möchte in Deutschland studieren."
+      "answer": "Ich lerne Deutsch, denn ich möchte in Deutschland studieren.",
+      "masteryQuestionId": "f53ca0ebb2a900e6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
+      ]
     },
     "trueFalse": {
       "prompt": "denn bağlacından sonra çekimli fiil ana cümledeki gibi ikinci yerde kalır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "454a0ce017112a5c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u10"
+      ]
     },
     "multiSelect": {
       "prompt": "Eğitimle ilgili iki ifadeyi seç.",
@@ -1364,13 +1616,23 @@
         "Ich nehme dieser Pullover.",
         "Ich bin diesen Pullover."
       ],
-      "correctAnswer": "Ich nehme diesen Pullover."
+      "correctAnswer": "Ich nehme diesen Pullover.",
+      "masteryQuestionId": "ee774fcc6c51f562",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wie viel kostet ___ Hemd?",
       "answer": "dieses",
       "acceptedAnswers": [
         "dieses"
+      ],
+      "masteryQuestionId": "9dccf878f7d1264b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
       ]
     },
     "ordering": {
@@ -1387,6 +1649,11 @@
       "answer": "Die Hose passt mir",
       "acceptedAnswers": [
         "Die Hose passt mir"
+      ],
+      "masteryQuestionId": "7b3c144045b25848",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
       ]
     },
     "dialogue": {
@@ -1396,11 +1663,22 @@
         "Um neun Uhr.",
         "Nach Berlin."
       ],
-      "answer": "Größe M, bitte."
+      "answer": "Größe M, bitte.",
+      "masteryQuestionId": "05d7f73fb99b7426",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u11"
+      ]
     },
     "trueFalse": {
       "prompt": "dieser kelimesinin eril Akkusativ biçimi diesen'dir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "08895d056735bece",
+      "masterySkill": "VOCABULARY",
+      "masteryTags": [
+        "akkusativ",
+        "vocabulary-a1-u11"
+      ]
     },
     "multiSelect": {
       "prompt": "Mağazada kullanılabilecek iki ifadeyi seç.",
@@ -1497,13 +1775,23 @@
         "Ich habe gestern nach Berlin fahren.",
         "Ich fahre gestern in Berlin."
       ],
-      "correctAnswer": "Ich bin gestern nach Berlin gefahren."
+      "correctAnswer": "Ich bin gestern nach Berlin gefahren.",
+      "masteryQuestionId": "cf340ed07038113e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir ___ ein Hotel reserviert.",
       "answer": "haben",
       "acceptedAnswers": [
         "haben"
+      ],
+      "masteryQuestionId": "5ab4c219e5719811",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
       ]
     },
     "ordering": {
@@ -1520,6 +1808,11 @@
       "answer": "Ich fahre mit dem Zug",
       "acceptedAnswers": [
         "Ich fahre mit dem Zug"
+      ],
+      "masteryQuestionId": "6465f9196aaa3b3f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
       ]
     },
     "dialogue": {
@@ -1529,11 +1822,22 @@
         "Mit meiner Mutter.",
         "Ein Doppelzimmer."
       ],
-      "answer": "Um 18 Uhr."
+      "answer": "Um 18 Uhr.",
+      "masteryQuestionId": "176df8d12729bafd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a1-u12"
+      ]
     },
     "trueFalse": {
       "prompt": "fahren fiilinin Perfekt biçimi hareket anlamında çoğunlukla sein ile kurulur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "4c4cf40bf83b3d9d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "perfekt",
+        "grammar-a1-u12"
+      ]
     },
     "multiSelect": {
       "prompt": "Seyahatle ilgili iki ifadeyi seç.",
@@ -1630,13 +1934,23 @@
         "Als Kind bin ich sehr schüchtern.",
         "Als Kind hatte ich schüchtern."
       ],
-      "correctAnswer": "Als Kind war ich sehr schüchtern."
+      "correctAnswer": "Als Kind war ich sehr schüchtern.",
+      "masteryQuestionId": "24af1bbdaee00974",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u01"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Früher ___ ich in Ankara. (sein)",
       "answer": "war",
       "acceptedAnswers": [
         "war"
+      ],
+      "masteryQuestionId": "1810935fc58887f6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u01"
       ]
     },
     "ordering": {
@@ -1653,6 +1967,11 @@
       "answer": "Später bin ich nach München umgezogen",
       "acceptedAnswers": [
         "Später bin ich nach München umgezogen"
+      ],
+      "masteryQuestionId": "0c49bdf0ebcce6fc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u01"
       ]
     },
     "dialogue": {
@@ -1662,11 +1981,21 @@
         "Ich wachse morgen auf.",
         "Ich bin zwanzig Jahre."
       ],
-      "answer": "Ich bin in Bursa aufgewachsen."
+      "answer": "Ich bin in Bursa aufgewachsen.",
+      "masteryQuestionId": "a666688d51a5364e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u01"
+      ]
     },
     "trueFalse": {
       "prompt": "sein ve haben fiilleri geçmiş anlatımda çoğunlukla war ve hatte biçimleriyle kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "0ffae0666e73b234",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u01"
+      ]
     },
     "multiSelect": {
       "prompt": "Geçmiş sıralaması kuran iki ifadeyi seç.",
@@ -1755,13 +2084,23 @@
         "Das Bild hängt an der Wand.",
         "Ich stehe an die Wand."
       ],
-      "correctAnswer": "Ich hänge das Bild an die Wand."
+      "correctAnswer": "Ich hänge das Bild an die Wand.",
+      "masteryQuestionId": "12b8593129842fdd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u02"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Tisch steht in ___ Küche.",
       "answer": "der",
       "acceptedAnswers": [
         "der"
+      ],
+      "masteryQuestionId": "07038afab57cf7b4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u02"
       ]
     },
     "ordering": {
@@ -1778,6 +2117,11 @@
       "answer": "Der Karton steht im Flur",
       "acceptedAnswers": [
         "Der Karton steht im Flur"
+      ],
+      "masteryQuestionId": "0644f25aaf286239",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u02"
       ]
     },
     "dialogue": {
@@ -1787,11 +2131,23 @@
         "Die Wohnung ist teuer.",
         "Ich war gestern krank."
       ],
-      "answer": "Klar, gern."
+      "answer": "Klar, gern.",
+      "masteryQuestionId": "00537b0b06498cb0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u02"
+      ]
     },
     "trueFalse": {
       "prompt": "Wohin? sorusunda iki hâlli edatlar çoğunlukla Akkusativ alır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "6632559c47cc7db0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "akkusativ",
+        "praepositionen",
+        "grammar-a2-u02"
+      ]
     },
     "multiSelect": {
       "prompt": "Hareket bildiren iki fiili seç.",
@@ -1880,13 +2236,23 @@
         "Wenn der Zug ist pünktlich, wir kommen um zehn an.",
         "Wenn ist der Zug pünktlich, kommen wir."
       ],
-      "correctAnswer": "Wenn der Zug pünktlich ist, kommen wir um zehn an."
+      "correctAnswer": "Wenn der Zug pünktlich ist, kommen wir um zehn an.",
+      "masteryQuestionId": "ef41a897a7e27ecd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u03"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir ___ morgen ein Hotel buchen.",
       "answer": "werden",
       "acceptedAnswers": [
         "werden"
+      ],
+      "masteryQuestionId": "8d79601d3b56ef94",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u03"
       ]
     },
     "ordering": {
@@ -1903,6 +2269,11 @@
       "answer": "Der Bus ist günstiger als der Zug",
       "acceptedAnswers": [
         "Der Bus ist günstiger als der Zug"
+      ],
+      "masteryQuestionId": "49c64976da5cfd84",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u03"
       ]
     },
     "dialogue": {
@@ -1912,11 +2283,21 @@
         "Seit drei Jahren.",
         "Mit meiner Kollegin."
       ],
-      "answer": "In Frankfurt."
+      "answer": "In Frankfurt.",
+      "masteryQuestionId": "76b8dc2d037d7abc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u03"
+      ]
     },
     "trueFalse": {
       "prompt": "wenn yan cümlesinde çekimli fiil sona gider.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "84fed4fbc9bc5c44",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u03"
+      ]
     },
     "multiSelect": {
       "prompt": "Seyahat planında kullanılan iki ifadeyi seç.",
@@ -2003,13 +2384,23 @@
         "Ich weiß nicht, dass funktioniert das WLAN.",
         "Ich weiß nicht, ob funktioniert das WLAN."
       ],
-      "correctAnswer": "Ich weiß nicht, ob das WLAN funktioniert."
+      "correctAnswer": "Ich weiß nicht, ob das WLAN funktioniert.",
+      "masteryQuestionId": "8f58bc467945fc88",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u04"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Sie sagt, ___ sie später anruft.",
       "answer": "dass",
       "acceptedAnswers": [
         "dass"
+      ],
+      "masteryQuestionId": "767ffe0dc0d91535",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u04"
       ]
     },
     "ordering": {
@@ -2026,6 +2417,11 @@
       "answer": "Ich finde, dass die App sehr praktisch ist",
       "acceptedAnswers": [
         "Ich finde, dass die App sehr praktisch ist"
+      ],
+      "masteryQuestionId": "21e3e9fe27d705ba",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u04"
       ]
     },
     "dialogue": {
@@ -2035,11 +2431,21 @@
         "Nein, ich bin mit dem Zug.",
         "Seit Montag."
       ],
-      "answer": "Ja, ich habe sie gerade gelesen."
+      "answer": "Ja, ich habe sie gerade gelesen.",
+      "masteryQuestionId": "7baeedb48e1c54fb",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u04"
+      ]
     },
     "trueFalse": {
       "prompt": "ob dolaylı evet-hayır sorularında kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "96557237254fb0be",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u04"
+      ]
     },
     "multiSelect": {
       "prompt": "Dijital işlem belirten iki fiili seç.",
@@ -2136,13 +2542,23 @@
         "Diese Methode ist gut als die andere.",
         "Diese Methode ist mehr gut."
       ],
-      "correctAnswer": "Diese Methode ist besser als die andere."
+      "correctAnswer": "Diese Methode ist besser als die andere.",
+      "masteryQuestionId": "035782ee469fefa6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u05"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich lerne täglich, ___ ich Fortschritte machen möchte.",
       "answer": "weil",
       "acceptedAnswers": [
         "weil"
+      ],
+      "masteryQuestionId": "1be78fb10f2c089c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u05"
       ]
     },
     "ordering": {
@@ -2159,6 +2575,11 @@
       "answer": "Diese Methode ist effektiver als die andere",
       "acceptedAnswers": [
         "Diese Methode ist effektiver als die andere"
+      ],
+      "masteryQuestionId": "66e622f8b859bfee",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u05"
       ]
     },
     "dialogue": {
@@ -2168,11 +2589,21 @@
         "In der Apotheke.",
         "Mit dem Flugzeug."
       ],
-      "answer": "Ich schreibe Beispielsätze, weil das hilfreich ist."
+      "answer": "Ich schreibe Beispielsätze, weil das hilfreich ist.",
+      "masteryQuestionId": "a9e3af1d2a5d9077",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u05"
+      ]
     },
     "trueFalse": {
       "prompt": "weil yan cümlesinde çekimli fiil sona gider.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "134f05b35c886cf2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u05"
+      ]
     },
     "multiSelect": {
       "prompt": "Öğrenme stratejisi olan iki seçeneği seç.",
@@ -2269,13 +2700,23 @@
         "Ich bewerbe mir ein Praktikum.",
         "Ich interessiere ein Praktikum."
       ],
-      "correctAnswer": "Ich bewerbe mich um ein Praktikum."
+      "correctAnswer": "Ich bewerbe mich um ein Praktikum.",
+      "masteryQuestionId": "5988d16667585a46",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u06"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich interessiere ___ für diese Stelle.",
       "answer": "mich",
       "acceptedAnswers": [
         "mich"
+      ],
+      "masteryQuestionId": "19caffb9be6de79a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u06"
       ]
     },
     "ordering": {
@@ -2292,6 +2733,11 @@
       "answer": "Ich habe zwei Jahre Erfahrung",
       "acceptedAnswers": [
         "Ich habe zwei Jahre Erfahrung"
+      ],
+      "masteryQuestionId": "25fb193042e5bb8a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u06"
       ]
     },
     "dialogue": {
@@ -2301,11 +2747,21 @@
         "Um halb acht.",
         "Neben dem Bahnhof."
       ],
-      "answer": "Weil mich Ihre Projekte sehr interessieren."
+      "answer": "Weil mich Ihre Projekte sehr interessieren.",
+      "masteryQuestionId": "1c412b7953d9dfc6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u06"
+      ]
     },
     "trueFalse": {
       "prompt": "Dönüşlü zamir özneye göre değişir: ich mich, du dich, Sie sich.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "a680354e4adb8edc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u06"
+      ]
     },
     "multiSelect": {
       "prompt": "Başvuru belgesi olan iki seçeneği seç.",
@@ -2394,13 +2850,23 @@
         "Du sollst du mehr bewegen.",
         "Du solltest mehr bewegt."
       ],
-      "correctAnswer": "Du solltest dich mehr bewegen."
+      "correctAnswer": "Du solltest dich mehr bewegen.",
+      "masteryQuestionId": "065944538fa913d9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u07"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich bin müde, ___ gehe ich früh schlafen.",
       "answer": "deshalb",
       "acceptedAnswers": [
         "deshalb"
+      ],
+      "masteryQuestionId": "b0cbcfeb17fbc42b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u07"
       ]
     },
     "ordering": {
@@ -2417,6 +2883,11 @@
       "answer": "Du solltest weniger Zucker essen",
       "acceptedAnswers": [
         "Du solltest weniger Zucker essen"
+      ],
+      "masteryQuestionId": "ffd25f5db447df72",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u07"
       ]
     },
     "dialogue": {
@@ -2426,11 +2897,21 @@
         "Der Zug fährt um acht.",
         "Ich nehme Größe M."
       ],
-      "answer": "Du solltest abends weniger Kaffee trinken."
+      "answer": "Du solltest abends weniger Kaffee trinken.",
+      "masteryQuestionId": "a72260fb3d4138ec",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u07"
+      ]
     },
     "trueFalse": {
       "prompt": "deshalb bağlacından sonra ana cümlede fiil ikinci ögedir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "a88b380fd26afb8d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u07"
+      ]
     },
     "multiSelect": {
       "prompt": "Sağlıklı alışkanlık olan iki seçeneği seç.",
@@ -2519,13 +3000,23 @@
         "Ich kaufe ein neuer Computer.",
         "Ich kaufe einen neue Computer."
       ],
-      "correctAnswer": "Ich kaufe einen neuen Computer."
+      "correctAnswer": "Ich kaufe einen neuen Computer.",
+      "masteryQuestionId": "e39e635b40d7684a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u08"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Das ist eine ___ Tasche. (praktisch)",
       "answer": "praktische",
       "acceptedAnswers": [
         "praktische"
+      ],
+      "masteryQuestionId": "66dd9c47c7f5c4c1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u08"
       ]
     },
     "ordering": {
@@ -2542,6 +3033,11 @@
       "answer": "Ich suche ein günstiges Handy",
       "acceptedAnswers": [
         "Ich suche ein günstiges Handy"
+      ],
+      "masteryQuestionId": "313752898c45ef53",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u08"
       ]
     },
     "dialogue": {
@@ -2551,11 +3047,21 @@
         "Wo wohnen Sie?",
         "Gute Reise!"
       ],
-      "answer": "Möchten Sie es umtauschen oder zurückgeben?"
+      "answer": "Möchten Sie es umtauschen oder zurückgeben?",
+      "masteryQuestionId": "c877a3bc913f10e8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u08"
+      ]
     },
     "trueFalse": {
       "prompt": "Sıfat isimden önce kullanıldığında çoğunlukla bir çekim eki alır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "eb583bb288df3a27",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u08"
+      ]
     },
     "multiSelect": {
       "prompt": "Alışveriş değerlendirmesi olan iki ifadeyi seç.",
@@ -2644,13 +3150,23 @@
         "als",
         "dass"
       ],
-      "correctAnswer": "wenn"
+      "correctAnswer": "wenn",
+      "masteryQuestionId": "9c508f3c0cceabae",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u09"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ ich 20 wurde, bin ich umgezogen.",
       "answer": "Als",
       "acceptedAnswers": [
         "Als"
+      ],
+      "masteryQuestionId": "03743fd994e99653",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u09"
       ]
     },
     "ordering": {
@@ -2667,6 +3183,11 @@
       "answer": "Die Feier beginnt am Samstag um acht Uhr",
       "acceptedAnswers": [
         "Die Feier beginnt am Samstag um acht Uhr"
+      ],
+      "masteryQuestionId": "b5db0ae15a3a88dd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u09"
       ]
     },
     "dialogue": {
@@ -2676,11 +3197,21 @@
         "Ich habe Kopfschmerzen seit Montag.",
         "Der Bus ist günstiger."
       ],
-      "answer": "Ja, sehr gern. Danke für die Einladung!"
+      "answer": "Ja, sehr gern. Danke für die Einladung!",
+      "masteryQuestionId": "a2e26b07e29d8a17",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u09"
+      ]
     },
     "trueFalse": {
       "prompt": "als geçmişte tek seferlik olaylarda, wenn tekrarlanan olaylarda kullanılabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "8077df5434d1eeb9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u09"
+      ]
     },
     "multiSelect": {
       "prompt": "Davet metninde bulunması gereken iki bilgiyi seç.",
@@ -2767,13 +3298,23 @@
         "Ich fahre Rad, damit ich die Umwelt zu schützen.",
         "Ich fahre Rad, um schützt die Umwelt."
       ],
-      "correctAnswer": "Ich fahre Rad, um die Umwelt zu schützen."
+      "correctAnswer": "Ich fahre Rad, um die Umwelt zu schützen.",
+      "masteryQuestionId": "406178e98f1b9559",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u10"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir kaufen regional, ___ Transportwege kürzer sind.",
       "answer": "damit",
       "acceptedAnswers": [
         "damit"
+      ],
+      "masteryQuestionId": "e594c159642e141d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u10"
       ]
     },
     "ordering": {
@@ -2790,6 +3331,11 @@
       "answer": "Ich schalte das Licht aus, um Energie zu sparen",
       "acceptedAnswers": [
         "Ich schalte das Licht aus, um Energie zu sparen"
+      ],
+      "masteryQuestionId": "b2dc15fd19e794a9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u10"
       ]
     },
     "dialogue": {
@@ -2799,11 +3345,21 @@
         "Seit drei Wochen.",
         "Mit meiner Nachbarin."
       ],
-      "answer": "Um mehr zu recyceln."
+      "answer": "Um mehr zu recyceln.",
+      "masteryQuestionId": "1a57c2aff81cc483",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u10"
+      ]
     },
     "trueFalse": {
       "prompt": "Özne aynıysa amaç anlatımında um... zu kullanılabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "98dc08daeee669e3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u10"
+      ]
     },
     "multiSelect": {
       "prompt": "Çevre dostu iki alışkanlığı seç.",
@@ -2900,13 +3456,23 @@
         "Geben Sie mich bitte das Formular.",
         "Geben mir Sie der Formular."
       ],
-      "correctAnswer": "Geben Sie mir bitte das Formular."
+      "correctAnswer": "Geben Sie mir bitte das Formular.",
+      "masteryQuestionId": "d86bc389e5390ad5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u11"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich gebe ___ Mitarbeiter den Antrag.",
       "answer": "dem",
       "acceptedAnswers": [
         "dem"
+      ],
+      "masteryQuestionId": "bf6af15035ab7f20",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u11"
       ]
     },
     "ordering": {
@@ -2923,6 +3489,11 @@
       "answer": "Muss ich meinen Ausweis zeigen",
       "acceptedAnswers": [
         "Muss ich meinen Ausweis zeigen"
+      ],
+      "masteryQuestionId": "1c884e236dac5c23",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u11"
       ]
     },
     "dialogue": {
@@ -2932,11 +3503,23 @@
         "Mit dem Zug.",
         "Seit gestern Abend."
       ],
-      "answer": "Ja, hier ist es."
+      "answer": "Ja, hier ist es.",
+      "masteryQuestionId": "bd248b6abc4b95f9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u11"
+      ]
     },
     "trueFalse": {
       "prompt": "Kişi Dativ, verilen nesne ise çoğunlukla Akkusativ olur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "3d90fe7d355ed52b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "akkusativ",
+        "dativ",
+        "grammar-a2-u11"
+      ]
     },
     "multiSelect": {
       "prompt": "Resmî işlem için gerekli olabilecek iki şeyi seç.",
@@ -3030,13 +3613,23 @@
         "Ich werde vor regelmäßiger lernen.",
         "Ich habe regelmäßiger lernen vor."
       ],
-      "correctAnswer": "Ich habe vor, regelmäßiger zu lernen."
+      "correctAnswer": "Ich habe vor, regelmäßiger zu lernen.",
+      "masteryQuestionId": "96fc79e0d4cd24ad",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u12"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich ___ morgen meine Bewerbung schicken.",
       "answer": "werde",
       "acceptedAnswers": [
         "werde"
+      ],
+      "masteryQuestionId": "faad0d11f2b830c3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u12"
       ]
     },
     "ordering": {
@@ -3054,6 +3647,11 @@
       "acceptedAnswers": [
         "Nächstes Jahr werde ich eine neue Stelle antreten",
         "Nächstes Jahr werde ich eine neue Stelle antreten."
+      ],
+      "masteryQuestionId": "bad98a392464e6ea",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u12"
       ]
     },
     "dialogue": {
@@ -3063,11 +3661,21 @@
         "Ich war letzte Woche krank.",
         "Die Jacke kostet 50 Euro."
       ],
-      "answer": "Ich habe vor, einen Sprachkurs zu machen."
+      "answer": "Ich habe vor, einen Sprachkurs zu machen.",
+      "masteryQuestionId": "60af0a3a109eb1cb",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u12"
+      ]
     },
     "trueFalse": {
       "prompt": "werden + Infinitiv yapısında ana fiil cümlenin sonunda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "456413c8c164193a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u12"
+      ]
     },
     "multiSelect": {
       "prompt": "Gelecek hedefi belirten iki ifadeyi seç.",
@@ -3164,13 +3772,23 @@
         "Das ist der Film, der ich gesehen habe.",
         "Das ist den Film, den ich gesehen habe."
       ],
-      "correctAnswer": "Das ist der Film, den ich gesehen habe."
+      "correctAnswer": "Das ist der Film, den ich gesehen habe.",
+      "masteryQuestionId": "3879881e691e69e6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u13"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Sängerin, ___ heute auftritt, kommt aus Wien.",
       "answer": "die",
       "acceptedAnswers": [
         "die"
+      ],
+      "masteryQuestionId": "a2616e7d72062838",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u13"
       ]
     },
     "ordering": {
@@ -3187,6 +3805,11 @@
       "answer": "Das ist die Ausstellung, die wir gestern besucht haben",
       "acceptedAnswers": [
         "Das ist die Ausstellung, die wir gestern besucht haben"
+      ],
+      "masteryQuestionId": "a8af84bcb475d56e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u13"
       ]
     },
     "dialogue": {
@@ -3196,11 +3819,22 @@
         "Um acht Uhr morgens.",
         "Seit zwei Jahren."
       ],
-      "answer": "Ja, den neuen Film von Anna Berger."
+      "answer": "Ja, den neuen Film von Anna Berger.",
+      "masteryQuestionId": "450d0c020386571a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u13"
+      ]
     },
     "trueFalse": {
       "prompt": "Akkusativ eril relatif zamir den biçimindedir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "0e48dc61f6695d2d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "akkusativ",
+        "grammar-a2-u13"
+      ]
     },
     "multiSelect": {
       "prompt": "Kültürel etkinlik olan iki seçeneği seç.",
@@ -3297,13 +3931,23 @@
         "Obwohl es ist spät, fahren noch Busse.",
         "Obwohl spät, Busse fahren."
       ],
-      "correctAnswer": "Obwohl es spät ist, fahren noch Busse."
+      "correctAnswer": "Obwohl es spät ist, fahren noch Busse.",
+      "masteryQuestionId": "0fb8ae4c940af7c2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u14"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Obwohl die Miete hoch ___, wohne ich gern hier.",
       "answer": "ist",
       "acceptedAnswers": [
         "ist"
+      ],
+      "masteryQuestionId": "369d194bde2ddc25",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u14"
       ]
     },
     "ordering": {
@@ -3320,6 +3964,11 @@
       "answer": "Obwohl der Zug Verspätung hatte, bin ich pünktlich angekommen",
       "acceptedAnswers": [
         "Obwohl der Zug Verspätung hatte, bin ich pünktlich angekommen"
+      ],
+      "masteryQuestionId": "d804ba0f3bd69128",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u14"
       ]
     },
     "dialogue": {
@@ -3329,11 +3978,21 @@
         "Ich bin 23 Jahre alt.",
         "Die Ausstellung ist kostenlos."
       ],
-      "answer": "Weil die U-Bahn schneller und umweltfreundlicher ist."
+      "answer": "Weil die U-Bahn schneller und umweltfreundlicher ist.",
+      "masteryQuestionId": "3eee6e80b444238a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u14"
+      ]
     },
     "trueFalse": {
       "prompt": "obwohl yan cümlesinde çekimli fiil sonda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "1cc0373e79ff3e8c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u14"
+      ]
     },
     "multiSelect": {
       "prompt": "Şehir ulaşımıyla ilgili iki ifadeyi seç.",
@@ -3430,13 +4089,23 @@
         "Ich versuche, jeden Tag üben.",
         "Ich kann, jeden Tag zu üben."
       ],
-      "correctAnswer": "Ich versuche, jeden Tag zu üben."
+      "correctAnswer": "Ich versuche, jeden Tag zu üben.",
+      "masteryQuestionId": "868174accccceb9a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u15"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich fange an, einen Podcast ___ machen.",
       "answer": "zu",
       "acceptedAnswers": [
         "zu"
+      ],
+      "masteryQuestionId": "e3fcf445ffb93646",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u15"
       ]
     },
     "ordering": {
@@ -3453,6 +4122,11 @@
       "answer": "Ich versuche, eine neue Fähigkeit zu lernen",
       "acceptedAnswers": [
         "Ich versuche, eine neue Fähigkeit zu lernen"
+      ],
+      "masteryQuestionId": "4e17fff873d1ae54",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u15"
       ]
     },
     "dialogue": {
@@ -3462,11 +4136,21 @@
         "Der Bus kommt um neun.",
         "Ich brauche einen Ausweis."
       ],
-      "answer": "Ich habe angefangen, einen Fotoblog zu machen."
+      "answer": "Ich habe angefangen, einen Fotoblog zu machen.",
+      "masteryQuestionId": "e18e9c618583615b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u15"
+      ]
     },
     "trueFalse": {
       "prompt": "Modal fiillerle ikinci fiilden önce zu kullanılmaz.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "9d1560ec6d84868e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u15"
+      ]
     },
     "multiSelect": {
       "prompt": "Proje aşaması olan iki ifadeyi seç.",
@@ -3557,13 +4241,23 @@
         "Ich bleibe zu Hause, weil bin ich krank.",
         "Weil ich krank bin, ich bleibe zu Hause."
       ],
-      "correctAnswer": "Ich bleibe zu Hause, weil ich krank bin."
+      "correctAnswer": "Ich bleibe zu Hause, weil ich krank bin.",
+      "masteryQuestionId": "fc3f0686d97c44c5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u16"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Obwohl es regnete, ___ wir spazieren gegangen.",
       "answer": "sind",
       "acceptedAnswers": [
         "sind"
+      ],
+      "masteryQuestionId": "6224ce36f8a26426",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u16"
       ]
     },
     "ordering": {
@@ -3580,6 +4274,11 @@
       "answer": "Obwohl ich müde war, habe ich weitergelernt",
       "acceptedAnswers": [
         "Obwohl ich müde war, habe ich weitergelernt"
+      ],
+      "masteryQuestionId": "e92e9ab58e20d24a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u16"
       ]
     },
     "dialogue": {
@@ -3589,11 +4288,21 @@
         "Die Jacke ist Größe M.",
         "Der Bahnhof ist links."
       ],
-      "answer": "Er war intensiv, aber ich habe viel gelernt."
+      "answer": "Er war intensiv, aber ich habe viel gelernt.",
+      "masteryQuestionId": "d8857771f2cca8a0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u16"
+      ]
     },
     "trueFalse": {
       "prompt": "weil ve obwohl ile kurulan yan cümlelerde fiil sona gider.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "169690f49cc61779",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-a2-u16"
+      ]
     },
     "multiSelect": {
       "prompt": "A2 bağlacı olan iki seçeneği seç.",
@@ -3690,13 +4399,23 @@
         "Nachdem ich ankam, hatte ich meine Familie angerufen.",
         "Nachdem ich bin angekommen, rief ich an."
       ],
-      "correctAnswer": "Nachdem ich angekommen war, rief ich meine Familie an."
+      "correctAnswer": "Nachdem ich angekommen war, rief ich meine Familie an.",
+      "masteryQuestionId": "5b057238c8ec1003",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u01"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Bevor sie umzog, ___ sie fünf Jahre in Köln gelebt.",
       "answer": "hatte",
       "acceptedAnswers": [
         "hatte"
+      ],
+      "masteryQuestionId": "4c74525a9e868b99",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u01"
       ]
     },
     "ordering": {
@@ -3713,6 +4432,11 @@
       "answer": "Ich hatte vorher noch nie im Ausland gelebt",
       "acceptedAnswers": [
         "Ich hatte vorher noch nie im Ausland gelebt"
+      ],
+      "masteryQuestionId": "dbf62f88ef70e9fe",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u01"
       ]
     },
     "dialogue": {
@@ -3722,11 +4446,25 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "1915e94fc2adc208",
+      "masterySkill": "VOCABULARY",
+      "masteryTags": [
+        "plusquamperfekt",
+        "perfekt",
+        "vocabulary-b1-u01"
+      ]
     },
     "trueFalse": {
       "prompt": "Plusquamperfekt, başka bir geçmiş olaydan daha önce gerçekleşen durumu gösterir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "1a1653311ad2bfd7",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "plusquamperfekt",
+        "perfekt",
+        "reading-b1-u01"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -3813,13 +4551,23 @@
         "Ich versuche, dass ich jeden Tag zu lernen.",
         "Ich versuche jeden Tag lerne."
       ],
-      "correctAnswer": "Ich versuche, jeden Tag zwanzig Minuten zu lernen."
+      "correctAnswer": "Ich versuche, jeden Tag zwanzig Minuten zu lernen.",
+      "masteryQuestionId": "f3f3230d392d5f8f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u02"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Lehrerin erwartet, ___ wir regelmäßig üben.",
       "answer": "dass",
       "acceptedAnswers": [
         "dass"
+      ],
+      "masteryQuestionId": "ac48fbbb1ce80f87",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u02"
       ]
     },
     "ordering": {
@@ -3836,6 +4584,11 @@
       "answer": "Die Rückmeldung hilft mir, meine Fehler besser zu verstehen",
       "acceptedAnswers": [
         "Die Rückmeldung hilft mir, meine Fehler besser zu verstehen"
+      ],
+      "masteryQuestionId": "7ce7bc2019ac2b59",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u02"
       ]
     },
     "dialogue": {
@@ -3845,11 +4598,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "61f45fdfa1141412",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u02"
+      ]
     },
     "trueFalse": {
       "prompt": "dass cümlesi tam bir yargıyı, zu'lu mastar ise çoğu zaman aynı öznenin eylemini ifade eder.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "6cbb752254416213",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u02"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -3946,13 +4709,23 @@
         "Die Daten sind täglich aktualisieren.",
         "Die Daten werden täglich aktualisieren."
       ],
-      "correctAnswer": "Die Daten werden täglich aktualisiert."
+      "correctAnswer": "Die Daten werden täglich aktualisiert.",
+      "masteryQuestionId": "762476cb448c9f3c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Vertrag ___ gestern unterschrieben.",
       "answer": "wurde",
       "acceptedAnswers": [
         "wurde"
+      ],
+      "masteryQuestionId": "14c18315d056b877",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
       ]
     },
     "ordering": {
@@ -3969,6 +4742,11 @@
       "answer": "Die Bewerbungen werden vom Team bewertet",
       "acceptedAnswers": [
         "Die Bewerbungen werden vom Team bewertet"
+      ],
+      "masteryQuestionId": "d215a4c5165c7989",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
       ]
     },
     "dialogue": {
@@ -3978,11 +4756,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "2ec89fc4f2afeab0",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b1-u03"
+      ]
     },
     "trueFalse": {
       "prompt": "Vorgangspassiv, eylemi yapan kişiden çok süreci vurgular.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "34af43deb04c6b2e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "grammar-b1-u03"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4071,13 +4860,23 @@
         "Die Plattform speichert sicher Nutzerdaten.",
         "Speichert die Plattform Daten?"
       ],
-      "correctAnswer": "Die Plattform soll Nutzerdaten speichern."
+      "correctAnswer": "Die Plattform soll Nutzerdaten speichern.",
+      "masteryQuestionId": "f5b65a8b764ac655",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u04"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Laut ___ Bericht fehlen wichtige Angaben.",
       "answer": "dem",
       "acceptedAnswers": [
         "dem"
+      ],
+      "masteryQuestionId": "ba259d28864735b3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u04"
       ]
     },
     "ordering": {
@@ -4094,6 +4893,11 @@
       "answer": "Die Nachricht soll falsch sein",
       "acceptedAnswers": [
         "Die Nachricht soll falsch sein"
+      ],
+      "masteryQuestionId": "f52291a174a241e7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u04"
       ]
     },
     "dialogue": {
@@ -4103,11 +4907,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "a5081fda17a702c5",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b1-u04"
+      ]
     },
     "trueFalse": {
       "prompt": "sollen, duyulan veya aktarılan iddiaya mesafe koyabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "e535f6067758691b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u04"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4204,13 +5018,23 @@
         "Die Nachfrage steigt, damit mehr produziert wird.",
         "Die Nachfrage steigt, weil mehr produziert wird."
       ],
-      "correctAnswer": "Die Nachfrage steigt, sodass mehr produziert wird."
+      "correctAnswer": "Die Nachfrage steigt, sodass mehr produziert wird.",
+      "masteryQuestionId": "c97872fa6f2a0ec0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Obwohl viele Maßnahmen geplant sind, ___ die Emissionen weiter.",
       "answer": "steigen",
       "acceptedAnswers": [
         "steigen"
+      ],
+      "masteryQuestionId": "cad3925b67cf01e3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
       ]
     },
     "ordering": {
@@ -4227,6 +5051,11 @@
       "answer": "Deshalb müssen wir den Energieverbrauch reduzieren",
       "acceptedAnswers": [
         "Deshalb müssen wir den Energieverbrauch reduzieren"
+      ],
+      "masteryQuestionId": "c627e99b7130f03b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
       ]
     },
     "dialogue": {
@@ -4236,11 +5065,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "4f26dcc7a4d17a65",
+      "masterySkill": "VOCABULARY",
+      "masteryTags": [
+        "vocabulary-b1-u05"
+      ]
     },
     "trueFalse": {
       "prompt": "sodass gerçek sonucu, damit amaçlanan sonucu ifade eder.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "0aca99d5a5ea79a5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4334,13 +5173,23 @@
         "Er arbeitet, ohne er eine Pause macht.",
         "Er arbeitet, ohne zu eine Pause machen."
       ],
-      "correctAnswer": "Er arbeitet, ohne eine Pause zu machen."
+      "correctAnswer": "Er arbeitet, ohne eine Pause zu machen.",
+      "masteryQuestionId": "65dc09ff3e53e3c2",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Statt den Aufzug zu nehmen, ___ ich die Treppe.",
       "answer": "nehme",
       "acceptedAnswers": [
         "nehme"
+      ],
+      "masteryQuestionId": "4b45321ee69531fa",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
       ]
     },
     "ordering": {
@@ -4357,6 +5206,11 @@
       "answer": "Er arbeitet stundenlang, ohne eine Pause zu machen",
       "acceptedAnswers": [
         "Er arbeitet stundenlang, ohne eine Pause zu machen"
+      ],
+      "masteryQuestionId": "3ac75165923734d0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
       ]
     },
     "dialogue": {
@@ -4366,11 +5220,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "64fb699aba456e8a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
+      ]
     },
     "trueFalse": {
       "prompt": "ohne... zu ve statt... zu yapılarında özne ana cümleyle aynıdır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "fd1e4e9d93c25d40",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4464,13 +5328,23 @@
         "Du sprichst zuerst mit ihr!",
         "Du musst ihr Schuld geben."
       ],
-      "correctAnswer": "Du könntest zuerst mit ihr sprechen."
+      "correctAnswer": "Du könntest zuerst mit ihr sprechen.",
+      "masteryQuestionId": "25bbe2bb65f20d35",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wenn wir mehr Zeit ___, könnten wir alles klären.",
       "answer": "hätten",
       "acceptedAnswers": [
         "hätten"
+      ],
+      "masteryQuestionId": "a046dd7892fae2b0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
       ]
     },
     "ordering": {
@@ -4487,6 +5361,11 @@
       "answer": "An deiner Stelle würde ich ihm zuerst zuhören",
       "acceptedAnswers": [
         "An deiner Stelle würde ich ihm zuerst zuhören"
+      ],
+      "masteryQuestionId": "0032d95edacc9694",
+      "masterySkill": "LISTENING",
+      "masteryTags": [
+        "listening-b1-u07"
       ]
     },
     "dialogue": {
@@ -4496,11 +5375,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "504af2a20270a00d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
+      ]
     },
     "trueFalse": {
       "prompt": "Konjunktiv II, önerileri ve istekleri daha nazik hâle getirir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "206f17e445720b11",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "konjunktiv",
+        "grammar-b1-u07"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4589,13 +5479,23 @@
         "Je früher wir buchen, so günstiger es wird.",
         "Desto früher wir buchen, je günstiger."
       ],
-      "correctAnswer": "Je früher wir buchen, desto günstiger wird es."
+      "correctAnswer": "Je früher wir buchen, desto günstiger wird es.",
+      "masteryQuestionId": "9065baf9ec6cbdbf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u08"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Je mehr man übt, desto sicherer ___ man.",
       "answer": "wird",
       "acceptedAnswers": [
         "wird"
+      ],
+      "masteryQuestionId": "7a8ce34f2865cbf8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u08"
       ]
     },
     "ordering": {
@@ -4612,6 +5512,11 @@
       "answer": "Je mehr du sprichst, desto flüssiger wirst du",
       "acceptedAnswers": [
         "Je mehr du sprichst, desto flüssiger wirst du"
+      ],
+      "masteryQuestionId": "c11815b80a5ace3d",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b1-u08"
       ]
     },
     "dialogue": {
@@ -4621,11 +5526,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "c7c2a0534f488a9b",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u08"
+      ]
     },
     "trueFalse": {
       "prompt": "je... desto iki değişken arasındaki artan veya azalan ilişkiyi gösterir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "24caa282509beb1b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u08"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4714,13 +5629,23 @@
         "Das ist die Wohnung, in die ich wohne.",
         "Das ist die Wohnung, der ich wohne."
       ],
-      "correctAnswer": "Das ist die Wohnung, in der ich wohne."
+      "correctAnswer": "Das ist die Wohnung, in der ich wohne.",
+      "masteryQuestionId": "13b34133f2bf3c72",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u09"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Nachbar, ___ ich geholfen habe, bedankt sich.",
       "answer": "dem",
       "acceptedAnswers": [
         "dem"
+      ],
+      "masteryQuestionId": "5d905725a2877273",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u09"
       ]
     },
     "ordering": {
@@ -4737,6 +5662,11 @@
       "answer": "Das ist der Architekt, mit dem ich zusammenarbeite",
       "acceptedAnswers": [
         "Das ist der Architekt, mit dem ich zusammenarbeite"
+      ],
+      "masteryQuestionId": "c9b60874ed9b4dc8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u09"
       ]
     },
     "dialogue": {
@@ -4746,11 +5676,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "cbdfadd1b2068e40",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u09"
+      ]
     },
     "trueFalse": {
       "prompt": "Dativ relatif zamirleri der/die/das için dem, der, dem biçimlerindedir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "815ee377b9962944",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "dativ",
+        "grammar-b1-u09"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4847,13 +5788,24 @@
         "Ich achte für den Preis.",
         "Ich achte von dem Preis."
       ],
-      "correctAnswer": "Ich achte auf den Preis."
+      "correctAnswer": "Ich achte auf den Preis.",
+      "masteryQuestionId": "eef00864c68c3a81",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "praepositionen",
+        "grammar-b1-u10"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Erfolg hängt ___ mehreren Faktoren ab.",
       "answer": "von",
       "acceptedAnswers": [
         "von"
+      ],
+      "masteryQuestionId": "c0693f9394387c47",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u10"
       ]
     },
     "ordering": {
@@ -4870,6 +5822,11 @@
       "answer": "Ich verzichte auf unnötige Ausgaben",
       "acceptedAnswers": [
         "Ich verzichte auf unnötige Ausgaben"
+      ],
+      "masteryQuestionId": "fe2b208d7c0fecf4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u10"
       ]
     },
     "dialogue": {
@@ -4879,11 +5836,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "08fef445c8d5bf00",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b1-u10"
+      ]
     },
     "trueFalse": {
       "prompt": "Edatlı fiiller, fiil ve edat birlikte ezberlendiğinde daha doğru kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "7d83c2562d93bee5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "praepositionen",
+        "grammar-b1-u10"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -4980,13 +5948,23 @@
         "Die Aufgabe muss heute erledigt wird.",
         "Die Aufgabe wird heute erledigen müssen."
       ],
-      "correctAnswer": "Die Aufgabe muss heute erledigt werden."
+      "correctAnswer": "Die Aufgabe muss heute erledigt werden.",
+      "masteryQuestionId": "e46e025e8c69598a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Spenden können online ___ werden.",
       "answer": "gesammelt",
       "acceptedAnswers": [
         "gesammelt"
+      ],
+      "masteryQuestionId": "35be6b08ce56bb6b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
       ]
     },
     "ordering": {
@@ -5003,6 +5981,11 @@
       "answer": "Das Projekt kann von der Stadt unterstützt werden",
       "acceptedAnswers": [
         "Das Projekt kann von der Stadt unterstützt werden"
+      ],
+      "masteryQuestionId": "eb74671f13aa41a1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
       ]
     },
     "dialogue": {
@@ -5012,11 +5995,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "744081f984820068",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u11"
+      ]
     },
     "trueFalse": {
       "prompt": "Modal fiilli pasifte Partizip II + werden cümle sonunda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "8e412ea3f2dbc117",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -5116,13 +6109,23 @@
         "deshalb",
         "zunächst"
       ],
-      "correctAnswer": "allerdings"
+      "correctAnswer": "allerdings",
+      "masteryQuestionId": "1b552d5916887cd7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u12"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ möchte ich die wichtigsten Ergebnisse zusammenfassen.",
       "answer": "Abschließend",
       "acceptedAnswers": [
         "Abschließend"
+      ],
+      "masteryQuestionId": "46c5afc2243659b0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u12"
       ]
     },
     "ordering": {
@@ -5139,6 +6142,11 @@
       "answer": "Allerdings dürfen einige Risiken nicht übersehen werden",
       "acceptedAnswers": [
         "Allerdings dürfen einige Risiken nicht übersehen werden"
+      ],
+      "masteryQuestionId": "f0667b284cd8c6ec",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u12"
       ]
     },
     "dialogue": {
@@ -5148,11 +6156,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "f30c3697fdbdd192",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b1-u12"
+      ]
     },
     "trueFalse": {
       "prompt": "İyi argümantasyon; iddia, gerekçe ve örnekten oluşur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "adf49174e43b525a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u12"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -5241,13 +6259,23 @@
         "Die Messwerte speichern werden.",
         "Die Messwerte sind speichern."
       ],
-      "correctAnswer": "Die Messwerte werden gespeichert."
+      "correctAnswer": "Die Messwerte werden gespeichert.",
+      "masteryQuestionId": "ffa4cc96aec0f0a3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Ergebnisse werden anschließend ___.",
       "answer": "ausgewertet",
       "acceptedAnswers": [
         "ausgewertet"
+      ],
+      "masteryQuestionId": "e5e1260295997e4f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
       ]
     },
     "ordering": {
@@ -5264,6 +6292,11 @@
       "answer": "Das Gerät wird regelmäßig kontrolliert",
       "acceptedAnswers": [
         "Das Gerät wird regelmäßig kontrolliert"
+      ],
+      "masteryQuestionId": "e71cf5451f9af9ee",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
       ]
     },
     "dialogue": {
@@ -5273,11 +6306,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "33fbd33e74fb271b",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b1-u13"
+      ]
     },
     "trueFalse": {
       "prompt": "man yapısı öznesiz genel anlatım, pasif ise süreç odaklı resmî anlatım sağlar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "d7d0ead4233580a4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -5364,13 +6407,23 @@
         "Er sagt, die Situation ist schwierig sei.",
         "Er sagt: die Situation sei schwierig."
       ],
-      "correctAnswer": "Er sagt, die Situation sei schwierig."
+      "correctAnswer": "Er sagt, die Situation sei schwierig.",
+      "masteryQuestionId": "9970d871bd76013b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u14"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Sprecherin erklärte, es ___ keine Gefahr.",
       "answer": "gebe",
       "acceptedAnswers": [
         "gebe"
+      ],
+      "masteryQuestionId": "310fd21c083474d8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u14"
       ]
     },
     "ordering": {
@@ -5387,6 +6440,11 @@
       "answer": "Der Experte sagt, die Ergebnisse seien zuverlässig",
       "acceptedAnswers": [
         "Der Experte sagt, die Ergebnisse seien zuverlässig"
+      ],
+      "masteryQuestionId": "27ef4f0707e92121",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u14"
       ]
     },
     "dialogue": {
@@ -5396,11 +6454,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "387f8ea89bcd1a52",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u14"
+      ]
     },
     "trueFalse": {
       "prompt": "Konjunktiv I, aktarılan görüş ile yazarın kendi iddiasını ayırır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "ee9551bde7a904f1",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "konjunktiv",
+        "writing-b1-u14"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -5497,13 +6566,23 @@
         "die angestellten",
         "die Angestellte Personen"
       ],
-      "correctAnswer": "die Angestellten"
+      "correctAnswer": "die Angestellten",
+      "masteryQuestionId": "0dd19cc5b40a5691",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u15"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die ___ ist für das Projekt zuständig. (verantwortlich)",
       "answer": "Verantwortliche",
       "acceptedAnswers": [
         "Verantwortliche"
+      ],
+      "masteryQuestionId": "525bb9f6507e19f8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u15"
       ]
     },
     "ordering": {
@@ -5520,6 +6599,11 @@
       "answer": "Ich erfülle die Anforderungen dieser Stelle",
       "acceptedAnswers": [
         "Ich erfülle die Anforderungen dieser Stelle"
+      ],
+      "masteryQuestionId": "ff4137073b82b6ba",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u15"
       ]
     },
     "dialogue": {
@@ -5529,11 +6613,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "d4d544dc32f3df57",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u15"
+      ]
     },
     "trueFalse": {
       "prompt": "Nominalleştirilmiş sıfatlar büyük harfle yazılır ve artikelden sonra çekimlenir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "b7a9b7a9d2359ed5",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "der-die-das",
+        "writing-b1-u15"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -5630,13 +6725,23 @@
         "Sag mir die Frist.",
         "Du musst mir antworten."
       ],
-      "correctAnswer": "Könnten Sie mir bitte die Frist mitteilen?"
+      "correctAnswer": "Könnten Sie mir bitte die Frist mitteilen?",
+      "masteryQuestionId": "18257be19e974106",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich bitte Sie ___ eine schriftliche Bestätigung.",
       "answer": "um",
       "acceptedAnswers": [
         "um"
+      ],
+      "masteryQuestionId": "fcec76ec4e78e2bd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
       ]
     },
     "ordering": {
@@ -5653,6 +6758,11 @@
       "answer": "Ich beziehe mich auf Ihre Anzeige",
       "acceptedAnswers": [
         "Ich beziehe mich auf Ihre Anzeige"
+      ],
+      "masteryQuestionId": "8a035a96620726bf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
       ]
     },
     "dialogue": {
@@ -5662,11 +6772,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "40bde9a45317c79c",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u16"
+      ]
     },
     "trueFalse": {
       "prompt": "Resmî yazışmada talep açık, üslup nazik ve konu satırı bilgilendirici olmalıdır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "5ab5aa491532f987",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u16"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -5763,13 +6883,23 @@
         "Die Methode sowohl ist einfach als auch effektiv.",
         "Die Methode ist sowohl einfach und effektiv."
       ],
-      "correctAnswer": "Die Methode ist sowohl einfach als auch effektiv."
+      "correctAnswer": "Die Methode ist sowohl einfach als auch effektiv.",
+      "masteryQuestionId": "1f16c2392ec2a409",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Einerseits ist die Lösung günstig, ___ ist sie schwer umzusetzen.",
       "answer": "andererseits",
       "acceptedAnswers": [
         "andererseits"
+      ],
+      "masteryQuestionId": "6eae9118c56756f8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
       ]
     },
     "ordering": {
@@ -5786,6 +6916,11 @@
       "answer": "Diese Methode ist sowohl schnell als auch zuverlässig",
       "acceptedAnswers": [
         "Diese Methode ist sowohl schnell als auch zuverlässig"
+      ],
+      "masteryQuestionId": "7010adefb20564ff",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
       ]
     },
     "dialogue": {
@@ -5795,11 +6930,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "6126c6878c3e4b21",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
+      ]
     },
     "trueFalse": {
       "prompt": "İki parçalı bağlaçlar dengeli ve paralel yapı kurar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "1edf64699c17d38a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -5893,13 +7038,23 @@
         "Obwohl ich hatte wenig Zeit, beendete ich.",
         "Obwohl wenig Zeit, ich habe beendet."
       ],
-      "correctAnswer": "Obwohl ich wenig Zeit hatte, habe ich die Aufgabe beendet."
+      "correctAnswer": "Obwohl ich wenig Zeit hatte, habe ich die Aufgabe beendet.",
+      "masteryQuestionId": "aa61a315cccf6181",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Nachdem ich den Text geschrieben ___, habe ich ihn geprüft.",
       "answer": "hatte",
       "acceptedAnswers": [
         "hatte"
+      ],
+      "masteryQuestionId": "3188d3175fc97c78",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
       ]
     },
     "ordering": {
@@ -5916,6 +7071,11 @@
       "answer": "Meine größte Schwäche ist, schnelle Gespräche zu verstehen",
       "acceptedAnswers": [
         "Meine größte Schwäche ist, schnelle Gespräche zu verstehen"
+      ],
+      "masteryQuestionId": "b54b8eb9915b2536",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b1-u18"
       ]
     },
     "dialogue": {
@@ -5925,11 +7085,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "1018c5298cc5cfc8",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u18"
+      ]
     },
     "trueFalse": {
       "prompt": "B1 düzeyinde fiil konumu ve mantıksal bağlar, metnin anlaşılabilirliği için merkezîdir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "5adc915c16a0cc83",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6026,13 +7196,23 @@
         "wir werten die Daten aus",
         "die Daten sind auswerten"
       ],
-      "correctAnswer": "die Auswertung der erhobenen Daten"
+      "correctAnswer": "die Auswertung der erhobenen Daten",
+      "masteryQuestionId": "1b824b5f16845527",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u01"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Untersuchung wurde im Jahr 2025 ___.",
       "answer": "durchgeführt",
       "acceptedAnswers": [
         "durchgeführt"
+      ],
+      "masteryQuestionId": "deb00c3d15f6a735",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u01"
       ]
     },
     "ordering": {
@@ -6049,6 +7229,11 @@
       "answer": "Die Daten wurden mithilfe einer Online-Befragung erhoben",
       "acceptedAnswers": [
         "Die Daten wurden mithilfe einer Online-Befragung erhoben"
+      ],
+      "masteryQuestionId": "0aae95b4b63a5443",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u01"
       ]
     },
     "dialogue": {
@@ -6058,11 +7243,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "d28a60b09b0dd2aa",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b2-u01"
+      ]
     },
     "trueFalse": {
       "prompt": "Nominalleştirme ve pasif, akademik metinde süreç ve sonuçlara nesnel odak sağlar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "bee966df179eb8cc",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b2-u01"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6151,13 +7346,23 @@
         "Das könnte die Ursache sein.",
         "Das dürfte vielleicht die Ursache sein."
       ],
-      "correctAnswer": "Das muss die Ursache sein."
+      "correctAnswer": "Das muss die Ursache sein.",
+      "masteryQuestionId": "936248212aee37ac",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u02"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wenn die Daten vollständig wären, ___ wir sofort entscheiden.",
       "answer": "könnten",
       "acceptedAnswers": [
         "könnten"
+      ],
+      "masteryQuestionId": "06597274eb3f5435",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u02"
       ]
     },
     "ordering": {
@@ -6174,6 +7379,11 @@
       "answer": "Die Verzögerung dürfte die Kosten erhöhen",
       "acceptedAnswers": [
         "Die Verzögerung dürfte die Kosten erhöhen"
+      ],
+      "masteryQuestionId": "9a4bb02ace026f4c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u02"
       ]
     },
     "dialogue": {
@@ -6183,11 +7393,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "35af91576cc449a3",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b2-u02"
+      ]
     },
     "trueFalse": {
       "prompt": "Subjektif modal fiiller, konuşanın olasılık derecesini gösterir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "742078ace5c6f43d",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b2-u02"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6276,13 +7496,23 @@
         "die speichernden Daten als Ergebnis",
         "die gespeichert Daten"
       ],
-      "correctAnswer": "die gespeicherten Daten"
+      "correctAnswer": "die gespeicherten Daten",
+      "masteryQuestionId": "ab4c40341d616f0c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die ständig ___ Anforderungen erfordern Weiterbildung. (steigen)",
       "answer": "steigenden",
       "acceptedAnswers": [
         "steigenden"
+      ],
+      "masteryQuestionId": "7097f3bba717327c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
       ]
     },
     "ordering": {
@@ -6299,6 +7529,11 @@
       "answer": "Vernetzte Geräte erzeugen große Datenmengen",
       "acceptedAnswers": [
         "Vernetzte Geräte erzeugen große Datenmengen"
+      ],
+      "masteryQuestionId": "220478d4a543cf96",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
       ]
     },
     "dialogue": {
@@ -6308,11 +7543,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "e0fdcdc062c9eead",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
+      ]
     },
     "trueFalse": {
       "prompt": "Partizipler sıfat olarak isimleri yoğun ve akademik biçimde tanımlar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "6ed462658c6ef80f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u03"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6409,13 +7654,23 @@
         "Die Forscherin sagt, die Entwicklung läuft langsam sei.",
         "Die Forscherin sagt: die Entwicklung verlaufe langsam."
       ],
-      "correctAnswer": "Die Forscherin sagt, die Entwicklung verlaufe langsam."
+      "correctAnswer": "Die Forscherin sagt, die Entwicklung verlaufe langsam.",
+      "masteryQuestionId": "bf5550b56f3fa78a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Autoren erklären, die Werte ___ sich verändert.",
       "answer": "hätten",
       "acceptedAnswers": [
         "hätten"
+      ],
+      "masteryQuestionId": "e019f4737c91527d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
       ]
     },
     "ordering": {
@@ -6432,6 +7687,11 @@
       "answer": "Die Fachleute sagen, der Wandel werde lange dauern",
       "acceptedAnswers": [
         "Die Fachleute sagen, der Wandel werde lange dauern"
+      ],
+      "masteryQuestionId": "ccd7160512bc085f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
       ]
     },
     "dialogue": {
@@ -6441,11 +7701,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "708fb807859534e7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u04"
+      ]
     },
     "trueFalse": {
       "prompt": "Konjunktiv I, kaynak görüşünü yazarın görüşünden dil bilgisel olarak ayırır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "efda82788f753ef2",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "konjunktiv",
+        "writing-b2-u04"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6534,13 +7805,23 @@
         "Aufgrund hoher Kosten wurde es trotzdem.",
         "Infolge hoher Kosten trotz Programm."
       ],
-      "correctAnswer": "Trotz hoher Kosten wurde das Programm fortgesetzt."
+      "correctAnswer": "Trotz hoher Kosten wurde das Programm fortgesetzt.",
+      "masteryQuestionId": "9d1d7b0f8c5a42b8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Aufgrund ___ Energiepreise werden neue Hilfen diskutiert.",
       "answer": "steigender",
       "acceptedAnswers": [
         "steigender"
+      ],
+      "masteryQuestionId": "f12e6ccd0f3e4029",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
       ]
     },
     "ordering": {
@@ -6557,6 +7838,11 @@
       "answer": "Trotz der Umsetzung wurde das Ziel nicht erreicht",
       "acceptedAnswers": [
         "Trotz der Umsetzung wurde das Ziel nicht erreicht"
+      ],
+      "masteryQuestionId": "4172cff129ef6501",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
       ]
     },
     "dialogue": {
@@ -6566,11 +7852,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "fd2e1044ed2842a5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
+      ]
     },
     "trueFalse": {
       "prompt": "Nominal ve sözel bağlantılar aynı mantıksal ilişkiyi farklı üslupla ifade edebilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "813193b60de08d36",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u05"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6659,13 +7955,23 @@
         "Die Wirkung lässt messen sich.",
         "Die Wirkung ist messen."
       ],
-      "correctAnswer": "Die Wirkung lässt sich messen."
+      "correctAnswer": "Die Wirkung lässt sich messen.",
+      "masteryQuestionId": "e3fe4dfd29d89d2d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Ergebnisse sind vorsichtig zu ___.",
       "answer": "interpretieren",
       "acceptedAnswers": [
         "interpretieren"
+      ],
+      "masteryQuestionId": "f881be4892724d9e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
       ]
     },
     "ordering": {
@@ -6682,6 +7988,11 @@
       "answer": "Die Methode lässt sich auf verschiedene Gruppen anwenden",
       "acceptedAnswers": [
         "Die Methode lässt sich auf verschiedene Gruppen anwenden"
+      ],
+      "masteryQuestionId": "a3df2b21a2aa32d3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
       ]
     },
     "dialogue": {
@@ -6691,11 +8002,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "8a91dda48740dbaa",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
+      ]
     },
     "trueFalse": {
       "prompt": "Passif alternatifleri olanak, zorunluluk ve uygulanabilirliği daha yoğun biçimde ifade eder.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "344ec96946266b59",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u06"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6795,13 +8116,23 @@
         "kesin emir",
         "geçmiş zaman"
       ],
-      "correctAnswer": "tahmin"
+      "correctAnswer": "tahmin",
+      "masteryQuestionId": "15192f8a2295c342",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u07"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Das ist ___ allgemein bekannt. (ortak bilgi nüansı)",
       "answer": "ja",
       "acceptedAnswers": [
         "ja"
+      ],
+      "masteryQuestionId": "8177b039f29640cd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u07"
       ]
     },
     "ordering": {
@@ -6818,6 +8149,11 @@
       "answer": "Dieses Thema könnte für manche Menschen sensibel sein",
       "acceptedAnswers": [
         "Dieses Thema könnte für manche Menschen sensibel sein"
+      ],
+      "masteryQuestionId": "beb15d726b368c82",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u07"
       ]
     },
     "dialogue": {
@@ -6827,11 +8163,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "077c7c4082fb7bb0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u07"
+      ]
     },
     "trueFalse": {
       "prompt": "Modal parçacıklar bilgiye ek olarak konuşanın tutumunu ve beklentisini yansıtır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "b1d15901dc7432df",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b2-u07"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -6920,13 +8266,23 @@
         "Die Preise müssen steigen.",
         "Die Preise steigen sicher."
       ],
-      "correctAnswer": "Die Preise könnten leicht steigen."
+      "correctAnswer": "Die Preise könnten leicht steigen.",
+      "masteryQuestionId": "3c592bf4b90ae8fe",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Bei sinkenden Zinsen ___ mehr Unternehmen investieren.",
       "answer": "würden",
       "acceptedAnswers": [
         "würden"
+      ],
+      "masteryQuestionId": "83cc0eb73df813f7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
       ]
     },
     "ordering": {
@@ -6943,6 +8299,11 @@
       "answer": "Die Nachfrage dürfte im nächsten Jahr zurückgehen",
       "acceptedAnswers": [
         "Die Nachfrage dürfte im nächsten Jahr zurückgehen"
+      ],
+      "masteryQuestionId": "c5800135da441ca3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
       ]
     },
     "dialogue": {
@@ -6952,11 +8313,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "4fed68040f828d49",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b2-u08"
+      ]
     },
     "trueFalse": {
       "prompt": "Ekonomik tahminde modal yapı, kesinlik derecesini açıkça işaretlemelidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "68b0285206a161d8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u08"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7053,13 +8424,23 @@
         "Der Antrag wird genehmigt.",
         "Man genehmigt den Antrag."
       ],
-      "correctAnswer": "Der Antrag ist genehmigt."
+      "correctAnswer": "Der Antrag ist genehmigt.",
+      "masteryQuestionId": "b02bfa40ca05db51",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u09"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Vorschrift tritt morgen in Kraft und ist dann ___.",
       "answer": "verbindlich",
       "acceptedAnswers": [
         "verbindlich"
+      ],
+      "masteryQuestionId": "9a04f57443cd3152",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u09"
       ]
     },
     "ordering": {
@@ -7076,6 +8457,11 @@
       "answer": "Die fristgerechte Einreichung des Antrags ist verpflichtend",
       "acceptedAnswers": [
         "Die fristgerechte Einreichung des Antrags ist verpflichtend"
+      ],
+      "masteryQuestionId": "aa97edb9620b2e6f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u09"
       ]
     },
     "dialogue": {
@@ -7085,11 +8471,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "595fc07d4ac5f119",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b2-u09"
+      ]
     },
     "trueFalse": {
       "prompt": "Vorgangspassiv süreç, Zustandspassiv ortaya çıkan durum üzerinde odaklanır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "50e931c86b2f40dc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "grammar-b2-u09"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7176,13 +8573,23 @@
         "die Brücke neu gebaut",
         "die gebaut neue Brücke"
       ],
-      "correctAnswer": "die neu gebaute Brücke"
+      "correctAnswer": "die neu gebaute Brücke",
+      "masteryQuestionId": "9707397f6846f144",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die täglich stark ___ Straße soll entlastet werden. (belasten)",
       "answer": "belastete",
       "acceptedAnswers": [
         "belastete"
+      ],
+      "masteryQuestionId": "c78b01056645b1b9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
       ]
     },
     "ordering": {
@@ -7199,6 +8606,11 @@
       "answer": "Die neu geplante Linie verbindet zwei Stadtteile miteinander",
       "acceptedAnswers": [
         "Die neu geplante Linie verbindet zwei Stadtteile miteinander"
+      ],
+      "masteryQuestionId": "151584d0aabb677c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
       ]
     },
     "dialogue": {
@@ -7208,11 +8620,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "9a4544e2e96f0284",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b2-u10"
+      ]
     },
     "trueFalse": {
       "prompt": "Partizipialattribute, relatif cümleleri yoğun ve resmî bir isim öbeğine dönüştürebilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "bbbb2c6fc89dad9c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u10"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7309,13 +8731,24 @@
         "Die Maßnahme ist immer wirksam.",
         "Die Maßnahme muss vollständig wirken."
       ],
-      "correctAnswer": "Die Maßnahme könnte unter bestimmten Bedingungen wirksam sein."
+      "correctAnswer": "Die Maßnahme könnte unter bestimmten Bedingungen wirksam sein.",
+      "masteryQuestionId": "54f734f8ff0385d1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Aussage ist insofern zu relativieren, ___ nur wenige Fälle untersucht wurden.",
       "answer": "als",
       "acceptedAnswers": [
         "als"
+      ],
+      "masteryQuestionId": "5eef62eeeb2240c9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "relativsatz",
+        "grammar-b2-u11"
       ]
     },
     "ordering": {
@@ -7332,6 +8765,11 @@
       "answer": "Dieses Ergebnis lässt sich nur teilweise verallgemeinern",
       "acceptedAnswers": [
         "Dieses Ergebnis lässt sich nur teilweise verallgemeinern"
+      ],
+      "masteryQuestionId": "75141c0fc1e5e65c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
       ]
     },
     "dialogue": {
@@ -7341,11 +8779,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "b5882c9049594f7e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
+      ]
     },
     "trueFalse": {
       "prompt": "Akademik hedging, iddianın kanıt düzeyine uygun sınırlar koyar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "59d88873b7ed1850",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u11"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7442,13 +8890,23 @@
         "Die Entscheidung hängt von das ab.",
         "Die Entscheidung davon hängt wie hoch."
       ],
-      "correctAnswer": "Die Entscheidung hängt davon ab, wie hoch die Kosten sind."
+      "correctAnswer": "Die Entscheidung hängt davon ab, wie hoch die Kosten sind.",
+      "masteryQuestionId": "5dc45140d9079261",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u12"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Im nächsten Abschnitt gehe ich ___ näher ein.",
       "answer": "darauf",
       "acceptedAnswers": [
         "darauf"
+      ],
+      "masteryQuestionId": "17fc876802abb59e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u12"
       ]
     },
     "ordering": {
@@ -7465,6 +8923,11 @@
       "answer": "Die Ergebnisse hängen von der verwendeten Methode ab",
       "acceptedAnswers": [
         "Die Ergebnisse hängen von der verwendeten Methode ab"
+      ],
+      "masteryQuestionId": "b4b0cd0ca198d53f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u12"
       ]
     },
     "dialogue": {
@@ -7474,11 +8937,22 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "af2893bcbe05ce3b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u12"
+      ]
     },
     "trueFalse": {
       "prompt": "Präpositionaladverbien, önceki bilgiye ekonomik ve açık biçimde gönderim yapar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "3bfcf6a895f1ce69",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "praepositionen",
+        "grammar-b2-u12"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7567,13 +9041,23 @@
         "Städten",
         "durchgeführte"
       ],
-      "correctAnswer": "Untersuchung"
+      "correctAnswer": "Untersuchung",
+      "masteryQuestionId": "eee5ece6a0713063",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die in der Studie ___ Daten wurden erneut geprüft. (erheben)",
       "answer": "erhobenen",
       "acceptedAnswers": [
         "erhobenen"
+      ],
+      "masteryQuestionId": "413d43b3fd25b8d8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
       ]
     },
     "ordering": {
@@ -7590,6 +9074,11 @@
       "answer": "Der Untersuchung liegt ein neues Modell zugrunde",
       "acceptedAnswers": [
         "Der Untersuchung liegt ein neues Modell zugrunde"
+      ],
+      "masteryQuestionId": "98f7d72a4db82752",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
       ]
     },
     "dialogue": {
@@ -7599,11 +9088,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "2517924d3fddacb8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
+      ]
     },
     "trueFalse": {
       "prompt": "Karmaşık isim gruplarında önce ana isim, ardından onu belirleyen öğeler çözülmelidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "ed7e14c9bb0bc102",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u13"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7700,13 +9199,23 @@
         "Der Wert stieg um 50 Prozent von 40.",
         "Der Wert stieg auf zehn Prozentpunkte."
       ],
-      "correctAnswer": "Der Wert stieg von 40 auf 50 Prozent."
+      "correctAnswer": "Der Wert stieg von 40 auf 50 Prozent.",
+      "masteryQuestionId": "010868258c31328b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Zahl ist im Vergleich zum Vorjahr um acht Prozent ___.",
       "answer": "gesunken",
       "acceptedAnswers": [
         "gesunken"
+      ],
+      "masteryQuestionId": "d1aba79fbeb7b5d3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
       ]
     },
     "ordering": {
@@ -7723,6 +9232,11 @@
       "answer": "Der Wert hat sich innerhalb von zwei Jahren verdoppelt",
       "acceptedAnswers": [
         "Der Wert hat sich innerhalb von zwei Jahren verdoppelt"
+      ],
+      "masteryQuestionId": "e8df84e1003d0039",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
       ]
     },
     "dialogue": {
@@ -7732,11 +9246,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "752063900d933c05",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b2-u14"
+      ]
     },
     "trueFalse": {
       "prompt": "Grafik betimleme gözlenen veriyi; yorum ise olası açıklamayı ifade eder.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "c8258c18c4d41bef",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u14"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7830,13 +9354,23 @@
         "Die Frage ist, wie wirkt die Maßnahme.",
         "Die Frage ist, ob wie die Maßnahme wirkt."
       ],
-      "correctAnswer": "Die Frage ist, wie die Maßnahme wirkt."
+      "correctAnswer": "Die Frage ist, wie die Maßnahme wirkt.",
+      "masteryQuestionId": "d3c6fc8ac4bb3a5b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Es ist unklar, ___ die Daten vollständig sind.",
       "answer": "ob",
       "acceptedAnswers": [
         "ob"
+      ],
+      "masteryQuestionId": "3f0f66df5db2054a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
       ]
     },
     "ordering": {
@@ -7853,6 +9387,11 @@
       "answer": "Die Studie untersucht, warum der Unterschied entsteht",
       "acceptedAnswers": [
         "Die Studie untersucht, warum der Unterschied entsteht"
+      ],
+      "masteryQuestionId": "dcb62b6beeef909b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
       ]
     },
     "dialogue": {
@@ -7862,11 +9401,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "0d3944a1d46ea536",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
+      ]
     },
     "trueFalse": {
       "prompt": "Dolaylı sorularda çekimli fiil yan cümle sonunda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "d6bb9ade32ca911f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u15"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -7955,13 +9504,23 @@
         "Sie verlängern die Frist, wir akzeptieren vielleicht.",
         "Falls die Frist, akzeptieren wir."
       ],
-      "correctAnswer": "Falls Sie die Frist verlängern, könnten wir den Preis akzeptieren."
+      "correctAnswer": "Falls Sie die Frist verlängern, könnten wir den Preis akzeptieren.",
+      "masteryQuestionId": "d9c278a8d7607719",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Sofern alle Bedingungen erfüllt ___, tritt der Vertrag in Kraft.",
       "answer": "sind",
       "acceptedAnswers": [
         "sind"
+      ],
+      "masteryQuestionId": "796b7cd28499e15d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
       ]
     },
     "ordering": {
@@ -7978,6 +9537,11 @@
       "answer": "Wenn die Bedingungen verbessert würden, könnten wir den Vertrag verlängern",
       "acceptedAnswers": [
         "Wenn die Bedingungen verbessert würden, könnten wir den Vertrag verlängern"
+      ],
+      "masteryQuestionId": "2a1d7a1ddcaf3dcb",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
       ]
     },
     "dialogue": {
@@ -7987,11 +9551,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "07d590a336a9eadd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
+      ]
     },
     "trueFalse": {
       "prompt": "Koşul dili, teklifin hangi durumda geçerli olduğunu açık ve profesyonel biçimde sınırlar.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "8331e80c564babaf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u16"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -8088,13 +9662,23 @@
         "Alle Daten wurden zweifellos geprüft.",
         "Ich weiß sicher, dass alle Daten geprüft wurden."
       ],
-      "correctAnswer": "Angeblich wurden alle Daten geprüft."
+      "correctAnswer": "Angeblich wurden alle Daten geprüft.",
+      "masteryQuestionId": "58594631d5e65391",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Es ist unklar, ___ die Quelle unabhängig ist.",
       "answer": "ob",
       "acceptedAnswers": [
         "ob"
+      ],
+      "masteryQuestionId": "482a6fe08d2020d6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
       ]
     },
     "ordering": {
@@ -8111,6 +9695,11 @@
       "answer": "Die Behauptung wurde bisher nicht unabhängig bestätigt",
       "acceptedAnswers": [
         "Die Behauptung wurde bisher nicht unabhängig bestätigt"
+      ],
+      "masteryQuestionId": "91288ea5da0fbb9e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
       ]
     },
     "dialogue": {
@@ -8120,11 +9709,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "b4bd77546577dc67",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u17"
+      ]
     },
     "trueFalse": {
       "prompt": "Eleştirel medya okuması, iddia ile kanıtın ve kaynak ile yorumun ayrılmasını gerektirir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "329893b4f3edeffb",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b2-u17"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -8215,13 +9814,23 @@
         "Zwar die Idee ist interessant, sie aber teuer.",
         "Die Idee zwar interessant aber."
       ],
-      "correctAnswer": "Zwar ist die Idee interessant, aber sie ist teuer."
+      "correctAnswer": "Zwar ist die Idee interessant, aber sie ist teuer.",
+      "masteryQuestionId": "71817ec3dacb46a1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Daten sind begrenzt; ___ lässt sich eine Tendenz erkennen.",
       "answer": "dennoch",
       "acceptedAnswers": [
         "dennoch"
+      ],
+      "masteryQuestionId": "aa8503c4d8ce51cd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
       ]
     },
     "ordering": {
@@ -8238,6 +9847,11 @@
       "answer": "Modell A ist günstiger, wohingegen Modell B zuverlässiger ist",
       "acceptedAnswers": [
         "Modell A ist günstiger, wohingegen Modell B zuverlässiger ist"
+      ],
+      "masteryQuestionId": "41a3d99acdf2d62e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
       ]
     },
     "dialogue": {
@@ -8247,11 +9861,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "0c8cee761bc4ec51",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b2-u18"
+      ]
     },
     "trueFalse": {
       "prompt": "Güçlü argümantasyon, karşı görüşü doğru temsil eder ve sınırlı kabul ile net itirazı ayırır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "148e13a02e1639c1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u18"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -8340,13 +9964,23 @@
         "weil steigender Kosten",
         "wegen die Kosten steigen"
       ],
-      "correctAnswer": "aufgrund steigender Kosten"
+      "correctAnswer": "aufgrund steigender Kosten",
+      "masteryQuestionId": "fb8e2a7361878c83",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Trotz ___ Kritik wurde das Projekt fortgesetzt. (äußern)",
       "answer": "geäußerter",
       "acceptedAnswers": [
         "geäußerter"
+      ],
+      "masteryQuestionId": "72f6845f9e46cd7d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
       ]
     },
     "ordering": {
@@ -8363,6 +9997,11 @@
       "answer": "Aufgrund steigender Nachfrage wurde die Produktion erweitert",
       "acceptedAnswers": [
         "Aufgrund steigender Nachfrage wurde die Produktion erweitert"
+      ],
+      "masteryQuestionId": "af4ddd309f2a2b34",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
       ]
     },
     "dialogue": {
@@ -8372,11 +10011,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "1a6976a2d7572408",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b2-u19"
+      ]
     },
     "trueFalse": {
       "prompt": "Başarılı sınav stratejisi, görev talimatı, süre, yapı ve son kontrolü birlikte yönetir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "9b95f4e411a93390",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u19"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",
@@ -8473,13 +10122,23 @@
         "zufällig",
         "überfüllt"
       ],
-      "correctAnswer": "adressatengerecht"
+      "correctAnswer": "adressatengerecht",
+      "masteryQuestionId": "80cbfc8f2d2ea560",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Aus der Analyse ___ ich drei konkrete Ziele ab.",
       "answer": "leite",
       "acceptedAnswers": [
         "leite"
+      ],
+      "masteryQuestionId": "839f2cc1dc651656",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
       ]
     },
     "ordering": {
@@ -8496,6 +10155,11 @@
       "answer": "Aus den Rückmeldungen leite ich konkrete Ziele ab",
       "acceptedAnswers": [
         "Aus den Rückmeldungen leite ich konkrete Ziele ab"
+      ],
+      "masteryQuestionId": "cb5ef020252cf31b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
       ]
     },
     "dialogue": {
@@ -8505,11 +10169,21 @@
         "Metni gönder",
         "Daha sonra değerlendir"
       ],
-      "answer": "Metni gönder"
+      "answer": "Metni gönder",
+      "masteryQuestionId": "6a440571958ec3fe",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b2-u20"
+      ]
     },
     "trueFalse": {
       "prompt": "B2 yeterliği; dil bilgisi doğruluğu, nüans, metin yapısı ve hedef kitleye uygunluk birlikte ele alındığında görünür.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "57c1c339cd05ec66",
+      "masterySkill": "READING",
+      "masteryTags": [
+        "reading-b2-u20"
+      ]
     },
     "multiSelect": {
       "prompt": "Ünitenin dil ve iletişim hedefine uygun iki cümleyi seç.",

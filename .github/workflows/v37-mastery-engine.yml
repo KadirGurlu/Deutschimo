@@ -1,0 +1,49 @@
+name: Deutschimo V37 Mastery Engine
+on:
+  push:
+    branches: [v37-staging]
+  pull_request:
+    branches: [main, v37-staging]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mastery-quality:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschimo_v37
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d deutschimo_v37"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v37
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v37
+      DATABASE_ENVIRONMENT: test
+      AUTH_SECRET: v37-ci-auth-secret-change-me
+      SECURITY_HASH_KEY: v37-ci-security-key-change-me-0123456789
+      CRON_SECRET: v37-ci-cron-secret-change-me
+      AUTH_TRUST_HOST: "true"
+      NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+      REQUIRE_EMAIL_VERIFICATION: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm install --global npm@10.9.2
+      - run: npm ci
+      - run: npm run validate:v36
+      - run: npm run validate:v37
+      - run: npx prisma migrate deploy
+      - run: npx prisma generate
+      - run: npm run typecheck
+      - run: npm run build

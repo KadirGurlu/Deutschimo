@@ -111,13 +111,23 @@
         "die Frau, die ich oft helfe",
         "die Frau, den ich oft helfe"
       ],
-      "correctAnswer": "die Frau, der ich oft helfe"
+      "correctAnswer": "die Frau, der ich oft helfe",
+      "masteryQuestionId": "e2dcfc903270995b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u01"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Mann, ___ ich gestern gesehen habe, arbeitet hier.",
       "answer": "den",
       "acceptedAnswers": [
         "den"
+      ],
+      "masteryQuestionId": "69999644f5a7daf3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u01"
       ]
     },
     "ordering": {
@@ -136,6 +146,11 @@
       "acceptedAnswers": [
         "Ich schätze meinen Freund, der immer ehrlich zu mir ist",
         "Ich schätze meinen Freund, der immer ehrlich zu mir ist."
+      ],
+      "masteryQuestionId": "f814d3abf71bd654",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u01"
       ]
     },
     "dialogue": {
@@ -145,11 +160,22 @@
         "Sie ist jemand, den zuverlässig ist.",
         "Sie ist jemand, der ich vertraue sie."
       ],
-      "answer": "Sie ist jemand, auf den man sich verlassen kann."
+      "answer": "Sie ist jemand, auf den man sich verlassen kann.",
+      "masteryQuestionId": "1f21a2e8d70853b5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u01"
+      ]
     },
     "trueFalse": {
       "prompt": "Relativsatz’ta çekimli fiil genellikle sonda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "9dafc7ac57405d3b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "relativsatz",
+        "grammar-b1-u01"
+      ]
     },
     "multiSelect": {
       "prompt": "Olumlu karakter özelliği bildiren iki kelimeyi seç.",
@@ -272,13 +298,24 @@
         "mit einen netten Nachbarn",
         "mit einem nette Nachbar"
       ],
-      "correctAnswer": "mit einem netten Nachbarn"
+      "correctAnswer": "mit einem netten Nachbarn",
+      "masteryQuestionId": "65dfbdfa77b4e47b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "dativ",
+        "grammar-b1-u02"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wir wohnen in einer ___ Straße. (ruhig)",
       "answer": "ruhigen",
       "acceptedAnswers": [
         "ruhigen"
+      ],
+      "masteryQuestionId": "19ac5982c2277b56",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u02"
       ]
     },
     "ordering": {
@@ -297,6 +334,11 @@
       "acceptedAnswers": [
         "Ich suche ein kleines möbliertes Zimmer",
         "Ich suche ein kleines möbliertes Zimmer."
+      ],
+      "masteryQuestionId": "1e091a11c00f8576",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u02"
       ]
     },
     "dialogue": {
@@ -306,11 +348,23 @@
         "Ich möchte mit zuverlässig Menschen wohnen.",
         "Ich möchte zuverlässigen Menschen ein WG."
       ],
-      "answer": "Ich möchte mit zuverlässigen und rücksichtsvollen Menschen wohnen."
+      "answer": "Ich möchte mit zuverlässigen und rücksichtsvollen Menschen wohnen.",
+      "masteryQuestionId": "bb7f16a1adfe591e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u02"
+      ]
     },
     "trueFalse": {
       "prompt": "Dativ’de artikelden sonra sıfat çoğu zaman -en alır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "b517c39c0d4cf3a2",
+      "masterySkill": "VOCABULARY",
+      "masteryTags": [
+        "dativ",
+        "der-die-das",
+        "vocabulary-b1-u02"
+      ]
     },
     "multiSelect": {
       "prompt": "Konut masrafı veya sözleşmeyle ilgili iki kelimeyi seç.",
@@ -433,13 +487,23 @@
         "Ich mache den Kurs, um ich meine Chancen verbessere.",
         "Ich mache den Kurs, meine Chancen um verbessern."
       ],
-      "correctAnswer": "Ich mache den Kurs, um meine Chancen zu verbessern."
+      "correctAnswer": "Ich mache den Kurs, um meine Chancen zu verbessern.",
+      "masteryQuestionId": "cb9745f746159c26",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich hoffe, bald eine passende Stelle ___ finden.",
       "answer": "zu",
       "acceptedAnswers": [
         "zu"
+      ],
+      "masteryQuestionId": "f0f7bfe2ac271d7c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
       ]
     },
     "ordering": {
@@ -457,6 +521,11 @@
       "acceptedAnswers": [
         "Ich mache ein Praktikum, um Erfahrung zu sammeln",
         "Ich mache ein Praktikum, um Erfahrung zu sammeln."
+      ],
+      "masteryQuestionId": "e2b88b5dc8858dbe",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
       ]
     },
     "dialogue": {
@@ -466,11 +535,21 @@
         "Damit ich zu verbessern meine Chancen.",
         "Zu meine Chancen verbessern."
       ],
-      "answer": "Um meine beruflichen Chancen zu verbessern."
+      "answer": "Um meine beruflichen Chancen zu verbessern.",
+      "masteryQuestionId": "b5298b1f333d1f15",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
+      ]
     },
     "trueFalse": {
       "prompt": "“anzufangen” ayrılabilen anfangen fiilinin zu + Infinitiv biçimidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "dcab710f5da9bb0d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u03"
+      ]
     },
     "multiSelect": {
       "prompt": "Başvuru süreciyle ilgili iki kelimeyi seç.",
@@ -593,13 +672,23 @@
         "Ich verbessere mein Hörverstehen, weil täglich Nachrichten.",
         "Indem ich verbessere, höre Nachrichten."
       ],
-      "correctAnswer": "Ich verbessere mein Hörverstehen, indem ich täglich Nachrichten höre."
+      "correctAnswer": "Ich verbessere mein Hörverstehen, indem ich täglich Nachrichten höre.",
+      "masteryQuestionId": "94b15611006d9ca7",
+      "masterySkill": "LISTENING",
+      "masteryTags": [
+        "listening-b1-u04"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Dadurch, ___ ich regelmäßig wiederhole, vergesse ich weniger.",
       "answer": "dass",
       "acceptedAnswers": [
         "dass"
+      ],
+      "masteryQuestionId": "c999c0b6b10b0c14",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u04"
       ]
     },
     "ordering": {
@@ -618,6 +707,11 @@
       "acceptedAnswers": [
         "Ich verstehe den Text besser, indem ich kurze Zusammenfassungen schreibe",
         "Ich verstehe den Text besser, indem ich kurze Zusammenfassungen schreibe."
+      ],
+      "masteryQuestionId": "2b3231574bb37de8",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u04"
       ]
     },
     "dialogue": {
@@ -627,11 +721,21 @@
         "Weil eigene Sätze verwenden.",
         "Dadurch ich Sätze."
       ],
-      "answer": "Indem ich sie in eigenen Sätzen verwende."
+      "answer": "Indem ich sie in eigenen Sätzen verwende.",
+      "masteryQuestionId": "29cfa85f37643591",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u04"
+      ]
     },
     "trueFalse": {
       "prompt": "indem yan cümlesinde çekimli fiil sonda bulunur.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "852c72df06adbdac",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u04"
+      ]
     },
     "multiSelect": {
       "prompt": "Öğrenme sürecine ait iki kelimeyi seç.",
@@ -754,13 +858,23 @@
         "Obwohl der Artikel ist kurz, er informativ ist.",
         "Trotzdem der Artikel kurz ist, ist er informativ."
       ],
-      "correctAnswer": "Obwohl der Artikel kurz ist, ist er informativ."
+      "correctAnswer": "Obwohl der Artikel kurz ist, ist er informativ.",
+      "masteryQuestionId": "f2e920b41f3c454c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Quelle ist unbekannt. ___ wird die Meldung oft geteilt.",
       "answer": "Trotzdem",
       "acceptedAnswers": [
         "Trotzdem"
+      ],
+      "masteryQuestionId": "c1182431f595ccdf",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
       ]
     },
     "ordering": {
@@ -779,6 +893,11 @@
       "acceptedAnswers": [
         "Obwohl die Nachricht alt ist, wird sie noch diskutiert",
         "Obwohl die Nachricht alt ist, wird sie noch diskutiert."
+      ],
+      "masteryQuestionId": "b4514ec07e3f8f7c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
       ]
     },
     "dialogue": {
@@ -788,11 +907,21 @@
         "Nein, trotzdem ich prüfe Quelle.",
         "Obwohl glaube ich alles."
       ],
-      "answer": "Nein, ich prüfe zuerst die Quelle, obwohl die Meldung glaubwürdig klingt."
+      "answer": "Nein, ich prüfe zuerst die Quelle, obwohl die Meldung glaubwürdig klingt.",
+      "masteryQuestionId": "e54ac257dc4c83a7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
+      ]
     },
     "trueFalse": {
       "prompt": "während iki farklı görüşü karşılaştırmak için de kullanılabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "b9df3e417297a65d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u05"
+      ]
     },
     "multiSelect": {
       "prompt": "Haber değerlendirmesiyle ilgili iki kelimeyi seç.",
@@ -915,13 +1044,23 @@
         "sowohl ... als auch",
         "nicht nur ... sondern auch"
       ],
-      "correctAnswer": "weder ... noch"
+      "correctAnswer": "weder ... noch",
+      "masteryQuestionId": "9a93104d8d1c7f3b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Das Produkt ist nicht nur günstig, ___ auch langlebig.",
       "answer": "sondern",
       "acceptedAnswers": [
         "sondern"
+      ],
+      "masteryQuestionId": "2762db8d872c732b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
       ]
     },
     "ordering": {
@@ -939,6 +1078,11 @@
       "acceptedAnswers": [
         "Ich vertraue weder der Werbung noch einem Rabatt sofort",
         "Ich vertraue weder der Werbung noch einem Rabatt sofort."
+      ],
+      "masteryQuestionId": "588726723d205035",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
       ]
     },
     "dialogue": {
@@ -948,11 +1092,21 @@
         "Es ist nicht nur günstiger, aber auch reparieren.",
         "Weder ich gewählt Rabatt."
       ],
-      "answer": "Es ist nicht nur günstiger, sondern auch leichter zu reparieren."
+      "answer": "Es ist nicht nur günstiger, sondern auch leichter zu reparieren.",
+      "masteryQuestionId": "640fc7e2f7ab7ab0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
+      ]
     },
     "trueFalse": {
       "prompt": "entweder ... oder iki alternatif arasında seçim sunabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "e42afb5e3578e7e9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u06"
+      ]
     },
     "multiSelect": {
       "prompt": "Tüketici kararıyla ilgili iki kelimeyi seç.",
@@ -1075,13 +1229,23 @@
         "Bevor wir im Hotel angekommen waren, riefen wir danach an.",
         "Seitdem wir ankommen, riefen wir an."
       ],
-      "correctAnswer": "Nachdem wir im Hotel angekommen waren, riefen wir die Rezeption an."
+      "correctAnswer": "Nachdem wir im Hotel angekommen waren, riefen wir die Rezeption an.",
+      "masteryQuestionId": "745de9006c7be275",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ wir losfahren, prüfen wir die Tickets.",
       "answer": "Bevor",
       "acceptedAnswers": [
         "Bevor"
+      ],
+      "masteryQuestionId": "e3396bdb2dba8128",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
       ]
     },
     "ordering": {
@@ -1100,6 +1264,11 @@
       "acceptedAnswers": [
         "Seitdem ich hierhergezogen bin, fahre ich häufiger mit dem Zug",
         "Seitdem ich hierhergezogen bin, fahre ich häufiger mit dem Zug."
+      ],
+      "masteryQuestionId": "eb4f3360f829c49b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
       ]
     },
     "dialogue": {
@@ -1109,11 +1278,21 @@
         "Wir erkundigen bevor Verbindung.",
         "Seitdem fiel der Zug."
       ],
-      "answer": "Wir haben uns nach einer anderen Verbindung erkundigt."
+      "answer": "Wir haben uns nach einer anderen Verbindung erkundigt.",
+      "masteryQuestionId": "6b1852ba1d04a15c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
+      ]
     },
     "trueFalse": {
       "prompt": "während eşzamanlı iki olayı bağlayabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "b2ec5b237c707cf4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u07"
+      ]
     },
     "multiSelect": {
       "prompt": "Seyahat sorunuyla ilgili iki kelimeyi seç.",
@@ -1236,13 +1415,23 @@
         "Wenn ich mehr Zeit habe würde, ich Sport machen.",
         "Wenn hätte ich Zeit, mache würde Sport."
       ],
-      "correctAnswer": "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen."
+      "correctAnswer": "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
+      "masteryQuestionId": "f99607d70edd6bcb",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u08"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: An deiner Stelle ___ ich heute früher Feierabend machen.",
       "answer": "würde",
       "acceptedAnswers": [
         "würde"
+      ],
+      "masteryQuestionId": "8993febd934d6730",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u08"
       ]
     },
     "ordering": {
@@ -1260,6 +1449,11 @@
       "acceptedAnswers": [
         "Wenn ich weniger müde wäre, würde ich spazieren gehen",
         "Wenn ich weniger müde wäre, würde ich spazieren gehen."
+      ],
+      "masteryQuestionId": "f4144d793c1b6ac1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u08"
       ]
     },
     "dialogue": {
@@ -1269,11 +1463,22 @@
         "Du könntest ausschaltest Handy.",
         "Wenn du Handy, du Ruhe."
       ],
-      "answer": "Du könntest dein Handy für eine Stunde ausschalten."
+      "answer": "Du könntest dein Handy für eine Stunde ausschalten.",
+      "masteryQuestionId": "dc1c2cb188cc4a16",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u08"
+      ]
     },
     "trueFalse": {
       "prompt": "hätte, haben fiilinin Konjunktiv II biçimidir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "bcd55e5bc8298189",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "konjunktiv",
+        "grammar-b1-u08"
+      ]
     },
     "multiSelect": {
       "prompt": "Stres ve dinlenmeyle ilgili iki kelimeyi seç.",
@@ -1396,13 +1601,24 @@
         "Das Papier hat recycelt.",
         "Das Papier wurde morgen recycelt."
       ],
-      "correctAnswer": "Das Papier wird recycelt."
+      "correctAnswer": "Das Papier wird recycelt.",
+      "masteryQuestionId": "4f4426d7d7219915",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "grammar-b1-u09"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die alten Geräte ___ im letzten Jahr ersetzt.",
       "answer": "wurden",
       "acceptedAnswers": [
         "wurden"
+      ],
+      "masteryQuestionId": "d9c1da449b0946fc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u09"
       ]
     },
     "ordering": {
@@ -1420,6 +1636,11 @@
       "acceptedAnswers": [
         "Das neue System wurde letztes Jahr eingeführt",
         "Das neue System wurde letztes Jahr eingeführt."
+      ],
+      "masteryQuestionId": "ea8e8a35de7dca8e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u09"
       ]
     },
     "dialogue": {
@@ -1429,11 +1650,23 @@
         "Sie gesammelt werden gestern.",
         "Man ist Flaschen gesammelt."
       ],
-      "answer": "Sie werden gesammelt und wiederverwendet."
+      "answer": "Sie werden gesammelt und wiederverwendet.",
+      "masteryQuestionId": "d79eaa5ff804ec3f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u09"
+      ]
     },
     "trueFalse": {
       "prompt": "Passiv Präteritum’da wurde/wurden + Partizip II kullanılır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "70dfef97c7917320",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "praeteritum",
+        "grammar-b1-u09"
+      ]
     },
     "multiSelect": {
       "prompt": "Sürdürülebilirlikle ilgili iki kelimeyi seç.",
@@ -1556,13 +1789,23 @@
         "das Projekt, dem ich teilnehme",
         "das Projekt, an das ich teilnehme"
       ],
-      "correctAnswer": "das Projekt, an dem ich teilnehme"
+      "correctAnswer": "das Projekt, an dem ich teilnehme",
+      "masteryQuestionId": "75461238ae5b5ad6",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u10"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Der Verein, ___ den sie arbeitet, hilft Jugendlichen.",
       "answer": "für",
       "acceptedAnswers": [
         "für"
+      ],
+      "masteryQuestionId": "e6186e42a1463afc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u10"
       ]
     },
     "ordering": {
@@ -1581,6 +1824,11 @@
       "acceptedAnswers": [
         "Das Thema, über das wir gesprochen haben, ist wichtig",
         "Das Thema, über das wir gesprochen haben, ist wichtig."
+      ],
+      "masteryQuestionId": "04beddc41641ba36",
+      "masterySkill": "SPEAKING",
+      "masteryTags": [
+        "speaking-b1-u10"
       ]
     },
     "dialogue": {
@@ -1590,11 +1838,23 @@
         "Eine Initiative, die bei Nachbarn unterstützen.",
         "Eine Initiative, bei die ich."
       ],
-      "answer": "Eine Initiative, bei der Nachbarn gemeinsam ältere Menschen unterstützen."
+      "answer": "Eine Initiative, bei der Nachbarn gemeinsam ältere Menschen unterstützen.",
+      "masteryQuestionId": "e8f831d4d6abb856",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u10"
+      ]
     },
     "trueFalse": {
       "prompt": "Relativpronomenin hâlini edat belirleyebilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "0a271fec55cbbb1b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "relativsatz",
+        "praepositionen",
+        "grammar-b1-u10"
+      ]
     },
     "multiSelect": {
       "prompt": "Toplumsal katılımla ilgili iki kelimeyi seç.",
@@ -1717,13 +1977,23 @@
         "Je länger dauert der Film, desto ich werde müder.",
         "Je der Film länger, werde desto müde."
       ],
-      "correctAnswer": "Je länger der Film dauert, desto müder werde ich."
+      "correctAnswer": "Je länger der Film dauert, desto müder werde ich.",
+      "masteryQuestionId": "0f59c10ba26e52b9",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Je öfter ich die Szene sehe, ___ interessanter finde ich sie.",
       "answer": "desto",
       "acceptedAnswers": [
         "desto"
+      ],
+      "masteryQuestionId": "a239471ef9467752",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
       ]
     },
     "ordering": {
@@ -1742,6 +2012,11 @@
       "acceptedAnswers": [
         "Je weiter das Buch voranschreitet, desto interessanter werden die Figuren",
         "Je weiter das Buch voranschreitet, desto interessanter werden die Figuren."
+      ],
+      "masteryQuestionId": "8b3f16d23c335cb5",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
       ]
     },
     "dialogue": {
@@ -1751,11 +2026,21 @@
         "Ja, je Film empfehlen desto.",
         "Ich empfehle, weil Leute ruhig."
       ],
-      "answer": "Ja, besonders für Leute, die ruhige Geschichten mögen."
+      "answer": "Ja, besonders für Leute, die ruhige Geschichten mögen.",
+      "masteryQuestionId": "96b50f25c243899f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
+      ]
     },
     "trueFalse": {
       "prompt": "desto yerine umso da kullanılabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "54a9b0d84c7f4e98",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u11"
+      ]
     },
     "multiSelect": {
       "prompt": "Film/eleştiri alanına ait iki kelimeyi seç.",
@@ -1878,13 +2163,24 @@
         "Die Unterlagen müssen werden geprüft.",
         "Die Unterlagen haben müssen geprüft."
       ],
-      "correctAnswer": "Die Unterlagen müssen geprüft werden."
+      "correctAnswer": "Die Unterlagen müssen geprüft werden.",
+      "masteryQuestionId": "bd933205268cb33e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "grammar-b1-u12"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Die Regel darf nicht ___ werden. (ändern)",
       "answer": "geändert",
       "acceptedAnswers": [
         "geändert"
+      ],
+      "masteryQuestionId": "ae4f2f26297d678c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u12"
       ]
     },
     "ordering": {
@@ -1902,6 +2198,11 @@
       "acceptedAnswers": [
         "Diese Informationen dürfen nicht weitergegeben werden",
         "Diese Informationen dürfen nicht weitergegeben werden."
+      ],
+      "masteryQuestionId": "dd40c980ec2f1fd3",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u12"
       ]
     },
     "dialogue": {
@@ -1911,11 +2212,22 @@
         "Es muss einreichen bis Freitag.",
         "Es wird müssen Freitag."
       ],
-      "answer": "Es muss bis Freitag eingereicht werden."
+      "answer": "Es muss bis Freitag eingereicht werden.",
+      "masteryQuestionId": "7ccdb995ca32cd86",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u12"
+      ]
     },
     "trueFalse": {
       "prompt": "Modalpassiv’de werden mastarı cümlenin sonunda bulunabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "cadbc03ac25013e0",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "passiv",
+        "grammar-b1-u12"
+      ]
     },
     "multiSelect": {
       "prompt": "Kural ve hak alanına ait iki kelimeyi seç.",
@@ -2038,13 +2350,23 @@
         "Wir arbeiten werden morgen.",
         "Wir wurden morgen arbeiten."
       ],
-      "correctAnswer": "Wir werden morgen weiterarbeiten."
+      "correctAnswer": "Wir werden morgen weiterarbeiten.",
+      "masteryQuestionId": "110a33c53dee7ab7",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Das Thema ___ wahrscheinlich wichtiger werden.",
       "answer": "wird",
       "acceptedAnswers": [
         "wird"
+      ],
+      "masteryQuestionId": "24226987d0145fc4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
       ]
     },
     "ordering": {
@@ -2062,6 +2384,11 @@
       "acceptedAnswers": [
         "Wahrscheinlich werden mehr Menschen im Homeoffice arbeiten",
         "Wahrscheinlich werden mehr Menschen im Homeoffice arbeiten."
+      ],
+      "masteryQuestionId": "0dda08fedd8a7bbd",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
       ]
     },
     "dialogue": {
@@ -2071,11 +2398,21 @@
         "Ja, sie vermutlich wichtiger wurde.",
         "Sie wird wichtig gestern."
       ],
-      "answer": "Ja, sie wird vermutlich noch wichtiger werden."
+      "answer": "Ja, sie wird vermutlich noch wichtiger werden.",
+      "masteryQuestionId": "a26131d521d1fa91",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
+      ]
     },
     "trueFalse": {
       "prompt": "Futur I, werden + Infinitiv ile kurulabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "26780541db93716b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u13"
+      ]
     },
     "multiSelect": {
       "prompt": "Teknolojik değişimle ilgili iki kelimeyi seç.",
@@ -2198,13 +2535,24 @@
         "die Kosten dem Vertrag",
         "die Kosten den Vertrags"
       ],
-      "correctAnswer": "die Kosten des Vertrags"
+      "correctAnswer": "die Kosten des Vertrags",
+      "masteryQuestionId": "40ea83c4e04a394a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "genitiv",
+        "grammar-b1-u14"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Wegen ___ hohen Kosten kündige ich den Vertrag. (die Kosten, Pl.)",
       "answer": "der",
       "acceptedAnswers": [
         "der"
+      ],
+      "masteryQuestionId": "ae14402530ba14d4",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u14"
       ]
     },
     "ordering": {
@@ -2223,6 +2571,11 @@
       "acceptedAnswers": [
         "Die Laufzeit des Vertrags beträgt zwei Jahre",
         "Die Laufzeit des Vertrags beträgt zwei Jahre."
+      ],
+      "masteryQuestionId": "6804111a369f938b",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u14"
       ]
     },
     "dialogue": {
@@ -2232,11 +2585,22 @@
         "Wegen die Kosten es teuer.",
         "Trotz ich Rabatt, Kosten."
       ],
-      "answer": "Wegen der zusätzlichen Kosten ist es für mich zu teuer."
+      "answer": "Wegen der zusätzlichen Kosten ist es für mich zu teuer.",
+      "masteryQuestionId": "81f93c288030c356",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u14"
+      ]
     },
     "trueFalse": {
       "prompt": "“trotz des Rabatts” standart yazı dilinde Genitiv yapısıdır.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "9a6b80c4588acdd9",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "genitiv",
+        "writing-b1-u14"
+      ]
     },
     "multiSelect": {
       "prompt": "Bütçe alanına ait iki kelimeyi seç.",
@@ -2359,13 +2723,25 @@
         "Er hat die Nachricht lesen.",
         "Er wurde die Nachricht gelesen."
       ],
-      "correctAnswer": "Er hatte die Nachricht gelesen."
+      "correctAnswer": "Er hatte die Nachricht gelesen.",
+      "masteryQuestionId": "49fb07526519c6c1",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "plusquamperfekt",
+        "perfekt",
+        "grammar-b1-u15"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Nachdem der Zug abgefahren ___, kam die Durchsage.",
       "answer": "war",
       "acceptedAnswers": [
         "war"
+      ],
+      "masteryQuestionId": "688a06828e845c84",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u15"
       ]
     },
     "ordering": {
@@ -2384,6 +2760,11 @@
       "acceptedAnswers": [
         "Ich hatte die E-Mail gelesen, bevor die Besprechung begann",
         "Ich hatte die E-Mail gelesen, bevor die Besprechung begann."
+      ],
+      "masteryQuestionId": "beff0334eec18961",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u15"
       ]
     },
     "dialogue": {
@@ -2393,11 +2774,23 @@
         "Weil vorher ein Problem auftritt hatte.",
         "Nachdem Problem, begann später."
       ],
-      "answer": "Weil vorher ein technisches Problem aufgetreten war."
+      "answer": "Weil vorher ein technisches Problem aufgetreten war.",
+      "masteryQuestionId": "65f0798b6713648c",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u15"
+      ]
     },
     "trueFalse": {
       "prompt": "Plusquamperfekt geçmişte daha önce tamamlanan bir eylemi gösterebilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "4e1a6ebb43a63b00",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "plusquamperfekt",
+        "perfekt",
+        "grammar-b1-u15"
+      ]
     },
     "multiSelect": {
       "prompt": "Haber aktarımıyla ilgili iki kelimeyi seç.",
@@ -2520,13 +2913,23 @@
         "um ... zu",
         "ohne ... zu"
       ],
-      "correctAnswer": "damit"
+      "correctAnswer": "damit",
+      "masteryQuestionId": "b77539c00f622dcc",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich schreibe es auf, ___ ich nichts vergesse.",
       "answer": "damit",
       "acceptedAnswers": [
         "damit"
+      ],
+      "masteryQuestionId": "cf2540712cebdc9e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
       ]
     },
     "ordering": {
@@ -2545,6 +2948,11 @@
       "acceptedAnswers": [
         "Ich lerne jeden Tag, um die Prüfung zu bestehen",
         "Ich lerne jeden Tag, um die Prüfung zu bestehen."
+      ],
+      "masteryQuestionId": "23e516a7dbb8d489",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
       ]
     },
     "dialogue": {
@@ -2554,11 +2962,21 @@
         "Um ich nichts vergesse.",
         "Ohne ich vergessen."
       ],
-      "answer": "Damit ich nichts Wichtiges vergesse."
+      "answer": "Damit ich nichts Wichtiges vergesse.",
+      "masteryQuestionId": "bc45f1cb4dae433d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
+      ]
     },
     "trueFalse": {
       "prompt": "statt ... zu bir eylem yerine başka bir eylemin yapıldığını gösterebilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "95f2fd5648c1ad27",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u16"
+      ]
     },
     "multiSelect": {
       "prompt": "Planlama alanına ait iki kelimeyi seç.",
@@ -2681,13 +3099,23 @@
         "Auf wen warten Sie?",
         "Was warten Sie auf?"
       ],
-      "correctAnswer": "Worauf warten Sie?"
+      "correctAnswer": "Worauf warten Sie?",
+      "masteryQuestionId": "bc2c1b1662da1c31",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: Ich beziehe mich ___ Ihre E-Mail vom Montag.",
       "answer": "auf",
       "acceptedAnswers": [
         "auf"
+      ],
+      "masteryQuestionId": "fca02ada37f9ef74",
+      "masterySkill": "WRITING",
+      "masteryTags": [
+        "writing-b1-u17"
       ]
     },
     "ordering": {
@@ -2705,6 +3133,11 @@
       "acceptedAnswers": [
         "Ich möchte mich über die verspätete Lieferung beschweren",
         "Ich möchte mich über die verspätete Lieferung beschweren."
+      ],
+      "masteryQuestionId": "fe60f77d47619387",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
       ]
     },
     "dialogue": {
@@ -2714,11 +3147,21 @@
         "Über die Rechnung warten.",
         "Darüber Person Rechnung."
       ],
-      "answer": "Auf die Rechnung vom letzten Monat."
+      "answer": "Auf die Rechnung vom letzten Monat.",
+      "masteryQuestionId": "7e59fa833170ba8d",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
+      ]
     },
     "trueFalse": {
       "prompt": "“darauf” daha önce sözü geçen bir şeye gönderme yapabilir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "6f561a5a11a4a215",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u17"
+      ]
     },
     "multiSelect": {
       "prompt": "Resmî yazışmayla ilgili iki kelimeyi seç.",
@@ -2841,13 +3284,23 @@
         "Praktisch. Kosten. Ich dafür.",
         "Obwohl praktisch deshalb andererseits."
       ],
-      "correctAnswer": "Einerseits ist die Lösung praktisch, andererseits kostet sie mehr. Insgesamt bin ich trotzdem dafür."
+      "correctAnswer": "Einerseits ist die Lösung praktisch, andererseits kostet sie mehr. Insgesamt bin ich trotzdem dafür.",
+      "masteryQuestionId": "88fbd8d28d3c6c2e",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
+      ]
     },
     "fill": {
       "prompt": "Boşluğu tamamla: ___ möchte ich die wichtigsten Punkte zusammenfassen.",
       "answer": "Insgesamt",
       "acceptedAnswers": [
         "Insgesamt"
+      ],
+      "masteryQuestionId": "4fdb17b08c1f879a",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
       ]
     },
     "ordering": {
@@ -2865,6 +3318,11 @@
       "acceptedAnswers": [
         "Insgesamt empfehle ich diese Lösung, weil die Vorteile überwiegen",
         "Insgesamt empfehle ich diese Lösung, weil die Vorteile überwiegen."
+      ],
+      "masteryQuestionId": "0988ee58cc993e5f",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
       ]
     },
     "dialogue": {
@@ -2874,11 +3332,21 @@
         "Ich gemischt vorschlagen, Leute können.",
         "Online weil vor Ort trotzdem."
       ],
-      "answer": "Ich würde eine gemischte Lösung vorschlagen, damit mehr Leute teilnehmen können."
+      "answer": "Ich würde eine gemischte Lösung vorschlagen, damit mehr Leute teilnehmen können.",
+      "masteryQuestionId": "d8734a4df5bc26c8",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
+      ]
     },
     "trueFalse": {
       "prompt": "B1’de görüşü kısa gerekçe ve örnekle desteklemek beklenen bir beceridir.",
-      "answer": true
+      "answer": true,
+      "masteryQuestionId": "056ffcca916ed8ab",
+      "masterySkill": "GRAMMAR",
+      "masteryTags": [
+        "grammar-b1-u18"
+      ]
     },
     "multiSelect": {
       "prompt": "Tartışma ve planlama için iki kelimeyi seç.",

@@ -1,13 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-// V37_V36_VERSION_GATE_COMPAT
-// V36 bu dosyada bir icerik kalite kapisidir. Paket surumu V36'dan daha yeni
-// olabilir; bu durumda V36 icerik standartlari yine korunarak dogrulanir.
-const __v36CompatiblePackageVersion = (value) => {
-  const major = Number(String(value ?? "").trim().split(".")[0]);
-  return Number.isFinite(major) && major >= 36;
-};
-
 // V37_VERSION_COMPAT_36: legacy content validator accepts later package majors.
 const __legacyVersionCompatible = (value) => {
   const major = Number(String(value ?? "").split(".")[0]);
@@ -19,7 +11,7 @@ const read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const req=p=>{if(!fs.existsSync(path.join(root,p)))errors.push(`Eksik dosya: ${p}`)};
 ["data/v36-b2-gold-standard.json","data/v36-b2-enrichment.json","data/v36-b2-quality.json","docs/V36_B2_GOLD_STANDARD.md",".github/workflows/v36-b2-gold-standard.yml"].forEach(req);
 const pkg=JSON.parse(read("package.json"));
-if(!/^(?:3[6-9]|[4-9]\d|\d{3,})\./.test(String(pkg.version??"")))errors.push(`V36 paket surumu bekleniyor: ${pkg.version}`);
+if(!/^36\./.test(String(pkg.version??"")))errors.push(`V36 paket surumu bekleniyor: ${pkg.version}`);
 if(!pkg.scripts?.["validate:v36"])errors.push("validate:v36 npm scripti eksik.");
 for(const name of ["prebuild","quality:check","vercel-build"])if(!String(pkg.scripts?.[name]??"").includes("validate:v36"))errors.push(`${name} validate:v36 calistirmiyor.`);
 const units=JSON.parse(read("data/v36-b2-gold-standard.json")), enrich=JSON.parse(read("data/v36-b2-enrichment.json")), quality=JSON.parse(read("data/v36-b2-quality.json"));

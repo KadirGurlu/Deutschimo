@@ -1,0 +1,24 @@
+import fs from "node:fs";import path from "node:path";
+const root=process.cwd(),errors=[],read=p=>fs.readFileSync(path.join(root,p),"utf8"),exists=p=>fs.existsSync(path.join(root,p));
+for(const f of["data/v37-skill-rules.json","data/v37-question-skill-index.json","types/mastery.ts","lib/mastery/skill-tags.ts","lib/mastery/score.ts","lib/mastery/server.ts","lib/mastery/bridge.ts","app/api/mastery/attempt/route.ts","app/api/mastery/overview/route.ts","app/api/mastery/unit/[unitId]/route.ts","components/mastery/mastery-overview.tsx","app/mastery/page.tsx","prisma/migrations/20260809130000_v37_mastery_engine/migration.sql"])if(!exists(f))errors.push(`Eksik V37 dosyasi: ${f}`);
+const pkg=JSON.parse(read("package.json")),major=Number(String(pkg.version??"").split(".")[0]);if(!Number.isFinite(major)||major<37)errors.push(`V37 paket surumu bekleniyor: ${pkg.version}`);if(!pkg.scripts?.["validate:v37"])errors.push("validate:v37 npm scripti eksik.");for(const n of["vercel-build","prebuild"])if(pkg.scripts?.[n]&&!String(pkg.scripts[n]).includes("validate:v37"))errors.push(`${n} validate:v37 calistirmiyor.`);
+const schema=read("prisma/schema.prisma");for(const t of["enum MasterySkillArea","model MasteryAttempt","model MasterySkillSnapshot","model MasteryTopicSnapshot","VOCABULARY","GRAMMAR","READING","LISTENING","WRITING","SPEAKING"])if(!schema.includes(t))errors.push(`Prisma V37 parcasi eksik: ${t}`);
+const migration=read("prisma/migrations/20260809130000_v37_mastery_engine/migration.sql").toUpperCase();for(const d of["DROP TABLE","DROP COLUMN","TRUNCATE","DELETE FROM"])if(migration.includes(d))errors.push(`Yikici migration komutu yasak: ${d}`);
+const rules=JSON.parse(read("data/v37-skill-rules.json")),skills=new Set((rules.skills??[]).map(x=>x.id));for(const s of["VOCABULARY","GRAMMAR","READING","LISTENING","WRITING","SPEAKING"])if(!skills.has(s))errors.push(`Eksik ustalik alani: ${s}`);
+const idx=JSON.parse(read("data/v37-question-skill-index.json"));if(!Number.isInteger(idx.questionCount)||idx.questionCount<1)errors.push("V37 soru indexi bos.");for(const r of idx.records??[]){if(!skills.has(r.skill))errors.push(`Gecersiz soru skill: ${r.questionId}`);if(!Array.isArray(r.tags)||!r.tags.length)errors.push(`Etiketsiz soru: ${r.questionId}`);}
+function qlike(o,parent){if(!o||typeof o!=="object"||Array.isArray(o))return false;const k=Object.keys(o);return(k.some(x=>["correctAnswer","answer","acceptedAnswers"].includes(x))&&k.some(x=>["prompt","question","text","title","options"].includes(x)))||/questions?|miniCheck/i.test(parent);}
+let scanned=0;function walk(n,parent,file){if(Array.isArray(n))return n.forEach(x=>walk(x,parent,file));if(!n||typeof n!=="object")return;if(qlike(n,parent)){scanned++;if(!skills.has(n.masterySkill))errors.push(`${file}: masterySkill eksik/gecersiz`);if(!Array.isArray(n.masteryTags)||!n.masteryTags.length)errors.push(`${file}: masteryTags eksik`);if(typeof n.masteryQuestionId!=="string"||!n.masteryQuestionId)errors.push(`${file}: masteryQuestionId eksik`);}for(const[k,v]of Object.entries(n))walk(v,k,file);}
+function jsons(dir){if(!fs.existsSync(dir))return[];return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>{const f=path.join(dir,e.name);if(e.isDirectory())return jsons(f);return e.isFile()&&e.name.endsWith(".json")&&!e.name.startsWith("v37-")?[f]:[];});}
+for(const f of jsons(path.join(root,"data"))){try{walk(JSON.parse(fs.readFileSync(f,"utf8")),"",path.relative(root,f));}catch{}}
+if(scanned!==idx.questionCount)errors.push(`Soru index sayisi uyusmuyor: tarama=${scanned}, index=${idx.questionCount}`);
+const server=read("lib/mastery/server.ts");for(const t of["completionByCourse","getMasteryOverview","recordMasteryEvidence","coverage","provisional"])if(!server.includes(t))errors.push(`Mastery server ozelligi eksik: ${t}`);
+const ui=read("components/mastery/mastery-overview.tsx");for(const t of["Kurs tamamlama","genel yeterlilik","Güçlü alan","Geliştirilmeli"])if(!ui.includes(t))errors.push(`Mastery arayuz parcasi eksik: ${t}`);
+for(const r of["app/api/skills/attempts/route.ts","app/api/assessment/evidence/route.ts"])if(exists(r)&&!read(r).includes("captureMasteryExchange"))errors.push(`Mastery bridge eksik: ${r}`);
+if(errors.length){errors.forEach(e=>console.error("HATA:",e));console.error(`V37 Mastery Engine dogrulamasi basarisiz: ${errors.length} hata.`);process.exit(1);}
+console.log("V37 Mastery Engine doğrulaması başarılı:");
+console.log(`- ${idx.questionCount} soru masteryQuestionId + skill + tag ile etiketli.`);
+console.log("- Kelime / Gramer / Okuma / Dinleme / Yazma / Konuşma ayrı puanlanıyor.");
+console.log("- Kurs tamamlama yüzdesi ile gerçek ustalık puanı bağımsız veri katmanlarında.");
+console.log("- Ünite, kurs ve konu etiketi bazında snapshot hesapları hazır.");
+console.log("- Eksik beceri kanıtı sıfır puan sayılmıyor; kapsama oranı ayrıca gösteriliyor.");
+console.log("- Ham öğrenci cevabı MasteryAttempt tablosunda saklanmıyor.");

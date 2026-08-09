@@ -952,3 +952,69 @@ model ApiIdempotencyRecord {
   @@index([expiresAt])
   @@index([userId, createdAt])
 }
+
+// Deutschimo V37 — Mastery Engine
+enum MasterySkillArea {
+  VOCABULARY
+  GRAMMAR
+  READING
+  LISTENING
+  WRITING
+  SPEAKING
+}
+
+model MasteryAttempt {
+  id              String           @id @default(cuid())
+  userId          String
+  courseId        String
+  unitId          String?
+  questionId      String
+  source          String
+  skill           MasterySkillArea
+  tags            String[]         @default([])
+  score           Float
+  correct         Boolean?
+  responseMs      Int?
+  hintUsed        Boolean          @default(false)
+  confidenceLabel String?
+  difficulty      Int?
+  evidenceWeight  Float            @default(1)
+  eventKey        String           @unique
+  createdAt       DateTime         @default(now())
+  @@index([userId, courseId, createdAt])
+  @@index([userId, courseId, unitId, skill])
+  @@index([userId, skill, createdAt])
+}
+
+model MasterySkillSnapshot {
+  id             String           @id @default(cuid())
+  userId         String
+  scopeKey       String
+  courseId       String
+  unitId         String?
+  skill          MasterySkillArea
+  score          Float
+  evidenceCount  Int              @default(0)
+  confidence     Float            @default(0)
+  lastEvidenceAt DateTime?
+  updatedAt      DateTime         @updatedAt
+  @@unique([userId, scopeKey, skill])
+  @@index([userId, courseId, unitId])
+}
+
+model MasteryTopicSnapshot {
+  id             String   @id @default(cuid())
+  userId         String
+  scopeKey       String
+  courseId       String
+  unitId         String?
+  tag            String
+  score          Float
+  evidenceCount  Int      @default(0)
+  confidence     Float    @default(0)
+  lastEvidenceAt DateTime?
+  updatedAt      DateTime @updatedAt
+  @@unique([userId, scopeKey, tag])
+  @@index([userId, courseId, unitId])
+  @@index([userId, tag])
+}

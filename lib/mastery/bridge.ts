@@ -213,8 +213,15 @@ export async function captureMasteryExchange(input: {
   const response = rec(input.responseBody);
   const src = source(input.source);
 
-  const session = await auth();
-  const sessionUserId = (session?.user as { id?: string } | undefined)?.id;
+  // V46_3_AUTH_FALLBACK_V8_6
+  let sessionUserId: string | undefined;
+  try {
+    const session = await auth();
+    sessionUserId = (session?.user as { id?: string } | undefined)?.id;
+  } catch {
+    // Auth.js yeniden okunamazsa asagidaki persisted SkillLabAttempt.userId fallback'i kullanilir.
+    sessionUserId = undefined;
+  }
 
   // /api/skills/attempts returns the freshly persisted SkillLabAttempt.
   // If Auth.js cannot be re-read after the wrapped handler has produced

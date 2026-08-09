@@ -83,4 +83,14 @@ export async function logout(page: Page) {
 
 export async function cleanupUser(email: string) {
   await prisma.user.deleteMany({ where: { email } });
+
+  // V46 E2E runs against an isolated CI database with one browser worker.
+  // Clear auth throttling evidence between scenarios/retries so a failed
+  // scenario does not make the next scenario fail for an unrelated 429.
+  await Promise.all([
+    prisma.rateLimitEvent.deleteMany({
+      where: { scope: { in: ["register", "register-email"] } },
+    }),
+    prisma.loginAttempt.deleteMany({}),
+  ]);
 }

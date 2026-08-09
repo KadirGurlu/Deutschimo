@@ -2,7 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 
 const port = Number(process.env.PORT || 4600);
 const baseURL =
-  process.env.PLAYWRIGHT_BASE_URL || `http://127.0.0.1:${port}`;
+  process.env.PLAYWRIGHT_BASE_URL || `http://localhost:${port}`;
 
 export default defineConfig({
   testDir: "./e2e",
@@ -24,8 +24,8 @@ export default defineConfig({
   webServer: {
     command:
       process.env.PLAYWRIGHT_SKIP_BUILD === "true"
-        ? `npm run start -- -p ${port}`
-        : `npm run build && npm run start -- -p ${port}`,
+        ? `npm run start -- -H localhost -p ${port}`
+        : `npm run build && npm run start -- -H localhost -p ${port}`,
     url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,

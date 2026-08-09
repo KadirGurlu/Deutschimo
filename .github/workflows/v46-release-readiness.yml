@@ -24,12 +24,13 @@ env:
   AUTH_SECRET: v46-ci-auth-secret-32-characters-minimum-2026
   SECURITY_HASH_KEY: v46-ci-security-hash-key-32-characters-minimum-2026
   CRON_SECRET: v46-ci-cron-secret-32-characters-minimum-2026
-  AUTH_URL: http://127.0.0.1:4600
+  AUTH_URL: http://localhost:4600
   AUTH_TRUST_HOST: "true"
   NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
   REQUIRE_EMAIL_VERIFICATION: "false"
   BOOTSTRAP_ADMIN_ON_BUILD: "false"
   PLAYWRIGHT_SKIP_BUILD: "true"
+  PLAYWRIGHT_BASE_URL: http://localhost:4600
   PORT: "4600"
 
 jobs:

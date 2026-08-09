@@ -214,8 +214,8 @@ export function canTransition(current: CmsWorkflowStatus, next: CmsWorkflowStatu
   if (current === next || next === CmsWorkflowStatus.ARCHIVED) return true;
   return (
     (current === CmsWorkflowStatus.DRAFT && next === CmsWorkflowStatus.REVIEW) ||
-    (current === CmsWorkflowStatus.REVIEW && [CmsWorkflowStatus.DRAFT,CmsWorkflowStatus.READY].includes(next)) ||
-    (current === CmsWorkflowStatus.READY && [CmsWorkflowStatus.REVIEW,CmsWorkflowStatus.PUBLISHED].includes(next)) ||
+    (current === CmsWorkflowStatus.REVIEW && (next === CmsWorkflowStatus.DRAFT || next === CmsWorkflowStatus.READY)) ||
+    (current === CmsWorkflowStatus.READY && (next === CmsWorkflowStatus.REVIEW || next === CmsWorkflowStatus.PUBLISHED)) ||
     (current === CmsWorkflowStatus.PUBLISHED && next === CmsWorkflowStatus.REVIEW)
   );
 }

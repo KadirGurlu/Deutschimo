@@ -67,7 +67,7 @@ async function POSTHandler(request: Request) {
         createdById:user.id,updatedById:user.id,
       }});
       await tx.cmsContentRevision.create({data:{
-        contentId:created.id,version:1,status:created.status,snapshot:created.payload,
+        contentId:created.id,version:1,status:created.status,snapshot:created.payload === null ? Prisma.JsonNull : (created.payload as Prisma.InputJsonValue),
         actorUserId:user.id,changeNote:"İçerik oluşturuldu.",
       }});
       return created;

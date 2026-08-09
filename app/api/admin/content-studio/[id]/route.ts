@@ -33,7 +33,7 @@ async function PATCHHandler(request:Request,context:{params:Promise<{id:string}>
   const record=await prisma.$transaction(async(tx)=>{
     const updated=await tx.cmsContentRecord.update({where:{id},data:{...data,version}});
     await tx.cmsContentRevision.create({data:{
-      contentId:id,version,status:updated.status,snapshot:updated.payload,actorUserId:user.id,
+      contentId:id,version,status:updated.status,snapshot:updated.payload === null ? Prisma.JsonNull : (updated.payload as Prisma.InputJsonValue),actorUserId:user.id,
       changeNote:typeof body.changeNote==="string"?body.changeNote.slice(0,300):"İçerik güncellendi.",
     }});
     return updated;

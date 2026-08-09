@@ -67,6 +67,21 @@ if (!v46Helper.includes("x-forwarded-for") || !v46Helper.includes("v46ClientIp")
 if (v46Helper.includes("rateLimitEvent.deleteMany")) errors.push("V46 E2E cleanup guvenlik rate-limit tablosunu silmemeli.");
 const masteryBridge = read("lib/mastery/bridge.ts");
 if (!masteryBridge.includes("skillLabCorrect") || !masteryBridge.includes("correct:multiCorrect")) errors.push("V46.3 Skill Lab yanlis cevabi Smart Review kuyruguna bagli degil.");
+
+// V46_3_SKILL_LAB_QUESTION_QUEUE_BRIDGE_V8_2
+{
+  const masteryQueueBridgeV8_2 = read("lib/mastery/bridge.ts");
+  for (const token of [
+    "skillLabQuestionResults",
+    "masteryQuestionId",
+    "persistedSkillLabUserId",
+    "correct: result.correct",
+  ]) {
+    if (!masteryQueueBridgeV8_2.includes(token)) {
+      errors.push(`V46.3 Skill Lab -> Mastery Review queue bridge eksik: ${token}`);
+    }
+  }
+}
 if (errors.length) {
   for (const error of errors) console.error("HATA:", error);
   console.error(`V46 dogrulamasi basarisiz: ${errors.length} hata.`);

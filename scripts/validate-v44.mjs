@@ -19,6 +19,7 @@ const req = (rel) => {
   "app/api/admin/content-studio/quality/route.ts",
   "app/api/content/unit/[unitId]/route.ts",
   "components/admin/content-manager.tsx",
+  "app/admin/courses/[courseId]/units/[unitId]/page.tsx",
   "components/admin/quality-dashboard.tsx",
   "app/admin/quality/page.tsx",
   "lib/services/course-service.ts",
@@ -85,6 +86,16 @@ for (const token of [
   '{typeLabel[t]} ekle',
 ]) {
   if (!ui.includes(token)) errors.push(`ui dynamic create control: ${token}`);
+}
+
+
+// V44_ROUTE_PROP_CONTRACT
+const adminUnitRoute = read("app/admin/courses/[courseId]/units/[unitId]/page.tsx");
+for (const token of ["initialCourseId={courseId}","initialUnitId={unitId}"]) {
+  if (!adminUnitRoute.includes(token)) errors.push(`admin unit route prop contract: ${token}`);
+}
+for (const token of ["type ContentManagerProps=","initialCourseId?:string","initialUnitId?:string","initialCourseId,initialUnitId}:ContentManagerProps"]) {
+  if (!ui.includes(token)) errors.push(`ContentManager prop contract: ${token}`);
 }
 
 const helper = read("lib/admin/content-cms.ts");

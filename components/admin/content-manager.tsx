@@ -7,6 +7,7 @@ type EntityType="COURSE"|"UNIT"|"LESSON"|"VOCABULARY"|"QUESTION"|"LISTENING";
 type Status="DRAFT"|"REVIEW"|"READY"|"PUBLISHED"|"ARCHIVED";
 type RecordItem={id:string;key:string;entityType:EntityType;parentKey:string|null;courseKey:string|null;unitKey:string|null;level:"A1"|"A2"|"B1"|"B2"|null;title:string;status:Status;active:boolean;qualityTier:"GOLD"|"STANDARD"|"REVIEW_REQUIRED";version:number;payload:Record<string,unknown>;updatedAt:string};
 type Revision={id:string;version:number;status:Status;changeNote:string|null;createdAt:string};
+type ContentManagerProps={initialCourseId?:string;initialUnitId?:string};
 
 const statusLabel:Record<Status,string>={DRAFT:"Taslak",REVIEW:"İncelemede",READY:"Yayına hazır",PUBLISHED:"Yayında",ARCHIVED:"Arşiv"};
 const typeLabel:Record<EntityType,string>={COURSE:"Kurs",UNIT:"Ünite",LESSON:"Ders",VOCABULARY:"Kelime",QUESTION:"Soru",LISTENING:"Dinleme"};
@@ -30,7 +31,7 @@ function withText(record:RecordItem,value:string){
   return p;
 }
 
-export function ContentManager(){
+export function ContentManager({initialCourseId,initialUnitId}:ContentManagerProps={}){
   const[catalog,setCatalog]=useState<{courses:RecordItem[];units:RecordItem[]}>({courses:[],units:[]});
   const[records,setRecords]=useState<RecordItem[]>([]);const[courseKey,setCourseKey]=useState("a1");const[unitKey,setUnitKey]=useState("a1-u01");
   const[tab,setTab]=useState<"ALL"|EntityType>("ALL");const[query,setQuery]=useState("");const[message,setMessage]=useState("");const[busy,setBusy]=useState(false);
@@ -40,6 +41,15 @@ export function ContentManager(){
   const loadCatalog=useCallback(async()=>{const r=await fetch("/api/admin/content-studio?catalog=1",{cache:"no-store"});const p=await r.json();if(r.ok)setCatalog(p)},[]);
   const loadUnit=useCallback(async(id=unitKey)=>{if(!id)return;setBusy(true);try{const r=await fetch(`/api/admin/content-studio?unitKey=${encodeURIComponent(id)}&materialize=1`,{cache:"no-store"});const p=await r.json();if(!r.ok)throw new Error(p.error);setRecords(p.records??[])}catch(e){setMessage(e instanceof Error?e.message:"İçerik yüklenemedi.")}finally{setBusy(false)}},[unitKey]);
   useEffect(()=>{void loadCatalog()},[loadCatalog]);useEffect(()=>{void loadUnit(unitKey)},[unitKey,loadUnit]);
+  useEffect(()=>{
+    if(!initialCourseId&&!initialUnitId)return;
+    const initialCourse=initialCourseId?catalog.courses.find((item)=>item.id===initialCourseId||item.courseKey===initialCourseId):undefined;
+    const initialUnit=initialUnitId?catalog.units.find((item)=>item.id===initialUnitId||item.unitKey===initialUnitId):undefined;
+    const nextCourseKey=initialCourse?.courseKey??initialUnit?.courseKey;
+    const nextUnitKey=initialUnit?.unitKey;
+    if(nextCourseKey&&nextCourseKey!==courseKey)setCourseKey(nextCourseKey);
+    if(nextUnitKey&&nextUnitKey!==unitKey)setUnitKey(nextUnitKey);
+  },[catalog.courses,catalog.units,initialCourseId,initialUnitId,courseKey,unitKey]);
 
   const units=useMemo(()=>catalog.units.filter((u)=>u.courseKey===courseKey),[catalog.units,courseKey]);
   useEffect(()=>{if(!units.some((u)=>u.unitKey===unitKey)&&units[0]?.unitKey)setUnitKey(units[0].unitKey)},[units,unitKey]);

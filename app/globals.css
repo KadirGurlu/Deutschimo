@@ -1533,3 +1533,167 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     grid-template-columns: 1fr;
   }
 }
+/* V40_SPEAKING_LAB_STYLES */
+.v40-speaking-principles{
+  display:grid;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:8px;
+}
+.v40-speaking-principles span{
+  display:grid;
+  place-items:center;
+  min-height:48px;
+  padding:9px 10px;
+  border:1px solid var(--border);
+  border-radius:11px;
+  background:#fff;
+  color:var(--navy);
+  font-size:12px;
+  font-weight:800;
+  text-align:center;
+}
+.v40-goal-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  margin:10px 0 18px;
+}
+.v40-goal-grid span{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  padding:10px 12px;
+  border:1px solid #d9e9eb;
+  border-radius:10px;
+  background:#f8fcfc;
+  color:var(--heading);
+  font-size:14px;
+}
+.v40-goal-grid svg{color:var(--turquoise-dark);flex:0 0 auto;margin-top:2px}
+.v40-speaking-targets{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:18px;
+}
+.v40-speaking-targets>div{
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fbfcfd;
+}
+.v40-speaking-targets strong{display:block;color:var(--heading);margin-bottom:9px}
+.v40-chip-list{display:flex;flex-wrap:wrap;gap:7px}
+.v40-chip-list span{
+  display:inline-flex;
+  padding:6px 9px;
+  border-radius:999px;
+  background:#eef8f9;
+  color:#27606a;
+  font-size:12px;
+  font-weight:750;
+}
+.v40-evidence-note{
+  margin:12px 0 0;
+  padding:11px 13px;
+  border-left:4px solid #98a2b3;
+  border-radius:0 8px 8px 0;
+  background:#f8f9fb;
+  color:var(--muted);
+  font-size:13px;
+}
+.v40-speaking-result{display:grid;gap:16px}
+.v40-result-top{
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr);
+  gap:16px;
+}
+.v40-result-summary h2{margin:7px 0 8px;color:var(--heading)}
+.v40-result-summary p{margin:0;color:var(--muted)}
+.v40-metrics{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:16px;
+}
+.v40-metrics span{
+  padding:8px 10px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:#fff;
+  color:var(--muted);
+  font-size:13px;
+}
+.v40-metrics strong{color:var(--heading)}
+.v40-rubric-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:10px;
+}
+.v40-rubric-grid article{
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+}
+.v40-rubric-grid article>div{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin-bottom:7px;
+}
+.v40-rubric-grid article strong{color:var(--heading);font-size:13px}
+.v40-rubric-grid article span{color:var(--navy);font-weight:850}
+.v40-pronunciation-card{
+  border-left:5px solid #98a2b3;
+}
+.v40-pronunciation-card.clear{border-left-color:var(--success);background:#f8fffb}
+.v40-pronunciation-card.check{border-left-color:var(--warning);background:#fffdf7}
+.v40-pronunciation-card.retry{border-left-color:var(--error);background:#fffafa}
+.v40-pronunciation-card h2{margin:5px 0 9px;color:var(--heading)}
+.v40-pronunciation-card p{margin:0 0 12px;color:var(--text)}
+.v40-pronunciation-card small{display:block;margin-top:12px;color:var(--muted)}
+.v40-natural-grid{display:grid;gap:10px;margin-top:14px}
+.v40-natural-card{
+  display:grid;
+  grid-template-columns:minmax(0,.75fr) 32px minmax(0,1fr);
+  gap:10px;
+  align-items:center;
+  padding:14px;
+  border:1px solid #cfe8ea;
+  border-radius:12px;
+  background:#f7fdfd;
+}
+.v40-natural-card span{color:var(--muted)}
+.v40-natural-card strong{grid-column:3;color:#087f71}
+.v40-natural-card strong::first-letter{color:var(--turquoise-dark)}
+.v40-natural-card p{
+  grid-column:1/-1;
+  margin:2px 0 0;
+  color:var(--muted);
+  font-size:13px;
+}
+.v40-grammar-notes{display:grid;gap:9px}
+.v40-grammar-notes>div{
+  padding:12px 14px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:#fff;
+}
+.v40-grammar-notes strong{color:var(--heading)}
+.v40-grammar-notes p{margin:4px 0 0;color:var(--muted)}
+@media(max-width:1100px){
+  .v40-speaking-principles{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .v40-rubric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .v40-speaking-principles,
+  .v40-goal-grid,
+  .v40-speaking-targets,
+  .v40-result-top,
+  .v40-rubric-grid{grid-template-columns:1fr}
+  .v40-natural-card{grid-template-columns:1fr}
+  .v40-natural-card strong,
+  .v40-natural-card p{grid-column:1}
+}

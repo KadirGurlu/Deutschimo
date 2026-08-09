@@ -21,37 +21,29 @@ for (const rel of [
 ]) requireFile(rel);
 
 const pkg = JSON.parse(read("package.json") || "{}");
-if (pkg.version !== "39.1.0") {
-  errors.push(`package.json surumu 39.1.0 olmali. Mevcut: ${pkg.version}`);
+const version = String(pkg.version ?? "").trim();
+const major = Number(version.split(".")[0]);
+if (!Number.isFinite(major) || major < 39) {
+  errors.push(`V39.1 veya sonraki paket surumu bekleniyor. Mevcut: ${version}`);
 }
 
-if (!pkg.scripts?.["validate:v39.1"]) {
-  errors.push("validate:v39.1 npm scripti eksik.");
-}
-if (!pkg.scripts?.["technical:health"]) {
-  errors.push("technical:health npm scripti eksik.");
-}
-if (!pkg.scripts?.["release:v39.1"]) {
-  errors.push("release:v39.1 npm scripti eksik.");
-}
+if (!pkg.scripts?.["validate:v39.1"]) errors.push("validate:v39.1 npm scripti eksik.");
+if (!pkg.scripts?.["technical:health"]) errors.push("technical:health npm scripti eksik.");
+if (!pkg.scripts?.["release:v39.1"]) errors.push("release:v39.1 npm scripti eksik.");
 
 for (const scriptName of ["prebuild", "quality:check", "vercel-build"]) {
   const value = String(pkg.scripts?.[scriptName] ?? "");
-  if (!value.includes("validate:v39")) {
-    errors.push(`${scriptName}: V39 kalite kapisi kaybolmus.`);
-  }
-  if (!value.includes("validate:v39.1")) {
-    errors.push(`${scriptName}: V39.1 teknik kalite kapisi eksik.`);
-  }
+  if (!value.includes("validate:v39")) errors.push(`${scriptName}: V39 kalite kapisi kaybolmus.`);
+  if (!value.includes("validate:v39.1")) errors.push(`${scriptName}: V39.1 teknik kalite kapisi eksik.`);
 }
 
 if (exists("package-lock.json")) {
   const lock = JSON.parse(read("package-lock.json") || "{}");
-  if (lock.version !== "39.1.0") {
-    errors.push(`package-lock.json ust surumu 39.1.0 olmali. Mevcut: ${lock.version}`);
+  if (lock.version !== version) {
+    errors.push(`package-lock.json ust surumu package.json ile ayni olmali. Beklenen: ${version}, mevcut: ${lock.version}`);
   }
-  if (lock.packages?.[""]?.version !== "39.1.0") {
-    errors.push(`package-lock kok paket surumu 39.1.0 olmali. Mevcut: ${lock.packages?.[""]?.version}`);
+  if (lock.packages?.[""]?.version !== version) {
+    errors.push(`package-lock kok paket surumu package.json ile ayni olmali. Beklenen: ${version}, mevcut: ${lock.packages?.[""]?.version}`);
   }
 } else {
   errors.push("package-lock.json eksik.");
@@ -62,12 +54,8 @@ if (fs.existsSync(workflowDir)) {
   const files = fs.readdirSync(workflowDir).filter((name) => /\.ya?ml$/i.test(name));
   for (const name of files) {
     const body = fs.readFileSync(path.join(workflowDir, name), "utf8");
-    if (/actions\/checkout@v[1-5]\b/.test(body)) {
-      errors.push(`${name}: eski actions/checkout runtime'i kalmis.`);
-    }
-    if (/actions\/setup-node@v[1-6]\b/.test(body)) {
-      errors.push(`${name}: eski actions/setup-node runtime'i kalmis.`);
-    }
+    if (/actions\/checkout@v[1-5]\b/.test(body)) errors.push(`${name}: eski actions/checkout runtime'i kalmis.`);
+    if (/actions\/setup-node@v[1-6]\b/.test(body)) errors.push(`${name}: eski actions/setup-node runtime'i kalmis.`);
   }
   notes.push(`${files.length} workflow dosyasi action runtime acisindan tarandi.`);
 }
@@ -96,9 +84,7 @@ for (const token of [
   "npm run typecheck",
   "npm run build",
 ]) {
-  if (!health.includes(token)) {
-    errors.push(`V39.1 technical health workflow eksik: ${token}`);
-  }
+  if (!health.includes(token)) errors.push(`V39.1 technical health workflow eksik: ${token}`);
 }
 
 const dependabot = read(".github/dependabot.yml");
@@ -149,7 +135,7 @@ if (errors.length) {
 }
 
 console.log("V39.1 Teknik Saglik dogrulamasi basarili:");
-console.log("- package.json ve package-lock.json 39.1.0 ile senkron.");
+console.log(`- package.json ve package-lock.json ${version} ile senkron; V39.1 kalite tabani sonraki surumlerde korunuyor.`);
 console.log("- GitHub Actions Node 20 runtime uyarisi uretecek eski checkout/setup-node majorlari temizlendi.");
 console.log("- V39.1 staging workflow'u izole PostgreSQL, toolchain, lockfile, migration, security, lint, typecheck ve production build kapilarini calistiriyor.");
 console.log("- Dependabot npm + GitHub Actions guncellemelerini aylik takip edecek.");

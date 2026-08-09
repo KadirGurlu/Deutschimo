@@ -62,6 +62,18 @@ export type ReadingTask = {
   vocabulary: VocabularyItem[];
 };
 
+export type SpeakingCommunicationGoal = {
+  id: string;
+  label: string;
+  keywords: string[];
+};
+
+export type SpeakingNaturalAlternative = {
+  trigger: string;
+  suggestion: string;
+  reason: string;
+};
+
 export type SpeakingTask = {
   id: string;
   level: LabLevel;
@@ -70,6 +82,10 @@ export type SpeakingTask = {
   prompt: string;
   preparation: string[];
   requiredKeywords: string[];
+  communicationGoals: SpeakingCommunicationGoal[];
+  grammarTargets: string[];
+  naturalAlternatives: SpeakingNaturalAlternative[];
+  pronunciationTargets: string[];
   modelAnswer: string;
   estimatedSeconds: number;
 };
@@ -113,15 +129,45 @@ export type SkillOverview = {
   vocabularyMasteredCount: number;
 };
 
+export type SpeakingPronunciationFeedback = {
+  band: "CLEAR" | "CHECK" | "RETRY";
+  label: string;
+  note: string;
+  focusWords: string[];
+};
+
+export type SpeakingNaturalSuggestion = {
+  original: string;
+  suggestion: string;
+  reason: string;
+};
+
+export type SpeakingGrammarNote = {
+  label: string;
+  suggestion: string;
+};
+
 export type SpeakingEvaluation = {
   overall: number;
   taskCompletion: number;
   vocabulary: number;
   fluency: number;
+  grammar: number;
   clarity: number;
   matchedKeywords: string[];
   missingKeywords: string[];
+  achievedGoals: string[];
+  missingGoals: string[];
   pronunciationFocus: string[];
+  pronunciation: SpeakingPronunciationFeedback;
+  naturalSuggestions: SpeakingNaturalSuggestion[];
+  grammarNotes: SpeakingGrammarNote[];
+  metrics: {
+    wordCount: number;
+    wordsPerMinute: number;
+    hesitationCount: number;
+    durationSeconds: number;
+  };
   feedback: string[];
 };
 

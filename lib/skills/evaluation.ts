@@ -27,41 +27,257 @@ function includesLoose(text: string, target: string) {
   return source.split(" ").some((item) => item.startsWith(stem));
 }
 
-export function evaluateSpeaking(task: SpeakingTask, transcript: string, durationSeconds: number, recognitionConfidence = 0.75): SpeakingEvaluation {
-  const transcriptWords = words(transcript);
-  const matchedKeywords = task.requiredKeywords.filter((keyword) => includesLoose(transcript, keyword));
-  const missingKeywords = task.requiredKeywords.filter((keyword) => !matchedKeywords.includes(keyword));
-  const keywordRatio = task.requiredKeywords.length ? matchedKeywords.length / task.requiredKeywords.length : 1;
-  const taskCompletion = clamp(keywordRatio * 100);
-
-  const uniqueRatio = transcriptWords.length ? new Set(transcriptWords).size / transcriptWords.length : 0;
-  const vocabulary = clamp(keywordRatio * 65 + uniqueRatio * 35);
-
-  const minutes = Math.max(durationSeconds / 60, 0.25);
-  const wordsPerMinute = transcriptWords.length / minutes;
-  const levelTarget = task.level === "A1" ? 55 : task.level === "A2" ? 70 : task.level === "B1" ? 85 : 100;
-  const paceDistance = Math.abs(wordsPerMinute - levelTarget);
-  const paceScore = clamp(100 - paceDistance * 1.15);
-  const hesitationCount = (normalize(transcript).match(/\b(äh|ähm|also also|hm)\b/g) ?? []).length;
-  const fluency = clamp(paceScore - hesitationCount * 7 + Math.min(transcriptWords.length, 40) * 0.45);
-
-  const sentenceCount = transcript.split(/[.!?]+/).map((item) => item.trim()).filter(Boolean).length;
-  const minimumSentences = task.level === "A1" ? 2 : task.level === "A2" ? 3 : task.level === "B1" ? 4 : 5;
-  const clarity = clamp(recognitionConfidence * 70 + Math.min(sentenceCount / minimumSentences, 1) * 30);
-
-  const overall = clamp(taskCompletion * 0.38 + vocabulary * 0.22 + fluency * 0.22 + clarity * 0.18);
-  const pronunciationFocus = missingKeywords.slice(0, 4);
-  const feedback: string[] = [];
-  if (taskCompletion >= 80) feedback.push("Görevin temel iletişim noktalarını büyük ölçüde tamamladın.");
-  else feedback.push(`Yanıtını geliştirirken şu hedefleri ekle: ${missingKeywords.join(", ") || "görev ayrıntıları"}.`);
-  if (fluency >= 75) feedback.push("Konuşma hızın ve cümle akışın seviyene uygun görünüyor.");
-  else feedback.push("Daha kısa model cümlelerle prova yapıp aynı görevi yeniden kaydet.");
-  if (recognitionConfidence < 0.58) feedback.push("Tarayıcı bazı kelimeleri düşük güvenle algıladı; mikrofon mesafesini ve ortam gürültüsünü kontrol et.");
-  if (!transcript.trim()) feedback.push("Ses tanıma metni oluşmadı. Tarayıcı izinlerini kontrol et veya metni elle girerek değerlendirmeyi tamamla.");
-
-  return { overall, taskCompletion, vocabulary, fluency, clarity, matchedKeywords, missingKeywords, pronunciationFocus, feedback };
+function speakingGoalAchieved(transcript: string, keywords: string[]) {
+  return keywords.some((keyword) => includesLoose(transcript, keyword));
 }
 
+function speakingGrammarNotes(task: SpeakingTask, transcript: string) {
+  const notes: Array<{ label: string; suggestion: string }> = [];
+  const normalized = normalize(transcript);
+
+  if (task.id === "speak-a1-intro" && /\bich komme in\b/.test(normalized)) {
+    notes.push({
+      label: "Köken bildirimi",
+      suggestion: "Bir ülkeden/şehirden geldiğini söylerken genellikle „Ich komme aus ...“ kullan.",
+    });
+  }
+
+  if (/\bich bin \d{1,2} jahre\b/.test(normalized)) {
+    notes.push({
+      label: "Yaş söyleme",
+      suggestion: "„Ich bin ... Jahre alt.“ biçimini kullan.",
+    });
+  }
+
+  if (/\b(ich ich|und und|aber aber)\b/.test(normalized)) {
+    notes.push({
+      label: "Tekrar",
+      suggestion: "Aynı kelimeyi art arda tekrar ettiğin bölümde kısa bir duraklama yapıp cümleyi yeniden kur.",
+    });
+  }
+
+  if (/\bich will (einen termin|ein anderes zimmer)\b/.test(normalized)) {
+    notes.push({
+      label: "Kibarlık",
+      suggestion: "Hizmet/randevu bağlamında „Ich würde gern ...“, „Ich hätte gern ...“ veya „Wäre es möglich ...?“ daha uygun olabilir.",
+    });
+  }
+
+  return notes;
+}
+
+function speakingPaceScore(level: SpeakingTask["level"], wordsPerMinute: number) {
+  const range =
+    level === "A1" ? [35, 80] :
+    level === "A2" ? [45, 95] :
+    level === "B1" ? [55, 110] : [65, 125];
+
+  if (wordsPerMinute >= range[0] && wordsPerMinute <= range[1]) return 94;
+  const distance =
+    wordsPerMinute < range[0]
+      ? range[0] - wordsPerMinute
+      : wordsPerMinute - range[1];
+  return clamp(94 - distance * 1.4);
+}
+
+export function evaluateSpeaking(
+  task: SpeakingTask,
+  transcript: string,
+  durationSeconds: number,
+  recognitionConfidence = 0.68,
+  manuallyEdited = false,
+): SpeakingEvaluation {
+  const transcriptWords = words(transcript);
+  const matchedKeywords = task.requiredKeywords.filter((keyword) =>
+    includesLoose(transcript, keyword),
+  );
+  const missingKeywords = task.requiredKeywords.filter(
+    (keyword) => !matchedKeywords.includes(keyword),
+  );
+  const keywordRatio = task.requiredKeywords.length
+    ? matchedKeywords.length / task.requiredKeywords.length
+    : 1;
+
+  const achievedGoals = task.communicationGoals
+    .filter((goal) => speakingGoalAchieved(transcript, goal.keywords))
+    .map((goal) => goal.label);
+  const missingGoals = task.communicationGoals
+    .filter((goal) => !speakingGoalAchieved(transcript, goal.keywords))
+    .map((goal) => goal.label);
+  const goalRatio = task.communicationGoals.length
+    ? achievedGoals.length / task.communicationGoals.length
+    : 1;
+
+  const taskCompletion = clamp(goalRatio * 82 + keywordRatio * 18);
+
+  const uniqueRatio = transcriptWords.length
+    ? new Set(transcriptWords).size / transcriptWords.length
+    : 0;
+  const vocabulary = clamp(
+    keywordRatio * 55 +
+    uniqueRatio * 30 +
+    Math.min(transcriptWords.length / 35, 1) * 15,
+  );
+
+  const minutes = Math.max(durationSeconds / 60, 0.15);
+  const wordsPerMinute = Math.round(transcriptWords.length / minutes);
+  const hesitationCount =
+    (normalize(transcript).match(/\b(äh|ähm|hm|also also|ja ja)\b/g) ?? []).length;
+  const paceScore = speakingPaceScore(task.level, wordsPerMinute);
+  const expectedWords = Math.max(
+    8,
+    Math.round(
+      task.estimatedSeconds *
+      (task.level === "A1" ? 0.55 :
+       task.level === "A2" ? 0.72 :
+       task.level === "B1" ? 0.90 : 1.05),
+    ),
+  );
+  const lengthCoverage = Math.min(transcriptWords.length / expectedWords, 1);
+  const fluency = clamp(
+    paceScore * 0.58 +
+    Math.max(0, 100 - hesitationCount * 12) * 0.22 +
+    lengthCoverage * 100 * 0.20,
+  );
+
+  const structureHits = task.grammarTargets.filter((target) => {
+    const wordsInTarget = normalize(target)
+      .split(" ")
+      .filter((item) => item.length >= 3 && !["dativ","akkusativ","perfekt"].includes(item));
+    return wordsInTarget.some((item) => includesLoose(transcript, item));
+  }).length;
+  const structureRatio = task.grammarTargets.length
+    ? structureHits / task.grammarTargets.length
+    : 1;
+  const grammarNotes = speakingGrammarNotes(task, transcript);
+  const grammar = clamp(
+    52 +
+    structureRatio * 28 +
+    Math.min(transcriptWords.length / Math.max(expectedWords, 1), 1) * 20 -
+    grammarNotes.length * 12,
+  );
+
+  const confidenceScore = clamp(recognitionConfidence * 100);
+  const clarity = clamp(
+    confidenceScore * 0.58 +
+    lengthCoverage * 100 * 0.27 +
+    Math.min(goalRatio + 0.15, 1) * 100 * 0.15,
+  );
+
+  const naturalSuggestions = task.naturalAlternatives
+    .filter(
+      (item) =>
+        includesLoose(transcript, item.trigger) &&
+        !includesLoose(transcript, item.suggestion),
+    )
+    .slice(0, 3)
+    .map((item) => ({
+      original: item.trigger,
+      suggestion: item.suggestion,
+      reason: item.reason,
+    }));
+
+  const pronunciationFocus =
+    (missingKeywords.length
+      ? task.pronunciationTargets.filter((word) =>
+          missingKeywords.some((missing) =>
+            normalize(word).includes(normalize(missing).slice(0, 4)),
+          ),
+        )
+      : task.pronunciationTargets
+    ).slice(0, 4);
+
+  const pronunciation =
+    manuallyEdited
+      ? {
+          band: "CHECK" as const,
+          label: "Metin elle düzeltildi — telaffuz konusunda temkinli yorum",
+          note: "Konuşma metnini elle değiştirdiğin için tarayıcı tanıma sinyalini doğrudan telaffuz kanıtı olarak kullanmıyoruz. Hedef kelimeleri model yanıtla karşılaştırarak yeniden söyle.",
+          focusWords: task.pronunciationTargets.slice(0, 4),
+        }
+      : recognitionConfidence >= 0.72 && lengthCoverage >= 0.65
+        ? {
+            band: "CLEAR" as const,
+            label: "Genel olarak anlaşılır görünüyor",
+            note: "Tarayıcı konuşmanın büyük bölümünü tutarlı biçimde çözebildi. Bu, fonetik kusursuzluk anlamına gelmez; iletişim açısından olumlu bir sinyaldir.",
+            focusWords: pronunciationFocus.slice(0, 2),
+          }
+        : recognitionConfidence >= 0.50
+          ? {
+              band: "CHECK" as const,
+              label: "Bazı bölümleri yeniden söyle",
+              note: "Bazı kelimeler daha az güvenle çözüldü. Ortam gürültüsünü azaltıp hedef kelimeleri biraz daha belirgin söyleyerek tekrar dene.",
+              focusWords: pronunciationFocus.length
+                ? pronunciationFocus
+                : task.pronunciationTargets.slice(0, 4),
+            }
+          : {
+              band: "RETRY" as const,
+              label: "Kayıt koşullarını ve anlaşılabilirliği kontrol et",
+              note: "Tanıma sinyali düşük. Bu tek başına kötü telaffuz anlamına gelmez; mikrofon mesafesi, gürültü veya konuşma hacmi de etkili olabilir. Kaydı daha sakin bir ortamda tekrarla.",
+              focusWords: task.pronunciationTargets.slice(0, 4),
+            };
+
+  // Telaffuz için ayrı bir yapay yüzde genel sonuca eklenmez.
+  const overall = clamp(
+    taskCompletion * 0.30 +
+    clarity * 0.22 +
+    fluency * 0.18 +
+    vocabulary * 0.15 +
+    grammar * 0.15,
+  );
+
+  const feedback: string[] = [];
+  if (taskCompletion >= 82) {
+    feedback.push("Görevin temel iletişim hedeflerini büyük ölçüde tamamladın.");
+  } else {
+    feedback.push(
+      `Bir sonraki denemede şu iletişim noktalarını özellikle ekle: ${missingGoals.join(", ") || "görev ayrıntıları"}.`,
+    );
+  }
+
+  if (fluency >= 78) {
+    feedback.push("Konuşma tempon ve akışın seviyen için iletişimi destekliyor.");
+  } else {
+    feedback.push("Önce kısa cümlelerle prova yap, sonra aynı görevi kesintisiz olarak yeniden kaydet.");
+  }
+
+  if (grammar < 65) {
+    feedback.push("Gramer puanı hedef yapıların kullanımı ve belirgin otomatik örüntüler üzerinden hesaplandı; yapı iskeletine yeniden bak.");
+  }
+
+  if (naturalSuggestions.length) {
+    feedback.push("Aşağıdaki doğal kullanım alternatiflerinden birini ikinci denemende bilinçli olarak kullan.");
+  }
+
+  if (!transcript.trim()) {
+    feedback.push("Ses tanıma metni oluşmadı. Tarayıcı izinlerini kontrol et veya metni elle girerek değerlendirmeyi tamamla.");
+  }
+
+  return {
+    overall,
+    taskCompletion,
+    vocabulary,
+    fluency,
+    grammar,
+    clarity,
+    matchedKeywords,
+    missingKeywords,
+    achievedGoals,
+    missingGoals,
+    pronunciationFocus,
+    pronunciation,
+    naturalSuggestions,
+    grammarNotes,
+    metrics: {
+      wordCount: transcriptWords.length,
+      wordsPerMinute,
+      hesitationCount,
+      durationSeconds: Math.max(1, Math.round(durationSeconds)),
+    },
+    feedback,
+  };
+}
 const correctionPatterns: Array<{ pattern: RegExp; original: string; suggestion: string; reason: string }> = [
   { pattern: /\bich komme in ([A-ZÄÖÜ][\p{L}-]+)/iu, original: "Ich komme in …", suggestion: "Ich komme aus … / Ich wohne in …", reason: "Köken için aus, ikamet için wohnen in kullanılır." },
   { pattern: /\bich bin ([0-9]{1,2}) jahre\b/iu, original: "Ich bin … Jahre.", suggestion: "Ich bin … Jahre alt.", reason: "Yaş söylerken alt kelimesi gerekir." },

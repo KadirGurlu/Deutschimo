@@ -239,6 +239,7 @@ async function ensureV46SkillLabActiveReviewQueue(input: {
       unitId,
       questionId,
       dueAt: new Date(),
+      source: "SKILL_LAB", // V46.3 V8.9.3 required Prisma field
     },
   });
 }

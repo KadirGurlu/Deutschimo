@@ -3,6 +3,7 @@ import { recordMasteryEvidence } from "@/lib/mastery/server";
 import { inferMasterySkill, inferMasteryTags, normalizeSkill } from "@/lib/mastery/skill-tags";
 import type { MasteryEvidenceSource, MasterySkill } from "@/types/mastery";
 
+import { prisma } from "@/lib/db";
 type R = Record<string, unknown>;
 
 type SkillLabQuestionResult = {
@@ -204,6 +205,44 @@ function multi(value: unknown) {
   return output;
 }
 
+// V46_3_RUNTIME_QUEUE_GUARD_V8_7
+// Runtime contract: a persisted incorrect Skill Lab answer must produce one ACTIVE review queue item.
+// This guard is intentionally narrow: it only runs for SKILL_LAB + correct === false.
+async function ensureV46SkillLabActiveReviewQueue(input: {
+  userId: string;
+  courseId: string;
+  unitId?: string | null;
+  questionId?: string | null;
+  skill: string;
+}) {
+  const normalizedCourseId = input.courseId.toLowerCase();
+  const { userId, unitId = null, questionId = null, skill } = input;
+
+  const existing = await (prisma.masteryReviewQueueItem as any).findFirst({
+    where: {
+      userId,
+      courseId: normalizedCourseId,
+      skill,
+      status: "ACTIVE",
+    },
+  });
+
+  if (existing) return existing;
+
+  return (prisma.masteryReviewQueueItem as any).create({
+    data: {
+      userId,
+      courseId: normalizedCourseId,
+      skill,
+      status: "ACTIVE",
+      unitId,
+      questionId,
+      dueAt: new Date(),
+    },
+  });
+}
+
+
 export async function captureMasteryExchange(input: {
   source: string;
   requestBody: unknown;
@@ -395,4 +434,14 @@ export async function captureMasteryExchange(input: {
     source: src,
     externalId,
   });
+  // V46_3_RUNTIME_QUEUE_GUARD_V8_7
+  if (src === "SKILL_LAB" && finalCorrect === false) {
+    await ensureV46SkillLabActiveReviewQueue({
+      userId,
+      courseId,
+      unitId,
+      questionId: qid,
+      skill,
+    });
+  }
 }

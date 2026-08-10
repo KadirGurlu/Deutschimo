@@ -3,6 +3,7 @@ import { recordMasteryEvidence } from "@/lib/mastery/server";
 import { inferMasterySkill, inferMasteryTags, normalizeSkill } from "@/lib/mastery/skill-tags";
 import type { MasteryEvidenceSource, MasterySkill } from "@/types/mastery";
 
+
 import { prisma } from "@/lib/db";
 type R = Record<string, unknown>;
 
@@ -357,6 +358,30 @@ export async function captureMasteryExchange(input: {
       }),
     );
 
+    // V46_3_RUNTIME_QUEUE_GUARD_V8_8
+    // The questionResults path returned before V8.7's queue guard could run.
+    // After persisting the authoritative question-level evidence, guarantee
+    // that one incorrect Skill Lab answer has an ACTIVE Smart Review item.
+    const firstIncorrectResultIndex = questionResults.findIndex(
+      (result) => result.correct === false,
+    );
+
+    if (firstIncorrectResultIndex >= 0) {
+      const result = questionResults[firstIncorrectResultIndex];
+      const reviewQuestionId =
+        result.masteryQuestionId ??
+        result.questionId ??
+        `${qid}:q${firstIncorrectResultIndex + 1}`;
+
+      await ensureV46SkillLabActiveReviewQueue({
+        userId,
+        courseId,
+        unitId,
+        questionId: reviewQuestionId,
+        skill,
+      });
+    }
+
     return;
   }
 
@@ -381,6 +406,21 @@ export async function captureMasteryExchange(input: {
         }),
       ),
     );
+
+    // V46_3_RUNTIME_QUEUE_GUARD_V8_8
+    // Keep the aggregate/multi-score Skill Lab path consistent as well.
+    if (src === "SKILL_LAB" && multiCorrect === false) {
+      for (const { skill } of scores) {
+        await ensureV46SkillLabActiveReviewQueue({
+          userId,
+          courseId,
+          unitId,
+          questionId: `${qid}:${skill.toLowerCase()}`,
+          skill,
+        });
+      }
+    }
+
     return;
   }
 
@@ -434,7 +474,7 @@ export async function captureMasteryExchange(input: {
     source: src,
     externalId,
   });
-  // V46_3_RUNTIME_QUEUE_GUARD_V8_7
+  // V46_3_RUNTIME_QUEUE_GUARD_V8_8
   if (src === "SKILL_LAB" && finalCorrect === false) {
     await ensureV46SkillLabActiveReviewQueue({
       userId,

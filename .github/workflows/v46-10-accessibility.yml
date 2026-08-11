@@ -14,20 +14,50 @@ jobs:
   accessibility:
     name: Static + keyboard + focus + form + reduced-motion gate
     runs-on: ubuntu-latest
+
+    # Isolated CI database only. These values never point to Preview/Production.
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschimo_v4610_a11y
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v4610_a11y?schema=public
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v4610_a11y?schema=public
+      DATABASE_ENVIRONMENT: test
+
       AUTH_SECRET: v46-10-ci-auth-secret-at-least-32-characters
+      SECURITY_HASH_KEY: v46-10-ci-security-hash-key-20260811-01
+      CRON_SECRET: v46-10-ci-cron-secret-20260811-02-unique
+
       AUTH_TRUST_HOST: "true"
       NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
       REQUIRE_EMAIL_VERIFICATION: "false"
       BOOTSTRAP_ADMIN_ON_BUILD: "false"
+
     steps:
       - uses: actions/checkout@v6
+
       - uses: actions/setup-node@v7
         with:
           node-version: 22.20.0
           cache: npm
 
       - run: npm ci
+
+      - name: Prepare isolated accessibility CI database
+        run: npx prisma migrate deploy
+
       - run: npm run validate:v46.10
       - run: npm run a11y:v46.10
       - run: npm run typecheck

@@ -1,8 +1,8 @@
-import { defineConfig, devices } from "@playwright/test";
+﻿import { defineConfig, devices } from "@playwright/test";
 
 const port = Number(process.env.V46_11_PORT || 4611);
 const baseURL =
-  process.env.V46_11_BASE_URL || `http://127.0.0.1:${port}`;
+  process.env.V46_11_BASE_URL || `http://localhost:${port}`;
 
 export default defineConfig({
   testDir: "./e2e",
@@ -24,12 +24,13 @@ export default defineConfig({
   webServer: {
     command:
       process.env.PLAYWRIGHT_SKIP_BUILD === "true"
-        ? `npm run start -- -H 127.0.0.1 -p ${port}`
-        : `npm run build && npm run start -- -H 127.0.0.1 -p ${port}`,
+        ? `npm run start -- -H localhost -p ${port}`
+        : `npm run build && npm run start -- -H localhost -p ${port}`,
     url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,
     env: {
+      AUTH_URL: baseURL,
       AUTH_SECRET:
         process.env.AUTH_SECRET || "v46-11-e2e-auth-secret-at-least-32-characters",
       AUTH_TRUST_HOST: "true",
@@ -45,3 +46,4 @@ export default defineConfig({
     },
   ],
 });
+

@@ -1,10 +1,10 @@
-import { PrismaClient } from "@prisma/client";
+﻿import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 const modeArg = process.argv.find((arg) => arg.startsWith("--mode="));
 const mode = modeArg?.split("=")[1] || "preflight";
 if (!new Set(["preflight", "assert"]).has(mode)) {
-  console.error("V46.7 DB integrity: --mode=preflight veya --mode=assert kullanın.");
+  console.error("V46.7 DB integrity: --mode=preflight veya --mode=assert kullanÄ±n.");
   process.exit(2);
 }
 
@@ -15,9 +15,9 @@ const warnings = [];
 function fail(message) {
   failed = true;
   failures.push(message);
-  console.error(`✗ ${message}`);
+  console.error(`âœ— ${message}`);
 }
-function ok(message) { console.log(`✓ ${message}`); }
+function ok(message) { console.log(`âœ“ ${message}`); }
 function warn(message) { warnings.push(message); console.warn(`! ${message}`); }
 
 function qIdent(value) {
@@ -25,8 +25,15 @@ function qIdent(value) {
 }
 
 async function tableExists(table) {
-  const rows = await prisma.$queryRawUnsafe(`SELECT to_regclass($1)::text AS name`, `public.${table}`);
-  return Boolean(rows?.[0]?.name);
+  const rows = await prisma.$queryRawUnsafe(
+    `SELECT EXISTS (
+       SELECT 1
+       FROM information_schema.tables
+       WHERE table_schema = 'public' AND table_name = $1
+     ) AS "exists"`,
+    table,
+  );
+  return rows?.[0]?.exists === true;
 }
 
 async function count(sql, ...params) {
@@ -94,16 +101,17 @@ const expectedFks = [
 ];
 
 async function run() {
-  console.log(`Deutschimo V46.7 Database Integrity — ${mode.toUpperCase()}`);
-  console.log("READ-ONLY CHECK: bu betik INSERT/UPDATE/DELETE/TRUNCATE/DROP çalıştırmaz.");
+  console.log(`Deutschimo V46.7 Database Integrity â€” ${mode.toUpperCase()}`);
+  console.log("READ-ONLY CHECK: bu betik INSERT/UPDATE/DELETE/TRUNCATE/DROP Ã§alÄ±ÅŸtÄ±rmaz.");
 
   const userExists = await tableExists("User");
   if (!userExists) {
     if (mode === "preflight") {
-      ok("Fresh database algılandı; migration öncesi veri kontrolü atlandı.");
+      ok("Fresh database algÄ±landÄ±; migration Ã¶ncesi veri kontrolÃ¼ atlandÄ±.");
       return;
     }
-    fail("Assert modunda User tablosu bulunamadı; migrations tamamlanmamış.");
+    fail("Assert modunda User tablosu bulunamadÄ±; migrations tamamlanmamÄ±ÅŸ.");
+    process.exitCode = 1;
     return;
   }
 
@@ -111,8 +119,8 @@ async function run() {
   for (const table of expectedTables) presence.set(table, await tableExists(table));
   const missing = expectedTables.filter((table) => !presence.get(table));
   if (missing.length) {
-    const message = `Henüz oluşturulmamış tablolar: ${missing.join(", ")}`;
-    if (mode === "assert") fail(message); else warn(`${message}. Pending migrations bunları oluşturabilir.`);
+    const message = `HenÃ¼z oluÅŸturulmamÄ±ÅŸ tablolar: ${missing.join(", ")}`;
+    if (mode === "assert") fail(message); else warn(`${message}. Pending migrations bunlarÄ± oluÅŸturabilir.`);
   }
 
   for (const [label, table, columns] of duplicateChecks) {
@@ -138,7 +146,7 @@ async function run() {
     if (!presence.get(table) || !presence.get("Unit")) continue;
     const sql = `SELECT COUNT(*)::bigint AS count FROM ${qIdent(table)} x JOIN "Unit" u ON u."id" = x."unitId" WHERE x."unitId" IS NOT NULL AND u."courseId" <> x."courseId"`;
     const n = await count(sql);
-    if (n) warn(`${table}: ${n} kayıtta unitId başka bir courseId'ye ait. V46.7 otomatik düzeltmez.`); else ok(`${table}: course/unit eşleşmesi tutarlı`);
+    if (n) warn(`${table}: ${n} kayÄ±tta unitId baÅŸka bir courseId'ye ait. V46.7 otomatik dÃ¼zeltmez.`); else ok(`${table}: course/unit eÅŸleÅŸmesi tutarlÄ±`);
   }
 
   for (const [table, columns] of Object.entries(requiredColumns)) {
@@ -150,11 +158,11 @@ async function run() {
     );
     const byName = new Map(rows.map((row) => [row.column_name, row.is_nullable]));
     for (const column of columns) {
-      if (!byName.has(column)) fail(`${table}.${column}: kolon bulunamadı.`);
-      else if (byName.get(column) !== "NO") fail(`${table}.${column}: NULL kabul ediyor; required olması bekleniyor.`);
+      if (!byName.has(column)) fail(`${table}.${column}: kolon bulunamadÄ±.`);
+      else if (byName.get(column) !== "NO") fail(`${table}.${column}: NULL kabul ediyor; required olmasÄ± bekleniyor.`);
     }
   }
-  ok("Nullable/required kritik alan taraması tamamlandı.");
+  ok("Nullable/required kritik alan taramasÄ± tamamlandÄ±.");
 
   if (mode === "assert") {
     const rows = await prisma.$queryRawUnsafe(`SELECT conname, confdeltype, convalidated FROM pg_constraint WHERE contype='f' AND conname = ANY($1::text[])`, expectedFks.map(([name]) => name));
@@ -162,26 +170,27 @@ async function run() {
     for (const [name, deleteType] of expectedFks) {
       const row = byName.get(name);
       if (!row) fail(`FK eksik: ${name}`);
-      else if (!row.convalidated) fail(`FK validate edilmemiş: ${name}`);
-      else if (row.confdeltype !== deleteType) fail(`FK delete davranışı yanlış: ${name} (${row.confdeltype}, beklenen ${deleteType})`);
-      else ok(`FK doğrulandı: ${name}`);
+      else if (!row.convalidated) fail(`FK validate edilmemiÅŸ: ${name}`);
+      else if (row.confdeltype !== deleteType) fail(`FK delete davranÄ±ÅŸÄ± yanlÄ±ÅŸ: ${name} (${row.confdeltype}, beklenen ${deleteType})`);
+      else ok(`FK doÄŸrulandÄ±: ${name}`);
     }
   }
 
   if (failures.length) {
     console.error(`\nV46.7 DATABASE INTEGRITY FAILED: ${failures.length} bulgu.`);
-    console.error("Production üzerinde otomatik düzeltme/silme YAPILMADI. Bulguları manuel inceleyin.");
+    console.error("Production Ã¼zerinde otomatik dÃ¼zeltme/silme YAPILMADI. BulgularÄ± manuel inceleyin.");
     process.exitCode = 1;
   } else {
-    console.log(`\nV46.7 DATABASE INTEGRITY PASSED${warnings.length ? ` (${warnings.length} uyarı)` : ""}.`);
+    console.log(`\nV46.7 DATABASE INTEGRITY PASSED${warnings.length ? ` (${warnings.length} uyarÄ±)` : ""}.`);
   }
 }
 
 try {
   await run();
 } catch (error) {
-  console.error("V46.7 database integrity kontrolü çalıştırılamadı:", error);
+  console.error("V46.7 database integrity kontrolÃ¼ Ã§alÄ±ÅŸtÄ±rÄ±lamadÄ±:", error);
   process.exitCode = 1;
 } finally {
   await prisma.$disconnect();
 }
+

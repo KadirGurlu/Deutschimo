@@ -19,7 +19,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <WebVitalsDevReporter />
         <Providers>
           <SiteHeader />
-          <main>{children}</main>
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
           <MobileNav />
         </Providers>
       </body>

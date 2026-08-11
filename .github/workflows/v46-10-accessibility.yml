@@ -1,0 +1,42 @@
+name: Deutschimo V46.10 WCAG Accessibility Gate
+
+on:
+  push:
+    branches: [v46-staging, main]
+  pull_request:
+    branches: [v46-staging, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  accessibility:
+    name: Static + keyboard + focus + form + reduced-motion gate
+    runs-on: ubuntu-latest
+    env:
+      AUTH_SECRET: v46-10-ci-auth-secret-at-least-32-characters
+      AUTH_TRUST_HOST: "true"
+      NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+      REQUIRE_EMAIL_VERIFICATION: "false"
+      BOOTSTRAP_ADMIN_ON_BUILD: "false"
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22.20.0
+          cache: npm
+
+      - run: npm ci
+      - run: npm run validate:v46.10
+      - run: npm run a11y:v46.10
+      - run: npm run typecheck
+      - run: npm run build
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Public WCAG keyboard/form/reduced-motion checks
+        env:
+          PLAYWRIGHT_SKIP_BUILD: "true"
+        run: npm run test:e2e:v46.10

@@ -1,6 +1,6 @@
 :root {
   --turquoise: #5CE1E6;
-  --turquoise-dark: #16A8B0;
+  --turquoise-dark: #087B85;
   --navy: #12263A;
   --heading: #172B3A;
   --text: #344054;
@@ -1987,5 +1987,66 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
   .v45-accessible-transcript {
     border-radius: 0.75rem;
+  }
+}
+
+/* V46_10_MANUAL_ACCESSIBILITY_PASS
+   WCAG 2.2 AA manual-pass hardening. Automated checks do not replace human testing. */
+html {
+  scroll-padding-block-start: 5.5rem;
+}
+
+a[href]:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[role="button"]:focus-visible,
+[role="tab"]:focus-visible,
+[role="radio"]:focus-visible,
+[role="checkbox"]:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid #007c91 !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+.v46-10-field-help {
+  margin: -0.2rem 0 0.35rem;
+  color: #5d6978;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+[aria-current="page"] {
+  text-decoration-thickness: max(2px, 0.12em);
+  text-underline-offset: 0.18em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin {
+    animation: none !important;
+  }
+
+  .button:hover,
+  .goal-card:hover,
+  .level-card:hover,
+  .skill-card:hover,
+  .course-card:hover,
+  .exam-card:hover {
+    transform: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  a[href]:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  summary:focus-visible {
+    outline-color: CanvasText !important;
+    box-shadow: none;
   }
 }

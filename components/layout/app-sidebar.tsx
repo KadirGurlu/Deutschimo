@@ -1,5 +1,18 @@
 import Link from "next/link";
-import { BarChart3, BookOpenText, CalendarCheck2, FlaskConical, Gauge, GraduationCap, Languages, PenLine, RotateCcw, Settings, UserRound, MapPinned } from "lucide-react";
+import {
+  BarChart3,
+  BookOpenText,
+  CalendarCheck2,
+  FlaskConical,
+  Gauge,
+  GraduationCap,
+  Languages,
+  MapPinned,
+  PenLine,
+  RotateCcw,
+  Settings,
+  UserRound,
+} from "lucide-react";
 
 export function AppSidebar({ active }: { active: string }) {
   const items = [
@@ -20,12 +33,20 @@ export function AppSidebar({ active }: { active: string }) {
   return (
     <aside className="app-sidebar">
       <nav aria-label="Öğrenci menüsü">
-        {items.map(([Icon, label, href, key]) => (
-          <Link key={key} href={href} className={active === key ? "active" : ""}>
-            <Icon size={19} />
-            {label}
-          </Link>
-        ))}
+        {items.map(([Icon, label, href, key]) => {
+          const current = active === key;
+          return (
+            <Link
+              key={key}
+              href={href}
+              className={current ? "active" : ""}
+              aria-current={current ? "page" : undefined}
+            >
+              <Icon size={19} aria-hidden="true" />
+              {label}
+            </Link>
+          );
+        })}
       </nav>
     </aside>
   );

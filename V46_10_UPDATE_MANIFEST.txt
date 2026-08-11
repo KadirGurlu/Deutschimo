@@ -1,0 +1,35 @@
+DEUTSCHIMO V46.10 — UPDATE MANIFEST
+====================================
+
+REPLACED / UPDATED BY PATCH
+- app/layout.tsx
+- app/error.tsx
+- app/global-error.tsx
+- app/forgot-password/page.tsx
+- app/reset-password/page.tsx
+- components/accessibility/accessibility-runtime.tsx
+- components/layout/app-sidebar.tsx
+- components/layout/mobile-nav.tsx
+- components/layout/site-header.tsx
+
+TRANSFORMED SAFELY BY INSTALLER
+- app/auth/page.tsx
+- app/globals.css
+- package.json
+
+NEW
+- scripts/validate-v46-10.mjs
+- scripts/audit-accessibility-v46-10.mjs
+- playwright.v46-10.config.ts
+- e2e/v46-10-public-accessibility.spec.ts
+- .github/workflows/v46-10-accessibility.yml
+- docs/V46_10_MANUAL_WCAG_CHECKLIST.md
+- CHANGELOG_V46_10.md
+- V46_10_VALIDATION_REPORT.md
+- V46_10_UPDATE_MANIFEST.txt
+
+DATABASE
+- Prisma schema: DEĞİŞMEZ
+- Migration: YOK
+- Production DB bağlantısı: YOK
+- db push/reset/migrate deploy: YOK

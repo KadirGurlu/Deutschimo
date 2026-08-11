@@ -2,20 +2,34 @@
 
 import Link from "next/link";
 import { BarChart3, BookOpen, FlaskConical, Home, UserRound } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useSession } from "next-auth/react";
+
+const links = [
+  [Home, "Panel", "/dashboard"],
+  [FlaskConical, "Beceriler", "/skills"],
+  [BookOpen, "Kurslar", "/courses"],
+  [BarChart3, "İlerleme", "/progress"],
+  [UserRound, "Profil", "/profile"],
+] as const;
 
 export function MobileNav() {
   const { status } = useSession();
+  const pathname = usePathname();
 
   if (status !== "authenticated") return null;
 
   return (
     <nav className="mobile-nav" aria-label="Mobil alt menü">
-      <Link href="/dashboard"><Home size={20} /><span>Panel</span></Link>
-      <Link href="/skills"><FlaskConical size={20} /><span>Beceriler</span></Link>
-      <Link href="/courses"><BookOpen size={20} /><span>Kurslar</span></Link>
-      <Link href="/progress"><BarChart3 size={20} /><span>İlerleme</span></Link>
-      <Link href="/profile"><UserRound size={20} /><span>Profil</span></Link>
+      {links.map(([Icon, label, href]) => {
+        const current = pathname === href || pathname.startsWith(`${href}/`);
+        return (
+          <Link key={href} href={href} aria-current={current ? "page" : undefined}>
+            <Icon size={20} aria-hidden="true" />
+            <span>{label}</span>
+          </Link>
+        );
+      })}
     </nav>
   );
 }

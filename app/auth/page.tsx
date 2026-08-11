@@ -9,10 +9,13 @@ import type { CourseLevel } from "@/types/course";
 import { reportClientError } from "@/lib/monitoring/client-reporter";
 
 const courseLevels: CourseLevel[] = ["A1", "A2", "B1", "B2"];
-
 type AuthMode = "login" | "register";
+
 class CodedAuthError extends Error {
-  constructor(public readonly code: string, message: string) { super(message); this.name = "CodedAuthError"; }
+  constructor(public readonly code: string, message: string) {
+    super(message);
+    this.name = "CodedAuthError";
+  }
 }
 
 function isCourseLevel(value: string | null): value is CourseLevel {
@@ -51,12 +54,16 @@ function AuthContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const requestedMode: AuthMode = searchParams.get("mode") === "login" ? "login" : "register";
-  const requestedLevel = isCourseLevel(searchParams.get("level")) ? searchParams.get("level") as CourseLevel : "A1";
+  const requestedLevel = isCourseLevel(searchParams.get("level"))
+    ? (searchParams.get("level") as CourseLevel)
+    : "A1";
 
   const [mode, setMode] = useState<AuthMode>(requestedMode);
   const [message, setMessage] = useState("");
   const [error, setError] = useState(() => getAuthErrorMessage(searchParams.get("error")));
-  const [errorCode, setErrorCode] = useState(() => searchParams.get("error") ? "AUTH-OAUTH-0001" : "");
+  const [errorCode, setErrorCode] = useState(() =>
+    searchParams.get("error") ? "AUTH-OAUTH-0001" : "",
+  );
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [form, setForm] = useState({
@@ -91,7 +98,8 @@ function AuthContent() {
       await signIn("google", { callbackUrl });
     } catch {
       const code = "AUTH-OAUTH-0002";
-      const message = "Google ile giriş başlatılamadı. Bağlantını ve OAuth ayarlarını kontrol et.";
+      const message =
+        "Google ile giriş başlatılamadı. Bağlantını ve OAuth ayarlarını kontrol et.";
       setGoogleLoading(false);
       setError(message);
       setErrorCode(code);
@@ -105,6 +113,7 @@ function AuthContent() {
     setError("");
     setErrorCode("");
     setMessage("");
+
     try {
       if (mode === "register") {
         const response = await fetch("/api/auth/register", {
@@ -119,10 +128,24 @@ function AuthContent() {
             targetLevel: form.targetLevel,
           }),
         });
-        const payload = await response.json() as { error?: string; errorCode?: string; requiresVerification?: boolean };
-        if (!response.ok) throw new CodedAuthError(payload.errorCode || "AUTH-REGISTER-0001", payload.error || "Hesap oluşturulamadı.");
+
+        const payload = (await response.json()) as {
+          error?: string;
+          errorCode?: string;
+          requiresVerification?: boolean;
+        };
+
+        if (!response.ok) {
+          throw new CodedAuthError(
+            payload.errorCode || "AUTH-REGISTER-0001",
+            payload.error || "Hesap oluşturulamadı.",
+          );
+        }
+
         if (payload.requiresVerification) {
-          setMessage("Hesabın oluşturuldu. E-posta adresine gönderilen bağlantıyla hesabını doğrula.");
+          setMessage(
+            "Hesabın oluşturuldu. E-posta adresine gönderilen bağlantıyla hesabını doğrula.",
+          );
           return;
         }
       }
@@ -133,11 +156,23 @@ function AuthContent() {
         redirect: false,
         callbackUrl,
       });
-      if (result?.error) throw new CodedAuthError("AUTH-LOGIN-0042", "E-posta veya şifre hatalı. Hesabın askıya alınmış ya da doğrulanmamış da olabilir.");
+
+      if (result?.error) {
+        throw new CodedAuthError(
+          "AUTH-LOGIN-0042",
+          "E-posta veya şifre hatalı. Hesabın askıya alınmış ya da doğrulanmamış da olabilir.",
+        );
+      }
+
       router.push(result?.url || callbackUrl);
       router.refresh();
     } catch (caught) {
-      const code = caught instanceof CodedAuthError ? caught.code : mode === "login" ? "AUTH-LOGIN-0001" : "AUTH-REGISTER-0001";
+      const code =
+        caught instanceof CodedAuthError
+          ? caught.code
+          : mode === "login"
+            ? "AUTH-LOGIN-0001"
+            : "AUTH-REGISTER-0001";
       const message = caught instanceof Error ? caught.message : "İşlem tamamlanamadı.";
       setError(message);
       setErrorCode(code);
@@ -150,24 +185,49 @@ function AuthContent() {
   return (
     <div className="auth-shell">
       <section className="auth-visual">
-        <span className="eyebrow" style={{ color: "var(--turquoise)" }}>DEUTSCHIMO V20</span>
+        <span className="eyebrow" style={{ color: "var(--turquoise)" }}>
+          DEUTSCHIMO V20
+        </span>
         <h1>Almanca öğrenme yolun tek bir hesapta.</h1>
         <p>Derslerin, alıştırmaların ve ilerlemen bütün cihazlarında güvenle seninle kalır.</p>
         <ul className="check-list">
-          {["A1–B2 yapılandırılmış kurslar", "Kişiselleştirilmiş öğrenme planı", "Cihazlar arası güvenli ilerleme"].map((item) => (
-            <li key={item}><CheckCircle2 size={19} />{item}</li>
+          {[
+            "A1–B2 yapılandırılmış kurslar",
+            "Kişiselleştirilmiş öğrenme planı",
+            "Cihazlar arası güvenli ilerleme",
+          ].map((item) => (
+            <li key={item}>
+              <CheckCircle2 size={19} aria-hidden="true" />
+              {item}
+            </li>
           ))}
         </ul>
       </section>
 
       <section className="auth-panel">
         <div className="form-card">
-          <div className="auth-tabs">
-            <button type="button" className={mode === "register" ? "active" : ""} onClick={() => selectMode("register")}>Kayıt Ol</button>
-            <button type="button" className={mode === "login" ? "active" : ""} onClick={() => selectMode("login")}>Giriş Yap</button>
+          <div className="auth-tabs" role="group" aria-label="Hesap işlemi">
+            <button
+              type="button"
+              className={mode === "register" ? "active" : ""}
+              aria-pressed={mode === "register"}
+              onClick={() => selectMode("register")}
+            >
+              Kayıt Ol
+            </button>
+            <button
+              type="button"
+              className={mode === "login" ? "active" : ""}
+              aria-pressed={mode === "login"}
+              onClick={() => selectMode("login")}
+            >
+              Giriş Yap
+            </button>
           </div>
 
-          <span className="eyebrow">{mode === "register" ? "YENİ HESAP" : "GÜVENLİ OTURUM"}</span>
+          <span className="eyebrow">
+            {mode === "register" ? "YENİ HESAP" : "GÜVENLİ OTURUM"}
+          </span>
           <h2>{mode === "register" ? "Öğrenme hesabını oluştur" : "Tekrar hoş geldin"}</h2>
 
           {googleEnabled ? (
@@ -176,54 +236,142 @@ function AuthContent() {
                 className="button google-auth-button"
                 type="button"
                 disabled={googleLoading || loading}
+                aria-busy={googleLoading}
                 onClick={continueWithGoogle}
               >
-                {googleLoading ? <LoaderCircle size={19} className="spin" /> : <GoogleMark />}
+                {googleLoading ? (
+                  <LoaderCircle size={19} className="spin" aria-hidden="true" />
+                ) : (
+                  <GoogleMark />
+                )}
                 Google ile devam et
               </button>
-              <div className="auth-divider"><span>veya e-posta ile</span></div>
+              <div className="auth-divider">
+                <span>veya e-posta ile</span>
+              </div>
             </>
           ) : null}
 
-          <form className="form-grid" onSubmit={submit}>
+          <form className="form-grid" onSubmit={submit} aria-busy={loading || googleLoading}>
             {mode === "register" ? (
               <div className="form-two">
-                <Field label="Ad"><input required autoComplete="given-name" value={form.firstName} onChange={(event) => setForm({ ...form, firstName: event.target.value })} /></Field>
-                <Field label="Soyad"><input required autoComplete="family-name" value={form.lastName} onChange={(event) => setForm({ ...form, lastName: event.target.value })} /></Field>
+                <Field label="Ad">
+                  <input
+                    required
+                    name="given-name"
+                    autoComplete="given-name"
+                    value={form.firstName}
+                    onChange={(event) => setForm({ ...form, firstName: event.target.value })}
+                  />
+                </Field>
+                <Field label="Soyad">
+                  <input
+                    required
+                    name="family-name"
+                    autoComplete="family-name"
+                    value={form.lastName}
+                    onChange={(event) => setForm({ ...form, lastName: event.target.value })}
+                  />
+                </Field>
               </div>
             ) : null}
 
             <Field label="E-posta">
-              <input required autoComplete="email" type="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} placeholder="anna@example.com" />
+              <input
+                required
+                name="email"
+                autoComplete="email"
+                type="email"
+                value={form.email}
+                onChange={(event) => setForm({ ...form, email: event.target.value })}
+                placeholder="anna@example.com"
+              />
             </Field>
+
             <Field label="Şifre">
               <input
                 required
+                name="password"
                 autoComplete={mode === "register" ? "new-password" : "current-password"}
                 minLength={mode === "register" ? 12 : 1}
                 type="password"
                 value={form.password}
                 onChange={(event) => setForm({ ...form, password: event.target.value })}
-                placeholder={mode === "register" ? "En az 12 karakter, büyük-küçük harf, rakam ve sembol" : "Şifreni gir"}
+                placeholder={
+                  mode === "register"
+                    ? "En az 12 karakter, büyük-küçük harf, rakam ve sembol"
+                    : "Şifreni gir"
+                }
+                aria-describedby={mode === "register" ? "auth-password-help" : undefined}
               />
             </Field>
 
             {mode === "register" ? (
+              <p id="auth-password-help" className="v46-10-field-help">
+                En az 12 karakter; büyük-küçük harf, rakam ve sembol kullan.
+              </p>
+            ) : null}
+
+            {mode === "register" ? (
               <label className="filter-option">
-                <input required type="checkbox" />
-                <span><Link href="/terms">Kullanım şartlarını</Link> ve <Link href="/privacy">gizlilik politikasını</Link> kabul ediyorum.</span>
+                <input required type="checkbox" name="terms-accepted" />
+                <span>
+                  <Link href="/terms">Kullanım şartlarını</Link> ve{" "}
+                  <Link href="/privacy">gizlilik politikasını</Link> kabul ediyorum.
+                </span>
               </label>
             ) : (
-              <div style={{ textAlign: "right" }}><Link href="/forgot-password">Şifremi unuttum</Link></div>
+              <div style={{ textAlign: "right" }}>
+                <Link href="/forgot-password">Şifremi unuttum</Link>
+              </div>
             )}
 
-            <button className="button button-primary" disabled={loading || googleLoading} type="submit">
-              {loading ? <><LoaderCircle size={18} className="spin" /> İşlem yapılıyor</> : mode === "register" ? "Hesap Oluştur" : "Giriş Yap"}
+            <button
+              className="button button-primary"
+              disabled={loading || googleLoading}
+              type="submit"
+              aria-busy={loading}
+            >
+              {loading ? (
+                <>
+                  <LoaderCircle size={18} className="spin" aria-hidden="true" /> İşlem yapılıyor
+                </>
+              ) : mode === "register" ? (
+                "Hesap Oluştur"
+              ) : (
+                "Giriş Yap"
+              )}
             </button>
           </form>
 
-          {error ? <div className="auth-message auth-error"><AlertCircle size={18} /><span>{error}{errorCode ? <small style={{ display: "block", marginTop: 4 }}>Hata kodu: {errorCode}</small> : null}</span></div> : null}
-          {message ? <div className="auth-message auth-success"><CheckCircle2 size={18} />{message}</div> : null}
+          {error ? (
+            <div
+              className="auth-message auth-error"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            >
+              <AlertCircle size={18} aria-hidden="true" />
+              <span>
+                {error}
+                {errorCode ? (
+                  <small style={{ display: "block", marginTop: 4 }}>Hata kodu: {errorCode}</small>
+                ) : null}
+              </span>
+            </div>
+          ) : null}
+
+          {message ? (
+            <div
+              className="auth-message auth-success"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <CheckCircle2 size={18} aria-hidden="true" />
+              {message}
+            </div>
+          ) : null}
         </div>
       </section>
     </div>
@@ -231,12 +379,25 @@ function AuthContent() {
 }
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
-  return <label className="field"><span>{label}</span>{children}</label>;
+  return (
+    <label className="field">
+      <span>{label}</span>
+      {children}
+    </label>
+  );
 }
 
 export default function AuthPage() {
   return (
-    <Suspense fallback={<div className="standalone-form"><div className="form-card">Oturum ekranı yükleniyor…</div></div>}>
+    <Suspense
+      fallback={
+        <div className="standalone-form">
+          <div className="form-card" role="status" aria-live="polite">
+            Oturum ekranı yükleniyor…
+          </div>
+        </div>
+      }
+    >
       <AuthContent />
     </Suspense>
   );

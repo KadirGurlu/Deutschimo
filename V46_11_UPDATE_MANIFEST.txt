@@ -1,0 +1,37 @@
+DEUTSCHIMO V46.11 — UPDATE MANIFEST
+===================================
+
+UPDATED
+- package.json (installer transformer)
+- components/performance/web-vitals-dev.tsx
+- playwright.v46.config.ts
+- scripts/validate-v46.mjs
+- scripts/audit-v46-release-contracts.mjs
+- .github/workflows/v46-release-readiness.yml
+
+NEW
+- app/api/monitoring/web-vitals/route.ts
+- config/v46-11-performance-budget.json
+- scripts/release-gate-utils-v46-11.mjs
+- scripts/release-gate-safety-v46-11.mjs
+- scripts/release-gate-v46-11.mjs
+- scripts/performance-budget-v46-11.mjs
+- scripts/performance-source-audit-v46-11.mjs
+- scripts/observability-audit-v46-11.mjs
+- scripts/regression-contracts-v46-11.mjs
+- scripts/integration-v46-11.mjs
+- scripts/cleanup-test-data-v46-11.mjs
+- scripts/validate-v46-11.mjs
+- tests/v46-11/release-gate-utils.test.mjs
+- playwright.v46-11.config.ts
+- e2e/v46-11-critical-release.spec.ts
+- e2e/v46-11-performance.spec.ts
+- docs/V46_11_RELEASE_GATE.md
+- CHANGELOG_V46_11.md
+- V46_11_UPDATE_MANIFEST.txt
+
+DATABASE
+- Prisma schema: unchanged
+- Migration: none
+- Installer database operation: none
+- Production/Preview DB connection: none

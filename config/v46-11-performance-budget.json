@@ -1,0 +1,18 @@
+{
+  "coreWebVitals": {
+    "LCP": { "good": 2500, "poor": 4000, "unit": "ms" },
+    "INP": { "good": 200, "poor": 500, "unit": "ms" },
+    "CLS": { "good": 0.1, "poor": 0.25, "unit": "score" },
+    "TTFB": { "good": 800, "poor": 1800, "unit": "ms" }
+  },
+  "bundle": {
+    "maxSingleChunkGzipBytes": 409600,
+    "maxTotalGzipBytes": 4710400,
+    "largePublicAssetWarningBytes": 1572864
+  },
+  "policy": {
+    "labGoodThresholdIsAdvisory": true,
+    "labPoorThresholdBlocksRelease": true,
+    "fieldDataTargetPercentile": 75
+  }
+}

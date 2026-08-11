@@ -44,8 +44,13 @@ test("Scenario 04 — Admin Publishing: create -> publish -> student sees conten
     await login(page, email);
     await expect(page).toHaveURL(/\/dashboard(?:\?|$)/, { timeout: 30_000 });
 
+    const adminSessionResponseV46113 = await page.request.get("/api/auth/session");
+    expect(adminSessionResponseV46113.ok()).toBeTruthy();
+    const adminSessionV46113 = await adminSessionResponseV46113.json();
+    expect(adminSessionV46113?.user?.role).toBe("ADMIN");
     const adminResponse = await page.goto("/admin");
     expect(adminResponse?.status() ?? 500).toBeLessThan(400);
+    await expect(page).toHaveURL(/\/admin(?:\?|$)/, { timeout: 15_000 });
     await expect(page.getByRole("heading", { name: /Deutschimo genel bakış/i })).toBeVisible();
 
     const created = await page.evaluate(async ({ key, title }) => {

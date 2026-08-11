@@ -32,6 +32,20 @@ export default {
   pages: { signIn: "/auth?mode=login" },
   providers: [],
   callbacks: {
+    session({ session, token }) {
+      if (session.user) {
+        if (token.id || token.sub) {
+          session.user.id = String(token.id ?? token.sub ?? "");
+        }
+        if (typeof token.role === "string") {
+          session.user.role = token.role as typeof session.user.role;
+        }
+        if (typeof token.status === "string") {
+          session.user.status = token.status as typeof session.user.status;
+        }
+      }
+      return session;
+    },
     authorized({ auth, request }) {
       if (!isProtectedPath(request.nextUrl.pathname)) return true;
       return Boolean(auth?.user && auth.user.status !== "SUSPENDED");

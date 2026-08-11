@@ -10,8 +10,16 @@ const read = (rel) =>
     : "";
 
 const req = (rel) => {
-  if (!fs.existsSync(path.join(root, rel))) errors.push(`Eksik: ${rel}`);
+  if (!fs.existsSync(path.join(root, rel))) {
+    errors.push(`Eksik: ${rel}`);
+  }
 };
+
+/*
+ * ==========================================================================
+ * V45 REQUIRED FILES
+ * ==========================================================================
+ */
 
 [
   "components/accessibility/accessibility-runtime.tsx",
@@ -24,31 +32,99 @@ const req = (rel) => {
   "docs/V45_FINAL_MANUAL_CHECKLIST.md",
 ].forEach(req);
 
+/*
+ * ==========================================================================
+ * PACKAGE VERSION
+ * ==========================================================================
+ *
+ * V45 validator is also used as a regression gate by later releases.
+ * Therefore V45, V46 and V47 package versions are accepted.
+ */
+
 const pkg = JSON.parse(read("package.json") || "{}");
-if (!["45.0.0", "46.0.0"].includes(pkg.version)) errors.push(`package version 45.0.0 veya 46.0.0 degil: ${pkg.version}`);
 
-for (const script of ["validate:v45", "a11y:v45", "perf:v45", "release:v45"]) {
-  if (!pkg.scripts?.[script]) errors.push(`package script eksik: ${script}`);
+const supportedPackageVersions = [
+  "45.0.0",
+  "46.0.0",
+  "47.0.0",
+];
+
+if (!supportedPackageVersions.includes(pkg.version)) {
+  errors.push(
+    `package version 45.0.0, 46.0.0 veya 47.0.0 degil: ${pkg.version}`
+  );
 }
 
-for (const script of ["prebuild", "quality:check", "vercel-build"]) {
+/*
+ * ==========================================================================
+ * REQUIRED PACKAGE SCRIPTS
+ * ==========================================================================
+ */
+
+for (const script of [
+  "validate:v45",
+  "a11y:v45",
+  "perf:v45",
+  "release:v45",
+]) {
+  if (!pkg.scripts?.[script]) {
+    errors.push(`package script eksik: ${script}`);
+  }
+}
+
+/*
+ * ==========================================================================
+ * BUILD / QUALITY REGRESSION GATES
+ * ==========================================================================
+ */
+
+for (const script of [
+  "prebuild",
+  "quality:check",
+  "vercel-build",
+]) {
   const value = String(pkg.scripts?.[script] || "");
-  if (!value.includes("validate:v44")) errors.push(`${script}: V44 geriye uyumluluk kapisi yok`);
-  if (!value.includes("validate:v45")) errors.push(`${script}: V45 kapisi yok`);
+
+  if (!value.includes("validate:v44")) {
+    errors.push(`${script}: V44 geriye uyumluluk kapisi yok`);
+  }
+
+  if (!value.includes("validate:v45")) {
+    errors.push(`${script}: V45 kapisi yok`);
+  }
 }
+
+/*
+ * ==========================================================================
+ * ROOT LAYOUT ACCESSIBILITY FOUNDATION
+ * ==========================================================================
+ */
 
 const layout = read("app/layout.tsx");
+
 for (const token of [
   "@/components/accessibility/accessibility-runtime",
   "@/components/performance/web-vitals-dev",
   "<AccessibilityRuntime",
   "<WebVitalsDevReporter",
 ]) {
-  if (!layout.includes(token)) errors.push(`layout: ${token}`);
+  if (!layout.includes(token)) {
+    errors.push(`layout: ${token}`);
+  }
 }
-if (!/<html\b[^>]*\blang=/.test(layout)) errors.push("layout: html lang yok");
+
+if (!/<html\b[^>]*\blang=/.test(layout)) {
+  errors.push("layout: html lang yok");
+}
+
+/*
+ * ==========================================================================
+ * GLOBAL ACCESSIBILITY CSS
+ * ==========================================================================
+ */
 
 const css = read("app/globals.css");
+
 for (const token of [
   "V45_ACCESSIBILITY_UX_PERFORMANCE",
   "v45-skip-link",
@@ -56,30 +132,76 @@ for (const token of [
   "prefers-reduced-motion: reduce",
   "forced-colors: active",
 ]) {
-  if (!css.includes(token)) errors.push(`css: ${token}`);
+  if (!css.includes(token)) {
+    errors.push(`css: ${token}`);
+  }
 }
+
+/*
+ * ==========================================================================
+ * QUESTION STEP SCREEN-READER SEMANTICS
+ * ==========================================================================
+ */
 
 const question = read("components/skills/question-step.tsx");
-for (const token of ['role="radiogroup"', 'role="radio"', "aria-checked"]) {
-  if (!question.includes(token)) errors.push(`question-step: ${token}`);
+
+for (const token of [
+  'role="radiogroup"',
+  'role="radio"',
+  "aria-checked",
+]) {
+  if (!question.includes(token)) {
+    errors.push(`question-step: ${token}`);
+  }
 }
 
+/*
+ * ==========================================================================
+ * LISTENING LAB ACCESSIBILITY
+ * ==========================================================================
+ */
+
 const listening = read("components/skills/listening-lab.tsx");
+
 for (const token of [
   "accessibleTranscriptOpened",
   "v45-accessible-transcript",
   'lang="de"',
   'role="status"',
 ]) {
-  if (!listening.includes(token)) errors.push(`listening-lab: ${token}`);
+  if (!listening.includes(token)) {
+    errors.push(`listening-lab: ${token}`);
+  }
 }
+
+/*
+ * ==========================================================================
+ * SPEAKING LAB ACCESSIBILITY
+ * ==========================================================================
+ */
 
 const speaking = read("components/skills/speaking-lab.tsx");
-for (const token of ["aria-pressed={recording}", 'aria-label="Konuşma metni"', 'role="status"']) {
-  if (!speaking.includes(token)) errors.push(`speaking-lab: ${token}`);
+
+for (const token of [
+  "aria-pressed={recording}",
+  'aria-label="Konuşma metni"',
+  'role="status"',
+]) {
+  if (!speaking.includes(token)) {
+    errors.push(`speaking-lab: ${token}`);
+  }
 }
 
-const workflow = read(".github/workflows/v45-accessibility-ux-performance.yml");
+/*
+ * ==========================================================================
+ * GITHUB ACTIONS QUALITY GATE
+ * ==========================================================================
+ */
+
+const workflow = read(
+  ".github/workflows/v45-accessibility-ux-performance.yml"
+);
+
 for (const token of [
   "npm run validate:v44",
   "npm run validate:v45",
@@ -88,20 +210,57 @@ for (const token of [
   "npm run build",
   "npm run perf:v45",
 ]) {
-  if (!workflow.includes(token)) errors.push(`workflow: ${token}`);
+  if (!workflow.includes(token)) {
+    errors.push(`workflow: ${token}`);
+  }
 }
 
+/*
+ * ==========================================================================
+ * RESULT
+ * ==========================================================================
+ */
+
 if (errors.length) {
-  for (const error of errors) console.error("HATA:", error);
-  console.error(`V45 dogrulamasi basarisiz: ${errors.length} hata.`);
+  for (const error of errors) {
+    console.error("HATA:", error);
+  }
+
+  console.error(
+    `V45 dogrulamasi basarisiz: ${errors.length} hata.`
+  );
+
   process.exit(1);
 }
 
-console.log("V45 Accessibility + UX + Performance dogrulamasi basarili.");
-console.log("- WCAG 2.2 AA hedef accessibility foundation aktif.");
-console.log("- Klavye focus/skip-link/reduced-motion/forced-colors tabani aktif.");
-console.log("- Dinleme erisilebilir transkript sinyali aktif.");
-console.log("- Konusma ve soru ekranlarinda screen-reader semantigi guclendirildi.");
-console.log("- GitHub Actions bundle performans butcesi aktif.");
-console.log("- Vercel Speed Insights icin Dashboard/Kurs/Ders/Test/Gunluk Plan/Admin rota matrisi hazir.");
-console.log("- Yeni Prisma migration yok; yeni environment variable yok.");
+console.log(
+  "V45 Accessibility + UX + Performance dogrulamasi basarili."
+);
+
+console.log(
+  "- WCAG 2.2 AA hedef accessibility foundation aktif."
+);
+
+console.log(
+  "- Klavye focus/skip-link/reduced-motion/forced-colors tabani aktif."
+);
+
+console.log(
+  "- Dinleme erisilebilir transkript sinyali aktif."
+);
+
+console.log(
+  "- Konusma ve soru ekranlarinda screen-reader semantigi guclendirildi."
+);
+
+console.log(
+  "- GitHub Actions bundle performans butcesi aktif."
+);
+
+console.log(
+  "- Vercel Speed Insights icin Dashboard/Kurs/Ders/Test/Gunluk Plan/Admin rota matrisi hazir."
+);
+
+console.log(
+  "- Yeni Prisma migration yok; yeni environment variable yok."
+);

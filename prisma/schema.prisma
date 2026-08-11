@@ -149,6 +149,14 @@ model User {
   onboardingProfile         LearnerOnboardingProfile?
   @@index([role, status])
   @@index([createdAt])
+
+  // V47 operational foundation
+  v47AnalyticsEvents          ProductAnalyticsEvent[] @relation("V47ProductAnalyticsEvents")
+  v47Consent                  UserConsent?             @relation("V47UserConsent")
+  v47Feedback                 UserFeedback[]           @relation("V47UserFeedback")
+  v47NotificationPreference   NotificationPreference?  @relation("V47NotificationPreference")
+  v47NotificationDeliveries   NotificationDelivery[]   @relation("V47NotificationDeliveries")
+  v47DeletionRequest          AccountDeletionRequest?  @relation("V47AccountDeletionRequest")
 }
 
 model LearnerOnboardingProfile {
@@ -1135,4 +1143,100 @@ model CmsContentRevision {
 
   @@unique([contentId, version])
   @@index([contentId, createdAt])
+}
+
+// V47 - Production Operability & Growth Foundation
+model ProductAnalyticsEvent {
+  id          String   @id @default(cuid())
+  event       String
+  userId      String?
+  user        User?    @relation("V47ProductAnalyticsEvents", fields: [userId], references: [id], onDelete: SetNull)
+  sessionKey  String?
+  route       String?
+  environment String
+  release     String?
+  requestId   String?
+  durationMs  Int?
+  metadata    Json?
+  dedupeKey   String?  @unique
+  occurredAt  DateTime @default(now())
+
+  @@index([event, occurredAt])
+  @@index([userId, occurredAt])
+  @@index([environment, occurredAt])
+}
+
+model UserConsent {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  user              User     @relation("V47UserConsent", fields: [userId], references: [id], onDelete: Cascade)
+  analyticsEnabled  Boolean  @default(false)
+  functionalEnabled Boolean  @default(true)
+  marketingEnabled  Boolean  @default(false)
+  policyVersion     String   @default("LEGAL_REVIEW_REQUIRED")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model UserFeedback {
+  id           String   @id @default(cuid())
+  userId       String?
+  user         User?    @relation("V47UserFeedback", fields: [userId], references: [id], onDelete: Cascade)
+  category     String
+  comment      String
+  route        String?
+  resourceType String?
+  resourceId   String?
+  appVersion   String?
+  status       String   @default("OPEN")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([status, createdAt])
+  @@index([category, createdAt])
+  @@index([userId, createdAt])
+}
+
+model NotificationPreference {
+  id             String   @id @default(cuid())
+  userId         String   @unique
+  user           User     @relation("V47NotificationPreference", fields: [userId], references: [id], onDelete: Cascade)
+  inAppEnabled   Boolean  @default(true)
+  emailEnabled   Boolean  @default(false)
+  pushEnabled    Boolean  @default(false)
+  dailyPlanReady Boolean  @default(true)
+  reviewDue      Boolean  @default(true)
+  milestones     Boolean  @default(true)
+  streakWarning  Boolean  @default(false)
+  newContent     Boolean  @default(false)
+  updatedAt      DateTime @updatedAt
+}
+
+model NotificationDelivery {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation("V47NotificationDeliveries", fields: [userId], references: [id], onDelete: Cascade)
+  event       String
+  channel     String
+  status      String   @default("PENDING")
+  providerRef String?
+  scheduledAt DateTime?
+  sentAt      DateTime?
+  createdAt   DateTime @default(now())
+
+  @@index([userId, status, scheduledAt])
+  @@index([event, createdAt])
+}
+
+model AccountDeletionRequest {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  user        User     @relation("V47AccountDeletionRequest", fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash   String
+  status      String   @default("PENDING")
+  requestedAt DateTime @default(now())
+  expiresAt   DateTime
+  updatedAt   DateTime @updatedAt
+
+  @@index([status, expiresAt])
 }

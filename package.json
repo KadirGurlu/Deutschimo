@@ -1,10 +1,10 @@
 {
   "name": "deutschimo-platform",
-  "version": "46.0.0",
+  "version": "47.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run validate:v46 && npm run validate:v46.7 && npm run validate:v46.10 && npm run validate:v46.11",
+    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run validate:v46 && npm run validate:v46.7 && npm run validate:v46.10 && npm run validate:v46.11 && npm run validate:v47",
     "build": "prisma generate && next build",
     "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run db:environment:verify && npm run verify:toolchain && npm run verify:lockfile && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run security:release && npm run db:data-boundaries && npm run db:backup:policy && npm run db:migration:safety:v46.7 && npm run db:integrity:preflight && node scripts/db-deploy.mjs && npm run db:integrity:assert && npm run validate:v46.10 && npm run validate:v46.11 && prisma generate && next build && npm run perf:v46.11 && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run validate:v46 && npm run validate:v46.7",
     "start": "next start",
@@ -154,7 +154,14 @@
     "regression:v46.11": "node scripts/regression-contracts-v46-11.mjs",
     "release:safety:v46.11": "node scripts/release-gate-safety-v46-11.mjs",
     "release:gate": "node scripts/release-gate-v46-11.mjs",
-    "release:v46.11": "npm run release:gate"
+    "release:v46.11": "npm run release:gate",
+    "validate:v47": "node scripts/validate-v47.mjs",
+    "audit:env:v47": "node scripts/audit-v47-environment.mjs",
+    "audit:security:v47": "node scripts/audit-v47-security.mjs",
+    "audit:db-performance:v47": "node scripts/audit-v47-database-performance.mjs",
+    "test:unit:v47": "node --test tests/v47/*.test.mjs",
+    "smoke:v47": "node scripts/smoke-v47.mjs",
+    "release:gate:v47": "node scripts/release-gate-v47.mjs"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.8.0",

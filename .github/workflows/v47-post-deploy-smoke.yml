@@ -1,0 +1,26 @@
+name: Deutschimo V47 Post Deploy Smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "Preview or production URL to check (read-only)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  read-only-smoke:
+    runs-on: ubuntu-latest
+    env:
+      V47_SMOKE_BASE_URL: ${{ inputs.base_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22.20.0
+          cache: npm
+      - run: npm ci
+      - run: npm run smoke:v47

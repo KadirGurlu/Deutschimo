@@ -1,0 +1,11 @@
+{
+  "policyVersion": 1,
+  "jsBundleGrowthPercentWarning": 10,
+  "largeImageBytesWarning": 500000,
+  "apiP95MsWarning": 800,
+  "databaseP95MsWarning": 350,
+  "lcpMs": 2500,
+  "inpMs": 200,
+  "cls": 0.1,
+  "ttfbMsWarning": 800
+}

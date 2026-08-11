@@ -141,6 +141,10 @@ model User {
   realGermanyAttempts     RealGermanyScenarioAttempt[]
   clientDevices            ClientDevice[]
   apiIdempotencyRecords    ApiIdempotencyRecord[]
+  masteryAttempts           MasteryAttempt[]
+  masterySkillSnapshots     MasterySkillSnapshot[]
+  masteryTopicSnapshots     MasteryTopicSnapshot[]
+  masteryReviewQueueItems   MasteryReviewQueueItem[]
 
   onboardingProfile         LearnerOnboardingProfile?
   @@index([role, status])
@@ -232,8 +236,13 @@ model Course {
   unitCount      Int           @default(0)
   createdAt      DateTime      @default(now())
   updatedAt      DateTime      @updatedAt
-  units          Unit[]
-  enrollments    Enrollment[]
+  units                   Unit[]
+  enrollments             Enrollment[]
+  userUnitProgress        UserUnitProgress[]
+  masteryAttempts         MasteryAttempt[]
+  masterySkillSnapshots   MasterySkillSnapshot[]
+  masteryTopicSnapshots   MasteryTopicSnapshot[]
+  masteryReviewQueueItems MasteryReviewQueueItem[]
 }
 
 model Unit {
@@ -324,6 +333,7 @@ model UserUnitProgress {
   completedAt               DateTime?
   lastVisitedAt             DateTime?
   user                      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course                    Course   @relation(fields: [courseId], references: [id], onDelete: Restrict)
 
   @@unique([userId, unitId])
   @@index([userId, courseId])
@@ -981,6 +991,8 @@ model MasteryAttempt {
   evidenceWeight  Float            @default(1)
   eventKey        String           @unique
   createdAt       DateTime         @default(now())
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course          Course           @relation(fields: [courseId], references: [id], onDelete: Restrict)
   @@index([userId, courseId, createdAt])
   @@index([userId, courseId, unitId, skill])
   @@index([userId, skill, createdAt])
@@ -998,6 +1010,8 @@ model MasterySkillSnapshot {
   confidence     Float            @default(0)
   lastEvidenceAt DateTime?
   updatedAt      DateTime         @updatedAt
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course          Course           @relation(fields: [courseId], references: [id], onDelete: Restrict)
   @@unique([userId, scopeKey, skill])
   @@index([userId, courseId, unitId])
 }
@@ -1014,6 +1028,8 @@ model MasteryTopicSnapshot {
   confidence     Float    @default(0)
   lastEvidenceAt DateTime?
   updatedAt      DateTime @updatedAt
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course          Course           @relation(fields: [courseId], references: [id], onDelete: Restrict)
   @@unique([userId, scopeKey, tag])
   @@index([userId, courseId, unitId])
   @@index([userId, tag])
@@ -1047,6 +1063,8 @@ model MasteryReviewQueueItem {
   lastMode          String?
   createdAt         DateTime         @default(now())
   updatedAt         DateTime         @updatedAt
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course          Course           @relation(fields: [courseId], references: [id], onDelete: Restrict)
 
   @@unique([userId, courseId, questionId, skill])
   @@index([userId, status, dueAt])

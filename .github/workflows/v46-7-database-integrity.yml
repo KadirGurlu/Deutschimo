@@ -1,0 +1,106 @@
+name: Deutschimo V46.7 Database Integrity
+
+on:
+  push:
+    branches: [v46-staging, main]
+  pull_request:
+    branches: [v46-staging, main]
+
+permissions:
+  contents: read
+
+jobs:
+  fresh-database:
+    name: Fresh DB → migrations → seed → application start
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschimo_v467_fresh
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v467_fresh?schema=public
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v467_fresh?schema=public
+      DATABASE_ENVIRONMENT: test
+      AUTH_SECRET: v46-7-ci-auth-secret-at-least-32-characters
+      SECURITY_HASH_KEY: v46-7-ci-security-hash-key-at-least-32
+      CRON_SECRET: v46-7-ci-cron-secret-at-least-32-chars
+      BOOTSTRAP_ADMIN_ON_BUILD: "false"
+      NEXT_PUBLIC_GOOGLE_AUTH_ENABLED: "false"
+      REQUIRE_EMAIL_VERIFICATION: "false"
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22.20.0
+          cache: npm
+      - run: npm ci
+      - name: Static migration safety
+        run: npm run db:migration:safety:v46.7
+      - name: Fresh database migrations
+        run: npx prisma migrate deploy
+      - name: Seed baseline application data
+        run: npm run db:seed
+      - name: Assert database integrity
+        run: npm run db:integrity:assert
+      - name: Production build
+        run: npm run build
+      - name: Application start smoke test
+        shell: bash
+        run: |
+          npm start -- -p 3000 > /tmp/deutschimo-v467.log 2>&1 &
+          APP_PID=$!
+          trap 'kill $APP_PID || true' EXIT
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health > /tmp/health.json; then
+              cat /tmp/health.json
+              exit 0
+            fi
+            sleep 2
+          done
+          cat /tmp/deutschimo-v467.log
+          exit 1
+
+  upgrade-from-v45-v46-schema:
+    name: Existing V45/V46 schema → V46.7, data preserved
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschimo_v467_upgrade
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v467_upgrade?schema=public
+      DATABASE_POSTGRES_URL: postgresql://postgres:postgres@127.0.0.1:5432/deutschimo_v467_upgrade?schema=public
+      DATABASE_ENVIRONMENT: test
+      AUTH_SECRET: v46-7-ci-auth-secret-at-least-32-characters
+      SECURITY_HASH_KEY: v46-7-ci-security-hash-key-at-least-32
+      CRON_SECRET: v46-7-ci-cron-secret-at-least-32-chars
+      BOOTSTRAP_ADMIN_ON_BUILD: "false"
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22.20.0
+          cache: npm
+      - run: npm ci
+      - run: npm run db:migration:safety:v46.7
+      - run: npm run test:migration:v46.7

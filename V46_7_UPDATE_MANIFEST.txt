@@ -1,0 +1,25 @@
+DEUTSCHIMO V46.7 — UPDATE MANIFEST
+==================================
+
+prisma/schema.prisma
+prisma/migrations/20260811123000_v46_7_database_integrity/migration.sql
+app/api/intelligence/daily-plan/route.ts
+lib/mastery/server.ts
+scripts/database-integrity-v46-7.mjs
+scripts/migration-safety-v46-7.mjs
+scripts/test-v46-7-upgrade.mjs
+scripts/validate-v46-7.mjs
+.github/workflows/v46-7-database-integrity.yml
+docs/V46_7_DATABASE_INTEGRITY.md
+CHANGELOG_V46_7.md
+V46_7_VALIDATION_REPORT.md
+V46_7_UPDATE_MANIFEST.txt
+
+package.json: installer tarafından yalnızca scripts/build-gate alanları idempotent şekilde güncellenir.
+package-lock.json: dependency/version değişmediği için değiştirilmez.
+
+DESTRUCTIVE MIGRATION: YOK
+PRODUCTION AUTO DELETE: YOK
+GIT COMMIT/PUSH: APPLY SCRIPT YAPMAZ
+PRISMA MIGRATE DEPLOY: APPLY SCRIPT YAPMAZ
+DB PUSH / RESET / CLEAN: APPLY SCRIPT YAPMAZ

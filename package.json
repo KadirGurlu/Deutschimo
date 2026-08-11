@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run validate:v46",
+    "prebuild": "node scripts/validate-environment.mjs && node scripts/validate-v27.mjs && node scripts/validate-v28.mjs && node scripts/validate-v28-1.mjs && node scripts/validate-v28-3.mjs && node scripts/validate-v28-4.mjs && node scripts/validate-v29.mjs && node scripts/validate-v29-2.mjs && node scripts/validate-v30-1.mjs && node scripts/validate-v30-2.mjs && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run validate:v46 && npm run validate:v46.7",
     "build": "prisma generate && next build",
-    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run db:environment:verify && npm run verify:toolchain && npm run verify:lockfile && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run security:release && npm run db:data-boundaries && npm run db:backup:policy && node scripts/db-deploy.mjs && prisma generate && next build && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run validate:v46",
+    "vercel-build": "npm run validate:env && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run db:environment:verify && npm run verify:toolchain && npm run verify:lockfile && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run security:release && npm run db:data-boundaries && npm run db:backup:policy && npm run db:migration:safety:v46.7 && npm run db:integrity:preflight && node scripts/db-deploy.mjs && npm run db:integrity:assert && prisma generate && next build && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run validate:v46 && npm run validate:v46.7",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -55,7 +55,7 @@
     "validate:v27": "node scripts/validate-v27.mjs",
     "validate:v28": "node scripts/validate-v28.mjs",
     "validate:v28.1": "node scripts/validate-v28-1.mjs",
-    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run a11y:v45 && npm run validate:v46 && npm run audit:v46",
+    "quality:check": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:v27 && npm run validate:v28 && npm run validate:v28.1 && npm run validate:v28.3 && npm run validate:v28.4 && npm run validate:v29 && npm run validate:v29.2 && npm run validate:v30.1 && npm run validate:v30.2 && npm run validate:v31 && npm run validate:v31.1 && npm run validate:v31.2 && npm run validate:v32 && npm run validate:v32.1 && npm run validate:v33 && npm run validate:v34 && npm run validate:v35 && npm run validate:v36 && npm run validate:v37 && npm run validate:v38 && npm run validate:v39 && npm run validate:v39.1 && npm run validate:v40 && npm run validate:v43 && npm run validate:v44 && npm run validate:v45 && npm run a11y:v45 && npm run validate:v46 && npm run audit:v46 && npm run db:migration:safety:v46.7 && npm run validate:v46.7",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:ui": "playwright test --ui",
@@ -130,7 +130,13 @@
     "db:readiness:v46": "node scripts/v46-db-readiness.mjs",
     "test:e2e:v46": "playwright test --config=playwright.v46.config.ts",
     "test:e2e:v46:headed": "playwright test --config=playwright.v46.config.ts --headed",
-    "release:v46": "npm run validate:v45 && npm run a11y:v45 && npm run validate:v46 && npm run audit:v46 && npm run verify:toolchain && npm run verify:lockfile && npm run security:release && npm run db:data-boundaries && npm run lint && npm run typecheck && npm run build && npm run perf:v45"
+    "release:v46": "npm run validate:v45 && npm run a11y:v45 && npm run validate:v46 && npm run audit:v46 && npm run verify:toolchain && npm run verify:lockfile && npm run security:release && npm run db:data-boundaries && npm run lint && npm run typecheck && npm run build && npm run perf:v45",
+    "validate:v46.7": "node scripts/validate-v46-7.mjs",
+    "db:integrity:preflight": "node scripts/database-integrity-v46-7.mjs --mode=preflight",
+    "db:integrity:assert": "node scripts/database-integrity-v46-7.mjs --mode=assert",
+    "db:migration:safety:v46.7": "node scripts/migration-safety-v46-7.mjs",
+    "test:migration:v46.7": "node scripts/test-v46-7-upgrade.mjs",
+    "release:v46.7": "npm run db:migration:safety:v46.7 && npm run validate:v46.7 && npm run typecheck && npm run build"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.8.0",

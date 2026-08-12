@@ -88,8 +88,22 @@ jobs:
           node-version: 22.20.0
           cache: npm
 
-      - name: Install dependencies
+      - name: Install npm dependencies
         run: npm ci
+
+      # ------------------------------------------------------------
+      # PLAYWRIGHT CI BROWSER SETUP
+      # ------------------------------------------------------------
+      # npm ci Playwright paketini kurar fakat Chromium binary'sini
+      # GitHub Actions runner'a otomatik olarak kurmaz.
+      #
+      # V46.10 accessibility E2E ve diğer Chromium tabanlı
+      # Playwright testlerinin çalışabilmesi için browser ve gerekli
+      # Linux bağımlılıklarını burada kuruyoruz.
+      # ------------------------------------------------------------
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
 
       - name: Generate Prisma Client
         run: npm run db:generate

@@ -1,13 +1,22 @@
 import { createHash, randomUUID } from "node:crypto";
+import type { Prisma } from "@prisma/client";
+
 import { prisma } from "@/lib/db";
-import { isProductEventName, type ProductEventName } from "@/lib/v47/events";
+import {
+  isProductEventName,
+  type ProductEventName,
+} from "@/lib/v47/events";
 import { log } from "@/lib/v47/logger";
 import { releaseInfo } from "@/lib/v47/release";
 import { redactForLog } from "@/lib/v47/redact";
 
 function hashSession(value?: string | null) {
   if (!value) return null;
-  return createHash("sha256").update(value).digest("hex").slice(0, 32);
+
+  return createHash("sha256")
+    .update(value)
+    .digest("hex")
+    .slice(0, 32);
 }
 
 export async function analyticsConsentEnabled(userId: string) {
@@ -15,6 +24,7 @@ export async function analyticsConsentEnabled(userId: string) {
     where: { userId },
     select: { analyticsEnabled: true },
   });
+
   return consent?.analyticsEnabled === true;
 }
 
@@ -28,17 +38,32 @@ export async function trackProductEvent(input: {
   metadata?: Record<string, unknown> | null;
   dedupeKey?: string | null;
 }) {
-  if (!isProductEventName(input.event)) throw new Error("invalid_product_event");
-  if (process.env.V47_ANALYTICS_ENABLED !== "true") {
-    return { stored: false as const, reason: "disabled" as const };
+  if (!isProductEventName(input.event)) {
+    throw new Error("invalid_product_event");
   }
 
-  if (input.userId && !(await analyticsConsentEnabled(input.userId))) {
-    return { stored: false as const, reason: "no_consent" as const };
+  if (process.env.V47_ANALYTICS_ENABLED !== "true") {
+    return {
+      stored: false as const,
+      reason: "disabled" as const,
+    };
+  }
+
+  if (
+    input.userId &&
+    !(await analyticsConsentEnabled(input.userId))
+  ) {
+    return {
+      stored: false as const,
+      reason: "no_consent" as const,
+    };
   }
 
   const release = releaseInfo();
-  const safeMetadata = redactForLog(input.metadata ?? {}) as Record<string, unknown>;
+
+  const safeMetadata = redactForLog(
+    input.metadata ?? {},
+  ) as Prisma.InputJsonValue;
 
   try {
     const record = await prisma.productAnalyticsEvent.create({
@@ -54,7 +79,11 @@ export async function trackProductEvent(input: {
         metadata: safeMetadata,
         dedupeKey: input.dedupeKey ?? null,
       },
-      select: { id: true, occurredAt: true },
+
+      select: {
+        id: true,
+        occurredAt: true,
+      },
     });
 
     log.info({
@@ -64,13 +93,25 @@ export async function trackProductEvent(input: {
       userId: input.userId ?? null,
       requestId: input.requestId ?? undefined,
     });
-    return { stored: true as const, id: record.id, occurredAt: record.occurredAt };
+
+    return {
+      stored: true as const,
+      id: record.id,
+      occurredAt: record.occurredAt,
+    };
   } catch (error) {
     const duplicate =
       error instanceof Error &&
       /unique|duplicate/i.test(error.message) &&
       Boolean(input.dedupeKey);
-    if (duplicate) return { stored: false as const, reason: "duplicate" as const };
+
+    if (duplicate) {
+      return {
+        stored: false as const,
+        reason: "duplicate" as const,
+      };
+    }
+
     log.error({
       event: "product_analytics_event_failed",
       operation: input.event,
@@ -80,6 +121,7 @@ export async function trackProductEvent(input: {
       errorCategory: "analytics_storage",
       metadata: { error },
     });
+
     throw error;
   }
 }

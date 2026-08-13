@@ -122,6 +122,7 @@ model User {
   studySessions       StudySession[]
   emailTokens         EmailVerificationToken[]
   passwordResetTokens PasswordResetToken[]
+  mobileSessions      MobileSession[]
   placementAttempts    PlacementAssessment[]
   intelligenceSnapshot LearningInsightSnapshot?
   dailyStudyPlans       DailyStudyPlan[]
@@ -231,6 +232,26 @@ model PasswordResetToken {
   createdAt DateTime @default(now())
 
   @@index([userId])
+}
+
+model MobileSession {
+  id               String         @id @default(cuid())
+  userId           String
+  user             User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  platform         ClientPlatform
+  deviceName       String?
+  accessTokenHash  String         @unique
+  refreshTokenHash String         @unique
+  accessExpiresAt  DateTime
+  refreshExpiresAt DateTime
+  revokedAt        DateTime?
+  lastUsedAt       DateTime?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+
+  @@index([userId, revokedAt])
+  @@index([accessExpiresAt])
+  @@index([refreshExpiresAt])
 }
 
 model Course {

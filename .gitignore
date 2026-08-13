@@ -13,3 +13,5 @@ coverage/
 .backups/
 .release/
 .github/workflows/_local-backups/
+.vercel
+.env*

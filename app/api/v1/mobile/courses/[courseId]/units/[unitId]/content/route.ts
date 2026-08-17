@@ -49,15 +49,50 @@ function authFailure(reason: string) {
   );
 }
 
+function seededShuffle(values: string[], seed: string) {
+  const result = [...values];
+  let state = 0;
+
+  for (const character of seed) {
+    state = (state * 31 + character.charCodeAt(0)) >>> 0;
+  }
+
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    state = (state * 1664525 + 1013904223) >>> 0;
+    const swapIndex = state % (index + 1);
+    [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+  }
+
+  return result;
+}
+
 function learnerExercise(exercise: Exercise) {
   const {
     correctAnswer: _correctAnswer,
     acceptedAnswers: _acceptedAnswers,
     explanation: _explanation,
+    pairs,
     ...safeExercise
   } = exercise;
 
-  return safeExercise;
+  if (exercise.type !== "MATCHING") {
+    return {
+      ...safeExercise,
+      pairs,
+    };
+  }
+
+  const matchingLeftItems = (pairs ?? []).map((pair) => pair.left);
+  const matchingRightItems = seededShuffle(
+    (pairs ?? []).map((pair) => pair.right),
+    exercise.id,
+  );
+
+  return {
+    ...safeExercise,
+    matchingLeftItems,
+    matchingRightItems,
+  };
 }
 
 function learnerQuiz(quiz: UnitQuiz | undefined) {

@@ -190,12 +190,6 @@ export async function GET(
     );
   }
 
-  /*
-   * Ünite erişim kontrolü:
-   * Kullanıcı prerequisite üniteyi
-   * tamamlamadıysa ders içeriğine
-   * doğrudan URL/API ile de erişemez.
-   */
   const progressUnitIds = [
     unit.id,
     unit.prerequisiteUnitId,
@@ -262,12 +256,6 @@ export async function GET(
     );
   }
 
-  /*
-   * getUnitSlides mevcut Content Studio /
-   * fallback verilerinden yayınlanmış
-   * dersleri ve gerçek contentBlocks
-   * içeriklerini getirir.
-   */
   const lessons =
     await getUnitSlides(unit.id);
 
@@ -298,10 +286,19 @@ export async function GET(
       : null;
 
   const nextLesson =
-    lessonIndex <
-    lessons.length - 1
+    lessonIndex < lessons.length - 1
       ? lessons[lessonIndex + 1]
       : null;
+
+  const previousLessonId =
+    lesson.previousSlideId ??
+    previousLesson?.id ??
+    null;
+
+  const nextLessonId =
+    lesson.nextSlideId ??
+    nextLesson?.id ??
+    null;
 
   const completedSlideIds =
     new Set(
@@ -339,6 +336,16 @@ export async function GET(
           unit.estimatedMinutes,
       },
 
+      navigation: {
+        index: lessonIndex + 1,
+        total: lessons.length,
+        previousLessonId,
+        nextLessonId,
+        isFirst: lessonIndex === 0,
+        isLast:
+          lessonIndex === lessons.length - 1,
+      },
+
       lesson: {
         id: lesson.id,
         unitId: lesson.unitId,
@@ -359,15 +366,8 @@ export async function GET(
           lesson.minimumViewSeconds ??
           null,
 
-        previousLessonId:
-          lesson.previousSlideId ??
-          previousLesson?.id ??
-          null,
-
-        nextLessonId:
-          lesson.nextSlideId ??
-          nextLesson?.id ??
-          null,
+        previousLessonId,
+        nextLessonId,
 
         isCompleted,
 

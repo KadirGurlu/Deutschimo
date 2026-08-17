@@ -142,7 +142,6 @@ export async function POST(
     accepted: correct,
     correct,
     requiresManualEvaluation: false,
-    correctAnswer: exercise.correctAnswer,
     explanation: exercise.explanation,
     maxAttempts: exercise.maxAttempts,
   });

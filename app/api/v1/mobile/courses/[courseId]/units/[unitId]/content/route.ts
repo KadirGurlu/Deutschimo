@@ -68,7 +68,6 @@ function learnerQuiz(quiz: UnitQuiz | undefined) {
     questions: quiz.questions.map((question) => {
       const {
         correctAnswer: _correctAnswer,
-        acceptedAnswers: _acceptedAnswers,
         explanation: _explanation,
         ...safeQuestion
       } = question;
